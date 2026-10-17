@@ -5,6 +5,7 @@ from dataclasses import dataclass, field
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 from threading import Thread
+from time import sleep
 from .model import instant, now
 
 
@@ -17,8 +18,22 @@ class Scenario:
     events: dict = field(default_factory=dict)
     calls: int = 0
     revision: int = 0
+    # Controlled V3 sequence interventions; default leaves historical fixture behavior intact.
+    followup_mode: str = 'normal'
+    permission_after_first: str = 'unchanged'
+    followup_delay_seconds: float = 0.0
+    pending_requests: int = 0
+    transition_observer: object = None
 
     def __post_init__(self):
+        import math
+        if self.followup_mode not in {'normal', 'error', 'no_change', 'mismatch', 'side_effect'}:
+            raise ValueError('Unsupported follow-up mode')
+        if self.permission_after_first not in {'unchanged', 'false', 'unknown', 'stale'}:
+            raise ValueError('Unsupported permission intervention')
+        if (type(self.followup_delay_seconds) not in (int, float) or not math.isfinite(self.followup_delay_seconds)
+                or not 0 <= self.followup_delay_seconds <= 10):
+            raise ValueError('Controlled delay must be finite, between zero and ten seconds')
         if self.mode not in {'normal', 'error', 'no_change', 'mismatch', 'side_effect'}:
             raise ValueError('Unsupported fixture mode')
         if self.writable is not None and type(self.writable) is not bool:
@@ -34,12 +49,19 @@ def serve(scenario: Scenario | None = None):
             pass
 
         def send(self, status, body):
+            if self.command == 'POST' and not getattr(self, '_transition_finished', True):
+                self._transition_finished = True
+                if state.transition_observer:
+                    state.transition_observer('after', self.path, status)
             data = json.dumps(body, sort_keys=True).encode()
             self.send_response(status)
             self.send_header('Content-Type', 'application/json')
             self.send_header('Content-Length', str(len(data)))
             self.end_headers()
-            self.wfile.write(data)
+            try:
+                self.wfile.write(data)
+            except (BrokenPipeError, ConnectionResetError):
+                pass
 
         def do_GET(self):
             timestamp = now()
@@ -60,7 +82,21 @@ def serve(scenario: Scenario | None = None):
                 self.send(404, {'error': 'Not found'})
 
         def do_POST(self):
-            if self.path != '/events':
+            self._transition_finished = False
+            state.pending_requests += 1
+            if state.transition_observer:
+                state.transition_observer('before', self.path, None)
+            try:
+                self._post()
+            finally:
+                state.pending_requests -= 1
+                if not self._transition_finished and state.transition_observer:
+                    state.transition_observer('after', self.path, None)
+
+        def _post(self):
+            dependent = self.path.startswith('/followups/')
+            predecessor_id = self.path.removeprefix('/followups/') if dependent else None
+            if self.path != '/events' and not dependent:
                 self.send(404, {'error': 'Not found'})
                 return
             state.calls += 1
@@ -81,20 +117,39 @@ def serve(scenario: Scenario | None = None):
             except (ValueError, TypeError, KeyError):
                 self.send(400, {'error': 'Invalid event'})
                 return
-            if state.mode == 'error':
+            if dependent:
+                predecessor = state.events.get(predecessor_id)
+                try:
+                    ordered = bool(predecessor) and instant(values['start_time']) >= instant(predecessor['end_time'])
+                except (KeyError, ValueError, TypeError):
+                    ordered = False
+                if not ordered:
+                    self.send(409, {'error': 'Existing predecessor and temporal order required'})
+                    return
+            mode = state.followup_mode if dependent else state.mode
+            if dependent and state.followup_delay_seconds:
+                sleep(state.followup_delay_seconds)
+            if mode == 'error':
                 self.send(500, {'error': 'Controlled execution failure'})
                 return
             event_id = f'event-{state.calls:04d}'
             while event_id in state.events:
                 event_id += '-new'
             event = dict(values, id=event_id)
-            if state.mode == 'mismatch':
+            if dependent:
+                event['predecessor_id'] = predecessor_id
+            if mode == 'mismatch':
                 event['title'] = 'Incorrect stored title'
-            if state.mode != 'no_change':
+            if mode != 'no_change':
                 state.events[event_id] = event
                 state.revision += 1
-            if state.mode == 'side_effect':
+            if mode == 'side_effect':
                 state.events['unrequested'] = {'id': 'unrequested', 'title': 'Unexpected'}
+            if not dependent and state.calls == 1:
+                if state.permission_after_first in {'false', 'unknown'}:
+                    state.writable = False if state.permission_after_first == 'false' else None
+                elif state.permission_after_first == 'stale':
+                    state.stale_precondition = True
             self.send(201, {'id': event_id, 'accepted': True})
 
     server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)
