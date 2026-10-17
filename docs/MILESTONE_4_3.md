@@ -75,7 +75,7 @@ The main retained matrix runs 10 tasks × 2 visible providers × 3 conditions = 
 executions, with identical normalized semantic summaries across conditions. The
 additional six positive runs demonstrate a second isolated repetition for both
 providers/all conditions. Raw traces, actual native state and timestamps remain
-in `artifacts/milestone4_3/pilot/`; `pilot-results.json` lists every result and
+in `artifacts/milestone4_3/pilot-final/`; `pilot-final/pilot-results.json` lists every result and
 all failure checks. These runs are not independent held-out provider observations,
 not a labor/performance comparison and not proof of RDF superiority.
 
@@ -131,7 +131,8 @@ found the native relation reader was A/B-only: an evaluator-owned ChainInterpret
 now supplies a provider-local event interpretation and predecessor decoder without
 changing goal/link/preservation truth. Unknown identities fail closed without that
 reviewed observer. A synthetic in-memory test (no new API/provider) exercises it,
-bringing final new coverage to 21 and final total to 87. Pre-extension 86-test source,
+bringing final new coverage to 21 and final total to 87. The earlier retained `pilot/` and `local-only/` runs are pre-extension stages;
+`pilot-final/` and `local-only-final/` are final-candidate evidence. Pre-extension 86-test source,
 wheel and restoration results/archives remain separate from final candidate evidence. Failed logs and linked rework records remain; nothing was relabeled
 as historical success. A final whitespace check identified RDFLib-generated extra
 blank lines at Turtle EOF; they were normalized without changing the RDF graphs.

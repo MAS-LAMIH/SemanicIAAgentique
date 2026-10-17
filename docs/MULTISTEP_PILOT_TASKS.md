@@ -3,7 +3,7 @@
 Status: technical V3 pilot, investigator review pending. Provider C remains sealed.
 The ten task definitions live in `multistep_tasks.pilot_tasks`; machine-readable
 results and per-run curator expectations are retained under
-`artifacts/milestone4_3/pilot/`. This is 10 tasks × 2 visible providers × 3 conditions
+`artifacts/milestone4_3/pilot-final/`. This is 10 tasks × 2 visible providers × 3 conditions
 = 60 executions per sweep, not 60 providers. A/B are exposed development fixtures.
 Existing 20 single-action diagnostics remain unchanged. No LLM/planning experiment
 or general-purpose workflow claim is made.

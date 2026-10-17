@@ -123,7 +123,7 @@ def prepare():
             raise ValueError('Missing successful final suite: ' + identity)
     if len({by_id[k]['tests_run'] for k in required}) != 1:
         raise ValueError('Final test counts differ')
-    pilot = json.loads((AREA / 'pilot/pilot-results.json').read_text())
+    pilot = json.loads((AREA / validation.get('pilot_results_path', 'pilot/pilot-results.json')).read_text())
     if pilot['status'] != 'passed':
         raise ValueError('Retained pilot failed')
     groups = {}

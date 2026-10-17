@@ -37,11 +37,11 @@ an additional positive repetition for both visible providers and all three condi
 
 Machine-readable retained evidence:
 
-- `artifacts/milestone4_3/pilot/*/reset.json`: expected and actual per-run native state.
-- `pilot/pilot-results.json`: all 60 main matrix runs and 6 extra positive repetitions.
-- `pilot/repetition-2-*/supervision.json`: distinct process identities and stop results.
-- `pilot/contaminated-reset-a-A/reset.json`: mutation counter mismatch, passed=false.
-- `pilot/contaminated-reset-a-A/evaluation.json`: RESET_REJECTED, subject_launched=false.
+- `artifacts/milestone4_3/pilot-final/*/reset.json`: expected and actual per-run native state.
+- `pilot-final/pilot-results.json`: all 60 main matrix runs and 6 extra positive repetitions.
+- `pilot-final/repetition-2-*/supervision.json`: distinct process identities and stop results.
+- `pilot-final/contaminated-reset-a-A/reset.json`: mutation counter mismatch, passed=false.
+- `pilot-final/contaminated-reset-a-A/evaluation.json`: RESET_REJECTED, subject_launched=false.
 
 The contaminated attempt has no subject-input file or mutation trace. It remains
 visible as a rejected attempt, not removed from operational evidence. Normalized
