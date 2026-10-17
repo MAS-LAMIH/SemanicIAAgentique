@@ -1,0 +1,19 @@
+{
+  "id": "restored_verify",
+  "command": [
+    "python3",
+    "scripts/candidate_v3.py",
+    "--verify"
+  ],
+  "cwd": "/tmp/m44-restored-source-c3zp_gz5",
+  "started_at": "2026-10-17T19:48:39.974071+00:00",
+  "ended_at": "2026-10-17T19:48:40.361758+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 0.3874108720010554,
+  "log_path": "docs/artifacts/milestone4_4/restored_verify.log",
+  "tests_run": null,
+  "runner_seconds": null,
+  "nested_runtime_accounted_separately": false
+}

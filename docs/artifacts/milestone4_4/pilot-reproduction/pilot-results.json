@@ -1,0 +1,1426 @@
+{
+  "status": "passed",
+  "approval": "pending",
+  "unseal_authorized": false,
+  "scope": "Visible development fixtures only; not independent held-out providers or confirmation",
+  "diagnostic_tasks": 10,
+  "normal_matrix_runs": 60,
+  "additional_positive_repetitions": 6,
+  "inflight_timeout_runs": 3,
+  "http_timeout_runs": 1,
+  "rejected_reset_attempts": 1,
+  "isolated_stall_runs": 1,
+  "records": [
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "A",
+      "name": "M01-a-A",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M01-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "B",
+      "name": "M01-a-B",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M01-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "C",
+      "name": "M01-a-C",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M01-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "A",
+      "name": "M01-b-A",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M01-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "B",
+      "name": "M01-b-B",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M01-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "C",
+      "name": "M01-b-C",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M01-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M02",
+      "provider": "a",
+      "condition": "A",
+      "name": "M02-a-A",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M02-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M02",
+      "provider": "a",
+      "condition": "B",
+      "name": "M02-a-B",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M02-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M02",
+      "provider": "a",
+      "condition": "C",
+      "name": "M02-a-C",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M02-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M02",
+      "provider": "b",
+      "condition": "A",
+      "name": "M02-b-A",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M02-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M02",
+      "provider": "b",
+      "condition": "B",
+      "name": "M02-b-B",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M02-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M02",
+      "provider": "b",
+      "condition": "C",
+      "name": "M02-b-C",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M02-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M03",
+      "provider": "a",
+      "condition": "A",
+      "name": "M03-a-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M03-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M03",
+      "provider": "a",
+      "condition": "B",
+      "name": "M03-a-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M03-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M03",
+      "provider": "a",
+      "condition": "C",
+      "name": "M03-a-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M03-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M03",
+      "provider": "b",
+      "condition": "A",
+      "name": "M03-b-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M03-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M03",
+      "provider": "b",
+      "condition": "B",
+      "name": "M03-b-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M03-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M03",
+      "provider": "b",
+      "condition": "C",
+      "name": "M03-b-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M03-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M04",
+      "provider": "a",
+      "condition": "A",
+      "name": "M04-a-A",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M04-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M04",
+      "provider": "a",
+      "condition": "B",
+      "name": "M04-a-B",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M04-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M04",
+      "provider": "a",
+      "condition": "C",
+      "name": "M04-a-C",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M04-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M04",
+      "provider": "b",
+      "condition": "A",
+      "name": "M04-b-A",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M04-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M04",
+      "provider": "b",
+      "condition": "B",
+      "name": "M04-b-B",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M04-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M04",
+      "provider": "b",
+      "condition": "C",
+      "name": "M04-b-C",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M04-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M05",
+      "provider": "a",
+      "condition": "A",
+      "name": "M05-a-A",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M05-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M05",
+      "provider": "a",
+      "condition": "B",
+      "name": "M05-a-B",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M05-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M05",
+      "provider": "a",
+      "condition": "C",
+      "name": "M05-a-C",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M05-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M05",
+      "provider": "b",
+      "condition": "A",
+      "name": "M05-b-A",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M05-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M05",
+      "provider": "b",
+      "condition": "B",
+      "name": "M05-b-B",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M05-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M05",
+      "provider": "b",
+      "condition": "C",
+      "name": "M05-b-C",
+      "summary": {
+        "status": "REJECTED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M05-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M06",
+      "provider": "a",
+      "condition": "A",
+      "name": "M06-a-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M06-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M06",
+      "provider": "a",
+      "condition": "B",
+      "name": "M06-a-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M06-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M06",
+      "provider": "a",
+      "condition": "C",
+      "name": "M06-a-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M06-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M06",
+      "provider": "b",
+      "condition": "A",
+      "name": "M06-b-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M06-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M06",
+      "provider": "b",
+      "condition": "B",
+      "name": "M06-b-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M06-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M06",
+      "provider": "b",
+      "condition": "C",
+      "name": "M06-b-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M06-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M07",
+      "provider": "a",
+      "condition": "A",
+      "name": "M07-a-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M07-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M07",
+      "provider": "a",
+      "condition": "B",
+      "name": "M07-a-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M07-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M07",
+      "provider": "a",
+      "condition": "C",
+      "name": "M07-a-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M07-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M07",
+      "provider": "b",
+      "condition": "A",
+      "name": "M07-b-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M07-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M07",
+      "provider": "b",
+      "condition": "B",
+      "name": "M07-b-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M07-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M07",
+      "provider": "b",
+      "condition": "C",
+      "name": "M07-b-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M07-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M08",
+      "provider": "a",
+      "condition": "A",
+      "name": "M08-a-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M08-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M08",
+      "provider": "a",
+      "condition": "B",
+      "name": "M08-a-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M08-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M08",
+      "provider": "a",
+      "condition": "C",
+      "name": "M08-a-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M08-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M08",
+      "provider": "b",
+      "condition": "A",
+      "name": "M08-b-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M08-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M08",
+      "provider": "b",
+      "condition": "B",
+      "name": "M08-b-B",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M08-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M08",
+      "provider": "b",
+      "condition": "C",
+      "name": "M08-b-C",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M08-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M09",
+      "provider": "a",
+      "condition": "A",
+      "name": "M09-a-A",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 3,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 3,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M09-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M09",
+      "provider": "a",
+      "condition": "B",
+      "name": "M09-a-B",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 3,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 3,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M09-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M09",
+      "provider": "a",
+      "condition": "C",
+      "name": "M09-a-C",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 3,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 3,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M09-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M09",
+      "provider": "b",
+      "condition": "A",
+      "name": "M09-b-A",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 3,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 3,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M09-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M09",
+      "provider": "b",
+      "condition": "B",
+      "name": "M09-b-B",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 3,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 3,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M09-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M09",
+      "provider": "b",
+      "condition": "C",
+      "name": "M09-b-C",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 3,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 3,
+        "partial_new_records": 3,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M09-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M10",
+      "provider": "a",
+      "condition": "A",
+      "name": "M10-a-A",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M10-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M10",
+      "provider": "a",
+      "condition": "B",
+      "name": "M10-a-B",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M10-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M10",
+      "provider": "a",
+      "condition": "C",
+      "name": "M10-a-C",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M10-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M10",
+      "provider": "b",
+      "condition": "A",
+      "name": "M10-b-A",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M10-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M10",
+      "provider": "b",
+      "condition": "B",
+      "name": "M10-b-B",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M10-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M10",
+      "provider": "b",
+      "condition": "C",
+      "name": "M10-b-C",
+      "summary": {
+        "status": "BLOCKED",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 1,
+        "runtime_verified": false,
+        "native_verified": false,
+        "verified": false,
+        "verified_transitions": 1,
+        "partial_new_records": 1,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "M10-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "A",
+      "name": "repetition-2-a-A",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "repetition-2-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "B",
+      "name": "repetition-2-a-B",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "repetition-2-a-B/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "C",
+      "name": "repetition-2-a-C",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "repetition-2-a-C/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "A",
+      "name": "repetition-2-b-A",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "repetition-2-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "B",
+      "name": "repetition-2-b-B",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "repetition-2-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "C",
+      "name": "repetition-2-b-C",
+      "summary": {
+        "status": "COMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": true,
+        "native_verified": true,
+        "verified": true,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "repetition-2-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "A",
+      "name": "inflight-timeout-b-A",
+      "summary": {
+        "status": "RUNNING",
+        "supervision_status": "TIMEOUT",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": true,
+        "verified": false,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "inflight-timeout-b-A/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "B",
+      "name": "inflight-timeout-b-B",
+      "summary": {
+        "status": "RUNNING",
+        "supervision_status": "TIMEOUT",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": true,
+        "verified": false,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "inflight-timeout-b-B/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "b",
+      "condition": "C",
+      "name": "inflight-timeout-b-C",
+      "summary": {
+        "status": "RUNNING",
+        "supervision_status": "TIMEOUT",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": true,
+        "verified": false,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "inflight-timeout-b-C/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "A",
+      "name": "http-timeout-a-A",
+      "summary": {
+        "status": "INCOMPLETE",
+        "supervision_status": "COMPLETED",
+        "mutation_calls": 2,
+        "runtime_verified": false,
+        "native_verified": true,
+        "verified": false,
+        "verified_transitions": 2,
+        "partial_new_records": 2,
+        "state_uncertain": false
+      },
+      "status": null,
+      "diagnostic_passed": true,
+      "result_path": "http-timeout-a-A/evaluation.json"
+    },
+    {
+      "task_id": "M01",
+      "provider": "a",
+      "condition": "A",
+      "name": "contaminated-reset-a-A",
+      "summary": null,
+      "status": "RESET_REJECTED",
+      "diagnostic_passed": null,
+      "result_path": "contaminated-reset-a-A/evaluation.json"
+    }
+  ],
+  "failures": []
+}

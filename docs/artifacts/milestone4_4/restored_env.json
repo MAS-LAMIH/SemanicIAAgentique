@@ -1,0 +1,21 @@
+{
+  "id": "restored_env",
+  "command": [
+    "uv",
+    "venv",
+    "/tmp/m44-restored-env",
+    "--python",
+    "python3"
+  ],
+  "cwd": "/tmp/m44-restored-source-c3zp_gz5",
+  "started_at": "2026-10-17T19:44:01.895631+00:00",
+  "ended_at": "2026-10-17T19:44:01.985588+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 0.0893866850019549,
+  "log_path": "docs/artifacts/milestone4_4/restored_env.log",
+  "tests_run": null,
+  "runner_seconds": null,
+  "nested_runtime_accounted_separately": false
+}

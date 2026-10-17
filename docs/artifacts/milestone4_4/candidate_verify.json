@@ -1,0 +1,19 @@
+{
+  "id": "candidate_verify",
+  "command": [
+    "python3",
+    "scripts/candidate_v3.py",
+    "--verify"
+  ],
+  "cwd": "/tmp/m44-exact-candidate-si3959dm",
+  "started_at": "2026-10-17T19:44:11.465836+00:00",
+  "ended_at": "2026-10-17T19:44:11.875798+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 0.4097157470023376,
+  "log_path": "docs/artifacts/milestone4_4/candidate_verify.log",
+  "tests_run": null,
+  "runner_seconds": null,
+  "nested_runtime_accounted_separately": false
+}

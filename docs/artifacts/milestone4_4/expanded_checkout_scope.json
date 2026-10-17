@@ -1,0 +1,19 @@
+{
+  "id": "expanded_checkout_scope",
+  "command": [
+    "python3",
+    "scripts/candidate_v3.py",
+    "--verify"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T19:48:39.363741+00:00",
+  "ended_at": "2026-10-17T19:48:39.785276+00:00",
+  "exit_code": 1,
+  "expected_exit_code": 1,
+  "expected_status_matched": true,
+  "elapsed_seconds": 0.4212433860011515,
+  "log_path": "docs/artifacts/milestone4_4/expanded_checkout_scope.log",
+  "tests_run": null,
+  "runner_seconds": null,
+  "nested_runtime_accounted_separately": false
+}

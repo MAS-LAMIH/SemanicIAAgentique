@@ -1,0 +1,77 @@
+{
+  "source": {
+    "command": [
+      "/tmp/m44-source-env/bin/python",
+      "-c",
+      "import json,platform,importlib.metadata as m; import semantic_action.sequence_native as n; print(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'module_file':n.__file__,'chain_interpretation_present':hasattr(n,'ChainInterpretation'),'packages':{x:m.version(x) for x in ['attrs','jsonschema','jsonschema-specifications','pyparsing','rdflib','referencing','rpds-py','tutorielIAAgentique','typing_extensions']}}))"
+    ],
+    "exit_code": 0,
+    "observed": {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "module_file": "/tmp/m44-exact-candidate-si3959dm/src/semantic_action/sequence_native.py",
+      "chain_interpretation_present": true,
+      "packages": {
+        "attrs": "26.1.0",
+        "jsonschema": "4.26.0",
+        "jsonschema-specifications": "2025.9.1",
+        "pyparsing": "3.3.3",
+        "rdflib": "7.6.0",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.9.1",
+        "tutorielIAAgentique": "0.1.0",
+        "typing_extensions": "4.16.0"
+      }
+    }
+  },
+  "wheel": {
+    "command": [
+      "/tmp/m44-wheel-env/bin/python",
+      "-c",
+      "import json,platform,importlib.metadata as m; import semantic_action.sequence_native as n; print(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'module_file':n.__file__,'chain_interpretation_present':hasattr(n,'ChainInterpretation'),'packages':{x:m.version(x) for x in ['attrs','jsonschema','jsonschema-specifications','pyparsing','rdflib','referencing','rpds-py','tutorielIAAgentique','typing_extensions']}}))"
+    ],
+    "exit_code": 0,
+    "observed": {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "module_file": "/tmp/m44-wheel-env/lib/python3.12/site-packages/semantic_action/sequence_native.py",
+      "chain_interpretation_present": true,
+      "packages": {
+        "attrs": "26.1.0",
+        "jsonschema": "4.26.0",
+        "jsonschema-specifications": "2025.9.1",
+        "pyparsing": "3.3.3",
+        "rdflib": "7.6.0",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.9.1",
+        "tutorielIAAgentique": "0.1.0",
+        "typing_extensions": "4.16.0"
+      }
+    }
+  },
+  "restored": {
+    "command": [
+      "/tmp/m44-restored-env/bin/python",
+      "-c",
+      "import json,platform,importlib.metadata as m; import semantic_action.sequence_native as n; print(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'module_file':n.__file__,'chain_interpretation_present':hasattr(n,'ChainInterpretation'),'packages':{x:m.version(x) for x in ['attrs','jsonschema','jsonschema-specifications','pyparsing','rdflib','referencing','rpds-py','tutorielIAAgentique','typing_extensions']}}))"
+    ],
+    "exit_code": 0,
+    "observed": {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "module_file": "/tmp/m44-restored-env/lib/python3.12/site-packages/semantic_action/sequence_native.py",
+      "chain_interpretation_present": true,
+      "packages": {
+        "attrs": "26.1.0",
+        "jsonschema": "4.26.0",
+        "jsonschema-specifications": "2025.9.1",
+        "pyparsing": "3.3.3",
+        "rdflib": "7.6.0",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.9.1",
+        "tutorielIAAgentique": "0.1.0",
+        "typing_extensions": "4.16.0"
+      }
+    }
+  }
+}

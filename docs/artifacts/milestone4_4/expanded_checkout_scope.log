@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/scripts/candidate_v3.py", line 201, in <module>
+    verify()
+  File "/workspace/SemanicIAAgentique/scripts/candidate_v3.py", line 180, in verify
+    raise ValueError('Unclassified V3 source addition/deletion')
+ValueError: Unclassified V3 source addition/deletion

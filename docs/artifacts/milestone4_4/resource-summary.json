@@ -1,0 +1,32 @@
+{
+  "record_count": 89,
+  "current_record_count": 89,
+  "resources": {
+    "human_active_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 89
+    },
+    "ai_supervision_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 89
+    },
+    "automated_runtime_minutes": {
+      "measured_total": 10.91459355745034,
+      "unmeasured_records": 3
+    },
+    "tool_wait_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 89
+    },
+    "model_wait_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 89
+    },
+    "elapsed_wall_minutes": {
+      "measured_total": 8.447745283333333,
+      "unmeasured_records": 88
+    }
+  },
+  "warning": "Supervision is a subset of human active time; resources overlap wall clock. Missing records do not imply zero.",
+  "scope_note": "M4.4 audit, not experimental integration costs. Parent fresh-pilot command is a note; child runtime recorded separately. Automated runtimes overlap elapsed; unknown human/wait values remain null."
+}

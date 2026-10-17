@@ -1,0 +1,23 @@
+{
+  "id": "restored_tests",
+  "command": [
+    "/tmp/m44-restored-env/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/semantic_action",
+    "-v"
+  ],
+  "cwd": "/tmp/m44-restored-source-c3zp_gz5",
+  "started_at": "2026-10-17T19:44:02.940337+00:00",
+  "ended_at": "2026-10-17T19:47:30.446080+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 207.50544245199853,
+  "log_path": "docs/artifacts/milestone4_4/restored_tests.log",
+  "tests_run": 87,
+  "runner_seconds": 207.014,
+  "nested_runtime_accounted_separately": false
+}
