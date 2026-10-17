@@ -1,0 +1,30 @@
+{
+  "base_commit": "950ebf9",
+  "all_listed_files_unchanged": true,
+  "files": {
+    "src/semantic_action/registry.py": "1a2db15fc0b93dd3420a009c778c27e4b14d340c4a2be0d1a620b8a46ac03d76",
+    "src/semantic_action/pipeline.py": "8a9f92cdac2f1e1d688bab3e4f4f090165da0c44ef6a3ef85528a3b0c4123c79",
+    "src/semantic_action/contract.py": "4098973ab312a8b341a78a9d9bfc31a8b7ed134a3537eaf0fb8137fd877adc63",
+    "src/semantic_action/provider_contract.py": "9eeb1f643998046b66f3b985e953a14585d7715cd12ad73521fbfc096932d3bf",
+    "src/semantic_action/transform.py": "6c4d937dbb0e48629ea2f482d1554d2ca1e1f9280991c7da691bf631f425be7f",
+    "src/semantic_action/local_baseline.py": "4535ea4d786f09f850fe5e9d64224779a72f7f65261332cb9ec72d331c88912c",
+    "src/semantic_action/native_verifier.py": "e1d55ccb6234977961a17d576efa0c9df1d7890c427f2c20b19ab06f098a40a2",
+    "src/semantic_action/oracle.py": "379ca6987d8c1413743b7b77ca7b90d56fbfdae31bd368bcf5da09ec771ac042",
+    "src/semantic_action/model.py": "0f241776b02d70348b09a92755c816fa1524a85c49e5190594180806c73d9f43",
+    "src/semantic_action/transport.py": "f11ff8c325a8d1983fdda8b9e8edfe417efd43d1252e2b3efbbecc5d441306d6",
+    "src/semantic_action/event_ledger.py": "efed65e3322929f4138f54a9c6a9b9759fbba3bc19d57f65c542618e1db96351",
+    "src/tutorielIAAgentique/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/tutorielIAAgentique/agent.py": "670574b1d9c54bc45f039cb339758c126045dbaa83152487218116d60e5ae515",
+    "src/tutorielIAAgentique/main.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/tutorielIAAgentique/mas.py": "b7321d5c5e4098549ce65b2d36ec07f8507569aed4c9614fef4e975ed093cce2",
+    "src/tutorielIAAgentique/masFactChecker.py": "93998b614eedd02faafecf75e85d7963246e39226d25df4d80fe00347436adff",
+    "src/tutorielIAAgentique/masScore.py": "0de8d180a50de4d9a2551681eeede7fe891b0191c0194f2bd9b5f27711300b15",
+    "src/tutorielIAAgentique/masWithMemory.py": "437f6a3bf4c022866cea2eb920c9214479ee3caee0202f5cb5887f32244e5fdd",
+    "src/tutorielIAAgentique/masWithMemoryAndSelfReflect.py": "0803aa27025b67dae4815fb8332662cd92307905d09d06959512d31730312464",
+    "src/tutorielIAAgentique/masWithPython.py": "d7585d9637cd1edad91d46ff37af6d4fbadedbd97bf9f21bee4eb92348f5d0c3",
+    "src/tutorielIAAgentique/prompt.md": "c068f8a9fc780807c3d4ced22a4bf8acdb70bbb90e2208d9f8c9614835720a80",
+    "src/tutorielIAAgentique/tools.py": "0fef58054d68d4a1102aecbed987c9fac47f9ae3f1903bae35ee5cca732f3905",
+    "src/tutorielIAAgentique/utils.py": "2e2d63205259826b8a9117ff83e98374523e4eefc0d1bc6fa8d917e302e5c406",
+    "pyproject.toml": "71d8141a737f8263e0a3d67134aac4173ce23103b87d4acbdd54e970afc3c546"
+  }
+}

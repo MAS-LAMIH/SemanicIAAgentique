@@ -1,0 +1,50 @@
+@prefix p: <https://example.org/sam/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:manual:urn:sequence:reserveAfterBooking> a p:ProviderContract ;
+    p:artifact_id <https://example.org/provider-b#appointments> ;
+    p:binding [ p:baseline_path "/availability" ;
+            p:create_path "/booking-after/booking-0001" ;
+            p:event_field "booking" ;
+            p:event_fields [ p:entry [ p:key "title" ;
+                            p:value [ p:source "label" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "end_time" ;
+                            p:value [ p:source "finishes_ms" ;
+                                    p:transform "epoch_ms_to_iso" ] ],
+                        [ p:key "id" ;
+                            p:value [ p:source "booking_ref" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "start_time" ;
+                            p:value [ p:source "begins_ms" ;
+                                    p:transform "epoch_ms_to_iso" ] ] ] ;
+            p:event_path "/booking/{id}" ;
+            p:events_field "items" ;
+            p:request_fields [ p:entry [ p:key "label" ;
+                            p:value [ p:source "title" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "begins_ms" ;
+                            p:value [ p:source "start_time" ;
+                                    p:transform "iso_to_epoch_ms" ] ],
+                        [ p:key "finishes_ms" ;
+                            p:value [ p:source "end_time" ;
+                                    p:transform "iso_to_epoch_ms" ] ] ] ;
+            p:response_id "booking_ref" ;
+            p:revision_field "version" ;
+            p:state_path "/bookings" ;
+            p:timestamp_field "sampled_at" ;
+            p:writable_field "can_book" ] ;
+    p:capability_id <https://example.org/sam/v1#EventCreation> ;
+    p:constraints [ p:max_duration_seconds 7200 ;
+            p:preserves_other_events true ;
+            p:time_grid_seconds 900 ] ;
+    p:declared_effects <https://example.org/sam/v1#NewMatchingEvent> ;
+    p:inputs "end_time",
+        "start_time",
+        "title" ;
+    p:observation [ p:max_evidence_age_seconds 3e+01 ] ;
+    p:operation_id <urn:sequence:reserveAfterBooking> ;
+    p:preconditions <https://example.org/sam/v1#CalendarWritable>,
+        <https://example.org/sam/v1#PositiveInterval> ;
+    p:schema_version 2 .
+

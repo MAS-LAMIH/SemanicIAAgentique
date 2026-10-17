@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "local_kind": "booking_followup",
+  "operation": "reserveAfterBooking",
+  "effect": "records_reservation_only",
+  "requires_predecessor": true,
+  "requires_after_end": true,
+  "create_path_template": "/booking-after/{id}",
+  "base_description": "contracts/api_local/b.json"
+}

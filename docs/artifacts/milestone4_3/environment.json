@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "packages": {
+    "attrs": "26.1.0",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "pyparsing": "3.3.3",
+    "rdflib": "7.6.0",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.9.1",
+    "tutorielIAAgentique": "0.1.0",
+    "typing_extensions": "4.16.0"
+  }
+}

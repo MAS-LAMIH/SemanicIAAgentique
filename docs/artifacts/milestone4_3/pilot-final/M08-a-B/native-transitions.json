@@ -1,0 +1,92 @@
+[
+  {
+    "path": "/events",
+    "before": {
+      "provider": "a",
+      "observed_at": "2026-10-17T19:09:08.629269+00:00",
+      "revision": 0,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        }
+      },
+      "mutation_calls": 0
+    },
+    "after": {
+      "provider": "a",
+      "observed_at": "2026-10-17T19:09:08.629611+00:00",
+      "revision": 1,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "event-0001": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "title": "M08 required appointment 1",
+          "id": "event-0001"
+        }
+      },
+      "mutation_calls": 1
+    },
+    "http_status": 201
+  },
+  {
+    "path": "/followups/event-0001",
+    "before": {
+      "provider": "a",
+      "observed_at": "2026-10-17T19:09:08.662720+00:00",
+      "revision": 1,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "event-0001": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "title": "M08 required appointment 1",
+          "id": "event-0001"
+        }
+      },
+      "mutation_calls": 1
+    },
+    "after": {
+      "provider": "a",
+      "observed_at": "2026-10-17T19:09:08.663194+00:00",
+      "revision": 1,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "event-0001": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "title": "M08 required appointment 1",
+          "id": "event-0001"
+        }
+      },
+      "mutation_calls": 2
+    },
+    "http_status": 500
+  }
+]

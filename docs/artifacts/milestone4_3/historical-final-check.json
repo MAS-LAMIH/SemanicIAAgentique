@@ -1,0 +1,13 @@
+{
+  "preserved_files": 134,
+  "V2_archived_files": 104,
+  "V2_manifest_sha256": "7f8e8d1d4f0f07e8c5ef999c36aaf987d17bf58d757df4a733f736ceaa78bcc2",
+  "M4": {
+    "manifest_sha256": "2a01e44585d355cd3b763f0551a9f33c1139fe53595d3c8b28cd62d71a93bd4c",
+    "source_archive_sha256": "ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69",
+    "historical_files_verified": 14,
+    "archive_members_verified": 74,
+    "working_tree_comparison": "Not applicable: V2 intentionally changes code/documents, historical bytes are in the archive"
+  },
+  "approval_records": "Original M4.2 package/decision bytes retained, not new approval"
+}

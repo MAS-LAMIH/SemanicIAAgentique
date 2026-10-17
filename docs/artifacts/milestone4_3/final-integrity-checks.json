@@ -1,0 +1,44 @@
+[
+  {
+    "check": "valid_restored_V3",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m43-relation-restored-source/scripts/candidate_v3.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m43-relation-restored-source",
+    "exit_code": 0,
+    "expected_rejection": false,
+    "passed": true,
+    "stdout": "V3 verified: 248 source files, 1982 artifacts; historical candidates unchanged; approval pending, Provider C sealed.\n",
+    "stderr": ""
+  },
+  {
+    "check": "expected_source_tamper_rejection",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m43-relation-restored-source/scripts/candidate_v3.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m43-relation-restored-source",
+    "exit_code": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/semanic-m43-relation-restored-source/scripts/candidate_v3.py\", line 201, in <module>\n    verify()\n  File \"/tmp/semanic-m43-relation-restored-source/scripts/candidate_v3.py\", line 172, in verify\n    raise ValueError('V3 source changed: ' + path)\nValueError: V3 source changed: src/semantic_action/sequence_native.py\n"
+  },
+  {
+    "check": "restored_after_probe",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m43-relation-restored-source/scripts/candidate_v3.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m43-relation-restored-source",
+    "exit_code": 0,
+    "expected_rejection": false,
+    "passed": true,
+    "stdout": "V3 verified: 248 source files, 1982 artifacts; historical candidates unchanged; approval pending, Provider C sealed.\n",
+    "stderr": ""
+  }
+]

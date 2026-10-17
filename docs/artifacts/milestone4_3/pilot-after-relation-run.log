@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "approval": "pending",
+  "unseal_authorized": false,
+  "scope": "Visible development fixtures only; not independent held-out providers or confirmation",
+  "diagnostic_tasks": 10,
+  "normal_matrix_runs": 60,
+  "additional_positive_repetitions": 6,
+  "inflight_timeout_runs": 3,
+  "http_timeout_runs": 1,
+  "rejected_reset_attempts": 1,
+  "isolated_stall_runs": 1,
+  "failures": []
+}

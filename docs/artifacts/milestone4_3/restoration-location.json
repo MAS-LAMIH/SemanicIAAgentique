@@ -1,0 +1,14 @@
+{
+  "final_source_directory": "/tmp/semanic-m43-relation-restored-source",
+  "earlier_stages": {
+    "final_source_directory": "/tmp/semanic-m43-final-restored-source-9x66cr0_",
+    "previous_pre_format_restoration": {
+      "source_directory": "/tmp/semanic-m43-restored-source-tcw835cg",
+      "archive_path": "docs/artifacts/milestone4_3/candidate-source-v3.tar.gz",
+      "source_archive_used": "Exact bytes later bound by V3 manifest"
+    },
+    "archive_path": "docs/artifacts/milestone4_3/candidate-source-v3.tar.gz"
+  },
+  "final_source_commit": "2d26416",
+  "archive_path": "docs/artifacts/milestone4_3/candidate-source-v3.tar.gz"
+}

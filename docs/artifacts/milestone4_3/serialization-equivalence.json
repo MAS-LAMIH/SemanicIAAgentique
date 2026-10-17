@@ -1,0 +1,16 @@
+[
+  {
+    "path": "contracts/sequences/a.ttl",
+    "previous_sha256": "c397281f701ae82b4d000bbad41be992976958680daa2b25f1b7bb6bfa17b997",
+    "final_sha256": "723af254279b4bf267a6d4e646c14dcf34d1031a98439636afa8f03a043323b3",
+    "RDF_graph_unchanged": true,
+    "final_JSON_RDF_typed_parity": true
+  },
+  {
+    "path": "contracts/sequences/b.ttl",
+    "previous_sha256": "41d8331ae601e5ab01930dfe6f1d8eb23821df4100860bf4cd4795c6d6a2d624",
+    "final_sha256": "00e2c9233dbe035b9dde65831d4a67a582248d9918bbaea1a9fe0fc0bd0d3dcb",
+    "RDF_graph_unchanged": true,
+    "final_JSON_RDF_typed_parity": true
+  }
+]
