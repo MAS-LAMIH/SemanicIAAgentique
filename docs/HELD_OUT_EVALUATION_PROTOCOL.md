@@ -222,3 +222,29 @@ signed record identifying the manifest SHA-256, source commit/tree digest,
 approver and time, along with separate unsealing authorization. Do not insert a
 manifest's own digest into itself or label a Git candidate tag scientific approval.
 All candidate approvals and unsealing authorization remain pending/false.
+
+## Native observation extension boundary (pre-freeze review correction)
+
+Final review found that the initial native adjudicator only dispatched visible
+A/B fixture identities. Before freeze, NativeInterpretation was added as an
+explicit evaluator-owned decoder interface. NativeSnapshot plus a reviewed
+interpretation may be supplied by a future provider-local observation driver;
+unknown identities without an interpretation fail closed. The interpretation's
+provider identity and source reference are checked. Goal truth still uses the
+same unchanged oracle and raw-state preservation checks. capture(a/b) remains a
+visible-fixture convenience, not a discovery interface.
+
+The subject manual/registry must never select this observer. A trusted independent
+curator selects/reviews its provider-local implementation and provenance. Adding
+that implementation after authorized release must follow the approved addition-
+only boundary; no generic verifier or oracle change is needed. The public
+run_case/CLI remains intentionally A/B-only: a future provider-local driver calls
+the frozen Registry/LocalExecutor and NativeSnapshot/NativeInterpretation APIs,
+not by patching the visible diagnostic runner. No future provider was inspected
+or implemented to design or test this interface. A synthetic in-memory observer
+unit test exercises the extension and wrong-identity/unknown-reader rejection.
+
+The preliminary V2 manifest/archive and its 65-test source/restoration evidence
+are retained under artifacts/milestone4_1/preliminary-* for traceability. They
+are not the final V2 candidate. Final candidate tests and identity follow the
+interface correction; no old Milestone 4 evidence was rewritten.

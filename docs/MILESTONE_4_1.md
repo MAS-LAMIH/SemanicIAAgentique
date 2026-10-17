@@ -143,3 +143,41 @@ Local commit/tag creation is candidate versioning only; no push or unsealing is
 part of this task. The candidate is technically ready for investigator review
 subject to those final restoration/hash checks and the explicit methodological
 approval gates above.
+
+## Native observation extension boundary (pre-freeze review correction)
+
+Final review found that the initial native adjudicator only dispatched visible
+A/B fixture identities. Before freeze, NativeInterpretation was added as an
+explicit evaluator-owned decoder interface. NativeSnapshot plus a reviewed
+interpretation may be supplied by a future provider-local observation driver;
+unknown identities without an interpretation fail closed. The interpretation's
+provider identity and source reference are checked. Goal truth still uses the
+same unchanged oracle and raw-state preservation checks. capture(a/b) remains a
+visible-fixture convenience, not a discovery interface.
+
+The subject manual/registry must never select this observer. A trusted independent
+curator selects/reviews its provider-local implementation and provenance. Adding
+that implementation after authorized release must follow the approved addition-
+only boundary; no generic verifier or oracle change is needed. The public
+run_case/CLI remains intentionally A/B-only: a future provider-local driver calls
+the frozen Registry/LocalExecutor and NativeSnapshot/NativeInterpretation APIs,
+not by patching the visible diagnostic runner. No future provider was inspected
+or implemented to design or test this interface. A synthetic in-memory observer
+unit test exercises the extension and wrong-identity/unknown-reader rejection.
+
+The preliminary V2 manifest/archive and its 65-test source/restoration evidence
+are retained under artifacts/milestone4_1/preliminary-* for traceability. They
+are not the final V2 candidate. Final candidate tests and identity follow the
+interface correction; no old Milestone 4 evidence was rewritten.
+
+## Final candidate distinction
+
+The extension-aware suite has 66 test methods (the 120-run diagnostic matrix is
+one method with subtests). The final source/wheel/restored outcomes are selected
+explicitly in validation-results.json; preliminary 65-test evidence remains a
+separate preserved stage, not a substituted result. Source commit(s) and candidate
+metadata commits are kept distinct to avoid self-referential commit/digest loops.
+Condition A was additionally executed from a project-wheel-only environment with
+no RDFLib or jsonschema installed, confirming that its subject implementation
+requires no shared semantic packages; the all-condition comparison harness imports
+all stacks only for evaluation. These timings are not empirical cost comparisons.

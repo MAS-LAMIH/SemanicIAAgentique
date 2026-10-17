@@ -6,6 +6,7 @@ output map. This is separate implementation, not independent human authorship.
 from copy import deepcopy
 from dataclasses import asdict, dataclass
 from datetime import datetime, timedelta, timezone
+from typing import Callable
 from .model import Goal, Observation, now
 from .oracle import current, verify
 
@@ -18,6 +19,19 @@ class NativeSnapshot:
     writable: bool | None
     events: dict
     mutation_calls: int
+
+
+@dataclass(frozen=True)
+class NativeInterpretation:
+    """Evaluator-owned provider-local decoder, never obtained from a subject manual.
+
+    Future approved observation adapters can supply this interface without
+    changing adjudication/goal semantics. source_reference identifies the reviewed
+    observer artifact; it is provenance, not automatic proof of human approval.
+    """
+    provider: str
+    decode_event: Callable[[dict], dict]
+    source_reference: str
 
 
 @dataclass(frozen=True)
@@ -48,20 +62,28 @@ def _booking(item):
             'end_time':(epoch+timedelta(milliseconds=end)).isoformat(),'title':item['label']}
 
 
-def adjudicate(expectation,before,after,execution_started,runtime_verdict=None):
+def adjudicate(expectation,before,after,execution_started,runtime_verdict=None,interpretation=None):
     """Actual goal truth and independent evidence, separate from runtime verdict."""
     result={'achieved':False,'reasons':[],'runtime_discrepancy':False,
             'raw_before':asdict(before),'raw_after':asdict(after),
             'mutation_calls':after.mutation_calls-before.mutation_calls,'canonical_observation':None}
     goal=expectation.goal
-    if before.provider!=after.provider or before.provider not in {'a','b'}:
+    if before.provider!=after.provider:
         result['reasons'].append('Incompatible native snapshots')
         return result
     if not current({'observed_at':before.observed_at},goal.max_evidence_age_seconds):
         result['reasons'].append('Insufficient native baseline evidence')
         return result
     try:
-        interpret=_calendar if before.provider=='a' else _booking
+        if interpretation is None:
+            if before.provider not in {'a','b'}:
+                raise ValueError('No evaluator-owned native interpretation supplied')
+            interpret=_calendar if before.provider=='a' else _booking
+        else:
+            if interpretation.provider!=before.provider or not interpretation.source_reference or not callable(interpretation.decode_event):
+                raise ValueError('Invalid evaluator-owned native interpretation')
+            interpret=interpretation.decode_event
+            result['interpretation_source']=interpretation.source_reference
         prior={k:interpret(v) for k,v in before.events.items()}
         post={k:interpret(v) for k,v in after.events.items()}
         created=set(post)-set(prior)

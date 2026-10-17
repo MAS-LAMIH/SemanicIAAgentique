@@ -13,7 +13,7 @@ from semantic_action.evaluation import run_case
 from semantic_action.evaluation_tasks import proposed_tasks, task_sheet
 from semantic_action.event_ledger import Event, Ledger
 from semantic_action.model import Goal, now
-from semantic_action.native_verifier import NativeExpectation, adjudicate, capture
+from semantic_action.native_verifier import NativeExpectation, NativeInterpretation, NativeSnapshot, adjudicate, capture
 from semantic_action.provider_b import BookingScenario
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -101,6 +101,21 @@ class NativeVerifierTests(unittest.TestCase):
         goal=Goal('2030-01-07T09:00:00+00:00','2030-01-07T10:00:00+00:00','New')
         result=adjudicate(NativeExpectation(goal),before,after,before.observed_at)
         self.assertFalse(result['achieved'])
+
+    def test_evaluator_owned_extension_needs_no_core_truth_change(self):
+        # Synthetic in-memory observation, no additional API/provider implementation.
+        goal=Goal('2030-01-07T09:00:00+00:00','2030-01-07T10:00:00+00:00','Example')
+        stamp=now()
+        before=NativeSnapshot('observer-test-double',stamp,0,True,{},0)
+        event={'id':'new','start_time':goal.start_time,'end_time':goal.end_time,'title':goal.title}
+        after=NativeSnapshot('observer-test-double',now(),1,True,{'new':event},1)
+        rejected=adjudicate(NativeExpectation(goal),before,after,stamp)
+        self.assertFalse(rejected['achieved'])
+        observer=NativeInterpretation('observer-test-double',lambda item:dict(item),'synthetic unit-test observer')
+        accepted=adjudicate(NativeExpectation(goal),before,after,stamp,interpretation=observer)
+        self.assertTrue(accepted['achieved'])
+        wrong=replace(observer,provider='different-test-identity')
+        self.assertFalse(adjudicate(NativeExpectation(goal),before,after,stamp,interpretation=wrong)['achieved'])
 
     def test_native_observer_has_no_subject_mapping_dependencies(self):
         tree=ast.parse((ROOT/'src/semantic_action/native_verifier.py').read_text())
