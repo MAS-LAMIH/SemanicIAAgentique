@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "artifact_id": "https://example.org/calendar/v1#calendar",
+  "operation_id": "https://example.org/calendar/v1#createEvent",
+  "capability_id": "https://example.org/calendar/v1#EventCreation",
+  "inputs": ["start_time", "end_time", "title"],
+  "preconditions": ["https://example.org/sam/v1#PositiveInterval", "https://example.org/sam/v1#CalendarWritable"],
+  "declared_effects": ["https://example.org/sam/v1#NewMatchingEvent"],
+  "binding": {"method": "POST", "path": "/events"},
+  "observation": {"path": "/events/{id}", "max_evidence_age_seconds": 30}
+}

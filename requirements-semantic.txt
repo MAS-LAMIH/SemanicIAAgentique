@@ -1,0 +1,3 @@
+# Local semantic contract parsing and JSON Schema validation.
+rdflib==7.6.0
+jsonschema==4.26.0

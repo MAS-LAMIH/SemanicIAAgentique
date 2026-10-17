@@ -1,0 +1,7 @@
+{
+  "start_time": "2027-05-31T09:00:00+00:00",
+  "end_time": "2027-05-31T10:00:00+00:00",
+  "title": "Semantic interoperability meeting",
+  "forbid_other_changes": true,
+  "max_evidence_age_seconds": 30
+}
