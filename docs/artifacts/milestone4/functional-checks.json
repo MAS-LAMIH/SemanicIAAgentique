@@ -1,0 +1,132 @@
+[
+  {
+    "check": "typed_profile_parity",
+    "provider": "a",
+    "passed": true
+  },
+  {
+    "check": "typed_profile_parity",
+    "provider": "b",
+    "passed": true
+  },
+  {
+    "check": "functional_demo",
+    "format": "json",
+    "provider": "a",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "-m",
+      "semantic_action.reuse_demo",
+      "--format",
+      "json",
+      "--select",
+      "a",
+      "--output-dir",
+      "/tmp/semanic-m4-demo-j5c7c8kx"
+    ],
+    "exit_code": 0,
+    "goal_verified": true,
+    "elapsed_seconds": 0.7148564280000755,
+    "stdout": "https://example.org/provider-a#create_event eligible=True []\nhttps://example.org/provider-b#reserveAppointment eligible=True []\ngoal_verified=True\n",
+    "stderr": ""
+  },
+  {
+    "check": "functional_demo",
+    "format": "json",
+    "provider": "b",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "-m",
+      "semantic_action.reuse_demo",
+      "--format",
+      "json",
+      "--select",
+      "b",
+      "--output-dir",
+      "/tmp/semanic-m4-demo-80uwgt88"
+    ],
+    "exit_code": 0,
+    "goal_verified": true,
+    "elapsed_seconds": 1.2074255849997826,
+    "stdout": "https://example.org/provider-a#create_event eligible=True []\nhttps://example.org/provider-b#reserveAppointment eligible=True []\ngoal_verified=True\n",
+    "stderr": ""
+  },
+  {
+    "check": "functional_demo",
+    "format": "ttl",
+    "provider": "a",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "-m",
+      "semantic_action.reuse_demo",
+      "--format",
+      "ttl",
+      "--select",
+      "a",
+      "--output-dir",
+      "/tmp/semanic-m4-demo-0_058uov"
+    ],
+    "exit_code": 0,
+    "goal_verified": true,
+    "elapsed_seconds": 0.8457674410001346,
+    "stdout": "https://example.org/provider-a#create_event eligible=True []\nhttps://example.org/provider-b#reserveAppointment eligible=True []\ngoal_verified=True\n",
+    "stderr": ""
+  },
+  {
+    "check": "functional_demo",
+    "format": "ttl",
+    "provider": "b",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "-m",
+      "semantic_action.reuse_demo",
+      "--format",
+      "ttl",
+      "--select",
+      "b",
+      "--output-dir",
+      "/tmp/semanic-m4-demo-ao53rl7m"
+    ],
+    "exit_code": 0,
+    "goal_verified": true,
+    "elapsed_seconds": 1.212380562999897,
+    "stdout": "https://example.org/provider-a#create_event eligible=True []\nhttps://example.org/provider-b#reserveAppointment eligible=True []\ngoal_verified=True\n",
+    "stderr": ""
+  },
+  {
+    "check": "expected_negative_demo",
+    "scenario": "unknown",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "-m",
+      "semantic_action.reuse_demo",
+      "--permission",
+      "unknown",
+      "--output-dir",
+      "/tmp/semanic-m4-negative-p2_cbshj"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "elapsed_seconds": 1.206929043999935,
+    "stdout": "https://example.org/provider-a#create_event eligible=True []\nhttps://example.org/provider-b#reserveAppointment eligible=False ['Critical applicability is UNKNOWN']\ngoal_verified=False\n",
+    "stderr": ""
+  },
+  {
+    "check": "expected_negative_demo",
+    "scenario": "no_change",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "-m",
+      "semantic_action.reuse_demo",
+      "--mode",
+      "no_change",
+      "--output-dir",
+      "/tmp/semanic-m4-negative-a4hctz_c"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "elapsed_seconds": 1.2596712340000522,
+    "stdout": "https://example.org/provider-a#create_event eligible=True []\nhttps://example.org/provider-b#reserveAppointment eligible=True []\ngoal_verified=False\n",
+    "stderr": ""
+  }
+]

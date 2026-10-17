@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-10-17T13:45:29.437Z",
+  "ended_at": "2026-10-17T13:55:18.304Z",
+  "elapsed_wall_minutes": 9.81445,
+  "human_active_minutes": null,
+  "ai_assisted_active_supervision_minutes": null,
+  "tool_wait_minutes": null,
+  "model_wait_minutes": null,
+  "measurement_source": "instrumented_orchestration_wall_clock_interval",
+  "scope": "Milestone 4 audit setup, not held-out experimental integration",
+  "condition": null,
+  "provider_id": null,
+  "notes": "Includes concurrent AI/tool execution and test waits; not person-minutes. Excludes initial read/baseline launch before instrumentation and final serialization, verification and reporting after this timestamp. No historical costs reconstructed.",
+  "automated_test_runtime_minutes": 4.11775,
+  "automated_runtime_measurement_scope": "Unittest runner durations only; build/install and model generation runtime unmeasured",
+  "functional_demo_runtime_minutes": 0.10745050491666461,
+  "overlap_policy": "Runtime/wait/resource measures overlap wall-clock and must not be summed as human effort"
+}

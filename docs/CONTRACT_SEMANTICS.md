@@ -117,3 +117,46 @@ results are retained. Boundary tests explicitly verify freshness at the age limi
 past it, and for future evidence. Only parser-specific rejection diagnostics are
 categorized as contract_rejected when comparing invalid documents. No semantic
 failure is normalized into success or skipped.
+
+## Provider profile v2 (Milestone 3)
+
+V1 remains unchanged. V2 adds optional ProviderProfile to the typed model, with
+one JSON Schema (schemas/contract-v2.schema.json) shared by both loaders. JSON
+schema_version=2 corresponds to an RDF sam-v2:ProviderContract root with explicit
+schema_version 2. JSON top-level members map to same-named predicates in
+https://example.org/sam/v2#. Nested fixed records map to nodes; mapping dictionaries
+use entry nodes, literal key targets, and value records containing source and
+transform. Inputs/preconditions/effects are repeated set predicates. Artifact,
+operation and capability identifiers and precondition/effect values are IRIs;
+wire field names including response_id are literals. An absent duration bound
+is represented explicitly as JSON null / sam-v2:Null. Null is never truth of a
+critical precondition. Unknown RDF assertions, ambiguous cardinality, duplicate
+mapping targets, cycles, missing fields, unknown JSON members and non-finite
+bounds reject. RDF numeric values use integer or finite double literals; profile
+text uses plain strings. No remote schema, context or ontology inference is used.
+
+The three semantic IDs, exact input set, two preconditions, effect set, and
+observation age have the same values in both frontends. Constraints and binding
+records are also exactly equal, including every mapping target/source/transform,
+path, response ID field, snapshot key and evidence key. The profile supports
+EventCreation with NewMatchingEvent; ReservationRecorded exists as an explicitly
+non-equivalent negative-control effect and cannot satisfy an event goal.
+
+Known compatibility constraints are time_grid_seconds (0 disables grid),
+max_duration_seconds (null means no declared upper bound), and a boolean
+guarantee of preserves_other_events. These are not opaque uninterpreted text.
+Both times must align to a UTC epoch-based grid and duration must respect the
+bound. If a goal forbids changes to other events, a false preservation guarantee
+rejects selection/execution. A true guarantee is only a declaration: actual
+other events must still pass the independent oracle. All required canonical
+inputs must have transformable sources; the execution adapter has no permissive
+fallback or arbitrary expression evaluator. Epoch conversion uses integer
+arithmetic and rejects submillisecond loss. Stored timestamps are compared as
+instants by the unchanged oracle.
+
+Resolution compatibility is separate from state applicability. A compatible
+operation can still be FALSE or UNKNOWN after a current writability probe and
+must not execute. Execution obtains fresh evidence again. Resolution traces
+record these separately, with reasons. No operation-name equivalence is inferred.
+The registry's inputs are local manifests and explicitly configured origins;
+there is no open-world network crawling or implicit provider substitution.

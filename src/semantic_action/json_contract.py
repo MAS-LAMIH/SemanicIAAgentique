@@ -32,6 +32,9 @@ def _nonfinite(value):
 def load_json_contract(path: str | Path) -> Contract:
     data = json.loads(Path(path).read_text(encoding='utf-8'),
                       object_pairs_hook=_unique_object, parse_constant=_nonfinite)
+    if isinstance(data, dict) and type(data.get('schema_version')) is int and data['schema_version'] == 2:
+        from .provider_contract import load_provider_data
+        return load_provider_data(data)
     schema = json.loads(files('semantic_action').joinpath(
         'schemas/contract-v1.schema.json').read_text(encoding='utf-8'))
     try:

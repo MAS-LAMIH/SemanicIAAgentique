@@ -47,6 +47,12 @@ class Goal:
 
 
 @dataclass(frozen=True)
+class ProviderProfile:
+    constraints: dict
+    binding: dict
+
+
+@dataclass(frozen=True)
 class Contract:
     artifact_id: str
     operation_id: str
@@ -58,6 +64,7 @@ class Contract:
     path: str
     observation_path: str
     max_evidence_age_seconds: float
+    profile: ProviderProfile | None = None
 
 
 @dataclass(frozen=True)
@@ -79,6 +86,7 @@ class ApiResult:
     status: int | None
     body: dict
     error: str | None = None
+    raw_body: dict | None = None
 
     @property
     def success(self):

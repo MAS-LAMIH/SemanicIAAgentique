@@ -11,6 +11,7 @@ from .contract import SAM, load_contract
 from .model import (ApiResult, Condition, Goal, Observation, Truth, Validation,
                     instant, now)
 from .oracle import current, verify
+from .transform import adapted_request, validate_profile
 
 
 def validate_inputs(inputs: dict, required: tuple[str, ...]) -> Validation:
@@ -51,6 +52,8 @@ class Executor:
             not address.port or address.path or address.query or address.fragment or address.username):
             raise ValueError('Milestone 1 supports only a controlled 127.0.0.1 HTTP origin')
         self._base = base_url
+        self._profile = None
+        self._wire_evidence = []
         # Loopback requests need no external proxy. Redirects are not followed.
         from urllib.request import HTTPRedirectHandler
         class NoRedirect(HTTPRedirectHandler):
@@ -59,6 +62,17 @@ class Executor:
         self._http = build_opener(ProxyHandler({}), NoRedirect())
 
     def _request(self, method: str, path: str, values=None) -> ApiResult:
+        if self._profile is None:
+            return self._http_request(method,path,values)
+        def capture(wire_method, wire_path, wire_values=None):
+            raw = self._http_request(wire_method,wire_path,wire_values)
+            self._wire_evidence.append({'canonical_method':method,'canonical_path':path,
+                                       'wire_method':wire_method,'wire_path':wire_path,
+                                       'request_body':wire_values,'status':raw.status,'raw_body':raw.body})
+            return raw
+        return adapted_request(capture,self._profile,method,path,values)
+
+    def _http_request(self, method: str, path: str, values=None) -> ApiResult:
         data = None if values is None else json.dumps(values).encode()
         request = Request(self._base + path, data=data, method=method,
                           headers={'Content-Type': 'application/json'})
@@ -89,6 +103,22 @@ class Executor:
                            state.body if state.success else None,
                            event.error or state.error)
 
+    def assess(self, contract_path, inputs, goal=None):
+        """Read-only applicability probe. Execution always rechecks this evidence."""
+        contract = load_contract(contract_path)
+        self._profile = contract.profile
+        validation = validate_inputs(inputs,contract.inputs)
+        if validation.valid:
+            validation = validate_profile(contract,inputs,goal)
+        if not validation.valid:
+            return {'validation':asdict(validation),'preconditions':[], 'applicability':Truth.FALSE}
+        evidence = self._request('GET','/calendar')
+        conditions = evaluate_preconditions(contract,inputs,evidence.body if evidence.success else None)
+        verdicts = {c.verdict for c in conditions}
+        result = Truth.FALSE if Truth.FALSE in verdicts else Truth.UNKNOWN if Truth.UNKNOWN in verdicts else Truth.TRUE
+        return {'validation':asdict(validation),'preconditions':[asdict(c) for c in conditions],
+                'applicability':result}
+
     def run(self, contract_path: str | Path, goal: Goal, inputs: dict,
             trace_path: str | Path) -> dict:
         trace = {'schema_version': 1, 'run_id': str(uuid4()), 'timestamp': now(),
@@ -98,13 +128,19 @@ class Executor:
                  'execution_decision': 'BLOCK', 'api_call_success': False,
                  'api_response': None, 'declared_effects': [], 'observed_effects': None,
                  'observed_state_change': None, 'oracle_verdict': None, 'reason': None}
+        self._profile = None
+        self._wire_evidence = []
         try:
             trace['contract_sha256'] = hashlib.sha256(Path(contract_path).read_bytes()).hexdigest()
             contract = load_contract(contract_path)
+            self._profile = contract.profile
             trace.update(artifact_id=contract.artifact_id, operation_id=contract.operation_id,
                          declared_effects=list(contract.declared_effects))
             validation = validate_inputs(inputs, contract.inputs)
             trace['input_validation'] = asdict(validation)
+            if validation.valid:
+                validation = validate_profile(contract,inputs,goal)
+                trace['input_validation'] = asdict(validation)
             if not validation.valid:
                 trace.update(applicability=Truth.FALSE, execution_decision='REJECT',
                              reason='; '.join(validation.errors))
@@ -124,7 +160,7 @@ class Executor:
                 return trace
             trace['execution_decision'] = 'EXECUTE'
             trace['execution_started'] = now()
-            response = self._request(contract.method, contract.path, inputs)
+            response = self._request('POST', '/events', inputs)
             trace['api_response'] = asdict(response)
             trace['api_call_success'] = response.success
             # Observe even after error: failure status is not proof of no side effects.
@@ -150,6 +186,9 @@ class Executor:
             trace['reason'] = f'{type(error).__name__}: {error}'
             return trace
         finally:
+            if self._profile is not None:
+                trace['wire_evidence'] = self._wire_evidence
+                trace['provider_profile'] = asdict(self._profile)
             trace['completed_at'] = now()
             target = Path(trace_path)
             target.parent.mkdir(parents=True, exist_ok=True)

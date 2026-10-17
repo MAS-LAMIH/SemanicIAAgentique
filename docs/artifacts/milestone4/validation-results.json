@@ -1,0 +1,106 @@
+{
+  "commands": [
+    {
+      "id": "source_suite",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "exit_code": 0,
+      "tests_run": 50,
+      "passed": 50,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "expected_failures": 0,
+      "elapsed_seconds": 82.102,
+      "log_path": "docs/artifacts/milestone4/source-tests.log",
+      "timing_source": "unittest runner",
+      "outcome": "passed"
+    },
+    {
+      "id": "fresh_installed_wheel_suite",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "command": "/tmp/semanic-m4-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "exit_code": 0,
+      "tests_run": 50,
+      "passed": 50,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "expected_failures": 0,
+      "elapsed_seconds": 82.438,
+      "log_path": "docs/artifacts/milestone4/wheel-tests.log",
+      "timing_source": "unittest runner",
+      "outcome": "passed"
+    },
+    {
+      "id": "wheel_build",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv build --wheel --out-dir /tmp/semanic-m4-wheel",
+      "exit_code": 0,
+      "outcome": "passed"
+    },
+    {
+      "id": "wheel_environment_create",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m4-wheel-env --python python3",
+      "exit_code": 0,
+      "outcome": "passed"
+    },
+    {
+      "id": "wheel_dependencies_install",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m4-wheel-env/bin/python -r requirements-semantic.txt /tmp/semanic-m4-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "exit_code": 0,
+      "outcome": "passed"
+    },
+    {
+      "id": "prior_manifest_entry_verification",
+      "command": ".venv/bin/python scripts/freeze_manifest.py --verify docs/freeze-manifest.json",
+      "exit_code": 0,
+      "outcome": "passed"
+    },
+    {
+      "id": "restore_environment_create",
+      "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m4-restored-env --python python3",
+      "exit_code": 0,
+      "outcome": "passed"
+    },
+    {
+      "id": "pinned_restore_install",
+      "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m4-restored-env/bin/python -r docs/artifacts/milestone4/evaluation-requirements.txt /workspace/SemanicIAAgentique/docs/artifacts/milestone4/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "exit_code": 0,
+      "outcome": "passed"
+    },
+    {
+      "id": "archived_source_tests_with_pinned_wheel_environment",
+      "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+      "command": "/tmp/semanic-m4-restored-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "exit_code": 0,
+      "outcome": "passed",
+      "tests_run": 50,
+      "passed": 50,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "expected_failures": 0,
+      "elapsed_seconds": 82.525,
+      "log_path": "docs/artifacts/milestone4/restored-tests.log",
+      "timing_source": "unittest runner"
+    },
+    {
+      "id": "dependency_consistency",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip check --python /tmp/semanic-m4-wheel-env/bin/python",
+      "exit_code": 0,
+      "outcome": "passed",
+      "distributions_checked": 9
+    }
+  ],
+  "functional_checks": "docs/artifacts/milestone4/functional-checks.json",
+  "uv_version": "uv 0.12.23 (x86_64-unknown-linux-gnu)",
+  "wheel_metadata": "Wheel-Version: 1.0\nGenerator: hatchling 1.32.4\nRoot-Is-Purelib: true\nTag: py3-none-any\n",
+  "original_live_tutorial_tests": "not run; external-service demonstrations, outside deterministic evaluation scope",
+  "approval": "pending; these are validation results, not a scientific freeze",
+  "audit_entry_implementation_bytes_unchanged": true,
+  "restored_source_tree_sha256": "a4932f3a3c0afd810af79a77497c9446207537ee1c436666a409dce58db2c932",
+  "integrity_probe_evidence": "docs/artifacts/milestone4/integrity-checks.json"
+}
