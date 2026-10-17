@@ -128,7 +128,10 @@ The sequence adapter now preserves FALSE/REJECT versus UNKNOWN/BLOCK; the test c
 AST imports and keeps all compared summaries. The retained corrected intermediate
 18-method run passed in 54.403 s. Two additional operational tests brought final new
 coverage to 20. Failed logs and linked rework records remain; nothing was relabeled
-as historical success. A pre-edit guard also refused to modify code while baseline
+as historical success. A final whitespace check identified RDFLib-generated extra
+blank lines at Turtle EOF; they were normalized without changing the RDF graphs.
+The pre-format archive/restoration log are retained separately; final restoration
+uses the normalized archive. A pre-edit guard also refused to modify code while baseline
 was still running; the edit proceeded only after baseline success.
 
 From repository root, with Python 3.12.14 as validated (runtime supports Python 3.11+):

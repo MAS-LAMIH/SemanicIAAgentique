@@ -9,4 +9,3 @@
     seq:requires_after_end true ;
     seq:requires_predecessor true ;
     seq:version 1 .
-
