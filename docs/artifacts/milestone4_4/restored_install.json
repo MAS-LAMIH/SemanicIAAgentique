@@ -1,0 +1,25 @@
+{
+  "id": "restored_install",
+  "command": [
+    "uv",
+    "pip",
+    "install",
+    "--offline",
+    "--python",
+    "/tmp/m44-restored-env/bin/python",
+    "-r",
+    "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+    "."
+  ],
+  "cwd": "/tmp/m44-restored-source-c3zp_gz5",
+  "started_at": "2026-10-17T19:44:02.138689+00:00",
+  "ended_at": "2026-10-17T19:44:02.835188+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 0.6962147159974847,
+  "log_path": "docs/artifacts/milestone4_4/restored_install.log",
+  "tests_run": null,
+  "runner_seconds": null,
+  "nested_runtime_accounted_separately": false
+}

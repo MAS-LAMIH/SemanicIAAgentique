@@ -1,0 +1,23 @@
+{
+  "id": "wheel_tests",
+  "command": [
+    "/tmp/m44-wheel-env/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/semantic_action",
+    "-v"
+  ],
+  "cwd": "/tmp/m44-exact-candidate-si3959dm",
+  "started_at": "2026-10-17T19:43:57.542745+00:00",
+  "ended_at": "2026-10-17T19:47:27.360686+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 209.81765111099958,
+  "log_path": "docs/artifacts/milestone4_4/wheel_tests.log",
+  "tests_run": 87,
+  "runner_seconds": 209.282,
+  "nested_runtime_accounted_separately": false
+}

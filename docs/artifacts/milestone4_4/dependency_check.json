@@ -1,0 +1,21 @@
+{
+  "id": "dependency_check",
+  "command": [
+    "uv",
+    "pip",
+    "check",
+    "--python",
+    "/tmp/m44-wheel-env/bin/python"
+  ],
+  "cwd": "/tmp/m44-exact-candidate-si3959dm",
+  "started_at": "2026-10-17T19:48:40.916824+00:00",
+  "ended_at": "2026-10-17T19:48:40.929609+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 0.01260295699830749,
+  "log_path": "docs/artifacts/milestone4_4/dependency_check.log",
+  "tests_run": null,
+  "runner_seconds": null,
+  "nested_runtime_accounted_separately": false
+}

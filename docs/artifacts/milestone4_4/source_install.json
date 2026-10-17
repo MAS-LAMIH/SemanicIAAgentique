@@ -1,0 +1,26 @@
+{
+  "id": "source_install",
+  "command": [
+    "uv",
+    "pip",
+    "install",
+    "--offline",
+    "--python",
+    "/tmp/m44-source-env/bin/python",
+    "-r",
+    "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+    "-e",
+    "."
+  ],
+  "cwd": "/tmp/m44-exact-candidate-si3959dm",
+  "started_at": "2026-10-17T19:43:51.575167+00:00",
+  "ended_at": "2026-10-17T19:43:52.113951+00:00",
+  "exit_code": 0,
+  "expected_exit_code": 0,
+  "expected_status_matched": true,
+  "elapsed_seconds": 0.5384562800027197,
+  "log_path": "docs/artifacts/milestone4_4/source_install.log",
+  "tests_run": null,
+  "runner_seconds": null,
+  "nested_runtime_accounted_separately": false
+}

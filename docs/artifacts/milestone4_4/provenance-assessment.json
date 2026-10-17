@@ -1,0 +1,62 @@
+{
+  "candidate_commit": "752da7b8de85dd38c7eee30a101b786ea4743821",
+  "implementation_commit": "2d264169a5ec363b78d4bf78b3f40e82d7b59f85",
+  "candidate_tag": "752da7b8de85dd38c7eee30a101b786ea4743821",
+  "manifest_sha256": "53049d7921c31e7f3081606d5f2c6ca327eccf91fbab42152826655cbeeda352",
+  "source_tree_sha256": "bd14f5b4839ac7a49e1bfca01b1adff29fbde6f17497723fac7186cfb6137368",
+  "source_archive_sha256": "b659c852d78ff2bad99f6ec743b5b0bd0a16ad88bbcd20af5e8e6e091089c27d",
+  "wheel_sha256": "538f5acdb7366300f81166232f8877c31c9260e6dbb7dbb226150ea35621cc1b",
+  "matched_wheel_source_members": 28,
+  "final_87_stage_evidence": [
+    {
+      "suite_id": "source_full",
+      "original_reported_id": "source_after_relation",
+      "tests_run": 87,
+      "log_path": "docs/artifacts/milestone4_3/source-after-relation-tests.log",
+      "log_sha256": "2c4aaa75369afbe3f5755602756764d0a40ed2eb0e6be86cc3587e3e9035c438",
+      "curator_relation_extension_test_present": true
+    },
+    {
+      "suite_id": "wheel_full",
+      "original_reported_id": "wheel_after_relation",
+      "tests_run": 87,
+      "log_path": "docs/artifacts/milestone4_3/wheel-after-relation-tests.log",
+      "log_sha256": "d00dd4888c557fd8831092264355059ecf5d83703db34cf01a156714ccb1cd12",
+      "curator_relation_extension_test_present": true
+    },
+    {
+      "suite_id": "restored_full",
+      "original_reported_id": "restored_after_relation",
+      "tests_run": 87,
+      "log_path": "docs/artifacts/milestone4_3/restored-after-relation-tests.log",
+      "log_sha256": "7702b7f7f752cf1a454954999234d557b88ba416a74935133b42277027b843b4",
+      "curator_relation_extension_test_present": true
+    }
+  ],
+  "retained_final_pilot_command": {
+    "id": "retained_pilot_after_relation",
+    "command": [
+      ".venv/bin/python",
+      "scripts/run_pilot_v3.py",
+      "--output-dir",
+      "docs/artifacts/milestone4_3/pilot-final",
+      "--ledger",
+      "docs/artifacts/milestone4_3/events.jsonl"
+    ],
+    "cwd": "/workspace/SemanicIAAgentique",
+    "exit_code": 0,
+    "log_path": "docs/artifacts/milestone4_3/pilot-after-relation-run.log",
+    "elapsed_seconds": 62.339530110999476,
+    "tests_run": null,
+    "runner_seconds": null
+  },
+  "retained_final_pilot_path": "pilot-final/pilot-results.json",
+  "fresh_pilot_rows_compared": 71,
+  "normalized_pilot_differences": [],
+  "candidate_original_files_checked": 2231,
+  "candidate_original_files_changed": [],
+  "environment_versions_match_all_three": true,
+  "earlier_86_test_evidence": "Preserved, excluded from final stage selection",
+  "provenance_limit": "Hashes/stage metadata and fresh reproduction demonstrate consistency; original run traces do not embed independently signed per-process source attestation or independent human curation.",
+  "expanded_checkout_scope": "Expected coverage rejection from new review docs/evidence; exact candidate and restored copy pass without changing the manifest."
+}

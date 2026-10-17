@@ -1,0 +1,77 @@
+{
+  "candidates": [
+    {
+      "applicability": "UNKNOWN",
+      "artifact_id": "https://example.org/provider-b#appointments",
+      "assessment": {
+        "applicability": "UNKNOWN",
+        "preconditions": [
+          {
+            "evidence": {
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "start_time": "2030-01-07T10:00:00+00:00"
+            },
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "reason": "Validated interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {
+                "booking-0001": {
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "id": "booking-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "title": "M04 required appointment 1"
+                },
+                "existing": {
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              },
+              "observed_at": "2026-10-17T19:44:28.444427+00:00",
+              "revision": 1,
+              "writable": null
+            },
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "reason": "Writability not established",
+            "verdict": "UNKNOWN"
+          }
+        ],
+        "validation": {
+          "errors": [],
+          "valid": true
+        }
+      },
+      "compatible": true,
+      "contract_sha256": "93fda941c0e5cd90b1d1e3b600502c21392ec2d686f7687330a1026d45e99849",
+      "eligible": false,
+      "operation_id": "urn:sequence:reserveAfterBooking",
+      "reasons": [
+        "Critical applicability is UNKNOWN"
+      ],
+      "registration": 0
+    }
+  ],
+  "execution_started": false,
+  "formal_goal": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M04 required appointment 2"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M04 required appointment 2"
+  },
+  "rejection_reason": "Selected operation is not uniquely eligible",
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "82bae1ca-e1e9-4874-9335-0c910e30a8b9",
+  "schema_version": 1,
+  "selected_operation": "urn:sequence:reserveAfterBooking",
+  "timestamp": "2026-10-17T19:44:28.426494+00:00"
+}
