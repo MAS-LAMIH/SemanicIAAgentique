@@ -1,0 +1,187 @@
+{
+  "api_call_success": false,
+  "api_response": {
+    "body": {
+      "error": "Controlled execution failure"
+    },
+    "error": "HTTP 500",
+    "raw_body": {
+      "error": "Controlled execution failure"
+    },
+    "status": 500
+  },
+  "applicability": "TRUE",
+  "artifact_id": "https://example.org/provider-a#calendar",
+  "completed_at": "2026-10-17T20:37:34.300554+00:00",
+  "contract_sha256": "929ad248929766fe3765aaccfbf321c0769f7f0dd3016db34356b15e4dc0b84d",
+  "declared_effects": [
+    "https://example.org/sam/v1#NewMatchingEvent"
+  ],
+  "evidence": {
+    "baseline": {
+      "events": {},
+      "observed_at": "2026-10-17T20:37:34.298075+00:00",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "execution_decision": "EXECUTE",
+  "execution_started": "2026-10-17T20:37:34.298550+00:00",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 12"
+  },
+  "input_validation": {
+    "errors": [],
+    "valid": true
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 12"
+  },
+  "observed_effects": {
+    "error": "No returned event identifier",
+    "event": null,
+    "state": {
+      "events": {},
+      "observed_at": "2026-10-17T20:37:34.300051+00:00",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "observed_state_change": false,
+  "operation_id": "https://example.org/provider-a#create_event",
+  "oracle_verdict": {
+    "achieved": false,
+    "reasons": [
+      "No returned event identifier",
+      "Missing, stale, or pre-execution event evidence"
+    ]
+  },
+  "preconditions": [
+    {
+      "evidence": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "start_time": "2030-01-07T09:00:00+00:00"
+      },
+      "name": "https://example.org/sam/v1#PositiveInterval",
+      "reason": "Validated interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:34.298075+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "name": "https://example.org/sam/v1#CalendarWritable",
+      "reason": "Current observation establishes writable",
+      "verdict": "TRUE"
+    }
+  ],
+  "provider_profile": {
+    "binding": {
+      "baseline_path": "/calendar",
+      "create_path": "/events",
+      "event_field": "event",
+      "event_fields": {
+        "end_time": {
+          "source": "end_time",
+          "transform": "identity"
+        },
+        "id": {
+          "source": "id",
+          "transform": "identity"
+        },
+        "start_time": {
+          "source": "start_time",
+          "transform": "identity"
+        },
+        "title": {
+          "source": "title",
+          "transform": "identity"
+        }
+      },
+      "event_path": "/events/{id}",
+      "events_field": "events",
+      "request_fields": {
+        "end_time": {
+          "source": "end_time",
+          "transform": "identity"
+        },
+        "start_time": {
+          "source": "start_time",
+          "transform": "identity"
+        },
+        "title": {
+          "source": "title",
+          "transform": "identity"
+        }
+      },
+      "response_id": "id",
+      "revision_field": "revision",
+      "state_path": "/events",
+      "timestamp_field": "observed_at",
+      "writable_field": "writable"
+    },
+    "constraints": {
+      "max_duration_seconds": null,
+      "preserves_other_events": true,
+      "time_grid_seconds": 0
+    }
+  },
+  "reason": "No returned event identifier; Missing, stale, or pre-execution event evidence",
+  "run_id": "a8b3edd9-4d58-499f-9237-dd25f63408de",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:37:34.294278+00:00",
+  "wire_evidence": [
+    {
+      "canonical_method": "GET",
+      "canonical_path": "/calendar",
+      "raw_body": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:34.298075+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "request_body": null,
+      "status": 200,
+      "wire_method": "GET",
+      "wire_path": "/calendar"
+    },
+    {
+      "canonical_method": "POST",
+      "canonical_path": "/events",
+      "raw_body": {
+        "error": "Controlled execution failure"
+      },
+      "request_body": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "title": "Diagnostic task 12"
+      },
+      "status": 500,
+      "wire_method": "POST",
+      "wire_path": "/events"
+    },
+    {
+      "canonical_method": "GET",
+      "canonical_path": "/events",
+      "raw_body": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:34.300051+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "request_body": null,
+      "status": 200,
+      "wire_method": "GET",
+      "wire_path": "/events"
+    }
+  ]
+}

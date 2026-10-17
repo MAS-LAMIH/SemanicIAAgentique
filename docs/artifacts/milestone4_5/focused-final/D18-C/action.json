@@ -1,0 +1,229 @@
+{
+  "api_call_success": true,
+  "api_response": {
+    "body": {
+      "id": "event-0001"
+    },
+    "error": null,
+    "raw_body": {
+      "accepted": true,
+      "id": "event-0001"
+    },
+    "status": 201
+  },
+  "applicability": "TRUE",
+  "artifact_id": "https://example.org/provider-a#calendar",
+  "completed_at": "2026-10-17T20:38:16.191449+00:00",
+  "contract_sha256": "691df5e9964ac31796c34cd55917ba72822ce30baf4353be12f9004516dab22c",
+  "declared_effects": [
+    "https://example.org/sam/v1#NewMatchingEvent"
+  ],
+  "evidence": {
+    "baseline": {
+      "events": {},
+      "observed_at": "2026-10-17T20:38:16.187884+00:00",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "execution_decision": "EXECUTE",
+  "execution_started": "2026-10-17T20:38:16.188246+00:00",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 18"
+  },
+  "input_validation": {
+    "errors": [],
+    "valid": true
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 18"
+  },
+  "observed_effects": {
+    "error": "Contract observation evidence insufficient",
+    "event": {
+      "event": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "id": "event-0001",
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "title": "Diagnostic task 18"
+      },
+      "observed_at": null,
+      "revision": 1
+    },
+    "state": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 18"
+        }
+      },
+      "observed_at": null,
+      "revision": 1,
+      "writable": true
+    }
+  },
+  "observed_state_change": null,
+  "operation_id": "https://example.org/provider-a#create_event",
+  "oracle_verdict": {
+    "achieved": false,
+    "reasons": [
+      "Contract observation evidence insufficient",
+      "Missing, stale, or pre-execution event evidence",
+      "Missing, stale, or pre-execution state evidence"
+    ]
+  },
+  "preconditions": [
+    {
+      "evidence": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "start_time": "2030-01-07T09:00:00+00:00"
+      },
+      "name": "https://example.org/sam/v1#PositiveInterval",
+      "reason": "Validated interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:16.187884+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "name": "https://example.org/sam/v1#CalendarWritable",
+      "reason": "Current observation establishes writable",
+      "verdict": "TRUE"
+    }
+  ],
+  "provider_profile": {
+    "binding": {
+      "baseline_path": "/calendar",
+      "create_path": "/events",
+      "event_field": "event",
+      "event_fields": {
+        "end_time": {
+          "source": "end_time",
+          "transform": "identity"
+        },
+        "id": {
+          "source": "id",
+          "transform": "identity"
+        },
+        "start_time": {
+          "source": "start_time",
+          "transform": "identity"
+        },
+        "title": {
+          "source": "title",
+          "transform": "identity"
+        }
+      },
+      "event_path": "/events/{id}",
+      "events_field": "events",
+      "request_fields": {
+        "end_time": {
+          "source": "end_time",
+          "transform": "identity"
+        },
+        "start_time": {
+          "source": "start_time",
+          "transform": "identity"
+        },
+        "title": {
+          "source": "title",
+          "transform": "identity"
+        }
+      },
+      "response_id": "id",
+      "revision_field": "revision",
+      "state_path": "/events",
+      "timestamp_field": "observed_at",
+      "writable_field": "writable"
+    },
+    "constraints": {
+      "max_duration_seconds": null,
+      "preserves_other_events": true,
+      "time_grid_seconds": 0
+    }
+  },
+  "reason": "Contract observation evidence insufficient; Missing, stale, or pre-execution event evidence; Missing, stale, or pre-execution state evidence",
+  "run_id": "39eba4ff-4698-4e3a-8b24-b1fbeaab8184",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:38:16.184222+00:00",
+  "wire_evidence": [
+    {
+      "canonical_method": "GET",
+      "canonical_path": "/calendar",
+      "raw_body": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:16.187884+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "request_body": null,
+      "status": 200,
+      "wire_method": "GET",
+      "wire_path": "/calendar"
+    },
+    {
+      "canonical_method": "POST",
+      "canonical_path": "/events",
+      "raw_body": {
+        "accepted": true,
+        "id": "event-0001"
+      },
+      "request_body": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "title": "Diagnostic task 18"
+      },
+      "status": 201,
+      "wire_method": "POST",
+      "wire_path": "/events"
+    },
+    {
+      "canonical_method": "GET",
+      "canonical_path": "/events/event-0001",
+      "raw_body": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 18"
+        },
+        "revision": 1
+      },
+      "request_body": null,
+      "status": 200,
+      "wire_method": "GET",
+      "wire_path": "/events/event-0001"
+    },
+    {
+      "canonical_method": "GET",
+      "canonical_path": "/events",
+      "raw_body": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 18"
+          }
+        },
+        "revision": 1,
+        "writable": true
+      },
+      "request_body": null,
+      "status": 200,
+      "wire_method": "GET",
+      "wire_path": "/events"
+    }
+  ]
+}

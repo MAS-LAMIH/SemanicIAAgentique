@@ -1,0 +1,90 @@
+{
+  "classification": "UNVERIFIED_EXECUTION",
+  "condition": "C",
+  "diagnostic_passed": true,
+  "expected": {
+    "classification": "api_failure",
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "api_error",
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:38:25.860000+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:25.860000+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:25.860000+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:25.541660+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "process": {
+    "automated_runtime_seconds": 0.31470619500032626,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-17T20:38:25.859698+00:00",
+    "exit_code": 0,
+    "pid": 69747,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:38:25.544994+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "a",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {},
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:25.859967+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.20100230560638e-06
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": false,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D12"
+}

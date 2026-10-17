@@ -1,0 +1,106 @@
+[
+  {
+    "path": "/bookings",
+    "before": {
+      "provider": "b",
+      "observed_at": "2026-10-17T20:39:29.993087+00:00",
+      "revision": 0,
+      "writable": true,
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        }
+      },
+      "mutation_calls": 0
+    },
+    "after": {
+      "provider": "b",
+      "observed_at": "2026-10-17T20:39:29.993389+00:00",
+      "revision": 1,
+      "writable": true,
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "booking-0001": {
+          "label": "M06 required appointment 1",
+          "begins_ms": 1894006800000,
+          "finishes_ms": 1894010400000,
+          "booking_ref": "booking-0001"
+        }
+      },
+      "mutation_calls": 1
+    },
+    "http_status": 201
+  },
+  {
+    "path": "/booking-after/booking-0001",
+    "before": {
+      "provider": "b",
+      "observed_at": "2026-10-17T20:39:30.044530+00:00",
+      "revision": 1,
+      "writable": true,
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "booking-0001": {
+          "label": "M06 required appointment 1",
+          "begins_ms": 1894006800000,
+          "finishes_ms": 1894010400000,
+          "booking_ref": "booking-0001"
+        }
+      },
+      "mutation_calls": 1
+    },
+    "after": {
+      "provider": "b",
+      "observed_at": "2026-10-17T20:39:30.044870+00:00",
+      "revision": 2,
+      "writable": true,
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "booking-0001": {
+          "label": "M06 required appointment 1",
+          "begins_ms": 1894006800000,
+          "finishes_ms": 1894010400000,
+          "booking_ref": "booking-0001"
+        },
+        "booking-0002": {
+          "finishes_ms": 1894014000000,
+          "label": "M06 required appointment 2",
+          "begins_ms": 1894010400000,
+          "booking_ref": "booking-0002",
+          "previous_booking": "booking-0001"
+        },
+        "unexpected": {
+          "finishes_ms": 1894014000000,
+          "label": "M06 required appointment 2",
+          "begins_ms": 1894010400000,
+          "booking_ref": "unexpected",
+          "previous_booking": "booking-0001"
+        }
+      },
+      "mutation_calls": 2
+    },
+    "http_status": 201
+  }
+]

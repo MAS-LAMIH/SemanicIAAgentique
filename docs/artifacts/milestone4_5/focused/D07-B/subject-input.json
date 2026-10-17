@@ -1,0 +1,23 @@
+{
+  "baseline_root": "/workspace/SemanicIAAgentique",
+  "condition": "B",
+  "goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 07"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 07"
+  },
+  "manual": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/focused/D07-B/manual.json",
+  "operation_id": "https://example.org/provider-a#create_event",
+  "origin": "http://127.0.0.1:37869",
+  "output": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/focused/D07-B",
+  "provider": "a",
+  "startup_stall_seconds": 0,
+  "wire_fault": "stale_permission"
+}

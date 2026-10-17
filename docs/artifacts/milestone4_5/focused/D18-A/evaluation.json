@@ -1,0 +1,112 @@
+{
+  "condition": "A",
+  "diagnostic_passed": true,
+  "expected": {
+    "classification": "unverified_execution",
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "missing_observation",
+  "native_verdict": {
+    "achieved": true,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 18"
+        },
+        "observed_at": "2026-10-17T20:36:43.384081+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 18"
+          }
+        },
+        "observed_at": "2026-10-17T20:36:43.384081+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 18"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:36:43.384081+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:36:43.116498+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [],
+    "runtime_discrepancy": true
+  },
+  "process": {
+    "automated_runtime_seconds": 0.26654359299936914,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-17T20:36:43.383801+00:00",
+    "exit_code": 0,
+    "pid": 65972,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:36:43.117261+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "a",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 18"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:36:43.384040+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.2230011634528637e-06
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D18"
+}

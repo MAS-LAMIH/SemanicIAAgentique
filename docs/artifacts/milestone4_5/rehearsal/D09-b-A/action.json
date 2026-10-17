@@ -1,0 +1,31 @@
+{
+  "api_call_success": false,
+  "api_response": null,
+  "applicability": "UNKNOWN",
+  "compatible": false,
+  "completed_at": "2026-10-17T20:38:15.316318+00:00",
+  "condition": "A",
+  "description_sha256": "2332a76f218458b3afe283b32ee788b5db3da0fbac292d00c59fb0a187dd04d5",
+  "execution_decision": "REJECT",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "observed_state_change": null,
+  "operation_id": "reserveAppointment",
+  "oracle_verdict": null,
+  "preconditions": [],
+  "reason": "Unsupported local input encoding",
+  "run_id": "d3efc599-ecb7-443f-b143-0e5588e685d3",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:38:15.316207+00:00",
+  "wire_evidence": []
+}

@@ -1,0 +1,134 @@
+{
+  "action": {
+    "schema_version": 1,
+    "condition": "A",
+    "run_id": "128fd84f-ccc6-4c6f-bcf5-91a8fe7e16c7",
+    "timestamp": "2026-10-17T20:38:28.822866+00:00",
+    "operation_id": "create_event",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 13",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 13"
+    },
+    "description_sha256": "57b5a9bfe1a0657659d101f3b0d2710173923785b42e11941efcd3110fbe20fe",
+    "compatible": true,
+    "applicability": "TRUE",
+    "execution_decision": "EXECUTE",
+    "api_call_success": true,
+    "api_response": {
+      "status": 201,
+      "body": {
+        "accepted": true,
+        "id": "event-0001"
+      },
+      "error": null,
+      "raw_body": null
+    },
+    "oracle_verdict": {
+      "achieved": false,
+      "reasons": [
+        "HTTP 404",
+        "Missing, stale, or pre-execution event evidence"
+      ]
+    },
+    "observed_state_change": false,
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "name": "local_write_permission",
+        "verdict": "TRUE",
+        "evidence": {
+          "writable": true,
+          "events": {},
+          "revision": 0,
+          "observed_at": "2026-10-17T20:38:28.824485+00:00"
+        }
+      }
+    ],
+    "wire_evidence": [
+      {
+        "method": "GET",
+        "path": "/calendar",
+        "request_body": null,
+        "status": 200,
+        "body": {
+          "events": {},
+          "observed_at": "2026-10-17T20:38:28.824485+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "error": null,
+        "raw_body": null
+      },
+      {
+        "method": "POST",
+        "path": "/events",
+        "request_body": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 13"
+        },
+        "status": 201,
+        "body": {
+          "accepted": true,
+          "id": "event-0001"
+        },
+        "error": null,
+        "raw_body": null
+      },
+      {
+        "method": "GET",
+        "path": "/events/event-0001",
+        "request_body": null,
+        "status": 404,
+        "body": {
+          "event": null,
+          "observed_at": "2026-10-17T20:38:28.826966+00:00",
+          "revision": 0
+        },
+        "error": "HTTP 404",
+        "raw_body": null
+      },
+      {
+        "method": "GET",
+        "path": "/events",
+        "request_body": null,
+        "status": 200,
+        "body": {
+          "events": {},
+          "observed_at": "2026-10-17T20:38:28.827707+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "error": null,
+        "raw_body": null
+      }
+    ],
+    "reason": null,
+    "execution_started": "2026-10-17T20:38:28.824880+00:00",
+    "observed_effects": {
+      "event": null,
+      "state": {
+        "writable": true,
+        "events": {},
+        "revision": 0,
+        "observed_at": "2026-10-17T20:38:28.827707+00:00"
+      },
+      "error": "HTTP 404"
+    },
+    "completed_at": "2026-10-17T20:38:28.828022+00:00"
+  },
+  "resolution": null,
+  "compatible": true,
+  "applicability": "TRUE"
+}

@@ -1,0 +1,240 @@
+{
+  "case_passed": true,
+  "condition": "A",
+  "expected": {
+    "classification": "verified",
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": true,
+    "verified": true
+  },
+  "family": "duration_constraint",
+  "formal_goal": {
+    "end_time": "2030-01-07T12:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 19"
+  },
+  "native_verdict": {
+    "achieved": true,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T12:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 19"
+        },
+        "observed_at": "2026-10-17T20:37:55.491404+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 19"
+          }
+        },
+        "observed_at": "2026-10-17T20:37:55.491404+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T12:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 19"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:37:55.491404+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:55.479153+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [],
+    "runtime_discrepancy": false
+  },
+  "provider": "a",
+  "resolution": null,
+  "runtime_action": {
+    "api_call_success": true,
+    "api_response": {
+      "body": {
+        "accepted": true,
+        "id": "event-0001"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 201
+    },
+    "applicability": "TRUE",
+    "compatible": true,
+    "completed_at": "2026-10-17T20:37:55.491104+00:00",
+    "condition": "A",
+    "description_sha256": "9b41bbc91819872ca674815c5ce32141c27a21fa8b1a804b6392bbfb47db0b3a",
+    "execution_decision": "EXECUTE",
+    "execution_started": "2026-10-17T20:37:55.488469+00:00",
+    "formal_goal": {
+      "end_time": "2030-01-07T12:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 19"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T12:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 19"
+    },
+    "observed_effects": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T12:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 19"
+        },
+        "observed_at": "2026-10-17T20:37:55.489955+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 19"
+          }
+        },
+        "observed_at": "2026-10-17T20:37:55.490790+00:00",
+        "revision": 1,
+        "writable": true
+      }
+    },
+    "observed_state_change": true,
+    "operation_id": "create_event",
+    "oracle_verdict": {
+      "achieved": true,
+      "reasons": []
+    },
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "evidence": {
+          "events": {},
+          "observed_at": "2026-10-17T20:37:55.487966+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "name": "local_write_permission",
+        "verdict": "TRUE"
+      }
+    ],
+    "reason": null,
+    "run_id": "a8d90fa5-86f4-4b21-bbe9-f3c9efe91dfb",
+    "schema_version": 1,
+    "timestamp": "2026-10-17T20:37:55.486892+00:00",
+    "wire_evidence": [
+      {
+        "body": {
+          "events": {},
+          "observed_at": "2026-10-17T20:37:55.487966+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/calendar",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "accepted": true,
+          "id": "event-0001"
+        },
+        "error": null,
+        "method": "POST",
+        "path": "/events",
+        "raw_body": null,
+        "request_body": {
+          "end_time": "2030-01-07T12:00:00+00:00",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 19"
+        },
+        "status": 201
+      },
+      {
+        "body": {
+          "event": {
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 19"
+          },
+          "observed_at": "2026-10-17T20:37:55.489955+00:00",
+          "revision": 1
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/events/event-0001",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "events": {
+            "event-0001": {
+              "end_time": "2030-01-07T12:00:00+00:00",
+              "id": "event-0001",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "title": "Diagnostic task 19"
+            }
+          },
+          "observed_at": "2026-10-17T20:37:55.490790+00:00",
+          "revision": 1,
+          "writable": true
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/events",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      }
+    ]
+  },
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": true,
+    "unsafe_execution": false,
+    "verified": true
+  },
+  "task_id": "D19"
+}

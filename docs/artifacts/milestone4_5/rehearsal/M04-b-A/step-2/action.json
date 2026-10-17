@@ -1,0 +1,88 @@
+{
+  "api_call_success": false,
+  "api_response": null,
+  "applicability": "UNKNOWN",
+  "compatible": true,
+  "completed_at": "2026-10-17T20:39:20.286666+00:00",
+  "condition": "A",
+  "description_sha256": "e6bd68d080556d41a81361eb3a1859e99566fa8cdba480166a388447cfbde1f6",
+  "execution_decision": "BLOCK",
+  "formal_goal": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M04 required appointment 2"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M04 required appointment 2"
+  },
+  "observed_state_change": null,
+  "operation_id": "reserveAfterBooking",
+  "oracle_verdict": null,
+  "preconditions": [
+    {
+      "name": "positive_interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "M04 required appointment 1"
+          },
+          "existing": {
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "title": "Preserve me"
+          }
+        },
+        "observed_at": "2026-10-17T20:39:20.286268+00:00",
+        "revision": 1,
+        "writable": null
+      },
+      "name": "local_write_permission",
+      "verdict": "UNKNOWN"
+    }
+  ],
+  "reason": "Local write permission not established TRUE",
+  "run_id": "ed6d6538-3b13-404e-9a84-968ea9179342",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:39:20.285619+00:00",
+  "wire_evidence": [
+    {
+      "body": {
+        "can_book": null,
+        "items": {
+          "booking-0001": {
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "M04 required appointment 1"
+          },
+          "existing": {
+            "begins_ms": 1893920400000,
+            "booking_ref": "existing",
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          }
+        },
+        "sampled_at": "2026-10-17T20:39:20.286268+00:00",
+        "version": 1
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/availability",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    }
+  ]
+}

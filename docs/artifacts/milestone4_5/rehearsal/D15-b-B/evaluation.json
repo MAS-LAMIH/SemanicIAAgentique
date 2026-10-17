@@ -1,0 +1,117 @@
+{
+  "classification": "NATIVE_RUNTIME_DISAGREEMENT",
+  "condition": "B",
+  "diagnostic_passed": true,
+  "expected": {
+    "classification": "native_mapping_discrepancy",
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": true,
+    "verified": false
+  },
+  "family": "wrong_mapping",
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect booking label"
+        },
+        "observed_at": "2026-10-17T20:38:41.530735+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Incorrect booking label"
+          }
+        },
+        "observed_at": "2026-10-17T20:38:41.530735+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "booking-0001": {
+          "advertised_title": "Diagnostic task 15",
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Incorrect booking label"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:41.530735+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:41.214777+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Goal mismatch: title"
+    ],
+    "runtime_discrepancy": true
+  },
+  "process": {
+    "automated_runtime_seconds": 0.3149182179986383,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-17T20:38:41.530348+00:00",
+    "exit_code": 0,
+    "pid": 70344,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:38:41.215433+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "b",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {
+        "booking-0001": {
+          "advertised_title": "Diagnostic task 15",
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Incorrect booking label"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:41.530692+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.2969976523891091e-06
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": true,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D15"
+}

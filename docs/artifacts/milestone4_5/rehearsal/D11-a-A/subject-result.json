@@ -1,0 +1,36 @@
+{
+  "action": {
+    "schema_version": 1,
+    "condition": "A",
+    "run_id": "b3d1b6d5-de89-483d-bfeb-f2ae622644ae",
+    "timestamp": "2026-10-17T20:38:21.168170+00:00",
+    "operation_id": "create_event",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 11",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 11"
+    },
+    "description_sha256": "7f6dd7e2745be38385ace2b140fdcb58919df89d164129548e4ca6b915fa119c",
+    "compatible": false,
+    "applicability": "UNKNOWN",
+    "execution_decision": "REJECT",
+    "api_call_success": false,
+    "api_response": null,
+    "oracle_verdict": null,
+    "observed_state_change": null,
+    "preconditions": [],
+    "wire_evidence": [],
+    "reason": "Local effect cannot meet event goal",
+    "completed_at": "2026-10-17T20:38:21.168252+00:00"
+  },
+  "resolution": null,
+  "compatible": false,
+  "applicability": null
+}

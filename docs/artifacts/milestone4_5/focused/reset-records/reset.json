@@ -1,0 +1,33 @@
+{
+  "cache_entries": 0,
+  "checks": {
+    "events": false,
+    "fresh_trace_directory": true,
+    "mutation_calls": true,
+    "no_cached_resolutions": true,
+    "no_live_subject": true,
+    "no_pending_requests": true,
+    "revision": true,
+    "writable": true
+  },
+  "expected": {
+    "events": {},
+    "mutation_calls": 0,
+    "revision": 0,
+    "writable": true
+  },
+  "native_initial": {
+    "events": {
+      "unexpected": {
+        "sentinel": true
+      }
+    },
+    "mutation_calls": 0,
+    "observed_at": "2026-10-17T20:36:55.734637+00:00",
+    "provider": "a",
+    "revision": 0,
+    "writable": true
+  },
+  "passed": false,
+  "subject_alive": false
+}

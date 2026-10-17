@@ -1,0 +1,8 @@
+{
+  "attempt": "append note with activity implementation",
+  "correction": "use existing documentation activity, all unknown measurements remain null",
+  "error": "ValueError: Unknown activity or scope",
+  "exit_code": 1,
+  "historical_ledger_changed": false,
+  "reason": "implementation is not a frozen collector activity; no collector change made"
+}

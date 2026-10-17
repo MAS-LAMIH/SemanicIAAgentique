@@ -1,0 +1,21 @@
+{
+  "id": "regression-restored",
+  "command": [
+    "/tmp/m44-restored-env/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/semantic_action",
+    "-v"
+  ],
+  "cwd": "/tmp/m45-restored-ofr99itm",
+  "started_at": "2026-10-17T20:36:07.164702+00:00",
+  "ended_at": "2026-10-17T20:39:34.837992+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 207.67334009600017,
+  "tests_run": 87,
+  "runner_seconds": 207.228,
+  "log_path": "docs/artifacts/milestone4_5/regression-restored.log",
+  "nested_runtime": false
+}

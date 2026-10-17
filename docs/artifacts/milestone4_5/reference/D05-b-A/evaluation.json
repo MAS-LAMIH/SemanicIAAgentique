@@ -1,0 +1,131 @@
+{
+  "case_passed": true,
+  "condition": "A",
+  "expected": {
+    "classification": "safe_rejection",
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "false_precondition",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 05"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:37:13.292887+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:13.292887+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:13.292887+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": false
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:13.284041+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": false
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "provider": "b",
+  "resolution": null,
+  "runtime_action": {
+    "api_call_success": false,
+    "api_response": null,
+    "applicability": "FALSE",
+    "compatible": true,
+    "completed_at": "2026-10-17T20:37:13.292722+00:00",
+    "condition": "A",
+    "description_sha256": "cb6a8b21210e36ef008987a689d6ea6e0e587bd24986666521cbbd371dde75a0",
+    "execution_decision": "REJECT",
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 05"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 05"
+    },
+    "observed_state_change": null,
+    "operation_id": "reserveAppointment",
+    "oracle_verdict": null,
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "evidence": {
+          "events": {},
+          "observed_at": "2026-10-17T20:37:13.292297+00:00",
+          "revision": 0,
+          "writable": false
+        },
+        "name": "local_write_permission",
+        "verdict": "FALSE"
+      }
+    ],
+    "reason": "Local write permission not established TRUE",
+    "run_id": "cf7de5a8-161c-4938-836e-7ef066a0554a",
+    "schema_version": 1,
+    "timestamp": "2026-10-17T20:37:13.291452+00:00",
+    "wire_evidence": [
+      {
+        "body": {
+          "can_book": false,
+          "items": {},
+          "sampled_at": "2026-10-17T20:37:13.292297+00:00",
+          "version": 0
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/availability",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      }
+    ]
+  },
+  "summary": {
+    "api_call_success": false,
+    "applicability": "FALSE",
+    "compatible": true,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D05"
+}

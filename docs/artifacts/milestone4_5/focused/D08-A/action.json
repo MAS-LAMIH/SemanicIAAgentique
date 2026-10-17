@@ -1,0 +1,60 @@
+{
+  "api_call_success": false,
+  "api_response": null,
+  "applicability": "UNKNOWN",
+  "compatible": true,
+  "completed_at": "2026-10-17T20:36:29.249859+00:00",
+  "condition": "A",
+  "description_sha256": "57b5a9bfe1a0657659d101f3b0d2710173923785b42e11941efcd3110fbe20fe",
+  "execution_decision": "BLOCK",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 08"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 08"
+  },
+  "observed_state_change": null,
+  "operation_id": "create_event",
+  "oracle_verdict": null,
+  "preconditions": [
+    {
+      "name": "positive_interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {},
+        "observed_at": null,
+        "revision": 0,
+        "writable": true
+      },
+      "name": "local_write_permission",
+      "verdict": "UNKNOWN"
+    }
+  ],
+  "reason": "Local write permission not established TRUE",
+  "run_id": "b58803a0-872f-446b-ad08-538c11769211",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:36:29.247203+00:00",
+  "wire_evidence": [
+    {
+      "body": {
+        "events": {},
+        "revision": 0,
+        "writable": true
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/calendar",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    }
+  ]
+}

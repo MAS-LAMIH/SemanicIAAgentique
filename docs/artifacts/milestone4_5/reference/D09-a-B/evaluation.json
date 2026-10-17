@@ -1,0 +1,107 @@
+{
+  "case_passed": true,
+  "condition": "B",
+  "expected": {
+    "classification": "safe_rejection",
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "unsupported_transform",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:37:24.621018+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:24.621018+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:24.621018+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:24.619518+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "provider": "a",
+  "resolution": {
+    "candidates": [
+      {
+        "applicability": "UNKNOWN",
+        "artifact_id": "https://example.org/provider-a#calendar",
+        "assessment": null,
+        "compatible": false,
+        "contract_sha256": "d2c70c2fae96e9ffb30f751a66472d38c533778bb42a9b9e171e316dfa7475c0",
+        "eligible": false,
+        "operation_id": "https://example.org/provider-a#create_event",
+        "reasons": [
+          "Required input mapping is incomplete or has an unavailable source",
+          "Required input/observation cannot be transformed: unavailable_input"
+        ],
+        "registration": 0
+      }
+    ],
+    "execution_started": false,
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 09"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 09"
+    },
+    "rejection_reason": "Selected operation is not uniquely eligible",
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "run_id": "8f029351-3624-44f4-b626-9dc7a8a1a808",
+    "schema_version": 1,
+    "selected_operation": "https://example.org/provider-a#create_event",
+    "timestamp": "2026-10-17T20:37:24.619885+00:00"
+  },
+  "runtime_action": null,
+  "summary": {
+    "api_call_success": false,
+    "applicability": null,
+    "compatible": false,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D09"
+}

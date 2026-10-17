@@ -1,0 +1,114 @@
+{
+  "condition": "B",
+  "diagnostic_passed": true,
+  "expected": {
+    "classification": "unverified_execution",
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "wrong_properties",
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect stored title"
+        },
+        "observed_at": "2026-10-17T20:36:34.791523+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Incorrect stored title"
+          }
+        },
+        "observed_at": "2026-10-17T20:36:34.791523+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect stored title"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:36:34.791523+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:36:34.372626+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Goal mismatch: title"
+    ],
+    "runtime_discrepancy": false
+  },
+  "process": {
+    "automated_runtime_seconds": 0.41791056300280616,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-17T20:36:34.791218+00:00",
+    "exit_code": 0,
+    "pid": 65382,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:36:34.373310+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "a",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect stored title"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:36:34.791484+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.0889998520724475e-06
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D14"
+}

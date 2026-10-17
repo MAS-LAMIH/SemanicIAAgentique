@@ -1,0 +1,69 @@
+{
+  "action": null,
+  "resolution": {
+    "schema_version": 1,
+    "run_id": "57863353-79bc-495d-b817-14183d960016",
+    "timestamp": "2026-10-17T20:36:28.461680+00:00",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 07",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "inputs": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 07"
+    },
+    "candidates": [
+      {
+        "registration": 0,
+        "operation_id": "https://example.org/provider-a#create_event",
+        "artifact_id": "https://example.org/provider-a#calendar",
+        "compatible": true,
+        "eligible": false,
+        "applicability": "UNKNOWN",
+        "reasons": [
+          "Critical applicability is UNKNOWN"
+        ],
+        "assessment": {
+          "validation": {
+            "valid": true,
+            "errors": []
+          },
+          "preconditions": [
+            {
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "verdict": "TRUE",
+              "reason": "Validated interval",
+              "evidence": {
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00"
+              }
+            },
+            {
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "verdict": "UNKNOWN",
+              "reason": "Missing, stale, or insufficient writability evidence",
+              "evidence": {
+                "revision": 0,
+                "observed_at": "2000-01-01T00:00:00+00:00",
+                "writable": true,
+                "events": {}
+              }
+            }
+          ],
+          "applicability": "UNKNOWN"
+        },
+        "contract_sha256": "3871140a528c7efd84657b6bd18abf759e4b7e577009978e1c57c8cf81126be2"
+      }
+    ],
+    "selected_operation": "https://example.org/provider-a#create_event",
+    "execution_started": false,
+    "rejection_reason": "Selected operation is not uniquely eligible"
+  },
+  "compatible": true,
+  "applicability": "UNKNOWN"
+}

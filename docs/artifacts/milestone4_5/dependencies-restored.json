@@ -1,0 +1,19 @@
+{
+  "id": "dependencies-restored",
+  "command": [
+    "uv",
+    "pip",
+    "check",
+    "--python",
+    "/tmp/m44-restored-env/bin/python"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:39:48.180336+00:00",
+  "ended_at": "2026-10-17T20:39:48.203434+00:00",
+  "exit_code": 2,
+  "elapsed_seconds": 0.023093491003237432,
+  "tests_run": null,
+  "runner_seconds": null,
+  "log_path": "docs/artifacts/milestone4_5/dependencies-restored.log",
+  "nested_runtime": false
+}

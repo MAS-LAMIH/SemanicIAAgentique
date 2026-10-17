@@ -1,0 +1,154 @@
+{
+  "api_call_success": true,
+  "api_response": {
+    "body": {
+      "accepted": true,
+      "id": "event-0001"
+    },
+    "error": null,
+    "raw_body": null,
+    "status": 201
+  },
+  "applicability": "TRUE",
+  "compatible": true,
+  "completed_at": "2026-10-17T20:37:41.964930+00:00",
+  "condition": "A",
+  "description_sha256": "57b5a9bfe1a0657659d101f3b0d2710173923785b42e11941efcd3110fbe20fe",
+  "execution_decision": "EXECUTE",
+  "execution_started": "2026-10-17T20:37:41.961692+00:00",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 02"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 02"
+  },
+  "observed_effects": {
+    "error": null,
+    "event": {
+      "event": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "id": "event-0001",
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "title": "Diagnostic task 02"
+      },
+      "observed_at": "2026-10-17T20:37:41.963781+00:00",
+      "revision": 1
+    },
+    "state": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 02"
+        }
+      },
+      "observed_at": "2026-10-17T20:37:41.964627+00:00",
+      "revision": 1,
+      "writable": true
+    }
+  },
+  "observed_state_change": true,
+  "operation_id": "create_event",
+  "oracle_verdict": {
+    "achieved": true,
+    "reasons": []
+  },
+  "preconditions": [
+    {
+      "name": "positive_interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:41.961309+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "name": "local_write_permission",
+      "verdict": "TRUE"
+    }
+  ],
+  "reason": null,
+  "run_id": "8cde6bcb-f36e-4192-b237-f81a901078e3",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:37:41.959615+00:00",
+  "wire_evidence": [
+    {
+      "body": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:41.961309+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/calendar",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    },
+    {
+      "body": {
+        "accepted": true,
+        "id": "event-0001"
+      },
+      "error": null,
+      "method": "POST",
+      "path": "/events",
+      "raw_body": null,
+      "request_body": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "title": "Diagnostic task 02"
+      },
+      "status": 201
+    },
+    {
+      "body": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 02"
+        },
+        "observed_at": "2026-10-17T20:37:41.963781+00:00",
+        "revision": 1
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/events/event-0001",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    },
+    {
+      "body": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 02"
+          }
+        },
+        "observed_at": "2026-10-17T20:37:41.964627+00:00",
+        "revision": 1,
+        "writable": true
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/events",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    }
+  ]
+}

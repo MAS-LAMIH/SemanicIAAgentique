@@ -1,0 +1,168 @@
+{
+  "api_call_success": false,
+  "api_response": {
+    "body": {
+      "error": "Controlled booking failure"
+    },
+    "error": "HTTP 503",
+    "raw_body": null,
+    "status": 503
+  },
+  "applicability": "TRUE",
+  "compatible": true,
+  "completed_at": "2026-10-17T20:39:39.834049+00:00",
+  "condition": "A",
+  "description_sha256": "e6bd68d080556d41a81361eb3a1859e99566fa8cdba480166a388447cfbde1f6",
+  "execution_decision": "EXECUTE",
+  "execution_started": "2026-10-17T20:39:39.829728+00:00",
+  "formal_goal": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M08 required appointment 2"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M08 required appointment 2"
+  },
+  "observed_effects": {
+    "error": "No valid returned identifier",
+    "event": null,
+    "state": {
+      "events": {
+        "booking-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "M08 required appointment 1"
+        },
+        "existing": {
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "observed_at": "2026-10-17T20:39:39.833668+00:00",
+      "revision": 1,
+      "writable": true
+    }
+  },
+  "observed_state_change": false,
+  "operation_id": "reserveAfterBooking",
+  "oracle_verdict": {
+    "achieved": false,
+    "reasons": [
+      "No valid returned identifier",
+      "Missing, stale, or pre-execution event evidence"
+    ]
+  },
+  "preconditions": [
+    {
+      "name": "positive_interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "M08 required appointment 1"
+          },
+          "existing": {
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "title": "Preserve me"
+          }
+        },
+        "observed_at": "2026-10-17T20:39:39.828779+00:00",
+        "revision": 1,
+        "writable": true
+      },
+      "name": "local_write_permission",
+      "verdict": "TRUE"
+    }
+  ],
+  "reason": null,
+  "run_id": "35547a94-7a24-442f-8e26-de20ec082509",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:39:39.826468+00:00",
+  "wire_evidence": [
+    {
+      "body": {
+        "can_book": true,
+        "items": {
+          "booking-0001": {
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "M08 required appointment 1"
+          },
+          "existing": {
+            "begins_ms": 1893920400000,
+            "booking_ref": "existing",
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          }
+        },
+        "sampled_at": "2026-10-17T20:39:39.828779+00:00",
+        "version": 1
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/availability",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    },
+    {
+      "body": {
+        "error": "Controlled booking failure"
+      },
+      "error": "HTTP 503",
+      "method": "POST",
+      "path": "/booking-after/booking-0001",
+      "raw_body": null,
+      "request_body": {
+        "begins_ms": 1894010400000,
+        "finishes_ms": 1894014000000,
+        "label": "M08 required appointment 2"
+      },
+      "status": 503
+    },
+    {
+      "body": {
+        "can_book": true,
+        "items": {
+          "booking-0001": {
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "M08 required appointment 1"
+          },
+          "existing": {
+            "begins_ms": 1893920400000,
+            "booking_ref": "existing",
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          }
+        },
+        "sampled_at": "2026-10-17T20:39:39.833668+00:00",
+        "version": 1
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/bookings",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    }
+  ]
+}

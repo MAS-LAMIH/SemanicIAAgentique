@@ -1,0 +1,42 @@
+{
+  "action": null,
+  "resolution": {
+    "schema_version": 1,
+    "run_id": "f445be38-289c-461f-851a-95eba0eb6d70",
+    "timestamp": "2026-10-17T20:38:23.742088+00:00",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 11",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "inputs": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 11"
+    },
+    "candidates": [
+      {
+        "registration": 0,
+        "operation_id": "https://example.org/provider-b#reserveAppointment",
+        "artifact_id": "https://example.org/provider-b#appointments",
+        "compatible": false,
+        "eligible": false,
+        "applicability": "UNKNOWN",
+        "reasons": [
+          "Modeled effects do not establish required goal effect",
+          "Modeled effects cannot establish event-creation goal"
+        ],
+        "assessment": null,
+        "contract_sha256": "73de99a014ba0a4a76ad59165855464907867535d7141a0f3ebe5748c5a723ff"
+      }
+    ],
+    "selected_operation": "https://example.org/provider-b#reserveAppointment",
+    "execution_started": false,
+    "rejection_reason": "Selected operation is not uniquely eligible"
+  },
+  "compatible": false,
+  "applicability": null
+}

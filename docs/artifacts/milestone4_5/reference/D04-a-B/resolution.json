@@ -1,0 +1,37 @@
+{
+  "candidates": [
+    {
+      "applicability": "UNKNOWN",
+      "artifact_id": "https://example.org/provider-a#calendar",
+      "assessment": null,
+      "compatible": false,
+      "contract_sha256": "26c0f23680e089ca1fe3510d72b51a7320d20e1214dacd5724c4ca63e3d2c71d",
+      "eligible": false,
+      "operation_id": "https://example.org/provider-a#create_event",
+      "reasons": [
+        "Modeled effects do not establish required goal effect",
+        "Modeled effects cannot establish event-creation goal"
+      ],
+      "registration": 0
+    }
+  ],
+  "execution_started": false,
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 04"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 04"
+  },
+  "rejection_reason": "Selected operation is not uniquely eligible",
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "70bc4701-84fb-45dc-90f8-8ea0bbefdfd4",
+  "schema_version": 1,
+  "selected_operation": "https://example.org/provider-a#create_event",
+  "timestamp": "2026-10-17T20:37:09.215429+00:00"
+}

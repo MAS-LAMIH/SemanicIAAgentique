@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "artifact_id": "https://example.org/provider-a#calendar",
+  "operation_id": "urn:sequence:create_followup",
+  "capability_id": "https://example.org/sam/v1#EventCreation",
+  "inputs": [
+    "end_time",
+    "start_time",
+    "title"
+  ],
+  "preconditions": [
+    "https://example.org/sam/v1#CalendarWritable",
+    "https://example.org/sam/v1#PositiveInterval"
+  ],
+  "declared_effects": [
+    "https://example.org/sam/v1#NewMatchingEvent"
+  ],
+  "constraints": {
+    "time_grid_seconds": 0,
+    "max_duration_seconds": null,
+    "preserves_other_events": true
+  },
+  "binding": {
+    "create_path": "/followups/event-0001",
+    "baseline_path": "/calendar",
+    "state_path": "/events",
+    "event_path": "/events/{id}",
+    "request_fields": {
+      "start_time": {
+        "source": "start_time",
+        "transform": "identity"
+      },
+      "end_time": {
+        "source": "end_time",
+        "transform": "identity"
+      },
+      "title": {
+        "source": "title",
+        "transform": "identity"
+      }
+    },
+    "event_fields": {
+      "id": {
+        "source": "id",
+        "transform": "identity"
+      },
+      "start_time": {
+        "source": "start_time",
+        "transform": "identity"
+      },
+      "end_time": {
+        "source": "end_time",
+        "transform": "identity"
+      },
+      "title": {
+        "source": "title",
+        "transform": "identity"
+      }
+    },
+    "response_id": "id",
+    "writable_field": "writable",
+    "events_field": "events",
+    "revision_field": "revision",
+    "timestamp_field": "observed_at",
+    "event_field": "event"
+  },
+  "observation": {
+    "max_evidence_age_seconds": 30.0
+  }
+}

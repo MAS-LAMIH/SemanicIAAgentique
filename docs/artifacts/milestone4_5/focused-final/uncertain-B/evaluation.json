@@ -1,0 +1,91 @@
+{
+  "classification": "UNCERTAIN_LATE_EFFECT",
+  "condition": "B",
+  "diagnostic_passed": false,
+  "expected": {
+    "classification": "verified",
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": true,
+    "verified": true
+  },
+  "family": "valid_match",
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:38:43.830983+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:43.830983+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:43.830983+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:41.563888+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "process": {
+    "automated_runtime_seconds": 0.7556037180002022,
+    "automatic_retries": 0,
+    "budget_seconds": 0.75,
+    "ended_at": "2026-10-17T20:38:42.320222+00:00",
+    "exit_code": -15,
+    "pid": 70352,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:38:41.564624+00:00",
+    "status": "TIMEOUT",
+    "uncertainty": "In-flight remote effects unknown until independent observation"
+  },
+  "provider": "a",
+  "recovery": {
+    "pending_at_stop": 1,
+    "settled": false,
+    "snapshot": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:43.830926+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "state_uncertain": true,
+    "wait_seconds": 1.5084533090011973
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": false,
+    "applicability": null,
+    "compatible": null,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D01"
+}

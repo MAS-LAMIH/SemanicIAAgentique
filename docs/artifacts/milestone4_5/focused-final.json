@@ -1,0 +1,23 @@
+{
+  "id": "focused-final",
+  "command": [
+    "env",
+    "PREFLIGHT_FOCUSED_OUTPUT=/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/focused-final",
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "preflight/tests",
+    "-v"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:37:48.073943+00:00",
+  "ended_at": "2026-10-17T20:38:53.317598+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 65.24366187200212,
+  "tests_run": 5,
+  "runner_seconds": 65.005,
+  "log_path": "docs/artifacts/milestone4_5/focused-final.log",
+  "nested_runtime": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "dependencies-source",
+  "command": [
+    "uv",
+    "pip",
+    "check",
+    "--python",
+    "/tmp/m44-source-env/bin/python"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:39:47.896808+00:00",
+  "ended_at": "2026-10-17T20:39:47.916401+00:00",
+  "exit_code": 2,
+  "elapsed_seconds": 0.019594925001001684,
+  "tests_run": null,
+  "runner_seconds": null,
+  "log_path": "docs/artifacts/milestone4_5/dependencies-source.log",
+  "nested_runtime": false
+}

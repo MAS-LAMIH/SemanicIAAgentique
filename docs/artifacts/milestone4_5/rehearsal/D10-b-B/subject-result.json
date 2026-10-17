@@ -1,0 +1,41 @@
+{
+  "action": null,
+  "resolution": {
+    "schema_version": 1,
+    "run_id": "26961ee8-0877-4dee-969c-a89185c492bc",
+    "timestamp": "2026-10-17T20:38:20.115536+00:00",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00.000001+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 10",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "inputs": {
+      "start_time": "2030-01-07T09:00:00.000001+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 10"
+    },
+    "candidates": [
+      {
+        "registration": 0,
+        "operation_id": "https://example.org/provider-b#reserveAppointment",
+        "artifact_id": "https://example.org/provider-b#appointments",
+        "compatible": false,
+        "eligible": false,
+        "applicability": "UNKNOWN",
+        "reasons": [
+          "Transformation would lose submillisecond precision"
+        ],
+        "assessment": null,
+        "contract_sha256": "c3f9e44863ca6930a32b72ec1112e126c4ad7c170984be2a87c9b8079687eb74"
+      }
+    ],
+    "selected_operation": "https://example.org/provider-b#reserveAppointment",
+    "execution_started": false,
+    "rejection_reason": "Selected operation is not uniquely eligible"
+  },
+  "compatible": false,
+  "applicability": null
+}

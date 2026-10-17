@@ -1,0 +1,21 @@
+{
+  "id": "dependencies-wheel-retry",
+  "command": [
+    "env",
+    "UV_CACHE_DIR=/workspace/.cache/uv",
+    "uv",
+    "pip",
+    "check",
+    "--python",
+    "/tmp/m44-wheel-env/bin/python"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:39:54.006805+00:00",
+  "ended_at": "2026-10-17T20:39:54.022933+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.016128184000990586,
+  "tests_run": null,
+  "runner_seconds": null,
+  "log_path": "docs/artifacts/milestone4_5/dependencies-wheel-retry.log",
+  "nested_runtime": false
+}

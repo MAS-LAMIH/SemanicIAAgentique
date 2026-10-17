@@ -1,0 +1,407 @@
+{
+  "profile_version": 1,
+  "started_at": "2026-10-17T20:39:10.756681+00:00",
+  "status": "REJECTED",
+  "formal_goals": [
+    {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "M02 required appointment 1",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    {
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "title": "M02 required appointment 2",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    }
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "started_at": "2026-10-17T20:39:10.758317+00:00",
+      "predecessor_id": null,
+      "dependency_verdict": null,
+      "dependency_evidence": null,
+      "action": {
+        "schema_version": 1,
+        "run_id": "41c9dcf1-40db-4445-acbb-8491794ac005",
+        "timestamp": "2026-10-17T20:39:10.791920+00:00",
+        "artifact_id": "https://example.org/provider-a#calendar",
+        "operation_id": "https://example.org/provider-a#create_event",
+        "formal_goal": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "title": "M02 required appointment 1",
+          "forbid_other_changes": true,
+          "max_evidence_age_seconds": 30.0
+        },
+        "inputs": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "title": "M02 required appointment 1"
+        },
+        "contract_sha256": "d97e17d87bc4f50907137c832e855a158e29a31aa4cdc2abef1a78b946b758ba",
+        "preconditions": [
+          {
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "verdict": "TRUE",
+            "reason": "Validated interval",
+            "evidence": {
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00"
+            }
+          },
+          {
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "verdict": "TRUE",
+            "reason": "Current observation establishes writable",
+            "evidence": {
+              "revision": 0,
+              "observed_at": "2026-10-17T20:39:10.797682+00:00",
+              "writable": true,
+              "events": {
+                "existing": {
+                  "id": "existing",
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              }
+            }
+          }
+        ],
+        "evidence": {
+          "baseline": {
+            "revision": 0,
+            "observed_at": "2026-10-17T20:39:10.797682+00:00",
+            "writable": true,
+            "events": {
+              "existing": {
+                "id": "existing",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "title": "Preserve me"
+              }
+            }
+          }
+        },
+        "applicability": "TRUE",
+        "execution_decision": "EXECUTE",
+        "api_call_success": true,
+        "api_response": {
+          "status": 201,
+          "body": {
+            "id": "event-0001"
+          },
+          "error": null,
+          "raw_body": {
+            "accepted": true,
+            "id": "event-0001"
+          }
+        },
+        "declared_effects": [
+          "https://example.org/sam/v1#NewMatchingEvent"
+        ],
+        "observed_effects": {
+          "event": {
+            "revision": 1,
+            "observed_at": "2026-10-17T20:39:10.800060+00:00",
+            "event": {
+              "id": "event-0001",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "title": "M02 required appointment 1"
+            }
+          },
+          "state": {
+            "revision": 1,
+            "observed_at": "2026-10-17T20:39:10.800759+00:00",
+            "writable": false,
+            "events": {
+              "event-0001": {
+                "id": "event-0001",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "title": "M02 required appointment 1"
+              },
+              "existing": {
+                "id": "existing",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "title": "Preserve me"
+              }
+            }
+          },
+          "error": null
+        },
+        "observed_state_change": true,
+        "oracle_verdict": {
+          "achieved": true,
+          "reasons": []
+        },
+        "reason": null,
+        "input_validation": {
+          "valid": true,
+          "errors": []
+        },
+        "execution_started": "2026-10-17T20:39:10.798073+00:00",
+        "wire_evidence": [
+          {
+            "canonical_method": "GET",
+            "canonical_path": "/calendar",
+            "wire_method": "GET",
+            "wire_path": "/calendar",
+            "request_body": null,
+            "status": 200,
+            "raw_body": {
+              "events": {
+                "existing": {
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "id": "existing",
+                  "metadata": "sentinel",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              },
+              "observed_at": "2026-10-17T20:39:10.797682+00:00",
+              "revision": 0,
+              "writable": true
+            }
+          },
+          {
+            "canonical_method": "POST",
+            "canonical_path": "/events",
+            "wire_method": "POST",
+            "wire_path": "/events",
+            "request_body": {
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "title": "M02 required appointment 1"
+            },
+            "status": 201,
+            "raw_body": {
+              "accepted": true,
+              "id": "event-0001"
+            }
+          },
+          {
+            "canonical_method": "GET",
+            "canonical_path": "/events/event-0001",
+            "wire_method": "GET",
+            "wire_path": "/events/event-0001",
+            "request_body": null,
+            "status": 200,
+            "raw_body": {
+              "event": {
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "id": "event-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "title": "M02 required appointment 1"
+              },
+              "observed_at": "2026-10-17T20:39:10.800060+00:00",
+              "revision": 1
+            }
+          },
+          {
+            "canonical_method": "GET",
+            "canonical_path": "/events",
+            "wire_method": "GET",
+            "wire_path": "/events",
+            "request_body": null,
+            "status": 200,
+            "raw_body": {
+              "events": {
+                "event-0001": {
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "id": "event-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "title": "M02 required appointment 1"
+                },
+                "existing": {
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "id": "existing",
+                  "metadata": "sentinel",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              },
+              "observed_at": "2026-10-17T20:39:10.800759+00:00",
+              "revision": 1,
+              "writable": false
+            }
+          }
+        ],
+        "provider_profile": {
+          "constraints": {
+            "time_grid_seconds": 0,
+            "max_duration_seconds": null,
+            "preserves_other_events": true
+          },
+          "binding": {
+            "create_path": "/events",
+            "baseline_path": "/calendar",
+            "state_path": "/events",
+            "event_path": "/events/{id}",
+            "request_fields": {
+              "end_time": {
+                "source": "end_time",
+                "transform": "identity"
+              },
+              "start_time": {
+                "source": "start_time",
+                "transform": "identity"
+              },
+              "title": {
+                "source": "title",
+                "transform": "identity"
+              }
+            },
+            "event_fields": {
+              "id": {
+                "source": "id",
+                "transform": "identity"
+              },
+              "end_time": {
+                "source": "end_time",
+                "transform": "identity"
+              },
+              "start_time": {
+                "source": "start_time",
+                "transform": "identity"
+              },
+              "title": {
+                "source": "title",
+                "transform": "identity"
+              }
+            },
+            "response_id": "id",
+            "writable_field": "writable",
+            "events_field": "events",
+            "revision_field": "revision",
+            "timestamp_field": "observed_at",
+            "event_field": "event"
+          }
+        },
+        "completed_at": "2026-10-17T20:39:10.801065+00:00"
+      },
+      "completed_at": "2026-10-17T20:39:10.801672+00:00"
+    },
+    {
+      "index": 1,
+      "started_at": "2026-10-17T20:39:10.803175+00:00",
+      "predecessor_id": "event-0001",
+      "dependency_verdict": "TRUE",
+      "dependency_evidence": {
+        "revision": 1,
+        "observed_at": "2026-10-17T20:39:10.810719+00:00",
+        "writable": false,
+        "events": {
+          "event-0001": {
+            "title": "M02 required appointment 1",
+            "id": "event-0001",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "start_time": "2030-01-07T09:00:00+00:00"
+          },
+          "existing": {
+            "title": "Preserve me",
+            "id": "existing",
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "start_time": "2030-01-06T09:00:00+00:00"
+          }
+        }
+      },
+      "action": {
+        "execution_decision": "REJECT",
+        "applicability": "FALSE",
+        "api_call_success": false,
+        "oracle_verdict": null,
+        "resolution": {
+          "schema_version": 1,
+          "run_id": "834fb0bb-a34f-401b-9bec-f11f28eb56d0",
+          "timestamp": "2026-10-17T20:39:10.817692+00:00",
+          "formal_goal": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M02 required appointment 2",
+            "forbid_other_changes": true,
+            "max_evidence_age_seconds": 30.0
+          },
+          "required_capability": "https://example.org/sam/v1#EventCreation",
+          "inputs": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M02 required appointment 2"
+          },
+          "candidates": [
+            {
+              "registration": 0,
+              "operation_id": "urn:sequence:create_followup",
+              "artifact_id": "https://example.org/provider-a#calendar",
+              "compatible": true,
+              "eligible": false,
+              "applicability": "FALSE",
+              "reasons": [
+                "Critical applicability is FALSE"
+              ],
+              "assessment": {
+                "validation": {
+                  "valid": true,
+                  "errors": []
+                },
+                "preconditions": [
+                  {
+                    "name": "https://example.org/sam/v1#PositiveInterval",
+                    "verdict": "TRUE",
+                    "reason": "Validated interval",
+                    "evidence": {
+                      "start_time": "2030-01-07T10:00:00+00:00",
+                      "end_time": "2030-01-07T11:00:00+00:00"
+                    }
+                  },
+                  {
+                    "name": "https://example.org/sam/v1#CalendarWritable",
+                    "verdict": "FALSE",
+                    "reason": "Current observation establishes not writable",
+                    "evidence": {
+                      "revision": 1,
+                      "observed_at": "2026-10-17T20:39:10.971490+00:00",
+                      "writable": false,
+                      "events": {
+                        "event-0001": {
+                          "start_time": "2030-01-07T09:00:00+00:00",
+                          "id": "event-0001",
+                          "title": "M02 required appointment 1",
+                          "end_time": "2030-01-07T10:00:00+00:00"
+                        },
+                        "existing": {
+                          "start_time": "2030-01-06T09:00:00+00:00",
+                          "id": "existing",
+                          "title": "Preserve me",
+                          "end_time": "2030-01-06T10:00:00+00:00"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "applicability": "FALSE"
+              },
+              "contract_sha256": "06d25cca68441539988248186f47b43f12b18790e0f51d06a816e31de3507ce4"
+            }
+          ],
+          "selected_operation": "urn:sequence:create_followup",
+          "execution_started": false,
+          "rejection_reason": "Selected operation is not uniquely eligible"
+        }
+      },
+      "reason": "Current predecessor establishes temporal dependency",
+      "completed_at": "2026-10-17T20:39:10.972514+00:00"
+    }
+  ],
+  "runtime_verified": false,
+  "automatic_retries": 0,
+  "repair_iterations": 0,
+  "completed_at": "2026-10-17T20:39:10.972525+00:00"
+}

@@ -1,0 +1,242 @@
+{
+  "case_passed": true,
+  "condition": "A",
+  "expected": {
+    "classification": "unverified_execution",
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "wrong_properties",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 14"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect booking label"
+        },
+        "observed_at": "2026-10-17T20:37:41.134583+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Incorrect booking label"
+          }
+        },
+        "observed_at": "2026-10-17T20:37:41.134583+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "booking-0001": {
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Incorrect booking label"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:37:41.134583+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:41.122221+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Goal mismatch: title"
+    ],
+    "runtime_discrepancy": false
+  },
+  "provider": "b",
+  "resolution": null,
+  "runtime_action": {
+    "api_call_success": true,
+    "api_response": {
+      "body": {
+        "booking_ref": "booking-0001"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 201
+    },
+    "applicability": "TRUE",
+    "compatible": true,
+    "completed_at": "2026-10-17T20:37:41.134357+00:00",
+    "condition": "A",
+    "description_sha256": "cb6a8b21210e36ef008987a689d6ea6e0e587bd24986666521cbbd371dde75a0",
+    "execution_decision": "EXECUTE",
+    "execution_started": "2026-10-17T20:37:41.131322+00:00",
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 14"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 14"
+    },
+    "observed_effects": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect booking label"
+        },
+        "observed_at": "2026-10-17T20:37:41.133032+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Incorrect booking label"
+          }
+        },
+        "observed_at": "2026-10-17T20:37:41.133854+00:00",
+        "revision": 1,
+        "writable": true
+      }
+    },
+    "observed_state_change": true,
+    "operation_id": "reserveAppointment",
+    "oracle_verdict": {
+      "achieved": false,
+      "reasons": [
+        "Goal mismatch: title"
+      ]
+    },
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "evidence": {
+          "events": {},
+          "observed_at": "2026-10-17T20:37:41.130776+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "name": "local_write_permission",
+        "verdict": "TRUE"
+      }
+    ],
+    "reason": null,
+    "run_id": "c5983c5e-d46b-46e1-b651-d11f927c9d07",
+    "schema_version": 1,
+    "timestamp": "2026-10-17T20:37:41.130027+00:00",
+    "wire_evidence": [
+      {
+        "body": {
+          "can_book": true,
+          "items": {},
+          "sampled_at": "2026-10-17T20:37:41.130776+00:00",
+          "version": 0
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/availability",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "booking_ref": "booking-0001"
+        },
+        "error": null,
+        "method": "POST",
+        "path": "/bookings",
+        "raw_body": null,
+        "request_body": {
+          "begins_ms": 1894006800000,
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 14"
+        },
+        "status": 201
+      },
+      {
+        "body": {
+          "booking": {
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "Incorrect booking label"
+          },
+          "sampled_at": "2026-10-17T20:37:41.133032+00:00",
+          "version": 1
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/booking/booking-0001",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "can_book": true,
+          "items": {
+            "booking-0001": {
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001",
+              "finishes_ms": 1894010400000,
+              "label": "Incorrect booking label"
+            }
+          },
+          "sampled_at": "2026-10-17T20:37:41.133854+00:00",
+          "version": 1
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/bookings",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      }
+    ]
+  },
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D14"
+}

@@ -1,0 +1,40 @@
+{
+  "source": "domain task and native fixture specifications; independent human review pending",
+  "formal_goals": [
+    {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "M09 required appointment 1",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    {
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "title": "M09 required appointment 2",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    {
+      "start_time": "2030-01-07T11:00:00+00:00",
+      "end_time": "2030-01-07T12:00:00+00:00",
+      "title": "M09 required appointment 3",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    }
+  ],
+  "initial_records": {
+    "existing": {
+      "id": "existing",
+      "start_time": "2030-01-06T09:00:00+00:00",
+      "end_time": "2030-01-06T10:00:00+00:00",
+      "title": "Preserve me",
+      "metadata": "sentinel"
+    }
+  },
+  "required_relation": "each later event must reference the previous new event",
+  "expected_calls": 3,
+  "expected_native": true,
+  "expected_runtime": true,
+  "expected_status": "COMPLETE"
+}

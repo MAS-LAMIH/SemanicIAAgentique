@@ -1,0 +1,22 @@
+[
+  {
+    "after": {
+      "events": {},
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:27.306725+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:27.306364+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 503,
+    "path": "/bookings"
+  }
+]

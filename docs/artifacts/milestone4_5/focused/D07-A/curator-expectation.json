@@ -1,0 +1,7 @@
+{
+  "classification": "safe_rejection",
+  "mutation_calls": 0,
+  "native_verified": false,
+  "runtime_verified": false,
+  "verified": false
+}

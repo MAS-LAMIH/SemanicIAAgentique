@@ -1,0 +1,19 @@
+{
+  "id": "reference",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "preflight.rehearsal",
+    "--phase",
+    "reference"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:36:58.962953+00:00",
+  "ended_at": "2026-10-17T20:38:01.773633+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 62.81068914299976,
+  "tests_run": null,
+  "runner_seconds": null,
+  "log_path": "docs/artifacts/milestone4_5/reference.log",
+  "nested_runtime": false
+}

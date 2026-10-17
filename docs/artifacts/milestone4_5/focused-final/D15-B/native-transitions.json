@@ -1,0 +1,30 @@
+[
+  {
+    "after": {
+      "events": {
+        "event-0001": {
+          "advertised_title": "Diagnostic task 15",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect stored title"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:08.120620+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:08.120301+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 201,
+    "path": "/events"
+  }
+]

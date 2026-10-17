@@ -1,0 +1,22 @@
+[
+  {
+    "after": {
+      "events": {},
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:24.266302+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:24.265904+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 500,
+    "path": "/events"
+  }
+]

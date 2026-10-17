@@ -1,0 +1,107 @@
+{
+  "case_passed": true,
+  "condition": "C",
+  "expected": {
+    "classification": "safe_rejection",
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "unsupported_transform",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:37:26.637434+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:26.637434+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:26.637434+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:26.630429+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "provider": "b",
+  "resolution": {
+    "candidates": [
+      {
+        "applicability": "UNKNOWN",
+        "artifact_id": "https://example.org/provider-b#appointments",
+        "assessment": null,
+        "compatible": false,
+        "contract_sha256": "032c64154a55fb0d1e2cfe105cd5831cca3711c8fb8a74cdadf02fb29097fd58",
+        "eligible": false,
+        "operation_id": "https://example.org/provider-b#reserveAppointment",
+        "reasons": [
+          "Required input mapping is incomplete or has an unavailable source",
+          "Required input/observation cannot be transformed: unavailable_input"
+        ],
+        "registration": 0
+      }
+    ],
+    "execution_started": false,
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 09"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 09"
+    },
+    "rejection_reason": "Selected operation is not uniquely eligible",
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "run_id": "e10dbee9-f417-404e-9d27-af1cadc874eb",
+    "schema_version": 1,
+    "selected_operation": "https://example.org/provider-b#reserveAppointment",
+    "timestamp": "2026-10-17T20:37:26.633628+00:00"
+  },
+  "runtime_action": null,
+  "summary": {
+    "api_call_success": false,
+    "applicability": null,
+    "compatible": false,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D09"
+}

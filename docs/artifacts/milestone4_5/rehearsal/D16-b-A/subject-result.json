@@ -1,0 +1,171 @@
+{
+  "action": {
+    "schema_version": 1,
+    "condition": "A",
+    "run_id": "79ff180d-74a2-4fc4-8edc-fdae044256a8",
+    "timestamp": "2026-10-17T20:38:45.633817+00:00",
+    "operation_id": "reserveAppointment",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 16",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 16"
+    },
+    "description_sha256": "ec18b1f054c694d25d4755f91b11e14b2f021edd505026addd3e9cb604591dc4",
+    "compatible": true,
+    "applicability": "TRUE",
+    "execution_decision": "EXECUTE",
+    "api_call_success": true,
+    "api_response": {
+      "status": 201,
+      "body": {
+        "booking_ref": "booking-0001"
+      },
+      "error": null,
+      "raw_body": null
+    },
+    "oracle_verdict": {
+      "achieved": false,
+      "reasons": [
+        "Forbidden change to other calendar contents"
+      ]
+    },
+    "observed_state_change": true,
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "name": "local_write_permission",
+        "verdict": "TRUE",
+        "evidence": {
+          "writable": true,
+          "events": {},
+          "revision": 0,
+          "observed_at": "2026-10-17T20:38:45.635456+00:00"
+        }
+      }
+    ],
+    "wire_evidence": [
+      {
+        "method": "GET",
+        "path": "/availability",
+        "request_body": null,
+        "status": 200,
+        "body": {
+          "can_book": true,
+          "items": {},
+          "sampled_at": "2026-10-17T20:38:45.635456+00:00",
+          "version": 0
+        },
+        "error": null,
+        "raw_body": null
+      },
+      {
+        "method": "POST",
+        "path": "/bookings",
+        "request_body": {
+          "begins_ms": 1894006800000,
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 16"
+        },
+        "status": 201,
+        "body": {
+          "booking_ref": "booking-0001"
+        },
+        "error": null,
+        "raw_body": null
+      },
+      {
+        "method": "GET",
+        "path": "/booking/booking-0001",
+        "request_body": null,
+        "status": 200,
+        "body": {
+          "booking": {
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "Diagnostic task 16"
+          },
+          "sampled_at": "2026-10-17T20:38:45.637624+00:00",
+          "version": 1
+        },
+        "error": null,
+        "raw_body": null
+      },
+      {
+        "method": "GET",
+        "path": "/bookings",
+        "request_body": null,
+        "status": 200,
+        "body": {
+          "can_book": true,
+          "items": {
+            "booking-0001": {
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001",
+              "finishes_ms": 1894010400000,
+              "label": "Diagnostic task 16"
+            },
+            "unexpected": {
+              "begins_ms": 1894006800000,
+              "booking_ref": "unexpected",
+              "finishes_ms": 1894010400000,
+              "label": "Diagnostic task 16"
+            }
+          },
+          "sampled_at": "2026-10-17T20:38:45.638441+00:00",
+          "version": 1
+        },
+        "error": null,
+        "raw_body": null
+      }
+    ],
+    "reason": null,
+    "execution_started": "2026-10-17T20:38:45.635874+00:00",
+    "observed_effects": {
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 16"
+        },
+        "revision": 1,
+        "observed_at": "2026-10-17T20:38:45.637624+00:00"
+      },
+      "state": {
+        "writable": true,
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 16"
+          },
+          "unexpected": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "unexpected",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 16"
+          }
+        },
+        "revision": 1,
+        "observed_at": "2026-10-17T20:38:45.638441+00:00"
+      },
+      "error": null
+    },
+    "completed_at": "2026-10-17T20:38:45.639770+00:00"
+  },
+  "resolution": null,
+  "compatible": true,
+  "applicability": "TRUE"
+}

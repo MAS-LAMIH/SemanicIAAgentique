@@ -1,0 +1,21 @@
+{
+  "id": "dependencies-restored-retry",
+  "command": [
+    "env",
+    "UV_CACHE_DIR=/workspace/.cache/uv",
+    "uv",
+    "pip",
+    "check",
+    "--python",
+    "/tmp/m44-restored-env/bin/python"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:39:54.314624+00:00",
+  "ended_at": "2026-10-17T20:39:54.339460+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.024834818999806885,
+  "tests_run": null,
+  "runner_seconds": null,
+  "log_path": "docs/artifacts/milestone4_5/dependencies-restored-retry.log",
+  "nested_runtime": false
+}

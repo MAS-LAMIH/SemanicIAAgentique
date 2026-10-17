@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "artifact_id": "https://example.org/provider-b#appointments",
+  "operation_id": "https://example.org/provider-b#reserveAppointment",
+  "capability_id": "https://example.org/sam/v1#EventCreation",
+  "inputs": [
+    "start_time",
+    "end_time",
+    "title"
+  ],
+  "preconditions": [
+    "https://example.org/sam/v1#PositiveInterval",
+    "https://example.org/sam/v1#CalendarWritable"
+  ],
+  "declared_effects": [
+    "https://example.org/sam/v1#NewMatchingEvent"
+  ],
+  "constraints": {
+    "time_grid_seconds": 900,
+    "max_duration_seconds": 7200,
+    "preserves_other_events": true
+  },
+  "binding": {
+    "create_path": "/bookings",
+    "baseline_path": "/availability",
+    "state_path": "/bookings",
+    "event_path": "/booking/{id}",
+    "request_fields": {
+      "begins_ms": {
+        "source": "unavailable_input",
+        "transform": "iso_to_epoch_ms"
+      },
+      "finishes_ms": {
+        "source": "end_time",
+        "transform": "iso_to_epoch_ms"
+      },
+      "label": {
+        "source": "title",
+        "transform": "identity"
+      }
+    },
+    "event_fields": {
+      "id": {
+        "source": "booking_ref",
+        "transform": "identity"
+      },
+      "start_time": {
+        "source": "begins_ms",
+        "transform": "epoch_ms_to_iso"
+      },
+      "end_time": {
+        "source": "finishes_ms",
+        "transform": "epoch_ms_to_iso"
+      },
+      "title": {
+        "source": "label",
+        "transform": "identity"
+      }
+    },
+    "response_id": "booking_ref",
+    "writable_field": "can_book",
+    "events_field": "items",
+    "revision_field": "version",
+    "timestamp_field": "sampled_at",
+    "event_field": "booking"
+  },
+  "observation": {
+    "max_evidence_age_seconds": 30
+  }
+}
