@@ -9,3 +9,5 @@ build-backend = "hatchling.build"
 
 [tool.hatchling.build.targets.wheel]
 packages = ["src/tutorielIAAgentique"]
+[tool.hatch.build.targets.wheel]
+packages = ["src/tutorielIAAgentique", "src/semantic_action"]

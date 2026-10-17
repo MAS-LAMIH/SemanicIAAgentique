@@ -1,0 +1,28 @@
+@prefix sam: <https://example.org/sam/v1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://example.org/sam/v1> dct:title "Semantic Action Manual: proposed project vocabulary" ;
+    dct:description "Milestone 1 vocabulary; not a standardized ontology." .
+sam:Artifact a rdfs:Class .
+sam:Operation a rdfs:Class .
+sam:Contract a rdfs:Class .
+sam:Capability a rdfs:Class .
+sam:Goal a rdfs:Class .
+sam:Precondition a rdfs:Class .
+sam:Effect a rdfs:Class .
+sam:Observation a rdfs:Class .
+sam:ExecutionTrace a rdfs:Class .
+sam:hasOperation a rdf:Property .
+sam:hasContract a rdf:Property .
+sam:providesCapability a rdf:Property .
+sam:hasPrecondition a rdf:Property .
+sam:hasExpectedEffect a rdf:Property .
+sam:hasBinding a rdf:Property .
+sam:requiresObservation a rdf:Property .
+sam:hasEvidence a rdf:Property .
+sam:requiredInput a rdf:Property .
+sam:method a rdf:Property .
+sam:path a rdf:Property .
+sam:maxEvidenceAgeSeconds a rdf:Property .

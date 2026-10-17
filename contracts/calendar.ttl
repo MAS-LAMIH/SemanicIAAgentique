@@ -1,0 +1,20 @@
+@prefix sam: <https://example.org/sam/v1#> .
+@prefix cal: <https://example.org/calendar/v1#> .
+
+cal:calendar a sam:Artifact ; sam:hasOperation cal:createEvent .
+cal:createEvent a sam:Operation ;
+    sam:providesCapability cal:EventCreation ;
+    sam:hasContract cal:createContract .
+cal:EventCreation a sam:Capability .
+cal:createContract a sam:Contract ;
+    sam:requiredInput "start_time", "end_time", "title" ;
+    sam:hasPrecondition sam:PositiveInterval, sam:CalendarWritable ;
+    sam:hasExpectedEffect sam:NewMatchingEvent ;
+    sam:hasBinding cal:createBinding ;
+    sam:requiresObservation cal:eventObservation .
+sam:PositiveInterval a sam:Precondition .
+sam:CalendarWritable a sam:Precondition .
+sam:NewMatchingEvent a sam:Effect .
+cal:createBinding sam:method "POST" ; sam:path "/events" .
+cal:eventObservation a sam:Observation ;
+    sam:path "/events/{id}" ; sam:maxEvidenceAgeSeconds 30 .
