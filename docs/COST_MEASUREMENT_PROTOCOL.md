@@ -3,8 +3,8 @@
 Scope: RQ1 integration effort with correctness preserved. Provider labels A/B/C
 are distinct from experimental conditions A/API-local, B/JSON+shared semantics,
 C/RDF+shared semantics. Nothing here retrospectively turns Milestone 1–3 elapsed
-intervals into human labor. Frozen scientific decisions prevail; no protocol PDF
-was found during this audit. Investigator approval is required before collection.
+intervals into human labor. Frozen scientific decisions prevail; the user-supplied frozen protocol PDF is retained under docs/protocols/
+with its SHA-256 in candidate V2. Investigator approval is required before collection.
 
 ## Measurement axes
 
@@ -55,7 +55,7 @@ corrections. An approval-ready event schema must include:
   "event_id": null,
   "task_id": null,
   "provider_id": null,
-  "condition": null,
+  "condition_id": null,
   "scope": null,
   "activity": null,
   "contributor_id": null,
@@ -70,7 +70,7 @@ corrections. An approval-ready event schema must include:
   "model_wait_minutes": null,
   "concurrency_group": null,
   "ai_model_and_version": null,
-  "artifact_paths_and_hashes": [],
+  "artifact_references": [],
   "mapping_rule_test_counts": null,
   "attempt_id": null,
   "outcome": null,
@@ -81,14 +81,30 @@ corrections. An approval-ready event schema must include:
 }
 ```
 
-This is an empty prospective template, not an observed measurement. Before the
-experiment, approve a collector capable of these fields and test it on sealed-
-independent A/B exercises. The existing WorkEntry/log_work supports coarse
+This is an empty prospective template, not an observed measurement. The prospective collector now implements these fields in
+semantic_action.event_ledger.Event/Ledger. It is tested on the visible A/B
+apparatus; investigator approval remains required before experimental collection. The existing WorkEntry/log_work supports coarse
 activity, contributor, elapsed, artifact and failure records, but cannot express
 all resource/overlap distinctions. Preserve it as provenance and link a separate
 approved event ledger; do not silently reinterpret its elapsed_minutes field.
-A collector extension must be reviewed and frozen before unsealing. No new
-collector or historical event reconstruction is claimed in Milestone 4.
+Milestone 4.1 adds a separate append-only JSONL ledger with advisory Linux file
+locks, fsync, hash chaining, linked corrections, and overlap rejection for active
+human intervals belonging to the same person. Corrections replace records only
+in derived views; the original bytes remain in the log. Cross-contributor active
+work and separate automated runtime may overlap. A supervision value cannot
+exceed measured human active time. Unknown values stay null; resource kinds
+prevent automation events from recording human labor. A hash chain detects edits
+but cannot authenticate human truth or defeat an attacker rewriting an unsigned
+entire ledger. Concurrent writers must use the collector, not bypass its lock.
+
+Use Ledger(path).append(Event(...)); Ledger.summary reports measured resource
+subtotals and unmeasured counts, never a fabricated total. Unknown/nonapplicable
+metric cells are both null and require the resource kind/context for interpretation.
+Do not add supervision to human total or sum runtime into labor. Synthetic timer
+values in unit tests are explicitly test data, not observed engineering effort.
+The actual events under docs/artifacts/milestone4_1/events.jsonl contain only
+observed automation/elapsed resources and null unmeasured human fields. All old
+WorkEntry logs remain unchanged. Review/freeze this collector before unsealing.
 
 Human contributors start/pause/stop contemporaneous activity timers and confirm
 active versus passive intervals at session end. A command wrapper records exact
@@ -104,7 +120,7 @@ history; never edit a failed event into a successful one.
 For condition k and observed provider order pi, report shared setup S_k and each
 provider onboarding increment I_(k,p|previous providers), with all setup, annotation,
 mapping, adaptation, testing, debugging and review included. Cold-start total
-through n providers is S_k + sum of observed increments, with common dependencies
+through n providers is S_k + sum of observed increments + observed maintenance, with common dependencies
 allocated by the same approved policy. Report human-active, runtime, waiting,
 elapsed and correctness separately; do not mix their units in that formula.
 
@@ -143,3 +159,28 @@ if reported, require observed usage, dated rates and units, separate from time.
 Approval must specify timer/collector version, allocation policy, contributor and
 condition ordering, budgets, missingness treatment and analysis rules. All remain
 pending until the investigator signs the candidate artifact digest.
+
+## Milestone 4.1 implementation and proposed allocation
+
+The neutral HTTP transport was extracted without changing its request behavior;
+the unchanged formal Goal and correctness oracle are available to all conditions.
+Charge their study-specific creation/maintenance to common neutral infrastructure
+in each standalone condition cold-start analysis, once in a combined deployment
+analysis. Charge the local validator/encoder/descriptions to condition A, and
+ontology/registry/shared mappings to B/C consistently. Within condition A, its
+common non-ontology event-shape helper is condition-A setup; booking-specific
+rules/encoding and local mappings are onboarding work. This avoids pretending
+normal programming utility reuse is ontology-mediated discovery or forcing
+condition A to duplicate neutral infrastructure artificially.
+
+The API-local descriptions and code were authored after exposure to the shared
+manuals. Their measured engineering work is real apparatus work, not a blinded
+cold-start integration estimate. Independent prospective integrators/order control
+are still needed for scientific costs. Component time not separately measured
+remains null or mixed_unallocated, even when artifact attribution is known.
+No historical person-minutes have been reconstructed.
+
+Proposed collection budgets are in EVALUATION_TASK_SPECIFICATION.md; elapsed,
+automated waits and human-active limits are distinct. Maintenance, failed attempts
+and rework remain visible. Approval of allocation, collector version and timer
+practice is still pending and is listed in SCIENTIFIC_FREEZE_APPROVAL_CHECKLIST.md.

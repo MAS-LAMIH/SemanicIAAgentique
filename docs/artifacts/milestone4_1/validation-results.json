@@ -1,0 +1,215 @@
+{
+  "commands": [
+    {
+      "id": "historical_baseline",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 50,
+      "passed": 50,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 82.39,
+      "log_path": "docs/artifacts/milestone4_1/baseline-tests.log"
+    },
+    {
+      "id": "first_new_component_suite",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 13,
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 62.737,
+      "log_path": "docs/artifacts/milestone4_1/initial-new-tests.log"
+    },
+    {
+      "id": "intermediate_source",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 64,
+      "passed": 64,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.289,
+      "log_path": "docs/artifacts/milestone4_1/intermediate-source-tests.log"
+    },
+    {
+      "id": "intermediate_wheel",
+      "command": "/tmp/semanic-m41-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 64,
+      "passed": 64,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.633,
+      "log_path": "docs/artifacts/milestone4_1/intermediate-wheel-tests.log"
+    },
+    {
+      "id": "final_source",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 65,
+      "passed": 65,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 146.72,
+      "log_path": "docs/artifacts/milestone4_1/source-tests.log"
+    },
+    {
+      "id": "final_installed_wheel",
+      "command": "/tmp/semanic-m41-final-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 65,
+      "passed": 65,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 147.009,
+      "log_path": "docs/artifacts/milestone4_1/wheel-tests.log"
+    },
+    {
+      "id": "build_final_wheel",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv build --wheel --out-dir /tmp/semanic-m41-final-wheel",
+      "exit_code": 0
+    },
+    {
+      "id": "create_fresh_wheel_environment",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m41-final-wheel-env --python python3",
+      "exit_code": 0
+    },
+    {
+      "id": "install_final_wheel",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-final-wheel-env/bin/python -r docs/artifacts/milestone4/evaluation-requirements.txt /tmp/semanic-m41-final-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "exit_code": 0
+    },
+    {
+      "id": "safety_regression",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -k test_unsafe_mutation_attempt -v",
+      "exit_code": 0,
+      "tests_run": 1,
+      "passed": 1
+    },
+    {
+      "id": "expanded_raw_state_invariant_regression",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -k test_snapshot_deep_copy -v",
+      "exit_code": 0,
+      "tests_run": 1,
+      "passed": 1
+    },
+    {
+      "id": "pre_extension_restoration",
+      "command": "/tmp/semanic-m41-restored-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 65,
+      "passed": 65,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.954,
+      "log_path": "docs/artifacts/milestone4_1/preliminary-restored-tests.log"
+    },
+    {
+      "id": "source_after_native_extension",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 66,
+      "passed": 66,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.313,
+      "log_path": "docs/artifacts/milestone4_1/source-after-native-extension-tests.log"
+    },
+    {
+      "id": "wheel_after_native_extension",
+      "command": "/tmp/semanic-m41-v2-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 66,
+      "passed": 66,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.765,
+      "log_path": "docs/artifacts/milestone4_1/wheel-after-native-extension-tests.log"
+    },
+    {
+      "id": "build_extension_aware_wheel",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv build --wheel --out-dir /tmp/semanic-m41-v2-wheel",
+      "exit_code": 0
+    },
+    {
+      "id": "install_extension_aware_wheel",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-v2-wheel-env/bin/python -r docs/artifacts/milestone4_1/evaluation-requirements.txt /tmp/semanic-m41-v2-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "exit_code": 0
+    },
+    {
+      "id": "local_baseline_without_shared_dependencies",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-local-only-v2/bin/python /tmp/semanic-m41-v2-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "exit_code": 0,
+      "evidence": "docs/artifacts/milestone4_1/local-only-v2-environment.json",
+      "assertions": "No RDFLib/jsonschema installed; both local APIs and native verifiers achieve goal"
+    },
+    {
+      "id": "create_final_restored_environment",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m41-final-restored-env --python python3",
+      "cwd": "/tmp/semanic-m41-final-restored-source-auy1djem",
+      "exit_code": 0
+    },
+    {
+      "id": "pinned_final_restoration_install",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-final-restored-env/bin/python -r docs/artifacts/milestone4_1/evaluation-requirements.txt /workspace/SemanicIAAgentique/docs/artifacts/milestone4_1/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "cwd": "/tmp/semanic-m41-final-restored-source-auy1djem",
+      "exit_code": 0
+    },
+    {
+      "id": "restored_after_native_extension",
+      "command": "/tmp/semanic-m41-final-restored-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/tmp/semanic-m41-final-restored-source-auy1djem",
+      "exit_code": 0,
+      "tests_run": 66,
+      "passed": 66,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.513,
+      "log_path": "docs/artifacts/milestone4_1/restored-after-native-extension-tests.log"
+    },
+    {
+      "id": "final_candidate_dependency_consistency",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip check --python /tmp/semanic-m41-v2-wheel-env/bin/python",
+      "exit_code": 0,
+      "packages_checked": 9
+    }
+  ],
+  "matrix": "20 diagnostic tasks x 2 visible providers x 3 conditions",
+  "actual_retained_examples": 24,
+  "candidate_approval": "pending",
+  "unseal_authorized": false,
+  "scope": "Public apparatus validation, not sealed evaluation or empirical human cost comparison",
+  "note": "Intermediate logs retained honestly; final source/wheel and restored suite establish candidate readiness. Expanded native-state invariant was additionally checked after initial full-suite launch.",
+  "final_candidate_suite_ids": [
+    "source_after_native_extension",
+    "wheel_after_native_extension",
+    "restored_after_native_extension"
+  ],
+  "restoration_pending": false,
+  "preliminary_candidate": "preserved under preliminary-* with relocation hashes; not final source identity",
+  "candidate_technically_ready_for_review": true,
+  "scientific_approval": "pending",
+  "restored_source_tree_sha256": "20bde86375955f144494a0b8353c87a1b1b1b48de2ea4b7daf218e79240b6494",
+  "final_integrity_checks": "docs/artifacts/milestone4_1/final-integrity-checks.json"
+}

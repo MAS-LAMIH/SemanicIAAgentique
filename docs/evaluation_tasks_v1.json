@@ -1,0 +1,757 @@
+{
+  "status": "proposal_pending_human_approval",
+  "seed": 20271017,
+  "repetitions": 3,
+  "condition_order": "counterbalance six permutations across task/provider blocks",
+  "http_timeout_seconds": 5,
+  "per_run_budget_seconds": 60,
+  "automatic_retries": 0,
+  "planning_repair_iterations": 0,
+  "provider_scope": [
+    "a",
+    "b"
+  ],
+  "scope_note": "20 single-action apparatus diagnostics; not the full protocol pilot including multi-step goals",
+  "tasks": [
+    {
+      "task_id": "D01",
+      "family": "valid_match",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 01",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        }
+      }
+    },
+    {
+      "task_id": "D02",
+      "family": "different_names",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 02",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        }
+      }
+    },
+    {
+      "task_id": "D03",
+      "family": "different_formats",
+      "formal_goal": {
+        "start_time": "2030-01-07T11:00:00+02:00",
+        "end_time": "2030-01-07T12:00:00+02:00",
+        "title": "Diagnostic task 03",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        }
+      }
+    },
+    {
+      "task_id": "D04",
+      "family": "misleading_effect",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 04",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D05",
+      "family": "false_precondition",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 05",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D06",
+      "family": "unknown_precondition",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 06",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D07",
+      "family": "stale_permission",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 07",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D08",
+      "family": "missing_permission",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 08",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D09",
+      "family": "unsupported_transform",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 09",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D10",
+      "family": "precision_loss",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00.000001+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 10",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D11",
+      "family": "unsupported_transition",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 11",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D12",
+      "family": "api_error",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 12",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "api_failure"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "api_failure"
+        }
+      }
+    },
+    {
+      "task_id": "D13",
+      "family": "no_state_change",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 13",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "unverified_execution"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "unverified_execution"
+        }
+      }
+    },
+    {
+      "task_id": "D14",
+      "family": "wrong_properties",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 14",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "unverified_execution"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "unverified_execution"
+        }
+      }
+    },
+    {
+      "task_id": "D15",
+      "family": "wrong_mapping",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 15",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": false,
+          "verified": false,
+          "classification": "native_mapping_discrepancy"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": false,
+          "verified": false,
+          "classification": "native_mapping_discrepancy"
+        }
+      }
+    },
+    {
+      "task_id": "D16",
+      "family": "forbidden_side_effect",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 16",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "unverified_execution"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "unverified_execution"
+        }
+      }
+    },
+    {
+      "task_id": "D17",
+      "family": "stale_observation",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 17",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": true,
+          "verified": false,
+          "classification": "unverified_execution"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": true,
+          "verified": false,
+          "classification": "unverified_execution"
+        }
+      }
+    },
+    {
+      "task_id": "D18",
+      "family": "missing_observation",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 18",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": true,
+          "verified": false,
+          "classification": "unverified_execution"
+        },
+        "b": {
+          "mutation_calls": 1,
+          "runtime_verified": false,
+          "native_verified": true,
+          "verified": false,
+          "classification": "unverified_execution"
+        }
+      }
+    },
+    {
+      "task_id": "D19",
+      "family": "duration_constraint",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T12:00:00+00:00",
+        "title": "Diagnostic task 19",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    },
+    {
+      "task_id": "D20",
+      "family": "grid_constraint",
+      "formal_goal": {
+        "start_time": "2030-01-07T09:05:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "Diagnostic task 20",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      "initial_state": "empty writable service unless intervention explicitly changes permission",
+      "mandatory_constraints": {
+        "preserve_other_events": true,
+        "evidence_age_seconds": 30
+      },
+      "required_evidence": [
+        "runtime permission/read-back",
+        "native before/after state",
+        "mutation-call count"
+      ],
+      "expectations": {
+        "a": {
+          "mutation_calls": 1,
+          "runtime_verified": true,
+          "native_verified": true,
+          "verified": true,
+          "classification": "verified"
+        },
+        "b": {
+          "mutation_calls": 0,
+          "runtime_verified": false,
+          "native_verified": false,
+          "verified": false,
+          "classification": "safe_rejection"
+        }
+      }
+    }
+  ]
+}

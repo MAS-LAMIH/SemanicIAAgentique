@@ -1,0 +1,44 @@
+[
+  {
+    "check": "restored_valid_candidate",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m41-integrity-probe-5or5hpab/scripts/candidate_v2.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m41-integrity-probe-5or5hpab",
+    "exit_code": 0,
+    "expected_rejection": false,
+    "passed": true,
+    "stdout": "V2 source, artifacts and historical Milestone 4 verified; approval pending, Provider C sealed.\n",
+    "stderr": ""
+  },
+  {
+    "check": "expected_source_tamper_rejection",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m41-integrity-probe-5or5hpab/scripts/candidate_v2.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m41-integrity-probe-5or5hpab",
+    "exit_code": 1,
+    "expected_rejection": true,
+    "passed": true,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/semanic-m41-integrity-probe-5or5hpab/scripts/candidate_v2.py\", line 206, in <module>\n    main()\n  File \"/tmp/semanic-m41-integrity-probe-5or5hpab/scripts/candidate_v2.py\", line 200, in main\n    verify()\n  File \"/tmp/semanic-m41-integrity-probe-5or5hpab/scripts/candidate_v2.py\", line 114, in verify\n    raise ValueError('V2 source/protocol changed: '+path)\nValueError: V2 source/protocol changed: src/semantic_action/native_verifier.py\n"
+  },
+  {
+    "check": "restored_after_probe",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m41-integrity-probe-5or5hpab/scripts/candidate_v2.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m41-integrity-probe-5or5hpab",
+    "exit_code": 0,
+    "expected_rejection": false,
+    "passed": true,
+    "stdout": "V2 source, artifacts and historical Milestone 4 verified; approval pending, Provider C sealed.\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "status": "all_original_preliminary_artifact_and_archive_hashes_verified",
+  "manifest_sha256": "9be019a2200d46685a4fbae4e76d1830eeb6a964fe4a41c3afffe1b21bf6fc04",
+  "relocations": {
+    "docs/artifacts/milestone4_1/candidate-source-v2.tar.gz": "docs/artifacts/milestone4_1/preliminary-source-v2.tar.gz",
+    "docs/artifacts/milestone4_1/tutorieliaagentique-0.1.0-py3-none-any.whl": "docs/artifacts/milestone4_1/preliminary-tutorieliaagentique-0.1.0-py3-none-any.whl",
+    "docs/artifacts/milestone4_1/validation-results.json": "docs/artifacts/milestone4_1/preliminary-validation-results.json",
+    "docs/artifacts/milestone4_1/events.jsonl": "docs/artifacts/milestone4_1/preliminary-events.jsonl",
+    "docs/artifacts/milestone4_1/evaluation-environment.json": "docs/artifacts/milestone4_1/preliminary-evaluation-environment.json"
+  },
+  "source_tree_sha256": "89e5e30bb491ddc656657e64c7abf8f937ccb159b0b2316ea6d6a002e3317513"
+}

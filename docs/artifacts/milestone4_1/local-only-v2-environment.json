@@ -1,0 +1,16 @@
+{
+  "rdflib_present": false,
+  "jsonschema_present": false,
+  "results": [
+    {
+      "provider": "a",
+      "runtime_verified": true,
+      "native_verified": true
+    },
+    {
+      "provider": "b",
+      "runtime_verified": true,
+      "native_verified": true
+    }
+  ]
+}

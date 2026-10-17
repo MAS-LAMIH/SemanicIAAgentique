@@ -1,0 +1,31 @@
+{
+  "record_count": 44,
+  "current_record_count": 44,
+  "resources": {
+    "human_active_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 44
+    },
+    "ai_supervision_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 44
+    },
+    "automated_runtime_minutes": {
+      "measured_total": 22.085086981433257,
+      "unmeasured_records": 10
+    },
+    "tool_wait_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 44
+    },
+    "model_wait_minutes": {
+      "measured_total": null,
+      "unmeasured_records": 44
+    },
+    "elapsed_wall_minutes": {
+      "measured_total": 29.73695,
+      "unmeasured_records": 39
+    }
+  },
+  "warning": "Supervision is a subset of human active time; resources overlap wall clock. Missing records do not imply zero."
+}

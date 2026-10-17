@@ -1,0 +1,1034 @@
+{
+  "approval": {
+    "approved_at": null,
+    "approver": null,
+    "detached_approval_record": null,
+    "status": "pending"
+  },
+  "artifacts": [
+    {
+      "bytes": 5888,
+      "path": "docs/artifacts/milestone4_1/baseline-tests.log",
+      "sha256": "27015859c1a64401a73c56972de05e8cb6c941cc993f5bab4041ccb2a8e24c6b"
+    },
+    {
+      "bytes": 638682,
+      "path": "docs/artifacts/milestone4_1/candidate-source-v2.tar.gz",
+      "sha256": "b2c9d888f81bdd4bdb941d16eaef520fecc5f58fe35c8b8736e949b42ed7d7a3"
+    },
+    {
+      "bytes": 906,
+      "path": "docs/artifacts/milestone4_1/evaluation-environment.json",
+      "sha256": "3e30608524be51b73f999650c30c7b8e5cca7e77278e68c347afc99e18ba074a"
+    },
+    {
+      "bytes": 233,
+      "path": "docs/artifacts/milestone4_1/evaluation-requirements.txt",
+      "sha256": "5f8bb5b5dc97a8d78829c673298c58e3ae9158f078488fe617df3ef592a638e6"
+    },
+    {
+      "bytes": 51825,
+      "path": "docs/artifacts/milestone4_1/events.jsonl",
+      "sha256": "9926a2c372016c55a54a4d3c67fec98077223a272cfd119e09e8f8414e32ff5f"
+    },
+    {
+      "bytes": 3890,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-A/action.json",
+      "sha256": "668a36403befc5a0bd27c10f538e7e9194666f0b5bac2b3266c673057c3108ca"
+    },
+    {
+      "bytes": 6404,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-A/evaluation.json",
+      "sha256": "98c1428e2edacd3fe5ae3dcc23f72015a1889081f99b0a45c2433d0746ca5eda"
+    },
+    {
+      "bytes": 482,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-A/local-description.json",
+      "sha256": "9b41bbc91819872ca674815c5ce32141c27a21fa8b1a804b6392bbfb47db0b3a"
+    },
+    {
+      "bytes": 5970,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-B/action.json",
+      "sha256": "662e2ddb683e9c0293d51472cae99e436f4465b8e46ea999837775c9067f7184"
+    },
+    {
+      "bytes": 10680,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-B/evaluation.json",
+      "sha256": "dde3d709b371614a481a90afeaa88526e3f09409f177dcdeaa6104c4a2b7656e"
+    },
+    {
+      "bytes": 1679,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-B/manual.json",
+      "sha256": "b821cd49864a3d4d5179be95120644525b63293d6ed2203e1b7d85ff89685d99"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-B/resolution.json",
+      "sha256": "f8176d689eac6757635703f073ac6cc548c1e1a2ac83eb447d042e05d500d9f0"
+    },
+    {
+      "bytes": 5970,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-C/action.json",
+      "sha256": "614cb74e902e7261188258d9b61f95ddc1997fbbe878a4a4daee5157732e6344"
+    },
+    {
+      "bytes": 10680,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-C/evaluation.json",
+      "sha256": "f4feaa64fe641ad7c38d05db373c72a01d58710913414b88b5f470c4e08234fa"
+    },
+    {
+      "bytes": 2445,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-C/manual.ttl",
+      "sha256": "012d321e5500ebc062241212bd210f28c29850b5e4bca3f8d0696d3c458cdd6a"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples/D01-a-C/resolution.json",
+      "sha256": "f07b596c02e7609e7541df9283b82987953ac515a81e0796586b2dd8b3245adf"
+    },
+    {
+      "bytes": 3825,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-A/action.json",
+      "sha256": "c7997268919e4aa27fc976e0bf04677e8a34df5d69f6d34721ba209f8e038d6d"
+    },
+    {
+      "bytes": 6328,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-A/evaluation.json",
+      "sha256": "da6733ea2a82019bd21200e9ca330832782f59017090a137f10743b00e93d58e"
+    },
+    {
+      "bytes": 525,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-A/local-description.json",
+      "sha256": "cb6a8b21210e36ef008987a689d6ea6e0e587bd24986666521cbbd371dde75a0"
+    },
+    {
+      "bytes": 5973,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-B/action.json",
+      "sha256": "d087e76e4aa6b2f722574076350d784fa695277e96385059fc6090771e0367f9"
+    },
+    {
+      "bytes": 10688,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-B/evaluation.json",
+      "sha256": "9d621aa776e68d675638a83fad5601c1fd193473177afaa713b3ecc018f3383e"
+    },
+    {
+      "bytes": 1749,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-B/manual.json",
+      "sha256": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-B/resolution.json",
+      "sha256": "657267d302ea27e561597d12d041982e261b64f91ea9a3cf455b4dcab8e2a28e"
+    },
+    {
+      "bytes": 5973,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-C/action.json",
+      "sha256": "ec65d16c72113a98b8cce6039994ad87e15425e34567410fe475e09d090fd505"
+    },
+    {
+      "bytes": 10688,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-C/evaluation.json",
+      "sha256": "81f55921d3cd0fd66d49dc4c769b94ea6255ea8a88b00adaec68431153b5c66f"
+    },
+    {
+      "bytes": 2519,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-C/manual.ttl",
+      "sha256": "a4f854aa67e0db49487a02457076c730ec470608f5dfd5af5e4241d9018e7de2"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples/D01-b-C/resolution.json",
+      "sha256": "d1811642cb04f39a015b5c3ea18da1a16870dd0d504c66cdb008bacd5a244b65"
+    },
+    {
+      "bytes": 4004,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-A/action.json",
+      "sha256": "3192f6502aa2047be0f7f1c21b56833bfddedf1f9abca6ef9464eca984fcf658"
+    },
+    {
+      "bytes": 6644,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-A/evaluation.json",
+      "sha256": "45ee66921d9b709ca1bebc2e6a0f1b5c1ca48b0181107476f712e07020d4ed1d"
+    },
+    {
+      "bytes": 493,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-A/local-description.json",
+      "sha256": "4bcbcdca0b528d3b00ca654895857dafc478740b322723a705a3565135a3764a"
+    },
+    {
+      "bytes": 6095,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-B/action.json",
+      "sha256": "46103266bc7d0223829c0f29d78101766d6d443be104ef92f6fd3e71b227e22c"
+    },
+    {
+      "bytes": 10931,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-B/evaluation.json",
+      "sha256": "d58415b9a4aa041e6d51f0edb810416661214a2bcbf65db4364cf38958b5233b"
+    },
+    {
+      "bytes": 1690,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-B/manual.json",
+      "sha256": "002ac3a380be4d58cd10d8630d232c8035adf25a037f777ed637c35d35ce1978"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-B/resolution.json",
+      "sha256": "23b36a52caa1b1926a77e7729df8942c7e384a13c928b97c3f3c04d7fd146859"
+    },
+    {
+      "bytes": 6095,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-C/action.json",
+      "sha256": "90305c1cdbebd8364c23add7db8d28ea69c46c37f3b6a2ac4a8cc69ec8677947"
+    },
+    {
+      "bytes": 10931,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-C/evaluation.json",
+      "sha256": "df3edd943573e446bf67d405d96706459ef95b111ceb46fbaba122d069c36409"
+    },
+    {
+      "bytes": 2456,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-C/manual.ttl",
+      "sha256": "630b268fc9eaebcabc966ca918e970f6d9a7b9ea9a465b0a9f8a02c2a663598b"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples/D15-a-C/resolution.json",
+      "sha256": "b0768066094bd7e63786a2087ea3028770356b8a3e2e91a16b881b672f2acdc6"
+    },
+    {
+      "bytes": 3941,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-A/action.json",
+      "sha256": "c7669d9f2c33f8373ebb2f76bd596674e76c63c53bd81843d7045ec2809868bc"
+    },
+    {
+      "bytes": 6573,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-A/evaluation.json",
+      "sha256": "6c85c34c0b4fe6489746b1ce975d4f98b9535fe81ae3a31ab9d3af3f84996e2b"
+    },
+    {
+      "bytes": 536,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-A/local-description.json",
+      "sha256": "96c1c59172f6d520a12d6eb6facec9dea26e3b4a5e1b1534864e5fbd7ada6ece"
+    },
+    {
+      "bytes": 6100,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-B/action.json",
+      "sha256": "a862029cf69ef9e11858beae05b6bbe72d86e9d7011757ed0130d4c94ba6a9f4"
+    },
+    {
+      "bytes": 10944,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-B/evaluation.json",
+      "sha256": "35b18a73617b316f541b8cf1b26aeceded646d20e4989a4a7694151fc11ba933"
+    },
+    {
+      "bytes": 1760,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-B/manual.json",
+      "sha256": "6d7eeb1e9b00dde3b36964f59b5b65b550f94f895f4ce5e122f9e9d384398a3f"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-B/resolution.json",
+      "sha256": "a0d2b7be859932cb0bd9664f156d52b27443e5e210fe02cb6670e439f221f01d"
+    },
+    {
+      "bytes": 6100,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-C/action.json",
+      "sha256": "fa3b9ad08868ae3969f30499fa30d69e2fbb064bb303c971ab5eee961ba8f8cb"
+    },
+    {
+      "bytes": 10944,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-C/evaluation.json",
+      "sha256": "39c72582a998b42a3319050e2682e4568b355d74b734c5bf76f8cf46be5ce530"
+    },
+    {
+      "bytes": 2530,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-C/manual.ttl",
+      "sha256": "fadcc759aa9bad94862b64a55758202d18d1aaf15db85c26b3bf525e67680ff9"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples/D15-b-C/resolution.json",
+      "sha256": "c1dd5966f3f71656b9596b64859f87109aa518232582e9c6709cba8ad76ca0dd"
+    },
+    {
+      "bytes": 3890,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-A/action.json",
+      "sha256": "4c180e4b78deda54b175e8f40ac05c488850ac33bfa662a27cd768f743e87ea5"
+    },
+    {
+      "bytes": 6435,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-A/evaluation.json",
+      "sha256": "7f1b4711b0f6b25c22ca2c00c0c7bf2d497bf7140174171937cfdccc5f68b8bb"
+    },
+    {
+      "bytes": 482,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-A/local-description.json",
+      "sha256": "9b41bbc91819872ca674815c5ce32141c27a21fa8b1a804b6392bbfb47db0b3a"
+    },
+    {
+      "bytes": 5970,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-B/action.json",
+      "sha256": "6c36e0fd29397cc201fdd41e1ffda78852b0e9a8b3ced77acc01f6ffd1646235"
+    },
+    {
+      "bytes": 10711,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-B/evaluation.json",
+      "sha256": "12472a318d187b88ca254998748f9c547d29ce7f232988f8261fe03536616daf"
+    },
+    {
+      "bytes": 1679,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-B/manual.json",
+      "sha256": "b821cd49864a3d4d5179be95120644525b63293d6ed2203e1b7d85ff89685d99"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-B/resolution.json",
+      "sha256": "c2d69c573600236d04f8c60869f5d7bfb66d494399605d492e9ee7f89f3e5b15"
+    },
+    {
+      "bytes": 5970,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-C/action.json",
+      "sha256": "69090db4635c7002c204536fd07788d5077a61c75f2fbfd4390a4ac55bafee84"
+    },
+    {
+      "bytes": 10711,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-C/evaluation.json",
+      "sha256": "ba4e96853361f293917dba09827f5ed827172c48b6bebef69f4cb70df26080ab"
+    },
+    {
+      "bytes": 2445,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-C/manual.ttl",
+      "sha256": "51eb28d9289f80e61d22868a9d4cfe9fa383d308f6cb725a40c64b85c8171be9"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-a-C/resolution.json",
+      "sha256": "b100c1bad6caf0955123fcdb58993414941459a4e78e2e043324684e04770c5f"
+    },
+    {
+      "bytes": 3825,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-A/action.json",
+      "sha256": "9f51122221b5de9d78c8f7be0471729b4db9ad1b788caea0dddebd0fe8763c36"
+    },
+    {
+      "bytes": 6359,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-A/evaluation.json",
+      "sha256": "b5bdc1e3668ab496178b383ab4c06c632a8e1a119b073acb6cbfc6c297862630"
+    },
+    {
+      "bytes": 525,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-A/local-description.json",
+      "sha256": "cb6a8b21210e36ef008987a689d6ea6e0e587bd24986666521cbbd371dde75a0"
+    },
+    {
+      "bytes": 5973,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-B/action.json",
+      "sha256": "4a10ce3591ab1de9bb500ef33c872dd347518e1a333290945c86802aa12e7de8"
+    },
+    {
+      "bytes": 10719,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-B/evaluation.json",
+      "sha256": "36a4f8505a0a61c69679d8fe58b9a96e582245a95a6cc77eec17c113c67d875d"
+    },
+    {
+      "bytes": 1749,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-B/manual.json",
+      "sha256": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-B/resolution.json",
+      "sha256": "c2a4db1cd9ea31261ffc62dd1fa35f74f151cd1a819aa02f81a4f2cf9d12aa48"
+    },
+    {
+      "bytes": 5973,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-C/action.json",
+      "sha256": "66b8f02eab780c1440401e648865e3e9ef7a5300e23d326935d2b1fd723abb38"
+    },
+    {
+      "bytes": 10719,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-C/evaluation.json",
+      "sha256": "76a9ce7141834f8e89ed7f1b34a150525812ba47abbb8cd442305b11c8177e1c"
+    },
+    {
+      "bytes": 2519,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-C/manual.ttl",
+      "sha256": "e57a5b0604c5dc8039ea6e79352044a52810f4389481079414243319a2436812"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples-final/D01-b-C/resolution.json",
+      "sha256": "fc652682b03b7a605a086fbba920cb9016a3705c5ad4c49198a2820163126393"
+    },
+    {
+      "bytes": 4004,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-A/action.json",
+      "sha256": "41cb779015576e0e821ca3bbce742ccc9b9c3480020a0c894e458659d48f5bbd"
+    },
+    {
+      "bytes": 6675,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-A/evaluation.json",
+      "sha256": "d15349b16880b55765e49c8a00e3da3c33ccebb1330d7c3098a06dbc9ce51337"
+    },
+    {
+      "bytes": 493,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-A/local-description.json",
+      "sha256": "4bcbcdca0b528d3b00ca654895857dafc478740b322723a705a3565135a3764a"
+    },
+    {
+      "bytes": 6095,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-B/action.json",
+      "sha256": "7ee544aeb71ca9a6a519abdff44cfc23f1f86273c906a6aac802bb2ca270892e"
+    },
+    {
+      "bytes": 10962,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-B/evaluation.json",
+      "sha256": "a74d0a955e99e65fc5fc1c4a542354ed11dc9ef92407df4a2fd56bcbcd0e6f32"
+    },
+    {
+      "bytes": 1690,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-B/manual.json",
+      "sha256": "002ac3a380be4d58cd10d8630d232c8035adf25a037f777ed637c35d35ce1978"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-B/resolution.json",
+      "sha256": "2a22b2902e358a33db3f61798c685a8dc5437eaae1a220e1e52149c4982b9d59"
+    },
+    {
+      "bytes": 6095,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-C/action.json",
+      "sha256": "927e8a7a97e9379fb3a9ebe09e1cd34d4cd3bc08b2b8ea3658d61bf736b4b1e1"
+    },
+    {
+      "bytes": 10962,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-C/evaluation.json",
+      "sha256": "dcb1d448344cd73820a089fed97076137970202f83448aecedbec2b1ac0e4c6b"
+    },
+    {
+      "bytes": 2456,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-C/manual.ttl",
+      "sha256": "6e8e475d59c7f73f86ae7ee54c6de3efcae62cea4e1e66e95deb81e824e58caf"
+    },
+    {
+      "bytes": 1935,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-a-C/resolution.json",
+      "sha256": "4cd91d99cd4ba46dd4c2bd55dd51e3b383274f178bfe39f72f17e60805516ee3"
+    },
+    {
+      "bytes": 3941,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-A/action.json",
+      "sha256": "c730ce068c24be7303950b304cca8e2d9f5e93e64d322c0c9ffabb0cfbbe9301"
+    },
+    {
+      "bytes": 6604,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-A/evaluation.json",
+      "sha256": "d77501aa0fc0898dd7815ac2d035daa5166d8315c9f653e1f0c0d43c75b513c9"
+    },
+    {
+      "bytes": 536,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-A/local-description.json",
+      "sha256": "96c1c59172f6d520a12d6eb6facec9dea26e3b4a5e1b1534864e5fbd7ada6ece"
+    },
+    {
+      "bytes": 6100,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-B/action.json",
+      "sha256": "407f06ed38a00bdfd9797a8cb4b984132884995a839a3d178da278ba60f0890d"
+    },
+    {
+      "bytes": 10975,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-B/evaluation.json",
+      "sha256": "9b406952f5d422ce12fc231d6e8a4f0381f4b2123f8e1cf87e28d9615387bfb5"
+    },
+    {
+      "bytes": 1760,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-B/manual.json",
+      "sha256": "6d7eeb1e9b00dde3b36964f59b5b65b550f94f895f4ce5e122f9e9d384398a3f"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-B/resolution.json",
+      "sha256": "80811cce5bf8f508e682321453daa9ce16f33056799349d032c7fa1569a97ef0"
+    },
+    {
+      "bytes": 6100,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-C/action.json",
+      "sha256": "285b3d6c3d9eac2bdc8e4c5860b4b28ee50beab21a4343d35d80699a030cbf2e"
+    },
+    {
+      "bytes": 10975,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-C/evaluation.json",
+      "sha256": "5032e4c589fbc2896cdb5e965434f72ccb6bf3eee306bd44f19b96ef2a80ec72"
+    },
+    {
+      "bytes": 2530,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-C/manual.ttl",
+      "sha256": "34b4cbcf9f72c0ebd8c07eb47eabfda145ae3d40eb279f1b644b0efb1feb09ff"
+    },
+    {
+      "bytes": 1951,
+      "path": "docs/artifacts/milestone4_1/examples-final/D15-b-C/resolution.json",
+      "sha256": "2442109c2fa46253982e8d1476f5d069aa5b442253390ec9d3879b1a26510a23"
+    },
+    {
+      "bytes": 1861,
+      "path": "docs/artifacts/milestone4_1/final-integrity-checks.json",
+      "sha256": "84345283f5c1572f1f7d463a23f1326e03b3b58f2459ee9bd53efa2ddd0b0564"
+    },
+    {
+      "bytes": 1981,
+      "path": "docs/artifacts/milestone4_1/initial-new-tests.log",
+      "sha256": "f19da5f7073c0ca296aa5fc36afe8b98b6e879ec32b01f5cd7621cb2ac56164e"
+    },
+    {
+      "bytes": 1854,
+      "path": "docs/artifacts/milestone4_1/integrity-checks.json",
+      "sha256": "ebae17e6d804d5bae9fd1a926c0a2ec3811f2993f1c2a10f9422a0c11325a6be"
+    },
+    {
+      "bytes": 7921,
+      "path": "docs/artifacts/milestone4_1/intermediate-source-tests.log",
+      "sha256": "996ae508d5857a8b9041222f054d7fde040be0d9aa47d48ef9d72968865d39a3"
+    },
+    {
+      "bytes": 7921,
+      "path": "docs/artifacts/milestone4_1/intermediate-wheel-tests.log",
+      "sha256": "7f10266142f52e279c19ed62f26ae0201eb1e0f4ef387255618a6e4c72bdb4ad"
+    },
+    {
+      "bytes": 330,
+      "path": "docs/artifacts/milestone4_1/local-only-environment.json",
+      "sha256": "30d7c345d39d0de50b18c99b197a1ad54115cc0b56ff2735615d3c55c495f002"
+    },
+    {
+      "bytes": 276,
+      "path": "docs/artifacts/milestone4_1/local-only-v2-environment.json",
+      "sha256": "ef86d203e465c3c82db51fd3cc4e9683947a8975492dff0949199caa6d6b8389"
+    },
+    {
+      "bytes": 909,
+      "path": "docs/artifacts/milestone4_1/preliminary-evaluation-environment.json",
+      "sha256": "7d1231423ae8d3cde0bb4ce49e65214096c0e0ca07eb722a7e6b2af0f1cbcff2"
+    },
+    {
+      "bytes": 45081,
+      "path": "docs/artifacts/milestone4_1/preliminary-events.jsonl",
+      "sha256": "a0058d79233c420371c49fb00a704659bb9aaf9fcca1a2355e21495dd3bd215e"
+    },
+    {
+      "bytes": 934,
+      "path": "docs/artifacts/milestone4_1/preliminary-preservation.json",
+      "sha256": "9de00f7873f9a31ccb680c219170899461e2c5d598295c99917032fc9a15322f"
+    },
+    {
+      "bytes": 8084,
+      "path": "docs/artifacts/milestone4_1/preliminary-restored-tests.log",
+      "sha256": "c7720bf4ad5c25ec930f84e9a3ab8265be169144fb8b8a5161e4ab15fbb5e42e"
+    },
+    {
+      "bytes": 636333,
+      "path": "docs/artifacts/milestone4_1/preliminary-source-v2.tar.gz",
+      "sha256": "b6eba76046e433932eedeb882e7ea3ca60d08e7d935a1d617362aba13f943041"
+    },
+    {
+      "bytes": 81803,
+      "path": "docs/artifacts/milestone4_1/preliminary-tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "sha256": "7d5fcdd282a05a8d59741c5eb0e5f7bd4b4bec1718641e05886b58e60854f8f3"
+    },
+    {
+      "bytes": 40494,
+      "path": "docs/artifacts/milestone4_1/preliminary-v2-manifest.json",
+      "sha256": "9be019a2200d46685a4fbae4e76d1830eeb6a964fe4a41c3afffe1b21bf6fc04"
+    },
+    {
+      "bytes": 4214,
+      "path": "docs/artifacts/milestone4_1/preliminary-validation-results.json",
+      "sha256": "34806e366d63a7c2067c4dfddfd53dba3b2a2e0f4e9f9fe3e622d115aa733d9c"
+    },
+    {
+      "bytes": 811,
+      "path": "docs/artifacts/milestone4_1/resource-summary.json",
+      "sha256": "fabe3781ed590860e5535d2ff6f7e2f05327286155ebb2e7404e28bf37d3b4ce"
+    },
+    {
+      "bytes": 8245,
+      "path": "docs/artifacts/milestone4_1/restored-after-native-extension-tests.log",
+      "sha256": "9c2b6e5240a96ac991596261186ba1c7f5a44fb7a975f370cafe607b0c0fe35b"
+    },
+    {
+      "bytes": 8245,
+      "path": "docs/artifacts/milestone4_1/source-after-native-extension-tests.log",
+      "sha256": "e6036f20640ba998656a2f7f0c9fa7d8e270aef52f1e235e867e70a6dc60c6b4"
+    },
+    {
+      "bytes": 8084,
+      "path": "docs/artifacts/milestone4_1/source-tests.log",
+      "sha256": "319c37b5d1a61b7ea15aaf08c30bd0993434326c17ae3eee3a25189cdfeffa4b"
+    },
+    {
+      "bytes": 1968,
+      "path": "docs/artifacts/milestone4_1/start-state.json",
+      "sha256": "229935c6dbf24022a110a666adafc92ee35e3d52174161e0fbe9c0870b6c946e"
+    },
+    {
+      "bytes": 82088,
+      "path": "docs/artifacts/milestone4_1/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "sha256": "4dcf10b32c0a9fd61628a14e1f931ca343b4a3c0126486a41665945a4361b210"
+    },
+    {
+      "bytes": 8507,
+      "path": "docs/artifacts/milestone4_1/validation-results.json",
+      "sha256": "0d9c240c13a49c9b5ef14096731f08677a99f60d185212c8bc9441290119fced"
+    },
+    {
+      "bytes": 8245,
+      "path": "docs/artifacts/milestone4_1/wheel-after-native-extension-tests.log",
+      "sha256": "886c777a9d16daac55b58b8c9f84b5750c631339ea533c3964945dea47ddf1f3"
+    },
+    {
+      "bytes": 8084,
+      "path": "docs/artifacts/milestone4_1/wheel-tests.log",
+      "sha256": "b4153d1f018ffc37be67a4061b6fd49730d96292d2d39f5032eccbec17f9854e"
+    }
+  ],
+  "branch": "codex/milestone-4-1-pre-freeze",
+  "environment": {
+    "interpreter": "/tmp/semanic-m41-v2-wheel-env/bin/python",
+    "packages": [
+      {
+        "name": "attrs",
+        "version": "26.1.0"
+      },
+      {
+        "name": "jsonschema",
+        "version": "4.26.0"
+      },
+      {
+        "name": "jsonschema-specifications",
+        "version": "2025.9.1"
+      },
+      {
+        "name": "pyparsing",
+        "version": "3.3.3"
+      },
+      {
+        "name": "rdflib",
+        "version": "7.6.0"
+      },
+      {
+        "name": "referencing",
+        "version": "0.37.0"
+      },
+      {
+        "name": "rpds-py",
+        "version": "2026.9.1"
+      },
+      {
+        "name": "tutorielIAAgentique",
+        "version": "0.1.0"
+      },
+      {
+        "name": "typing_extensions",
+        "version": "4.16.0"
+      }
+    ],
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "python_version": "3.12.14",
+    "wheel_metadata": "Wheel-Version: 1.0\nGenerator: hatchling 1.32.4\nRoot-Is-Purelib: true\nTag: py3-none-any\n"
+  },
+  "file_groups": {
+    "condition_A_provider_local": {
+      "contracts/api_local/a.json": "0191abe00fb904e9b72362941f9c02ddd4416e1dd1ec4d4ff7a9952bea3ef82d",
+      "contracts/api_local/b.json": "e6bd68d080556d41a81361eb3a1859e99566fa8cdba480166a388447cfbde1f6",
+      "src/semantic_action/local_baseline.py": "4535ea4d786f09f850fe5e9d64224779a72f7f65261332cb9ec72d331c88912c"
+    },
+    "documentation_and_provenance": {
+      "docs/ARCHITECTURE.md": "0f3fee4f484745faae81eda52f770d7c195a0a36b42a90ecaabf3ce9d1352bc8",
+      "docs/CONTRACT_SEMANTICS.md": "90c5dd8ccfb8572991356c2fcad8fb3854ee4b2d107d2e01b753bcc8624307ef",
+      "docs/COST_MEASUREMENT_PROTOCOL.md": "e3abb7742b141957cdbd5e5ffd9998f98959e5a3ff4efbe2b9c109dfacb526e2",
+      "docs/EVALUATION_TASK_SPECIFICATION.md": "b1420d49968569b16bd3e864f52b3d9113b12ec3edf827a6bbc0e18c71efbc3c",
+      "docs/EXPERIMENTAL_PARITY_CHECKLIST.md": "f1ce8d3e5eed3db02ea815f9cd608c695c0a71f63ff6ca9282a387ebcc3de659",
+      "docs/HELD_OUT_EVALUATION_PROTOCOL.md": "446e4f02d434a39de1c91f24c8d5b402df5fb9e3fae41149fe3dc3b204593219",
+      "docs/IMPLEMENTATION_AUDIT.md": "aa4e812942f250929b9b6ca674f6ef8eb733795a3a07bc828021cb6b665f8d7d",
+      "docs/MILESTONE_1.md": "4afd6fa7dea1a16fb507d33017467bef8ea6ab7493fca4ccd679b1904717f63d",
+      "docs/MILESTONE_2.md": "871a39ca477c43590db9ae830e7aa70152193724b0f3cf6bce2838ec6876d1d4",
+      "docs/MILESTONE_3.md": "e79d325bee6ded8ea7692f709bc41d553fa1689f89663c1fc22e676130001a26",
+      "docs/MILESTONE_3_DESIGN.md": "139588d8b256f6b4d526e8e6ece0291d021dbf5aa7db5818c0532eae2b76376f",
+      "docs/MILESTONE_4_1.md": "b3d2c4e6e3b17d9466ec6dc73faf57e10d5c399532137ff9152b6b4180069bce",
+      "docs/MILESTONE_4_FREEZE_AUDIT.md": "eeb2583767032de38cb8e51ce9b8d2d2ee3504741c8c434fa26c9d2b52a5b7d9",
+      "docs/PROVIDER_C_FREEZE_PROCEDURE.md": "e5beecf287e5577f8390860d8e4125e14b1637439e690ca821a45d38f477eb56",
+      "docs/SCIENTIFIC_FREEZE_APPROVAL_CHECKLIST.md": "7287fbe2b7de9cbce10c95457b1530bbe445daffec9f39e3886856113e5a4566",
+      "docs/artifacts/milestone4_1/evaluation-requirements.txt": "5f8bb5b5dc97a8d78829c673298c58e3ae9158f078488fe617df3ef592a638e6",
+      "docs/artifacts/milestone4_1/start-state.json": "229935c6dbf24022a110a666adafc92ee35e3d52174161e0fbe9c0870b6c946e",
+      "docs/integration_work.jsonl": "b16a5d9d49b1299aa46792a0f6239b28e78b8162b2900a9cca21d0a0357ce491",
+      "docs/providers/PROVIDER_B.md": "e852273d7052d362aebb97991d61d868f0ad29092c55b6b321b03f3bfe015b52"
+    },
+    "governing_research_protocol": {
+      "docs/protocols/ESWC_2027_Frozen_Research_and_Experimental_Protocol.pdf": "5742e84600033b5aac7071a8075cf05bdc2a272f0642b1e479f910423ba5e391",
+      "docs/protocols/ESWC_2027_Frozen_Research_and_Experimental_Protocol.txt": "aa39d8ce6c6958644c6c4ca75ad7776bc4a63db01ef5090c686891c42529a01a",
+      "docs/protocols/MILESTONE_4_1_REQUEST.md": "b76955591372b6614c8bd8d8cdbe4d1b6c0108ffe10bd12f520eb0b0d835d737"
+    },
+    "historical_evidence": {
+      "docs/SCIENTIFIC_FREEZE_MANIFEST.json": "2a01e44585d355cd3b763f0551a9f33c1139fe53595d3c8b28cd62d71a93bd4c",
+      "docs/artifacts/milestone4/audit-resource-measurements.json": "a1675fb9a98339d4850ee4e472415c8565ff9cb015c814234f8c102065abfee6",
+      "docs/artifacts/milestone4/candidate-source.tar.gz": "ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69",
+      "docs/artifacts/milestone4/candidate_artifacts.py": "fce12f4a199a8e3fcbaabd4fbd24ef4f985d55f816c2455d7788d030c2b1d53e",
+      "docs/artifacts/milestone4/evaluation-environment.json": "1b6db55cd3db7b8f71b08d038af729dfb67684c27092eb9977bfb46eab7668a3",
+      "docs/artifacts/milestone4/evaluation-requirements.txt": "9e7c330d1bc4032c8ad12b0e6fd7a587b221ca0849e404ab22a6a1855646ec7a",
+      "docs/artifacts/milestone4/functional-checks.json": "97e1c9d9c9e2da64f3326c7706668dbe614f2a4c991105071dca5469c1707095",
+      "docs/artifacts/milestone4/integrity-checks.json": "d2eb33dccbcae28fecc9a2f99dc37d0dddacb346f6ea400952036bf6800d0ff2",
+      "docs/artifacts/milestone4/restored-tests.log": "0f7070ca0005f6845da39477e3f6aca3db826622701811ded298cae2b4f0d357",
+      "docs/artifacts/milestone4/source-tests.log": "1b671904597cf67a08a18057e680dc59b2c4846def0aad8f818d2335d095c5a5",
+      "docs/artifacts/milestone4/tutorieliaagentique-0.1.0-py3-none-any.whl": "20f75b6635fcf12d7ec029fbe6d70df62edee695be404c31e9eb3ed9cd7d125d",
+      "docs/artifacts/milestone4/validation-results.json": "b2abef7b390019a950bea8c8e4c062591269cb42c701b5d9f516c6c6d2cca288",
+      "docs/artifacts/milestone4/wheel-tests.log": "fd5cde1ee1089488754c0f02a8814a08d959ed37c8cec724c74aa11d9d789df5",
+      "docs/freeze-manifest.json": "3ce3a027ef7147b363844ee6da737aaab8b7d26b665acc860c160dee3cd537fa"
+    },
+    "independent_native_evaluation": {
+      "src/semantic_action/native_verifier.py": "e1d55ccb6234977961a17d576efa0c9df1d7890c427f2c20b19ab06f098a40a2"
+    },
+    "neutral_transport_and_oracle": {
+      "src/semantic_action/model.py": "0f241776b02d70348b09a92755c816fa1524a85c49e5190594180806c73d9f43",
+      "src/semantic_action/oracle.py": "379ca6987d8c1413743b7b77ca7b90d56fbfdae31bd368bcf5da09ec771ac042",
+      "src/semantic_action/transport.py": "f11ff8c325a8d1983fdda8b9e8edfe417efd43d1252e2b3efbbecc5d441306d6"
+    },
+    "original_project_and_dependency_declarations": {
+      ".env.example": "c38f4889563cf9f4200639055b8d08a680f1aae698232ca2ad89c4fb6cc13d6d",
+      ".gitignore": "e13cf71dd7872f91ed0cae7b9df672041ec04967e37d4a17fb17aeb5d34bb57b",
+      "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "README.md": "df718744588f73d80fc881abd74edba0fec285d69340ef90e064b6e5cad2132c",
+      "architecture.png": "f61e897f6a0f0e03bf2de090db066111194c30998841394f03daa99ed708fbb5",
+      "architectureEtendue.png": "28b6da48f542797829371ba6420ff4d48b62bb190c91defb8f5506469274a7e7",
+      "graph.png": "b0cc91ea706caafe859034a88293c23bf4b718680e5654c445e91f4b9bb4734d",
+      "graphFactChecker.png": "18de5d041bdcf3d94505cb047b8ac966c8f414c86cc5af2f1852ac9942e227ac",
+      "pyproject.toml": "71d8141a737f8263e0a3d67134aac4173ce23103b87d4acbdd54e970afc3c546",
+      "requirements-semantic.txt": "f4394c579e623d07566beb3c9178e61fb0469de55f70559df2fe3315d0edf39d",
+      "requirements.txt": "2340e8b16af644d73be9c1fd180094e10a7346f9cccbe3a1f9692dfb094c8b82",
+      "src/tutorielIAAgentique/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/tutorielIAAgentique/agent.py": "670574b1d9c54bc45f039cb339758c126045dbaa83152487218116d60e5ae515",
+      "src/tutorielIAAgentique/main.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/tutorielIAAgentique/mas.py": "b7321d5c5e4098549ce65b2d36ec07f8507569aed4c9614fef4e975ed093cce2",
+      "src/tutorielIAAgentique/masFactChecker.py": "93998b614eedd02faafecf75e85d7963246e39226d25df4d80fe00347436adff",
+      "src/tutorielIAAgentique/masScore.py": "0de8d180a50de4d9a2551681eeede7fe891b0191c0194f2bd9b5f27711300b15",
+      "src/tutorielIAAgentique/masWithMemory.py": "437f6a3bf4c022866cea2eb920c9214479ee3caee0202f5cb5887f32244e5fdd",
+      "src/tutorielIAAgentique/masWithMemoryAndSelfReflect.py": "0803aa27025b67dae4815fb8332662cd92307905d09d06959512d31730312464",
+      "src/tutorielIAAgentique/masWithPython.py": "d7585d9637cd1edad91d46ff37af6d4fbadedbd97bf9f21bee4eb92348f5d0c3",
+      "src/tutorielIAAgentique/prompt.md": "c068f8a9fc780807c3d4ced22a4bf8acdb70bbb90e2208d9f8c9614835720a80",
+      "src/tutorielIAAgentique/tools.py": "0fef58054d68d4a1102aecbed987c9fac47f9ae3f1903bae35ee5cca732f3905",
+      "src/tutorielIAAgentique/utils.py": "2e2d63205259826b8a9117ff83e98374523e4eefc0d1bc6fa8d917e302e5c406"
+    },
+    "prospective_cost_collector": {
+      "src/semantic_action/event_ledger.py": "efed65e3322929f4138f54a9c6a9b9759fbba3bc19d57f65c542618e1db96351"
+    },
+    "prospective_tasks_and_harness": {
+      "docs/evaluation_tasks_v1.json": "592560aa28cf2e7c04d9635da27b8110d060025d8f768f58bc1441ef6ea51efa",
+      "src/semantic_action/evaluation.py": "a5bb6fc076d4bae1843f03748658fe9458675492b7e2acad304148efc5221699",
+      "src/semantic_action/evaluation_tasks.py": "d3afc85ee1e3d90bef1165ba438c97edf515ea64dc3dd02bc2b121937e7af909"
+    },
+    "reproducibility_tools": {
+      "scripts/candidate_v2.py": "6265fe388fa421b5520167eae0382a3c38abfae58f6e6d364634184f2f23ea6e",
+      "scripts/freeze_manifest.py": "185a0136a20ae29ea30f567a5a1d61eccc0d4cc47725cca2ea3fc98ec99b29b7"
+    },
+    "shared_semantic_infrastructure": {
+      "contracts/calendar.json": "dc9d58079720a21b65db103d0289f78b33b007dd3eba277a3ddaf2733a01f4a3",
+      "contracts/calendar.ttl": "05a5428a2aa9764dc2247445a2a9718b7ceaef3f15fd735858cc9bd172f29a2b",
+      "contracts/goal.json": "2a8832229f9b6df0ea53f220aed17b823c048dcb638c9203b9db2e6f12c62b6a",
+      "contracts/shared-capabilities.ttl": "0066d0ac36c2a347a192024161edf5680f051a0041184531cdafce22c1023621",
+      "contracts/vocabulary.ttl": "9f416f4a834ea25eecddd32e922fc4b8c74c56b1b2d290c29e34d103de234e8f",
+      "src/semantic_action/__init__.py": "7b9777f920b22d80e7c4c785d30ff87792503dd3abc10eb7c73edde161255163",
+      "src/semantic_action/__main__.py": "b0c45374e22ca1ef4cb66f77ce51818d750d039bc8ddfc92397709d4b2fe95e8",
+      "src/semantic_action/contract.py": "4098973ab312a8b341a78a9d9bfc31a8b7ed134a3537eaf0fb8137fd877adc63",
+      "src/semantic_action/cost.py": "1e7f6e54a06e3a8c45710c1eacfdd43e0aee70e8ee4ecf3a7893a40f07ea80e4",
+      "src/semantic_action/json_contract.py": "c5051895f78ae9bf895b8a457eb6075a3bc28d3f88b1eb57ed2cc19cf6693198",
+      "src/semantic_action/pipeline.py": "8a9f92cdac2f1e1d688bab3e4f4f090165da0c44ef6a3ef85528a3b0c4123c79",
+      "src/semantic_action/provider_contract.py": "9eeb1f643998046b66f3b985e953a14585d7715cd12ad73521fbfc096932d3bf",
+      "src/semantic_action/registry.py": "1a2db15fc0b93dd3420a009c778c27e4b14d340c4a2be0d1a620b8a46ac03d76",
+      "src/semantic_action/reuse_demo.py": "3ccd1e87c221e31535ae7cf99abf1bb16279488f490f6ced395da1dac2f1aac6",
+      "src/semantic_action/schemas/contract-v1.schema.json": "4bff920479fb5272b9a7f9b951873d6e8d863dd8b91b10a4ba8c0864c645afa9",
+      "src/semantic_action/schemas/contract-v2.schema.json": "b2cbdc882b535433ec0822dcb78852d74943e8bc3ca57698bc611fc87bea5bc0",
+      "src/semantic_action/transform.py": "6c4d937dbb0e48629ea2f482d1554d2ca1e1f9280991c7da691bf631f425be7f"
+    },
+    "tests": {
+      "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests/semantic_action/test_parity.py": "81bb81f4a59563df4fcf771bf89de0cc25e40dc66161c5d9399f0bae4bf08b83",
+      "tests/semantic_action/test_pipeline.py": "68d9b650fb1bf57a18f08904c70b91c4279e0bf0cdf2084db8eed1327b489226",
+      "tests/semantic_action/test_pre_freeze.py": "6a0b82355a9acbd99f6b648bed264a2c42b84f0bdc59f8e9e84dc3d597e88372",
+      "tests/semantic_action/test_registry.py": "6f30ade6f1611461b45ab3dd61d386a54b68f1187d92bcaf8122d66b9cc79dca",
+      "tests/test_react_NewYork.py": "4b8cf3b9d59432270f9f4322e691539e4dafb699b704f798d3569557266bc7c0",
+      "tests/test_react_Tokyo.py": "6413baf1b6854218617bd87c5008446c017e7a3a69969ec8dce439a2878cd487",
+      "tests/test_react_weather.py": "24a24c5394a11b4e0957f464fb9ac23cc776fe97aae0e33436610ad3fbda9bc7",
+      "tests/test_tools.py": "53ee6f1eda5613352d91e859f4caeed64dec050349596822ea95141baf59364c"
+    },
+    "visible_provider_fixtures_and_shared_manuals": {
+      "contracts/providers/a.json": "b821cd49864a3d4d5179be95120644525b63293d6ed2203e1b7d85ff89685d99",
+      "contracts/providers/a.ttl": "44f4009022932aa0c45f478bc11bd7cf80a4ec7930807fec22f4a238c8047951",
+      "contracts/providers/b.json": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7",
+      "contracts/providers/b.ttl": "b7667e81db1ec6afa7b009a65bffb1588f51e1ce84068d04c74fc85c8dab8a72",
+      "src/semantic_action/artifact.py": "e6648a5938a0a70aedeee8f0d9e0f7411c61beaf1cdd5aa49e92f0d6c60a60b4",
+      "src/semantic_action/provider_b.py": "df4734aee62babc99b3d735d375bb47366647800667cfa73eb9ff9dca2d73714"
+    }
+  },
+  "generated_at": "2026-10-17T16:55:40.121930+00:00",
+  "governing_protocol": {
+    "path": "docs/protocols/ESWC_2027_Frozen_Research_and_Experimental_Protocol.pdf",
+    "role": "User supplied governing pilot protocol; not scientific approval of this candidate",
+    "sha256": "5742e84600033b5aac7071a8075cf05bdc2a272f0642b1e479f910423ba5e391"
+  },
+  "historical_candidate": {
+    "archive_members_verified": 74,
+    "historical_files_verified": 14,
+    "manifest_sha256": "2a01e44585d355cd3b763f0551a9f33c1139fe53595d3c8b28cd62d71a93bd4c",
+    "source_archive_sha256": "ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69",
+    "working_tree_comparison": "Not applicable: V2 intentionally changes code/documents, historical bytes are in the archive"
+  },
+  "historical_verification_command": "python3 scripts/candidate_v2.py --verify-history",
+  "human_approval_required": [
+    "Exact candidate digest and source identity",
+    "Independent manual authors/integrators and exposure declarations",
+    "Native observer/task expectations review",
+    "20 diagnostic scope versus full pilot multi-step goals",
+    "Repetitions/seeds/order/budgets/stopping rules",
+    "Cost collector/allocation and external labor measurement",
+    "Future sealed provider and held-out task/oracle custodianship"
+  ],
+  "limitations": [
+    "One AI contributor previously exposed to shared manuals; no independent authoring or human cost inference",
+    "One bounded calendar capability, fixed transforms, local fixtures, single writer",
+    "20 public single-action apparatus diagnostics are not the full confirmatory benchmark or sealed task set",
+    "Unmeasured historical effort remains unknown; hash chain does not authenticate human truth",
+    "No LLM planner, no multi-step planner, no Provider C implementation"
+  ],
+  "schema_version": 2,
+  "source_commit_note": "Implementation commit; final candidate metadata may be committed separately. Exact tested identity is source_tree_sha256 plus archive.",
+  "source_commit_sha": "1b6b8e43c31230d6e458ce6747c447f5fba5bab3",
+  "source_tree_sha256": "20bde86375955f144494a0b8353c87a1b1b1b48de2ea4b7daf218e79240b6494",
+  "status": "technically_validated_candidate_pending_investigator_review",
+  "technical_gates": {
+    "B_C_information_parity": "typed profile equality and existing differential tests",
+    "Provider_C": "not unsealed or implemented",
+    "condition_A_on_visible_providers": "implemented_and_tested",
+    "cost_collector": "implemented; actual human observations remain null when unmeasured",
+    "native_state_verification": "implemented; organizational independence still needs external review",
+    "prospective_parameters": "proposed, not approved",
+    "three_condition_correctness_parity": "tested on 20 public diagnostics x 2 visible providers x 3 conditions"
+  },
+  "uncommitted_scoped_changes": false,
+  "unseal_authorized": false,
+  "validation": {
+    "actual_retained_examples": 24,
+    "candidate_approval": "pending",
+    "candidate_technically_ready_for_review": true,
+    "commands": [
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 82.39,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "historical_baseline",
+        "log_path": "docs/artifacts/milestone4_1/baseline-tests.log",
+        "passed": 50,
+        "skipped": 0,
+        "tests_run": 50
+      },
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 62.737,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "first_new_component_suite",
+        "log_path": "docs/artifacts/milestone4_1/initial-new-tests.log",
+        "passed": 13,
+        "skipped": 0,
+        "tests_run": 13
+      },
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 145.289,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "intermediate_source",
+        "log_path": "docs/artifacts/milestone4_1/intermediate-source-tests.log",
+        "passed": 64,
+        "skipped": 0,
+        "tests_run": 64
+      },
+      {
+        "command": "/tmp/semanic-m41-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 145.633,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "intermediate_wheel",
+        "log_path": "docs/artifacts/milestone4_1/intermediate-wheel-tests.log",
+        "passed": 64,
+        "skipped": 0,
+        "tests_run": 64
+      },
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 146.72,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "final_source",
+        "log_path": "docs/artifacts/milestone4_1/source-tests.log",
+        "passed": 65,
+        "skipped": 0,
+        "tests_run": 65
+      },
+      {
+        "command": "/tmp/semanic-m41-final-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 147.009,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "final_installed_wheel",
+        "log_path": "docs/artifacts/milestone4_1/wheel-tests.log",
+        "passed": 65,
+        "skipped": 0,
+        "tests_run": 65
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv build --wheel --out-dir /tmp/semanic-m41-final-wheel",
+        "exit_code": 0,
+        "id": "build_final_wheel"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m41-final-wheel-env --python python3",
+        "exit_code": 0,
+        "id": "create_fresh_wheel_environment"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-final-wheel-env/bin/python -r docs/artifacts/milestone4/evaluation-requirements.txt /tmp/semanic-m41-final-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+        "exit_code": 0,
+        "id": "install_final_wheel"
+      },
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -k test_unsafe_mutation_attempt -v",
+        "exit_code": 0,
+        "id": "safety_regression",
+        "passed": 1,
+        "tests_run": 1
+      },
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -k test_snapshot_deep_copy -v",
+        "exit_code": 0,
+        "id": "expanded_raw_state_invariant_regression",
+        "passed": 1,
+        "tests_run": 1
+      },
+      {
+        "command": "/tmp/semanic-m41-restored-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 145.954,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "pre_extension_restoration",
+        "log_path": "docs/artifacts/milestone4_1/preliminary-restored-tests.log",
+        "passed": 65,
+        "skipped": 0,
+        "tests_run": 65
+      },
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 145.313,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "source_after_native_extension",
+        "log_path": "docs/artifacts/milestone4_1/source-after-native-extension-tests.log",
+        "passed": 66,
+        "skipped": 0,
+        "tests_run": 66
+      },
+      {
+        "command": "/tmp/semanic-m41-v2-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 145.765,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "wheel_after_native_extension",
+        "log_path": "docs/artifacts/milestone4_1/wheel-after-native-extension-tests.log",
+        "passed": 66,
+        "skipped": 0,
+        "tests_run": 66
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv build --wheel --out-dir /tmp/semanic-m41-v2-wheel",
+        "exit_code": 0,
+        "id": "build_extension_aware_wheel"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-v2-wheel-env/bin/python -r docs/artifacts/milestone4_1/evaluation-requirements.txt /tmp/semanic-m41-v2-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+        "exit_code": 0,
+        "id": "install_extension_aware_wheel"
+      },
+      {
+        "assertions": "No RDFLib/jsonschema installed; both local APIs and native verifiers achieve goal",
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-local-only-v2/bin/python /tmp/semanic-m41-v2-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+        "evidence": "docs/artifacts/milestone4_1/local-only-v2-environment.json",
+        "exit_code": 0,
+        "id": "local_baseline_without_shared_dependencies"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m41-final-restored-env --python python3",
+        "cwd": "/tmp/semanic-m41-final-restored-source-auy1djem",
+        "exit_code": 0,
+        "id": "create_final_restored_environment"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-final-restored-env/bin/python -r docs/artifacts/milestone4_1/evaluation-requirements.txt /workspace/SemanicIAAgentique/docs/artifacts/milestone4_1/tutorieliaagentique-0.1.0-py3-none-any.whl",
+        "cwd": "/tmp/semanic-m41-final-restored-source-auy1djem",
+        "exit_code": 0,
+        "id": "pinned_final_restoration_install"
+      },
+      {
+        "command": "/tmp/semanic-m41-final-restored-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/tmp/semanic-m41-final-restored-source-auy1djem",
+        "elapsed_seconds": 145.513,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "restored_after_native_extension",
+        "log_path": "docs/artifacts/milestone4_1/restored-after-native-extension-tests.log",
+        "passed": 66,
+        "skipped": 0,
+        "tests_run": 66
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip check --python /tmp/semanic-m41-v2-wheel-env/bin/python",
+        "exit_code": 0,
+        "id": "final_candidate_dependency_consistency",
+        "packages_checked": 9
+      }
+    ],
+    "final_candidate_suite_ids": [
+      "source_after_native_extension",
+      "wheel_after_native_extension",
+      "restored_after_native_extension"
+    ],
+    "final_integrity_checks": "docs/artifacts/milestone4_1/final-integrity-checks.json",
+    "matrix": "20 diagnostic tasks x 2 visible providers x 3 conditions",
+    "note": "Intermediate logs retained honestly; final source/wheel and restored suite establish candidate readiness. Expanded native-state invariant was additionally checked after initial full-suite launch.",
+    "preliminary_candidate": "preserved under preliminary-* with relocation hashes; not final source identity",
+    "restoration_pending": false,
+    "restored_source_tree_sha256": "20bde86375955f144494a0b8353c87a1b1b1b48de2ea4b7daf218e79240b6494",
+    "scientific_approval": "pending",
+    "scope": "Public apparatus validation, not sealed evaluation or empirical human cost comparison",
+    "unseal_authorized": false
+  },
+  "verification_command": "python3 scripts/candidate_v2.py --verify"
+}
