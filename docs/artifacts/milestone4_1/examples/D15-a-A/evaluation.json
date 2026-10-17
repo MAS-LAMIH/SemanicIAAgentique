@@ -1,0 +1,244 @@
+{
+  "case_passed": true,
+  "condition": "A",
+  "expected": {
+    "classification": "native_mapping_discrepancy",
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": true,
+    "verified": false
+  },
+  "family": "wrong_mapping",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 15"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect stored title"
+        },
+        "observed_at": "2026-10-17T16:35:41.643882+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Incorrect stored title"
+          }
+        },
+        "observed_at": "2026-10-17T16:35:41.643882+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "event-0001": {
+          "advertised_title": "Diagnostic task 15",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect stored title"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T16:35:41.643882+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T16:35:41.630925+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Goal mismatch: title"
+    ],
+    "runtime_discrepancy": true
+  },
+  "provider": "a",
+  "resolution": null,
+  "runtime_action": {
+    "api_call_success": true,
+    "api_response": {
+      "body": {
+        "accepted": true,
+        "id": "event-0001"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 201
+    },
+    "applicability": "TRUE",
+    "compatible": true,
+    "completed_at": "2026-10-17T16:35:41.643621+00:00",
+    "condition": "A",
+    "description_sha256": "4bcbcdca0b528d3b00ca654895857dafc478740b322723a705a3565135a3764a",
+    "execution_decision": "EXECUTE",
+    "execution_started": "2026-10-17T16:35:41.641223+00:00",
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 15"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 15"
+    },
+    "observed_effects": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 15"
+        },
+        "observed_at": "2026-10-17T16:35:41.642525+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "event-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 15"
+          }
+        },
+        "observed_at": "2026-10-17T16:35:41.643252+00:00",
+        "revision": 1,
+        "writable": true
+      }
+    },
+    "observed_state_change": true,
+    "operation_id": "create_event",
+    "oracle_verdict": {
+      "achieved": true,
+      "reasons": []
+    },
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "evidence": {
+          "events": {},
+          "observed_at": "2026-10-17T16:35:41.640633+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "name": "local_write_permission",
+        "verdict": "TRUE"
+      }
+    ],
+    "reason": null,
+    "run_id": "01b6cb49-5c49-423d-84e8-1bf06cfa27a8",
+    "schema_version": 1,
+    "timestamp": "2026-10-17T16:35:41.639858+00:00",
+    "wire_evidence": [
+      {
+        "body": {
+          "events": {},
+          "observed_at": "2026-10-17T16:35:41.640633+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/calendar",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "accepted": true,
+          "id": "event-0001"
+        },
+        "error": null,
+        "method": "POST",
+        "path": "/events",
+        "raw_body": null,
+        "request_body": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 15"
+        },
+        "status": 201
+      },
+      {
+        "body": {
+          "event": {
+            "advertised_title": "Diagnostic task 15",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Incorrect stored title"
+          },
+          "observed_at": "2026-10-17T16:35:41.642525+00:00",
+          "revision": 1
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/events/event-0001",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "events": {
+            "event-0001": {
+              "advertised_title": "Diagnostic task 15",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "id": "event-0001",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "title": "Incorrect stored title"
+            }
+          },
+          "observed_at": "2026-10-17T16:35:41.643252+00:00",
+          "revision": 1,
+          "writable": true
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/events",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      }
+    ]
+  },
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": true,
+    "verified": false
+  },
+  "task_id": "D15"
+}

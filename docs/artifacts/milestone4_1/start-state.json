@@ -1,0 +1,22 @@
+{
+  "base_commit": "58816ad152a33a1e4464dc431e38f25b3dbbffbe",
+  "entry_branch": "codex/semantic-actions-json-rdf-parity",
+  "entry_status": "clean",
+  "working_branch": "codex/milestone-4-1-pre-freeze",
+  "historical_immutable_files": {
+    "docs/SCIENTIFIC_FREEZE_MANIFEST.json": "2a01e44585d355cd3b763f0551a9f33c1139fe53595d3c8b28cd62d71a93bd4c",
+    "docs/freeze-manifest.json": "3ce3a027ef7147b363844ee6da737aaab8b7d26b665acc860c160dee3cd537fa",
+    "docs/artifacts/milestone4/functional-checks.json": "97e1c9d9c9e2da64f3326c7706668dbe614f2a4c991105071dca5469c1707095",
+    "docs/artifacts/milestone4/integrity-checks.json": "d2eb33dccbcae28fecc9a2f99dc37d0dddacb346f6ea400952036bf6800d0ff2",
+    "docs/artifacts/milestone4/evaluation-environment.json": "1b6db55cd3db7b8f71b08d038af729dfb67684c27092eb9977bfb46eab7668a3",
+    "docs/artifacts/milestone4/restored-tests.log": "0f7070ca0005f6845da39477e3f6aca3db826622701811ded298cae2b4f0d357",
+    "docs/artifacts/milestone4/tutorieliaagentique-0.1.0-py3-none-any.whl": "20f75b6635fcf12d7ec029fbe6d70df62edee695be404c31e9eb3ed9cd7d125d",
+    "docs/artifacts/milestone4/source-tests.log": "1b671904597cf67a08a18057e680dc59b2c4846def0aad8f818d2335d095c5a5",
+    "docs/artifacts/milestone4/wheel-tests.log": "fd5cde1ee1089488754c0f02a8814a08d959ed37c8cec724c74aa11d9d789df5",
+    "docs/artifacts/milestone4/audit-resource-measurements.json": "a1675fb9a98339d4850ee4e472415c8565ff9cb015c814234f8c102065abfee6",
+    "docs/artifacts/milestone4/candidate-source.tar.gz": "ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69",
+    "docs/artifacts/milestone4/candidate_artifacts.py": "fce12f4a199a8e3fcbaabd4fbd24ef4f985d55f816c2455d7788d030c2b1d53e",
+    "docs/artifacts/milestone4/validation-results.json": "b2abef7b390019a950bea8c8e4c062591269cb42c701b5d9f516c6c6d2cca288",
+    "docs/artifacts/milestone4/evaluation-requirements.txt": "9e7c330d1bc4032c8ad12b0e6fd7a587b221ca0849e404ab22a6a1855646ec7a"
+  }
+}

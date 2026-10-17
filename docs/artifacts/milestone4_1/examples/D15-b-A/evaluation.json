@@ -1,0 +1,242 @@
+{
+  "case_passed": true,
+  "condition": "A",
+  "expected": {
+    "classification": "native_mapping_discrepancy",
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": true,
+    "verified": false
+  },
+  "family": "wrong_mapping",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 15"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect booking label"
+        },
+        "observed_at": "2026-10-17T16:35:43.231893+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Incorrect booking label"
+          }
+        },
+        "observed_at": "2026-10-17T16:35:43.231893+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "booking-0001": {
+          "advertised_title": "Diagnostic task 15",
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Incorrect booking label"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T16:35:43.231893+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T16:35:43.219033+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Goal mismatch: title"
+    ],
+    "runtime_discrepancy": true
+  },
+  "provider": "b",
+  "resolution": null,
+  "runtime_action": {
+    "api_call_success": true,
+    "api_response": {
+      "body": {
+        "booking_ref": "booking-0001"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 201
+    },
+    "applicability": "TRUE",
+    "compatible": true,
+    "completed_at": "2026-10-17T16:35:43.231665+00:00",
+    "condition": "A",
+    "description_sha256": "96c1c59172f6d520a12d6eb6facec9dea26e3b4a5e1b1534864e5fbd7ada6ece",
+    "execution_decision": "EXECUTE",
+    "execution_started": "2026-10-17T16:35:43.227995+00:00",
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 15"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 15"
+    },
+    "observed_effects": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 15"
+        },
+        "observed_at": "2026-10-17T16:35:43.229920+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 15"
+          }
+        },
+        "observed_at": "2026-10-17T16:35:43.231093+00:00",
+        "revision": 1,
+        "writable": true
+      }
+    },
+    "observed_state_change": true,
+    "operation_id": "reserveAppointment",
+    "oracle_verdict": {
+      "achieved": true,
+      "reasons": []
+    },
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "evidence": {
+          "events": {},
+          "observed_at": "2026-10-17T16:35:43.227088+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "name": "local_write_permission",
+        "verdict": "TRUE"
+      }
+    ],
+    "reason": null,
+    "run_id": "41be0d0c-8622-4ee5-a988-845aa08a73ec",
+    "schema_version": 1,
+    "timestamp": "2026-10-17T16:35:43.226178+00:00",
+    "wire_evidence": [
+      {
+        "body": {
+          "can_book": true,
+          "items": {},
+          "sampled_at": "2026-10-17T16:35:43.227088+00:00",
+          "version": 0
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/availability",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "booking_ref": "booking-0001"
+        },
+        "error": null,
+        "method": "POST",
+        "path": "/bookings",
+        "raw_body": null,
+        "request_body": {
+          "begins_ms": 1894006800000,
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 15"
+        },
+        "status": 201
+      },
+      {
+        "body": {
+          "booking": {
+            "advertised_title": "Diagnostic task 15",
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "Incorrect booking label"
+          },
+          "sampled_at": "2026-10-17T16:35:43.229920+00:00",
+          "version": 1
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/booking/booking-0001",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      },
+      {
+        "body": {
+          "can_book": true,
+          "items": {
+            "booking-0001": {
+              "advertised_title": "Diagnostic task 15",
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001",
+              "finishes_ms": 1894010400000,
+              "label": "Incorrect booking label"
+            }
+          },
+          "sampled_at": "2026-10-17T16:35:43.231093+00:00",
+          "version": 1
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/bookings",
+        "raw_body": null,
+        "request_body": null,
+        "status": 200
+      }
+    ]
+  },
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": false,
+    "runtime_verified": true,
+    "verified": false
+  },
+  "task_id": "D15"
+}

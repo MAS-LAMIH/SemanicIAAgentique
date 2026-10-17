@@ -1,0 +1,50 @@
+@prefix p: <https://example.org/sam/v2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:manual:https://example.org/provider-a#create_event> a p:ProviderContract ;
+    p:artifact_id <https://example.org/provider-a#calendar> ;
+    p:binding [ p:baseline_path "/calendar" ;
+            p:create_path "/events" ;
+            p:event_field "event" ;
+            p:event_fields [ p:entry [ p:key "start_time" ;
+                            p:value [ p:source "start_time" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "title" ;
+                            p:value [ p:source "title" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "end_time" ;
+                            p:value [ p:source "end_time" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "id" ;
+                            p:value [ p:source "id" ;
+                                    p:transform "identity" ] ] ] ;
+            p:event_path "/events/{id}" ;
+            p:events_field "events" ;
+            p:request_fields [ p:entry [ p:key "end_time" ;
+                            p:value [ p:source "end_time" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "start_time" ;
+                            p:value [ p:source "start_time" ;
+                                    p:transform "identity" ] ],
+                        [ p:key "title" ;
+                            p:value [ p:source "title" ;
+                                    p:transform "identity" ] ] ] ;
+            p:response_id "id" ;
+            p:revision_field "revision" ;
+            p:state_path "/events" ;
+            p:timestamp_field "observed_at" ;
+            p:writable_field "writable" ] ;
+    p:capability_id <https://example.org/sam/v1#EventCreation> ;
+    p:constraints [ p:max_duration_seconds p:Null ;
+            p:preserves_other_events true ;
+            p:time_grid_seconds 0 ] ;
+    p:declared_effects <https://example.org/sam/v1#NewMatchingEvent> ;
+    p:inputs "end_time",
+        "start_time",
+        "title" ;
+    p:observation [ p:max_evidence_age_seconds 30 ] ;
+    p:operation_id <https://example.org/provider-a#create_event> ;
+    p:preconditions <https://example.org/sam/v1#CalendarWritable>,
+        <https://example.org/sam/v1#PositiveInterval> ;
+    p:schema_version 2 .
+

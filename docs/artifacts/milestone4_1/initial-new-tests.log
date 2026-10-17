@@ -1,0 +1,18 @@
+test_adjacent_intervals_and_automation_overlap_are_allowed (test_pre_freeze.LedgerTests.test_adjacent_intervals_and_automation_overlap_are_allowed) ... ok
+test_chain_tampering_and_duplicate_ids_detected (test_pre_freeze.LedgerTests.test_chain_tampering_and_duplicate_ids_detected) ... ok
+test_correction_cannot_create_overlap (test_pre_freeze.LedgerTests.test_correction_cannot_create_overlap) ... ok
+test_corrections_append_and_do_not_double_count (test_pre_freeze.LedgerTests.test_corrections_append_and_do_not_double_count) ... ok
+test_invalid_measurements_and_supervision_rejected (test_pre_freeze.LedgerTests.test_invalid_measurements_and_supervision_rejected) ... ok
+test_overlap_rejected_and_different_people_allowed (test_pre_freeze.LedgerTests.test_overlap_rejected_and_different_people_allowed) ... ok
+test_unknown_stays_null_and_failed_attempt_links_rework (test_pre_freeze.LedgerTests.test_unknown_stays_null_and_failed_attempt_links_rework) ... ok
+test_native_observer_has_no_subject_mapping_dependencies (test_pre_freeze.NativeVerifierTests.test_native_observer_has_no_subject_mapping_dependencies) ... ok
+test_snapshot_deep_copy_and_native_extra_change_detection (test_pre_freeze.NativeVerifierTests.test_snapshot_deep_copy_and_native_extra_change_detection) ... ok
+test_stale_native_evidence_never_establishes_truth (test_pre_freeze.NativeVerifierTests.test_stale_native_evidence_never_establishes_truth) ... ok
+test_all_twenty_diagnostics_on_visible_providers (test_pre_freeze.ThreeConditionTests.test_all_twenty_diagnostics_on_visible_providers) ... ok
+test_no_semantic_discovery_imports_in_local_baseline (test_pre_freeze.ThreeConditionTests.test_no_semantic_discovery_imports_in_local_baseline) ... ok
+test_task_sheet_is_provider_neutral_and_approval_pending (test_pre_freeze.ThreeConditionTests.test_task_sheet_is_provider_neutral_and_approval_pending) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 62.737s
+
+OK

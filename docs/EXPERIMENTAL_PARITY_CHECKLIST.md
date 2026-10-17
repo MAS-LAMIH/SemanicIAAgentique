@@ -10,14 +10,14 @@ serialization is superior. The other frozen research questions remain unchanged.
 
 | Condition | Intended information | Current implementation/status |
 | --- | --- | --- |
-| A: API-local | Complete provider-local contracts, mappings, validators and effects, without cross-provider shared ontology reuse | Not implemented as a separate experimental baseline; blocking before a three-condition confirmatory run |
+| A: API-local | Complete provider-local contracts, mappings, validators and effects, without cross-provider shared ontology reuse | Implemented by local_baseline.py and provider-local descriptions; 20-case A/B correctness parity tested in Milestone 4.1; human review pending |
 | B: JSON + shared semantics | Shared IDs, explicit mappings, constraints/effects/evidence and reusable validation | V2 JSON provider manuals and common registry/pipeline; A/B fixture evidence only |
 | C: RDF + shared semantics | Exactly the same supported semantic information and validation as B | V2 Turtle manuals and common registry/pipeline; A/B fixture evidence only |
 
 Do not substitute a raw HTTP client for condition A or omit preconditions/evidence
 checks to make that baseline cheaper or worse. Its externally judged correctness,
-goals and mandatory constraints must be identical. Complete and freeze it before
-unsealing if all three conditions are to be compared. A shared-semantics-only
+goals and mandatory constraints must be identical. Its implementation now exists; review and freeze the complete candidate before
+unsealing for a three-condition comparison. A shared-semantics-only
 study is a different approved scope decision, not a silent replacement of the
 frozen experimental conditions.
 
@@ -36,11 +36,13 @@ is currently null; checked implementation facts below are not formal sign-off.
   unsupported transforms and missing constraints cannot silently enable execution.
 - [ ] Independent review of semantic content for both representations against a
   neutral information sheet, before runtime results are seen.
-- [ ] A complete API-local baseline with equally strong correctness obligations.
+- [x] A complete API-local baseline with equally strong tested correctness obligations on visible A/B.
 - [ ] Approved task list, seeds, scenario counts, budgets, condition order and
   contributor exposure plan, all registered before unsealing.
-- [ ] Approved cost collector and common/shared allocation policy.
-- [ ] Independently specified expected states and native observation procedure.
+- [x] Prospective append-only cost collector implemented and tested; policy approval still pending.
+- [ ] Investigator approval of cost collector and allocation.
+- [x] Provider-neutral task predicates and separate native-state observation implementation.
+- [ ] Independent human review/sign-off of native observers and expected states.
 - [ ] Clean versioned baseline or approved archived candidate identity and signed
   investigator approval, with pinned evaluation environment artifacts.
 
@@ -102,3 +104,44 @@ must not be normalized into TRUE or excluded from denominators.
 
 The final parity sheet must list all deviations and signatures. Unchecked items
 are approval gates, not tasks to complete using Provider C knowledge.
+
+## Milestone 4.1 functional parity evidence
+
+The 20 public single-action apparatus tasks run on both visible providers under
+all three conditions (120 controlled executions per suite). Each condition is
+checked against separately specified expected calls, runtime verification,
+native achievement and final conjunction. Cross-condition summaries also match:
+compatibility, observed state applicability when probed, mutation-call count,
+HTTP-call success, runtime verification, native verification and final verified
+achievement. JSON/RDF typed models remain equal for every task variant. Raw
+traces/reasons and native state are retained; static rejections do not invent a
+state precondition verdict when no probe occurred.
+
+Condition A uses explicitly selected CalendarLocal/BookingLocal operations,
+provider-local JSON descriptions, validators and encoders. It imports no shared
+contract loader, transform language, ontology ID or semantic registry. It reuses
+neutral Goal/Truth/Observation/transport/oracle code only. It has equivalent
+functional correctness obligations, not information equivalence in discovery:
+its provider-local code stores its validation and wire knowledge, while B/C use
+shared identifiers, schema and mappings. It may reuse ordinary provider-local
+validation utilities; that setup is charged to A rather than counted as free.
+
+The untransformable-input control uses an unsupported local encoding in A and
+an unavailable mapping source in B/C; both express an unavailable valid conversion
+and reject without mutation. Unsupported shared primitive names remain separate
+schema regression controls. Parser messages and operation catalogs are not forced
+to match across A versus B/C. No throughput or cost advantage is inferred from
+the common diagnostic results. A real integrator must maintain each local binding;
+this author had prior access to shared manuals and makes no blind-authorship claim.
+
+The deliberate incorrect-output-map task fools the runtime verifier in all three
+conditions while the independent native reader rejects the real stored title.
+A run is counted verified only when both verifiers accept; this closes the prior
+transport-interpretation loophole at evaluation time without changing goal truth
+or pretending the subject's runtime verifier is mapping-independent. Full raw
+before/after fixture state is checked for changes to existing records, including
+fields outside the subject's canonical projection.
+
+Technical coverage does not substitute for an independent annotator/integrator,
+sealed holdout, multi-step pilot scope, approved cost allocation or investigator
+sign-off. The frozen PDF is now available and governs those remaining decisions.

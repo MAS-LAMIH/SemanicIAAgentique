@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "provider": "calendar",
+  "operation": "create_event",
+  "effect": "stores_requested_event",
+  "encoding": "iso",
+  "preserves_others": true,
+  "max_evidence_age_seconds": 30,
+  "output_fields": {"id": "id", "start_time": "start_time", "end_time": "end_time", "title": "title"},
+  "authoring_provenance": "Codex; read existing fixture implementation and documentation; previously exposed to shared manuals, not blind independent authoring"
+}

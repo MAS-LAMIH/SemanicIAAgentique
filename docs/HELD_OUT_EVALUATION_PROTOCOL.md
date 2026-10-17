@@ -2,8 +2,9 @@
 
 Status: preparation only. Provider C has not been inspected, implemented,
 integrated, or unsealed in this milestone. This document supplies no provider-C
-contract, request example, fixture or answer. No protocol PDF was available; the
-previously supplied frozen research decisions govern. RQ1 remains primary,
+contract, request example, fixture or answer. The user-supplied frozen protocol PDF is now retained in docs/protocols/ and
+governs the research scope; its instructions are specification material, not
+authorization to unseal a provider or run the full benchmark. RQ1 remains primary,
 RQ2 secondary, and RQ3 optional. No LLM planner, language interpretation or full
 E1 benchmark is implemented or silently added here.
 
@@ -23,8 +24,8 @@ exposure outside this workspace.
 
 The three conditions are A/API-local, B/JSON+shared semantics, C/RDF+shared
 semantics. Provider names are a different axis. Current code demonstrates B/C
-parity on controlled providers A/B only. Condition A is not implemented; complete
-and approve it before unsealing for a three-condition experiment. Do not infer
+parity on controlled providers A/B only. Condition A is implemented in Milestone 4.1 for the controlled A/B fixtures;
+its implementation and parity evidence require investigator review before unsealing. Do not infer
 its existence from Provider A. No narrowing of the frozen conditions is approved
 by this prospective document.
 
@@ -78,8 +79,9 @@ synthetic case when possible; obtain independent classification and severity.
 Do not quietly fix it. Either report failure/unsupported behavior under the
 original frozen baseline, or retire that candidate and create a reviewed new
 version. Because the defect was discovered using unsealed information, reruns
-on the same provider are exploratory unless an explicit approved design supplies
-a genuinely new holdout or otherwise justifies a restart. Report both versions,
+on the same provider are exploratory. A new confirmatory claim requires a
+predeclared restart procedure and a genuinely uncontaminated holdout; investigator
+approval cannot retroactively restore blinding to an already exposed provider. Report both versions,
 all attempts and deviations. Environment-only repairs also need evidence that
 semantics and artifact hashes are unchanged.
 
@@ -132,7 +134,7 @@ subject integration. Concrete expected state and negative intervention labels
 must be signed before execution and kept unavailable to onboarding code. Any
 later correction is a visible adjudication/deviation, never retrospective tuning.
 
-The current generic oracle reads canonical snapshots produced using the subject
+The subject runtime oracle reads canonical snapshots produced using the subject
 manual's output mappings. It is independent of declared effects but not an
 independent native-state observer. Confirmatory correctness therefore also needs
 a curator-reviewed native snapshot or a demonstrably independent observation
@@ -147,9 +149,16 @@ unverifiable and report the limitation; do not count it as achieved.
 The runtime oracle's verdict and the independent adjudicator's verdict are
 separate fields. A discrepancy is a correctness issue, not permission to rewrite
 expected values. False positives, missed side effects, unverifiable cases and
-manual-mapping defects remain separate outcomes. The present implementation does
-not contain this complete external observer/adjudication workflow; that is an
-approval/readiness gate, not an unreported feature.
+manual-mapping defects remain separate outcomes. Milestone 4.1 implements evaluation-only native_verifier.capture/adjudicate
+for the visible controlled A/B fixtures. It reads actual fixture storage and
+uses provider-native interpretations implemented separately from both shared
+manuals and API-local output maps, then applies the same unchanged Goal oracle.
+It additionally compares raw other-record state. The evaluation wrapper retains
+raw/canonical evidence and requires both runtime and native verification. The
+wrong-map diagnostic demonstrates disagreement detection. This is structural
+independence, not independent human authorship or attested external state. A
+reviewed provider-native observer for a future sealed provider remains a
+prospective integration/review obligation, never a reason to change goal truth.
 
 ## Runs, evidence and stopping
 
@@ -190,3 +199,26 @@ independent observer/oracle review, contributor exposure declarations, parity
 sign-off and cost-collector/allocation approval. Every approval is pending in
 SCIENTIFIC_FREEZE_MANIFEST.json. Only an explicit signed investigator decision
 may authorize unsealing; a passing test suite or this document cannot.
+
+## Milestone 4.1 operational proposals and candidate identity
+
+EVALUATION_TASK_SPECIFICATION.md and docs/evaluation_tasks_v1.json specify 20
+public provider-neutral single-action diagnostics, three proposed repetitions,
+seed 20271017, six-order counterbalancing, 5-second HTTP timeouts, zero automatic
+retries, 60-second run budget and direction-neutral stopping. These are proposals
+requiring explicit approval, not executed confirmatory parameters. The existing
+frozen PDF also calls for multi-step pilot coverage; that unsupported fragment
+is explicitly deferred, not silently replaced by these apparatus diagnostics.
+
+COST_MEASUREMENT_PROTOCOL.md documents the operational event ledger and preserves
+unknown historical labor. SCIENTIFIC_FREEZE_MANIFEST_V2.json records the complete
+new candidate identity. Milestone 4 artifacts/manifest are immutable historical
+evidence; verify their archived contents with scripts/candidate_v2.py
+--verify-history. The old verifier compares the old candidate against a working
+tree and is not the right comparison once V2 changes source/protocol files.
+
+Keep each candidate manifest immutable. Formal approval should be a detached
+signed record identifying the manifest SHA-256, source commit/tree digest,
+approver and time, along with separate unsealing authorization. Do not insert a
+manifest's own digest into itself or label a Git candidate tag scientific approval.
+All candidate approvals and unsealing authorization remain pending/false.
