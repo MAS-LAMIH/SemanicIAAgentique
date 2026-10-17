@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.0",
+  "milestone": "4.2",
+  "status": "pending",
+  "purpose": "Investigator decision preparation only; no implementation changes or Provider C access.",
+  "audit_recorded_at": "2026-10-17T18:19:59.517078+00:00",
+  "candidate": {
+    "commit": "2829c6dc41344431e83bde7c3addf30d1241befc",
+    "tag": "candidate/milestone-4.1-pre-freeze",
+    "branch_at_entry": "codex/milestone-4-1-pre-freeze",
+    "working_tree_clean_at_entry": true,
+    "implementation_commit": "1b6b8e43c31230d6e458ce6747c447f5fba5bab3",
+    "manifest_path": "docs/SCIENTIFIC_FREEZE_MANIFEST_V2.json",
+    "manifest_sha256": "7f8e8d1d4f0f07e8c5ef999c36aaf987d17bf58d757df4a733f736ceaa78bcc2",
+    "source_tree_sha256": "20bde86375955f144494a0b8353c87a1b1b1b48de2ea4b7daf218e79240b6494",
+    "source_archive_sha256": "b2c9d888f81bdd4bdb941d16eaef520fecc5f58fe35c8b8736e949b42ed7d7a3",
+    "approval_in_immutable_manifest": "pending",
+    "unseal_authorized_in_immutable_manifest": false
+  },
+  "documentation_revision": {
+    "base_commit": "2829c6dc41344431e83bde7c3addf30d1241befc",
+    "scope": "Only two added approval documentation files; implementation/evidence unchanged. Eventual commit identifies documentation, not a replacement candidate.",
+    "package_path": "docs/SCIENTIFIC_FREEZE_APPROVAL_PACKAGE.md",
+    "package_sha256": "6735fe088d5902c6bf76c4197b9e3b6d25747969caa59d6ee62adefd700146c4",
+    "decision_record_path": "docs/SCIENTIFIC_FREEZE_DECISION_RECORD.json",
+    "documentation_commit": null,
+    "self_digest": null,
+    "identity_rule": "Detached signature must bind candidate identity and package hash plus reviewed documentation commit or detached record digest. No self-referential hash/commit is asserted."
+  },
+  "approval": {
+    "investigator_id": null,
+    "approved_at": null,
+    "decision": null,
+    "signature_reference": null,
+    "signed_record_sha256": null,
+    "approved_documentation_revision": null,
+    "rationale": null,
+    "conditions": null,
+    "confirmatory_readiness_approved": null,
+    "unsealing_authorized": null,
+    "unsealing_authorized_at": null
+  },
+  "decisions": {
+    "candidate_identity": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "bounded_scope_and_multistep_gap": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "independent_parity_review": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "independent_task_and_native_observer_review": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "named_roles_custody_and_exposures": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "primary_cost_allocation": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "sensitivity_allocations": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "collector_and_missingness": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "tasks_counts_and_families": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "seeds_and_actual_schedule": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "contributor_assignment": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "reset_cache_and_supervisor": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "timeouts_retries_and_onboarding_budgets": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "stopping_and_defect_handling": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "correctness_thresholds_and_metrics": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "statistical_reporting": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "provider_local_change_allowlist": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "confirmatory_gate_1": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    },
+    "separate_unsealing": {
+      "status": "pending",
+      "approved": null,
+      "selected_policy_or_parameters": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "evidence_reference": null,
+      "rationale": null
+    }
+  },
+  "operational_proposals": {
+    "status": "pending",
+    "provider_scope": [
+      "a",
+      "b"
+    ],
+    "task_count": 20,
+    "apparatus_repetitions": 3,
+    "executions_per_sweep": 120,
+    "executions_for_three_repetitions": 360,
+    "provider_independent_units": 2,
+    "provider_units_note": "Both are exposed development fixtures, not held-out samples; repeated tasks do not increase provider n.",
+    "root_seed": 20271017,
+    "task_order_seed": 20271018,
+    "contributor_assignment_seed": 20271019,
+    "condition_orders": [
+      "ABC",
+      "ACB",
+      "BAC",
+      "BCA",
+      "CAB",
+      "CBA"
+    ],
+    "schedule_rule": "Sort provider/repetition/task blocks; assign cyclic permutations; shuffle blocks with task-order seed; retain actual schedule before release.",
+    "actual_schedule_hash": null,
+    "http_timeout_seconds": 5,
+    "outer_run_budget_seconds": 60,
+    "outer_budget_enforcement": "pending external operational demonstration; not implemented in run_case",
+    "automatic_retries": 0,
+    "planner_repair_iterations": 0,
+    "onboarding_active_person_minutes_cap": 90,
+    "onboarding_elapsed_minutes_cap": 300,
+    "primary_allocation_proposal": "P1 standalone cold start",
+    "allocation_alternatives": [
+      "P2 joint deployment, equal fixed shared allocations",
+      "P3 prospectively fixed usage/amortization sensitivity"
+    ],
+    "scope_gap": "Single-action apparatus is not the protocol multi-step pilot; no future-provider tasks or answers specified."
+  },
+  "verification": {
+    "identity_mismatch_found": false,
+    "checks": [
+      {
+        "command": [
+          "git",
+          "rev-parse",
+          "HEAD",
+          "candidate/milestone-4.1-pre-freeze^{}"
+        ],
+        "cwd": "/workspace/SemanicIAAgentique",
+        "exit_code": 0,
+        "stdout": "2829c6dc41344431e83bde7c3addf30d1241befc\n2829c6dc41344431e83bde7c3addf30d1241befc\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "/tmp/semanic-m42-candidate-o0w4bohe/scripts/candidate_v2.py",
+          "--verify"
+        ],
+        "cwd": "/tmp/semanic-m42-candidate-o0w4bohe",
+        "exit_code": 0,
+        "stdout": "V2 source, artifacts and historical Milestone 4 verified; approval pending, Provider C sealed.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "/tmp/semanic-m42-candidate-o0w4bohe/scripts/candidate_v2.py",
+          "--verify-history"
+        ],
+        "cwd": "/tmp/semanic-m42-candidate-o0w4bohe",
+        "exit_code": 0,
+        "stdout": "{\n  \"manifest_sha256\": \"2a01e44585d355cd3b763f0551a9f33c1139fe53595d3c8b28cd62d71a93bd4c\",\n  \"source_archive_sha256\": \"ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69\",\n  \"historical_files_verified\": 14,\n  \"archive_members_verified\": 74,\n  \"working_tree_comparison\": \"Not applicable: V2 intentionally changes code/documents, historical bytes are in the archive\"\n}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/candidate_v2.py",
+          "--verify-history"
+        ],
+        "cwd": "/workspace/SemanicIAAgentique",
+        "exit_code": 0,
+        "stdout": "{\n  \"manifest_sha256\": \"2a01e44585d355cd3b763f0551a9f33c1139fe53595d3c8b28cd62d71a93bd4c\",\n  \"source_archive_sha256\": \"ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69\",\n  \"historical_files_verified\": 14,\n  \"archive_members_verified\": 74,\n  \"working_tree_comparison\": \"Not applicable: V2 intentionally changes code/documents, historical bytes are in the archive\"\n}\n",
+        "stderr": ""
+      }
+    ],
+    "expanded_checkout_coverage_result": {
+      "command": [
+        "python3",
+        "scripts/candidate_v2.py",
+        "--verify"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/workspace/SemanicIAAgentique/scripts/candidate_v2.py\", line 206, in <module>\n    main()\n  File \"/workspace/SemanicIAAgentique/scripts/candidate_v2.py\", line 200, in main\n    verify()\n  File \"/workspace/SemanicIAAgentique/scripts/candidate_v2.py\", line 130, in verify\n    raise ValueError('Unclassified source addition/deletion')\nValueError: Unclassified source addition/deletion\n",
+      "expected": true,
+      "classification": "Added approval documentation is outside immutable candidate source coverage; original candidate passes unchanged."
+    },
+    "environment_check": {
+      "command": [
+        "/workspace/SemanicIAAgentique/.venv/bin/python",
+        "-c",
+        "import json,platform,importlib.metadata as m; print(json.dumps({'python_version':platform.python_version(),'packages':{n:m.version(n) for n in ['attrs','jsonschema','jsonschema-specifications','pyparsing','rdflib','referencing','rpds-py','tutorielIAAgentique','typing_extensions']}}))"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "stdout": "{\"python_version\": \"3.12.14\", \"packages\": {\"attrs\": \"26.1.0\", \"jsonschema\": \"4.26.0\", \"jsonschema-specifications\": \"2025.9.1\", \"pyparsing\": \"3.3.3\", \"rdflib\": \"7.6.0\", \"referencing\": \"0.37.0\", \"rpds-py\": \"2026.9.1\", \"tutorielIAAgentique\": \"0.1.0\", \"typing_extensions\": \"4.16.0\"}}\n",
+      "stderr": ""
+    },
+    "dependency_versions_match": true,
+    "original_candidate_tracked_file_count": 220,
+    "original_candidate_files_changed": [],
+    "candidate_source_file_count": 104,
+    "artifact_count": 117,
+    "recorded_final_stage_ids": [
+      "source_after_native_extension",
+      "wheel_after_native_extension",
+      "restored_after_native_extension"
+    ],
+    "recorded_final_stages": [
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 145.313,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "source_after_native_extension",
+        "log_path": "docs/artifacts/milestone4_1/source-after-native-extension-tests.log",
+        "passed": 66,
+        "skipped": 0,
+        "tests_run": 66
+      },
+      {
+        "command": "/tmp/semanic-m41-v2-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 145.765,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "wheel_after_native_extension",
+        "log_path": "docs/artifacts/milestone4_1/wheel-after-native-extension-tests.log",
+        "passed": 66,
+        "skipped": 0,
+        "tests_run": 66
+      },
+      {
+        "command": "/tmp/semanic-m41-final-restored-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/tmp/semanic-m41-final-restored-source-auy1djem",
+        "elapsed_seconds": 145.513,
+        "errors": 0,
+        "exit_code": 0,
+        "failed": 0,
+        "id": "restored_after_native_extension",
+        "log_path": "docs/artifacts/milestone4_1/restored-after-native-extension-tests.log",
+        "passed": 66,
+        "skipped": 0,
+        "tests_run": 66
+      }
+    ],
+    "fresh_source_test": {
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "exit_code": 0,
+      "tests_run": 66,
+      "passed": 66,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.26,
+      "captured_output_sha256": "4e96a52f149431173813e1e85d552fb5057d4fdcb76fc2b71cbc3fb30f25a25f",
+      "captured_output": "test_all_required_fields_are_required (test_parity.JsonValidationTests.test_all_required_fields_are_required) ... ok\ntest_duplicate_keys_nonfinite_and_malformed_json (test_parity.JsonValidationTests.test_duplicate_keys_nonfinite_and_malformed_json) ... ok\ntest_identity_aliases_use_shared_validator (test_parity.JsonValidationTests.test_identity_aliases_use_shared_validator) ... ok\ntest_no_format_fallback (test_parity.JsonValidationTests.test_no_format_fallback) ... ok\ntest_schema_is_valid_and_example_conforms (test_parity.JsonValidationTests.test_schema_is_valid_and_example_conforms) ... ok\ntest_unsupported_ambiguous_and_mistyped_fields (test_parity.JsonValidationTests.test_unsupported_ambiguous_and_mistyped_fields) ... ok\ntest_all_milestone_1_execution_scenarios (test_parity.ParityTests.test_all_milestone_1_execution_scenarios) ... ok\ntest_identifiers_and_unordered_sets (test_parity.ParityTests.test_identifiers_and_unordered_sets) ... ok\ntest_invalid_contract_pairs_block_before_execution (test_parity.ParityTests.test_invalid_contract_pairs_block_before_execution) ... ok\ntest_invalid_inputs_parity (test_parity.ParityTests.test_invalid_inputs_parity) ... ok\ntest_missing_malformed_future_and_unavailable_evidence (test_parity.ParityTests.test_missing_malformed_future_and_unavailable_evidence) ... ok\ntest_typed_models_and_nondefault_age_rules (test_parity.ParityTests.test_typed_models_and_nondefault_age_rules) ... ok\ntest_contract_and_goal_load (test_pipeline.PipelineTests.test_contract_and_goal_load) ... ok\ntest_disconnected_constraints_rejected (test_pipeline.PipelineTests.test_disconnected_constraints_rejected) ... ok\ntest_execution_error (test_pipeline.PipelineTests.test_execution_error) ... ok\ntest_forbidden_side_effect (test_pipeline.PipelineTests.test_forbidden_side_effect) ... ok\ntest_goal_is_independent_of_inputs (test_pipeline.PipelineTests.test_goal_is_independent_of_inputs) ... ok\ntest_invalid_interval (test_pipeline.PipelineTests.test_invalid_interval) ... ok\ntest_invalid_missing_input (test_pipeline.PipelineTests.test_invalid_missing_input) ... ok\ntest_invalid_naive_timestamp (test_pipeline.PipelineTests.test_invalid_naive_timestamp) ... ok\ntest_malformed_contract_traced_and_blocked (test_pipeline.PipelineTests.test_malformed_contract_traced_and_blocked) ... ok\ntest_manual_cannot_override_oracle (test_pipeline.PipelineTests.test_manual_cannot_override_oracle) ... ok\ntest_mismatched_observation (test_pipeline.PipelineTests.test_mismatched_observation) ... ok\ntest_missing_critical_precondition_fails_closed (test_pipeline.PipelineTests.test_missing_critical_precondition_fails_closed) ... ok\ntest_not_writable (test_pipeline.PipelineTests.test_not_writable) ... ok\ntest_preexisting_event_preserved (test_pipeline.PipelineTests.test_preexisting_event_preserved) ... ok\ntest_remote_executor_disallowed (test_pipeline.PipelineTests.test_remote_executor_disallowed) ... ok\ntest_replayed_oracle_evidence_rejected (test_pipeline.PipelineTests.test_replayed_oracle_evidence_rejected) ... ok\ntest_stale_observation (test_pipeline.PipelineTests.test_stale_observation) ... ok\ntest_stale_writability (test_pipeline.PipelineTests.test_stale_writability) ... ok\ntest_success_without_state_change (test_pipeline.PipelineTests.test_success_without_state_change) ... ok\ntest_unknown_contract_assertion_fails_closed (test_pipeline.PipelineTests.test_unknown_contract_assertion_fails_closed) ... ok\ntest_unknown_writable (test_pipeline.PipelineTests.test_unknown_writable) ... ok\ntest_valid_action (test_pipeline.PipelineTests.test_valid_action) ... ok\ntest_work_log_unknown_measurements (test_pipeline.PipelineTests.test_work_log_unknown_measurements) ... ok\ntest_adjacent_intervals_and_automation_overlap_are_allowed (test_pre_freeze.LedgerTests.test_adjacent_intervals_and_automation_overlap_are_allowed) ... ok\ntest_chain_tampering_and_duplicate_ids_detected (test_pre_freeze.LedgerTests.test_chain_tampering_and_duplicate_ids_detected) ... ok\ntest_cooperating_concurrent_writers_keep_one_valid_chain (test_pre_freeze.LedgerTests.test_cooperating_concurrent_writers_keep_one_valid_chain) ... ok\ntest_correction_cannot_create_overlap (test_pre_freeze.LedgerTests.test_correction_cannot_create_overlap) ... ok\ntest_corrections_append_and_do_not_double_count (test_pre_freeze.LedgerTests.test_corrections_append_and_do_not_double_count) ... ok\ntest_invalid_measurements_and_supervision_rejected (test_pre_freeze.LedgerTests.test_invalid_measurements_and_supervision_rejected) ... ok\ntest_overlap_rejected_and_different_people_allowed (test_pre_freeze.LedgerTests.test_overlap_rejected_and_different_people_allowed) ... ok\ntest_unknown_stays_null_and_failed_attempt_links_rework (test_pre_freeze.LedgerTests.test_unknown_stays_null_and_failed_attempt_links_rework) ... ok\ntest_evaluator_owned_extension_needs_no_core_truth_change (test_pre_freeze.NativeVerifierTests.test_evaluator_owned_extension_needs_no_core_truth_change) ... ok\ntest_native_observer_has_no_subject_mapping_dependencies (test_pre_freeze.NativeVerifierTests.test_native_observer_has_no_subject_mapping_dependencies) ... ok\ntest_snapshot_deep_copy_and_native_extra_change_detection (test_pre_freeze.NativeVerifierTests.test_snapshot_deep_copy_and_native_extra_change_detection) ... ok\ntest_stale_native_evidence_never_establishes_truth (test_pre_freeze.NativeVerifierTests.test_stale_native_evidence_never_establishes_truth) ... ok\ntest_all_twenty_diagnostics_on_visible_providers (test_pre_freeze.ThreeConditionTests.test_all_twenty_diagnostics_on_visible_providers) ... ok\ntest_no_semantic_discovery_imports_in_local_baseline (test_pre_freeze.ThreeConditionTests.test_no_semantic_discovery_imports_in_local_baseline) ... ok\ntest_task_sheet_is_provider_neutral_and_approval_pending (test_pre_freeze.ThreeConditionTests.test_task_sheet_is_provider_neutral_and_approval_pending) ... ok\ntest_unsafe_mutation_attempt_is_not_hidden_by_goal_outcome (test_pre_freeze.ThreeConditionTests.test_unsafe_mutation_attempt_is_not_hidden_by_goal_outcome) ... ok\ntest_both_distinct_operation_names_resolve_and_verify (test_registry.RegistryTests.test_both_distinct_operation_names_resolve_and_verify) ... ok\ntest_direct_pipeline_cannot_bypass_known_constraints (test_registry.RegistryTests.test_direct_pipeline_cannot_bypass_known_constraints) ... ok\ntest_duplicate_operations_and_empty_registry_are_not_selections (test_registry.RegistryTests.test_duplicate_operations_and_empty_registry_are_not_selections) ... ok\ntest_duration_and_grid_constraints_reject_only_incompatible_provider (test_registry.RegistryTests.test_duration_and_grid_constraints_reject_only_incompatible_provider) ... ok\ntest_execution_rechecks_permission_after_resolution (test_registry.RegistryTests.test_execution_rechecks_permission_after_resolution) ... ok\ntest_false_unknown_and_stale_preconditions_block (test_registry.RegistryTests.test_false_unknown_and_stale_preconditions_block) ... ok\ntest_input_precision_cannot_be_silently_lost (test_registry.RegistryTests.test_input_precision_cannot_be_silently_lost) ... ok\ntest_missing_input_transformation_rejected (test_registry.RegistryTests.test_missing_input_transformation_rejected) ... ok\ntest_provider_b_execution_failure_controls (test_registry.RegistryTests.test_provider_b_execution_failure_controls) ... ok\ntest_provider_b_owns_its_constraint_enforcement (test_registry.RegistryTests.test_provider_b_owns_its_constraint_enforcement) ... ok\ntest_similar_names_do_not_override_non_equivalent_effects (test_registry.RegistryTests.test_similar_names_do_not_override_non_equivalent_effects) ... ok\ntest_stale_observations_fail_verification (test_registry.RegistryTests.test_stale_observations_fail_verification) ... ok\ntest_unknown_capability_and_mandatory_preservation_rejected (test_registry.RegistryTests.test_unknown_capability_and_mandatory_preservation_rejected) ... ok\ntest_unsupported_extra_rdf_information_is_not_silently_dropped (test_registry.RegistryTests.test_unsupported_extra_rdf_information_is_not_silently_dropped) ... ok\ntest_v2_schema_and_models (test_registry.RegistryTests.test_v2_schema_and_models) ... ok\n\n----------------------------------------------------------------------\nRan 66 tests in 145.260s\n\nOK\n",
+      "wheel_rerun_in_m42": false
+    },
+    "package_local_links_checked": 39,
+    "broken_package_links": []
+  },
+  "discrepancies": [
+    {
+      "kind": "editorial",
+      "reference": "docs/SCIENTIFIC_FREEZE_APPROVAL_CHECKLIST.md: Approval record",
+      "finding": "Manifest digest placeholder is stale; exact digest is supplied in package; original unchanged."
+    },
+    {
+      "kind": "editorial",
+      "reference": "docs/MILESTONE_4_1.md: Observed test evidence; validation-results.json final_source/final_installed_wheel",
+      "finding": "Earlier 65-test final labels are superseded by explicit final_candidate_suite_ids for the 66-test candidate."
+    },
+    {
+      "kind": "editorial",
+      "reference": "docs/HELD_OUT_EVALUATION_PROTOCOL.md: Prospective task families / M4.1 operational proposals",
+      "finding": "Unset early parameters and older manifest reference coexist with later numeric proposals; none is approval."
+    },
+    {
+      "kind": "coverage",
+      "reference": "scripts/candidate_v2.py: verify/source_paths",
+      "finding": "Expanded documentation checkout fails full-source coverage by design; archived original passes; manifest not regenerated."
+    }
+  ],
+  "methodological_gates": {
+    "multistep_pilot_coverage": "FAIL",
+    "complete_observed_historical_human_costs": "FAIL",
+    "independent_human_curation_evidence": "PENDING",
+    "signed_parity_review": "PENDING",
+    "roles_exposure_and_sealed_custody": "PENDING",
+    "external_timeout_supervisor": "PENDING",
+    "investigator_approval": "PENDING"
+  },
+  "measurement_preservation": {
+    "historical_human_active_minutes": null,
+    "historical_ai_supervision_minutes": null,
+    "m42_human_active_minutes": null,
+    "m42_ai_supervision_minutes": null,
+    "m42_tool_wait_minutes": null,
+    "m42_model_wait_minutes": null,
+    "m42_total_elapsed_wall_minutes": null,
+    "m42_source_test_automated_runtime_minutes": 2.421,
+    "note": "Only observed source-test runtime is quantified for M4.2; not a total audit runtime or labor measure. Original cost ledger unchanged; unknowns stay null."
+  },
+  "safety_boundary": {
+    "provider_c_unsealed_in_this_task": false,
+    "provider_c_inspected_in_this_task": false,
+    "provider_c_implemented_in_this_task": false,
+    "generic_engine_changed": false,
+    "historical_evidence_modified": false,
+    "scientific_freeze_approved": false
+  },
+  "ready_for_investigator_review": true,
+  "ready_for_unqualified_confirmatory_evaluation": false
+}
