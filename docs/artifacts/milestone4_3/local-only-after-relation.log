@@ -1,0 +1,15 @@
+{
+  "rdflib_present": false,
+  "jsonschema_present": false,
+  "providers_verified": [
+    "a",
+    "b"
+  ],
+  "condition": "A",
+  "installed_distributions": [
+    {
+      "name": "tutorielIAAgentique",
+      "version": "0.1.0"
+    }
+  ]
+}

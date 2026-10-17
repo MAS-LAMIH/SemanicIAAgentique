@@ -1,0 +1,45 @@
+{
+  "cache_entries": 0,
+  "checks": {
+    "events": true,
+    "fresh_trace_directory": true,
+    "mutation_calls": true,
+    "no_cached_resolutions": true,
+    "no_live_subject": true,
+    "no_pending_requests": true,
+    "revision": true,
+    "writable": true
+  },
+  "expected": {
+    "events": {
+      "existing": {
+        "begins_ms": 1893920400000,
+        "booking_ref": "existing",
+        "finishes_ms": 1893924000000,
+        "label": "Preserve me",
+        "metadata": "sentinel"
+      }
+    },
+    "mutation_calls": 0,
+    "revision": 0,
+    "writable": true
+  },
+  "native_initial": {
+    "events": {
+      "existing": {
+        "begins_ms": 1893920400000,
+        "booking_ref": "existing",
+        "finishes_ms": 1893924000000,
+        "label": "Preserve me",
+        "metadata": "sentinel"
+      }
+    },
+    "mutation_calls": 0,
+    "observed_at": "2026-10-17T19:09:24.827905+00:00",
+    "provider": "b",
+    "revision": 0,
+    "writable": true
+  },
+  "passed": true,
+  "subject_alive": false
+}

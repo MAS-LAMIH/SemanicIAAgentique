@@ -1,0 +1,12 @@
+@prefix seq: <https://example.org/sam/sequence/v1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:sequence-profile:a> a seq:Profile ;
+    seq:base_manual "contracts/providers/a.ttl" ;
+    seq:create_path_template "/followups/{id}" ;
+    seq:effect "ReservationOnly" ;
+    seq:operation_id "urn:sequence:create_followup" ;
+    seq:requires_after_end true ;
+    seq:requires_predecessor true ;
+    seq:version 1 .
+

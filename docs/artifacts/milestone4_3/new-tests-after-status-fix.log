@@ -1,0 +1,23 @@
+test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers) ... ok
+test_closed_profile_rejects_missing_unknown_and_ambiguous_fields (test_multistep.MultiStepTests.test_closed_profile_rejects_missing_unknown_and_ambiguous_fields) ... ok
+test_finite_profile_rejects_unsupported_plan_before_execution (test_multistep.MultiStepTests.test_finite_profile_rejects_unsupported_plan_before_execution) ... ok
+test_local_binding_has_no_semantic_discovery_imports (test_multistep.MultiStepTests.test_local_binding_has_no_semantic_discovery_imports) ... ok
+test_required_action_never_skipped_even_if_goal_looks_true (test_multistep.MultiStepTests.test_required_action_never_skipped_even_if_goal_looks_true) ... ok
+test_sequence_profile_json_rdf_typed_parity (test_multistep.MultiStepTests.test_sequence_profile_json_rdf_typed_parity) ... ok
+test_service_enforces_dependency_without_sequence_guard (test_multistep.MultiStepTests.test_service_enforces_dependency_without_sequence_guard) ... ok
+test_unknown_dependency_and_stale_evidence_block (test_multistep.MultiStepTests.test_unknown_dependency_and_stale_evidence_block) ... ok
+test_contaminated_reset_rejects_before_subject_launch (test_multistep.OperationalTests.test_contaminated_reset_rejects_before_subject_launch) ... ok
+test_each_reset_axis_detects_contamination (test_multistep.OperationalTests.test_each_reset_axis_detects_contamination) ... ok
+test_inflight_timeout_observes_late_state_without_claiming_success (test_multistep.OperationalTests.test_inflight_timeout_observes_late_state_without_claiming_success) ... ok
+test_invalid_budget_and_existing_trace_reject (test_multistep.OperationalTests.test_invalid_budget_and_existing_trace_reject) ... ok
+test_repetitions_have_equivalent_clean_state_and_distinct_processes (test_multistep.OperationalTests.test_repetitions_have_equivalent_clean_state_and_distinct_processes) ... ok
+test_timeout_kills_stalled_process_and_preserves_costs (test_multistep.OperationalTests.test_timeout_kills_stalled_process_and_preserves_costs) ... ok
+test_transport_failure_is_distinct_from_outer_timeout (test_multistep.OperationalTests.test_transport_failure_is_distinct_from_outer_timeout) ... ok
+test_missing_required_transition_never_verifies (test_multistep.SequenceNativeTests.test_missing_required_transition_never_verifies) ... ok
+test_oracle_expectation_not_supplied_by_runtime_trace (test_multistep.SequenceNativeTests.test_oracle_expectation_not_supplied_by_runtime_trace) ... ok
+test_wrong_relation_and_raw_preservation_fail (test_multistep.SequenceNativeTests.test_wrong_relation_and_raw_preservation_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 54.403s
+
+OK

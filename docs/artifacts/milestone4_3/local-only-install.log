@@ -1,0 +1,7 @@
+Using Python 3.12.14 environment at: /tmp/semanic-m43-local-only
+Resolved 1 package in 4ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 1 package in 2ms
+ + tutorieliaagentique==0.1.0 (from file:///tmp/semanic-m43-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl)

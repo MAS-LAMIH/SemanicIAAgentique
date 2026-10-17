@@ -1,0 +1,18 @@
+Using Python 3.12.14 environment at: /tmp/semanic-m43-final-restored-env
+Resolved 9 packages in 4ms
+   Building tutorieliaagentique @ file:///tmp/semanic-m43-final-restored-source-9x66cr0_
+      Built tutorieliaagentique @ file:///tmp/semanic-m43-final-restored-source-9x66cr0_
+Prepared 1 package in 315ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 9 packages in 6ms
+ + attrs==26.1.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + pyparsing==3.3.3
+ + rdflib==7.6.0
+ + referencing==0.37.0
+ + rpds-py==2026.9.1
+ + tutorieliaagentique==0.1.0 (from file:///tmp/semanic-m43-final-restored-source-9x66cr0_)
+ + typing-extensions==4.16.0

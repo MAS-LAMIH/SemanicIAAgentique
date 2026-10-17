@@ -1,0 +1,59 @@
+test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers) ... 
+  test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers) (task='M02', provider='a', condition='B') ... FAIL
+  test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers) (task='M02', provider='a', condition='C') ... FAIL
+test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers) ... ERROR
+test_closed_profile_rejects_missing_unknown_and_ambiguous_fields (test_multistep.MultiStepTests.test_closed_profile_rejects_missing_unknown_and_ambiguous_fields) ... ok
+test_finite_profile_rejects_unsupported_plan_before_execution (test_multistep.MultiStepTests.test_finite_profile_rejects_unsupported_plan_before_execution) ... ok
+test_local_binding_has_no_semantic_discovery_imports (test_multistep.MultiStepTests.test_local_binding_has_no_semantic_discovery_imports) ... FAIL
+test_required_action_never_skipped_even_if_goal_looks_true (test_multistep.MultiStepTests.test_required_action_never_skipped_even_if_goal_looks_true) ... ok
+test_sequence_profile_json_rdf_typed_parity (test_multistep.MultiStepTests.test_sequence_profile_json_rdf_typed_parity) ... ok
+test_service_enforces_dependency_without_sequence_guard (test_multistep.MultiStepTests.test_service_enforces_dependency_without_sequence_guard) ... ok
+test_unknown_dependency_and_stale_evidence_block (test_multistep.MultiStepTests.test_unknown_dependency_and_stale_evidence_block) ... ok
+test_contaminated_reset_rejects_before_subject_launch (test_multistep.OperationalTests.test_contaminated_reset_rejects_before_subject_launch) ... ok
+test_each_reset_axis_detects_contamination (test_multistep.OperationalTests.test_each_reset_axis_detects_contamination) ... ok
+test_inflight_timeout_observes_late_state_without_claiming_success (test_multistep.OperationalTests.test_inflight_timeout_observes_late_state_without_claiming_success) ... ok
+test_invalid_budget_and_existing_trace_reject (test_multistep.OperationalTests.test_invalid_budget_and_existing_trace_reject) ... ok
+test_repetitions_have_equivalent_clean_state_and_distinct_processes (test_multistep.OperationalTests.test_repetitions_have_equivalent_clean_state_and_distinct_processes) ... ok
+test_timeout_kills_stalled_process_and_preserves_costs (test_multistep.OperationalTests.test_timeout_kills_stalled_process_and_preserves_costs) ... ok
+test_transport_failure_is_distinct_from_outer_timeout (test_multistep.OperationalTests.test_transport_failure_is_distinct_from_outer_timeout) ... ok
+test_missing_required_transition_never_verifies (test_multistep.SequenceNativeTests.test_missing_required_transition_never_verifies) ... ok
+test_oracle_expectation_not_supplied_by_runtime_trace (test_multistep.SequenceNativeTests.test_oracle_expectation_not_supplied_by_runtime_trace) ... ok
+test_wrong_relation_and_raw_preservation_fail (test_multistep.SequenceNativeTests.test_wrong_relation_and_raw_preservation_fail) ... ok
+
+======================================================================
+ERROR: test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/semantic_action/test_multistep.py", line 57, in test_all_scenarios_three_conditions_visible_providers
+    self.assertEqual(results[0], results[1])
+                                 ~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers) (task='M02', provider='a', condition='B')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/semantic_action/test_multistep.py", line 37, in test_all_scenarios_three_conditions_visible_providers
+    self.assertTrue(result['diagnostic_passed'], json.dumps(result.get('summary', result)))
+AssertionError: False is not true : {"status": "BLOCKED", "supervision_status": "COMPLETED", "mutation_calls": 1, "runtime_verified": false, "native_verified": false, "verified": false, "verified_transitions": 1, "partial_new_records": 1, "state_uncertain": false}
+
+======================================================================
+FAIL: test_all_scenarios_three_conditions_visible_providers (test_multistep.MultiStepTests.test_all_scenarios_three_conditions_visible_providers) (task='M02', provider='a', condition='C')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/semantic_action/test_multistep.py", line 37, in test_all_scenarios_three_conditions_visible_providers
+    self.assertTrue(result['diagnostic_passed'], json.dumps(result.get('summary', result)))
+AssertionError: False is not true : {"status": "BLOCKED", "supervision_status": "COMPLETED", "mutation_calls": 1, "runtime_verified": false, "native_verified": false, "verified": false, "verified_transitions": 1, "partial_new_records": 1, "state_uncertain": false}
+
+======================================================================
+FAIL: test_local_binding_has_no_semantic_discovery_imports (test_multistep.MultiStepTests.test_local_binding_has_no_semantic_discovery_imports)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/semantic_action/test_multistep.py", line 142, in test_local_binding_has_no_semantic_discovery_imports
+    self.assertNotIn(forbidden, source)
+AssertionError: 'registry' unexpectedly found in "class LocalSequenceBinding:\n    def __init__(self, root, profile, origin):\n        # Deliberately provider-local programming, no shared ontology/registry imports.\n        from .local_baseline import CalendarLocal, BookingLocal\n        data = read_json(profile)\n        required = {'version', 'local_kind', 'operation', 'effect', 'requires_predecessor',\n                    'requires_after_end', 'create_path_template', 'base_description'}\n        if not isinstance(data, dict) or set(data) != required:\n            raise ValueError('Incomplete local follow-up description')\n        if type(data['version']) is not int or data['version'] != 1:\n            raise ValueError('Unsupported local follow-up version')\n        if not all(type(data[k]) is bool and data[k] for k in ('requires_predecessor', 'requires_after_end')):\n            raise ValueError('Missing local dependency guard')\n        if data['local_kind'] == 'calendar_followup':\n            self.local_type, operation, template = CalendarLocal, 'create_followup', '/followups/{id}'\n        elif data['local_kind'] == 'booking_followup':\n            self.local_type, operation, template = BookingLocal, 'reserveAfterBooking', '/booking-after/{id}'\n        else:\n            raise ValueError('Unsupported local follow-up binding')\n        if data['operation'] != operation or data['create_path_template'] != template:\n            raise ValueError('Unsupported local operation/path')\n        if data['effect'] not in {'stores_followup_after_existing_event', 'records_reservation_only'}:\n            raise ValueError('Unknown local effect')\n        self.compatible = data['effect'] == 'stores_followup_after_existing_event'\n        self.base = reference(root, data['base_description'])\n        self.origin, self.data = origin, data\n        # Parse local base before any mutation, including dependent-only description defects.\n        self.local_type(self.base)\n\n    def read_state(self):\n        from .local_baseline import LocalExecutor\n        local = self.local_type(self.base)\n        response = LocalExecutor(self.origin)._http_request('GET', local.permission_path)\n        if not response.success:\n            return None\n        try:\n            return local.state(response.body)\n        except (KeyError, TypeError, ValueError, OverflowError):\n            return None\n\n    def execute(self, index, predecessor, goal, output):\n        from .local_baseline import LocalExecutor\n        local = self.local_type(self.base)\n        if index:\n            local.create_path = self.data['create_path_template'].replace('{id}', identifier(predecessor))\n            # The local adapter still validates the single creation goal, encoding and effects.\n            local.operation = self.data['operation']\n            local.description['operation'] = self.data['operation']\n        values = {k: getattr(goal, k) for k in ('start_time', 'end_time', 'title')}\n        return LocalExecutor(self.origin).run(local, goal, values, output / 'action.json')\n"
+
+----------------------------------------------------------------------
+Ran 18 tests in 19.903s
+
+FAILED (failures=3, errors=1)

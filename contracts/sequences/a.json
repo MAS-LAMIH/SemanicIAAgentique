@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "operation_id": "urn:sequence:create_followup",
+  "effect": "NewEventAfterPredecessor",
+  "requires_predecessor": true,
+  "requires_after_end": true,
+  "create_path_template": "/followups/{id}",
+  "base_manual": "contracts/providers/a.json"
+}

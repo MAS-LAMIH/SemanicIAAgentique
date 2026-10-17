@@ -1,0 +1,3 @@
+Using CPython 3.12.14 interpreter at: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3
+Creating virtual environment at: /tmp/semanic-m43-wheel-env
+Activate with: source /tmp/semanic-m43-wheel-env/bin/activate

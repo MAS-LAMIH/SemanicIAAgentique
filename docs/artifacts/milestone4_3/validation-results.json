@@ -1,0 +1,606 @@
+{
+  "commands": [
+    {
+      "id": "baseline",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "exit_code": 0,
+      "tests_run": 66,
+      "runner_seconds": 146.837,
+      "log_path": "docs/artifacts/milestone4_3/baseline-tests.log",
+      "scope": "Baseline or intermediate, not final V3 identity"
+    },
+    {
+      "id": "initial_components",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_multistep.py -v",
+      "exit_code": 1,
+      "tests_run": 18,
+      "runner_seconds": 19.903,
+      "log_path": "docs/artifacts/milestone4_3/initial-new-tests.log",
+      "scope": "Baseline or intermediate, not final V3 identity",
+      "failure_reports": 3,
+      "errors": 1,
+      "count_note": "Subtest failure reports are not distinct method counts; no inferred passed-method total"
+    },
+    {
+      "id": "components_after_status_fix",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_multistep.py -v",
+      "exit_code": 0,
+      "tests_run": 18,
+      "runner_seconds": 54.403,
+      "log_path": "docs/artifacts/milestone4_3/new-tests-after-status-fix.log",
+      "scope": "Baseline or intermediate, not final V3 identity"
+    },
+    {
+      "id": "source_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-source-env",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/source-environment.log",
+      "elapsed_seconds": 0.0163604179979302,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "source_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-source-env/bin/python",
+        "-r",
+        "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+        "-e",
+        "."
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/source-install.log",
+      "elapsed_seconds": 0.4130976209999062,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "wheel_build",
+      "command": [
+        "uv",
+        "build",
+        "--offline",
+        "--wheel",
+        "--out-dir",
+        "/tmp/semanic-m43-wheel"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-build.log",
+      "elapsed_seconds": 0.4300865250006609,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "wheel_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-wheel-env",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-environment.log",
+      "elapsed_seconds": 0.015122151999094058,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "wheel_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-wheel-env/bin/python",
+        "-r",
+        "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+        "/tmp/semanic-m43-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-install.log",
+      "elapsed_seconds": 0.07325696499901824,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "retained_pilot",
+      "command": [
+        ".venv/bin/python",
+        "scripts/run_pilot_v3.py",
+        "--output-dir",
+        "docs/artifacts/milestone4_3/pilot",
+        "--ledger",
+        "docs/artifacts/milestone4_3/events.jsonl"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/pilot-run.log",
+      "elapsed_seconds": 58.72728809899854,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "local_only_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-local-only",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/local-only-environment.log",
+      "elapsed_seconds": 0.0321650480000244,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "local_only_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-local-only/bin/python",
+        "/tmp/semanic-m43-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/local-only-install.log",
+      "elapsed_seconds": 0.06790104500032612,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "wheel_dependency_check",
+      "command": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/semanic-m43-wheel-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-dependency-check.log",
+      "elapsed_seconds": 0.01653211899974849,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "local_only_chains",
+      "command": [
+        "/tmp/semanic-m43-local-only/bin/python",
+        "scripts/local_only_v3.py",
+        "--output-dir",
+        "docs/artifacts/milestone4_3/local-only"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/local-only-chains.log",
+      "elapsed_seconds": 1.358202789000643,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "pre_relation_source_full",
+      "command": [
+        "/tmp/semanic-m43-source-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/source-tests.log",
+      "elapsed_seconds": 206.4103970590004,
+      "tests_run": 86,
+      "runner_seconds": 205.99,
+      "original_reported_id": "source_full"
+    },
+    {
+      "id": "pre_relation_wheel_full",
+      "command": [
+        "/tmp/semanic-m43-wheel-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-tests.log",
+      "elapsed_seconds": 205.02532320300088,
+      "tests_run": 86,
+      "runner_seconds": 204.549,
+      "original_reported_id": "wheel_full"
+    },
+    {
+      "id": "restored_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-restored-env",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/restored-environment.log",
+      "elapsed_seconds": 0.017877625999972224,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "restored_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-restored-env/bin/python",
+        "-r",
+        "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+        "."
+      ],
+      "cwd": "/tmp/semanic-m43-restored-source-tcw835cg",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/restored-install.log",
+      "elapsed_seconds": 0.3864291259997117,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "final_restored_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-final-restored-env",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/final-restored-environment.log",
+      "elapsed_seconds": 0.01621593500021845,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "final_restored_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-final-restored-env/bin/python",
+        "-r",
+        "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+        "."
+      ],
+      "cwd": "/tmp/semanic-m43-final-restored-source-9x66cr0_",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/final-restored-install.log",
+      "elapsed_seconds": 0.39248269200106733,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "pre_relation_restored_full",
+      "command": [
+        "/tmp/semanic-m43-restored-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/semanic-m43-restored-source-tcw835cg",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/restored-tests.log",
+      "elapsed_seconds": 207.22083768000084,
+      "tests_run": 86,
+      "runner_seconds": 206.76,
+      "original_reported_id": "restored_full"
+    },
+    {
+      "id": "wheel_relation_build",
+      "command": [
+        "uv",
+        "build",
+        "--offline",
+        "--wheel",
+        "--out-dir",
+        "/tmp/semanic-m43-relation-wheel"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-relation-build.log",
+      "elapsed_seconds": 0.33101859800081,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "wheel_relation_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-relation-wheel-env",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-relation-environment.log",
+      "elapsed_seconds": 0.015256254002451897,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "wheel_relation_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-relation-wheel-env/bin/python",
+        "-r",
+        "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+        "/tmp/semanic-m43-relation-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-relation-install.log",
+      "elapsed_seconds": 0.10658012000203598,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "relation_restored_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-relation-restored-env",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/relation-restored-environment.log",
+      "elapsed_seconds": 0.015266779002558906,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "relation_restored_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-relation-restored-env/bin/python",
+        "-r",
+        "docs/artifacts/milestone4_3/evaluation-requirements.txt",
+        "."
+      ],
+      "cwd": "/tmp/semanic-m43-relation-restored-source",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/relation-restored-install.log",
+      "elapsed_seconds": 0.42810946099780267,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "pre_relation_restored_final_full",
+      "command": [
+        "/tmp/semanic-m43-final-restored-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/semanic-m43-final-restored-source-9x66cr0_",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/final-restored-tests.log",
+      "elapsed_seconds": 206.45169901400004,
+      "tests_run": 86,
+      "runner_seconds": 205.983,
+      "original_reported_id": "restored_final_full"
+    },
+    {
+      "id": "local_relation_environment",
+      "command": [
+        "uv",
+        "venv",
+        "/tmp/semanic-m43-relation-local-only",
+        "--python",
+        "python3"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/local-relation-environment.log",
+      "elapsed_seconds": 0.01732409100077348,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "local_relation_install",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-m43-relation-local-only/bin/python",
+        "/tmp/semanic-m43-relation-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/local-relation-install.log",
+      "elapsed_seconds": 0.0625835789978737,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "local_only_after_relation",
+      "command": [
+        "/tmp/semanic-m43-relation-local-only/bin/python",
+        "scripts/local_only_v3.py",
+        "--output-dir",
+        "docs/artifacts/milestone4_3/local-only-final"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/local-only-after-relation.log",
+      "elapsed_seconds": 1.3649742000015976,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "retained_pilot_after_relation",
+      "command": [
+        ".venv/bin/python",
+        "scripts/run_pilot_v3.py",
+        "--output-dir",
+        "docs/artifacts/milestone4_3/pilot-final",
+        "--ledger",
+        "docs/artifacts/milestone4_3/events.jsonl"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/pilot-after-relation-run.log",
+      "elapsed_seconds": 62.339530110999476,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "wheel_relation_dependency_check",
+      "command": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/semanic-m43-relation-wheel-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-relation-dependency-check.log",
+      "elapsed_seconds": 0.020973782997316448,
+      "tests_run": null,
+      "runner_seconds": null
+    },
+    {
+      "id": "source_full",
+      "command": [
+        "/tmp/semanic-m43-source-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/source-after-relation-tests.log",
+      "elapsed_seconds": 208.40295539300132,
+      "tests_run": 87,
+      "runner_seconds": 208.125,
+      "original_reported_id": "source_after_relation",
+      "stage": "final_relation_aware_candidate",
+      "passed": 87,
+      "failure_reports": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "id": "wheel_full",
+      "command": [
+        "/tmp/semanic-m43-relation-wheel-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/wheel-after-relation-tests.log",
+      "elapsed_seconds": 208.7185075080015,
+      "tests_run": 87,
+      "runner_seconds": 208.255,
+      "original_reported_id": "wheel_after_relation",
+      "stage": "final_relation_aware_candidate",
+      "passed": 87,
+      "failure_reports": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "id": "restored_full",
+      "command": [
+        "/tmp/semanic-m43-relation-restored-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/semanic-m43-relation-restored-source",
+      "exit_code": 0,
+      "log_path": "docs/artifacts/milestone4_3/restored-after-relation-tests.log",
+      "elapsed_seconds": 209.24063500300326,
+      "tests_run": 87,
+      "runner_seconds": 208.763,
+      "original_reported_id": "restored_after_relation",
+      "stage": "final_relation_aware_candidate",
+      "passed": 87,
+      "failure_reports": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "approval": "pending",
+  "unseal_authorized": false,
+  "pilot_results_path": "pilot-final/pilot-results.json",
+  "final_candidate_suite_ids": [
+    "source_full",
+    "wheel_full",
+    "restored_full"
+  ],
+  "stage_note": "Pre-extension/serialization logs and archives preserved; final suite aliases retain original reported IDs and exact commands."
+}
