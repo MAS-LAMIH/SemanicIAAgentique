@@ -1,0 +1,66 @@
+{
+  "action": {
+    "schema_version": 1,
+    "condition": "A",
+    "run_id": "3569dca4-7eae-46e5-ace3-ae92458b5d75",
+    "timestamp": "2026-10-17T20:37:56.586959+00:00",
+    "operation_id": "reserveAppointment",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 05",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 05"
+    },
+    "description_sha256": "ec18b1f054c694d25d4755f91b11e14b2f021edd505026addd3e9cb604591dc4",
+    "compatible": true,
+    "applicability": "FALSE",
+    "execution_decision": "REJECT",
+    "api_call_success": false,
+    "api_response": null,
+    "oracle_verdict": null,
+    "observed_state_change": null,
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "name": "local_write_permission",
+        "verdict": "FALSE",
+        "evidence": {
+          "writable": false,
+          "events": {},
+          "revision": 0,
+          "observed_at": "2026-10-17T20:37:56.588548+00:00"
+        }
+      }
+    ],
+    "wire_evidence": [
+      {
+        "method": "GET",
+        "path": "/availability",
+        "request_body": null,
+        "status": 200,
+        "body": {
+          "can_book": false,
+          "items": {},
+          "sampled_at": "2026-10-17T20:37:56.588548+00:00",
+          "version": 0
+        },
+        "error": null,
+        "raw_body": null
+      }
+    ],
+    "reason": "Local write permission not established TRUE",
+    "completed_at": "2026-10-17T20:37:56.588913+00:00"
+  },
+  "resolution": null,
+  "compatible": true,
+  "applicability": "FALSE"
+}

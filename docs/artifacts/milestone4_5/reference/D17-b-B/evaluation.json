@@ -1,0 +1,375 @@
+{
+  "case_passed": true,
+  "condition": "B",
+  "expected": {
+    "classification": "unverified_execution",
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "stale_observation",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 17"
+  },
+  "native_verdict": {
+    "achieved": true,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 17"
+        },
+        "observed_at": "2026-10-17T20:37:51.207978+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 17"
+          }
+        },
+        "observed_at": "2026-10-17T20:37:51.207978+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "booking-0001": {
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 17"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:37:51.207978+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:51.184637+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [],
+    "runtime_discrepancy": true
+  },
+  "provider": "b",
+  "resolution": {
+    "candidates": [
+      {
+        "applicability": "TRUE",
+        "artifact_id": "https://example.org/provider-b#appointments",
+        "assessment": {
+          "applicability": "TRUE",
+          "preconditions": [
+            {
+              "evidence": {
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "start_time": "2030-01-07T09:00:00+00:00"
+              },
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "reason": "Validated interval",
+              "verdict": "TRUE"
+            },
+            {
+              "evidence": {
+                "events": {},
+                "observed_at": "2026-10-17T20:37:51.193892+00:00",
+                "revision": 0,
+                "writable": true
+              },
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "reason": "Current observation establishes writable",
+              "verdict": "TRUE"
+            }
+          ],
+          "validation": {
+            "errors": [],
+            "valid": true
+          }
+        },
+        "compatible": true,
+        "contract_sha256": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7",
+        "eligible": true,
+        "operation_id": "https://example.org/provider-b#reserveAppointment",
+        "reasons": [],
+        "registration": 0
+      }
+    ],
+    "execution_started": true,
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 17"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 17"
+    },
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "run_id": "6432de89-a3a5-429c-a05a-d2934beb4cec",
+    "schema_version": 1,
+    "selected_operation": "https://example.org/provider-b#reserveAppointment",
+    "timestamp": "2026-10-17T20:37:51.185002+00:00"
+  },
+  "runtime_action": {
+    "api_call_success": true,
+    "api_response": {
+      "body": {
+        "id": "booking-0001"
+      },
+      "error": null,
+      "raw_body": {
+        "booking_ref": "booking-0001"
+      },
+      "status": 201
+    },
+    "applicability": "TRUE",
+    "artifact_id": "https://example.org/provider-b#appointments",
+    "completed_at": "2026-10-17T20:37:51.207447+00:00",
+    "contract_sha256": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7",
+    "declared_effects": [
+      "https://example.org/sam/v1#NewMatchingEvent"
+    ],
+    "evidence": {
+      "baseline": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:51.203743+00:00",
+        "revision": 0,
+        "writable": true
+      }
+    },
+    "execution_decision": "EXECUTE",
+    "execution_started": "2026-10-17T20:37:51.205023+00:00",
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 17"
+    },
+    "input_validation": {
+      "errors": [],
+      "valid": true
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 17"
+    },
+    "observed_effects": {
+      "error": "Contract observation evidence insufficient",
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 17"
+        },
+        "observed_at": "2000-01-01T00:00:00+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 17"
+          }
+        },
+        "observed_at": "2000-01-01T00:00:00+00:00",
+        "revision": 1,
+        "writable": true
+      }
+    },
+    "observed_state_change": null,
+    "operation_id": "https://example.org/provider-b#reserveAppointment",
+    "oracle_verdict": {
+      "achieved": false,
+      "reasons": [
+        "Contract observation evidence insufficient",
+        "Missing, stale, or pre-execution event evidence",
+        "Missing, stale, or pre-execution state evidence"
+      ]
+    },
+    "preconditions": [
+      {
+        "evidence": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "start_time": "2030-01-07T09:00:00+00:00"
+        },
+        "name": "https://example.org/sam/v1#PositiveInterval",
+        "reason": "Validated interval",
+        "verdict": "TRUE"
+      },
+      {
+        "evidence": {
+          "events": {},
+          "observed_at": "2026-10-17T20:37:51.203743+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "name": "https://example.org/sam/v1#CalendarWritable",
+        "reason": "Current observation establishes writable",
+        "verdict": "TRUE"
+      }
+    ],
+    "provider_profile": {
+      "binding": {
+        "baseline_path": "/availability",
+        "create_path": "/bookings",
+        "event_field": "booking",
+        "event_fields": {
+          "end_time": {
+            "source": "finishes_ms",
+            "transform": "epoch_ms_to_iso"
+          },
+          "id": {
+            "source": "booking_ref",
+            "transform": "identity"
+          },
+          "start_time": {
+            "source": "begins_ms",
+            "transform": "epoch_ms_to_iso"
+          },
+          "title": {
+            "source": "label",
+            "transform": "identity"
+          }
+        },
+        "event_path": "/booking/{id}",
+        "events_field": "items",
+        "request_fields": {
+          "begins_ms": {
+            "source": "start_time",
+            "transform": "iso_to_epoch_ms"
+          },
+          "finishes_ms": {
+            "source": "end_time",
+            "transform": "iso_to_epoch_ms"
+          },
+          "label": {
+            "source": "title",
+            "transform": "identity"
+          }
+        },
+        "response_id": "booking_ref",
+        "revision_field": "version",
+        "state_path": "/bookings",
+        "timestamp_field": "sampled_at",
+        "writable_field": "can_book"
+      },
+      "constraints": {
+        "max_duration_seconds": 7200,
+        "preserves_other_events": true,
+        "time_grid_seconds": 900
+      }
+    },
+    "reason": "Contract observation evidence insufficient; Missing, stale, or pre-execution event evidence; Missing, stale, or pre-execution state evidence",
+    "run_id": "92da217e-1d03-4871-a6fc-018c4c5acafc",
+    "schema_version": 1,
+    "timestamp": "2026-10-17T20:37:51.200961+00:00",
+    "wire_evidence": [
+      {
+        "canonical_method": "GET",
+        "canonical_path": "/calendar",
+        "raw_body": {
+          "can_book": true,
+          "items": {},
+          "sampled_at": "2026-10-17T20:37:51.203743+00:00",
+          "version": 0
+        },
+        "request_body": null,
+        "status": 200,
+        "wire_method": "GET",
+        "wire_path": "/availability"
+      },
+      {
+        "canonical_method": "POST",
+        "canonical_path": "/events",
+        "raw_body": {
+          "booking_ref": "booking-0001"
+        },
+        "request_body": {
+          "begins_ms": 1894006800000,
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 17"
+        },
+        "status": 201,
+        "wire_method": "POST",
+        "wire_path": "/bookings"
+      },
+      {
+        "canonical_method": "GET",
+        "canonical_path": "/events/booking-0001",
+        "raw_body": {
+          "booking": {
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "Diagnostic task 17"
+          },
+          "sampled_at": "2000-01-01T00:00:00+00:00",
+          "version": 1
+        },
+        "request_body": null,
+        "status": 200,
+        "wire_method": "GET",
+        "wire_path": "/booking/booking-0001"
+      },
+      {
+        "canonical_method": "GET",
+        "canonical_path": "/events",
+        "raw_body": {
+          "can_book": true,
+          "items": {
+            "booking-0001": {
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001",
+              "finishes_ms": 1894010400000,
+              "label": "Diagnostic task 17"
+            }
+          },
+          "sampled_at": "2000-01-01T00:00:00+00:00",
+          "version": 1
+        },
+        "request_body": null,
+        "status": 200,
+        "wire_method": "GET",
+        "wire_path": "/bookings"
+      }
+    ]
+  },
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D17"
+}

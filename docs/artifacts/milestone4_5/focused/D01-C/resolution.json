@@ -1,0 +1,61 @@
+{
+  "candidates": [
+    {
+      "applicability": "TRUE",
+      "artifact_id": "https://example.org/provider-a#calendar",
+      "assessment": {
+        "applicability": "TRUE",
+        "preconditions": [
+          {
+            "evidence": {
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "start_time": "2030-01-07T09:00:00+00:00"
+            },
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "reason": "Validated interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {},
+              "observed_at": "2026-10-17T20:36:21.571716+00:00",
+              "revision": 0,
+              "writable": true
+            },
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "reason": "Current observation establishes writable",
+            "verdict": "TRUE"
+          }
+        ],
+        "validation": {
+          "errors": [],
+          "valid": true
+        }
+      },
+      "compatible": true,
+      "contract_sha256": "9283a7f6ad67dbbe5470e5726c70d802e9e8b8704ec17758e153d9b4e5c4eb3f",
+      "eligible": true,
+      "operation_id": "https://example.org/provider-a#create_event",
+      "reasons": [],
+      "registration": 0
+    }
+  ],
+  "execution_started": true,
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 01"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 01"
+  },
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "555259e1-120d-4d06-84de-5cc5db19d18d",
+  "schema_version": 1,
+  "selected_operation": "https://example.org/provider-a#create_event",
+  "timestamp": "2026-10-17T20:36:21.552052+00:00"
+}

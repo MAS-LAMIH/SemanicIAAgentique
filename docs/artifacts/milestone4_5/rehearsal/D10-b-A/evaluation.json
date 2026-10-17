@@ -1,0 +1,90 @@
+{
+  "classification": "SAFE_NEGATIVE_REJECTION",
+  "condition": "A",
+  "diagnostic_passed": true,
+  "expected": {
+    "classification": "safe_rejection",
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "precision_loss",
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:38:19.706252+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:19.706252+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:19.706252+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:19.390369+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "process": {
+    "automated_runtime_seconds": 0.3150031980003405,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-17T20:38:19.705853+00:00",
+    "exit_code": 0,
+    "pid": 69532,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:38:19.390859+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "b",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:19.706203+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.7040001694113016e-06
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": false,
+    "applicability": null,
+    "compatible": false,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D10"
+}

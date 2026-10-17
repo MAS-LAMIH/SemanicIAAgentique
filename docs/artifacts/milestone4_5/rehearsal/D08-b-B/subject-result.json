@@ -1,0 +1,69 @@
+{
+  "action": null,
+  "resolution": {
+    "schema_version": 1,
+    "run_id": "5507c9ff-c741-441b-87ee-6fa872b52ab6",
+    "timestamp": "2026-10-17T20:38:12.245845+00:00",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 08",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "inputs": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 08"
+    },
+    "candidates": [
+      {
+        "registration": 0,
+        "operation_id": "https://example.org/provider-b#reserveAppointment",
+        "artifact_id": "https://example.org/provider-b#appointments",
+        "compatible": true,
+        "eligible": false,
+        "applicability": "UNKNOWN",
+        "reasons": [
+          "Critical applicability is UNKNOWN"
+        ],
+        "assessment": {
+          "validation": {
+            "valid": true,
+            "errors": []
+          },
+          "preconditions": [
+            {
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "verdict": "TRUE",
+              "reason": "Validated interval",
+              "evidence": {
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00"
+              }
+            },
+            {
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "verdict": "UNKNOWN",
+              "reason": "Missing, stale, or insufficient writability evidence",
+              "evidence": {
+                "revision": 0,
+                "observed_at": null,
+                "writable": true,
+                "events": {}
+              }
+            }
+          ],
+          "applicability": "UNKNOWN"
+        },
+        "contract_sha256": "c3f9e44863ca6930a32b72ec1112e126c4ad7c170984be2a87c9b8079687eb74"
+      }
+    ],
+    "selected_operation": "https://example.org/provider-b#reserveAppointment",
+    "execution_started": false,
+    "rejection_reason": "Selected operation is not uniquely eligible"
+  },
+  "compatible": true,
+  "applicability": "UNKNOWN"
+}

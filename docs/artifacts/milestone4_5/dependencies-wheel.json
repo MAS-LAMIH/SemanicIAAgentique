@@ -1,0 +1,19 @@
+{
+  "id": "dependencies-wheel",
+  "command": [
+    "uv",
+    "pip",
+    "check",
+    "--python",
+    "/tmp/m44-wheel-env/bin/python"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:39:48.031830+00:00",
+  "ended_at": "2026-10-17T20:39:48.049765+00:00",
+  "exit_code": 2,
+  "elapsed_seconds": 0.017930014000739902,
+  "tests_run": null,
+  "runner_seconds": null,
+  "log_path": "docs/artifacts/milestone4_5/dependencies-wheel.log",
+  "nested_runtime": false
+}

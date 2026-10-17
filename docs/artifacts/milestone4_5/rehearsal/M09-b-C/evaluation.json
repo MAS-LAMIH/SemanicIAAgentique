@@ -1,0 +1,1618 @@
+{
+  "task_id": "M09",
+  "family": "three_step_chain",
+  "provider": "b",
+  "condition": "C",
+  "started_at": "2026-10-17T20:39:46.644876+00:00",
+  "formal_goals": [
+    {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "M09 required appointment 1",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    {
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "title": "M09 required appointment 2",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    {
+      "start_time": "2030-01-07T11:00:00+00:00",
+      "end_time": "2030-01-07T12:00:00+00:00",
+      "title": "M09 required appointment 3",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    }
+  ],
+  "summary": {
+    "status": "COMPLETE",
+    "supervision_status": "COMPLETED",
+    "mutation_calls": 3,
+    "runtime_verified": true,
+    "native_verified": true,
+    "verified": true,
+    "verified_transitions": 3,
+    "partial_new_records": 3,
+    "state_uncertain": false
+  },
+  "native_verdict": {
+    "achieved": true,
+    "reasons": [],
+    "transitions": [
+      {
+        "achieved": true,
+        "reasons": [],
+        "runtime_discrepancy": false,
+        "raw_before": {
+          "provider": "b",
+          "observed_at": "2026-10-17T20:39:47.093361+00:00",
+          "revision": 0,
+          "writable": true,
+          "events": {
+            "existing": {
+              "booking_ref": "existing",
+              "begins_ms": 1893920400000,
+              "finishes_ms": 1893924000000,
+              "label": "Preserve me",
+              "metadata": "sentinel"
+            }
+          },
+          "mutation_calls": 0
+        },
+        "raw_after": {
+          "provider": "b",
+          "observed_at": "2026-10-17T20:39:47.094066+00:00",
+          "revision": 1,
+          "writable": true,
+          "events": {
+            "existing": {
+              "booking_ref": "existing",
+              "begins_ms": 1893920400000,
+              "finishes_ms": 1893924000000,
+              "label": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "booking-0001": {
+              "finishes_ms": 1894010400000,
+              "label": "M09 required appointment 1",
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001"
+            }
+          },
+          "mutation_calls": 1
+        },
+        "mutation_calls": 1,
+        "canonical_observation": {
+          "event": {
+            "event": {
+              "id": "booking-0001",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1"
+            },
+            "revision": 1,
+            "observed_at": "2026-10-17T20:39:47.094066+00:00"
+          },
+          "state": {
+            "events": {
+              "existing": {
+                "id": "existing",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "title": "Preserve me"
+              },
+              "booking-0001": {
+                "id": "booking-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              }
+            },
+            "revision": 1,
+            "observed_at": "2026-10-17T20:39:47.094066+00:00"
+          },
+          "error": null
+        }
+      },
+      {
+        "achieved": true,
+        "reasons": [],
+        "runtime_discrepancy": false,
+        "raw_before": {
+          "provider": "b",
+          "observed_at": "2026-10-17T20:39:47.166649+00:00",
+          "revision": 1,
+          "writable": true,
+          "events": {
+            "existing": {
+              "booking_ref": "existing",
+              "begins_ms": 1893920400000,
+              "finishes_ms": 1893924000000,
+              "label": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "booking-0001": {
+              "finishes_ms": 1894010400000,
+              "label": "M09 required appointment 1",
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001"
+            }
+          },
+          "mutation_calls": 1
+        },
+        "raw_after": {
+          "provider": "b",
+          "observed_at": "2026-10-17T20:39:47.167874+00:00",
+          "revision": 2,
+          "writable": true,
+          "events": {
+            "existing": {
+              "booking_ref": "existing",
+              "begins_ms": 1893920400000,
+              "finishes_ms": 1893924000000,
+              "label": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "booking-0001": {
+              "finishes_ms": 1894010400000,
+              "label": "M09 required appointment 1",
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001"
+            },
+            "booking-0002": {
+              "label": "M09 required appointment 2",
+              "begins_ms": 1894010400000,
+              "finishes_ms": 1894014000000,
+              "booking_ref": "booking-0002",
+              "previous_booking": "booking-0001"
+            }
+          },
+          "mutation_calls": 2
+        },
+        "mutation_calls": 1,
+        "canonical_observation": {
+          "event": {
+            "event": {
+              "id": "booking-0002",
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "title": "M09 required appointment 2"
+            },
+            "revision": 2,
+            "observed_at": "2026-10-17T20:39:47.167874+00:00"
+          },
+          "state": {
+            "events": {
+              "existing": {
+                "id": "existing",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "title": "Preserve me"
+              },
+              "booking-0001": {
+                "id": "booking-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              },
+              "booking-0002": {
+                "id": "booking-0002",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "title": "M09 required appointment 2"
+              }
+            },
+            "revision": 2,
+            "observed_at": "2026-10-17T20:39:47.167874+00:00"
+          },
+          "error": null
+        }
+      },
+      {
+        "achieved": true,
+        "reasons": [],
+        "runtime_discrepancy": false,
+        "raw_before": {
+          "provider": "b",
+          "observed_at": "2026-10-17T20:39:47.230858+00:00",
+          "revision": 2,
+          "writable": true,
+          "events": {
+            "existing": {
+              "booking_ref": "existing",
+              "begins_ms": 1893920400000,
+              "finishes_ms": 1893924000000,
+              "label": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "booking-0001": {
+              "finishes_ms": 1894010400000,
+              "label": "M09 required appointment 1",
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001"
+            },
+            "booking-0002": {
+              "label": "M09 required appointment 2",
+              "begins_ms": 1894010400000,
+              "finishes_ms": 1894014000000,
+              "booking_ref": "booking-0002",
+              "previous_booking": "booking-0001"
+            }
+          },
+          "mutation_calls": 2
+        },
+        "raw_after": {
+          "provider": "b",
+          "observed_at": "2026-10-17T20:39:47.231361+00:00",
+          "revision": 3,
+          "writable": true,
+          "events": {
+            "existing": {
+              "booking_ref": "existing",
+              "begins_ms": 1893920400000,
+              "finishes_ms": 1893924000000,
+              "label": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "booking-0001": {
+              "finishes_ms": 1894010400000,
+              "label": "M09 required appointment 1",
+              "begins_ms": 1894006800000,
+              "booking_ref": "booking-0001"
+            },
+            "booking-0002": {
+              "label": "M09 required appointment 2",
+              "begins_ms": 1894010400000,
+              "finishes_ms": 1894014000000,
+              "booking_ref": "booking-0002",
+              "previous_booking": "booking-0001"
+            },
+            "booking-0003": {
+              "label": "M09 required appointment 3",
+              "begins_ms": 1894014000000,
+              "finishes_ms": 1894017600000,
+              "booking_ref": "booking-0003",
+              "previous_booking": "booking-0002"
+            }
+          },
+          "mutation_calls": 3
+        },
+        "mutation_calls": 1,
+        "canonical_observation": {
+          "event": {
+            "event": {
+              "id": "booking-0003",
+              "start_time": "2030-01-07T11:00:00+00:00",
+              "end_time": "2030-01-07T12:00:00+00:00",
+              "title": "M09 required appointment 3"
+            },
+            "revision": 3,
+            "observed_at": "2026-10-17T20:39:47.231361+00:00"
+          },
+          "state": {
+            "events": {
+              "existing": {
+                "id": "existing",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "title": "Preserve me"
+              },
+              "booking-0001": {
+                "id": "booking-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              },
+              "booking-0002": {
+                "id": "booking-0002",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "title": "M09 required appointment 2"
+              },
+              "booking-0003": {
+                "id": "booking-0003",
+                "start_time": "2030-01-07T11:00:00+00:00",
+                "end_time": "2030-01-07T12:00:00+00:00",
+                "title": "M09 required appointment 3"
+              }
+            },
+            "revision": 3,
+            "observed_at": "2026-10-17T20:39:47.231361+00:00"
+          },
+          "error": null
+        }
+      }
+    ],
+    "verified_transition_count": 3,
+    "partial_native_state": {
+      "provider": "b",
+      "observed_at": "2026-10-17T20:39:47.301766+00:00",
+      "revision": 3,
+      "writable": true,
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "booking-0001": {
+          "finishes_ms": 1894010400000,
+          "label": "M09 required appointment 1",
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001"
+        },
+        "booking-0002": {
+          "label": "M09 required appointment 2",
+          "begins_ms": 1894010400000,
+          "finishes_ms": 1894014000000,
+          "booking_ref": "booking-0002",
+          "previous_booking": "booking-0001"
+        },
+        "booking-0003": {
+          "label": "M09 required appointment 3",
+          "begins_ms": 1894014000000,
+          "finishes_ms": 1894017600000,
+          "booking_ref": "booking-0003",
+          "previous_booking": "booking-0002"
+        }
+      },
+      "mutation_calls": 3
+    },
+    "expected_action_count": 3
+  },
+  "native_journal": [
+    {
+      "path": "/bookings",
+      "before": {
+        "provider": "b",
+        "observed_at": "2026-10-17T20:39:47.093361+00:00",
+        "revision": 0,
+        "writable": true,
+        "events": {
+          "existing": {
+            "booking_ref": "existing",
+            "begins_ms": 1893920400000,
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          }
+        },
+        "mutation_calls": 0
+      },
+      "after": {
+        "provider": "b",
+        "observed_at": "2026-10-17T20:39:47.094066+00:00",
+        "revision": 1,
+        "writable": true,
+        "events": {
+          "existing": {
+            "booking_ref": "existing",
+            "begins_ms": 1893920400000,
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "booking-0001": {
+            "finishes_ms": 1894010400000,
+            "label": "M09 required appointment 1",
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001"
+          }
+        },
+        "mutation_calls": 1
+      },
+      "http_status": 201
+    },
+    {
+      "path": "/booking-after/booking-0001",
+      "before": {
+        "provider": "b",
+        "observed_at": "2026-10-17T20:39:47.166649+00:00",
+        "revision": 1,
+        "writable": true,
+        "events": {
+          "existing": {
+            "booking_ref": "existing",
+            "begins_ms": 1893920400000,
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "booking-0001": {
+            "finishes_ms": 1894010400000,
+            "label": "M09 required appointment 1",
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001"
+          }
+        },
+        "mutation_calls": 1
+      },
+      "after": {
+        "provider": "b",
+        "observed_at": "2026-10-17T20:39:47.167874+00:00",
+        "revision": 2,
+        "writable": true,
+        "events": {
+          "existing": {
+            "booking_ref": "existing",
+            "begins_ms": 1893920400000,
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "booking-0001": {
+            "finishes_ms": 1894010400000,
+            "label": "M09 required appointment 1",
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001"
+          },
+          "booking-0002": {
+            "label": "M09 required appointment 2",
+            "begins_ms": 1894010400000,
+            "finishes_ms": 1894014000000,
+            "booking_ref": "booking-0002",
+            "previous_booking": "booking-0001"
+          }
+        },
+        "mutation_calls": 2
+      },
+      "http_status": 201
+    },
+    {
+      "path": "/booking-after/booking-0002",
+      "before": {
+        "provider": "b",
+        "observed_at": "2026-10-17T20:39:47.230858+00:00",
+        "revision": 2,
+        "writable": true,
+        "events": {
+          "existing": {
+            "booking_ref": "existing",
+            "begins_ms": 1893920400000,
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "booking-0001": {
+            "finishes_ms": 1894010400000,
+            "label": "M09 required appointment 1",
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001"
+          },
+          "booking-0002": {
+            "label": "M09 required appointment 2",
+            "begins_ms": 1894010400000,
+            "finishes_ms": 1894014000000,
+            "booking_ref": "booking-0002",
+            "previous_booking": "booking-0001"
+          }
+        },
+        "mutation_calls": 2
+      },
+      "after": {
+        "provider": "b",
+        "observed_at": "2026-10-17T20:39:47.231361+00:00",
+        "revision": 3,
+        "writable": true,
+        "events": {
+          "existing": {
+            "booking_ref": "existing",
+            "begins_ms": 1893920400000,
+            "finishes_ms": 1893924000000,
+            "label": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "booking-0001": {
+            "finishes_ms": 1894010400000,
+            "label": "M09 required appointment 1",
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001"
+          },
+          "booking-0002": {
+            "label": "M09 required appointment 2",
+            "begins_ms": 1894010400000,
+            "finishes_ms": 1894014000000,
+            "booking_ref": "booking-0002",
+            "previous_booking": "booking-0001"
+          },
+          "booking-0003": {
+            "label": "M09 required appointment 3",
+            "begins_ms": 1894014000000,
+            "finishes_ms": 1894017600000,
+            "booking_ref": "booking-0003",
+            "previous_booking": "booking-0002"
+          }
+        },
+        "mutation_calls": 3
+      },
+      "http_status": 201
+    }
+  ],
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "wait_seconds": 1.3659991964232177e-06,
+    "state_uncertain": false,
+    "snapshot": {
+      "provider": "b",
+      "observed_at": "2026-10-17T20:39:47.301705+00:00",
+      "revision": 3,
+      "writable": true,
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "booking-0001": {
+          "finishes_ms": 1894010400000,
+          "label": "M09 required appointment 1",
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001"
+        },
+        "booking-0002": {
+          "label": "M09 required appointment 2",
+          "begins_ms": 1894010400000,
+          "finishes_ms": 1894014000000,
+          "booking_ref": "booking-0002",
+          "previous_booking": "booking-0001"
+        },
+        "booking-0003": {
+          "label": "M09 required appointment 3",
+          "begins_ms": 1894014000000,
+          "finishes_ms": 1894017600000,
+          "booking_ref": "booking-0003",
+          "previous_booking": "booking-0002"
+        }
+      },
+      "mutation_calls": 3
+    }
+  },
+  "recovery_boundary": null,
+  "operational_intervention": null,
+  "diagnostic_passed": true,
+  "source_of_expectations": "Curator domain task, not subject trace or manual",
+  "reset": {
+    "passed": true,
+    "checks": {
+      "events": true,
+      "writable": true,
+      "revision": true,
+      "mutation_calls": true,
+      "no_cached_resolutions": true,
+      "no_live_subject": true,
+      "fresh_trace_directory": true,
+      "no_pending_requests": true
+    },
+    "native_initial": {
+      "provider": "b",
+      "observed_at": "2026-10-17T20:39:46.645843+00:00",
+      "revision": 0,
+      "writable": true,
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        }
+      },
+      "mutation_calls": 0
+    },
+    "expected": {
+      "events": {
+        "existing": {
+          "booking_ref": "existing",
+          "begins_ms": 1893920400000,
+          "finishes_ms": 1893924000000,
+          "label": "Preserve me",
+          "metadata": "sentinel"
+        }
+      },
+      "writable": true,
+      "revision": 0,
+      "mutation_calls": 0
+    },
+    "cache_entries": 0,
+    "subject_alive": false
+  },
+  "process": {
+    "status": "COMPLETED",
+    "started_at": "2026-10-17T20:39:46.646659+00:00",
+    "budget_seconds": 60,
+    "automatic_retries": 0,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "pid": 72468,
+    "exit_code": 0,
+    "ended_at": "2026-10-17T20:39:47.301364+00:00",
+    "automated_runtime_seconds": 0.6547066509992874
+  },
+  "runtime_trace": {
+    "profile_version": 1,
+    "started_at": "2026-10-17T20:39:47.021191+00:00",
+    "status": "COMPLETE",
+    "formal_goals": [
+      {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "M09 required appointment 1",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      {
+        "start_time": "2030-01-07T10:00:00+00:00",
+        "end_time": "2030-01-07T11:00:00+00:00",
+        "title": "M09 required appointment 2",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      {
+        "start_time": "2030-01-07T11:00:00+00:00",
+        "end_time": "2030-01-07T12:00:00+00:00",
+        "title": "M09 required appointment 3",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      }
+    ],
+    "steps": [
+      {
+        "index": 0,
+        "started_at": "2026-10-17T20:39:47.023577+00:00",
+        "predecessor_id": null,
+        "dependency_verdict": null,
+        "dependency_evidence": null,
+        "action": {
+          "schema_version": 1,
+          "run_id": "a3903aa3-c8d0-4c52-94d3-39f4bca9f2e9",
+          "timestamp": "2026-10-17T20:39:47.083544+00:00",
+          "artifact_id": "https://example.org/provider-b#appointments",
+          "operation_id": "https://example.org/provider-b#reserveAppointment",
+          "formal_goal": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1",
+            "forbid_other_changes": true,
+            "max_evidence_age_seconds": 30.0
+          },
+          "inputs": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1"
+          },
+          "contract_sha256": "65afdd238e7d9d4083fd5534e8d494aa1d69506bde4dfdc8277d2eae2514f54e",
+          "preconditions": [
+            {
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "verdict": "TRUE",
+              "reason": "Validated interval",
+              "evidence": {
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00"
+              }
+            },
+            {
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "verdict": "TRUE",
+              "reason": "Current observation establishes writable",
+              "evidence": {
+                "revision": 0,
+                "observed_at": "2026-10-17T20:39:47.092189+00:00",
+                "writable": true,
+                "events": {
+                  "existing": {
+                    "title": "Preserve me",
+                    "id": "existing",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "end_time": "2030-01-06T10:00:00+00:00"
+                  }
+                }
+              }
+            }
+          ],
+          "evidence": {
+            "baseline": {
+              "revision": 0,
+              "observed_at": "2026-10-17T20:39:47.092189+00:00",
+              "writable": true,
+              "events": {
+                "existing": {
+                  "title": "Preserve me",
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "end_time": "2030-01-06T10:00:00+00:00"
+                }
+              }
+            }
+          },
+          "applicability": "TRUE",
+          "execution_decision": "EXECUTE",
+          "api_call_success": true,
+          "api_response": {
+            "status": 201,
+            "body": {
+              "id": "booking-0001"
+            },
+            "error": null,
+            "raw_body": {
+              "booking_ref": "booking-0001"
+            }
+          },
+          "declared_effects": [
+            "https://example.org/sam/v1#NewMatchingEvent"
+          ],
+          "observed_effects": {
+            "event": {
+              "revision": 1,
+              "observed_at": "2026-10-17T20:39:47.096463+00:00",
+              "event": {
+                "title": "M09 required appointment 1",
+                "id": "booking-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00"
+              }
+            },
+            "state": {
+              "revision": 1,
+              "observed_at": "2026-10-17T20:39:47.097372+00:00",
+              "writable": true,
+              "events": {
+                "booking-0001": {
+                  "title": "M09 required appointment 1",
+                  "id": "booking-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "end_time": "2030-01-07T10:00:00+00:00"
+                },
+                "existing": {
+                  "title": "Preserve me",
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "end_time": "2030-01-06T10:00:00+00:00"
+                }
+              }
+            },
+            "error": null
+          },
+          "observed_state_change": true,
+          "oracle_verdict": {
+            "achieved": true,
+            "reasons": []
+          },
+          "reason": null,
+          "input_validation": {
+            "valid": true,
+            "errors": []
+          },
+          "execution_started": "2026-10-17T20:39:47.092683+00:00",
+          "wire_evidence": [
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/calendar",
+              "wire_method": "GET",
+              "wire_path": "/availability",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "can_book": true,
+                "items": {
+                  "existing": {
+                    "begins_ms": 1893920400000,
+                    "booking_ref": "existing",
+                    "finishes_ms": 1893924000000,
+                    "label": "Preserve me",
+                    "metadata": "sentinel"
+                  }
+                },
+                "sampled_at": "2026-10-17T20:39:47.092189+00:00",
+                "version": 0
+              }
+            },
+            {
+              "canonical_method": "POST",
+              "canonical_path": "/events",
+              "wire_method": "POST",
+              "wire_path": "/bookings",
+              "request_body": {
+                "finishes_ms": 1894010400000,
+                "label": "M09 required appointment 1",
+                "begins_ms": 1894006800000
+              },
+              "status": 201,
+              "raw_body": {
+                "booking_ref": "booking-0001"
+              }
+            },
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/events/booking-0001",
+              "wire_method": "GET",
+              "wire_path": "/booking/booking-0001",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "booking": {
+                  "begins_ms": 1894006800000,
+                  "booking_ref": "booking-0001",
+                  "finishes_ms": 1894010400000,
+                  "label": "M09 required appointment 1"
+                },
+                "sampled_at": "2026-10-17T20:39:47.096463+00:00",
+                "version": 1
+              }
+            },
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/events",
+              "wire_method": "GET",
+              "wire_path": "/bookings",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "can_book": true,
+                "items": {
+                  "booking-0001": {
+                    "begins_ms": 1894006800000,
+                    "booking_ref": "booking-0001",
+                    "finishes_ms": 1894010400000,
+                    "label": "M09 required appointment 1"
+                  },
+                  "existing": {
+                    "begins_ms": 1893920400000,
+                    "booking_ref": "existing",
+                    "finishes_ms": 1893924000000,
+                    "label": "Preserve me",
+                    "metadata": "sentinel"
+                  }
+                },
+                "sampled_at": "2026-10-17T20:39:47.097372+00:00",
+                "version": 1
+              }
+            }
+          ],
+          "provider_profile": {
+            "constraints": {
+              "time_grid_seconds": 900,
+              "max_duration_seconds": 7200,
+              "preserves_other_events": true
+            },
+            "binding": {
+              "create_path": "/bookings",
+              "baseline_path": "/availability",
+              "state_path": "/bookings",
+              "event_path": "/booking/{id}",
+              "request_fields": {
+                "finishes_ms": {
+                  "source": "end_time",
+                  "transform": "iso_to_epoch_ms"
+                },
+                "label": {
+                  "source": "title",
+                  "transform": "identity"
+                },
+                "begins_ms": {
+                  "source": "start_time",
+                  "transform": "iso_to_epoch_ms"
+                }
+              },
+              "event_fields": {
+                "title": {
+                  "source": "label",
+                  "transform": "identity"
+                },
+                "id": {
+                  "source": "booking_ref",
+                  "transform": "identity"
+                },
+                "start_time": {
+                  "source": "begins_ms",
+                  "transform": "epoch_ms_to_iso"
+                },
+                "end_time": {
+                  "source": "finishes_ms",
+                  "transform": "epoch_ms_to_iso"
+                }
+              },
+              "response_id": "booking_ref",
+              "writable_field": "can_book",
+              "events_field": "items",
+              "revision_field": "version",
+              "timestamp_field": "sampled_at",
+              "event_field": "booking"
+            }
+          },
+          "completed_at": "2026-10-17T20:39:47.097736+00:00"
+        },
+        "completed_at": "2026-10-17T20:39:47.098446+00:00"
+      },
+      {
+        "index": 1,
+        "started_at": "2026-10-17T20:39:47.099853+00:00",
+        "predecessor_id": "booking-0001",
+        "dependency_verdict": "TRUE",
+        "dependency_evidence": {
+          "revision": 1,
+          "observed_at": "2026-10-17T20:39:47.108191+00:00",
+          "writable": true,
+          "events": {
+            "booking-0001": {
+              "title": "M09 required appointment 1",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "id": "booking-0001"
+            },
+            "existing": {
+              "title": "Preserve me",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "id": "existing"
+            }
+          }
+        },
+        "action": {
+          "schema_version": 1,
+          "run_id": "caff7686-42ab-48a8-b63e-7cb5a5efac5e",
+          "timestamp": "2026-10-17T20:39:47.149833+00:00",
+          "artifact_id": "https://example.org/provider-b#appointments",
+          "operation_id": "urn:sequence:reserveAfterBooking",
+          "formal_goal": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M09 required appointment 2",
+            "forbid_other_changes": true,
+            "max_evidence_age_seconds": 30.0
+          },
+          "inputs": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M09 required appointment 2"
+          },
+          "contract_sha256": "e865faba1eb9b4d4ef0a615d8b83cb2ba898462103c5e829f76c61c628fc1623",
+          "preconditions": [
+            {
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "verdict": "TRUE",
+              "reason": "Validated interval",
+              "evidence": {
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "end_time": "2030-01-07T11:00:00+00:00"
+              }
+            },
+            {
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "verdict": "TRUE",
+              "reason": "Current observation establishes writable",
+              "evidence": {
+                "revision": 1,
+                "observed_at": "2026-10-17T20:39:47.163698+00:00",
+                "writable": true,
+                "events": {
+                  "booking-0001": {
+                    "id": "booking-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "title": "M09 required appointment 1",
+                    "end_time": "2030-01-07T10:00:00+00:00"
+                  },
+                  "existing": {
+                    "id": "existing",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "title": "Preserve me",
+                    "end_time": "2030-01-06T10:00:00+00:00"
+                  }
+                }
+              }
+            }
+          ],
+          "evidence": {
+            "baseline": {
+              "revision": 1,
+              "observed_at": "2026-10-17T20:39:47.163698+00:00",
+              "writable": true,
+              "events": {
+                "booking-0001": {
+                  "id": "booking-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "title": "M09 required appointment 1",
+                  "end_time": "2030-01-07T10:00:00+00:00"
+                },
+                "existing": {
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "title": "Preserve me",
+                  "end_time": "2030-01-06T10:00:00+00:00"
+                }
+              }
+            }
+          },
+          "applicability": "TRUE",
+          "execution_decision": "EXECUTE",
+          "api_call_success": true,
+          "api_response": {
+            "status": 201,
+            "body": {
+              "id": "booking-0002"
+            },
+            "error": null,
+            "raw_body": {
+              "booking_ref": "booking-0002"
+            }
+          },
+          "declared_effects": [
+            "https://example.org/sam/v1#NewMatchingEvent"
+          ],
+          "observed_effects": {
+            "event": {
+              "revision": 2,
+              "observed_at": "2026-10-17T20:39:47.169303+00:00",
+              "event": {
+                "id": "booking-0002",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 2",
+                "end_time": "2030-01-07T11:00:00+00:00"
+              }
+            },
+            "state": {
+              "revision": 2,
+              "observed_at": "2026-10-17T20:39:47.170336+00:00",
+              "writable": true,
+              "events": {
+                "booking-0001": {
+                  "id": "booking-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "title": "M09 required appointment 1",
+                  "end_time": "2030-01-07T10:00:00+00:00"
+                },
+                "booking-0002": {
+                  "id": "booking-0002",
+                  "start_time": "2030-01-07T10:00:00+00:00",
+                  "title": "M09 required appointment 2",
+                  "end_time": "2030-01-07T11:00:00+00:00"
+                },
+                "existing": {
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "title": "Preserve me",
+                  "end_time": "2030-01-06T10:00:00+00:00"
+                }
+              }
+            },
+            "error": null
+          },
+          "observed_state_change": true,
+          "oracle_verdict": {
+            "achieved": true,
+            "reasons": []
+          },
+          "reason": null,
+          "input_validation": {
+            "valid": true,
+            "errors": []
+          },
+          "execution_started": "2026-10-17T20:39:47.164819+00:00",
+          "wire_evidence": [
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/calendar",
+              "wire_method": "GET",
+              "wire_path": "/availability",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "can_book": true,
+                "items": {
+                  "booking-0001": {
+                    "begins_ms": 1894006800000,
+                    "booking_ref": "booking-0001",
+                    "finishes_ms": 1894010400000,
+                    "label": "M09 required appointment 1"
+                  },
+                  "existing": {
+                    "begins_ms": 1893920400000,
+                    "booking_ref": "existing",
+                    "finishes_ms": 1893924000000,
+                    "label": "Preserve me",
+                    "metadata": "sentinel"
+                  }
+                },
+                "sampled_at": "2026-10-17T20:39:47.163698+00:00",
+                "version": 1
+              }
+            },
+            {
+              "canonical_method": "POST",
+              "canonical_path": "/events",
+              "wire_method": "POST",
+              "wire_path": "/booking-after/booking-0001",
+              "request_body": {
+                "label": "M09 required appointment 2",
+                "begins_ms": 1894010400000,
+                "finishes_ms": 1894014000000
+              },
+              "status": 201,
+              "raw_body": {
+                "booking_ref": "booking-0002"
+              }
+            },
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/events/booking-0002",
+              "wire_method": "GET",
+              "wire_path": "/booking/booking-0002",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "booking": {
+                  "begins_ms": 1894010400000,
+                  "booking_ref": "booking-0002",
+                  "finishes_ms": 1894014000000,
+                  "label": "M09 required appointment 2",
+                  "previous_booking": "booking-0001"
+                },
+                "sampled_at": "2026-10-17T20:39:47.169303+00:00",
+                "version": 2
+              }
+            },
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/events",
+              "wire_method": "GET",
+              "wire_path": "/bookings",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "can_book": true,
+                "items": {
+                  "booking-0001": {
+                    "begins_ms": 1894006800000,
+                    "booking_ref": "booking-0001",
+                    "finishes_ms": 1894010400000,
+                    "label": "M09 required appointment 1"
+                  },
+                  "booking-0002": {
+                    "begins_ms": 1894010400000,
+                    "booking_ref": "booking-0002",
+                    "finishes_ms": 1894014000000,
+                    "label": "M09 required appointment 2",
+                    "previous_booking": "booking-0001"
+                  },
+                  "existing": {
+                    "begins_ms": 1893920400000,
+                    "booking_ref": "existing",
+                    "finishes_ms": 1893924000000,
+                    "label": "Preserve me",
+                    "metadata": "sentinel"
+                  }
+                },
+                "sampled_at": "2026-10-17T20:39:47.170336+00:00",
+                "version": 2
+              }
+            }
+          ],
+          "provider_profile": {
+            "constraints": {
+              "time_grid_seconds": 900,
+              "max_duration_seconds": 7200,
+              "preserves_other_events": true
+            },
+            "binding": {
+              "create_path": "/booking-after/booking-0001",
+              "baseline_path": "/availability",
+              "state_path": "/bookings",
+              "event_path": "/booking/{id}",
+              "request_fields": {
+                "label": {
+                  "source": "title",
+                  "transform": "identity"
+                },
+                "begins_ms": {
+                  "source": "start_time",
+                  "transform": "iso_to_epoch_ms"
+                },
+                "finishes_ms": {
+                  "source": "end_time",
+                  "transform": "iso_to_epoch_ms"
+                }
+              },
+              "event_fields": {
+                "id": {
+                  "source": "booking_ref",
+                  "transform": "identity"
+                },
+                "start_time": {
+                  "source": "begins_ms",
+                  "transform": "epoch_ms_to_iso"
+                },
+                "title": {
+                  "source": "label",
+                  "transform": "identity"
+                },
+                "end_time": {
+                  "source": "finishes_ms",
+                  "transform": "epoch_ms_to_iso"
+                }
+              },
+              "response_id": "booking_ref",
+              "writable_field": "can_book",
+              "events_field": "items",
+              "revision_field": "version",
+              "timestamp_field": "sampled_at",
+              "event_field": "booking"
+            }
+          },
+          "completed_at": "2026-10-17T20:39:47.170731+00:00"
+        },
+        "reason": "Current predecessor establishes temporal dependency",
+        "completed_at": "2026-10-17T20:39:47.174051+00:00"
+      },
+      {
+        "index": 2,
+        "started_at": "2026-10-17T20:39:47.176630+00:00",
+        "predecessor_id": "booking-0002",
+        "dependency_verdict": "TRUE",
+        "dependency_evidence": {
+          "revision": 2,
+          "observed_at": "2026-10-17T20:39:47.188632+00:00",
+          "writable": true,
+          "events": {
+            "booking-0001": {
+              "title": "M09 required appointment 1",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "id": "booking-0001"
+            },
+            "booking-0002": {
+              "title": "M09 required appointment 2",
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "id": "booking-0002"
+            },
+            "existing": {
+              "title": "Preserve me",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "id": "existing"
+            }
+          }
+        },
+        "action": {
+          "schema_version": 1,
+          "run_id": "ce9d69e8-8566-4d58-abe2-f16fb4e0ecb3",
+          "timestamp": "2026-10-17T20:39:47.221789+00:00",
+          "artifact_id": "https://example.org/provider-b#appointments",
+          "operation_id": "urn:sequence:reserveAfterBooking",
+          "formal_goal": {
+            "start_time": "2030-01-07T11:00:00+00:00",
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "title": "M09 required appointment 3",
+            "forbid_other_changes": true,
+            "max_evidence_age_seconds": 30.0
+          },
+          "inputs": {
+            "start_time": "2030-01-07T11:00:00+00:00",
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "title": "M09 required appointment 3"
+          },
+          "contract_sha256": "7c7dbbfe582c2a599c1adc308745f0a97aa3b831926d32a5635cb8d782c2b3e6",
+          "preconditions": [
+            {
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "verdict": "TRUE",
+              "reason": "Validated interval",
+              "evidence": {
+                "start_time": "2030-01-07T11:00:00+00:00",
+                "end_time": "2030-01-07T12:00:00+00:00"
+              }
+            },
+            {
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "verdict": "TRUE",
+              "reason": "Current observation establishes writable",
+              "evidence": {
+                "revision": 2,
+                "observed_at": "2026-10-17T20:39:47.229766+00:00",
+                "writable": true,
+                "events": {
+                  "booking-0001": {
+                    "id": "booking-0001",
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "title": "M09 required appointment 1",
+                    "start_time": "2030-01-07T09:00:00+00:00"
+                  },
+                  "booking-0002": {
+                    "id": "booking-0002",
+                    "end_time": "2030-01-07T11:00:00+00:00",
+                    "title": "M09 required appointment 2",
+                    "start_time": "2030-01-07T10:00:00+00:00"
+                  },
+                  "existing": {
+                    "id": "existing",
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "title": "Preserve me",
+                    "start_time": "2030-01-06T09:00:00+00:00"
+                  }
+                }
+              }
+            }
+          ],
+          "evidence": {
+            "baseline": {
+              "revision": 2,
+              "observed_at": "2026-10-17T20:39:47.229766+00:00",
+              "writable": true,
+              "events": {
+                "booking-0001": {
+                  "id": "booking-0001",
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "title": "M09 required appointment 1",
+                  "start_time": "2030-01-07T09:00:00+00:00"
+                },
+                "booking-0002": {
+                  "id": "booking-0002",
+                  "end_time": "2030-01-07T11:00:00+00:00",
+                  "title": "M09 required appointment 2",
+                  "start_time": "2030-01-07T10:00:00+00:00"
+                },
+                "existing": {
+                  "id": "existing",
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "title": "Preserve me",
+                  "start_time": "2030-01-06T09:00:00+00:00"
+                }
+              }
+            }
+          },
+          "applicability": "TRUE",
+          "execution_decision": "EXECUTE",
+          "api_call_success": true,
+          "api_response": {
+            "status": 201,
+            "body": {
+              "id": "booking-0003"
+            },
+            "error": null,
+            "raw_body": {
+              "booking_ref": "booking-0003"
+            }
+          },
+          "declared_effects": [
+            "https://example.org/sam/v1#NewMatchingEvent"
+          ],
+          "observed_effects": {
+            "event": {
+              "revision": 3,
+              "observed_at": "2026-10-17T20:39:47.232881+00:00",
+              "event": {
+                "id": "booking-0003",
+                "end_time": "2030-01-07T12:00:00+00:00",
+                "title": "M09 required appointment 3",
+                "start_time": "2030-01-07T11:00:00+00:00"
+              }
+            },
+            "state": {
+              "revision": 3,
+              "observed_at": "2026-10-17T20:39:47.233705+00:00",
+              "writable": true,
+              "events": {
+                "booking-0001": {
+                  "id": "booking-0001",
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "title": "M09 required appointment 1",
+                  "start_time": "2030-01-07T09:00:00+00:00"
+                },
+                "booking-0002": {
+                  "id": "booking-0002",
+                  "end_time": "2030-01-07T11:00:00+00:00",
+                  "title": "M09 required appointment 2",
+                  "start_time": "2030-01-07T10:00:00+00:00"
+                },
+                "booking-0003": {
+                  "id": "booking-0003",
+                  "end_time": "2030-01-07T12:00:00+00:00",
+                  "title": "M09 required appointment 3",
+                  "start_time": "2030-01-07T11:00:00+00:00"
+                },
+                "existing": {
+                  "id": "existing",
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "title": "Preserve me",
+                  "start_time": "2030-01-06T09:00:00+00:00"
+                }
+              }
+            },
+            "error": null
+          },
+          "observed_state_change": true,
+          "oracle_verdict": {
+            "achieved": true,
+            "reasons": []
+          },
+          "reason": null,
+          "input_validation": {
+            "valid": true,
+            "errors": []
+          },
+          "execution_started": "2026-10-17T20:39:47.230296+00:00",
+          "wire_evidence": [
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/calendar",
+              "wire_method": "GET",
+              "wire_path": "/availability",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "can_book": true,
+                "items": {
+                  "booking-0001": {
+                    "begins_ms": 1894006800000,
+                    "booking_ref": "booking-0001",
+                    "finishes_ms": 1894010400000,
+                    "label": "M09 required appointment 1"
+                  },
+                  "booking-0002": {
+                    "begins_ms": 1894010400000,
+                    "booking_ref": "booking-0002",
+                    "finishes_ms": 1894014000000,
+                    "label": "M09 required appointment 2",
+                    "previous_booking": "booking-0001"
+                  },
+                  "existing": {
+                    "begins_ms": 1893920400000,
+                    "booking_ref": "existing",
+                    "finishes_ms": 1893924000000,
+                    "label": "Preserve me",
+                    "metadata": "sentinel"
+                  }
+                },
+                "sampled_at": "2026-10-17T20:39:47.229766+00:00",
+                "version": 2
+              }
+            },
+            {
+              "canonical_method": "POST",
+              "canonical_path": "/events",
+              "wire_method": "POST",
+              "wire_path": "/booking-after/booking-0002",
+              "request_body": {
+                "label": "M09 required appointment 3",
+                "begins_ms": 1894014000000,
+                "finishes_ms": 1894017600000
+              },
+              "status": 201,
+              "raw_body": {
+                "booking_ref": "booking-0003"
+              }
+            },
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/events/booking-0003",
+              "wire_method": "GET",
+              "wire_path": "/booking/booking-0003",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "booking": {
+                  "begins_ms": 1894014000000,
+                  "booking_ref": "booking-0003",
+                  "finishes_ms": 1894017600000,
+                  "label": "M09 required appointment 3",
+                  "previous_booking": "booking-0002"
+                },
+                "sampled_at": "2026-10-17T20:39:47.232881+00:00",
+                "version": 3
+              }
+            },
+            {
+              "canonical_method": "GET",
+              "canonical_path": "/events",
+              "wire_method": "GET",
+              "wire_path": "/bookings",
+              "request_body": null,
+              "status": 200,
+              "raw_body": {
+                "can_book": true,
+                "items": {
+                  "booking-0001": {
+                    "begins_ms": 1894006800000,
+                    "booking_ref": "booking-0001",
+                    "finishes_ms": 1894010400000,
+                    "label": "M09 required appointment 1"
+                  },
+                  "booking-0002": {
+                    "begins_ms": 1894010400000,
+                    "booking_ref": "booking-0002",
+                    "finishes_ms": 1894014000000,
+                    "label": "M09 required appointment 2",
+                    "previous_booking": "booking-0001"
+                  },
+                  "booking-0003": {
+                    "begins_ms": 1894014000000,
+                    "booking_ref": "booking-0003",
+                    "finishes_ms": 1894017600000,
+                    "label": "M09 required appointment 3",
+                    "previous_booking": "booking-0002"
+                  },
+                  "existing": {
+                    "begins_ms": 1893920400000,
+                    "booking_ref": "existing",
+                    "finishes_ms": 1893924000000,
+                    "label": "Preserve me",
+                    "metadata": "sentinel"
+                  }
+                },
+                "sampled_at": "2026-10-17T20:39:47.233705+00:00",
+                "version": 3
+              }
+            }
+          ],
+          "provider_profile": {
+            "constraints": {
+              "time_grid_seconds": 900,
+              "max_duration_seconds": 7200,
+              "preserves_other_events": true
+            },
+            "binding": {
+              "create_path": "/booking-after/booking-0002",
+              "baseline_path": "/availability",
+              "state_path": "/bookings",
+              "event_path": "/booking/{id}",
+              "request_fields": {
+                "label": {
+                  "source": "title",
+                  "transform": "identity"
+                },
+                "begins_ms": {
+                  "source": "start_time",
+                  "transform": "iso_to_epoch_ms"
+                },
+                "finishes_ms": {
+                  "source": "end_time",
+                  "transform": "iso_to_epoch_ms"
+                }
+              },
+              "event_fields": {
+                "id": {
+                  "source": "booking_ref",
+                  "transform": "identity"
+                },
+                "end_time": {
+                  "source": "finishes_ms",
+                  "transform": "epoch_ms_to_iso"
+                },
+                "title": {
+                  "source": "label",
+                  "transform": "identity"
+                },
+                "start_time": {
+                  "source": "begins_ms",
+                  "transform": "epoch_ms_to_iso"
+                }
+              },
+              "response_id": "booking_ref",
+              "writable_field": "can_book",
+              "events_field": "items",
+              "revision_field": "version",
+              "timestamp_field": "sampled_at",
+              "event_field": "booking"
+            }
+          },
+          "completed_at": "2026-10-17T20:39:47.234090+00:00"
+        },
+        "reason": "Current predecessor establishes temporal dependency",
+        "completed_at": "2026-10-17T20:39:47.235218+00:00"
+      }
+    ],
+    "runtime_verified": true,
+    "automatic_retries": 0,
+    "repair_iterations": 0,
+    "completed_at": "2026-10-17T20:39:47.237273+00:00"
+  },
+  "fixture_server_closed": true
+}

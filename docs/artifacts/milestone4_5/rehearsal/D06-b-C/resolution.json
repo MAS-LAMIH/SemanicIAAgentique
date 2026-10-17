@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "applicability": "UNKNOWN",
+      "artifact_id": "https://example.org/provider-b#appointments",
+      "assessment": {
+        "applicability": "UNKNOWN",
+        "preconditions": [
+          {
+            "evidence": {
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "start_time": "2030-01-07T09:00:00+00:00"
+            },
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "reason": "Validated interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {},
+              "observed_at": "2026-10-17T20:38:02.973619+00:00",
+              "revision": 0,
+              "writable": null
+            },
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "reason": "Writability not established",
+            "verdict": "UNKNOWN"
+          }
+        ],
+        "validation": {
+          "errors": [],
+          "valid": true
+        }
+      },
+      "compatible": true,
+      "contract_sha256": "beda3b7004352c14fe671e9a341202ba32c6638b8595b36451419d1929a37220",
+      "eligible": false,
+      "operation_id": "https://example.org/provider-b#reserveAppointment",
+      "reasons": [
+        "Critical applicability is UNKNOWN"
+      ],
+      "registration": 0
+    }
+  ],
+  "execution_started": false,
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 06"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 06"
+  },
+  "rejection_reason": "Selected operation is not uniquely eligible",
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "50868317-ffac-4776-9082-ccf26221c88a",
+  "schema_version": 1,
+  "selected_operation": "https://example.org/provider-b#reserveAppointment",
+  "timestamp": "2026-10-17T20:38:02.951000+00:00"
+}

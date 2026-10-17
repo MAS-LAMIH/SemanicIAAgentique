@@ -1,0 +1,97 @@
+{
+  "driver": {
+    "candidate_commit": "752da7b8de85dd38c7eee30a101b786ea4743821",
+    "manifest_sha256": "53049d7921c31e7f3081606d5f2c6ca327eccf91fbab42152826655cbeeda352",
+    "matches_V3": true,
+    "package_root": "/workspace/SemanicIAAgentique/src/semantic_action",
+    "python_version": "3.12.14",
+    "runtime_members_checked": 28
+  },
+  "restored": {
+    "command": [
+      "/tmp/m44-restored-env/bin/python",
+      "-c",
+      "import json,platform,importlib.metadata as m,semantic_action; print(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'module':semantic_action.__file__,'packages':{x.metadata['Name']:x.version for x in m.distributions()}}))"
+    ],
+    "exit_code": 0,
+    "observed": {
+      "module": "/tmp/m44-restored-env/lib/python3.12/site-packages/semantic_action/__init__.py",
+      "packages": {
+        "attrs": "26.1.0",
+        "jsonschema": "4.26.0",
+        "jsonschema-specifications": "2025.9.1",
+        "pyparsing": "3.3.3",
+        "rdflib": "7.6.0",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.9.1",
+        "tutorielIAAgentique": "0.1.0",
+        "typing_extensions": "4.16.0"
+      },
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "python": "3.12.14"
+    },
+    "runtime_files_checked": 28,
+    "runtime_mismatches": []
+  },
+  "retained_artifacts": {
+    "docs/artifacts/milestone4_3/candidate-source-v3.tar.gz": "b659c852d78ff2bad99f6ec743b5b0bd0a16ad88bbcd20af5e8e6e091089c27d",
+    "docs/artifacts/milestone4_3/pre-final-metadata-source-v3.tar.gz": "3b1674669343d21bb2c3c51461cf5b906325b7b575f3b4e46f7b5c66de5b88bc",
+    "docs/artifacts/milestone4_3/pre-format-source-v3.tar.gz": "854185f060455105057936d1730f838c349ad082f8c930837457bef47bac8705",
+    "docs/artifacts/milestone4_3/pre-relation-extension-source-v3.tar.gz": "7211904ea061d237603638c4f5e7a93afca94336ac7671488654a47dfddfcf2f",
+    "docs/artifacts/milestone4_3/pre-relation-tutorieliaagentique-0.1.0-py3-none-any.whl": "9a3b0d2337f724b18f595e5727f5264fb1c12c591e40103aa4a6eaddadba7d7f",
+    "docs/artifacts/milestone4_3/tutorieliaagentique-0.1.0-py3-none-any.whl": "538f5acdb7366300f81166232f8877c31c9260e6dbb7dbb226150ea35621cc1b"
+  },
+  "source": {
+    "command": [
+      "/tmp/m44-source-env/bin/python",
+      "-c",
+      "import json,platform,importlib.metadata as m,semantic_action; print(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'module':semantic_action.__file__,'packages':{x.metadata['Name']:x.version for x in m.distributions()}}))"
+    ],
+    "exit_code": 0,
+    "observed": {
+      "module": "/tmp/m44-exact-candidate-si3959dm/src/semantic_action/__init__.py",
+      "packages": {
+        "attrs": "26.1.0",
+        "jsonschema": "4.26.0",
+        "jsonschema-specifications": "2025.9.1",
+        "pyparsing": "3.3.3",
+        "rdflib": "7.6.0",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.9.1",
+        "tutorielIAAgentique": "0.1.0",
+        "typing_extensions": "4.16.0"
+      },
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "python": "3.12.14"
+    },
+    "runtime_files_checked": 28,
+    "runtime_mismatches": []
+  },
+  "tag": "752da7b8de85dd38c7eee30a101b786ea4743821",
+  "wheel": {
+    "command": [
+      "/tmp/m44-wheel-env/bin/python",
+      "-c",
+      "import json,platform,importlib.metadata as m,semantic_action; print(json.dumps({'python':platform.python_version(),'platform':platform.platform(),'module':semantic_action.__file__,'packages':{x.metadata['Name']:x.version for x in m.distributions()}}))"
+    ],
+    "exit_code": 0,
+    "observed": {
+      "module": "/tmp/m44-wheel-env/lib/python3.12/site-packages/semantic_action/__init__.py",
+      "packages": {
+        "attrs": "26.1.0",
+        "jsonschema": "4.26.0",
+        "jsonschema-specifications": "2025.9.1",
+        "pyparsing": "3.3.3",
+        "rdflib": "7.6.0",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.9.1",
+        "tutorielIAAgentique": "0.1.0",
+        "typing_extensions": "4.16.0"
+      },
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "python": "3.12.14"
+    },
+    "runtime_files_checked": 28,
+    "runtime_mismatches": []
+  }
+}

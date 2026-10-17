@@ -1,0 +1,199 @@
+# Milestone 4.5 — A/B-Only Combined-Driver Operational Preflight
+
+Repository: `MAS-LAMIH/SemanicIAAgentique`
+
+## Objective
+
+Demonstrate that the complete proposed confirmatory evaluation workflow can safely execute both single-action and multi-step tasks with consistent supervision, reset isolation, independent native adjudication, and evidence retention.
+
+This is an **operational preflight on visible Providers A and B only**, not a confirmatory experiment and not authorization for scientific freeze.
+
+The immutable implementation baseline is Milestone 4.3 candidate V3:
+
+- Candidate commit: `752da7b`
+- Implementation commit: `2d264169a5ec363b78d4bf78b3f40e82d7b59f85`
+- Candidate tag: `candidate/milestone-4.3-pre-freeze`
+- Manifest SHA-256: `53049d7921c31e7f3081606d5f2c6ca327eccf91fbab42152826655cbeeda352`
+
+Use the proposed M4.4 protocol, cost policy, custody protocol and pending approval record as the methodological reference.
+
+## Non-negotiable constraints
+
+1. **Provider C remains sealed.** Do not inspect, import, generate, infer or request its implementation, manuals, native-state reader, concrete held-out task instances or answers.
+
+2. Do not change the V3 generic engine, semantic resolver, contract interpretation, ontology/capability meanings, validation rules, sequence semantics, runtime oracle, native truth rules, transformation primitives or cost collector.
+
+3. Do not overwrite, amend or regenerate the V3 manifest, source archive, original candidate evidence or historical ledgers.
+
+4. Do not treat the proposed M4.4 documents as approved. All scientific approval gates, signatures and unsealing authorization remain pending.
+
+5. Do not push, merge or expose sealed information. Use a separate preflight branch or working area, preserving the original V3 identity.
+
+6. Do not implement LLM planning, classical planning, repair, discovery or new semantic features.
+
+## Phase 1 — Inspect the existing workflow
+
+Before writing code:
+
+- Identify the exact existing single-action and multi-step evaluation entry points.
+- Determine which paths currently use the frozen outer supervisor and reset gate.
+- Verify how independent native-state evidence is captured and adjudicated.
+- Identify the smallest evaluator-owned composition needed to run the same protections for both task types.
+- Confirm that the proposed change is orchestration only, not a change to subject behavior or truth semantics.
+
+Produce an initial inspection record identifying files, functions, risks and intended additions.
+
+If the required integration would necessitate changing frozen generic code or semantics, **stop and report the blocker**. Do not silently create a new implementation candidate.
+
+## Phase 2 — Prepare a minimal evaluator-owned preflight driver
+
+Only if Phase 1 confirms a safe addition-only path, implement a separate preflight driver using existing frozen interfaces.
+
+The driver must:
+
+- Support public D01–D20 single-action tasks and M01–M10 multi-step tasks for visible Providers A and B.
+- Support Conditions A, B and C with the same budgets, task inputs, native adjudication and supervision policy.
+- Enforce the existing 5-second HTTP request timeout and 60-second outer subject deadline.
+- Use the frozen process supervisor, including termination, kill/reap and bounded post-deadline observation.
+- Run the reset gate before every attempted execution.
+- Reject contaminated initial state before subject launch.
+- Use fresh subject processes, fresh trace directories and appropriate fresh registries.
+- Preserve runtime traces, native transitions, supervision outcomes, reset evidence and failed attempts.
+- Distinguish runtime success, independent native success, safe negative rejection, unsafe mutation, timeout and uncertain late effects.
+- Prevent a late mutation after subject termination from being counted as verified success.
+- Never introduce automatic retries, compensating actions or implicit planning.
+
+The driver must not change or bypass the frozen runtime or native verifier.
+
+## Phase 3 — Preflight verification matrix
+
+Run a documented A/B-only matrix covering both single-action and multi-step tasks.
+
+At minimum, demonstrate:
+
+### A. Normal execution
+
+- Verified positive single-action task.
+- Verified positive two-action chain.
+- Verified positive three-action chain.
+- Correct negative rejection without forbidden mutation.
+- Condition A/B/C parity for supported semantics.
+
+### B. Safety and failure behavior
+
+- FALSE permission causes rejection.
+- UNKNOWN permission causes blocking.
+- Stale or missing critical evidence cannot authorize mutation.
+- HTTP success without native mutation is not verified.
+- Incorrect native properties are not verified.
+- Forbidden side effects are detected.
+- An intermediate chain failure prevents unauthorized continuation.
+
+### C. Timeout and late mutation
+
+- Single-action subject exceeds the outer deadline.
+- Multi-step subject exceeds the outer deadline.
+- Subject termination and reap are recorded.
+- Any subsequent service-side mutation is independently observed when possible.
+- Timed-out executions remain unverified even if a desired native state appears later.
+- Unsettled state is classified as uncertain, not safe or successful by default.
+
+Use a controlled shorter test deadline where necessary to avoid lengthy fault-injection runs. Preserve the distinction between the shortened test configuration and the proposed 60-second confirmatory deadline.
+
+### D. Reset and isolation
+
+- Clean initial native state permits execution.
+- Contaminated initial state is rejected before subject launch.
+- Pending requests, permission/revision/call counters and pre-existing records are checked.
+- No prior run's trace, registry resolution or native mutation is silently reused.
+- Rejected and aborted attempts remain in the evidence inventory.
+
+## Phase 4 — Full visible-provider diagnostic rehearsal
+
+After the focused safety tests pass:
+
+1. Execute the combined driver on the existing public D01–D20 and M01–M10 catalogue for both visible Providers A and B, under all three conditions.
+2. Use fresh output directories.
+3. Compare the resulting semantic and native verdicts against the existing frozen public expectations.
+4. Record every mismatch, including negative controls and expected diagnostic failures.
+5. Preserve the full attempt inventory, not just successful runs.
+6. Verify the output completeness and hash inventory.
+
+Expected base coverage is:
+
+- 2 visible providers
+- 30 public task families
+- 3 conditions
+- 1 rehearsal repetition
+
+**Total: 180 planned diagnostic executions**, plus explicitly labeled focused fault-injection probes.
+
+Do not silently substitute a subset for this full rehearsal. If resource constraints prevent completion, report partial coverage and the reason.
+
+These are diagnostic executions, not independent provider samples or confirmatory evidence.
+
+## Phase 5 — Reproducibility and regression
+
+- Re-run the 87-test V3 regression suite from source, installed wheel and restored archive.
+- Verify original V3 manifest and archive integrity.
+- Verify that all original candidate files remain unchanged.
+- Run focused tests of the new evaluator-owned driver separately.
+- Confirm that the new driver does not alter the outcomes or native adjudication semantics of the original V3 paths.
+- Retain exact commands, exit codes, timestamps, Python version, artifact hashes and failures.
+- Make the new preflight outputs separately reproducible.
+
+A successful test suite does not substitute for the independent scientific review.
+
+## Phase 6 — Scientific interpretation and reporting
+
+Create:
+
+- `docs/MILESTONE_4_5_PREFLIGHT.md`
+- `docs/COMBINED_DRIVER_PREFLIGHT_REPORT.md`
+- `docs/artifacts/milestone4_5/verification-results.json`
+- `docs/artifacts/milestone4_5/attempt-inventory.json`
+- `docs/artifacts/milestone4_5/preflight-manifest.json`
+
+Include:
+
+1. Exact original V3 candidate identity and integrity results.
+2. Files added or modified, with justification.
+3. Evidence that the frozen generic implementation was not changed.
+4. Test and rehearsal coverage.
+5. Single-action and multi-step supervision results.
+6. Reset/isolation results.
+7. Native/runtime disagreements and classifications.
+8. Every failure, timeout, incomplete run and deviation.
+9. Any limitations of the local process supervisor, especially inability to guarantee cancellation of remote side effects.
+10. A clear distinction between engineering validation and independent scientific approval.
+
+Keep all existing scientific-freeze decision fields pending.
+
+## Stop conditions
+
+Stop and report rather than silently repair if:
+
+- A frozen generic implementation change is required.
+- A native-oracle or semantic contradiction is discovered.
+- The combined driver cannot safely supervise single-action tasks.
+- A reset contamination is not detected or is incorrectly cleared.
+- A timeout is incorrectly reported as verified success.
+- The new driver introduces condition-specific advantages.
+- Any Provider C material would need to be accessed.
+
+If a genuine defect is discovered, preserve the failure and propose a separately reviewed change-control procedure. Do not patch the frozen baseline in place.
+
+## Final response format
+
+Return:
+
+1. **Verdict:** PASS, PARTIAL or BLOCKED.
+2. **V3 integrity:** exact verification results.
+3. **Coverage:** number of planned, executed, rejected and incomplete diagnostic attempts.
+4. **Safety:** timeout, reset and native-adjudication results.
+5. **Changes:** exact paths added/modified.
+6. **Evidence:** reproducible commands and artifact paths.
+7. **Blockers:** unresolved issues and required investigator decisions.
+8. **Freeze status:** explicitly state that scientific freeze and Provider C unsealing remain unauthorized.
+
+Do not declare the scientific freeze approved.

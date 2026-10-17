@@ -1,0 +1,113 @@
+{
+  "classification": "VERIFIED_POSITIVE",
+  "condition": "B",
+  "diagnostic_passed": true,
+  "expected": {
+    "classification": "verified",
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": true,
+    "verified": true
+  },
+  "family": "different_formats",
+  "native_verdict": {
+    "achieved": true,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Diagnostic task 03"
+        },
+        "observed_at": "2026-10-17T20:37:49.652403+00:00",
+        "revision": 1
+      },
+      "state": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 03"
+          }
+        },
+        "observed_at": "2026-10-17T20:37:49.652403+00:00",
+        "revision": 1
+      }
+    },
+    "mutation_calls": 1,
+    "raw_after": {
+      "events": {
+        "booking-0001": {
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 03"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:37:49.652403+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:49.336612+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [],
+    "runtime_discrepancy": false
+  },
+  "process": {
+    "automated_runtime_seconds": 0.31475223999950686,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-17T20:37:49.651974+00:00",
+    "exit_code": 0,
+    "pid": 68437,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:37:49.337227+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "b",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {
+        "booking-0001": {
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 03"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:37:49.652343+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.6429985407739878e-06
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": true,
+    "applicability": "TRUE",
+    "compatible": true,
+    "mutation_calls": 1,
+    "native_verified": true,
+    "runtime_verified": true,
+    "unsafe_execution": false,
+    "verified": true
+  },
+  "task_id": "D03"
+}

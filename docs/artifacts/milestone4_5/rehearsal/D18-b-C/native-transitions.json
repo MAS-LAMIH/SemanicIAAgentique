@@ -1,0 +1,29 @@
+[
+  {
+    "after": {
+      "events": {
+        "booking-0001": {
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Diagnostic task 18"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:56.728796+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:56.728517+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 201,
+    "path": "/bookings"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "candidates": [
+    {
+      "applicability": "TRUE",
+      "artifact_id": "https://example.org/provider-a#calendar",
+      "assessment": {
+        "applicability": "TRUE",
+        "preconditions": [
+          {
+            "evidence": {
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "start_time": "2030-01-07T10:00:00+00:00"
+            },
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "reason": "Validated interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {
+                "event-0001": {
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "id": "event-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "title": "M01 required appointment 1"
+                },
+                "existing": {
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              },
+              "observed_at": "2026-10-17T20:36:47.296785+00:00",
+              "revision": 1,
+              "writable": true
+            },
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "reason": "Current observation establishes writable",
+            "verdict": "TRUE"
+          }
+        ],
+        "validation": {
+          "errors": [],
+          "valid": true
+        }
+      },
+      "compatible": true,
+      "contract_sha256": "cc203db596a8e287cb285711d6f2a5d449795f214b2c464a02d9d34492378ab2",
+      "eligible": true,
+      "operation_id": "urn:sequence:create_followup",
+      "reasons": [],
+      "registration": 0
+    }
+  ],
+  "execution_started": true,
+  "formal_goal": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M01 required appointment 2"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "M01 required appointment 2"
+  },
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "f4b4646a-3558-4188-b4d8-3a4cc05ecb89",
+  "schema_version": 1,
+  "selected_operation": "urn:sequence:create_followup",
+  "timestamp": "2026-10-17T20:36:47.282877+00:00"
+}

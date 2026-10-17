@@ -1,0 +1,21 @@
+{
+  "id": "regression-source",
+  "command": [
+    "/tmp/m44-source-env/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/semantic_action",
+    "-v"
+  ],
+  "cwd": "/tmp/m45-v3-g59s7wl8",
+  "started_at": "2026-10-17T20:36:07.164711+00:00",
+  "ended_at": "2026-10-17T20:39:35.993870+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 208.82917398899735,
+  "tests_run": 87,
+  "runner_seconds": 208.261,
+  "log_path": "docs/artifacts/milestone4_5/regression-source.log",
+  "nested_runtime": false
+}

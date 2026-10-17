@@ -1,0 +1,36 @@
+{
+  "action": {
+    "schema_version": 1,
+    "condition": "A",
+    "run_id": "e3a84388-bd1c-41fb-a6e7-1131f2ec42fa",
+    "timestamp": "2026-10-17T20:37:52.623510+00:00",
+    "operation_id": "reserveAppointment",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 04",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 04"
+    },
+    "description_sha256": "7cf7a98bd8ddac086618b618b813ac54460ae45fad1ffcebc05337e1d2cb4f1e",
+    "compatible": false,
+    "applicability": "UNKNOWN",
+    "execution_decision": "REJECT",
+    "api_call_success": false,
+    "api_response": null,
+    "oracle_verdict": null,
+    "observed_state_change": null,
+    "preconditions": [],
+    "wire_evidence": [],
+    "reason": "Local effect cannot meet event goal",
+    "completed_at": "2026-10-17T20:37:52.623573+00:00"
+  },
+  "resolution": null,
+  "compatible": false,
+  "applicability": null
+}

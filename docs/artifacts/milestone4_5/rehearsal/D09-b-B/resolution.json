@@ -1,0 +1,37 @@
+{
+  "candidates": [
+    {
+      "applicability": "UNKNOWN",
+      "artifact_id": "https://example.org/provider-b#appointments",
+      "assessment": null,
+      "compatible": false,
+      "contract_sha256": "c3799aa9097cba0f0d8e5b4c3b6fc9b9eb111fd5a8f44baad1f180b920874512",
+      "eligible": false,
+      "operation_id": "https://example.org/provider-b#reserveAppointment",
+      "reasons": [
+        "Required input mapping is incomplete or has an unavailable source",
+        "Required input/observation cannot be transformed: unavailable_input"
+      ],
+      "registration": 0
+    }
+  ],
+  "execution_started": false,
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "rejection_reason": "Selected operation is not uniquely eligible",
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "bbd55be5-bdfa-4859-b288-fc267a139e6e",
+  "schema_version": 1,
+  "selected_operation": "https://example.org/provider-b#reserveAppointment",
+  "timestamp": "2026-10-17T20:38:15.822644+00:00"
+}

@@ -1,0 +1,154 @@
+{
+  "api_call_success": true,
+  "api_response": {
+    "body": {
+      "booking_ref": "booking-0001"
+    },
+    "error": null,
+    "raw_body": null,
+    "status": 201
+  },
+  "applicability": "TRUE",
+  "compatible": true,
+  "completed_at": "2026-10-17T20:38:36.079676+00:00",
+  "condition": "A",
+  "description_sha256": "ec18b1f054c694d25d4755f91b11e14b2f021edd505026addd3e9cb604591dc4",
+  "execution_decision": "EXECUTE",
+  "execution_started": "2026-10-17T20:38:36.076446+00:00",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 14"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 14"
+  },
+  "observed_effects": {
+    "error": null,
+    "event": {
+      "event": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "id": "booking-0001",
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "title": "Incorrect booking label"
+      },
+      "observed_at": "2026-10-17T20:38:36.078600+00:00",
+      "revision": 1
+    },
+    "state": {
+      "events": {
+        "booking-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "id": "booking-0001",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "Incorrect booking label"
+        }
+      },
+      "observed_at": "2026-10-17T20:38:36.079339+00:00",
+      "revision": 1,
+      "writable": true
+    }
+  },
+  "observed_state_change": true,
+  "operation_id": "reserveAppointment",
+  "oracle_verdict": {
+    "achieved": false,
+    "reasons": [
+      "Goal mismatch: title"
+    ]
+  },
+  "preconditions": [
+    {
+      "name": "positive_interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:36.075955+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "name": "local_write_permission",
+      "verdict": "TRUE"
+    }
+  ],
+  "reason": null,
+  "run_id": "f175f748-e626-47fc-8135-7ab623ea44ad",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:38:36.074216+00:00",
+  "wire_evidence": [
+    {
+      "body": {
+        "can_book": true,
+        "items": {},
+        "sampled_at": "2026-10-17T20:38:36.075955+00:00",
+        "version": 0
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/availability",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    },
+    {
+      "body": {
+        "booking_ref": "booking-0001"
+      },
+      "error": null,
+      "method": "POST",
+      "path": "/bookings",
+      "raw_body": null,
+      "request_body": {
+        "begins_ms": 1894006800000,
+        "finishes_ms": 1894010400000,
+        "label": "Diagnostic task 14"
+      },
+      "status": 201
+    },
+    {
+      "body": {
+        "booking": {
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Incorrect booking label"
+        },
+        "sampled_at": "2026-10-17T20:38:36.078600+00:00",
+        "version": 1
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/booking/booking-0001",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    },
+    {
+      "body": {
+        "can_book": true,
+        "items": {
+          "booking-0001": {
+            "begins_ms": 1894006800000,
+            "booking_ref": "booking-0001",
+            "finishes_ms": 1894010400000,
+            "label": "Incorrect booking label"
+          }
+        },
+        "sampled_at": "2026-10-17T20:38:36.079339+00:00",
+        "version": 1
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/bookings",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    }
+  ]
+}

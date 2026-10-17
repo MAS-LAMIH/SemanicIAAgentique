@@ -1,0 +1,31 @@
+{
+  "api_call_success": false,
+  "api_response": null,
+  "applicability": "UNKNOWN",
+  "compatible": false,
+  "completed_at": "2026-10-17T20:38:13.758808+00:00",
+  "condition": "A",
+  "description_sha256": "448752d12d4377bd8e93405041ef54a655d0ab7fef455da4343c4b59af46d04f",
+  "execution_decision": "REJECT",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 09"
+  },
+  "observed_state_change": null,
+  "operation_id": "create_event",
+  "oracle_verdict": null,
+  "preconditions": [],
+  "reason": "Unsupported local input encoding",
+  "run_id": "d7da0b82-c145-4ea1-8142-907d059d4abe",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:38:13.758750+00:00",
+  "wire_evidence": []
+}

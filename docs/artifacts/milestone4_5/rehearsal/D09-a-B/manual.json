@@ -1,0 +1,70 @@
+{
+  "artifact_id": "https://example.org/provider-a#calendar",
+  "binding": {
+    "baseline_path": "/calendar",
+    "create_path": "/events",
+    "event_field": "event",
+    "event_fields": {
+      "end_time": {
+        "source": "end_time",
+        "transform": "identity"
+      },
+      "id": {
+        "source": "id",
+        "transform": "identity"
+      },
+      "start_time": {
+        "source": "start_time",
+        "transform": "identity"
+      },
+      "title": {
+        "source": "title",
+        "transform": "identity"
+      }
+    },
+    "event_path": "/events/{id}",
+    "events_field": "events",
+    "request_fields": {
+      "end_time": {
+        "source": "end_time",
+        "transform": "identity"
+      },
+      "start_time": {
+        "source": "unavailable_input",
+        "transform": "identity"
+      },
+      "title": {
+        "source": "title",
+        "transform": "identity"
+      }
+    },
+    "response_id": "id",
+    "revision_field": "revision",
+    "state_path": "/events",
+    "timestamp_field": "observed_at",
+    "writable_field": "writable"
+  },
+  "capability_id": "https://example.org/sam/v1#EventCreation",
+  "constraints": {
+    "max_duration_seconds": null,
+    "preserves_other_events": true,
+    "time_grid_seconds": 0
+  },
+  "declared_effects": [
+    "https://example.org/sam/v1#NewMatchingEvent"
+  ],
+  "inputs": [
+    "start_time",
+    "end_time",
+    "title"
+  ],
+  "observation": {
+    "max_evidence_age_seconds": 30
+  },
+  "operation_id": "https://example.org/provider-a#create_event",
+  "preconditions": [
+    "https://example.org/sam/v1#PositiveInterval",
+    "https://example.org/sam/v1#CalendarWritable"
+  ],
+  "schema_version": 2
+}

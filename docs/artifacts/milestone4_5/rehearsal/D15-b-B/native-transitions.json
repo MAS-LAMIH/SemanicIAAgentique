@@ -1,0 +1,30 @@
+[
+  {
+    "after": {
+      "events": {
+        "booking-0001": {
+          "advertised_title": "Diagnostic task 15",
+          "begins_ms": 1894006800000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894010400000,
+          "label": "Incorrect booking label"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-17T20:38:41.454446+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:38:41.452185+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 201,
+    "path": "/bookings"
+  }
+]

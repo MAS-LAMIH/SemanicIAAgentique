@@ -1,0 +1,187 @@
+{
+  "api_call_success": false,
+  "api_response": {
+    "body": {
+      "error": "Controlled booking failure"
+    },
+    "error": "HTTP 503",
+    "raw_body": {
+      "error": "Controlled booking failure"
+    },
+    "status": 503
+  },
+  "applicability": "TRUE",
+  "artifact_id": "https://example.org/provider-b#appointments",
+  "completed_at": "2026-10-17T20:38:27.308163+00:00",
+  "contract_sha256": "c3f9e44863ca6930a32b72ec1112e126c4ad7c170984be2a87c9b8079687eb74",
+  "declared_effects": [
+    "https://example.org/sam/v1#NewMatchingEvent"
+  ],
+  "evidence": {
+    "baseline": {
+      "events": {},
+      "observed_at": "2026-10-17T20:38:27.305394+00:00",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "execution_decision": "EXECUTE",
+  "execution_started": "2026-10-17T20:38:27.305829+00:00",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 12"
+  },
+  "input_validation": {
+    "errors": [],
+    "valid": true
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 12"
+  },
+  "observed_effects": {
+    "error": "No returned event identifier",
+    "event": null,
+    "state": {
+      "events": {},
+      "observed_at": "2026-10-17T20:38:27.307828+00:00",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "observed_state_change": false,
+  "operation_id": "https://example.org/provider-b#reserveAppointment",
+  "oracle_verdict": {
+    "achieved": false,
+    "reasons": [
+      "No returned event identifier",
+      "Missing, stale, or pre-execution event evidence"
+    ]
+  },
+  "preconditions": [
+    {
+      "evidence": {
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "start_time": "2030-01-07T09:00:00+00:00"
+      },
+      "name": "https://example.org/sam/v1#PositiveInterval",
+      "reason": "Validated interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:27.305394+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "name": "https://example.org/sam/v1#CalendarWritable",
+      "reason": "Current observation establishes writable",
+      "verdict": "TRUE"
+    }
+  ],
+  "provider_profile": {
+    "binding": {
+      "baseline_path": "/availability",
+      "create_path": "/bookings",
+      "event_field": "booking",
+      "event_fields": {
+        "end_time": {
+          "source": "finishes_ms",
+          "transform": "epoch_ms_to_iso"
+        },
+        "id": {
+          "source": "booking_ref",
+          "transform": "identity"
+        },
+        "start_time": {
+          "source": "begins_ms",
+          "transform": "epoch_ms_to_iso"
+        },
+        "title": {
+          "source": "label",
+          "transform": "identity"
+        }
+      },
+      "event_path": "/booking/{id}",
+      "events_field": "items",
+      "request_fields": {
+        "begins_ms": {
+          "source": "start_time",
+          "transform": "iso_to_epoch_ms"
+        },
+        "finishes_ms": {
+          "source": "end_time",
+          "transform": "iso_to_epoch_ms"
+        },
+        "label": {
+          "source": "title",
+          "transform": "identity"
+        }
+      },
+      "response_id": "booking_ref",
+      "revision_field": "version",
+      "state_path": "/bookings",
+      "timestamp_field": "sampled_at",
+      "writable_field": "can_book"
+    },
+    "constraints": {
+      "max_duration_seconds": 7200,
+      "preserves_other_events": true,
+      "time_grid_seconds": 900
+    }
+  },
+  "reason": "No returned event identifier; Missing, stale, or pre-execution event evidence",
+  "run_id": "2745fecf-fd9a-40bd-b0d7-88155e35e75f",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:38:27.303805+00:00",
+  "wire_evidence": [
+    {
+      "canonical_method": "GET",
+      "canonical_path": "/calendar",
+      "raw_body": {
+        "can_book": true,
+        "items": {},
+        "sampled_at": "2026-10-17T20:38:27.305394+00:00",
+        "version": 0
+      },
+      "request_body": null,
+      "status": 200,
+      "wire_method": "GET",
+      "wire_path": "/availability"
+    },
+    {
+      "canonical_method": "POST",
+      "canonical_path": "/events",
+      "raw_body": {
+        "error": "Controlled booking failure"
+      },
+      "request_body": {
+        "begins_ms": 1894006800000,
+        "finishes_ms": 1894010400000,
+        "label": "Diagnostic task 12"
+      },
+      "status": 503,
+      "wire_method": "POST",
+      "wire_path": "/bookings"
+    },
+    {
+      "canonical_method": "GET",
+      "canonical_path": "/events",
+      "raw_body": {
+        "can_book": true,
+        "items": {},
+        "sampled_at": "2026-10-17T20:38:27.307828+00:00",
+        "version": 0
+      },
+      "request_body": null,
+      "status": 200,
+      "wire_method": "GET",
+      "wire_path": "/bookings"
+    }
+  ]
+}

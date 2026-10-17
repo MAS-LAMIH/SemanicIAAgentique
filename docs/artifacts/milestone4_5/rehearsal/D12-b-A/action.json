@@ -1,0 +1,114 @@
+{
+  "api_call_success": false,
+  "api_response": {
+    "body": {
+      "error": "Controlled booking failure"
+    },
+    "error": "HTTP 503",
+    "raw_body": null,
+    "status": 503
+  },
+  "applicability": "TRUE",
+  "compatible": true,
+  "completed_at": "2026-10-17T20:38:26.547611+00:00",
+  "condition": "A",
+  "description_sha256": "ec18b1f054c694d25d4755f91b11e14b2f021edd505026addd3e9cb604591dc4",
+  "execution_decision": "EXECUTE",
+  "execution_started": "2026-10-17T20:38:26.544590+00:00",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 12"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 12"
+  },
+  "observed_effects": {
+    "error": "No valid returned identifier",
+    "event": null,
+    "state": {
+      "events": {},
+      "observed_at": "2026-10-17T20:38:26.547163+00:00",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "observed_state_change": false,
+  "operation_id": "reserveAppointment",
+  "oracle_verdict": {
+    "achieved": false,
+    "reasons": [
+      "No valid returned identifier",
+      "Missing, stale, or pre-execution event evidence"
+    ]
+  },
+  "preconditions": [
+    {
+      "name": "positive_interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {},
+        "observed_at": "2026-10-17T20:38:26.544154+00:00",
+        "revision": 0,
+        "writable": true
+      },
+      "name": "local_write_permission",
+      "verdict": "TRUE"
+    }
+  ],
+  "reason": null,
+  "run_id": "b381d4d4-8a6e-45c2-a378-f51ae43aaa0f",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:38:26.542541+00:00",
+  "wire_evidence": [
+    {
+      "body": {
+        "can_book": true,
+        "items": {},
+        "sampled_at": "2026-10-17T20:38:26.544154+00:00",
+        "version": 0
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/availability",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    },
+    {
+      "body": {
+        "error": "Controlled booking failure"
+      },
+      "error": "HTTP 503",
+      "method": "POST",
+      "path": "/bookings",
+      "raw_body": null,
+      "request_body": {
+        "begins_ms": 1894006800000,
+        "finishes_ms": 1894010400000,
+        "label": "Diagnostic task 12"
+      },
+      "status": 503
+    },
+    {
+      "body": {
+        "can_book": true,
+        "items": {},
+        "sampled_at": "2026-10-17T20:38:26.547163+00:00",
+        "version": 0
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/bookings",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    }
+  ]
+}

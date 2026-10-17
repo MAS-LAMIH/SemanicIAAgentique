@@ -1,0 +1,70 @@
+{
+  "artifact_id": "https://example.org/provider-b#appointments",
+  "binding": {
+    "baseline_path": "/availability",
+    "create_path": "/bookings",
+    "event_field": "booking",
+    "event_fields": {
+      "end_time": {
+        "source": "finishes_ms",
+        "transform": "epoch_ms_to_iso"
+      },
+      "id": {
+        "source": "booking_ref",
+        "transform": "identity"
+      },
+      "start_time": {
+        "source": "begins_ms",
+        "transform": "epoch_ms_to_iso"
+      },
+      "title": {
+        "source": "advertised_title",
+        "transform": "identity"
+      }
+    },
+    "event_path": "/booking/{id}",
+    "events_field": "items",
+    "request_fields": {
+      "begins_ms": {
+        "source": "start_time",
+        "transform": "iso_to_epoch_ms"
+      },
+      "finishes_ms": {
+        "source": "end_time",
+        "transform": "iso_to_epoch_ms"
+      },
+      "label": {
+        "source": "title",
+        "transform": "identity"
+      }
+    },
+    "response_id": "booking_ref",
+    "revision_field": "version",
+    "state_path": "/bookings",
+    "timestamp_field": "sampled_at",
+    "writable_field": "can_book"
+  },
+  "capability_id": "https://example.org/sam/v1#EventCreation",
+  "constraints": {
+    "max_duration_seconds": 7200,
+    "preserves_other_events": true,
+    "time_grid_seconds": 900
+  },
+  "declared_effects": [
+    "https://example.org/sam/v1#NewMatchingEvent"
+  ],
+  "inputs": [
+    "start_time",
+    "end_time",
+    "title"
+  ],
+  "observation": {
+    "max_evidence_age_seconds": 30
+  },
+  "operation_id": "https://example.org/provider-b#reserveAppointment",
+  "preconditions": [
+    "https://example.org/sam/v1#PositiveInterval",
+    "https://example.org/sam/v1#CalendarWritable"
+  ],
+  "schema_version": 2
+}

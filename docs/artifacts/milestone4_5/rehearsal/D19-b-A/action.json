@@ -1,0 +1,31 @@
+{
+  "api_call_success": false,
+  "api_response": null,
+  "applicability": "UNKNOWN",
+  "compatible": false,
+  "completed_at": "2026-10-17T20:38:59.723615+00:00",
+  "condition": "A",
+  "description_sha256": "ec18b1f054c694d25d4755f91b11e14b2f021edd505026addd3e9cb604591dc4",
+  "execution_decision": "REJECT",
+  "formal_goal": {
+    "end_time": "2030-01-07T12:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 19"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T12:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 19"
+  },
+  "observed_state_change": null,
+  "operation_id": "reserveAppointment",
+  "oracle_verdict": null,
+  "preconditions": [],
+  "reason": "Booking exceeds two-hour duration",
+  "run_id": "c98a1471-99f1-4ab8-b89b-1baea3d1cfb7",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:38:59.723541+00:00",
+  "wire_evidence": []
+}

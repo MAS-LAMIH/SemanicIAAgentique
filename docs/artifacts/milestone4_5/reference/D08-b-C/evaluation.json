@@ -1,0 +1,134 @@
+{
+  "case_passed": true,
+  "condition": "C",
+  "expected": {
+    "classification": "safe_rejection",
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "missing_permission",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 08"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:37:23.615224+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:23.615224+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:23.615224+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:23.595477+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "provider": "b",
+  "resolution": {
+    "candidates": [
+      {
+        "applicability": "UNKNOWN",
+        "artifact_id": "https://example.org/provider-b#appointments",
+        "assessment": {
+          "applicability": "UNKNOWN",
+          "preconditions": [
+            {
+              "evidence": {
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "start_time": "2030-01-07T09:00:00+00:00"
+              },
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "reason": "Validated interval",
+              "verdict": "TRUE"
+            },
+            {
+              "evidence": {
+                "events": {},
+                "observed_at": null,
+                "revision": 0,
+                "writable": true
+              },
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "reason": "Missing, stale, or insufficient writability evidence",
+              "verdict": "UNKNOWN"
+            }
+          ],
+          "validation": {
+            "errors": [],
+            "valid": true
+          }
+        },
+        "compatible": true,
+        "contract_sha256": "6fdd977714ade86844b75f66f6ee6849ab89624d8aef3e4661f2b619b5bac76e",
+        "eligible": false,
+        "operation_id": "https://example.org/provider-b#reserveAppointment",
+        "reasons": [
+          "Critical applicability is UNKNOWN"
+        ],
+        "registration": 0
+      }
+    ],
+    "execution_started": false,
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 08"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 08"
+    },
+    "rejection_reason": "Selected operation is not uniquely eligible",
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "run_id": "469563a5-8bab-4c90-9966-fd26d7acdef2",
+    "schema_version": 1,
+    "selected_operation": "https://example.org/provider-b#reserveAppointment",
+    "timestamp": "2026-10-17T20:37:23.598577+00:00"
+  },
+  "runtime_action": null,
+  "summary": {
+    "api_call_success": false,
+    "applicability": "UNKNOWN",
+    "compatible": true,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D08"
+}

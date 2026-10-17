@@ -1,0 +1,66 @@
+{
+  "action": {
+    "schema_version": 1,
+    "condition": "A",
+    "run_id": "711623db-c2f2-4c6a-b08d-ac991cbf7304",
+    "timestamp": "2026-10-17T20:37:57.259059+00:00",
+    "operation_id": "create_event",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 07",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 07"
+    },
+    "description_sha256": "57b5a9bfe1a0657659d101f3b0d2710173923785b42e11941efcd3110fbe20fe",
+    "compatible": true,
+    "applicability": "UNKNOWN",
+    "execution_decision": "BLOCK",
+    "api_call_success": false,
+    "api_response": null,
+    "oracle_verdict": null,
+    "observed_state_change": null,
+    "preconditions": [
+      {
+        "name": "positive_interval",
+        "verdict": "TRUE"
+      },
+      {
+        "name": "local_write_permission",
+        "verdict": "UNKNOWN",
+        "evidence": {
+          "writable": true,
+          "events": {},
+          "revision": 0,
+          "observed_at": "2000-01-01T00:00:00+00:00"
+        }
+      }
+    ],
+    "wire_evidence": [
+      {
+        "method": "GET",
+        "path": "/calendar",
+        "request_body": null,
+        "status": 200,
+        "body": {
+          "events": {},
+          "observed_at": "2000-01-01T00:00:00+00:00",
+          "revision": 0,
+          "writable": true
+        },
+        "error": null,
+        "raw_body": null
+      }
+    ],
+    "reason": "Local write permission not established TRUE",
+    "completed_at": "2026-10-17T20:37:57.261045+00:00"
+  },
+  "resolution": null,
+  "compatible": true,
+  "applicability": "UNKNOWN"
+}

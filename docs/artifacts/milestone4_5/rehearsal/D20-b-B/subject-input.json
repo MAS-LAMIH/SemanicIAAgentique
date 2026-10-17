@@ -1,0 +1,23 @@
+{
+  "baseline_root": "/workspace/SemanicIAAgentique",
+  "condition": "B",
+  "goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:05:00+00:00",
+    "title": "Diagnostic task 20"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:05:00+00:00",
+    "title": "Diagnostic task 20"
+  },
+  "manual": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-b-B/manual.json",
+  "operation_id": "https://example.org/provider-b#reserveAppointment",
+  "origin": "http://127.0.0.1:43921",
+  "output": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-b-B",
+  "provider": "b",
+  "startup_stall_seconds": 0,
+  "wire_fault": "grid_constraint"
+}

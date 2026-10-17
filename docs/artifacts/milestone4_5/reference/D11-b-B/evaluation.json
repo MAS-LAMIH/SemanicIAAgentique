@@ -1,0 +1,107 @@
+{
+  "case_passed": true,
+  "condition": "B",
+  "expected": {
+    "classification": "safe_rejection",
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "unsupported_transition",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 11"
+  },
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:37:32.228242+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:32.228242+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:32.228242+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:32.226513+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "provider": "b",
+  "resolution": {
+    "candidates": [
+      {
+        "applicability": "UNKNOWN",
+        "artifact_id": "https://example.org/provider-b#appointments",
+        "assessment": null,
+        "compatible": false,
+        "contract_sha256": "269976fbce77d0de955480d44e3fda6463b86f30a15c416f05ba6ac3f16cf7d6",
+        "eligible": false,
+        "operation_id": "https://example.org/provider-b#reserveAppointment",
+        "reasons": [
+          "Modeled effects do not establish required goal effect",
+          "Modeled effects cannot establish event-creation goal"
+        ],
+        "registration": 0
+      }
+    ],
+    "execution_started": false,
+    "formal_goal": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 11"
+    },
+    "inputs": {
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "title": "Diagnostic task 11"
+    },
+    "rejection_reason": "Selected operation is not uniquely eligible",
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "run_id": "0fa4bc72-5c95-452f-a805-11c242bd02be",
+    "schema_version": 1,
+    "selected_operation": "https://example.org/provider-b#reserveAppointment",
+    "timestamp": "2026-10-17T20:37:32.227001+00:00"
+  },
+  "runtime_action": null,
+  "summary": {
+    "api_call_success": false,
+    "applicability": null,
+    "compatible": false,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D11"
+}

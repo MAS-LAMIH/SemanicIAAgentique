@@ -1,0 +1,10 @@
+test_fresh_paths (test_driver.Controls.test_fresh_paths) ... ok
+test_normal_and_negative (test_driver.Controls.test_normal_and_negative) ... ok
+test_provider_restriction (test_driver.Controls.test_provider_restriction) ... ok
+test_reset_axes (test_driver.Controls.test_reset_axes) ... ok
+test_timeouts_and_uncertainty (test_driver.Controls.test_timeouts_and_uncertainty) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 62.275s
+
+OK

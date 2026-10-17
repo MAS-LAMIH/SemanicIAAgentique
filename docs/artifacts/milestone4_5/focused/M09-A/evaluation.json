@@ -1,0 +1,1366 @@
+{
+  "task_id": "M09",
+  "family": "three_step_chain",
+  "provider": "a",
+  "condition": "A",
+  "started_at": "2026-10-17T20:36:51.983937+00:00",
+  "formal_goals": [
+    {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "M09 required appointment 1",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    {
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "title": "M09 required appointment 2",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    {
+      "start_time": "2030-01-07T11:00:00+00:00",
+      "end_time": "2030-01-07T12:00:00+00:00",
+      "title": "M09 required appointment 3",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    }
+  ],
+  "summary": {
+    "status": "COMPLETE",
+    "supervision_status": "COMPLETED",
+    "mutation_calls": 3,
+    "runtime_verified": true,
+    "native_verified": true,
+    "verified": true,
+    "verified_transitions": 3,
+    "partial_new_records": 3,
+    "state_uncertain": false
+  },
+  "native_verdict": {
+    "achieved": true,
+    "reasons": [],
+    "transitions": [
+      {
+        "achieved": true,
+        "reasons": [],
+        "runtime_discrepancy": false,
+        "raw_before": {
+          "provider": "a",
+          "observed_at": "2026-10-17T20:36:52.106445+00:00",
+          "revision": 0,
+          "writable": true,
+          "events": {
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me",
+              "metadata": "sentinel"
+            }
+          },
+          "mutation_calls": 0
+        },
+        "raw_after": {
+          "provider": "a",
+          "observed_at": "2026-10-17T20:36:52.107165+00:00",
+          "revision": 1,
+          "writable": true,
+          "events": {
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "event-0001": {
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1",
+              "id": "event-0001"
+            }
+          },
+          "mutation_calls": 1
+        },
+        "mutation_calls": 1,
+        "canonical_observation": {
+          "event": {
+            "event": {
+              "id": "event-0001",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1"
+            },
+            "revision": 1,
+            "observed_at": "2026-10-17T20:36:52.107165+00:00"
+          },
+          "state": {
+            "events": {
+              "existing": {
+                "id": "existing",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "title": "Preserve me"
+              },
+              "event-0001": {
+                "id": "event-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              }
+            },
+            "revision": 1,
+            "observed_at": "2026-10-17T20:36:52.107165+00:00"
+          },
+          "error": null
+        }
+      },
+      {
+        "achieved": true,
+        "reasons": [],
+        "runtime_discrepancy": false,
+        "raw_before": {
+          "provider": "a",
+          "observed_at": "2026-10-17T20:36:52.129291+00:00",
+          "revision": 1,
+          "writable": true,
+          "events": {
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "event-0001": {
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1",
+              "id": "event-0001"
+            }
+          },
+          "mutation_calls": 1
+        },
+        "raw_after": {
+          "provider": "a",
+          "observed_at": "2026-10-17T20:36:52.129698+00:00",
+          "revision": 2,
+          "writable": true,
+          "events": {
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "event-0001": {
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1",
+              "id": "event-0001"
+            },
+            "event-0002": {
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "title": "M09 required appointment 2",
+              "id": "event-0002",
+              "predecessor_id": "event-0001"
+            }
+          },
+          "mutation_calls": 2
+        },
+        "mutation_calls": 1,
+        "canonical_observation": {
+          "event": {
+            "event": {
+              "id": "event-0002",
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "title": "M09 required appointment 2"
+            },
+            "revision": 2,
+            "observed_at": "2026-10-17T20:36:52.129698+00:00"
+          },
+          "state": {
+            "events": {
+              "existing": {
+                "id": "existing",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "title": "Preserve me"
+              },
+              "event-0001": {
+                "id": "event-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              },
+              "event-0002": {
+                "id": "event-0002",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "title": "M09 required appointment 2"
+              }
+            },
+            "revision": 2,
+            "observed_at": "2026-10-17T20:36:52.129698+00:00"
+          },
+          "error": null
+        }
+      },
+      {
+        "achieved": true,
+        "reasons": [],
+        "runtime_discrepancy": false,
+        "raw_before": {
+          "provider": "a",
+          "observed_at": "2026-10-17T20:36:52.153186+00:00",
+          "revision": 2,
+          "writable": true,
+          "events": {
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "event-0001": {
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1",
+              "id": "event-0001"
+            },
+            "event-0002": {
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "title": "M09 required appointment 2",
+              "id": "event-0002",
+              "predecessor_id": "event-0001"
+            }
+          },
+          "mutation_calls": 2
+        },
+        "raw_after": {
+          "provider": "a",
+          "observed_at": "2026-10-17T20:36:52.153646+00:00",
+          "revision": 3,
+          "writable": true,
+          "events": {
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me",
+              "metadata": "sentinel"
+            },
+            "event-0001": {
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1",
+              "id": "event-0001"
+            },
+            "event-0002": {
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "title": "M09 required appointment 2",
+              "id": "event-0002",
+              "predecessor_id": "event-0001"
+            },
+            "event-0003": {
+              "start_time": "2030-01-07T11:00:00+00:00",
+              "end_time": "2030-01-07T12:00:00+00:00",
+              "title": "M09 required appointment 3",
+              "id": "event-0003",
+              "predecessor_id": "event-0002"
+            }
+          },
+          "mutation_calls": 3
+        },
+        "mutation_calls": 1,
+        "canonical_observation": {
+          "event": {
+            "event": {
+              "id": "event-0003",
+              "start_time": "2030-01-07T11:00:00+00:00",
+              "end_time": "2030-01-07T12:00:00+00:00",
+              "title": "M09 required appointment 3"
+            },
+            "revision": 3,
+            "observed_at": "2026-10-17T20:36:52.153646+00:00"
+          },
+          "state": {
+            "events": {
+              "existing": {
+                "id": "existing",
+                "start_time": "2030-01-06T09:00:00+00:00",
+                "end_time": "2030-01-06T10:00:00+00:00",
+                "title": "Preserve me"
+              },
+              "event-0001": {
+                "id": "event-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              },
+              "event-0002": {
+                "id": "event-0002",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "title": "M09 required appointment 2"
+              },
+              "event-0003": {
+                "id": "event-0003",
+                "start_time": "2030-01-07T11:00:00+00:00",
+                "end_time": "2030-01-07T12:00:00+00:00",
+                "title": "M09 required appointment 3"
+              }
+            },
+            "revision": 3,
+            "observed_at": "2026-10-17T20:36:52.153646+00:00"
+          },
+          "error": null
+        }
+      }
+    ],
+    "verified_transition_count": 3,
+    "partial_native_state": {
+      "provider": "a",
+      "observed_at": "2026-10-17T20:36:52.199779+00:00",
+      "revision": 3,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "event-0001": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "title": "M09 required appointment 1",
+          "id": "event-0001"
+        },
+        "event-0002": {
+          "start_time": "2030-01-07T10:00:00+00:00",
+          "end_time": "2030-01-07T11:00:00+00:00",
+          "title": "M09 required appointment 2",
+          "id": "event-0002",
+          "predecessor_id": "event-0001"
+        },
+        "event-0003": {
+          "start_time": "2030-01-07T11:00:00+00:00",
+          "end_time": "2030-01-07T12:00:00+00:00",
+          "title": "M09 required appointment 3",
+          "id": "event-0003",
+          "predecessor_id": "event-0002"
+        }
+      },
+      "mutation_calls": 3
+    },
+    "expected_action_count": 3
+  },
+  "native_journal": [
+    {
+      "path": "/events",
+      "before": {
+        "provider": "a",
+        "observed_at": "2026-10-17T20:36:52.106445+00:00",
+        "revision": 0,
+        "writable": true,
+        "events": {
+          "existing": {
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "title": "Preserve me",
+            "metadata": "sentinel"
+          }
+        },
+        "mutation_calls": 0
+      },
+      "after": {
+        "provider": "a",
+        "observed_at": "2026-10-17T20:36:52.107165+00:00",
+        "revision": 1,
+        "writable": true,
+        "events": {
+          "existing": {
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "title": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "event-0001": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1",
+            "id": "event-0001"
+          }
+        },
+        "mutation_calls": 1
+      },
+      "http_status": 201
+    },
+    {
+      "path": "/followups/event-0001",
+      "before": {
+        "provider": "a",
+        "observed_at": "2026-10-17T20:36:52.129291+00:00",
+        "revision": 1,
+        "writable": true,
+        "events": {
+          "existing": {
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "title": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "event-0001": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1",
+            "id": "event-0001"
+          }
+        },
+        "mutation_calls": 1
+      },
+      "after": {
+        "provider": "a",
+        "observed_at": "2026-10-17T20:36:52.129698+00:00",
+        "revision": 2,
+        "writable": true,
+        "events": {
+          "existing": {
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "title": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "event-0001": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1",
+            "id": "event-0001"
+          },
+          "event-0002": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M09 required appointment 2",
+            "id": "event-0002",
+            "predecessor_id": "event-0001"
+          }
+        },
+        "mutation_calls": 2
+      },
+      "http_status": 201
+    },
+    {
+      "path": "/followups/event-0002",
+      "before": {
+        "provider": "a",
+        "observed_at": "2026-10-17T20:36:52.153186+00:00",
+        "revision": 2,
+        "writable": true,
+        "events": {
+          "existing": {
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "title": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "event-0001": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1",
+            "id": "event-0001"
+          },
+          "event-0002": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M09 required appointment 2",
+            "id": "event-0002",
+            "predecessor_id": "event-0001"
+          }
+        },
+        "mutation_calls": 2
+      },
+      "after": {
+        "provider": "a",
+        "observed_at": "2026-10-17T20:36:52.153646+00:00",
+        "revision": 3,
+        "writable": true,
+        "events": {
+          "existing": {
+            "id": "existing",
+            "start_time": "2030-01-06T09:00:00+00:00",
+            "end_time": "2030-01-06T10:00:00+00:00",
+            "title": "Preserve me",
+            "metadata": "sentinel"
+          },
+          "event-0001": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1",
+            "id": "event-0001"
+          },
+          "event-0002": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M09 required appointment 2",
+            "id": "event-0002",
+            "predecessor_id": "event-0001"
+          },
+          "event-0003": {
+            "start_time": "2030-01-07T11:00:00+00:00",
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "title": "M09 required appointment 3",
+            "id": "event-0003",
+            "predecessor_id": "event-0002"
+          }
+        },
+        "mutation_calls": 3
+      },
+      "http_status": 201
+    }
+  ],
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "wait_seconds": 1.0879994079004973e-06,
+    "state_uncertain": false,
+    "snapshot": {
+      "provider": "a",
+      "observed_at": "2026-10-17T20:36:52.199723+00:00",
+      "revision": 3,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "event-0001": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "title": "M09 required appointment 1",
+          "id": "event-0001"
+        },
+        "event-0002": {
+          "start_time": "2030-01-07T10:00:00+00:00",
+          "end_time": "2030-01-07T11:00:00+00:00",
+          "title": "M09 required appointment 2",
+          "id": "event-0002",
+          "predecessor_id": "event-0001"
+        },
+        "event-0003": {
+          "start_time": "2030-01-07T11:00:00+00:00",
+          "end_time": "2030-01-07T12:00:00+00:00",
+          "title": "M09 required appointment 3",
+          "id": "event-0003",
+          "predecessor_id": "event-0002"
+        }
+      },
+      "mutation_calls": 3
+    }
+  },
+  "recovery_boundary": null,
+  "operational_intervention": null,
+  "diagnostic_passed": true,
+  "source_of_expectations": "Curator domain task, not subject trace or manual",
+  "reset": {
+    "passed": true,
+    "checks": {
+      "events": true,
+      "writable": true,
+      "revision": true,
+      "mutation_calls": true,
+      "no_cached_resolutions": true,
+      "no_live_subject": true,
+      "fresh_trace_directory": true,
+      "no_pending_requests": true
+    },
+    "native_initial": {
+      "provider": "a",
+      "observed_at": "2026-10-17T20:36:51.984376+00:00",
+      "revision": 0,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        }
+      },
+      "mutation_calls": 0
+    },
+    "expected": {
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        }
+      },
+      "writable": true,
+      "revision": 0,
+      "mutation_calls": 0
+    },
+    "cache_entries": 0,
+    "subject_alive": false
+  },
+  "process": {
+    "status": "COMPLETED",
+    "started_at": "2026-10-17T20:36:51.984842+00:00",
+    "budget_seconds": 60,
+    "automatic_retries": 0,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "pid": 66482,
+    "exit_code": 0,
+    "ended_at": "2026-10-17T20:36:52.199430+00:00",
+    "automated_runtime_seconds": 0.21459167400098522
+  },
+  "runtime_trace": {
+    "profile_version": 1,
+    "started_at": "2026-10-17T20:36:52.089666+00:00",
+    "status": "COMPLETE",
+    "formal_goals": [
+      {
+        "start_time": "2030-01-07T09:00:00+00:00",
+        "end_time": "2030-01-07T10:00:00+00:00",
+        "title": "M09 required appointment 1",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      {
+        "start_time": "2030-01-07T10:00:00+00:00",
+        "end_time": "2030-01-07T11:00:00+00:00",
+        "title": "M09 required appointment 2",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      },
+      {
+        "start_time": "2030-01-07T11:00:00+00:00",
+        "end_time": "2030-01-07T12:00:00+00:00",
+        "title": "M09 required appointment 3",
+        "forbid_other_changes": true,
+        "max_evidence_age_seconds": 30.0
+      }
+    ],
+    "steps": [
+      {
+        "index": 0,
+        "started_at": "2026-10-17T20:36:52.092721+00:00",
+        "predecessor_id": null,
+        "dependency_verdict": null,
+        "dependency_evidence": null,
+        "action": {
+          "schema_version": 1,
+          "condition": "A",
+          "run_id": "d841ff42-4128-4769-a29c-259e5ccfb04c",
+          "timestamp": "2026-10-17T20:36:52.103040+00:00",
+          "operation_id": "create_event",
+          "formal_goal": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1",
+            "forbid_other_changes": true,
+            "max_evidence_age_seconds": 30.0
+          },
+          "inputs": {
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "title": "M09 required appointment 1"
+          },
+          "description_sha256": "0191abe00fb904e9b72362941f9c02ddd4416e1dd1ec4d4ff7a9952bea3ef82d",
+          "compatible": true,
+          "applicability": "TRUE",
+          "execution_decision": "EXECUTE",
+          "api_call_success": true,
+          "api_response": {
+            "status": 201,
+            "body": {
+              "accepted": true,
+              "id": "event-0001"
+            },
+            "error": null,
+            "raw_body": null
+          },
+          "oracle_verdict": {
+            "achieved": true,
+            "reasons": []
+          },
+          "observed_state_change": true,
+          "preconditions": [
+            {
+              "name": "positive_interval",
+              "verdict": "TRUE"
+            },
+            {
+              "name": "local_write_permission",
+              "verdict": "TRUE",
+              "evidence": {
+                "writable": true,
+                "events": {
+                  "existing": {
+                    "id": "existing",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "revision": 0,
+                "observed_at": "2026-10-17T20:36:52.105405+00:00"
+              }
+            }
+          ],
+          "wire_evidence": [
+            {
+              "method": "GET",
+              "path": "/calendar",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "events": {
+                  "existing": {
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "id": "existing",
+                    "metadata": "sentinel",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "observed_at": "2026-10-17T20:36:52.105405+00:00",
+                "revision": 0,
+                "writable": true
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "POST",
+              "path": "/events",
+              "request_body": {
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              },
+              "status": 201,
+              "body": {
+                "accepted": true,
+                "id": "event-0001"
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "GET",
+              "path": "/events/event-0001",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "event": {
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "id": "event-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "title": "M09 required appointment 1"
+                },
+                "observed_at": "2026-10-17T20:36:52.108367+00:00",
+                "revision": 1
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "GET",
+              "path": "/events",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "events": {
+                  "event-0001": {
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "id": "event-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "title": "M09 required appointment 1"
+                  },
+                  "existing": {
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "id": "existing",
+                    "metadata": "sentinel",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "observed_at": "2026-10-17T20:36:52.109026+00:00",
+                "revision": 1,
+                "writable": true
+              },
+              "error": null,
+              "raw_body": null
+            }
+          ],
+          "reason": null,
+          "execution_started": "2026-10-17T20:36:52.105829+00:00",
+          "observed_effects": {
+            "event": {
+              "event": {
+                "id": "event-0001",
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00",
+                "title": "M09 required appointment 1"
+              },
+              "revision": 1,
+              "observed_at": "2026-10-17T20:36:52.108367+00:00"
+            },
+            "state": {
+              "writable": true,
+              "events": {
+                "event-0001": {
+                  "id": "event-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "title": "M09 required appointment 1"
+                },
+                "existing": {
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              },
+              "revision": 1,
+              "observed_at": "2026-10-17T20:36:52.109026+00:00"
+            },
+            "error": null
+          },
+          "completed_at": "2026-10-17T20:36:52.109333+00:00"
+        },
+        "completed_at": "2026-10-17T20:36:52.109576+00:00"
+      },
+      {
+        "index": 1,
+        "started_at": "2026-10-17T20:36:52.110964+00:00",
+        "predecessor_id": "event-0001",
+        "dependency_verdict": "TRUE",
+        "dependency_evidence": {
+          "writable": true,
+          "events": {
+            "event-0001": {
+              "id": "event-0001",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1"
+            },
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me"
+            }
+          },
+          "revision": 1,
+          "observed_at": "2026-10-17T20:36:52.118927+00:00"
+        },
+        "action": {
+          "schema_version": 1,
+          "condition": "A",
+          "run_id": "482d81e8-8788-435a-b0f1-117dc9946457",
+          "timestamp": "2026-10-17T20:36:52.127724+00:00",
+          "operation_id": "create_followup",
+          "formal_goal": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M09 required appointment 2",
+            "forbid_other_changes": true,
+            "max_evidence_age_seconds": 30.0
+          },
+          "inputs": {
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "title": "M09 required appointment 2"
+          },
+          "description_sha256": "0191abe00fb904e9b72362941f9c02ddd4416e1dd1ec4d4ff7a9952bea3ef82d",
+          "compatible": true,
+          "applicability": "TRUE",
+          "execution_decision": "EXECUTE",
+          "api_call_success": true,
+          "api_response": {
+            "status": 201,
+            "body": {
+              "accepted": true,
+              "id": "event-0002"
+            },
+            "error": null,
+            "raw_body": null
+          },
+          "oracle_verdict": {
+            "achieved": true,
+            "reasons": []
+          },
+          "observed_state_change": true,
+          "preconditions": [
+            {
+              "name": "positive_interval",
+              "verdict": "TRUE"
+            },
+            {
+              "name": "local_write_permission",
+              "verdict": "TRUE",
+              "evidence": {
+                "writable": true,
+                "events": {
+                  "event-0001": {
+                    "id": "event-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "title": "M09 required appointment 1"
+                  },
+                  "existing": {
+                    "id": "existing",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "revision": 1,
+                "observed_at": "2026-10-17T20:36:52.128369+00:00"
+              }
+            }
+          ],
+          "wire_evidence": [
+            {
+              "method": "GET",
+              "path": "/calendar",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "events": {
+                  "event-0001": {
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "id": "event-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "title": "M09 required appointment 1"
+                  },
+                  "existing": {
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "id": "existing",
+                    "metadata": "sentinel",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "observed_at": "2026-10-17T20:36:52.128369+00:00",
+                "revision": 1,
+                "writable": true
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "POST",
+              "path": "/followups/event-0001",
+              "request_body": {
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "title": "M09 required appointment 2"
+              },
+              "status": 201,
+              "body": {
+                "accepted": true,
+                "id": "event-0002"
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "GET",
+              "path": "/events/event-0002",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "event": {
+                  "end_time": "2030-01-07T11:00:00+00:00",
+                  "id": "event-0002",
+                  "predecessor_id": "event-0001",
+                  "start_time": "2030-01-07T10:00:00+00:00",
+                  "title": "M09 required appointment 2"
+                },
+                "observed_at": "2026-10-17T20:36:52.130802+00:00",
+                "revision": 2
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "GET",
+              "path": "/events",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "events": {
+                  "event-0001": {
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "id": "event-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "title": "M09 required appointment 1"
+                  },
+                  "event-0002": {
+                    "end_time": "2030-01-07T11:00:00+00:00",
+                    "id": "event-0002",
+                    "predecessor_id": "event-0001",
+                    "start_time": "2030-01-07T10:00:00+00:00",
+                    "title": "M09 required appointment 2"
+                  },
+                  "existing": {
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "id": "existing",
+                    "metadata": "sentinel",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "observed_at": "2026-10-17T20:36:52.131428+00:00",
+                "revision": 2,
+                "writable": true
+              },
+              "error": null,
+              "raw_body": null
+            }
+          ],
+          "reason": null,
+          "execution_started": "2026-10-17T20:36:52.128828+00:00",
+          "observed_effects": {
+            "event": {
+              "event": {
+                "id": "event-0002",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "title": "M09 required appointment 2"
+              },
+              "revision": 2,
+              "observed_at": "2026-10-17T20:36:52.130802+00:00"
+            },
+            "state": {
+              "writable": true,
+              "events": {
+                "event-0001": {
+                  "id": "event-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "title": "M09 required appointment 1"
+                },
+                "event-0002": {
+                  "id": "event-0002",
+                  "start_time": "2030-01-07T10:00:00+00:00",
+                  "end_time": "2030-01-07T11:00:00+00:00",
+                  "title": "M09 required appointment 2"
+                },
+                "existing": {
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              },
+              "revision": 2,
+              "observed_at": "2026-10-17T20:36:52.131428+00:00"
+            },
+            "error": null
+          },
+          "completed_at": "2026-10-17T20:36:52.131788+00:00"
+        },
+        "reason": "Current predecessor establishes temporal dependency",
+        "completed_at": "2026-10-17T20:36:52.132040+00:00"
+      },
+      {
+        "index": 2,
+        "started_at": "2026-10-17T20:36:52.133424+00:00",
+        "predecessor_id": "event-0002",
+        "dependency_verdict": "TRUE",
+        "dependency_evidence": {
+          "writable": true,
+          "events": {
+            "event-0001": {
+              "id": "event-0001",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "title": "M09 required appointment 1"
+            },
+            "event-0002": {
+              "id": "event-0002",
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "title": "M09 required appointment 2"
+            },
+            "existing": {
+              "id": "existing",
+              "start_time": "2030-01-06T09:00:00+00:00",
+              "end_time": "2030-01-06T10:00:00+00:00",
+              "title": "Preserve me"
+            }
+          },
+          "revision": 2,
+          "observed_at": "2026-10-17T20:36:52.143406+00:00"
+        },
+        "action": {
+          "schema_version": 1,
+          "condition": "A",
+          "run_id": "2dd65557-42e7-4b54-b843-02079d24f8ee",
+          "timestamp": "2026-10-17T20:36:52.151663+00:00",
+          "operation_id": "create_followup",
+          "formal_goal": {
+            "start_time": "2030-01-07T11:00:00+00:00",
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "title": "M09 required appointment 3",
+            "forbid_other_changes": true,
+            "max_evidence_age_seconds": 30.0
+          },
+          "inputs": {
+            "start_time": "2030-01-07T11:00:00+00:00",
+            "end_time": "2030-01-07T12:00:00+00:00",
+            "title": "M09 required appointment 3"
+          },
+          "description_sha256": "0191abe00fb904e9b72362941f9c02ddd4416e1dd1ec4d4ff7a9952bea3ef82d",
+          "compatible": true,
+          "applicability": "TRUE",
+          "execution_decision": "EXECUTE",
+          "api_call_success": true,
+          "api_response": {
+            "status": 201,
+            "body": {
+              "accepted": true,
+              "id": "event-0003"
+            },
+            "error": null,
+            "raw_body": null
+          },
+          "oracle_verdict": {
+            "achieved": true,
+            "reasons": []
+          },
+          "observed_state_change": true,
+          "preconditions": [
+            {
+              "name": "positive_interval",
+              "verdict": "TRUE"
+            },
+            {
+              "name": "local_write_permission",
+              "verdict": "TRUE",
+              "evidence": {
+                "writable": true,
+                "events": {
+                  "event-0001": {
+                    "id": "event-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "title": "M09 required appointment 1"
+                  },
+                  "event-0002": {
+                    "id": "event-0002",
+                    "start_time": "2030-01-07T10:00:00+00:00",
+                    "end_time": "2030-01-07T11:00:00+00:00",
+                    "title": "M09 required appointment 2"
+                  },
+                  "existing": {
+                    "id": "existing",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "revision": 2,
+                "observed_at": "2026-10-17T20:36:52.152316+00:00"
+              }
+            }
+          ],
+          "wire_evidence": [
+            {
+              "method": "GET",
+              "path": "/calendar",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "events": {
+                  "event-0001": {
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "id": "event-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "title": "M09 required appointment 1"
+                  },
+                  "event-0002": {
+                    "end_time": "2030-01-07T11:00:00+00:00",
+                    "id": "event-0002",
+                    "predecessor_id": "event-0001",
+                    "start_time": "2030-01-07T10:00:00+00:00",
+                    "title": "M09 required appointment 2"
+                  },
+                  "existing": {
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "id": "existing",
+                    "metadata": "sentinel",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "observed_at": "2026-10-17T20:36:52.152316+00:00",
+                "revision": 2,
+                "writable": true
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "POST",
+              "path": "/followups/event-0002",
+              "request_body": {
+                "start_time": "2030-01-07T11:00:00+00:00",
+                "end_time": "2030-01-07T12:00:00+00:00",
+                "title": "M09 required appointment 3"
+              },
+              "status": 201,
+              "body": {
+                "accepted": true,
+                "id": "event-0003"
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "GET",
+              "path": "/events/event-0003",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "event": {
+                  "end_time": "2030-01-07T12:00:00+00:00",
+                  "id": "event-0003",
+                  "predecessor_id": "event-0002",
+                  "start_time": "2030-01-07T11:00:00+00:00",
+                  "title": "M09 required appointment 3"
+                },
+                "observed_at": "2026-10-17T20:36:52.159420+00:00",
+                "revision": 3
+              },
+              "error": null,
+              "raw_body": null
+            },
+            {
+              "method": "GET",
+              "path": "/events",
+              "request_body": null,
+              "status": 200,
+              "body": {
+                "events": {
+                  "event-0001": {
+                    "end_time": "2030-01-07T10:00:00+00:00",
+                    "id": "event-0001",
+                    "start_time": "2030-01-07T09:00:00+00:00",
+                    "title": "M09 required appointment 1"
+                  },
+                  "event-0002": {
+                    "end_time": "2030-01-07T11:00:00+00:00",
+                    "id": "event-0002",
+                    "predecessor_id": "event-0001",
+                    "start_time": "2030-01-07T10:00:00+00:00",
+                    "title": "M09 required appointment 2"
+                  },
+                  "event-0003": {
+                    "end_time": "2030-01-07T12:00:00+00:00",
+                    "id": "event-0003",
+                    "predecessor_id": "event-0002",
+                    "start_time": "2030-01-07T11:00:00+00:00",
+                    "title": "M09 required appointment 3"
+                  },
+                  "existing": {
+                    "end_time": "2030-01-06T10:00:00+00:00",
+                    "id": "existing",
+                    "metadata": "sentinel",
+                    "start_time": "2030-01-06T09:00:00+00:00",
+                    "title": "Preserve me"
+                  }
+                },
+                "observed_at": "2026-10-17T20:36:52.160034+00:00",
+                "revision": 3,
+                "writable": true
+              },
+              "error": null,
+              "raw_body": null
+            }
+          ],
+          "reason": null,
+          "execution_started": "2026-10-17T20:36:52.152648+00:00",
+          "observed_effects": {
+            "event": {
+              "event": {
+                "id": "event-0003",
+                "start_time": "2030-01-07T11:00:00+00:00",
+                "end_time": "2030-01-07T12:00:00+00:00",
+                "title": "M09 required appointment 3"
+              },
+              "revision": 3,
+              "observed_at": "2026-10-17T20:36:52.159420+00:00"
+            },
+            "state": {
+              "writable": true,
+              "events": {
+                "event-0001": {
+                  "id": "event-0001",
+                  "start_time": "2030-01-07T09:00:00+00:00",
+                  "end_time": "2030-01-07T10:00:00+00:00",
+                  "title": "M09 required appointment 1"
+                },
+                "event-0002": {
+                  "id": "event-0002",
+                  "start_time": "2030-01-07T10:00:00+00:00",
+                  "end_time": "2030-01-07T11:00:00+00:00",
+                  "title": "M09 required appointment 2"
+                },
+                "event-0003": {
+                  "id": "event-0003",
+                  "start_time": "2030-01-07T11:00:00+00:00",
+                  "end_time": "2030-01-07T12:00:00+00:00",
+                  "title": "M09 required appointment 3"
+                },
+                "existing": {
+                  "id": "existing",
+                  "start_time": "2030-01-06T09:00:00+00:00",
+                  "end_time": "2030-01-06T10:00:00+00:00",
+                  "title": "Preserve me"
+                }
+              },
+              "revision": 3,
+              "observed_at": "2026-10-17T20:36:52.160034+00:00"
+            },
+            "error": null
+          },
+          "completed_at": "2026-10-17T20:36:52.160390+00:00"
+        },
+        "reason": "Current predecessor establishes temporal dependency",
+        "completed_at": "2026-10-17T20:36:52.160659+00:00"
+      }
+    ],
+    "runtime_verified": true,
+    "automatic_retries": 0,
+    "repair_iterations": 0,
+    "completed_at": "2026-10-17T20:36:52.162351+00:00"
+  },
+  "fixture_server_closed": true
+}

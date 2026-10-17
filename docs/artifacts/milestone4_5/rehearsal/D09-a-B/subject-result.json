@@ -1,0 +1,42 @@
+{
+  "action": null,
+  "resolution": {
+    "schema_version": 1,
+    "run_id": "0c1ad1a8-b3b9-4763-80d3-246f5dec4e83",
+    "timestamp": "2026-10-17T20:38:14.251464+00:00",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 09",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "inputs": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 09"
+    },
+    "candidates": [
+      {
+        "registration": 0,
+        "operation_id": "https://example.org/provider-a#create_event",
+        "artifact_id": "https://example.org/provider-a#calendar",
+        "compatible": false,
+        "eligible": false,
+        "applicability": "UNKNOWN",
+        "reasons": [
+          "Required input mapping is incomplete or has an unavailable source",
+          "Required input/observation cannot be transformed: unavailable_input"
+        ],
+        "assessment": null,
+        "contract_sha256": "2dac1402bb72186ad778d40fcf4e14adbe3b16b5d6de2fc7e769fd7df564036d"
+      }
+    ],
+    "selected_operation": "https://example.org/provider-a#create_event",
+    "execution_started": false,
+    "rejection_reason": "Selected operation is not uniquely eligible"
+  },
+  "compatible": false,
+  "applicability": null
+}

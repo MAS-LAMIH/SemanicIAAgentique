@@ -1,0 +1,17 @@
+{
+  "id": "candidate-verify",
+  "command": [
+    "python3",
+    "scripts/candidate_v3.py",
+    "--verify"
+  ],
+  "cwd": "/tmp/m45-v3-g59s7wl8",
+  "started_at": "2026-10-17T20:36:33.531842+00:00",
+  "ended_at": "2026-10-17T20:36:34.096454+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.5646181769989198,
+  "tests_run": null,
+  "runner_seconds": null,
+  "log_path": "docs/artifacts/milestone4_5/candidate-verify.log",
+  "nested_runtime": false
+}

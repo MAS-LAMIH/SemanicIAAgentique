@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "applicability": "FALSE",
+      "artifact_id": "https://example.org/provider-a#calendar",
+      "assessment": {
+        "applicability": "FALSE",
+        "preconditions": [
+          {
+            "evidence": {
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "start_time": "2030-01-07T09:00:00+00:00"
+            },
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "reason": "Validated interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {},
+              "observed_at": "2026-10-17T20:37:55.841258+00:00",
+              "revision": 0,
+              "writable": false
+            },
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "reason": "Current observation establishes not writable",
+            "verdict": "FALSE"
+          }
+        ],
+        "validation": {
+          "errors": [],
+          "valid": true
+        }
+      },
+      "compatible": true,
+      "contract_sha256": "e9d36767687577d3c561c084e9e8fbba4488adbad08be08cdc738e0918f2dd0a",
+      "eligible": false,
+      "operation_id": "https://example.org/provider-a#create_event",
+      "reasons": [
+        "Critical applicability is FALSE"
+      ],
+      "registration": 0
+    }
+  ],
+  "execution_started": false,
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 05"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:00:00+00:00",
+    "title": "Diagnostic task 05"
+  },
+  "rejection_reason": "Selected operation is not uniquely eligible",
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "cfe8a1b8-ea4f-4fba-abf0-29c5afdbc5cf",
+  "schema_version": 1,
+  "selected_operation": "https://example.org/provider-a#create_event",
+  "timestamp": "2026-10-17T20:37:55.820594+00:00"
+}

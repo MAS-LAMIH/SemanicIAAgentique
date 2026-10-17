@@ -1,0 +1,44 @@
+[
+  {
+    "path": "/events",
+    "before": {
+      "provider": "a",
+      "observed_at": "2026-10-17T20:36:51.442236+00:00",
+      "revision": 0,
+      "writable": true,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        }
+      },
+      "mutation_calls": 0
+    },
+    "after": {
+      "provider": "a",
+      "observed_at": "2026-10-17T20:36:51.442771+00:00",
+      "revision": 1,
+      "writable": null,
+      "events": {
+        "existing": {
+          "id": "existing",
+          "start_time": "2030-01-06T09:00:00+00:00",
+          "end_time": "2030-01-06T10:00:00+00:00",
+          "title": "Preserve me",
+          "metadata": "sentinel"
+        },
+        "event-0001": {
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "title": "M04 required appointment 1",
+          "id": "event-0001"
+        }
+      },
+      "mutation_calls": 1
+    },
+    "http_status": 201
+  }
+]

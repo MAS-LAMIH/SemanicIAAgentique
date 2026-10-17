@@ -1,0 +1,8 @@
+{
+  "task_id": "M01",
+  "provider": "a",
+  "condition": "A",
+  "status": "RESET_REJECTED",
+  "verified": false,
+  "subject_launched": false
+}

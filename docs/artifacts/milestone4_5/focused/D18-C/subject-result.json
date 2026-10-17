@@ -1,0 +1,294 @@
+{
+  "action": {
+    "schema_version": 1,
+    "run_id": "c4a1b7e4-d75b-49a3-aafa-7b50734eec23",
+    "timestamp": "2026-10-17T20:36:45.058166+00:00",
+    "artifact_id": "https://example.org/provider-a#calendar",
+    "operation_id": "https://example.org/provider-a#create_event",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 18",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "inputs": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 18"
+    },
+    "contract_sha256": "58d3b011a5af8d15a32ac8bb47ad1e36df7f54f473133be9a2eb04d1ff7a9d0e",
+    "preconditions": [
+      {
+        "name": "https://example.org/sam/v1#PositiveInterval",
+        "verdict": "TRUE",
+        "reason": "Validated interval",
+        "evidence": {
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "end_time": "2030-01-07T10:00:00+00:00"
+        }
+      },
+      {
+        "name": "https://example.org/sam/v1#CalendarWritable",
+        "verdict": "TRUE",
+        "reason": "Current observation establishes writable",
+        "evidence": {
+          "revision": 0,
+          "observed_at": "2026-10-17T20:36:45.064345+00:00",
+          "writable": true,
+          "events": {}
+        }
+      }
+    ],
+    "evidence": {
+      "baseline": {
+        "revision": 0,
+        "observed_at": "2026-10-17T20:36:45.064345+00:00",
+        "writable": true,
+        "events": {}
+      }
+    },
+    "applicability": "TRUE",
+    "execution_decision": "EXECUTE",
+    "api_call_success": true,
+    "api_response": {
+      "status": 201,
+      "body": {
+        "id": "event-0001"
+      },
+      "error": null,
+      "raw_body": {
+        "accepted": true,
+        "id": "event-0001"
+      }
+    },
+    "declared_effects": [
+      "https://example.org/sam/v1#NewMatchingEvent"
+    ],
+    "observed_effects": {
+      "event": {
+        "revision": 1,
+        "observed_at": null,
+        "event": {
+          "title": "Diagnostic task 18",
+          "start_time": "2030-01-07T09:00:00+00:00",
+          "id": "event-0001",
+          "end_time": "2030-01-07T10:00:00+00:00"
+        }
+      },
+      "state": {
+        "revision": 1,
+        "observed_at": null,
+        "writable": true,
+        "events": {
+          "event-0001": {
+            "title": "Diagnostic task 18",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "id": "event-0001",
+            "end_time": "2030-01-07T10:00:00+00:00"
+          }
+        }
+      },
+      "error": "Contract observation evidence insufficient"
+    },
+    "observed_state_change": null,
+    "oracle_verdict": {
+      "achieved": false,
+      "reasons": [
+        "Contract observation evidence insufficient",
+        "Missing, stale, or pre-execution event evidence",
+        "Missing, stale, or pre-execution state evidence"
+      ]
+    },
+    "reason": "Contract observation evidence insufficient; Missing, stale, or pre-execution event evidence; Missing, stale, or pre-execution state evidence",
+    "input_validation": {
+      "valid": true,
+      "errors": []
+    },
+    "execution_started": "2026-10-17T20:36:45.064885+00:00",
+    "wire_evidence": [
+      {
+        "canonical_method": "GET",
+        "canonical_path": "/calendar",
+        "wire_method": "GET",
+        "wire_path": "/calendar",
+        "request_body": null,
+        "status": 200,
+        "raw_body": {
+          "events": {},
+          "observed_at": "2026-10-17T20:36:45.064345+00:00",
+          "revision": 0,
+          "writable": true
+        }
+      },
+      {
+        "canonical_method": "POST",
+        "canonical_path": "/events",
+        "wire_method": "POST",
+        "wire_path": "/events",
+        "request_body": {
+          "title": "Diagnostic task 18",
+          "end_time": "2030-01-07T10:00:00+00:00",
+          "start_time": "2030-01-07T09:00:00+00:00"
+        },
+        "status": 201,
+        "raw_body": {
+          "accepted": true,
+          "id": "event-0001"
+        }
+      },
+      {
+        "canonical_method": "GET",
+        "canonical_path": "/events/event-0001",
+        "wire_method": "GET",
+        "wire_path": "/events/event-0001",
+        "request_body": null,
+        "status": 200,
+        "raw_body": {
+          "event": {
+            "end_time": "2030-01-07T10:00:00+00:00",
+            "id": "event-0001",
+            "start_time": "2030-01-07T09:00:00+00:00",
+            "title": "Diagnostic task 18"
+          },
+          "revision": 1
+        }
+      },
+      {
+        "canonical_method": "GET",
+        "canonical_path": "/events",
+        "wire_method": "GET",
+        "wire_path": "/events",
+        "request_body": null,
+        "status": 200,
+        "raw_body": {
+          "events": {
+            "event-0001": {
+              "end_time": "2030-01-07T10:00:00+00:00",
+              "id": "event-0001",
+              "start_time": "2030-01-07T09:00:00+00:00",
+              "title": "Diagnostic task 18"
+            }
+          },
+          "revision": 1,
+          "writable": true
+        }
+      }
+    ],
+    "provider_profile": {
+      "constraints": {
+        "time_grid_seconds": 0,
+        "max_duration_seconds": null,
+        "preserves_other_events": true
+      },
+      "binding": {
+        "create_path": "/events",
+        "baseline_path": "/calendar",
+        "state_path": "/events",
+        "event_path": "/events/{id}",
+        "request_fields": {
+          "title": {
+            "source": "title",
+            "transform": "identity"
+          },
+          "end_time": {
+            "source": "end_time",
+            "transform": "identity"
+          },
+          "start_time": {
+            "source": "start_time",
+            "transform": "identity"
+          }
+        },
+        "event_fields": {
+          "title": {
+            "source": "title",
+            "transform": "identity"
+          },
+          "start_time": {
+            "source": "start_time",
+            "transform": "identity"
+          },
+          "id": {
+            "source": "id",
+            "transform": "identity"
+          },
+          "end_time": {
+            "source": "end_time",
+            "transform": "identity"
+          }
+        },
+        "response_id": "id",
+        "writable_field": "writable",
+        "events_field": "events",
+        "revision_field": "revision",
+        "timestamp_field": "observed_at",
+        "event_field": "event"
+      }
+    },
+    "completed_at": "2026-10-17T20:36:45.068199+00:00"
+  },
+  "resolution": {
+    "schema_version": 1,
+    "run_id": "de51f01b-dfa7-4265-8131-6e9d8c1c0e1a",
+    "timestamp": "2026-10-17T20:36:44.997773+00:00",
+    "formal_goal": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 18",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0
+    },
+    "required_capability": "https://example.org/sam/v1#EventCreation",
+    "inputs": {
+      "start_time": "2030-01-07T09:00:00+00:00",
+      "end_time": "2030-01-07T10:00:00+00:00",
+      "title": "Diagnostic task 18"
+    },
+    "candidates": [
+      {
+        "registration": 0,
+        "operation_id": "https://example.org/provider-a#create_event",
+        "artifact_id": "https://example.org/provider-a#calendar",
+        "compatible": true,
+        "eligible": true,
+        "applicability": "TRUE",
+        "reasons": [],
+        "assessment": {
+          "validation": {
+            "valid": true,
+            "errors": []
+          },
+          "preconditions": [
+            {
+              "name": "https://example.org/sam/v1#PositiveInterval",
+              "verdict": "TRUE",
+              "reason": "Validated interval",
+              "evidence": {
+                "start_time": "2030-01-07T09:00:00+00:00",
+                "end_time": "2030-01-07T10:00:00+00:00"
+              }
+            },
+            {
+              "name": "https://example.org/sam/v1#CalendarWritable",
+              "verdict": "TRUE",
+              "reason": "Current observation establishes writable",
+              "evidence": {
+                "revision": 0,
+                "observed_at": "2026-10-17T20:36:45.045387+00:00",
+                "writable": true,
+                "events": {}
+              }
+            }
+          ],
+          "applicability": "TRUE"
+        },
+        "contract_sha256": "58d3b011a5af8d15a32ac8bb47ad1e36df7f54f473133be9a2eb04d1ff7a9d0e"
+      }
+    ],
+    "selected_operation": "https://example.org/provider-a#create_event",
+    "execution_started": true
+  },
+  "compatible": true,
+  "applicability": "TRUE"
+}

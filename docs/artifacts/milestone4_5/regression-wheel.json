@@ -1,0 +1,21 @@
+{
+  "id": "regression-wheel",
+  "command": [
+    "/tmp/m44-wheel-env/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/semantic_action",
+    "-v"
+  ],
+  "cwd": "/tmp/m45-v3-g59s7wl8",
+  "started_at": "2026-10-17T20:36:07.150667+00:00",
+  "ended_at": "2026-10-17T20:39:34.030196+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 206.87953804599965,
+  "tests_run": 87,
+  "runner_seconds": 206.589,
+  "log_path": "docs/artifacts/milestone4_5/regression-wheel.log",
+  "nested_runtime": false
+}

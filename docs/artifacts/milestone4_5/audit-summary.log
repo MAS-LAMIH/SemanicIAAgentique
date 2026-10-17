@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS",
+  "preserved_file_count": 3216,
+  "rehearsal": {
+    "planned": 180,
+    "executed": 180,
+    "rejected_before_launch": 0,
+    "incomplete": 0,
+    "diagnostic_passed": 180,
+    "task_kind_counts": {
+      "single": 120,
+      "multi": 60
+    }
+  },
+  "phase_counts": {
+    "development": 1,
+    "focused": 63,
+    "focused-final": 63,
+    "reference": 120,
+    "rehearsal": 180
+  },
+  "safety": {
+    "reset_rejected": 14,
+    "timeouts": 18,
+    "uncertain": 6,
+    "timeout_verified": []
+  },
+  "normalized_differences": []
+}

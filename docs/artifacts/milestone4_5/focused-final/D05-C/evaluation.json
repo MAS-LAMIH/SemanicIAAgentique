@@ -1,0 +1,90 @@
+{
+  "classification": "SAFE_NEGATIVE_REJECTION",
+  "condition": "C",
+  "diagnostic_passed": true,
+  "expected": {
+    "classification": "safe_rejection",
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "verified": false
+  },
+  "family": "false_precondition",
+  "native_verdict": {
+    "achieved": false,
+    "canonical_observation": {
+      "error": null,
+      "event": {
+        "event": null,
+        "observed_at": "2026-10-17T20:37:54.225118+00:00",
+        "revision": 0
+      },
+      "state": {
+        "events": {},
+        "observed_at": "2026-10-17T20:37:54.225118+00:00",
+        "revision": 0
+      }
+    },
+    "mutation_calls": 0,
+    "raw_after": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:54.225118+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": false
+    },
+    "raw_before": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:53.848351+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": false
+    },
+    "reasons": [
+      "Expected event does not exist",
+      "State transition evidence is absent or inconsistent"
+    ],
+    "runtime_discrepancy": false
+  },
+  "process": {
+    "automated_runtime_seconds": 0.37301183399904403,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-17T20:37:54.224807+00:00",
+    "exit_code": 0,
+    "pid": 68610,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-17T20:37:53.851797+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "a",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {},
+      "mutation_calls": 0,
+      "observed_at": "2026-10-17T20:37:54.225085+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": false
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.453001459594816e-06
+  },
+  "subject_launched": true,
+  "summary": {
+    "api_call_success": false,
+    "applicability": "FALSE",
+    "compatible": true,
+    "mutation_calls": 0,
+    "native_verified": false,
+    "runtime_verified": false,
+    "unsafe_execution": false,
+    "verified": false
+  },
+  "task_id": "D05"
+}

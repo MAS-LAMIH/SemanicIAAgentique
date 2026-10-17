@@ -1,0 +1,3122 @@
+[
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D01-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D01"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D01-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D01"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D01-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D01"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D01-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D01"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D01-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D01"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D01-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D01"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D02-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D02"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D02-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D02"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D02-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D02"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D02-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D02"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D02-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D02"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D02-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D02"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D03-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D03"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D03-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D03"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D03-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D03"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D03-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D03"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D03-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D03"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D03-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D03"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D04-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D04"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D04-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D04"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D04-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D04"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D04-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D04"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D04-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D04"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D04-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D04"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D05-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "FALSE",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D05"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D05-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "FALSE",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D05"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D05-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "FALSE",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D05"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D05-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "FALSE",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D05"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D05-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "FALSE",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D05"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D05-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "FALSE",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D05"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D06-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D06"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D06-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D06"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D06-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D06"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D06-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D06"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D06-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D06"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D06-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D06"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D07-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D07"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D07-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D07"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D07-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D07"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D07-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D07"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D07-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D07"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D07-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D07"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D08-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D08"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D08-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D08"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D08-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D08"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D08-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D08"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D08-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D08"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D08-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "UNKNOWN",
+      "compatible": true,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D08"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D09-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D09"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D09-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D09"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D09-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D09"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D09-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D09"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D09-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D09"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D09-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D09"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D10-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D10"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D10-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D10"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D10-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D10"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D10-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D10"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D10-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D10"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D10-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D10"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D11-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D11"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D11-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D11"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D11-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D11"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D11-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D11"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D11-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D11"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D11-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D11"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D12-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D12"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D12-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D12"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D12-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D12"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D12-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D12"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D12-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D12"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D12-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D12"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D13-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D13"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D13-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D13"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D13-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D13"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D13-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D13"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D13-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D13"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D13-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D13"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D14-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D14"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D14-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D14"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D14-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D14"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D14-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D14"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D14-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D14"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D14-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D14"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D15-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D15"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D15-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D15"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D15-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D15"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D15-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D15"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D15-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D15"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D15-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D15"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D16-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D16"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D16-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D16"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D16-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D16"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D16-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D16"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D16-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D16"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D16-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D16"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D17-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D17"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D17-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D17"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D17-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D17"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D17-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D17"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D17-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D17"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D17-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D17"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D18-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D18"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D18-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D18"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D18-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D18"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D18-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D18"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D18-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D18"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D18-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D18"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D19-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D19"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D19-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D19"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D19-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D19"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D19-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D19"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D19-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D19"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D19-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D19"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-a-A",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D20"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-a-B",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D20"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-a-C",
+    "provider": "a",
+    "summary": {
+      "api_call_success": true,
+      "applicability": "TRUE",
+      "compatible": true,
+      "mutation_calls": 1,
+      "native_verified": true,
+      "runtime_verified": true,
+      "unsafe_execution": false,
+      "verified": true
+    },
+    "task_id": "D20"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-b-A",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D20"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-b-B",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D20"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/D20-b-C",
+    "provider": "b",
+    "summary": {
+      "api_call_success": false,
+      "applicability": null,
+      "compatible": false,
+      "mutation_calls": 0,
+      "native_verified": false,
+      "runtime_verified": false,
+      "unsafe_execution": false,
+      "verified": false
+    },
+    "task_id": "D20"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M01-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": true,
+      "partial_new_records": 2,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 2
+    },
+    "task_id": "M01"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M01-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": true,
+      "partial_new_records": 2,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 2
+    },
+    "task_id": "M01"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M01-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": true,
+      "partial_new_records": 2,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 2
+    },
+    "task_id": "M01"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M01-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": true,
+      "partial_new_records": 2,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 2
+    },
+    "task_id": "M01"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M01-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": true,
+      "partial_new_records": 2,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 2
+    },
+    "task_id": "M01"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M01-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": true,
+      "partial_new_records": 2,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 2
+    },
+    "task_id": "M01"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M02-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M02"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M02-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M02"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M02-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M02"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M02-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M02"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M02-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M02"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M02-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M02"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M03-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M03"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M03-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M03"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M03-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M03"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M03-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M03"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M03-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M03"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M03-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M03"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M04-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M04"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M04-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M04"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M04-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M04"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M04-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M04"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M04-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M04"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M04-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M04"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M05-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M05"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M05-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M05"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M05-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M05"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M05-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M05"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M05-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M05"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M05-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "REJECTED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M05"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M06-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 3,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M06"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M06-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 3,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M06"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M06-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 3,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M06"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M06-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 3,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M06"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M06-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 3,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M06"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M06-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 3,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M06"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M07-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M07"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M07-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M07"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M07-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M07"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M07-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M07"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M07-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M07"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M07-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M07"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M08-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M08"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M08-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M08"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M08-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M08"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M08-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M08"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M08-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M08"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M08-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 2,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "INCOMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M08"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M09-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 3,
+      "native_verified": true,
+      "partial_new_records": 3,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 3
+    },
+    "task_id": "M09"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M09-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 3,
+      "native_verified": true,
+      "partial_new_records": 3,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 3
+    },
+    "task_id": "M09"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M09-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 3,
+      "native_verified": true,
+      "partial_new_records": 3,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 3
+    },
+    "task_id": "M09"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M09-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 3,
+      "native_verified": true,
+      "partial_new_records": 3,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 3
+    },
+    "task_id": "M09"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M09-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 3,
+      "native_verified": true,
+      "partial_new_records": 3,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 3
+    },
+    "task_id": "M09"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M09-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 3,
+      "native_verified": true,
+      "partial_new_records": 3,
+      "runtime_verified": true,
+      "state_uncertain": false,
+      "status": "COMPLETE",
+      "supervision_status": "COMPLETED",
+      "verified": true,
+      "verified_transitions": 3
+    },
+    "task_id": "M09"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M10-a-A",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M10"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M10-a-B",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M10"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M10-a-C",
+    "provider": "a",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M10"
+  },
+  {
+    "condition": "A",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M10-b-A",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M10"
+  },
+  {
+    "condition": "B",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M10-b-B",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M10"
+  },
+  {
+    "condition": "C",
+    "passed": true,
+    "path": "/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/rehearsal/M10-b-C",
+    "provider": "b",
+    "summary": {
+      "mutation_calls": 1,
+      "native_verified": false,
+      "partial_new_records": 1,
+      "runtime_verified": false,
+      "state_uncertain": false,
+      "status": "BLOCKED",
+      "supervision_status": "COMPLETED",
+      "verified": false,
+      "verified_transitions": 1
+    },
+    "task_id": "M10"
+  }
+]

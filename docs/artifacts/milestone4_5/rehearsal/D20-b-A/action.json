@@ -1,0 +1,31 @@
+{
+  "api_call_success": false,
+  "api_response": null,
+  "applicability": "UNKNOWN",
+  "compatible": false,
+  "completed_at": "2026-10-17T20:39:03.565979+00:00",
+  "condition": "A",
+  "description_sha256": "ec18b1f054c694d25d4755f91b11e14b2f021edd505026addd3e9cb604591dc4",
+  "execution_decision": "REJECT",
+  "formal_goal": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T09:05:00+00:00",
+    "title": "Diagnostic task 20"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T10:00:00+00:00",
+    "start_time": "2030-01-07T09:05:00+00:00",
+    "title": "Diagnostic task 20"
+  },
+  "observed_state_change": null,
+  "operation_id": "reserveAppointment",
+  "oracle_verdict": null,
+  "preconditions": [],
+  "reason": "Booking requires UTC quarter-hour boundaries",
+  "run_id": "91ad6ce0-fd60-46cc-a98e-e9297dd04ae9",
+  "schema_version": 1,
+  "timestamp": "2026-10-17T20:39:03.565901+00:00",
+  "wire_evidence": []
+}

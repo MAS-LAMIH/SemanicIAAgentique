@@ -1,0 +1,21 @@
+{
+  "id": "focused",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "preflight/tests",
+    "-v"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "started_at": "2026-10-17T20:36:17.994540+00:00",
+  "ended_at": "2026-10-17T20:37:20.505722+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 62.51118715800112,
+  "tests_run": 5,
+  "runner_seconds": 62.275,
+  "log_path": "docs/artifacts/milestone4_5/focused.log",
+  "nested_runtime": false
+}

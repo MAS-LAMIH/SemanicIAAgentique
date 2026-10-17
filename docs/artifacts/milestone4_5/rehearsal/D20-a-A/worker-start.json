@@ -1,0 +1,12 @@
+{
+  "fresh_process": true,
+  "persistent_resolution_cache": false,
+  "runtime_guard": {
+    "candidate_commit": "752da7b8de85dd38c7eee30a101b786ea4743821",
+    "manifest_sha256": "53049d7921c31e7f3081606d5f2c6ca327eccf91fbab42152826655cbeeda352",
+    "python_version": "3.12.14",
+    "package_root": "/workspace/SemanicIAAgentique/src/semantic_action",
+    "runtime_members_checked": 28,
+    "matches_V3": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "provider": "booking",
+  "operation": "reserveAppointment",
+  "effect": "stores_requested_event",
+  "encoding": "integer_milliseconds",
+  "preserves_others": true,
+  "max_evidence_age_seconds": 30,
+  "output_fields": {
+    "id": "booking_ref",
+    "start_time": "begins_ms",
+    "end_time": "finishes_ms",
+    "title": "advertised_title"
+  },
+  "authoring_provenance": "Codex; provider-specific implementation from booking service wire/storage specification; shared manuals already visible; no independence claim"
+}

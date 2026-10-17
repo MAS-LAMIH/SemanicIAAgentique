@@ -1,0 +1,457 @@
+{
+  "ai_supervision_minutes": null,
+  "all_approval_gates_pending": true,
+  "candidate_commit": "752da7b8de85dd38c7eee30a101b786ea4743821",
+  "changed_existing_files": [],
+  "commands": {
+    "candidate-history": {
+      "command": [
+        "python3",
+        "scripts/candidate_v3.py",
+        "--verify-history"
+      ],
+      "cwd": "/tmp/m45-v3-g59s7wl8",
+      "elapsed_seconds": 0.08812228999886429,
+      "ended_at": "2026-10-17T20:36:34.250387+00:00",
+      "exit_code": 0,
+      "id": "candidate-history",
+      "log_path": "docs/artifacts/milestone4_5/candidate-history.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:36:34.162267+00:00",
+      "tests_run": null
+    },
+    "candidate-verify": {
+      "command": [
+        "python3",
+        "scripts/candidate_v3.py",
+        "--verify"
+      ],
+      "cwd": "/tmp/m45-v3-g59s7wl8",
+      "elapsed_seconds": 0.5646181769989198,
+      "ended_at": "2026-10-17T20:36:34.096454+00:00",
+      "exit_code": 0,
+      "id": "candidate-verify",
+      "log_path": "docs/artifacts/milestone4_5/candidate-verify.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:36:33.531842+00:00",
+      "tests_run": null
+    },
+    "dependencies-restored": {
+      "command": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/m44-restored-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 0.023093491003237432,
+      "ended_at": "2026-10-17T20:39:48.203434+00:00",
+      "exit_code": 2,
+      "id": "dependencies-restored",
+      "log_path": "docs/artifacts/milestone4_5/dependencies-restored.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:39:48.180336+00:00",
+      "tests_run": null
+    },
+    "dependencies-restored-retry": {
+      "command": [
+        "env",
+        "UV_CACHE_DIR=/workspace/.cache/uv",
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/m44-restored-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 0.024834818999806885,
+      "ended_at": "2026-10-17T20:39:54.339460+00:00",
+      "exit_code": 0,
+      "id": "dependencies-restored-retry",
+      "log_path": "docs/artifacts/milestone4_5/dependencies-restored-retry.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:39:54.314624+00:00",
+      "tests_run": null
+    },
+    "dependencies-source": {
+      "command": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/m44-source-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 0.019594925001001684,
+      "ended_at": "2026-10-17T20:39:47.916401+00:00",
+      "exit_code": 2,
+      "id": "dependencies-source",
+      "log_path": "docs/artifacts/milestone4_5/dependencies-source.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:39:47.896808+00:00",
+      "tests_run": null
+    },
+    "dependencies-source-retry": {
+      "command": [
+        "env",
+        "UV_CACHE_DIR=/workspace/.cache/uv",
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/m44-source-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 0.15620565000062925,
+      "ended_at": "2026-10-17T20:39:54.152840+00:00",
+      "exit_code": 0,
+      "id": "dependencies-source-retry",
+      "log_path": "docs/artifacts/milestone4_5/dependencies-source-retry.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:39:53.996693+00:00",
+      "tests_run": null
+    },
+    "dependencies-wheel": {
+      "command": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/m44-wheel-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 0.017930014000739902,
+      "ended_at": "2026-10-17T20:39:48.049765+00:00",
+      "exit_code": 2,
+      "id": "dependencies-wheel",
+      "log_path": "docs/artifacts/milestone4_5/dependencies-wheel.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:39:48.031830+00:00",
+      "tests_run": null
+    },
+    "dependencies-wheel-retry": {
+      "command": [
+        "env",
+        "UV_CACHE_DIR=/workspace/.cache/uv",
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "/tmp/m44-wheel-env/bin/python"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 0.016128184000990586,
+      "ended_at": "2026-10-17T20:39:54.022933+00:00",
+      "exit_code": 0,
+      "id": "dependencies-wheel-retry",
+      "log_path": "docs/artifacts/milestone4_5/dependencies-wheel-retry.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:39:54.006805+00:00",
+      "tests_run": null
+    },
+    "environment": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "preflight.environment"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 0.44968112700007623,
+      "ended_at": "2026-10-17T20:36:52.523895+00:00",
+      "exit_code": 0,
+      "id": "environment",
+      "log_path": "docs/artifacts/milestone4_5/environment.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:36:52.074222+00:00",
+      "tests_run": null
+    },
+    "focused": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "preflight/tests",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 62.51118715800112,
+      "ended_at": "2026-10-17T20:37:20.505722+00:00",
+      "exit_code": 0,
+      "id": "focused",
+      "log_path": "docs/artifacts/milestone4_5/focused.log",
+      "nested_runtime": false,
+      "runner_seconds": 62.275,
+      "started_at": "2026-10-17T20:36:17.994540+00:00",
+      "tests_run": 5
+    },
+    "focused-final": {
+      "command": [
+        "env",
+        "PREFLIGHT_FOCUSED_OUTPUT=/workspace/SemanicIAAgentique/docs/artifacts/milestone4_5/focused-final",
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "preflight/tests",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 65.24366187200212,
+      "ended_at": "2026-10-17T20:38:53.317598+00:00",
+      "exit_code": 0,
+      "id": "focused-final",
+      "log_path": "docs/artifacts/milestone4_5/focused-final.log",
+      "nested_runtime": false,
+      "runner_seconds": 65.005,
+      "started_at": "2026-10-17T20:37:48.073943+00:00",
+      "tests_run": 5
+    },
+    "reference": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "preflight.rehearsal",
+        "--phase",
+        "reference"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 62.81068914299976,
+      "ended_at": "2026-10-17T20:38:01.773633+00:00",
+      "exit_code": 0,
+      "id": "reference",
+      "log_path": "docs/artifacts/milestone4_5/reference.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:36:58.962953+00:00",
+      "tests_run": null
+    },
+    "regression-restored": {
+      "command": [
+        "/tmp/m44-restored-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/m45-restored-ofr99itm",
+      "elapsed_seconds": 207.67334009600017,
+      "ended_at": "2026-10-17T20:39:34.837992+00:00",
+      "exit_code": 0,
+      "id": "regression-restored",
+      "log_path": "docs/artifacts/milestone4_5/regression-restored.log",
+      "nested_runtime": false,
+      "runner_seconds": 207.228,
+      "started_at": "2026-10-17T20:36:07.164702+00:00",
+      "tests_run": 87
+    },
+    "regression-source": {
+      "command": [
+        "/tmp/m44-source-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/m45-v3-g59s7wl8",
+      "elapsed_seconds": 208.82917398899735,
+      "ended_at": "2026-10-17T20:39:35.993870+00:00",
+      "exit_code": 0,
+      "id": "regression-source",
+      "log_path": "docs/artifacts/milestone4_5/regression-source.log",
+      "nested_runtime": false,
+      "runner_seconds": 208.261,
+      "started_at": "2026-10-17T20:36:07.164711+00:00",
+      "tests_run": 87
+    },
+    "regression-wheel": {
+      "command": [
+        "/tmp/m44-wheel-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/m45-v3-g59s7wl8",
+      "elapsed_seconds": 206.87953804599965,
+      "ended_at": "2026-10-17T20:39:34.030196+00:00",
+      "exit_code": 0,
+      "id": "regression-wheel",
+      "log_path": "docs/artifacts/milestone4_5/regression-wheel.log",
+      "nested_runtime": false,
+      "runner_seconds": 206.589,
+      "started_at": "2026-10-17T20:36:07.150667+00:00",
+      "tests_run": 87
+    },
+    "rehearsal": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "preflight.rehearsal",
+        "--phase",
+        "rehearsal"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "elapsed_seconds": 136.39383189199725,
+      "ended_at": "2026-10-17T20:39:53.298828+00:00",
+      "exit_code": 0,
+      "id": "rehearsal",
+      "log_path": "docs/artifacts/milestone4_5/rehearsal.log",
+      "nested_runtime": false,
+      "runner_seconds": null,
+      "started_at": "2026-10-17T20:37:36.905034+00:00",
+      "tests_run": null
+    }
+  },
+  "condition_parity_differences": [],
+  "confirmatory_results": false,
+  "engineering_validation_only": true,
+  "freeze_approved": false,
+  "fresh_subject_pids": 180,
+  "human_active_minutes": null,
+  "independent_provider_units": 2,
+  "manifest_sha256": "53049d7921c31e7f3081606d5f2c6ca327eccf91fbab42152826655cbeeda352",
+  "native_runtime_disagreements": [
+    "docs/artifacts/milestone4_5/rehearsal/D15-a-A/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D15-a-B/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D15-a-C/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D15-b-A/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D15-b-B/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D15-b-C/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D17-a-A/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D17-a-B/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D17-a-C/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D17-b-A/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D17-b-B/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D17-b-C/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D18-a-A/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D18-a-B/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D18-a-C/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D18-b-A/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D18-b-B/evaluation.json",
+    "docs/artifacts/milestone4_5/rehearsal/D18-b-C/evaluation.json"
+  ],
+  "normalized_differences": [],
+  "output_completeness_failures": [],
+  "phase_counts": {
+    "development": 1,
+    "focused": 63,
+    "focused-final": 63,
+    "reference": 120,
+    "rehearsal": 180
+  },
+  "preserved_file_count": 3216,
+  "provider_c_accessed": false,
+  "recorded_at": "2026-10-17T20:40:15.417710+00:00",
+  "regressions": {
+    "restored": {
+      "command": [
+        "/tmp/m44-restored-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/m45-restored-ofr99itm",
+      "elapsed_seconds": 207.67334009600017,
+      "ended_at": "2026-10-17T20:39:34.837992+00:00",
+      "exit_code": 0,
+      "id": "regression-restored",
+      "log_path": "docs/artifacts/milestone4_5/regression-restored.log",
+      "nested_runtime": false,
+      "runner_seconds": 207.228,
+      "started_at": "2026-10-17T20:36:07.164702+00:00",
+      "tests_run": 87
+    },
+    "source": {
+      "command": [
+        "/tmp/m44-source-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/m45-v3-g59s7wl8",
+      "elapsed_seconds": 208.82917398899735,
+      "ended_at": "2026-10-17T20:39:35.993870+00:00",
+      "exit_code": 0,
+      "id": "regression-source",
+      "log_path": "docs/artifacts/milestone4_5/regression-source.log",
+      "nested_runtime": false,
+      "runner_seconds": 208.261,
+      "started_at": "2026-10-17T20:36:07.164711+00:00",
+      "tests_run": 87
+    },
+    "wheel": {
+      "command": [
+        "/tmp/m44-wheel-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/semantic_action",
+        "-v"
+      ],
+      "cwd": "/tmp/m45-v3-g59s7wl8",
+      "elapsed_seconds": 206.87953804599965,
+      "ended_at": "2026-10-17T20:39:34.030196+00:00",
+      "exit_code": 0,
+      "id": "regression-wheel",
+      "log_path": "docs/artifacts/milestone4_5/regression-wheel.log",
+      "nested_runtime": false,
+      "runner_seconds": 206.589,
+      "started_at": "2026-10-17T20:36:07.150667+00:00",
+      "tests_run": 87
+    }
+  },
+  "rehearsal": {
+    "diagnostic_passed": 180,
+    "executed": 180,
+    "incomplete": 0,
+    "planned": 180,
+    "rejected_before_launch": 0,
+    "task_kind_counts": {
+      "multi": 60,
+      "single": 120
+    }
+  },
+  "rehearsal_status_counts": {
+    "BLOCKED": 12,
+    "COMPLETE": 12,
+    "INCOMPLETE": 24,
+    "REJECTED": 12,
+    "single_action": 120
+  },
+  "safety": {
+    "reset_rejected": 14,
+    "timeout_verified": [],
+    "timeouts": 18,
+    "uncertain": 6
+  },
+  "started_at": "2026-10-17T20:33:01.915493+00:00",
+  "tool_model_wait_minutes": null,
+  "unseal_authorized": false,
+  "verdict": "PASS"
+}
