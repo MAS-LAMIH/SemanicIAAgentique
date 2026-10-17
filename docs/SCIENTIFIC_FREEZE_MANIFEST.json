@@ -1,0 +1,348 @@
+{
+  "approval": {
+    "approved_at": null,
+    "approved_manifest_sha256": null,
+    "approver": null,
+    "status": "pending",
+    "unsealing_decision": null
+  },
+  "approval_document": "docs/HELD_OUT_EVALUATION_PROTOCOL.md",
+  "artifacts": [
+    {
+      "bytes": 1063,
+      "path": "docs/artifacts/milestone4/audit-resource-measurements.json",
+      "sha256": "a1675fb9a98339d4850ee4e472415c8565ff9cb015c814234f8c102065abfee6"
+    },
+    {
+      "bytes": 224314,
+      "path": "docs/artifacts/milestone4/candidate-source.tar.gz",
+      "sha256": "ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69"
+    },
+    {
+      "bytes": 787,
+      "path": "docs/artifacts/milestone4/evaluation-environment.json",
+      "sha256": "1b6db55cd3db7b8f71b08d038af729dfb67684c27092eb9977bfb46eab7668a3"
+    },
+    {
+      "bytes": 3803,
+      "path": "docs/artifacts/milestone4/functional-checks.json",
+      "sha256": "97e1c9d9c9e2da64f3326c7706668dbe614f2a4c991105071dca5469c1707095"
+    },
+    {
+      "bytes": 2100,
+      "path": "docs/artifacts/milestone4/integrity-checks.json",
+      "sha256": "d2eb33dccbcae28fecc9a2f99dc37d0dddacb346f6ea400952036bf6800d0ff2"
+    },
+    {
+      "bytes": 5888,
+      "path": "docs/artifacts/milestone4/restored-tests.log",
+      "sha256": "0f7070ca0005f6845da39477e3f6aca3db826622701811ded298cae2b4f0d357"
+    },
+    {
+      "bytes": 5888,
+      "path": "docs/artifacts/milestone4/source-tests.log",
+      "sha256": "1b671904597cf67a08a18057e680dc59b2c4846def0aad8f818d2335d095c5a5"
+    },
+    {
+      "bytes": 68958,
+      "path": "docs/artifacts/milestone4/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "sha256": "20f75b6635fcf12d7ec029fbe6d70df62edee695be404c31e9eb3ed9cd7d125d"
+    },
+    {
+      "bytes": 4194,
+      "path": "docs/artifacts/milestone4/validation-results.json",
+      "sha256": "b2abef7b390019a950bea8c8e4c062591269cb42c701b5d9f516c6c6d2cca288"
+    },
+    {
+      "bytes": 5888,
+      "path": "docs/artifacts/milestone4/wheel-tests.log",
+      "sha256": "fd5cde1ee1089488754c0f02a8814a08d959ed37c8cec724c74aa11d9d789df5"
+    }
+  ],
+  "candidate_kind": "auditable_working_source_freeze_candidate",
+  "candidate_source_tree_sha256": "a4932f3a3c0afd810af79a77497c9446207537ee1c436666a409dce58db2c932",
+  "dependency_lock": "docs/artifacts/milestone4/evaluation-requirements.txt",
+  "file_groups": {
+    "candidate_preparation_tools": {
+      "docs/artifacts/milestone4/candidate_artifacts.py": "fce12f4a199a8e3fcbaabd4fbd24ef4f985d55f816c2455d7788d030c2b1d53e",
+      "docs/artifacts/milestone4/evaluation-requirements.txt": "9e7c330d1bc4032c8ad12b0e6fd7a587b221ca0849e404ab22a6a1855646ec7a",
+      "docs/freeze-manifest.json": "3ce3a027ef7147b363844ee6da737aaab8b7d26b665acc860c160dee3cd537fa"
+    },
+    "dependencies_and_license": {
+      "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "pyproject.toml": "71d8141a737f8263e0a3d67134aac4173ce23103b87d4acbdd54e970afc3c546",
+      "requirements-semantic.txt": "f4394c579e623d07566beb3c9178e61fb0469de55f70559df2fe3315d0edf39d",
+      "requirements.txt": "2340e8b16af644d73be9c1fd180094e10a7346f9cccbe3a1f9692dfb094c8b82"
+    },
+    "documentation_and_cost_records": {
+      "docs/ARCHITECTURE.md": "0f3fee4f484745faae81eda52f770d7c195a0a36b42a90ecaabf3ce9d1352bc8",
+      "docs/CONTRACT_SEMANTICS.md": "90c5dd8ccfb8572991356c2fcad8fb3854ee4b2d107d2e01b753bcc8624307ef",
+      "docs/IMPLEMENTATION_AUDIT.md": "aa4e812942f250929b9b6ca674f6ef8eb733795a3a07bc828021cb6b665f8d7d",
+      "docs/MILESTONE_1.md": "4afd6fa7dea1a16fb507d33017467bef8ea6ab7493fca4ccd679b1904717f63d",
+      "docs/MILESTONE_2.md": "871a39ca477c43590db9ae830e7aa70152193724b0f3cf6bce2838ec6876d1d4",
+      "docs/MILESTONE_3.md": "e79d325bee6ded8ea7692f709bc41d553fa1689f89663c1fc22e676130001a26",
+      "docs/MILESTONE_3_DESIGN.md": "139588d8b256f6b4d526e8e6ece0291d021dbf5aa7db5818c0532eae2b76376f",
+      "docs/PROVIDER_C_FREEZE_PROCEDURE.md": "e5beecf287e5577f8390860d8e4125e14b1637439e690ca821a45d38f477eb56",
+      "docs/integration_work.jsonl": "b16a5d9d49b1299aa46792a0f6239b28e78b8162b2900a9cca21d0a0357ce491"
+    },
+    "evaluation_fixtures_and_commands": {
+      "contracts/goal.json": "2a8832229f9b6df0ea53f220aed17b823c048dcb638c9203b9db2e6f12c62b6a",
+      "src/semantic_action/__main__.py": "b0c45374e22ca1ef4cb66f77ce51818d750d039bc8ddfc92397709d4b2fe95e8",
+      "src/semantic_action/reuse_demo.py": "3ccd1e87c221e31535ae7cf99abf1bb16279488f490f6ced395da1dac2f1aac6"
+    },
+    "freeze_tools": {
+      "scripts/freeze_manifest.py": "185a0136a20ae29ea30f567a5a1d61eccc0d4cc47725cca2ea3fc98ec99b29b7"
+    },
+    "generic_engine": {
+      "src/semantic_action/__init__.py": "7b9777f920b22d80e7c4c785d30ff87792503dd3abc10eb7c73edde161255163",
+      "src/semantic_action/contract.py": "4098973ab312a8b341a78a9d9bfc31a8b7ed134a3537eaf0fb8137fd877adc63",
+      "src/semantic_action/cost.py": "1e7f6e54a06e3a8c45710c1eacfdd43e0aee70e8ee4ecf3a7893a40f07ea80e4",
+      "src/semantic_action/json_contract.py": "c5051895f78ae9bf895b8a457eb6075a3bc28d3f88b1eb57ed2cc19cf6693198",
+      "src/semantic_action/provider_contract.py": "9eeb1f643998046b66f3b985e953a14585d7715cd12ad73521fbfc096932d3bf",
+      "src/semantic_action/registry.py": "1a2db15fc0b93dd3420a009c778c27e4b14d340c4a2be0d1a620b8a46ac03d76",
+      "src/semantic_action/transform.py": "6c4d937dbb0e48629ea2f482d1554d2ca1e1f9280991c7da691bf631f425be7f"
+    },
+    "original_project_context": {
+      ".env.example": "c38f4889563cf9f4200639055b8d08a680f1aae698232ca2ad89c4fb6cc13d6d",
+      ".gitignore": "e13cf71dd7872f91ed0cae7b9df672041ec04967e37d4a17fb17aeb5d34bb57b",
+      "README.md": "df718744588f73d80fc881abd74edba0fec285d69340ef90e064b6e5cad2132c",
+      "architecture.png": "f61e897f6a0f0e03bf2de090db066111194c30998841394f03daa99ed708fbb5",
+      "architectureEtendue.png": "28b6da48f542797829371ba6420ff4d48b62bb190c91defb8f5506469274a7e7",
+      "graph.png": "b0cc91ea706caafe859034a88293c23bf4b718680e5654c445e91f4b9bb4734d",
+      "graphFactChecker.png": "18de5d041bdcf3d94505cb047b8ac966c8f414c86cc5af2f1852ac9942e227ac",
+      "src/tutorielIAAgentique/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/tutorielIAAgentique/agent.py": "670574b1d9c54bc45f039cb339758c126045dbaa83152487218116d60e5ae515",
+      "src/tutorielIAAgentique/main.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/tutorielIAAgentique/mas.py": "b7321d5c5e4098549ce65b2d36ec07f8507569aed4c9614fef4e975ed093cce2",
+      "src/tutorielIAAgentique/masFactChecker.py": "93998b614eedd02faafecf75e85d7963246e39226d25df4d80fe00347436adff",
+      "src/tutorielIAAgentique/masScore.py": "0de8d180a50de4d9a2551681eeede7fe891b0191c0194f2bd9b5f27711300b15",
+      "src/tutorielIAAgentique/masWithMemory.py": "437f6a3bf4c022866cea2eb920c9214479ee3caee0202f5cb5887f32244e5fdd",
+      "src/tutorielIAAgentique/masWithMemoryAndSelfReflect.py": "0803aa27025b67dae4815fb8332662cd92307905d09d06959512d31730312464",
+      "src/tutorielIAAgentique/masWithPython.py": "d7585d9637cd1edad91d46ff37af6d4fbadedbd97bf9f21bee4eb92348f5d0c3",
+      "src/tutorielIAAgentique/prompt.md": "c068f8a9fc780807c3d4ced22a4bf8acdb70bbb90e2208d9f8c9614835720a80",
+      "src/tutorielIAAgentique/tools.py": "0fef58054d68d4a1102aecbed987c9fac47f9ae3f1903bae35ee5cca732f3905",
+      "src/tutorielIAAgentique/utils.py": "2e2d63205259826b8a9117ff83e98374523e4eefc0d1bc6fa8d917e302e5c406",
+      "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests/test_react_NewYork.py": "4b8cf3b9d59432270f9f4322e691539e4dafb699b704f798d3569557266bc7c0",
+      "tests/test_react_Tokyo.py": "6413baf1b6854218617bd87c5008446c017e7a3a69969ec8dce439a2878cd487",
+      "tests/test_react_weather.py": "24a24c5394a11b4e0957f464fb9ac23cc776fe97aae0e33436610ad3fbda9bc7",
+      "tests/test_tools.py": "53ee6f1eda5613352d91e859f4caeed64dec050349596822ea95141baf59364c"
+    },
+    "provider_specific": {
+      "contracts/calendar.json": "dc9d58079720a21b65db103d0289f78b33b007dd3eba277a3ddaf2733a01f4a3",
+      "contracts/calendar.ttl": "05a5428a2aa9764dc2247445a2a9718b7ceaef3f15fd735858cc9bd172f29a2b",
+      "contracts/providers/a.json": "b821cd49864a3d4d5179be95120644525b63293d6ed2203e1b7d85ff89685d99",
+      "contracts/providers/a.ttl": "44f4009022932aa0c45f478bc11bd7cf80a4ec7930807fec22f4a238c8047951",
+      "contracts/providers/b.json": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7",
+      "contracts/providers/b.ttl": "b7667e81db1ec6afa7b009a65bffb1588f51e1ce84068d04c74fc85c8dab8a72",
+      "docs/providers/PROVIDER_B.md": "e852273d7052d362aebb97991d61d868f0ad29092c55b6b321b03f3bfe015b52",
+      "src/semantic_action/artifact.py": "e6648a5938a0a70aedeee8f0d9e0f7411c61beaf1cdd5aa49e92f0d6c60a60b4",
+      "src/semantic_action/provider_b.py": "df4734aee62babc99b3d735d375bb47366647800667cfa73eb9ff9dca2d73714"
+    },
+    "scientific_protocol_and_audit": {
+      "docs/COST_MEASUREMENT_PROTOCOL.md": "fde0abf3f9ff34b22a65e2632b721c64bf5e1c45519d85b70e8e9852b7b48eb6",
+      "docs/EXPERIMENTAL_PARITY_CHECKLIST.md": "ad1a6ad3b99a6468157aad2ef60003b14ff9673537ccd93f1a27c949d8b71fca",
+      "docs/HELD_OUT_EVALUATION_PROTOCOL.md": "aead544ac4a051f03a0715b43d3c3ee4f277f51de4a8a33f0e7d743600fa05df",
+      "docs/MILESTONE_4_FREEZE_AUDIT.md": "eeb2583767032de38cb8e51ce9b8d2d2ee3504741c8c434fa26c9d2b52a5b7d9"
+    },
+    "shared_semantics_and_mapping_infrastructure": {
+      "contracts/shared-capabilities.ttl": "0066d0ac36c2a347a192024161edf5680f051a0041184531cdafce22c1023621",
+      "contracts/vocabulary.ttl": "9f416f4a834ea25eecddd32e922fc4b8c74c56b1b2d290c29e34d103de234e8f",
+      "src/semantic_action/schemas/contract-v1.schema.json": "4bff920479fb5272b9a7f9b951873d6e8d863dd8b91b10a4ba8c0864c645afa9",
+      "src/semantic_action/schemas/contract-v2.schema.json": "b2cbdc882b535433ec0822dcb78852d74943e8bc3ca57698bc611fc87bea5bc0"
+    },
+    "tests": {
+      "tests/semantic_action/test_parity.py": "81bb81f4a59563df4fcf771bf89de0cc25e40dc66161c5d9399f0bae4bf08b83",
+      "tests/semantic_action/test_pipeline.py": "68d9b650fb1bf57a18f08904c70b91c4279e0bf0cdf2084db8eed1327b489226",
+      "tests/semantic_action/test_registry.py": "6f30ade6f1611461b45ab3dd61d386a54b68f1187d92bcaf8122d66b9cc79dca"
+    },
+    "validation_and_oracle": {
+      "src/semantic_action/model.py": "0f241776b02d70348b09a92755c816fa1524a85c49e5190594180806c73d9f43",
+      "src/semantic_action/oracle.py": "379ca6987d8c1413743b7b77ca7b90d56fbfdae31bd368bcf5da09ec771ac042",
+      "src/semantic_action/pipeline.py": "ce56a2de143c0ff595121eda86555fba31fea619b23f311debfe960486ad4510"
+    }
+  },
+  "generated_at": "2026-10-17T13:55:18.861588+00:00",
+  "git": {
+    "approved_tag_or_archive_digest": null,
+    "base_commit_sha": "b70e8314e3a00f10522e65c82a6b4b3fd29ac4bb",
+    "branch": "codex/semantic-actions-json-rdf-parity",
+    "scientific_freeze_commit_sha": null,
+    "tested_identity": "Per-file SHA-256 plus retained source archive; HEAD alone is insufficient",
+    "working_tree_dirty": true
+  },
+  "human_decisions_required": [
+    "Approve exact candidate source/artifact identity",
+    "Complete and approve condition-A baseline before a three-condition study",
+    "Approve independent native-state observation and oracle expectations",
+    "Approve task counts/seeds/order/budgets/stopping rules",
+    "Approve contributor blinding/exposure and independence",
+    "Approve cost collector/allocation and experimental parity"
+  ],
+  "known_limitations": [
+    "Milestone 3 source is not contained in base HEAD; retained source archive is authoritative for this candidate",
+    "Condition A/API-local is not implemented as an experimental baseline",
+    "Oracle trusts subject output mappings and complete snapshots; independent native-state workflow is prospective",
+    "One calendar capability, fixed transforms/constraints, loopback-only REST and single-writer clocks",
+    "No independently developed organizational providers or externally verified blinding",
+    "Historic effort lacks human-active/supervision/wait decomposition",
+    "Evaluation dependency pins retained, but complete platform/build artifact availability is not guaranteed",
+    "Original live tutorial examples not validated; no Provider C or full confirmatory benchmark"
+  ],
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "protocol_authority": {
+    "basis": "User-supplied frozen ESWC decisions and milestone briefs",
+    "document_digest": null,
+    "pdf_available": false
+  },
+  "python_version": "3.12.14",
+  "resolved_evaluation_dependencies": [
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3"
+    },
+    {
+      "name": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1"
+    },
+    {
+      "name": "tutorielIAAgentique",
+      "version": "0.1.0"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    }
+  ],
+  "schema_version": 1,
+  "scientific_freeze_status": "not_approved",
+  "source_archive_scope": "All file_groups members, including uncommitted source and protocols; excludes this manifest, mutable run evidence, Git metadata, virtualenvs and credentials",
+  "unseal_authorized": false,
+  "validation": {
+    "approval": "pending; these are validation results, not a scientific freeze",
+    "audit_entry_implementation_bytes_unchanged": true,
+    "commands": [
+      {
+        "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 82.102,
+        "errors": 0,
+        "exit_code": 0,
+        "expected_failures": 0,
+        "failed": 0,
+        "id": "source_suite",
+        "log_path": "docs/artifacts/milestone4/source-tests.log",
+        "outcome": "passed",
+        "passed": 50,
+        "skipped": 0,
+        "tests_run": 50,
+        "timing_source": "unittest runner"
+      },
+      {
+        "command": "/tmp/semanic-m4-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "elapsed_seconds": 82.438,
+        "errors": 0,
+        "exit_code": 0,
+        "expected_failures": 0,
+        "failed": 0,
+        "id": "fresh_installed_wheel_suite",
+        "log_path": "docs/artifacts/milestone4/wheel-tests.log",
+        "outcome": "passed",
+        "passed": 50,
+        "skipped": 0,
+        "tests_run": 50,
+        "timing_source": "unittest runner"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv build --wheel --out-dir /tmp/semanic-m4-wheel",
+        "exit_code": 0,
+        "id": "wheel_build",
+        "outcome": "passed"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m4-wheel-env --python python3",
+        "exit_code": 0,
+        "id": "wheel_environment_create",
+        "outcome": "passed"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m4-wheel-env/bin/python -r requirements-semantic.txt /tmp/semanic-m4-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+        "exit_code": 0,
+        "id": "wheel_dependencies_install",
+        "outcome": "passed"
+      },
+      {
+        "command": ".venv/bin/python scripts/freeze_manifest.py --verify docs/freeze-manifest.json",
+        "exit_code": 0,
+        "id": "prior_manifest_entry_verification",
+        "outcome": "passed"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m4-restored-env --python python3",
+        "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+        "exit_code": 0,
+        "id": "restore_environment_create",
+        "outcome": "passed"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m4-restored-env/bin/python -r docs/artifacts/milestone4/evaluation-requirements.txt /workspace/SemanicIAAgentique/docs/artifacts/milestone4/tutorieliaagentique-0.1.0-py3-none-any.whl",
+        "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+        "exit_code": 0,
+        "id": "pinned_restore_install",
+        "outcome": "passed"
+      },
+      {
+        "command": "/tmp/semanic-m4-restored-env/bin/python -m unittest discover -s tests/semantic_action -v",
+        "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+        "elapsed_seconds": 82.525,
+        "errors": 0,
+        "exit_code": 0,
+        "expected_failures": 0,
+        "failed": 0,
+        "id": "archived_source_tests_with_pinned_wheel_environment",
+        "log_path": "docs/artifacts/milestone4/restored-tests.log",
+        "outcome": "passed",
+        "passed": 50,
+        "skipped": 0,
+        "tests_run": 50,
+        "timing_source": "unittest runner"
+      },
+      {
+        "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip check --python /tmp/semanic-m4-wheel-env/bin/python",
+        "cwd": "/workspace/SemanicIAAgentique",
+        "distributions_checked": 9,
+        "exit_code": 0,
+        "id": "dependency_consistency",
+        "outcome": "passed"
+      }
+    ],
+    "functional_checks": "docs/artifacts/milestone4/functional-checks.json",
+    "integrity_probe_evidence": "docs/artifacts/milestone4/integrity-checks.json",
+    "original_live_tutorial_tests": "not run; external-service demonstrations, outside deterministic evaluation scope",
+    "restored_source_tree_sha256": "a4932f3a3c0afd810af79a77497c9446207537ee1c436666a409dce58db2c932",
+    "uv_version": "uv 0.12.23 (x86_64-unknown-linux-gnu)",
+    "wheel_metadata": "Wheel-Version: 1.0\nGenerator: hatchling 1.32.4\nRoot-Is-Purelib: true\nTag: py3-none-any\n"
+  },
+  "verification_command": "python3 docs/artifacts/milestone4/candidate_artifacts.py --verify"
+}

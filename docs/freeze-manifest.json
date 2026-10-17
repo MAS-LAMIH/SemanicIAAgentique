@@ -1,0 +1,480 @@
+{
+  "base_commit": "b70e8314e3a00f10522e65c82a6b4b3fd29ac4bb",
+  "exclusions": [
+    "The manifest itself (self-reference)",
+    "Original tutorial source/tests outside milestone module",
+    "Virtual environments, caches and run artifacts"
+  ],
+  "generated_at": "2026-10-17T13:42:23.178422+00:00",
+  "groups": {
+    "dependencies_and_license": {
+      "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "pyproject.toml": "71d8141a737f8263e0a3d67134aac4173ce23103b87d4acbdd54e970afc3c546",
+      "requirements-semantic.txt": "f4394c579e623d07566beb3c9178e61fb0469de55f70559df2fe3315d0edf39d",
+      "requirements.txt": "2340e8b16af644d73be9c1fd180094e10a7346f9cccbe3a1f9692dfb094c8b82"
+    },
+    "documentation_and_cost_records": {
+      "docs/ARCHITECTURE.md": "0f3fee4f484745faae81eda52f770d7c195a0a36b42a90ecaabf3ce9d1352bc8",
+      "docs/CONTRACT_SEMANTICS.md": "90c5dd8ccfb8572991356c2fcad8fb3854ee4b2d107d2e01b753bcc8624307ef",
+      "docs/IMPLEMENTATION_AUDIT.md": "aa4e812942f250929b9b6ca674f6ef8eb733795a3a07bc828021cb6b665f8d7d",
+      "docs/MILESTONE_1.md": "4afd6fa7dea1a16fb507d33017467bef8ea6ab7493fca4ccd679b1904717f63d",
+      "docs/MILESTONE_2.md": "871a39ca477c43590db9ae830e7aa70152193724b0f3cf6bce2838ec6876d1d4",
+      "docs/MILESTONE_3.md": "e79d325bee6ded8ea7692f709bc41d553fa1689f89663c1fc22e676130001a26",
+      "docs/MILESTONE_3_DESIGN.md": "139588d8b256f6b4d526e8e6ece0291d021dbf5aa7db5818c0532eae2b76376f",
+      "docs/PROVIDER_C_FREEZE_PROCEDURE.md": "e5beecf287e5577f8390860d8e4125e14b1637439e690ca821a45d38f477eb56",
+      "docs/integration_work.jsonl": "b16a5d9d49b1299aa46792a0f6239b28e78b8162b2900a9cca21d0a0357ce491"
+    },
+    "evaluation_fixtures_and_commands": {
+      "contracts/goal.json": "2a8832229f9b6df0ea53f220aed17b823c048dcb638c9203b9db2e6f12c62b6a",
+      "src/semantic_action/__main__.py": "b0c45374e22ca1ef4cb66f77ce51818d750d039bc8ddfc92397709d4b2fe95e8",
+      "src/semantic_action/reuse_demo.py": "3ccd1e87c221e31535ae7cf99abf1bb16279488f490f6ced395da1dac2f1aac6"
+    },
+    "freeze_tools": {
+      "scripts/freeze_manifest.py": "185a0136a20ae29ea30f567a5a1d61eccc0d4cc47725cca2ea3fc98ec99b29b7"
+    },
+    "generic_engine": {
+      "src/semantic_action/__init__.py": "7b9777f920b22d80e7c4c785d30ff87792503dd3abc10eb7c73edde161255163",
+      "src/semantic_action/contract.py": "4098973ab312a8b341a78a9d9bfc31a8b7ed134a3537eaf0fb8137fd877adc63",
+      "src/semantic_action/cost.py": "1e7f6e54a06e3a8c45710c1eacfdd43e0aee70e8ee4ecf3a7893a40f07ea80e4",
+      "src/semantic_action/json_contract.py": "c5051895f78ae9bf895b8a457eb6075a3bc28d3f88b1eb57ed2cc19cf6693198",
+      "src/semantic_action/provider_contract.py": "9eeb1f643998046b66f3b985e953a14585d7715cd12ad73521fbfc096932d3bf",
+      "src/semantic_action/registry.py": "1a2db15fc0b93dd3420a009c778c27e4b14d340c4a2be0d1a620b8a46ac03d76",
+      "src/semantic_action/transform.py": "6c4d937dbb0e48629ea2f482d1554d2ca1e1f9280991c7da691bf631f425be7f"
+    },
+    "provider_specific": {
+      "contracts/calendar.json": "dc9d58079720a21b65db103d0289f78b33b007dd3eba277a3ddaf2733a01f4a3",
+      "contracts/calendar.ttl": "05a5428a2aa9764dc2247445a2a9718b7ceaef3f15fd735858cc9bd172f29a2b",
+      "contracts/providers/a.json": "b821cd49864a3d4d5179be95120644525b63293d6ed2203e1b7d85ff89685d99",
+      "contracts/providers/a.ttl": "44f4009022932aa0c45f478bc11bd7cf80a4ec7930807fec22f4a238c8047951",
+      "contracts/providers/b.json": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7",
+      "contracts/providers/b.ttl": "b7667e81db1ec6afa7b009a65bffb1588f51e1ce84068d04c74fc85c8dab8a72",
+      "docs/providers/PROVIDER_B.md": "e852273d7052d362aebb97991d61d868f0ad29092c55b6b321b03f3bfe015b52",
+      "src/semantic_action/artifact.py": "e6648a5938a0a70aedeee8f0d9e0f7411c61beaf1cdd5aa49e92f0d6c60a60b4",
+      "src/semantic_action/provider_b.py": "df4734aee62babc99b3d735d375bb47366647800667cfa73eb9ff9dca2d73714"
+    },
+    "shared_semantics_and_mapping_infrastructure": {
+      "contracts/shared-capabilities.ttl": "0066d0ac36c2a347a192024161edf5680f051a0041184531cdafce22c1023621",
+      "contracts/vocabulary.ttl": "9f416f4a834ea25eecddd32e922fc4b8c74c56b1b2d290c29e34d103de234e8f",
+      "src/semantic_action/schemas/contract-v1.schema.json": "4bff920479fb5272b9a7f9b951873d6e8d863dd8b91b10a4ba8c0864c645afa9",
+      "src/semantic_action/schemas/contract-v2.schema.json": "b2cbdc882b535433ec0822dcb78852d74943e8bc3ca57698bc611fc87bea5bc0"
+    },
+    "tests": {
+      "tests/semantic_action/test_parity.py": "81bb81f4a59563df4fcf771bf89de0cc25e40dc66161c5d9399f0bae4bf08b83",
+      "tests/semantic_action/test_pipeline.py": "68d9b650fb1bf57a18f08904c70b91c4279e0bf0cdf2084db8eed1327b489226",
+      "tests/semantic_action/test_registry.py": "6f30ade6f1611461b45ab3dd61d386a54b68f1187d92bcaf8122d66b9cc79dca"
+    },
+    "validation_and_oracle": {
+      "src/semantic_action/model.py": "0f241776b02d70348b09a92755c816fa1524a85c49e5190594180806c73d9f43",
+      "src/semantic_action/oracle.py": "379ca6987d8c1413743b7b77ca7b90d56fbfdae31bd368bcf5da09ec771ac042",
+      "src/semantic_action/pipeline.py": "ce56a2de143c0ff595121eda86555fba31fea619b23f311debfe960486ad4510"
+    }
+  },
+  "held_out_provider_status": "No Provider C implemented or examined; future provenance review still required",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "python_version": "3.12.14",
+  "resolved_environment_inventory": [
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.5"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "ddgs",
+      "version": "9.16.0"
+    },
+    {
+      "name": "distro",
+      "version": "1.9.0"
+    },
+    {
+      "name": "faiss-cpu",
+      "version": "1.15.1"
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.3"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.7.0"
+    },
+    {
+      "name": "groq",
+      "version": "0.37.1"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.7.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.13.1"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "httpx-sse",
+      "version": "0.4.3"
+    },
+    {
+      "name": "httpx2",
+      "version": "2.13.1"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.33.0"
+    },
+    {
+      "name": "idna",
+      "version": "3.20"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0"
+    },
+    {
+      "name": "jsonpatch",
+      "version": "1.35"
+    },
+    {
+      "name": "jsonpointer",
+      "version": "3.2.1"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1"
+    },
+    {
+      "name": "langchain",
+      "version": "1.4.6"
+    },
+    {
+      "name": "langchain-classic",
+      "version": "1.0.8"
+    },
+    {
+      "name": "langchain-community",
+      "version": "0.4.2"
+    },
+    {
+      "name": "langchain-core",
+      "version": "1.6.12"
+    },
+    {
+      "name": "langchain-groq",
+      "version": "1.1.3"
+    },
+    {
+      "name": "langchain-protocol",
+      "version": "0.0.19"
+    },
+    {
+      "name": "langchain-text-splitters",
+      "version": "1.1.3"
+    },
+    {
+      "name": "langgraph",
+      "version": "1.2.16"
+    },
+    {
+      "name": "langgraph-checkpoint",
+      "version": "4.3.0"
+    },
+    {
+      "name": "langgraph-prebuilt",
+      "version": "1.1.1"
+    },
+    {
+      "name": "langgraph-sdk",
+      "version": "0.4.8"
+    },
+    {
+      "name": "langsmith",
+      "version": "0.14.11"
+    },
+    {
+      "name": "lxml",
+      "version": "6.1.3"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "multidict",
+      "version": "7.1.0"
+    },
+    {
+      "name": "narwhals",
+      "version": "2.27.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4"
+    },
+    {
+      "name": "orjson",
+      "version": "3.13.0"
+    },
+    {
+      "name": "ormsgpack",
+      "version": "1.13.0"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "primp",
+      "version": "2.0.1"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.1"
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.16.0"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.50.1"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "rdflib",
+      "version": "7.6.0"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0"
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "requests-toolbelt",
+      "version": "1.0.0"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.9.1"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1"
+    },
+    {
+      "name": "sentence-transformers",
+      "version": "6.1.0"
+    },
+    {
+      "name": "setuptools",
+      "version": "78.1.0"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1"
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.1.5"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tenacity",
+      "version": "9.1.4"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.23.3"
+    },
+    {
+      "name": "torch",
+      "version": "2.14.1+cpu"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1"
+    },
+    {
+      "name": "transformers",
+      "version": "5.20.1"
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.5"
+    },
+    {
+      "name": "tutorielIAAgentique",
+      "version": "0.1.0"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.3"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    },
+    {
+      "name": "uuid_utils",
+      "version": "0.17.1"
+    },
+    {
+      "name": "websockets",
+      "version": "16.1.1"
+    },
+    {
+      "name": "Wikipedia-API",
+      "version": "0.16.0"
+    },
+    {
+      "name": "xxhash",
+      "version": "4.0.1"
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1"
+    },
+    {
+      "name": "zstandard",
+      "version": "0.25.0"
+    }
+  ],
+  "schema_version": 1,
+  "status": "freeze_preparation_only",
+  "working_tree_dirty": true
+}

@@ -1,0 +1,16 @@
+@prefix sam: <https://example.org/sam/v1#> .
+@prefix p: <https://example.org/sam/v2#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+sam:EventCreation a sam:Capability ; rdfs:label "Create a stored event matching the formal goal" ;
+    sam:hasExpectedEffect sam:NewMatchingEvent .
+sam:NewMatchingEvent rdfs:comment "Fresh event with requested start, end and title; actual achievement requires independent observation." .
+sam:ReservationRecorded rdfs:comment "A reservation record alone does not establish a stored event goal." .
+p:ProviderContract a rdfs:Class .
+p:entry rdfs:comment "Explicit target-field mapping entry; key names target and value names source/transform." .
+p:constraints rdfs:comment "Finite compatibility constraints: UTC time grid, duration bound, preservation of other events." .
+p:request_fields rdfs:comment "Canonical input to provider wire fields." .
+p:event_fields rdfs:comment "Provider observed fields to canonical event evidence." .
+p:transform rdfs:comment "Closed vocabulary: identity, iso_to_epoch_ms, epoch_ms_to_iso. No arbitrary code." .
+p:Null rdfs:comment "Explicit absence of a provider duration upper bound, not truth of an unknown precondition." .
+<https://example.org/sam/v2> dct:title "Proposed shared capability and binding profile v2" .

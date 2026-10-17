@@ -29,6 +29,9 @@ def load_rdf_contract(path: str | Path) -> Contract:
         graph = Graph().parse(data=Path(path).read_text(encoding='utf-8'), format='turtle')
     except BadSyntax as error:
         raise ValueError('Malformed Turtle contract') from error
+    from .provider_contract import V, load_provider_graph
+    if list(graph.subjects(RDF.type, V.ProviderContract)):
+        return load_provider_graph(graph)
     return _contract_from_graph(graph)
 
 

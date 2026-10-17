@@ -1,4 +1,4 @@
-# Semantic action architecture (Milestones 1–2)
+# Semantic action architecture (Milestones 1–3)
 
 This module is a deterministic semantic execution foundation. It does not use an
 LLM or import the tutorial's agents. JSON and RDF frontends now share the same
@@ -72,3 +72,29 @@ Contract fields and normalized semantic outcomes, not byte-for-byte RDF graph
 round-tripping. See CONTRACT_SEMANTICS.md for the exact mapping and exclusions.
 The schema version selects a fixed profile; neither frontend accepts arbitrary
 new capabilities merely because identifiers look similar.
+
+## Milestone 3: explicit multi-provider capability reuse
+
+See MILESTONE_3_DESIGN.md for the audit recorded before core changes. Contract now
+has an optional ProviderProfile. The legacy v1 path is retained. V2 loaders in
+provider_contract.py share a schema/semantic validator and build identical typed
+profiles; RDF structure uses v2 property IRIs, explicit mapping entries and typed
+literals. It does not hide a JSON document in an RDF literal. Additional or
+unreachable RDF assertions and ambiguous/missing mapping keys reject.
+
+transform.py defines a closed transformation language, known constraint checking,
+and a transport adapter over the existing canonical calendar interface. The
+existing pipeline keeps its stages; it adds v2 profile validation, raw wire
+capture and a read-only assess method. ApiResult has optional raw_body. The
+independent oracle is unchanged. registry.py implements local registrations,
+exact capability/effect compatibility, read-only applicability probes, explicit
+selection, and revalidation through Executor.run. No provider names appear in
+the generic resolver or transform engine.
+
+provider_b.py is a separate appointment REST fixture with its own wire/storage
+model and constraints. Provider-local descriptions live in contracts/providers/;
+shared meanings live in contracts/shared-capabilities.ttl. reuse_demo.py is
+explicit evaluation wiring that starts both fixtures, not generic provider
+knowledge. No Provider C appears in the generic machinery. The new registry
+resolves candidates for one action; it is not a multi-step planner or general
+substitution proof system. See MILESTONE_3.md for cost/provenance qualifications.

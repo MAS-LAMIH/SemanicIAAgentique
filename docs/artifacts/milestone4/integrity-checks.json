@@ -1,0 +1,44 @@
+[
+  {
+    "check": "restored_integrity",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m4-restored-source-p6bwey_i/docs/artifacts/milestone4/candidate_artifacts.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+    "exit_code": 0,
+    "expected_nonzero": false,
+    "passed": true,
+    "stdout": "Candidate file, archive-member and artifact hashes verified; scientific approval remains pending.\n",
+    "stderr": ""
+  },
+  {
+    "check": "expected_tamper_rejection",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m4-restored-source-p6bwey_i/docs/artifacts/milestone4/candidate_artifacts.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+    "exit_code": 1,
+    "expected_nonzero": true,
+    "passed": true,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/semanic-m4-restored-source-p6bwey_i/docs/artifacts/milestone4/candidate_artifacts.py\", line 165, in <module>\n    main()\n  File \"/tmp/semanic-m4-restored-source-p6bwey_i/docs/artifacts/milestone4/candidate_artifacts.py\", line 161, in main\n    prepare(args.wheel_source) if args.prepare else verify()\n                                                    ^^^^^^^^\n  File \"/tmp/semanic-m4-restored-source-p6bwey_i/docs/artifacts/milestone4/candidate_artifacts.py\", line 72, in verify\n    raise ValueError('Source/protocol hash mismatch: '+name)\nValueError: Source/protocol hash mismatch: src/semantic_action/registry.py\n"
+  },
+  {
+    "check": "restored_integrity_after_probe",
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "/tmp/semanic-m4-restored-source-p6bwey_i/docs/artifacts/milestone4/candidate_artifacts.py",
+      "--verify"
+    ],
+    "cwd": "/tmp/semanic-m4-restored-source-p6bwey_i",
+    "exit_code": 0,
+    "expected_nonzero": false,
+    "passed": true,
+    "stdout": "Candidate file, archive-member and artifact hashes verified; scientific approval remains pending.\n",
+    "stderr": ""
+  }
+]
