@@ -1,0 +1,117 @@
+{
+  "commands": [
+    {
+      "id": "historical_baseline",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 50,
+      "passed": 50,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 82.39,
+      "log_path": "docs/artifacts/milestone4_1/baseline-tests.log"
+    },
+    {
+      "id": "first_new_component_suite",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 13,
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 62.737,
+      "log_path": "docs/artifacts/milestone4_1/initial-new-tests.log"
+    },
+    {
+      "id": "intermediate_source",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 64,
+      "passed": 64,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.289,
+      "log_path": "docs/artifacts/milestone4_1/intermediate-source-tests.log"
+    },
+    {
+      "id": "intermediate_wheel",
+      "command": "/tmp/semanic-m41-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 64,
+      "passed": 64,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 145.633,
+      "log_path": "docs/artifacts/milestone4_1/intermediate-wheel-tests.log"
+    },
+    {
+      "id": "final_source",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 65,
+      "passed": 65,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 146.72,
+      "log_path": "docs/artifacts/milestone4_1/source-tests.log"
+    },
+    {
+      "id": "final_installed_wheel",
+      "command": "/tmp/semanic-m41-final-wheel-env/bin/python -m unittest discover -s tests/semantic_action -v",
+      "cwd": "/workspace/SemanicIAAgentique",
+      "exit_code": 0,
+      "tests_run": 65,
+      "passed": 65,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 147.009,
+      "log_path": "docs/artifacts/milestone4_1/wheel-tests.log"
+    },
+    {
+      "id": "build_final_wheel",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv build --wheel --out-dir /tmp/semanic-m41-final-wheel",
+      "exit_code": 0
+    },
+    {
+      "id": "create_fresh_wheel_environment",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv venv /tmp/semanic-m41-final-wheel-env --python python3",
+      "exit_code": 0
+    },
+    {
+      "id": "install_final_wheel",
+      "command": "UV_CACHE_DIR=/workspace/.cache/uv uv pip install --python /tmp/semanic-m41-final-wheel-env/bin/python -r docs/artifacts/milestone4/evaluation-requirements.txt /tmp/semanic-m41-final-wheel/tutorieliaagentique-0.1.0-py3-none-any.whl",
+      "exit_code": 0
+    },
+    {
+      "id": "safety_regression",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -k test_unsafe_mutation_attempt -v",
+      "exit_code": 0,
+      "tests_run": 1,
+      "passed": 1
+    },
+    {
+      "id": "expanded_raw_state_invariant_regression",
+      "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -p test_pre_freeze.py -k test_snapshot_deep_copy -v",
+      "exit_code": 0,
+      "tests_run": 1,
+      "passed": 1
+    }
+  ],
+  "matrix": "20 diagnostic tasks x 2 visible providers x 3 conditions",
+  "actual_retained_examples": 24,
+  "candidate_approval": "pending",
+  "unseal_authorized": false,
+  "scope": "Public apparatus validation, not sealed evaluation or empirical human cost comparison",
+  "note": "Intermediate logs retained honestly; final source/wheel and restored suite establish candidate readiness. Expanded native-state invariant was additionally checked after initial full-suite launch."
+}

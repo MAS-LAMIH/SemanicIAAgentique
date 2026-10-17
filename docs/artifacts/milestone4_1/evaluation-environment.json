@@ -1,7 +1,7 @@
 {
   "python_version": "3.12.14",
   "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
-  "interpreter": "/tmp/semanic-m41-final-wheel-env/bin/python",
+  "interpreter": "/tmp/semanic-m41-v2-wheel-env/bin/python",
   "packages": [
     {
       "name": "attrs",
