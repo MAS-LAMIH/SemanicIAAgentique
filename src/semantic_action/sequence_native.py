@@ -2,7 +2,21 @@
 from copy import deepcopy
 from dataclasses import dataclass, asdict
 from .model import Goal, instant
-from .native_verifier import NativeSnapshot, NativeExpectation, adjudicate
+from typing import Callable
+from .native_verifier import NativeSnapshot, NativeExpectation, NativeInterpretation, adjudicate
+
+
+@dataclass(frozen=True)
+class ChainInterpretation:
+    """Trusted curator-owned observation binding, never selected by subject manuals.
+
+    General truth stays frozen: decode existing event fields and the native parent
+    relation only. Provenance text is not authentication or human approval.
+    """
+    provider: str
+    event_interpretation: NativeInterpretation
+    predecessor_of: Callable[[dict], str | None]
+    source_reference: str
 
 
 @dataclass(frozen=True)
@@ -15,13 +29,29 @@ class ChainExpectation:
             raise ValueError('Only bounded chain expectations supported')
 
 
-def verify_chain(expectation, initial, final, transitions):
+def verify_chain(expectation, initial, final, transitions, interpretation=None):
     """Curator expectations come from domain tasks, not the subject plan/trace."""
     reasons, steps = [], []
-    if initial.provider not in {'a', 'b'} or final.provider != initial.provider:
-        return {'achieved': False, 'reasons': ['Unsupported or inconsistent native provider'],
-                'transitions': [], 'verified_transition_count': 0, 'partial_native_state': asdict(final),
+    def unsupported(reason):
+        return {'achieved': False, 'reasons': [reason], 'transitions': [],
+                'verified_transition_count': 0, 'partial_native_state': asdict(final),
                 'expected_action_count': len(expectation.goals)}
+    if final.provider != initial.provider:
+        return unsupported('Inconsistent native provider')
+    if interpretation is None:
+        if initial.provider not in {'a', 'b'}:
+            return unsupported('No curator-owned chain interpretation supplied')
+        field = 'predecessor_id' if initial.provider == 'a' else 'previous_booking'
+        predecessor_of = lambda event: event.get(field)
+        event_interpretation = None
+    else:
+        if (not isinstance(interpretation, ChainInterpretation) or interpretation.provider != initial.provider
+                or not isinstance(interpretation.event_interpretation, NativeInterpretation)
+                or interpretation.event_interpretation.provider != initial.provider
+                or not interpretation.source_reference or not callable(interpretation.predecessor_of)):
+            return unsupported('Invalid curator-owned chain interpretation')
+        predecessor_of = interpretation.predecessor_of
+        event_interpretation = interpretation.event_interpretation
     if initial.events != expectation.initial_records:
         reasons.append('Initial reference state mismatch')
     if len(transitions) != len(expectation.goals):
@@ -41,15 +71,19 @@ def verify_chain(expectation, initial, final, transitions):
             reasons.append('Unobserved mutation between transitions')
         if before.writable is not True:
             reasons.append('Mutation without native TRUE permission')
-        native = adjudicate(NativeExpectation(expectation.goals[index]), before, after, before.observed_at)
+        native = adjudicate(NativeExpectation(expectation.goals[index]), before, after, before.observed_at,
+                            interpretation=event_interpretation)
         created = set(after.events) - set(before.events)
         event_id = next(iter(created)) if len(created) == 1 else None
         if after.mutation_calls - before.mutation_calls != 1:
             reasons.append('Each required action must have exactly one mutation attempt')
         if index:
-            field = 'predecessor_id' if after.provider == 'a' else 'previous_booking'
             event = after.events.get(event_id) or {}
-            if not previous_id or event.get(field) != previous_id:
+            try:
+                relation = predecessor_of(event)
+            except (KeyError, ValueError, TypeError, OverflowError):
+                relation = None
+            if not previous_id or relation != previous_id:
                 native['achieved'] = False
                 native['reasons'].append('Missing or wrong native predecessor relation')
             # Domain ordering is checked independently of the sequence guard and manual.

@@ -112,8 +112,8 @@ measurements from lifecycle/cache architecture and links the negative controls.
 ## Validation and reproduction
 
 Final suite IDs are `source_full`, `wheel_full`, `restored_full` in
-`artifacts/milestone4_3/validation-results.json`. Each has 86 test methods: 66 regression
-and 20 new. The two differential matrices exercise 120 original and 60 multi-step
+`artifacts/milestone4_3/validation-results.json`. Each final suite has 87 test methods: 66 regression
+and 21 new; earlier 86-test stages remain separately labeled. The two differential matrices exercise 120 original and 60 multi-step
 condition/provider/task executions per full suite, plus operational/native/reset
 probes; test methods/executions/repetitions are not provider sample size.
 Source and wheel final logs, restored-archive log, exact commands, exit codes,
@@ -126,8 +126,13 @@ a textual import check matched a comment; the failed-subtest list comparison the
 raised IndexError. Resolver/pipeline safety already blocked the second mutation.
 The sequence adapter now preserves FALSE/REJECT versus UNKNOWN/BLOCK; the test checks
 AST imports and keeps all compared summaries. The retained corrected intermediate
-18-method run passed in 54.403 s. Two additional operational tests brought final new
-coverage to 20. Failed logs and linked rework records remain; nothing was relabeled
+18-method run passed in 54.403 s. Two additional operational tests brought coverage to 20. Final review then
+found the native relation reader was A/B-only: an evaluator-owned ChainInterpretation
+now supplies a provider-local event interpretation and predecessor decoder without
+changing goal/link/preservation truth. Unknown identities fail closed without that
+reviewed observer. A synthetic in-memory test (no new API/provider) exercises it,
+bringing final new coverage to 21 and final total to 87. Pre-extension 86-test source,
+wheel and restoration results/archives remain separate from final candidate evidence. Failed logs and linked rework records remain; nothing was relabeled
 as historical success. A final whitespace check identified RDFLib-generated extra
 blank lines at Turtle EOF; they were normalized without changing the RDF graphs.
 The pre-format archive/restoration log are retained separately; final restoration

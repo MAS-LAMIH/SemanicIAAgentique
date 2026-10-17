@@ -243,6 +243,26 @@ class OperationalTests(unittest.TestCase):
 
 
 class SequenceNativeTests(unittest.TestCase):
+    def test_curator_owned_relation_extension_without_core_truth_change(self):
+        from semantic_action.native_verifier import NativeInterpretation
+        from semantic_action.sequence_native import ChainInterpretation
+        goals = pilot_tasks()[0].domain_goals()
+        provider = 'chain-observer-test-double'
+        before = NativeSnapshot(provider, now(), 0, True, {}, 0)
+        first = dict(id='one', start_time=goals[0].start_time, end_time=goals[0].end_time, title=goals[0].title, parent=None)
+        middle = NativeSnapshot(provider, now(), 1, True, {'one': first}, 1)
+        second = dict(id='two', start_time=goals[1].start_time, end_time=goals[1].end_time, title=goals[1].title, parent='one')
+        final = NativeSnapshot(provider, now(), 2, True, {'one': first, 'two': second}, 2)
+        transitions = [{'before': asdict(before), 'after': asdict(middle)},
+                       {'before': asdict(middle), 'after': asdict(final)}]
+        expectation = ChainExpectation(goals, {})
+        self.assertFalse(verify_chain(expectation, before, final, transitions)['achieved'])
+        native = NativeInterpretation(provider, lambda item: {k: item[k] for k in ('id', 'start_time', 'end_time', 'title')}, 'synthetic event binding')
+        reader = ChainInterpretation(provider, native, lambda item: item['parent'], 'synthetic relation binding')
+        self.assertTrue(verify_chain(expectation, before, final, transitions, reader)['achieved'])
+        self.assertFalse(verify_chain(expectation, before, final, transitions, replace(reader, provider='wrong'))['achieved'])
+        self.assertFalse(verify_chain(expectation, before, final, transitions, replace(reader, predecessor_of=lambda item: 'wrong'))['achieved'])
+
     def test_missing_required_transition_never_verifies(self):
         goals = pilot_tasks()[0].domain_goals()
         state = Scenario()

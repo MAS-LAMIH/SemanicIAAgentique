@@ -50,3 +50,13 @@ selection are unsupported and must reject. Profile keys/cardinalities and local 
 references are closed; unknown effects do not execute. Shared validation is procedural
 and finite, not general OWL reasoning. New profiles are a V3 addition and never alter
 V2's identity. Scientific approval and future-provider unsealing remain pending.
+
+## Evaluator-owned observation extension
+
+`ChainInterpretation` accepts an existing `NativeInterpretation` and a native
+predecessor-relation reader, bound to the same provider identity and provenance.
+Unknown identities fail closed without this trusted curator-owned binding. The
+subject manual must never choose it. Goal truth, exact required transitions and
+raw preservation remain unchanged; no provider-specific expected answer is accepted.
+The observer reference is not proof of independent human review. A synthetic
+in-memory test exercises the boundary without another service or Provider C material.
