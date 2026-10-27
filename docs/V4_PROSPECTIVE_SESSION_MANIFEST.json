@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "kind": "proposed_session_plan_not_execution",
+  "prepared_at_utc": "2026-10-27T21:18:41.703633+00:00",
+  "preparation_base_commit": "1e5704d7d43440f4872923582be9194805f55965",
+  "code_evidence_baseline": "0372f3b507fdb1e1bffe48c00074cb30ec62e6a0",
+  "protocol": {
+    "path": "docs/V4_PROSPECTIVE_EXPERIMENT_PROTOCOL.md",
+    "sha256": "02db8ec6ebbbccea2b34212cdd3a70eb77934a6b0aef524e1ba3effb64a4442a",
+    "committed_sessions": 3,
+    "planned_sessions": 9,
+    "change_authority": "latest investigator preparation request; execution of combined addendum not authorized"
+  },
+  "study": {
+    "provider_units": 1,
+    "planned_integration_sessions": 9,
+    "sessions_per_condition": 3,
+    "primary_comparison": "A versus B",
+    "secondary_comparison": "B versus C",
+    "additional_comparison": "A versus C",
+    "percentage_effort_threshold": null,
+    "correctness_required_before_effort_interpretation": true,
+    "statistically_generalizable": false
+  },
+  "authorization": {
+    "execution_authorized": false,
+    "provider_unsealing_authorized": false,
+    "investigator_identity": null,
+    "decision_reference": null
+  },
+  "assignment": {
+    "seed": 20270319,
+    "algorithm": "SHA256 lexical-hexdigest sort of UTF-8 v4-nine-session-order-v1|20270319|<condition> over A,B,C; group g=0,1,2 takes left cyclic rotation by g; slot IDs follow serial order",
+    "base_order": [
+      "B",
+      "C",
+      "A"
+    ],
+    "groups": 3,
+    "serial": true,
+    "model_seed_policy": "Request listed seed only if model supports it; otherwise actual seed null with reason; no resampling"
+  },
+  "common_environment": {
+    "model_id": null,
+    "model_version": null,
+    "reasoning_settings": null,
+    "context_limit_tokens": null,
+    "image_sha256": null,
+    "cpu_allocation": null,
+    "memory_allocation_bytes": null,
+    "tool_surface": null,
+    "cache_policy": null,
+    "isolation_verified": false,
+    "session_admission_controls_verified": false
+  },
+  "equal_budget_proposal": {
+    "wall_clock_seconds": 2700,
+    "model_requests": 64,
+    "total_input_output_tokens": 120000,
+    "leaf_tool_requests": 256,
+    "submitted_revisions": 3,
+    "concurrent_model_requests": 1,
+    "concurrent_tool_requests": 1,
+    "hard_limit_enforcement_currently_verified": false,
+    "token_counts_policy": "all reported input and output, including cached/repeated input; unknown counters null, not zero",
+    "session_deadline": "existing external platform/operator deadline and admission revocation required; not supplied by invocation supervisor",
+    "call_limits": "hard only with verified admission counters; transcript-only counts are logged targets",
+    "token_limit": "logged-only when known only after response; needs hard-budget support or explicit common amendment",
+    "fallback_policy": "no silent downgrade; authorize same logged-target revision or choose enforceable platform before exposure",
+    "projected_maximum_integration_window_sum_seconds": 24300
+  },
+  "condition_write_allowlists": {
+    "A": [
+      "submission/adapter.py",
+      "submission/entrypoint.py",
+      "submission/connection.json",
+      "submission/local_tests/**",
+      "submission/notes.md"
+    ],
+    "B": [
+      "submission/operation.json",
+      "submission/entrypoint.py",
+      "submission/connection.json",
+      "submission/local_tests/**",
+      "submission/notes.md"
+    ],
+    "C": [
+      "submission/operation.ttl",
+      "submission/entrypoint.py",
+      "submission/connection.json",
+      "submission/local_tests/**",
+      "submission/notes.md"
+    ]
+  },
+  "read_only_asset_categories": {
+    "common_runtime_read_only": [
+      "src/semantic_capability_v4/__init__.py",
+      "src/semantic_capability_v4/http.py",
+      "src/semantic_capability_v4/mapping.py",
+      "src/semantic_capability_v4/model.py",
+      "src/semantic_capability_v4/validation.py"
+    ],
+    "semantic_runtime_read_only": [
+      "src/semantic_capability_v4/descriptions.py",
+      "src/semantic_capability_v4/registry.py",
+      "src/semantic_capability_v4/invoke.py",
+      "v4/vocabulary.json"
+    ],
+    "baseline_shared_read_only": [
+      "src/api_local_v4/__init__.py",
+      "src/api_local_v4/common.py"
+    ],
+    "visible_examples_read_only": [
+      "src/api_local_v4/a.py",
+      "src/api_local_v4/b.py",
+      "v4/descriptions/a.json",
+      "v4/descriptions/a.ttl",
+      "v4/descriptions/b.json",
+      "v4/descriptions/b.ttl",
+      "v4/README.md",
+      "v4/PILOT_README.md"
+    ],
+    "operator_evaluator_reference_read_only": [
+      "v4_pilot/native.py",
+      "v4_pilot/tasks.py",
+      "v4_pilot/driver.py",
+      "v4_pilot/worker.py",
+      "src/semantic_action/supervision.py",
+      "src/semantic_action/artifact.py",
+      "src/semantic_action/provider_b.py"
+    ],
+    "public_method_references_read_only": [
+      "docs/V4_SIMPLIFIED_ARCHITECTURE.md",
+      "docs/V4_MINIMAL_EXPERIMENT.md",
+      "docs/V4_COMPARATIVE_PILOT_REPORT.md",
+      "docs/V4_PROSPECTIVE_EXPERIMENT_PROTOCOL.md"
+    ]
+  },
+  "read_only_sha256": {
+    "docs/V4_COMPARATIVE_PILOT_REPORT.md": "f0b556c26f57e3b9c0afee55b5d8ca5930b3da20cf60e86da4dc35a6d364d989",
+    "docs/V4_MINIMAL_EXPERIMENT.md": "5c1250cf0731878d29ee9068dc3ae40ac8b0ab53c7a7f6a1923a2e3bdd43b7e2",
+    "docs/V4_PROSPECTIVE_EXPERIMENT_PROTOCOL.md": "02db8ec6ebbbccea2b34212cdd3a70eb77934a6b0aef524e1ba3effb64a4442a",
+    "docs/V4_SIMPLIFIED_ARCHITECTURE.md": "01c3b374e657580f953223706dfb9bffb14a07711d86d7366cea507bac0631ed",
+    "src/api_local_v4/__init__.py": "834b02333eda5ef481f5fdec4bcc3b712999861d2d7240de4eb73654acd40fd3",
+    "src/api_local_v4/a.py": "db5c0327e95f7d73ca1cd926e742b6e2d17aa64fd2e65911494922f8397fc107",
+    "src/api_local_v4/b.py": "5d4742cb93605a24ab44650bbe54f392156682cb0cecfa886726f4a93b1857a8",
+    "src/api_local_v4/common.py": "4c32a5243ca9f0842ac5298ecd369f9cc35a3785e884d7df91c1516905aa93e1",
+    "src/semantic_action/artifact.py": "f3265de6a747092b0e74f06578d5c37bf4d3c7933f7b9b08a3c9064f5558badd",
+    "src/semantic_action/provider_b.py": "e1ff70938fe4c98abed96fdf6aa95a154d7b23540789a117a9de51d71ca41107",
+    "src/semantic_action/supervision.py": "f9f0d8c99f069f98047ed0481da18f4724525c55d200efcd02ff3eb53f294a8f",
+    "src/semantic_capability_v4/__init__.py": "8ab5cae4fd6a2b0720e0eeeb0bd4c6e4d68e4b1f137d01deae403badd7ad7f38",
+    "src/semantic_capability_v4/descriptions.py": "d0714effcd70db0c564e19f5fe8733591d55efe748bab07ce9e65cbf2bb2e6f6",
+    "src/semantic_capability_v4/http.py": "e1e1c82904f87265faf01daac0be683bfafb8c90adabb7aa5e2175fb5997c754",
+    "src/semantic_capability_v4/invoke.py": "b083cc07addf95142993ee1746621058fc0d40019796433ee41db28c576ef7c8",
+    "src/semantic_capability_v4/mapping.py": "3bf6e88be44cb1c2ee01b6f925ad4380efee1ca5edf0c8c69706d5c8c76101aa",
+    "src/semantic_capability_v4/model.py": "8a085a3417d6e2842fc305cde642fcd53f7b0a78ff199004e9e0295a6a57a397",
+    "src/semantic_capability_v4/registry.py": "6de9ab11f36f1698c139b81105642969c750c909baaec7eb4db7890656fb1937",
+    "src/semantic_capability_v4/validation.py": "3db4eb858a9df3bf541ce73df60d523129fd3d167c403cb5bf5f12040c095aa8",
+    "v4/PILOT_README.md": "07b77b862a894adf9aa7dce2c99a9059f79064e04bcfa859c3badc922cd5b009",
+    "v4/README.md": "5d27aa7d7315855b44842cfe72efff84bd59a8c3bbb8279ef334d54e8aca0bb7",
+    "v4/descriptions/a.json": "35c0af705e403db70e66c75f262c7bf9590da0bf49df3b10234ef2b675126c4f",
+    "v4/descriptions/a.ttl": "f9338626ec934f52df21c51ac47270886589b859911ace30191fe20e81f7a281",
+    "v4/descriptions/b.json": "95fb3c6647e99ca265225611b7f43c49b880f9b0cb8625aba1f42f8024f3300f",
+    "v4/descriptions/b.ttl": "4ac874f1edefaa995c2f5f53698b40250a6fc987408af509daa83912f463e815",
+    "v4/vocabulary.json": "08e1970430fdd92e5f7c823e1b794b2025b78af61b8825876ba09c842a73bf95",
+    "v4_pilot/driver.py": "2fa5a7f9912ddfcfa91f6ab85dbe77375d621a420f55a83666cdd54681f8d023",
+    "v4_pilot/native.py": "7d583c3a640e5d8bb243423afa419b9b4ca86f8a45ff8f17d05512b398076ca9",
+    "v4_pilot/tasks.py": "ba82d0da9b04b705e80335a2359f520fee36f4bc2e8dc36afb680650de92714d",
+    "v4_pilot/worker.py": "6ae9f658c72c880cf53938a61058a61cadcf437de1f48f596386b906b5ad21d1"
+  },
+  "gate": {
+    "specification": "docs/V4_PROSPECTIVE_CORRECTNESS_GATE.md",
+    "proposed_hidden_families": 16,
+    "proposed_hidden_instances_per_family": 2,
+    "proposed_hidden_cases": 32,
+    "actual_case_count": null,
+    "eligibility_approved": null,
+    "api_packet_sha256": null,
+    "task_packet_sha256": null,
+    "public_suite_sha256": null,
+    "hidden_suite_sha256": null,
+    "native_reader_sha256": null,
+    "expected_verdicts_sha256": null,
+    "reviewer_identity": null,
+    "review_record_sha256": null,
+    "gate_locked": false,
+    "http_timeout_seconds": 5,
+    "outer_invocation_timeout_seconds": 60,
+    "delayed_control_outer_seconds": 1,
+    "delayed_control_service_seconds": 1.5
+  },
+  "metrics_template": {
+    "release_utc": null,
+    "release_monotonic_ns": null,
+    "clock_boot_id": null,
+    "stop_utc": null,
+    "stop_monotonic_ns": null,
+    "raw_integration_wall_seconds": null,
+    "first_passing_submission_receipt": null,
+    "time_to_gate_seconds": null,
+    "model_requests": null,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cached_input_tokens": null,
+    "tool_requests": null,
+    "model_latency_seconds": null,
+    "model_compute_seconds": null,
+    "tool_latency_seconds": null,
+    "human_engineering_minutes": null,
+    "human_supervision_minutes": null,
+    "failed_attempts": null,
+    "rework_events": null,
+    "correctness_passed": null,
+    "censor_reason": null,
+    "missingness_reason": "not launched"
+  },
+  "visible_preparation_checks": {
+    "json_rdf_equal_for_providers": [
+      "a",
+      "b"
+    ],
+    "normalized_visible_descriptions": {
+      "a": {
+        "description_version": 1,
+        "provider_id": "urn:provider:a",
+        "operation_id": "urn:provider:a:create",
+        "capability_id": "https://example.org/capability/v4/1#EventCreation",
+        "method": "POST",
+        "path": "/events",
+        "input_mapping": [
+          [
+            "end_time",
+            "end_time",
+            "identity"
+          ],
+          [
+            "start_time",
+            "start_time",
+            "identity"
+          ],
+          [
+            "title",
+            "title",
+            "identity"
+          ]
+        ],
+        "output_mapping": [
+          [
+            "id",
+            "id",
+            "identity"
+          ]
+        ],
+        "title_max_length": 0,
+        "max_duration_seconds": 0,
+        "time_grid_seconds": 0
+      },
+      "b": {
+        "description_version": 1,
+        "provider_id": "urn:provider:b",
+        "operation_id": "urn:provider:b:create",
+        "capability_id": "https://example.org/capability/v4/1#EventCreation",
+        "method": "POST",
+        "path": "/bookings",
+        "input_mapping": [
+          [
+            "end_time",
+            "finishes_ms",
+            "iso_to_epoch_ms"
+          ],
+          [
+            "start_time",
+            "begins_ms",
+            "iso_to_epoch_ms"
+          ],
+          [
+            "title",
+            "label",
+            "identity"
+          ]
+        ],
+        "output_mapping": [
+          [
+            "id",
+            "booking_ref",
+            "identity"
+          ]
+        ],
+        "title_max_length": 500,
+        "max_duration_seconds": 7200,
+        "time_grid_seconds": 900
+      }
+    },
+    "retained_diagnostic_records_checked": 96,
+    "retained_evidence_files_hash_checked": 1008,
+    "new_api_invocations": 0,
+    "new_sessions_launched": 0,
+    "held_out_materials_accessed": false
+  },
+  "sessions": [
+    {
+      "slot_id": "V4-S01",
+      "schedule_group": 1,
+      "position_in_group": 1,
+      "serial_order": 1,
+      "condition": "B",
+      "planned_private_root": "${SESSION_ROOT}/V4-S01",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S01/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S01",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270320,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S02",
+      "schedule_group": 1,
+      "position_in_group": 2,
+      "serial_order": 2,
+      "condition": "C",
+      "planned_private_root": "${SESSION_ROOT}/V4-S02",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S02/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S02",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270321,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S03",
+      "schedule_group": 1,
+      "position_in_group": 3,
+      "serial_order": 3,
+      "condition": "A",
+      "planned_private_root": "${SESSION_ROOT}/V4-S03",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S03/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S03",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270322,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S04",
+      "schedule_group": 2,
+      "position_in_group": 1,
+      "serial_order": 4,
+      "condition": "C",
+      "planned_private_root": "${SESSION_ROOT}/V4-S04",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S04/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S04",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270323,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S05",
+      "schedule_group": 2,
+      "position_in_group": 2,
+      "serial_order": 5,
+      "condition": "A",
+      "planned_private_root": "${SESSION_ROOT}/V4-S05",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S05/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S05",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270324,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S06",
+      "schedule_group": 2,
+      "position_in_group": 3,
+      "serial_order": 6,
+      "condition": "B",
+      "planned_private_root": "${SESSION_ROOT}/V4-S06",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S06/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S06",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270325,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S07",
+      "schedule_group": 3,
+      "position_in_group": 1,
+      "serial_order": 7,
+      "condition": "A",
+      "planned_private_root": "${SESSION_ROOT}/V4-S07",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S07/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S07",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270326,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S08",
+      "schedule_group": 3,
+      "position_in_group": 2,
+      "serial_order": 8,
+      "condition": "B",
+      "planned_private_root": "${SESSION_ROOT}/V4-S08",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S08/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S08",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270327,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    },
+    {
+      "slot_id": "V4-S09",
+      "schedule_group": 3,
+      "position_in_group": 3,
+      "serial_order": 9,
+      "condition": "C",
+      "planned_private_root": "${SESSION_ROOT}/V4-S09",
+      "planned_submission_root": "${SESSION_ROOT}/V4-S09/submission",
+      "planned_operator_evidence_root": "${OPERATOR_ROOT}/V4-S09",
+      "status": "planned_not_launched",
+      "actual_session_id": null,
+      "actual_environment_id": null,
+      "actual_model_generation_seed": null,
+      "requested_generation_seed": 20270328,
+      "started_at": null,
+      "stopped_at": null,
+      "submission_hashes": null,
+      "observed_metrics": null
+    }
+  ],
+  "companion_document_sha256": {
+    "docs/V4_PROSPECTIVE_EXECUTION_PREPARATION.md": "cc635808b0fc92092f265742d53d4e2b818d2c8608a12a60451682479cc95bb5",
+    "docs/V4_PROSPECTIVE_CORRECTNESS_GATE.md": "2da20fd911f108f77ca90a81b1eb04a3ada42e60cbb28dcd12f8198b0fa78fd0"
+  }
+}
