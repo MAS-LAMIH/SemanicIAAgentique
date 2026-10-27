@@ -1,0 +1,11 @@
+Using CPython 3.12.14 interpreter at: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12
+Creating virtual environment at: /tmp/semanic-v4-minimal-env
+Activate with: source /tmp/semanic-v4-minimal-env/bin/activate
+Using Python 3.12.14 environment at: /tmp/semanic-v4-minimal-env
+Resolved 2 packages in 6ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 2 packages in 29ms
+ + pyparsing==3.3.3
+ + rdflib==7.6.0

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/v4",
+    "-v"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "PYTHONPATH": "src",
+  "started_at": "2026-10-27T18:50:54.868742+00:00",
+  "ended_at": "2026-10-27T18:51:09.783483+00:00",
+  "exit_code": 1,
+  "elapsed_seconds": 14.91476147100002,
+  "tests_run": 20,
+  "runner_seconds": 14.735,
+  "python": "3.12.14",
+  "source": "New V4 tests only; not V3 historical results",
+  "human_active_minutes": null,
+  "ai_supervision_minutes": null
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/tmp/semanic-v4-minimal-env/bin/python",
+    "-c",
+    "from dataclasses import asdict\nfrom semantic_action.provider_b import serve_bookings\nfrom semantic_capability_v4.descriptions import load\nfrom semantic_capability_v4.invoke import invoke_capability\nfrom semantic_capability_v4.model import EVENT_CREATION\n\noperation = load('v4/descriptions/b.ttl')  # b.json normalizes identically\nwith serve_bookings() as (origin, _):\n    result = invoke_capability([operation], EVENT_CREATION, origin, {\n        'start_time': '2030-01-07T10:00:00+00:00',\n        'end_time': '2030-01-07T11:00:00+00:00',\n        'title': 'Team meeting',\n    })\n    print(asdict(result))"
+  ],
+  "PYTHONPATH": "src",
+  "exit_code": 0,
+  "elapsed_seconds": 0.6241987060000156
+}

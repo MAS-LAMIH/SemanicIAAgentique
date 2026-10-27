@@ -1,0 +1,1 @@
+{'operation_id': 'urn:provider:b:create', 'http_status': 201, 'http_ok': True, 'output': {'id': 'booking-0001'}, 'error_kind': None, 'diagnostics': (), 'remote_outcome_unknown': False}

@@ -1,0 +1,81 @@
+{
+  "candidate_commit": "752da7b8de85dd38c7eee30a101b786ea4743821",
+  "proposal_base": "ee3aa0bac538bf71b2acd1d26af22a1bcb913e60",
+  "preserved_tracked_count": 7348,
+  "restored_source_members": 248,
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/candidate_v3.py",
+        "--verify-history"
+      ],
+      "cwd": "/tmp/v4-v3-candidate-5_6puj1z",
+      "exit_code": 0,
+      "stdout": "{\n  \"preserved_files\": 134,\n  \"V2_archived_files\": 104,\n  \"V2_manifest_sha256\": \"7f8e8d1d4f0f07e8c5ef999c36aaf987d17bf58d757df4a733f736ceaa78bcc2\",\n  \"M4\": {\n    \"manifest_sha256\": \"2a01e44585d355cd3b763f0551a9f33c1139fe53595d3c8b28cd62d71a93bd4c\",\n    \"source_archive_sha256\": \"ae34e3efe0b278ee1b6fafe90f90f6e7f845d2d5eeaf0d8c69c1c7fb60902c69\",\n    \"historical_files_verified\": 14,\n    \"archive_members_verified\": 74,\n    \"working_tree_comparison\": \"Not applicable: V2 intentionally changes code/documents, historical bytes are in the archive\"\n  },\n  \"approval_records\": \"Original M4.2 package/decision bytes retained, not new approval\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/candidate_v3.py",
+        "--verify"
+      ],
+      "cwd": "/tmp/v4-v3-candidate-5_6puj1z",
+      "exit_code": 0,
+      "stdout": "V3 verified: 248 source files, 1984 artifacts; historical candidates unchanged; approval pending, Provider C sealed.\n",
+      "stderr": ""
+    }
+  ],
+  "paths": {
+    "exact": "/tmp/v4-v3-candidate-5_6puj1z",
+    "restored": "/tmp/v4-v3-restored-u2lhl7ae"
+  },
+  "restored_test_run": {
+    "command": [
+      "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/semantic_action",
+      "-v"
+    ],
+    "cwd": "/tmp/v4-v3-restored-u2lhl7ae",
+    "PYTHONPATH": "/tmp/v4-v3-restored-u2lhl7ae/src",
+    "started_at": "2026-10-27T18:34:23.837992+00:00",
+    "ended_at": "2026-10-27T18:37:47.256646+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 203.418657719,
+    "tests_run": 87,
+    "runner_seconds": 203.073,
+    "python": "3.12.14",
+    "packages": {
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "pyparsing": "3.3.3",
+      "rdflib": "7.6.0",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.9.1",
+      "typing_extensions": "4.16.0"
+    },
+    "log": "docs/artifacts/v4_proposal/restored-tests.log",
+    "human_active_minutes": null
+  },
+  "retained_hashes": {
+    "docs/SCIENTIFIC_FREEZE_MANIFEST_V3.json": "53049d7921c31e7f3081606d5f2c6ca327eccf91fbab42152826655cbeeda352",
+    "docs/artifacts/milestone4_3/candidate-source-v3.tar.gz": "b659c852d78ff2bad99f6ec743b5b0bd0a16ad88bbcd20af5e8e6e091089c27d",
+    "docs/artifacts/milestone4_3/tutorieliaagentique-0.1.0-py3-none-any.whl": "538f5acdb7366300f81166232f8877c31c9260e6dbb7dbb226150ea35621cc1b",
+    "docs/artifacts/milestone4_3/evaluation-requirements.txt": "5f8bb5b5dc97a8d78829c673298c58e3ae9158f078488fe617df3ef592a638e6"
+  },
+  "wheel_source_members_verified": 28,
+  "final_preservation_check": {
+    "checked_at": "2026-10-27T18:38:54.459031+00:00",
+    "pre_existing_tracked_files": 7348,
+    "changed_files": [],
+    "branch": "codex/v4-simplification-proposal",
+    "v4_implemented": false,
+    "provider_c_accessed": false
+  }
+}

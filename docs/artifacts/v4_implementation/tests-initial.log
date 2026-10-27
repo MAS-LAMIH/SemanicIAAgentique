@@ -1,0 +1,24 @@
+test_exact_conversions_and_offsets (test_capabilities.ConversionTests.test_exact_conversions_and_offsets) ... ok
+test_duplicate_nonfinite_and_unknown_suffix (test_capabilities.DescriptionTests.test_duplicate_nonfinite_and_unknown_suffix) ... ok
+test_json_core_has_no_rdf_or_legacy_dependency (test_capabilities.DescriptionTests.test_json_core_has_no_rdf_or_legacy_dependency) ... ok
+test_json_rdf_normalization (test_capabilities.DescriptionTests.test_json_rdf_normalization) ... ok
+test_mapping_and_limits_reject (test_capabilities.DescriptionTests.test_mapping_and_limits_reject) ... ok
+test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) ... ok
+test_singleton_rdf_repeated_identical_triple_is_idempotent (test_capabilities.DescriptionTests.test_singleton_rdf_repeated_identical_triple_is_idempotent) ... ok
+test_strict_json_profile (test_capabilities.DescriptionTests.test_strict_json_profile) ... ok
+test_bad_output_reports_mapping_error_without_claiming_no_mutation (test_capabilities.InvocationTests.test_bad_output_reports_mapping_error_without_claiming_no_mutation) ... ok
+test_http_success_is_not_independent_correctness (test_capabilities.InvocationTests.test_http_success_is_not_independent_correctness) ... ok
+test_invalid_direct_description_and_origin (test_capabilities.InvocationTests.test_invalid_direct_description_and_origin) ... ok
+test_ordinary_invalid_inputs_never_mutate (test_capabilities.InvocationTests.test_ordinary_invalid_inputs_never_mutate) ... ok
+test_provider_specific_limits_and_exact_precision (test_capabilities.InvocationTests.test_provider_specific_limits_and_exact_precision) ... ok
+test_service_denial_and_error_reporting (test_capabilities.InvocationTests.test_service_denial_and_error_reporting) ... ok
+test_success_both_frontends_both_native_fixtures (test_capabilities.InvocationTests.test_success_both_frontends_both_native_fixtures) ... ok
+test_timeout_has_uncertain_outcome_no_retry_and_late_native_effect (test_capabilities.InvocationTests.test_timeout_has_uncertain_outcome_no_retry_and_late_native_effect) ... ok
+test_ambiguity_never_selects_first (test_capabilities.ResolutionTests.test_ambiguity_never_selects_first) ... ok
+test_exact_identity_and_selectors (test_capabilities.ResolutionTests.test_exact_identity_and_selectors) ... ok
+test_resolution_failure_does_not_call_http (test_capabilities.ResolutionTests.test_resolution_failure_does_not_call_http) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 28.566s
+
+OK

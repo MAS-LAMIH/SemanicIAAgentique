@@ -1,0 +1,79 @@
+{
+  "runtime_python_files": 7,
+  "functional_modules": 6,
+  "source_lines_including_comments_and_blanks": {
+    "src/semantic_capability_v4/__init__.py": 1,
+    "src/semantic_capability_v4/descriptions.py": 157,
+    "src/semantic_capability_v4/http.py": 44,
+    "src/semantic_capability_v4/invoke.py": 74,
+    "src/semantic_capability_v4/mapping.py": 42,
+    "src/semantic_capability_v4/model.py": 33,
+    "src/semantic_capability_v4/registry.py": 27
+  },
+  "provider_descriptions": {
+    "a": {
+      "json_lines": 33,
+      "rdf_lines": 12,
+      "provider_specific_python_lines": 0
+    },
+    "b": {
+      "json_lines": 33,
+      "rdf_lines": 12,
+      "provider_specific_python_lines": 0
+    }
+  },
+  "provider_specific_runtime_python_lines": 0,
+  "third_party_runtime": {
+    "json_and_invocation": [],
+    "rdf_direct": [
+      "rdflib==7.6.0"
+    ],
+    "rdf_transitive": [
+      "pyparsing==3.3.3"
+    ]
+  },
+  "absolute_imports": [
+    "dataclasses",
+    "datetime",
+    "http.client",
+    "json",
+    "pathlib",
+    "rdflib",
+    "rdflib.exceptions",
+    "rdflib.plugins.parsers.notation3",
+    "re",
+    "urllib.error",
+    "urllib.parse",
+    "urllib.request"
+  ],
+  "preservation": {
+    "pre_existing_files": 7353,
+    "changed_files": []
+  },
+  "branch": "codex/v4-minimal-capabilities",
+  "v3_runtime_python_files": 26,
+  "limitations": "Line counts describe different scopes, not measured engineering savings; costs unknown remain null",
+  "runtime_total_lines": 378,
+  "new_test_file_lines": 282,
+  "external_fixture_and_native_check_helper_lines": {
+    "fixture": 5,
+    "native_correct": 17
+  },
+  "candidate_tag_commit": "752da7b8de85dd38c7eee30a101b786ea4743821",
+  "implementation_sha256": {
+    "src/semantic_capability_v4/__init__.py": "8ab5cae4fd6a2b0720e0eeeb0bd4c6e4d68e4b1f137d01deae403badd7ad7f38",
+    "src/semantic_capability_v4/descriptions.py": "d0714effcd70db0c564e19f5fe8733591d55efe748bab07ce9e65cbf2bb2e6f6",
+    "src/semantic_capability_v4/http.py": "79d73f0aecb55629d3a2dd3a01145051a2dafad2e142294a0ca4055584493cb7",
+    "src/semantic_capability_v4/invoke.py": "011e1d07a40531c5bed66a250eefc0257e9d2e6e47204546f9df99ac289cf4b1",
+    "src/semantic_capability_v4/mapping.py": "3bf6e88be44cb1c2ee01b6f925ad4380efee1ca5edf0c8c69706d5c8c76101aa",
+    "src/semantic_capability_v4/model.py": "8a085a3417d6e2842fc305cde642fcd53f7b0a78ff199004e9e0295a6a57a397",
+    "src/semantic_capability_v4/registry.py": "6de9ab11f36f1698c139b81105642969c750c909baaec7eb4db7890656fb1937",
+    "tests/v4/test_capabilities.py": "95af2235a4be22ee1176b35262f8b42116b28f53d7f26ce3bb6548f5f1abfb48",
+    "v4/descriptions/a.json": "35c0af705e403db70e66c75f262c7bf9590da0bf49df3b10234ef2b675126c4f",
+    "v4/descriptions/a.ttl": "f9338626ec934f52df21c51ac47270886589b859911ace30191fe20e81f7a281",
+    "v4/descriptions/b.json": "95fb3c6647e99ca265225611b7f43c49b880f9b0cb8625aba1f42f8024f3300f",
+    "v4/descriptions/b.ttl": "4ac874f1edefaa995c2f5f53698b40250a6fc987408af509daa83912f463e815",
+    "v4/requirements-rdf.txt": "2b96826d99ddc4d5fa0d77fbbe69bbaedd4463abb0527b1635947312f650ebeb",
+    "v4/vocabulary.json": "08e1970430fdd92e5f7c823e1b794b2025b78af61b8825876ba09c842a73bf95"
+  }
+}

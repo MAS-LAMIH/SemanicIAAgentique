@@ -1,0 +1,28 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "venv",
+        "--python",
+        "3.12",
+        "/tmp/semanic-v4-minimal-env"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--offline",
+        "--python",
+        "/tmp/semanic-v4-minimal-env/bin/python",
+        "-r",
+        "v4/requirements-rdf.txt"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "UV_CACHE_DIR": "/workspace/.cache/uv"
+}
