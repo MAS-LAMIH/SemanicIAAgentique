@@ -1,0 +1,25 @@
+[
+  {
+    "delivered_body": null,
+    "method": "POST",
+    "path": "/bookings",
+    "raw_body": null,
+    "result": {
+      "diagnostics": [
+        "HTTP 503"
+      ],
+      "error_kind": "http",
+      "http_ok": false,
+      "http_status": 503,
+      "operation_id": "urn:provider:b:create",
+      "output": null,
+      "remote_outcome_unknown": false
+    },
+    "values": {
+      "begins_ms": 1894010400000,
+      "finishes_ms": 1894014000000,
+      "label": "Team meeting"
+    },
+    "wire_fault": null
+  }
+]

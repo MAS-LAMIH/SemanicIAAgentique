@@ -1,0 +1,10 @@
+{
+  "ai_supervision_minutes": null,
+  "automated_elapsed_seconds": 64.08354945399998,
+  "confirmatory": false,
+  "diagnostic_attempts": 96,
+  "human_active_minutes": null,
+  "independent_provider_units": 2,
+  "reset_controls": 6,
+  "tool_model_wait_minutes": null
+}

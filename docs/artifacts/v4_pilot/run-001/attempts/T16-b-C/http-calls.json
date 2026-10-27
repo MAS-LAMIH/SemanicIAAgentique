@@ -1,0 +1,13 @@
+[
+  {
+    "method": "POST",
+    "path": "/bookings",
+    "result": null,
+    "values": {
+      "begins_ms": 1894010400000,
+      "finishes_ms": 1894014000000,
+      "label": "Team meeting"
+    },
+    "wire_fault": null
+  }
+]

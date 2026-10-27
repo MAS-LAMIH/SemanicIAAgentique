@@ -1,0 +1,157 @@
+{
+  "condition": "A",
+  "creation_accepted": true,
+  "diagnostic_passed": true,
+  "duration_seconds": 0.5445177269999988,
+  "expected": {
+    "classification": "successful_creation",
+    "error_kind": null,
+    "http_status": 201,
+    "native_state_correct": true,
+    "output_usable": true,
+    "post_attempts": 1,
+    "supervision": "COMPLETED",
+    "unchanged_state": false,
+    "unexpected_mutations": false
+  },
+  "invocation": {
+    "diagnostics": [],
+    "error_kind": null,
+    "http_ok": true,
+    "http_status": 201,
+    "operation_id": "urn:provider:a:create",
+    "output": {
+      "id": "event-0001"
+    },
+    "remote_outcome_unknown": false
+  },
+  "metadata": {
+    "automatic_retries": 0,
+    "http_timeout_seconds": 5,
+    "outer_timeout_seconds": 60,
+    "python": "3.12.14",
+    "service_delay_seconds": 0,
+    "source": "visible diagnostic, not confirmatory"
+  },
+  "native": {
+    "added_ids": [
+      "event-0001"
+    ],
+    "changed_existing_ids": [],
+    "matching_ids": [
+      "event-0001"
+    ],
+    "native_state_correct": true,
+    "output_usable": true,
+    "permission_changed": false,
+    "post_attempts": 1,
+    "removed_ids": [],
+    "revision_after": 1,
+    "revision_before": 0,
+    "unchanged_state": false,
+    "unexpected_mutations": false,
+    "wrong_property_ids": []
+  },
+  "native_after": {
+    "events": {
+      "event-0001": {
+        "end_time": "2030-01-07T11:00:00+00:00",
+        "id": "event-0001",
+        "start_time": "2030-01-07T10:00:00+00:00",
+        "title": "Team meeting"
+      },
+      "existing": {
+        "end_time": "2030-01-07T09:00:00+00:00",
+        "id": "existing",
+        "metadata": {
+          "sentinel": true
+        },
+        "start_time": "2030-01-07T08:00:00+00:00",
+        "title": "Preserve me"
+      }
+    },
+    "mutation_calls": 1,
+    "observed_at": "2026-10-27T20:20:52.597739+00:00",
+    "provider": "a",
+    "revision": 1,
+    "writable": true
+  },
+  "native_before": {
+    "events": {
+      "existing": {
+        "end_time": "2030-01-07T09:00:00+00:00",
+        "id": "existing",
+        "metadata": {
+          "sentinel": true
+        },
+        "start_time": "2030-01-07T08:00:00+00:00",
+        "title": "Preserve me"
+      }
+    },
+    "mutation_calls": 0,
+    "observed_at": "2026-10-27T20:20:52.532459+00:00",
+    "provider": "a",
+    "revision": 0,
+    "writable": true
+  },
+  "partial_trace_error": null,
+  "process": {
+    "automated_runtime_seconds": 0.06466352099999995,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-27T20:20:52.597394+00:00",
+    "exit_code": 0,
+    "pid": 1218,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-27T20:20:52.532746+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "a",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T11:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T10:00:00+00:00",
+          "title": "Team meeting"
+        },
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-27T20:20:52.597693+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.311999994868529e-06
+  },
+  "started_at": "2026-10-27T20:20:52.530353+00:00",
+  "state_uncertain_after_observation": false,
+  "subject_launched": true,
+  "summary": {
+    "classification": "successful_creation",
+    "error_kind": null,
+    "http_status": 201,
+    "native_state_correct": true,
+    "output_usable": true,
+    "post_attempts": 1,
+    "supervision": "COMPLETED",
+    "unchanged_state": false,
+    "unexpected_mutations": false
+  },
+  "task_id": "T01",
+  "uncertain_remote_outcome_at_stop": false
+}

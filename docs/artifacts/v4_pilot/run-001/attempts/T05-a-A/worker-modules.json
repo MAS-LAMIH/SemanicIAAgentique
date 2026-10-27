@@ -1,0 +1,10 @@
+[
+  "api_local_v4",
+  "api_local_v4.a",
+  "api_local_v4.common",
+  "semantic_capability_v4",
+  "semantic_capability_v4.http",
+  "semantic_capability_v4.mapping",
+  "semantic_capability_v4.model",
+  "semantic_capability_v4.validation"
+]

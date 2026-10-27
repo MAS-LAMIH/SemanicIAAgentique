@@ -1,0 +1,27 @@
+{
+  "expected": {
+    "classification": "correct_rejection",
+    "error_kind": "input",
+    "http_status": null,
+    "native_state_correct": false,
+    "output_usable": false,
+    "post_attempts": 0,
+    "supervision": "COMPLETED",
+    "unchanged_state": true,
+    "unexpected_mutations": false
+  },
+  "provenance": "visible task + native service specifications; not runtime mappings; shared authorship",
+  "task": {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T08",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T13:00:00Z",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  }
+}

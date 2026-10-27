@@ -1,0 +1,179 @@
+{
+  "ai_supervision_minutes": null,
+  "automation": {
+    "focused-tests": {
+      "PYTHONPATH": "src",
+      "ai_supervision_minutes": null,
+      "automated_runtime_seconds": 16.249710118999985,
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v4_pilot",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "ended_at": "2026-10-27T20:21:05.549713+00:00",
+      "exit_code": 0,
+      "human_active_minutes": null,
+      "runner_seconds": 16.139,
+      "started_at": "2026-10-27T20:20:49.299992+00:00",
+      "tests_run": 6,
+      "tool_model_wait_minutes": null
+    },
+    "pilot-matrix": {
+      "PYTHONPATH": "src",
+      "ai_supervision_minutes": null,
+      "automated_runtime_seconds": 64.19571856800002,
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "v4_pilot.driver",
+        "--output",
+        "docs/artifacts/v4_pilot/run-001"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "ended_at": "2026-10-27T20:23:05.647324+00:00",
+      "exit_code": 0,
+      "human_active_minutes": null,
+      "runner_seconds": null,
+      "started_at": "2026-10-27T20:22:01.451590+00:00",
+      "tests_run": null,
+      "tool_model_wait_minutes": null
+    },
+    "v4-regressions": {
+      "PYTHONPATH": "src",
+      "ai_supervision_minutes": null,
+      "automated_runtime_seconds": 28.967543922999994,
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v4",
+        "-v"
+      ],
+      "cwd": "/workspace/SemanicIAAgentique",
+      "ended_at": "2026-10-27T20:21:19.749489+00:00",
+      "exit_code": 0,
+      "human_active_minutes": null,
+      "runner_seconds": 28.867,
+      "started_at": "2026-10-27T20:20:50.781935+00:00",
+      "tests_run": 20,
+      "tool_model_wait_minutes": null
+    }
+  },
+  "base_commit": "61f96e919ccc08a6cb70e339d76598895b1f4dd9",
+  "classification_counts": {
+    "correct_external_fault_detection": 24,
+    "correct_http_rejection": 12,
+    "correct_rejection": 27,
+    "correct_timeout_detection": 6,
+    "successful_creation": 27
+  },
+  "condition_counts": {
+    "A": 32,
+    "B": 32,
+    "C": 32
+  },
+  "confirmatory": false,
+  "creation_counts_by_condition": {
+    "A": 9,
+    "B": 9,
+    "C": 9
+  },
+  "diagnostic_passed": 96,
+  "executed": 96,
+  "fresh_subject_pids": 96,
+  "human_active_minutes": null,
+  "incomplete": [],
+  "independent_provider_units": 2,
+  "native_state_correct": 39,
+  "observed_onboarding_effort": false,
+  "parity_comparisons": 32,
+  "parity_differences": [],
+  "planned": 96,
+  "preservation": {
+    "authorized_v4_changes": [
+      "src/semantic_capability_v4/http.py",
+      "src/semantic_capability_v4/invoke.py",
+      "tests/v4/test_capabilities.py"
+    ],
+    "forbidden_changes": [],
+    "pre_existing_files": 7381,
+    "unchanged": 7378
+  },
+  "provider_c_accessed": false,
+  "run_timing": {
+    "ai_supervision_minutes": null,
+    "automated_elapsed_seconds": 64.08354945399998,
+    "confirmatory": false,
+    "diagnostic_attempts": 96,
+    "human_active_minutes": null,
+    "independent_provider_units": 2,
+    "reset_controls": 6,
+    "tool_model_wait_minutes": null
+  },
+  "safety": {
+    "reset_controls": 6,
+    "reset_rejected": 6,
+    "timeout_accepted": [],
+    "timeouts": 6,
+    "uncertain_at_stop": 6,
+    "unsettled_after_observation": 0
+  },
+  "size": {
+    "evaluation_infrastructure": {
+      "v4_pilot/__init__.py": 1,
+      "v4_pilot/driver.py": 174,
+      "v4_pilot/native.py": 78,
+      "v4_pilot/record.py": 36,
+      "v4_pilot/summarize.py": 90,
+      "v4_pilot/tasks.py": 63,
+      "v4_pilot/worker.py": 48
+    },
+    "provider_adapters": {
+      "src/api_local_v4/a.py": 7,
+      "src/api_local_v4/b.py": 14
+    },
+    "provider_descriptions": {
+      "a": {
+        "v4/descriptions/a.json": 33,
+        "v4/descriptions/a.ttl": 12
+      },
+      "b": {
+        "v4/descriptions/b.json": 33,
+        "v4/descriptions/b.ttl": 12
+      }
+    },
+    "shared_baseline_glue": {
+      "src/api_local_v4/__init__.py": 1,
+      "src/api_local_v4/common.py": 16
+    },
+    "shared_runtime": {
+      "src/semantic_capability_v4/__init__.py": 1,
+      "src/semantic_capability_v4/descriptions.py": 157,
+      "src/semantic_capability_v4/http.py": 64,
+      "src/semantic_capability_v4/invoke.py": 49,
+      "src/semantic_capability_v4/mapping.py": 42,
+      "src/semantic_capability_v4/model.py": 33,
+      "src/semantic_capability_v4/registry.py": 27,
+      "src/semantic_capability_v4/validation.py": 23
+    },
+    "shared_vocabulary": {
+      "v4/vocabulary.json": 17
+    },
+    "tests": {
+      "tests/v4_pilot/test_comparison.py": 107
+    }
+  },
+  "source_bundles": [
+    "19ef2eb62ce61311d639f7b8689fd314a9fd5ee1a9be1d9a93f3e20c6eaa72ab"
+  ],
+  "tool_model_wait_minutes": null,
+  "unexpected_mutation_attempts": 12,
+  "verdict": "PASS"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "v4_pilot.driver",
+    "--output",
+    "docs/artifacts/v4_pilot/run-001"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "PYTHONPATH": "src",
+  "started_at": "2026-10-27T20:22:01.451590+00:00",
+  "ended_at": "2026-10-27T20:23:05.647324+00:00",
+  "exit_code": 0,
+  "automated_runtime_seconds": 64.19571856800002,
+  "tests_run": null,
+  "runner_seconds": null,
+  "human_active_minutes": null,
+  "ai_supervision_minutes": null,
+  "tool_model_wait_minutes": null
+}

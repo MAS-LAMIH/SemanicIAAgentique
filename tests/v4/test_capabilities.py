@@ -141,7 +141,7 @@ class ResolutionTests(unittest.TestCase):
         with self.assertRaises(NotFound): resolve([], EVENT_CREATION)
     def test_resolution_failure_does_not_call_http(self):
         a,b = [load(DATA/f'{p}.json') for p in 'ab']
-        with patch('semantic_capability_v4.invoke.post') as http:
+        with patch('semantic_capability_v4.http.post') as http:
             for entries,capability in (([a,b],EVENT_CREATION),([a],'urn:unknown')):
                 result=invoke_capability(entries,capability,'http://127.0.0.1:1',VALUES)
                 self.assertEqual(result.error_kind,'resolution')
