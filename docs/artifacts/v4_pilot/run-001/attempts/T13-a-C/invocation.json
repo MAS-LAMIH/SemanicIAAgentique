@@ -1,0 +1,11 @@
+{
+  "diagnostics": [],
+  "error_kind": null,
+  "http_ok": true,
+  "http_status": 201,
+  "operation_id": "urn:provider:a:create",
+  "output": {
+    "id": "event-0001"
+  },
+  "remote_outcome_unknown": false
+}

@@ -1,0 +1,14 @@
+{
+  "condition": "B",
+  "description": "/workspace/SemanicIAAgentique/v4/descriptions/a.json",
+  "origin": "http://127.0.0.1:44467",
+  "output": "/workspace/SemanicIAAgentique/docs/artifacts/v4_pilot/run-001/attempts/T03-a-B",
+  "provider": "a",
+  "unsupported": false,
+  "values": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "R\u00e9union \u2713 \u2014 \u540c\u671f"
+  },
+  "wire_fault": null
+}

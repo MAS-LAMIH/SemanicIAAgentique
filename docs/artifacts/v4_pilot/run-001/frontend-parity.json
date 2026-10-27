@@ -1,0 +1,72 @@
+{
+  "a": {
+    "capability_id": "https://example.org/capability/v4/1#EventCreation",
+    "description_version": 1,
+    "input_mapping": [
+      [
+        "end_time",
+        "end_time",
+        "identity"
+      ],
+      [
+        "start_time",
+        "start_time",
+        "identity"
+      ],
+      [
+        "title",
+        "title",
+        "identity"
+      ]
+    ],
+    "max_duration_seconds": 0,
+    "method": "POST",
+    "operation_id": "urn:provider:a:create",
+    "output_mapping": [
+      [
+        "id",
+        "id",
+        "identity"
+      ]
+    ],
+    "path": "/events",
+    "provider_id": "urn:provider:a",
+    "time_grid_seconds": 0,
+    "title_max_length": 0
+  },
+  "b": {
+    "capability_id": "https://example.org/capability/v4/1#EventCreation",
+    "description_version": 1,
+    "input_mapping": [
+      [
+        "end_time",
+        "finishes_ms",
+        "iso_to_epoch_ms"
+      ],
+      [
+        "start_time",
+        "begins_ms",
+        "iso_to_epoch_ms"
+      ],
+      [
+        "title",
+        "label",
+        "identity"
+      ]
+    ],
+    "max_duration_seconds": 7200,
+    "method": "POST",
+    "operation_id": "urn:provider:b:create",
+    "output_mapping": [
+      [
+        "id",
+        "booking_ref",
+        "identity"
+      ]
+    ],
+    "path": "/bookings",
+    "provider_id": "urn:provider:b",
+    "time_grid_seconds": 900,
+    "title_max_length": 500
+  }
+}

@@ -1,0 +1,209 @@
+[
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T01",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T02",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T12:00:00+01:00",
+      "start_time": "2030-01-07T11:00:00+01:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T03",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "R\u00e9union \u2713 \u2014 \u540c\u671f"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T04",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T05",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T09:00:00Z",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T06",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00.000001Z",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T07",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:05:00Z",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T08",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T13:00:00Z",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": false,
+    "task_id": "T09",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "error",
+    "permission": true,
+    "task_id": "T10",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "no_change",
+    "permission": true,
+    "task_id": "T11",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "mismatch",
+    "permission": true,
+    "task_id": "T12",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "side_effect",
+    "permission": true,
+    "task_id": "T13",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T14",
+    "unsupported": true,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  },
+  {
+    "delay_seconds": 0,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T15",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": "missing_id"
+  },
+  {
+    "delay_seconds": 1.5,
+    "mode": "normal",
+    "permission": true,
+    "task_id": "T16",
+    "unsupported": false,
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  }
+]

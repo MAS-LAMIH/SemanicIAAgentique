@@ -42,3 +42,23 @@ def post(origin, path, values, operation_id):
         # Conservatively unknown: failure may follow dispatch or remote mutation.
         return InvocationResult(operation_id, error_kind='transport', diagnostics=(str(error),),
                                 remote_outcome_unknown=True), None
+
+
+def send(origin, path, wire, operation_id, output_mapping):
+    """Ordinary one-call response handling shared by all three conditions."""
+    from .mapping import map_output
+    try:
+        result, body = post(origin, path, wire, operation_id)
+    except (ValueError, TypeError) as error:
+        return InvocationResult(operation_id, error_kind='input', diagnostics=(str(error),))
+    if result.error_kind:
+        return result
+    try:
+        output = map_output(body, output_mapping)
+        if not isinstance(output['id'], str) or not output['id'].strip():
+            raise ValueError('Response id must be a nonempty string')
+        return InvocationResult(operation_id, result.http_status, result.http_ok, output)
+    except (KeyError, ValueError, TypeError, OverflowError) as error:
+        return InvocationResult(operation_id, result.http_status, result.http_ok,
+                                error_kind='response_mapping', diagnostics=(str(error),))
+

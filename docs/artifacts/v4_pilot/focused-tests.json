@@ -1,0 +1,22 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/v4_pilot",
+    "-v"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "PYTHONPATH": "src",
+  "started_at": "2026-10-27T20:20:49.299992+00:00",
+  "ended_at": "2026-10-27T20:21:05.549713+00:00",
+  "exit_code": 0,
+  "automated_runtime_seconds": 16.249710118999985,
+  "tests_run": 6,
+  "runner_seconds": 16.139,
+  "human_active_minutes": null,
+  "ai_supervision_minutes": null,
+  "tool_model_wait_minutes": null
+}

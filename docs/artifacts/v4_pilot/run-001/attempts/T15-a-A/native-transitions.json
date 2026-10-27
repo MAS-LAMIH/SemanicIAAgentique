@@ -1,0 +1,48 @@
+[
+  {
+    "after": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T11:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T10:00:00+00:00",
+          "title": "Team meeting"
+        },
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-27T20:22:46.957499+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "before": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-27T20:22:46.957205+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 201,
+    "path": "/events"
+  }
+]

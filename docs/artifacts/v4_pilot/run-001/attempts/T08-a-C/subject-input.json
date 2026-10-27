@@ -1,0 +1,14 @@
+{
+  "condition": "C",
+  "description": "/workspace/SemanicIAAgentique/v4/descriptions/a.ttl",
+  "origin": "http://127.0.0.1:40493",
+  "output": "/workspace/SemanicIAAgentique/docs/artifacts/v4_pilot/run-001/attempts/T08-a-C",
+  "provider": "a",
+  "unsupported": false,
+  "values": {
+    "end_time": "2030-01-07T13:00:00Z",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Team meeting"
+  },
+  "wire_fault": null
+}

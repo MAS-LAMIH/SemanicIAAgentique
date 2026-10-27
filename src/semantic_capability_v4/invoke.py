@@ -1,9 +1,10 @@
 """Validate ordinary request values, map fields, and invoke once. No runtime oracle."""
 from dataclasses import asdict
 from .descriptions import normalize
-from .http import post
-from .mapping import instant, map_inputs, map_output, microseconds
-from .model import INPUT_ROLES, InvocationResult
+from .http import send
+from .mapping import map_inputs
+from .model import InvocationResult
+from .validation import validate_values
 from .registry import ResolutionError, resolve
 
 
@@ -22,22 +23,9 @@ def validate_description(operation):
 
 
 def validate_inputs(values, operation):
-    if not isinstance(values, dict) or set(values) != set(INPUT_ROLES):
-        raise ValueError('Exactly start_time, end_time and title are required')
-    title = values['title']
-    if not isinstance(title, str) or not title.strip():
-        raise ValueError('Nonempty title required')
-    if operation.title_max_length and len(title.strip()) > operation.title_max_length:
-        raise ValueError('Title exceeds API length limit')
-    start, end = instant(values['start_time']), instant(values['end_time'])
-    if end <= start:
-        raise ValueError('Positive interval required')
-    if operation.max_duration_seconds and (end - start).total_seconds() > operation.max_duration_seconds:
-        raise ValueError('Duration exceeds API limit')
-    if operation.time_grid_seconds:
-        for key in ('start_time', 'end_time'):
-            if microseconds(values[key]) % (operation.time_grid_seconds * 1000000):
-                raise ValueError('Timestamp violates API time grid')
+    validate_values(values, title_max_length=operation.title_max_length,
+                    max_duration_seconds=operation.max_duration_seconds,
+                    time_grid_seconds=operation.time_grid_seconds)
 
 
 def invoke(operation, origin, values):
@@ -50,20 +38,7 @@ def invoke(operation, origin, values):
         wire = map_inputs(values, operation.input_mapping)
     except (ValueError, TypeError, KeyError, OverflowError) as error:
         return InvocationResult(operation.operation_id, error_kind='input', diagnostics=(str(error),))
-    try:
-        result, body = post(origin, operation.path, wire, operation.operation_id)
-    except (ValueError, TypeError) as error:
-        return InvocationResult(operation.operation_id, error_kind='input', diagnostics=(str(error),))
-    if result.error_kind:
-        return result
-    try:
-        output = map_output(body, operation.output_mapping)
-        if not isinstance(output['id'], str) or not output['id'].strip():
-            raise ValueError('Response id must be a nonempty string')
-        return InvocationResult(operation.operation_id, result.http_status, result.http_ok, output)
-    except (KeyError, ValueError, TypeError, OverflowError) as error:
-        return InvocationResult(operation.operation_id, result.http_status, result.http_ok,
-                                error_kind='response_mapping', diagnostics=(str(error),))
+    return send(origin, operation.path, wire, operation.operation_id, operation.output_mapping)
 
 
 def invoke_capability(operations, capability_id, origin, values, *, provider_id=None, operation_id=None):

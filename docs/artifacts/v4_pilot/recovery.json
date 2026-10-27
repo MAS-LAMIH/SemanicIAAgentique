@@ -1,0 +1,27 @@
+{
+  "branch": "codex/v4-comparative-pilot",
+  "base_commit": "61f96e919ccc08a6cb70e339d76598895b1f4dd9",
+  "backup_path": "/tmp/v4-pilot-recovered-kjmxurdq/working-changes.tar.gz",
+  "backup_sha256": "cac2fc0823960ba21f33637f6e222d99936e0485464bab1168b1f2492d6853e2",
+  "recovered_files": {
+    "docs/artifacts/v4_pilot/start-state.json": "ecbae9d5b3130ad4de14a74396eeba8090801506efbcf6c3b5d048409bac6cdd",
+    "src/api_local_v4/__init__.py": "834b02333eda5ef481f5fdec4bcc3b712999861d2d7240de4eb73654acd40fd3",
+    "src/api_local_v4/a.py": "db5c0327e95f7d73ca1cd926e742b6e2d17aa64fd2e65911494922f8397fc107",
+    "src/api_local_v4/b.py": "5d4742cb93605a24ab44650bbe54f392156682cb0cecfa886726f4a93b1857a8",
+    "src/api_local_v4/common.py": "4c32a5243ca9f0842ac5298ecd369f9cc35a3785e884d7df91c1516905aa93e1",
+    "src/semantic_capability_v4/http.py": "e1e1c82904f87265faf01daac0be683bfafb8c90adabb7aa5e2175fb5997c754",
+    "src/semantic_capability_v4/invoke.py": "b083cc07addf95142993ee1746621058fc0d40019796433ee41db28c576ef7c8",
+    "src/semantic_capability_v4/validation.py": "3db4eb858a9df3bf541ce73df60d523129fd3d167c403cb5bf5f12040c095aa8",
+    "tests/v4/test_capabilities.py": "01fd72d77587b108f4d6f7d1ef658421cb383d1ea8cf32f0404a65fa85244866",
+    "v4_pilot/__init__.py": "dcea2e2fc15e9f8d7773b86e6883923a0ea37c80a8740b11f8e7eb12be58e69e",
+    "v4_pilot/native.py": "7d583c3a640e5d8bb243423afa419b9b4ca86f8a45ff8f17d05512b398076ca9",
+    "v4_pilot/tasks.py": "ba82d0da9b04b705e80335a2359f520fee36f4bc2e8dc36afb680650de92714d",
+    "v4_pilot/worker.py": "6ae9f658c72c880cf53938a61058a61cadcf437de1f48f596386b906b5ad21d1"
+  },
+  "driver_present": false,
+  "pilot_attempts_found": 0,
+  "packages": {
+    "rdflib": "7.6.0",
+    "pyparsing": "3.3.3"
+  }
+}

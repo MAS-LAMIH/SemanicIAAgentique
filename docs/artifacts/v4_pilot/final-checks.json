@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-27T20:27:33.686814+00:00",
+  "json_rdf_full_invocation_comparisons": 32,
+  "json_rdf_full_invocation_differences": [],
+  "base_attempts": 96,
+  "base_diagnostic_passed": 96,
+  "supplemental_matrix_resets": 6,
+  "focused_attempts": 16,
+  "preserved_recovery_archive": "docs/artifacts/v4_pilot/recovered-working-changes.tar.gz",
+  "recovery_archive_sha256": "cac2fc0823960ba21f33637f6e222d99936e0485464bab1168b1f2492d6853e2",
+  "V3_files_unchanged": true,
+  "Provider_C_accessed": false,
+  "human_active_minutes": null,
+  "ai_supervision_minutes": null
+}

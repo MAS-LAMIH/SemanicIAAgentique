@@ -1,0 +1,164 @@
+[
+  {
+    "condition": "A",
+    "contamination": "calls",
+    "duration_seconds": 0.0005163129999914418,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-27T20:23:02.624878+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "provider": "a",
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "B",
+    "contamination": "calls",
+    "duration_seconds": 0.0006693010000162758,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-27T20:23:03.126242+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "provider": "a",
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "C",
+    "contamination": "calls",
+    "duration_seconds": 0.000684633999981088,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-27T20:23:03.627656+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "provider": "a",
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "A",
+    "contamination": "calls",
+    "duration_seconds": 0.0007628009999507412,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-27T20:23:04.129118+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "provider": "b",
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "B",
+    "contamination": "calls",
+    "duration_seconds": 0.0006648049999853356,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-27T20:23:04.630484+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "provider": "b",
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "C",
+    "contamination": "calls",
+    "duration_seconds": 0.0007284400000457936,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-27T20:23:05.131840+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "provider": "b",
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  }
+]
