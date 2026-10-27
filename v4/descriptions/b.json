@@ -1,0 +1,33 @@
+{
+  "description_version": 1,
+  "provider_id": "urn:provider:b",
+  "operation_id": "urn:provider:b:create",
+  "capability_id": "https://example.org/capability/v4/1#EventCreation",
+  "method": "POST",
+  "path": "/bookings",
+  "input_mapping": {
+    "start_time": {
+      "field": "begins_ms",
+      "conversion": "iso_to_epoch_ms"
+    },
+    "end_time": {
+      "field": "finishes_ms",
+      "conversion": "iso_to_epoch_ms"
+    },
+    "title": {
+      "field": "label",
+      "conversion": "identity"
+    }
+  },
+  "output_mapping": {
+    "id": {
+      "field": "booking_ref",
+      "conversion": "identity"
+    }
+  },
+  "input_limits": {
+    "title_max_length": 500,
+    "max_duration_seconds": 7200,
+    "time_grid_seconds": 900
+  }
+}

@@ -1,0 +1,12 @@
+@prefix v: <https://example.org/capability/v4/1#> .
+<urn:provider:b:create> a v:OperationDescription ;
+  v:description_version 1 ;
+  v:provider_id <urn:provider:b> ;
+  v:capability_id v:EventCreation ;
+  v:method "POST" ;
+  v:path "/bookings" ;
+  v:input_mapping [ v:role v:start_time ; v:field "begins_ms" ; v:conversion "iso_to_epoch_ms" ] ;
+  v:input_mapping [ v:role v:end_time ; v:field "finishes_ms" ; v:conversion "iso_to_epoch_ms" ] ;
+  v:input_mapping [ v:role v:title ; v:field "label" ; v:conversion "identity" ] ;
+  v:output_mapping [ v:role v:id ; v:field "booking_ref" ; v:conversion "identity" ] ;
+  v:input_limits [ v:title_max_length 500 ; v:max_duration_seconds 7200 ; v:time_grid_seconds 900 ] .

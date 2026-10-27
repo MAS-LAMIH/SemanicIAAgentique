@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "namespace": "https://example.org/capability/v4/1#",
+  "capabilities": {
+    "https://example.org/capability/v4/1#EventCreation": {
+      "meaning": "Intent to create a titled time-bounded event; not a behavioral guarantee",
+      "inputs": {
+        "start_time": "timezone-aware ISO instant",
+        "end_time": "timezone-aware ISO instant after start_time",
+        "title": "nonempty string"
+      },
+      "output": {
+        "id": "opaque nonempty string from the immediate response"
+      }
+    }
+  }
+}

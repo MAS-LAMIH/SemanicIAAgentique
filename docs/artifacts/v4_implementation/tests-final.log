@@ -1,0 +1,235 @@
+test_exact_conversions_and_offsets (test_capabilities.ConversionTests.test_exact_conversions_and_offsets) ... ok
+test_duplicate_nonfinite_and_unknown_suffix (test_capabilities.DescriptionTests.test_duplicate_nonfinite_and_unknown_suffix) ... ok
+test_json_core_has_no_rdf_or_legacy_dependency (test_capabilities.DescriptionTests.test_json_core_has_no_rdf_or_legacy_dependency) ... ok
+test_json_rdf_normalization (test_capabilities.DescriptionTests.test_json_rdf_normalization) ... ERROR
+test_mapping_and_limits_reject (test_capabilities.DescriptionTests.test_mapping_and_limits_reject) ... ok
+test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) ... 
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='tion_seconds 0 ; v:time_grid_seconds 0 ] .\n\n<urn:extra> <urn:predicate> "data" .') ... ERROR
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='conds 0 ; v:time_grid_seconds 0 ] .\n\n<urn:provider:a:create> v:method "DELETE" .') ... ERROR
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n') ... ERROR
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n') ... ERROR
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n') ... ERROR
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n') ... ERROR
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text=' [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds -1 ] .\n') ... ERROR
+  test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='not turtle {') ... ERROR
+test_singleton_rdf_repeated_identical_triple_is_idempotent (test_capabilities.DescriptionTests.test_singleton_rdf_repeated_identical_triple_is_idempotent) ... ERROR
+test_strict_json_profile (test_capabilities.DescriptionTests.test_strict_json_profile) ... ok
+test_bad_output_reports_mapping_error_without_claiming_no_mutation (test_capabilities.InvocationTests.test_bad_output_reports_mapping_error_without_claiming_no_mutation) ... ok
+test_http_success_is_not_independent_correctness (test_capabilities.InvocationTests.test_http_success_is_not_independent_correctness) ... ERROR
+test_http_transport_errors_and_response_shape (test_capabilities.InvocationTests.test_http_transport_errors_and_response_shape) ... ok
+test_invalid_direct_description_and_origin (test_capabilities.InvocationTests.test_invalid_direct_description_and_origin) ... ok
+test_ordinary_invalid_inputs_never_mutate (test_capabilities.InvocationTests.test_ordinary_invalid_inputs_never_mutate) ... ERROR
+test_provider_specific_limits_and_exact_precision (test_capabilities.InvocationTests.test_provider_specific_limits_and_exact_precision) ... ERROR
+test_service_denial_and_error_reporting (test_capabilities.InvocationTests.test_service_denial_and_error_reporting) ... ERROR
+test_success_both_frontends_both_native_fixtures (test_capabilities.InvocationTests.test_success_both_frontends_both_native_fixtures) ... 
+  test_success_both_frontends_both_native_fixtures (test_capabilities.InvocationTests.test_success_both_frontends_both_native_fixtures) (provider='a', suffix='ttl') ... ERROR
+  test_success_both_frontends_both_native_fixtures (test_capabilities.InvocationTests.test_success_both_frontends_both_native_fixtures) (provider='b', suffix='ttl') ... ERROR
+test_timeout_has_uncertain_outcome_no_retry_and_late_native_effect (test_capabilities.InvocationTests.test_timeout_has_uncertain_outcome_no_retry_and_late_native_effect) ... ok
+test_ambiguity_never_selects_first (test_capabilities.ResolutionTests.test_ambiguity_never_selects_first) ... ok
+test_exact_identity_and_selectors (test_capabilities.ResolutionTests.test_exact_identity_and_selectors) ... ok
+test_resolution_failure_does_not_call_http (test_capabilities.ResolutionTests.test_resolution_failure_does_not_call_http) ... ok
+
+======================================================================
+ERROR: test_json_rdf_normalization (test_capabilities.DescriptionTests.test_json_rdf_normalization)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 65, in test_json_rdf_normalization
+    self.assertEqual(load(DATA / f'{provider}.json'), load(DATA / f'{provider}.ttl'))
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='tion_seconds 0 ; v:time_grid_seconds 0 ] .\n\n<urn:extra> <urn:predicate> "data" .')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='conds 0 ; v:time_grid_seconds 0 ] .\n\n<urn:provider:a:create> v:method "DELETE" .')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='s [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text=' [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds -1 ] .\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_rdf_rejects_unsupported_ambiguous_and_incomplete (test_capabilities.DescriptionTests.test_rdf_rejects_unsupported_ambiguous_and_incomplete) (text='not turtle {')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 107, in test_rdf_rejects_unsupported_ambiguous_and_incomplete
+    with self.subTest(text=text[-80:]), self.assertRaises(ValueError): load_rdf(path)
+                                                                       ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_singleton_rdf_repeated_identical_triple_is_idempotent (test_capabilities.DescriptionTests.test_singleton_rdf_repeated_identical_triple_is_idempotent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 111, in test_singleton_rdf_repeated_identical_triple_is_idempotent
+    self.assertEqual(load(path), load(DATA/'a.json'))
+                     ^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_http_success_is_not_independent_correctness (test_capabilities.InvocationTests.test_http_success_is_not_independent_correctness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 216, in test_http_success_is_not_independent_correctness
+    result=invoke(load(DATA/f'{provider}.{suffix}'),origin,VALUES)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_ordinary_invalid_inputs_never_mutate (test_capabilities.InvocationTests.test_ordinary_invalid_inputs_never_mutate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 185, in test_ordinary_invalid_inputs_never_mutate
+    self.assertEqual(invoke(load(DATA/f'{provider}.{suffix}'),origin,values).error_kind,'input')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_provider_specific_limits_and_exact_precision (test_capabilities.InvocationTests.test_provider_specific_limits_and_exact_precision)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 195, in test_provider_specific_limits_and_exact_precision
+    result=invoke(load(DATA/f'{provider}.{suffix}'),origin,values)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_service_denial_and_error_reporting (test_capabilities.InvocationTests.test_service_denial_and_error_reporting)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 204, in test_service_denial_and_error_reporting
+    result=invoke(load(DATA/f'{provider}.{suffix}'),origin,VALUES)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_success_both_frontends_both_native_fixtures (test_capabilities.InvocationTests.test_success_both_frontends_both_native_fixtures) (provider='a', suffix='ttl')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 170, in test_success_both_frontends_both_native_fixtures
+    result=invoke_capability([load(DATA/f'{provider}.{suffix}')],EVENT_CREATION,origin,VALUES)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+======================================================================
+ERROR: test_success_both_frontends_both_native_fixtures (test_capabilities.InvocationTests.test_success_both_frontends_both_native_fixtures) (provider='b', suffix='ttl')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4/test_capabilities.py", line 170, in test_success_both_frontends_both_native_fixtures
+    result=invoke_capability([load(DATA/f'{provider}.{suffix}')],EVENT_CREATION,origin,VALUES)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 156, in load
+    return load_rdf(path)
+           ^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/src/semantic_capability_v4/descriptions.py", line 87, in load_rdf
+    from rdflib import BNode, Graph, Literal, Namespace, RDF, URIRef, XSD
+ModuleNotFoundError: No module named 'rdflib'
+
+----------------------------------------------------------------------
+Ran 20 tests in 14.735s
+
+FAILED (errors=16)

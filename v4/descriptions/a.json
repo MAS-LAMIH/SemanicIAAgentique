@@ -1,0 +1,33 @@
+{
+  "description_version": 1,
+  "provider_id": "urn:provider:a",
+  "operation_id": "urn:provider:a:create",
+  "capability_id": "https://example.org/capability/v4/1#EventCreation",
+  "method": "POST",
+  "path": "/events",
+  "input_mapping": {
+    "start_time": {
+      "field": "start_time",
+      "conversion": "identity"
+    },
+    "end_time": {
+      "field": "end_time",
+      "conversion": "identity"
+    },
+    "title": {
+      "field": "title",
+      "conversion": "identity"
+    }
+  },
+  "output_mapping": {
+    "id": {
+      "field": "id",
+      "conversion": "identity"
+    }
+  },
+  "input_limits": {
+    "title_max_length": 0,
+    "max_duration_seconds": 0,
+    "time_grid_seconds": 0
+  }
+}

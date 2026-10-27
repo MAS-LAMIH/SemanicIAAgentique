@@ -1,0 +1,12 @@
+@prefix v: <https://example.org/capability/v4/1#> .
+<urn:provider:a:create> a v:OperationDescription ;
+  v:description_version 1 ;
+  v:provider_id <urn:provider:a> ;
+  v:capability_id v:EventCreation ;
+  v:method "POST" ;
+  v:path "/events" ;
+  v:input_mapping [ v:role v:start_time ; v:field "start_time" ; v:conversion "identity" ] ;
+  v:input_mapping [ v:role v:end_time ; v:field "end_time" ; v:conversion "identity" ] ;
+  v:input_mapping [ v:role v:title ; v:field "title" ; v:conversion "identity" ] ;
+  v:output_mapping [ v:role v:id ; v:field "id" ; v:conversion "identity" ] ;
+  v:input_limits [ v:title_max_length 0 ; v:max_duration_seconds 0 ; v:time_grid_seconds 0 ] .
