@@ -1,0 +1,16 @@
+{
+  "repository": "LeperKing-IV/calendar-api",
+  "revision": "0c5159c16e37d9cf4f97cb70084988cac3158c79",
+  "archive_url": "https://codeload.github.com/LeperKing-IV/calendar-api/tar.gz/0c5159c16e37d9cf4f97cb70084988cac3158c79",
+  "archive_sha256": "ed6de93553c1c95ce211733c247b6ec1281e0aaff6b270179e361062b751d234",
+  "archive_commit_mtime_utc_epoch": 1753831251,
+  "retained_contract_files": [
+    {
+      "path": "README.md",
+      "sha256": "3a21cd48cd7dfbfcfb5d49998926dacca394d8ddd4cc7045cd0f30ea1b18362f"
+    }
+  ],
+  "archive_retention": "Not vendored; immutable URL/hash retained. Original downloaded archive outside repository. Only relevant public contract code retained; configuration/credential files omitted.",
+  "archive_timestamp_predates_criteria": true,
+  "timestamp_caveat": "Archive timestamp is provenance metadata, not independent authorship attestation."
+}

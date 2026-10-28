@@ -1,0 +1,16 @@
+{
+  "repository": "BradWaterhouse/calendar-api",
+  "revision": "0cb22702473d8bb9ac1fd2a394bdaa46a684dfb0",
+  "archive_url": "https://codeload.github.com/BradWaterhouse/calendar-api/tar.gz/0cb22702473d8bb9ac1fd2a394bdaa46a684dfb0",
+  "archive_sha256": "f23f8af0f462b2f499817d0f478a35bc8b8042100f1ced665e48f0071b434cf6",
+  "archive_commit_mtime_utc_epoch": 1655549224,
+  "retained_contract_files": [
+    {
+      "path": "README.MD",
+      "sha256": "c450983b99749db10c21e2c8c4369f1db9b5dcf4338ff06c6cbee7f99a065f4a"
+    }
+  ],
+  "archive_retention": "Not vendored; immutable URL/hash retained. Original downloaded archive outside repository. Only relevant public contract code retained; configuration/credential files omitted.",
+  "archive_timestamp_predates_criteria": true,
+  "timestamp_caveat": "Archive timestamp is provenance metadata, not independent authorship attestation."
+}

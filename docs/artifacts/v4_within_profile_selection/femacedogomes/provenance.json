@@ -1,0 +1,32 @@
+{
+  "repository": "femacedogomes/calendar-api",
+  "revision": "115da4c009e6a2d7bd8d4ae6f00a398d26851ce2",
+  "archive_url": "https://codeload.github.com/femacedogomes/calendar-api/tar.gz/115da4c009e6a2d7bd8d4ae6f00a398d26851ce2",
+  "archive_sha256": "3e7af333144134aa416c9a9c4d41a2053e16c2ff773d1c63431e12375c9a2458",
+  "archive_commit_mtime_utc_epoch": 1741893955,
+  "retained_contract_files": [
+    {
+      "path": "README.md",
+      "sha256": "2188c9344ba7e030f8af4718e634058abeed8f5bd0d2d3acc28fa7bebcfe6ec3"
+    },
+    {
+      "path": "src/controllers/event.controller.js",
+      "sha256": "57551541250baa7783c55042f215d3bcba690d7d3b7b0e46c5e761b74340c085"
+    },
+    {
+      "path": "src/models/event.model.js",
+      "sha256": "4b38a0f9a41d94470961f1e51669228a9d00b516c158ed3834273f429642e3f4"
+    },
+    {
+      "path": "src/routes/v1/event.route.js",
+      "sha256": "18a3601bee8873d830ec8cfc863acd6b75d4a7f529d6d40e9ad9ba53af53659a"
+    },
+    {
+      "path": "src/validations/event.validation.js",
+      "sha256": "25f58319a521ca6ba9bf309b07d75176af42876a4141cc1114a3cc612310b275"
+    }
+  ],
+  "archive_retention": "Not vendored; immutable URL/hash retained. Original downloaded archive outside repository. Only relevant public contract code retained; configuration/credential files omitted.",
+  "archive_timestamp_predates_criteria": true,
+  "timestamp_caveat": "Archive timestamp is provenance metadata, not independent authorship attestation."
+}

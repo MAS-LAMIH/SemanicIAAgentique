@@ -1,0 +1,25 @@
+{
+  "successful_queries": [
+    "https://github.com/search?q=calendar+api+flask&type=repositories",
+    "https://github.com/search?q=calendar-api+express&type=repositories",
+    "https://github.com/search?q=event+api+fastapi+calendar&type=repositories",
+    "https://github.com/search?q=calendar+api+golang&type=repositories",
+    "https://github.com/search?q=events+api+fastapi+crud&type=repositories"
+  ],
+  "additional_discovery": "https://github.com/topics/calendar-api",
+  "access_failures": [
+    {
+      "query": "GitHub REST search: calendar event REST API language:Python",
+      "error": "HTTP 502"
+    },
+    {
+      "query": "GitHub REST search: calendar-api sorted by stars",
+      "error": "HTTP 502"
+    },
+    {
+      "query": "GitHub HTML search: calendar rest api express",
+      "error": "HTTP 503"
+    }
+  ],
+  "method": "Contract source and README inspection at immutable upstream commits; no V4 invocations, semantic descriptions or provider launch. Public source archives downloaded via existing proxy; no authentication/environment secrets used."
+}

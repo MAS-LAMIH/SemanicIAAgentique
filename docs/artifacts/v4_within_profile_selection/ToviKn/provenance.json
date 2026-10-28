@@ -1,0 +1,28 @@
+{
+  "repository": "ToviKn/family_heb_calendar_api",
+  "revision": "72cc7e5834a40bdb180538eb40d18fa4cc60da74",
+  "archive_url": "https://codeload.github.com/ToviKn/family_heb_calendar_api/tar.gz/72cc7e5834a40bdb180538eb40d18fa4cc60da74",
+  "archive_sha256": "def6067708028a6f66f9d2ef00e9b7cc85e0134b868e4515d022529e89ccd4f0",
+  "archive_commit_mtime_utc_epoch": 1790751437,
+  "retained_contract_files": [
+    {
+      "path": "backend/README.md",
+      "sha256": "b19e7890746cf5fb34d217f08c4d6bb80cb9fa18e9c59f3c139eecd4c983ad72"
+    },
+    {
+      "path": "backend/app/models/event.py",
+      "sha256": "ce4af11e8de0f09ec0f1529571178050de43b736ca6c4af6eb18b62a146a2aa8"
+    },
+    {
+      "path": "backend/app/routes/events.py",
+      "sha256": "0d16e63880d1900bcb3f6f86ff5bf413e8f74826518ce8261a065ee84aaa61df"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "sha256": "5cdb2d1bc7d962ed332a12815cefef005c462c08dac5235890d3b7e00f6a3f53"
+    }
+  ],
+  "archive_retention": "Not vendored; immutable URL/hash retained. Original downloaded archive outside repository. Only relevant public contract code retained; configuration/credential files omitted.",
+  "archive_timestamp_predates_criteria": true,
+  "timestamp_caveat": "Archive timestamp is provenance metadata, not independent authorship attestation."
+}

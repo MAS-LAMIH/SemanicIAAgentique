@@ -1,0 +1,166 @@
+[
+  {
+    "repository": "gauraang01/flask-calendar-event-api",
+    "revision": "bdbc092210a9cb56fe3cd37ebd2866e780c6f200",
+    "archive_sha256": "940e80e1c3eda506e59e0b70d6173739dd1ee0bba63acef1ae5f6e0bb83f2856",
+    "native_contract": "Google OAuth event retrieval service; POST /events takes start_date/end_date/user_id to fetch events, not create a titled interval",
+    "reproducibility": "Docker/Flask/MongoDB plus Google OAuth; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "Retrieval rather than creation; external OAuth and required user_id",
+    "evidence": [
+      "gauraang01/README.md"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "h4cktivist/web-calendar",
+    "revision": "2f701fbbeaa38ecd06d93b98487ab721e76df022",
+    "archive_sha256": "72607c9145d4b243065bbb56975d2604138fc27ab273a46b9c4789a8242dd29a",
+    "native_contract": "Flask POST /api/event: event + date (day only), JSON acknowledgement without id; GET by integer ID",
+    "reproducibility": "SQLite database and requirements file; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "No start/end instants; no creation ID; datetime identity cannot encode date-only schema",
+    "evidence": [
+      "h4cktivist/app.py"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "andeen171/Calendar-API",
+    "revision": "596dce4d51cd4f722791094f756475252a6b4d42",
+    "archive_sha256": "326324e50759b896c17e1f260f37d311bf19218c92b69702726161ff5be159e4",
+    "native_contract": "Flask POST /event/: event + date (day only), JSON acknowledgement without id; GET integer ID",
+    "reproducibility": "SQLite database; dependency versions not declared; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "No interval or returned identifier; trailing slash also outside fixed V4 path grammar",
+    "evidence": [
+      "andeen171/app.py"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "femacedogomes/calendar-api",
+    "revision": "115da4c009e6a2d7bd8d4ae6f00a398d26851ce2",
+    "archive_sha256": "3e7af333144134aa416c9a9c4d41a2053e16c2ff773d1c63431e12375c9a2458",
+    "native_contract": "POST event: title/description/startTime/endTime; JWT current user; Joi end>start; JSON Mongoose event response",
+    "reproducibility": "MongoDB/Node setup with upstream package-lock; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "Required description and Authorization header cannot be supplied by frozen three-role description",
+    "evidence": [
+      "femacedogomes/contract-source/src/routes/v1/event.route.js",
+      "femacedogomes/contract-source/src/validations/event.validation.js",
+      "femacedogomes/contract-source/src/models/event.model.js"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "LeperKing-IV/calendar-api",
+    "revision": "0c5159c16e37d9cf4f97cb70084988cac3158c79",
+    "archive_sha256": "ed6de93553c1c95ce211733c247b6ec1281e0aaff6b270179e361062b751d234",
+    "native_contract": "Read-only Jalali date/calendar formatting endpoints, not event creation",
+    "reproducibility": "Node/Docker and upstream package-lock; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "No event-creation capability or event storage",
+    "evidence": [
+      "LeperKing-IV/contract-source/README.md",
+      "LeperKing-IV/contract-source/app/index.js"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "BradWaterhouse/calendar-api",
+    "revision": "0cb22702473d8bb9ac1fd2a394bdaa46a684dfb0",
+    "archive_sha256": "f23f8af0f462b2f499817d0f478a35bc8b8042100f1ced665e48f0071b434cf6",
+    "native_contract": "MySQL calendar_event has title/description/calendar_id/date_time, not separate start/end",
+    "reproducibility": "Node/MySQL schema and upstream package locks; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "No end instant; additional required fields and foreign key; no frozen interval mapping",
+    "evidence": [
+      "BradWaterhouse/contract-source/README.MD"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "MGasiorowskii/ChronosAPI-FastAPI",
+    "revision": "078c21efa565864c0f10e4b19c7567a734bb561f",
+    "archive_sha256": "12383a3c01b78f895dac5e9222ea8c085ed0aa3a7f9f0ce7bcaff30b7af4a516",
+    "native_contract": "POST events: event_name/agenda/start/end plus owner/location/participants; CurrentUser; integer response id",
+    "reproducibility": "FastAPI/PostgreSQL/Redis, upstream uv.lock; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "Required extra fields/current-user authentication and integer output ID",
+    "evidence": [
+      "MGasiorowskii/contract-source/app/api/v1/views/events.py",
+      "MGasiorowskii/contract-source/app/models/events.py",
+      "MGasiorowskii/contract-source/pyproject.toml"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "ToviKn/family_heb_calendar_api",
+    "revision": "72cc7e5834a40bdb180538eb40d18fa4cc60da74",
+    "archive_sha256": "def6067708028a6f66f9d2ef00e9b7cc85e0134b868e4515d022529e89ccd4f0",
+    "native_contract": "JSON event model splits dates and timezone-free time-only start_time/end_time; JWT bearer access",
+    "reproducibility": "FastAPI/PostgreSQL Docker development reset documented; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "Mandatory bearer auth and time-only conversion outside frozen instant conversions",
+    "evidence": [
+      "ToviKn/contract-source/backend/README.md",
+      "ToviKn/contract-source/backend/app/models/event.py",
+      "ToviKn/contract-source/backend/app/routes/events.py"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "smt-rae/Calendar-api",
+    "revision": "a9299c1a55c48d0011b28281611e6998a604748c",
+    "archive_sha256": "1c1034b3e58cc8b44826ab94e003ab52c5df136552917bbb47265f7bc716987e",
+    "native_contract": "Event router, schemas and models are empty scaffolds at inspected revision",
+    "reproducibility": "No nonempty dependencies or runnable event implementation established",
+    "screen_result": "ELIGIBILITY_NOT_ESTABLISHED",
+    "reason": "No implemented creation contract; eligibility unknown/unestablished rather than operationally failed",
+    "evidence": [
+      "smt-rae/contract-source/app/routers/events.py",
+      "smt-rae/contract-source/app/models.py",
+      "smt-rae/contract-source/app/schemas.py"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "ciellaindria28/event-scheduler-fastapi",
+    "revision": "4c1530441187252b220d1c65acff754139e34ea9",
+    "archive_sha256": "5a0ea2c3b0a364fb3854119224ebead213930448ccc31c663f73931e4e782df1",
+    "native_contract": "POST /create_event requires name/date/description and echoes them; integer GET resource ID",
+    "reproducibility": "FastAPI/PostgreSQL source; environment reproducibility not established",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "Single date, required description, no returned creation ID",
+    "evidence": [
+      "ciellaindria28/contract-source/eventscheduler.py",
+      "ciellaindria28/contract-source/models.py"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  },
+  {
+    "repository": "dadeechvansh/FastAPI_CRUD_Operations",
+    "revision": "977ba841e6176c7184a16691106a340706fb7431",
+    "archive_sha256": "ba98dfe26ebfceb134baee464e411d55b406128ba7c52de88eec404063b46b9c",
+    "native_contract": "POST /events requires title/category/location/date/organizer/capacity/is_open; nested note object with integer ID",
+    "reproducibility": "FastAPI in-memory seeded list, restart reset possible in principle; not provisioned",
+    "screen_result": "NOT_ELIGIBLE",
+    "reason": "No interval, required extra fields, nested integer ID",
+    "evidence": [
+      "dadeechvansh/contract-source/main.py"
+    ],
+    "native_execution": "NOT_RUN",
+    "selected": false
+  }
+]
