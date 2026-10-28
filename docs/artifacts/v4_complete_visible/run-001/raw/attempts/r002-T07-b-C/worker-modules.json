@@ -1,0 +1,10 @@
+[
+  "semantic_capability_v4",
+  "semantic_capability_v4.descriptions",
+  "semantic_capability_v4.http",
+  "semantic_capability_v4.invoke",
+  "semantic_capability_v4.mapping",
+  "semantic_capability_v4.model",
+  "semantic_capability_v4.registry",
+  "semantic_capability_v4.validation"
+]

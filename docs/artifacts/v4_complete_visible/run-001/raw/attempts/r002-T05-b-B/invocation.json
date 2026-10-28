@@ -1,0 +1,11 @@
+{
+  "diagnostics": [
+    "Positive interval required"
+  ],
+  "error_kind": "input",
+  "http_ok": false,
+  "http_status": null,
+  "operation_id": "urn:provider:b:create",
+  "output": null,
+  "remote_outcome_unknown": false
+}

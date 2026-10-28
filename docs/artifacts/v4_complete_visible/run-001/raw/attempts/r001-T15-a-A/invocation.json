@@ -1,0 +1,11 @@
+{
+  "diagnostics": [
+    "'id'"
+  ],
+  "error_kind": "response_mapping",
+  "http_ok": true,
+  "http_status": 201,
+  "operation_id": "urn:provider:a:create",
+  "output": null,
+  "remote_outcome_unknown": false
+}

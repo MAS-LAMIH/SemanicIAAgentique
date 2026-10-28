@@ -1,0 +1,632 @@
+[
+  {
+    "provider": "a",
+    "condition": "A",
+    "classification": "correct_external_fault_detection",
+    "worker": {
+      "n": 12,
+      "min_seconds": 0.064046049000126,
+      "median_seconds": 0.06419736600003034,
+      "mean_seconds": 0.0642291133333212,
+      "p95_seconds": 0.06440219199998864,
+      "max_seconds": 0.06440219199998864
+    },
+    "whole_attempt": {
+      "n": 12,
+      "min_seconds": 0.5497135040000103,
+      "median_seconds": 0.5513111605000631,
+      "mean_seconds": 0.551931465083309,
+      "p95_seconds": 0.5555733179999152,
+      "max_seconds": 0.5555733179999152
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "A",
+    "classification": "correct_http_rejection",
+    "worker": {
+      "n": 6,
+      "min_seconds": 0.0642194389999986,
+      "median_seconds": 0.06434989099989252,
+      "mean_seconds": 0.06437628299996352,
+      "p95_seconds": 0.06457748599996194,
+      "max_seconds": 0.06457748599996194
+    },
+    "whole_attempt": {
+      "n": 6,
+      "min_seconds": 0.5504498669999975,
+      "median_seconds": 0.5515416279999954,
+      "mean_seconds": 0.5521169418333329,
+      "p95_seconds": 0.5542391910000788,
+      "max_seconds": 0.5542391910000788
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "A",
+    "classification": "correct_rejection",
+    "worker": {
+      "n": 9,
+      "min_seconds": 0.06406647499989049,
+      "median_seconds": 0.06417365499987682,
+      "mean_seconds": 0.06422381288883924,
+      "p95_seconds": 0.06449224799985132,
+      "max_seconds": 0.06449224799985132
+    },
+    "whole_attempt": {
+      "n": 9,
+      "min_seconds": 0.5010706829998526,
+      "median_seconds": 0.5011673569999857,
+      "mean_seconds": 0.5014013877777315,
+      "p95_seconds": 0.5032179039999392,
+      "max_seconds": 0.5032179039999392
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "A",
+    "classification": "correct_timeout_detection",
+    "worker": {
+      "n": 3,
+      "min_seconds": 1.0015186450000328,
+      "median_seconds": 1.0015839289999349,
+      "mean_seconds": 1.0015661683333594,
+      "p95_seconds": 1.0015959310001108,
+      "max_seconds": 1.0015959310001108
+    },
+    "whole_attempt": {
+      "n": 3,
+      "min_seconds": 2.0519324340000367,
+      "median_seconds": 2.0519951159999437,
+      "mean_seconds": 2.053051509666602,
+      "p95_seconds": 2.0552269789998263,
+      "max_seconds": 2.0552269789998263
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "A",
+    "classification": "successful_creation",
+    "worker": {
+      "n": 18,
+      "min_seconds": 0.06413878800003658,
+      "median_seconds": 0.06427172849998897,
+      "mean_seconds": 0.07821079599996968,
+      "p95_seconds": 0.1145190500001263,
+      "max_seconds": 0.1145190500001263
+    },
+    "whole_attempt": {
+      "n": 18,
+      "min_seconds": 0.549961200000098,
+      "median_seconds": 0.5526320024998768,
+      "mean_seconds": 0.5540684521666637,
+      "p95_seconds": 0.5637971189999007,
+      "max_seconds": 0.5637971189999007
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "B",
+    "classification": "correct_external_fault_detection",
+    "worker": {
+      "n": 12,
+      "min_seconds": 0.06409776299983605,
+      "median_seconds": 0.06416554249994988,
+      "mean_seconds": 0.06417075716664537,
+      "p95_seconds": 0.06427264000012656,
+      "max_seconds": 0.06427264000012656
+    },
+    "whole_attempt": {
+      "n": 12,
+      "min_seconds": 0.5508632629998829,
+      "median_seconds": 0.5521946050001816,
+      "mean_seconds": 0.552426312583331,
+      "p95_seconds": 0.5553246350000336,
+      "max_seconds": 0.5553246350000336
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "B",
+    "classification": "correct_http_rejection",
+    "worker": {
+      "n": 6,
+      "min_seconds": 0.06409258799999407,
+      "median_seconds": 0.06426074550006433,
+      "mean_seconds": 0.08092280616669238,
+      "p95_seconds": 0.11450367499992353,
+      "max_seconds": 0.11450367499992353
+    },
+    "whole_attempt": {
+      "n": 6,
+      "min_seconds": 0.550273973000003,
+      "median_seconds": 0.5522846850000178,
+      "mean_seconds": 0.5569533104999588,
+      "p95_seconds": 0.5783268339998813,
+      "max_seconds": 0.5783268339998813
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "B",
+    "classification": "correct_rejection",
+    "worker": {
+      "n": 9,
+      "min_seconds": 0.06410822499992719,
+      "median_seconds": 0.06432594799980507,
+      "mean_seconds": 0.06438242099999217,
+      "p95_seconds": 0.06476022099991496,
+      "max_seconds": 0.06476022099991496
+    },
+    "whole_attempt": {
+      "n": 9,
+      "min_seconds": 0.5011147469999742,
+      "median_seconds": 0.5011971220001215,
+      "mean_seconds": 0.5014095728888859,
+      "p95_seconds": 0.5031618400000752,
+      "max_seconds": 0.5031618400000752
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "B",
+    "classification": "correct_timeout_detection",
+    "worker": {
+      "n": 3,
+      "min_seconds": 1.001519220000091,
+      "median_seconds": 1.0015997979999156,
+      "mean_seconds": 1.001587451666713,
+      "p95_seconds": 1.0016433370001323,
+      "max_seconds": 1.0016433370001323
+    },
+    "whole_attempt": {
+      "n": 3,
+      "min_seconds": 2.052657960000033,
+      "median_seconds": 2.0561930310000207,
+      "mean_seconds": 2.0552366116667145,
+      "p95_seconds": 2.0568588440000894,
+      "max_seconds": 2.0568588440000894
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "B",
+    "classification": "successful_creation",
+    "worker": {
+      "n": 18,
+      "min_seconds": 0.0640190280000752,
+      "median_seconds": 0.06419895700003053,
+      "mean_seconds": 0.0753547225555672,
+      "p95_seconds": 0.1145078019999346,
+      "max_seconds": 0.1145078019999346
+    },
+    "whole_attempt": {
+      "n": 18,
+      "min_seconds": 0.5499243429999296,
+      "median_seconds": 0.5519264204999672,
+      "mean_seconds": 0.5541348866111093,
+      "p95_seconds": 0.5688978030000271,
+      "max_seconds": 0.5688978030000271
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "C",
+    "classification": "correct_external_fault_detection",
+    "worker": {
+      "n": 12,
+      "min_seconds": 0.11422656000013376,
+      "median_seconds": 0.11434386949997588,
+      "mean_seconds": 0.11437098600003992,
+      "p95_seconds": 0.11477337000019361,
+      "max_seconds": 0.11477337000019361
+    },
+    "whole_attempt": {
+      "n": 12,
+      "min_seconds": 0.5821192979999523,
+      "median_seconds": 0.5844022349999705,
+      "mean_seconds": 0.5851875416666795,
+      "p95_seconds": 0.591464655999971,
+      "max_seconds": 0.591464655999971
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "C",
+    "classification": "correct_http_rejection",
+    "worker": {
+      "n": 6,
+      "min_seconds": 0.11420703299995694,
+      "median_seconds": 0.11437240700001894,
+      "mean_seconds": 0.11448810216662271,
+      "p95_seconds": 0.11491715899978772,
+      "max_seconds": 0.11491715899978772
+    },
+    "whole_attempt": {
+      "n": 6,
+      "min_seconds": 0.5825717679999798,
+      "median_seconds": 0.5842765059999238,
+      "mean_seconds": 0.5847560258333336,
+      "p95_seconds": 0.5875836750001326,
+      "max_seconds": 0.5875836750001326
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "C",
+    "classification": "correct_rejection",
+    "worker": {
+      "n": 9,
+      "min_seconds": 0.11422200599986354,
+      "median_seconds": 0.11432207600000766,
+      "mean_seconds": 0.11442674533332643,
+      "p95_seconds": 0.11477020500001345,
+      "max_seconds": 0.11477020500001345
+    },
+    "whole_attempt": {
+      "n": 9,
+      "min_seconds": 0.5010989750001045,
+      "median_seconds": 0.5011592159999054,
+      "mean_seconds": 0.5011699603333758,
+      "p95_seconds": 0.5013035120000495,
+      "max_seconds": 0.5013035120000495
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "C",
+    "classification": "correct_timeout_detection",
+    "worker": {
+      "n": 3,
+      "min_seconds": 1.0016012009998576,
+      "median_seconds": 1.001630349000152,
+      "mean_seconds": 1.00162279033331,
+      "p95_seconds": 1.00163682099992,
+      "max_seconds": 1.00163682099992
+    },
+    "whole_attempt": {
+      "n": 3,
+      "min_seconds": 2.0825744750000013,
+      "median_seconds": 2.086172137000176,
+      "mean_seconds": 2.088185001333386,
+      "p95_seconds": 2.095808391999981,
+      "max_seconds": 2.095808391999981
+    }
+  },
+  {
+    "provider": "a",
+    "condition": "C",
+    "classification": "successful_creation",
+    "worker": {
+      "n": 18,
+      "min_seconds": 0.11414115200000197,
+      "median_seconds": 0.11433801449993553,
+      "mean_seconds": 0.11437150888889391,
+      "p95_seconds": 0.11468781300004594,
+      "max_seconds": 0.11468781300004594
+    },
+    "whole_attempt": {
+      "n": 18,
+      "min_seconds": 0.5806935440000416,
+      "median_seconds": 0.5843234630000325,
+      "mean_seconds": 0.58651503355553,
+      "p95_seconds": 0.5970194610001727,
+      "max_seconds": 0.5970194610001727
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "A",
+    "classification": "correct_external_fault_detection",
+    "worker": {
+      "n": 12,
+      "min_seconds": 0.06407547499998145,
+      "median_seconds": 0.06424556399997527,
+      "mean_seconds": 0.07259185899998026,
+      "p95_seconds": 0.11454853600002934,
+      "max_seconds": 0.11454853600002934
+    },
+    "whole_attempt": {
+      "n": 12,
+      "min_seconds": 0.5501899729999877,
+      "median_seconds": 0.5520029765000345,
+      "mean_seconds": 0.5529061857499945,
+      "p95_seconds": 0.5584327020001183,
+      "max_seconds": 0.5584327020001183
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "A",
+    "classification": "correct_http_rejection",
+    "worker": {
+      "n": 6,
+      "min_seconds": 0.06404064699995615,
+      "median_seconds": 0.06426173900001686,
+      "mean_seconds": 0.06425338883332188,
+      "p95_seconds": 0.06443196200007151,
+      "max_seconds": 0.06443196200007151
+    },
+    "whole_attempt": {
+      "n": 6,
+      "min_seconds": 0.5508472310000343,
+      "median_seconds": 0.5518493065001167,
+      "mean_seconds": 0.5522382860000334,
+      "p95_seconds": 0.5537616149999849,
+      "max_seconds": 0.5537616149999849
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "A",
+    "classification": "correct_rejection",
+    "worker": {
+      "n": 18,
+      "min_seconds": 0.0640487729999677,
+      "median_seconds": 0.0642281269998648,
+      "mean_seconds": 0.06426956944445313,
+      "p95_seconds": 0.06470598800001426,
+      "max_seconds": 0.06470598800001426
+    },
+    "whole_attempt": {
+      "n": 18,
+      "min_seconds": 0.5010300169999482,
+      "median_seconds": 0.5011505664999731,
+      "mean_seconds": 0.5011525923333188,
+      "p95_seconds": 0.5012901519999104,
+      "max_seconds": 0.5012901519999104
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "A",
+    "classification": "correct_timeout_detection",
+    "worker": {
+      "n": 3,
+      "min_seconds": 1.0015605230000801,
+      "median_seconds": 1.0016144290000284,
+      "mean_seconds": 1.001608089333331,
+      "p95_seconds": 1.0016493159998845,
+      "max_seconds": 1.0016493159998845
+    },
+    "whole_attempt": {
+      "n": 3,
+      "min_seconds": 2.0514156949998323,
+      "median_seconds": 2.0518907099999524,
+      "mean_seconds": 2.052016496333257,
+      "p95_seconds": 2.052743083999985,
+      "max_seconds": 2.052743083999985
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "A",
+    "classification": "successful_creation",
+    "worker": {
+      "n": 9,
+      "min_seconds": 0.06419865299994854,
+      "median_seconds": 0.0643188999999893,
+      "mean_seconds": 0.07007576155552266,
+      "p95_seconds": 0.1143013119999523,
+      "max_seconds": 0.1143013119999523
+    },
+    "whole_attempt": {
+      "n": 9,
+      "min_seconds": 0.5502354390000619,
+      "median_seconds": 0.5527125190001243,
+      "mean_seconds": 0.5532093699999526,
+      "p95_seconds": 0.5560274849999587,
+      "max_seconds": 0.5560274849999587
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "B",
+    "classification": "correct_external_fault_detection",
+    "worker": {
+      "n": 12,
+      "min_seconds": 0.06405112599986751,
+      "median_seconds": 0.0642726754999785,
+      "mean_seconds": 0.06842457591663258,
+      "p95_seconds": 0.1144332299998041,
+      "max_seconds": 0.1144332299998041
+    },
+    "whole_attempt": {
+      "n": 12,
+      "min_seconds": 0.5498448929999995,
+      "median_seconds": 0.5510916485000052,
+      "mean_seconds": 0.5523019069166821,
+      "p95_seconds": 0.556527246999849,
+      "max_seconds": 0.556527246999849
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "B",
+    "classification": "correct_http_rejection",
+    "worker": {
+      "n": 6,
+      "min_seconds": 0.06406420600001184,
+      "median_seconds": 0.0643224079999527,
+      "mean_seconds": 0.07264687183332323,
+      "p95_seconds": 0.11451263900016784,
+      "max_seconds": 0.11451263900016784
+    },
+    "whole_attempt": {
+      "n": 6,
+      "min_seconds": 0.5499316570001156,
+      "median_seconds": 0.5535546369999338,
+      "mean_seconds": 0.5537093598333437,
+      "p95_seconds": 0.558004598000025,
+      "max_seconds": 0.558004598000025
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "B",
+    "classification": "correct_rejection",
+    "worker": {
+      "n": 18,
+      "min_seconds": 0.06410157200002686,
+      "median_seconds": 0.06435053550012526,
+      "mean_seconds": 0.06712049755553078,
+      "p95_seconds": 0.1146758200000022,
+      "max_seconds": 0.1146758200000022
+    },
+    "whole_attempt": {
+      "n": 18,
+      "min_seconds": 0.5010110350001469,
+      "median_seconds": 0.5011424125000303,
+      "mean_seconds": 0.5012698810555523,
+      "p95_seconds": 0.5028487489998952,
+      "max_seconds": 0.5028487489998952
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "B",
+    "classification": "correct_timeout_detection",
+    "worker": {
+      "n": 3,
+      "min_seconds": 1.0015958659998887,
+      "median_seconds": 1.0016219479998654,
+      "mean_seconds": 1.0016307959998965,
+      "p95_seconds": 1.001674573999935,
+      "max_seconds": 1.001674573999935
+    },
+    "whole_attempt": {
+      "n": 3,
+      "min_seconds": 2.0517473550000886,
+      "median_seconds": 2.0543741359999785,
+      "mean_seconds": 2.0537231773333438,
+      "p95_seconds": 2.0550480409999636,
+      "max_seconds": 2.0550480409999636
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "B",
+    "classification": "successful_creation",
+    "worker": {
+      "n": 9,
+      "min_seconds": 0.0641291930000989,
+      "median_seconds": 0.06434652899997673,
+      "mean_seconds": 0.0698846217777979,
+      "p95_seconds": 0.11446077599998716,
+      "max_seconds": 0.11446077599998716
+    },
+    "whole_attempt": {
+      "n": 9,
+      "min_seconds": 0.5502852049999092,
+      "median_seconds": 0.5521977159999096,
+      "mean_seconds": 0.55277429822215,
+      "p95_seconds": 0.5586814099999629,
+      "max_seconds": 0.5586814099999629
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "C",
+    "classification": "correct_external_fault_detection",
+    "worker": {
+      "n": 12,
+      "min_seconds": 0.1142027920000146,
+      "median_seconds": 0.11451662700005727,
+      "mean_seconds": 0.11449484733337083,
+      "p95_seconds": 0.11474325400013186,
+      "max_seconds": 0.11474325400013186
+    },
+    "whole_attempt": {
+      "n": 12,
+      "min_seconds": 0.5807935230000112,
+      "median_seconds": 0.5842729890000555,
+      "mean_seconds": 0.5858906635833705,
+      "p95_seconds": 0.5960549779999837,
+      "max_seconds": 0.5960549779999837
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "C",
+    "classification": "correct_http_rejection",
+    "worker": {
+      "n": 6,
+      "min_seconds": 0.11416819199985184,
+      "median_seconds": 0.11441757899990534,
+      "mean_seconds": 0.11440101466663084,
+      "p95_seconds": 0.11458661000006032,
+      "max_seconds": 0.11458661000006032
+    },
+    "whole_attempt": {
+      "n": 6,
+      "min_seconds": 0.5819593209998857,
+      "median_seconds": 0.5843818385000077,
+      "mean_seconds": 0.5858452625000155,
+      "p95_seconds": 0.5950722239999777,
+      "max_seconds": 0.5950722239999777
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "C",
+    "classification": "correct_rejection",
+    "worker": {
+      "n": 18,
+      "min_seconds": 0.11423545299999205,
+      "median_seconds": 0.11436969049998424,
+      "mean_seconds": 0.11449096999998194,
+      "p95_seconds": 0.11602575899996737,
+      "max_seconds": 0.11602575899996737
+    },
+    "whole_attempt": {
+      "n": 18,
+      "min_seconds": 0.5010242900000321,
+      "median_seconds": 0.5011412044999588,
+      "mean_seconds": 0.5011621950000189,
+      "p95_seconds": 0.5015379129999928,
+      "max_seconds": 0.5015379129999928
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "C",
+    "classification": "correct_timeout_detection",
+    "worker": {
+      "n": 3,
+      "min_seconds": 1.0015772540000398,
+      "median_seconds": 1.001622252000061,
+      "mean_seconds": 1.0016079213333644,
+      "p95_seconds": 1.0016242579999926,
+      "max_seconds": 1.0016242579999926
+    },
+    "whole_attempt": {
+      "n": 3,
+      "min_seconds": 2.083049155000026,
+      "median_seconds": 2.0857287060000544,
+      "mean_seconds": 2.0856641650000256,
+      "p95_seconds": 2.0882146339999963,
+      "max_seconds": 2.0882146339999963
+    }
+  },
+  {
+    "provider": "b",
+    "condition": "C",
+    "classification": "successful_creation",
+    "worker": {
+      "n": 9,
+      "min_seconds": 0.11417375499991067,
+      "median_seconds": 0.1145825529999911,
+      "mean_seconds": 0.1258562994444219,
+      "p95_seconds": 0.16480640999998286,
+      "max_seconds": 0.16480640999998286
+    },
+    "whole_attempt": {
+      "n": 9,
+      "min_seconds": 0.5835570310000548,
+      "median_seconds": 0.5916625320001003,
+      "mean_seconds": 0.591834077888911,
+      "p95_seconds": 0.6041294670001207,
+      "max_seconds": 0.6041294670001207
+    }
+  }
+]

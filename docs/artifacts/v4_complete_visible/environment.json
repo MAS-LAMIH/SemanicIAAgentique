@@ -1,0 +1,13 @@
+{
+  "source_revision": "cfa4eba993e34b2916706b3953c55919fd3d8e54",
+  "working_tree_clean_before_run": true,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "cpu_count": 5,
+  "dependencies": {
+    "rdflib": "7.6.0",
+    "pyparsing": "3.3.3"
+  },
+  "execution": "serial; no concurrent tests or intentional workloads launched",
+  "shared_host_exclusivity_verified": false
+}

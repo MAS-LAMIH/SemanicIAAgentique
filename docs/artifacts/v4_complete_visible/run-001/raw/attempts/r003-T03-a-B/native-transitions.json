@@ -1,0 +1,48 @@
+[
+  {
+    "after": {
+      "events": {
+        "event-0001": {
+          "end_time": "2030-01-07T11:00:00+00:00",
+          "id": "event-0001",
+          "start_time": "2030-01-07T10:00:00+00:00",
+          "title": "R\u00e9union \u2713 \u2014 \u540c\u671f"
+        },
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-28T12:48:58.391521+00:00",
+      "provider": "a",
+      "revision": 1,
+      "writable": true
+    },
+    "before": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T12:48:58.391191+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 201,
+    "path": "/events"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "delivered_body": {
+      "booking_ref": "booking-0001"
+    },
+    "method": "POST",
+    "path": "/bookings",
+    "raw_body": {
+      "booking_ref": "booking-0001"
+    },
+    "result": {
+      "diagnostics": [],
+      "error_kind": null,
+      "http_ok": true,
+      "http_status": 201,
+      "operation_id": "urn:provider:b:create",
+      "output": null,
+      "remote_outcome_unknown": false
+    },
+    "values": {
+      "begins_ms": 1894010400000,
+      "finishes_ms": 1894014000000,
+      "label": "Team meeting"
+    },
+    "wire_fault": null
+  }
+]

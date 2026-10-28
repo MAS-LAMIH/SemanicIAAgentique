@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/workspace/SemanicIAAgentique/.venv/bin/python",
+    "-m",
+    "v4_pilot.experiment",
+    "run",
+    "--output",
+    "/workspace/v4-complete-visible-evidence-001/run-001",
+    "--repetitions",
+    "3"
+  ],
+  "PYTHONPATH": "src",
+  "cwd": "/workspace/SemanicIAAgentique",
+  "exit_code": 0,
+  "command_elapsed_seconds": 198.9313468360001
+}

@@ -1,0 +1,765 @@
+{
+  "excluded_task": "T16 (deadline-dominated/censored)",
+  "pairs": [
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T01",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": -0.0001129819997913728,
+      "whole_attempt_C_minus_B_seconds": 0.03315070300004663
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T02",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.050328271999887875,
+      "whole_attempt_C_minus_B_seconds": 0.0336570730000858
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T03",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.050189446000104,
+      "whole_attempt_C_minus_B_seconds": 0.0354227070001798
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T04",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05011378099993635,
+      "whole_attempt_C_minus_B_seconds": 3.742900003089744e-05
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T05",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.050009984000098484,
+      "whole_attempt_C_minus_B_seconds": -2.9321000056370394e-05
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T06",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": -0.00020757900006174168,
+      "whole_attempt_C_minus_B_seconds": 0.028121658000145544
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T07",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.04997492500001499,
+      "whole_attempt_C_minus_B_seconds": 0.030806314000074053
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T08",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.00019090599994342483,
+      "whole_attempt_C_minus_B_seconds": 0.024752645999797096
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T09",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.0005398890000378742,
+      "whole_attempt_C_minus_B_seconds": 0.029410947000087617
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T10",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.05070944799967947,
+      "whole_attempt_C_minus_B_seconds": 0.034296304000008604
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T11",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05030985200005489,
+      "whole_attempt_C_minus_B_seconds": 0.03591698700006418
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T12",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05021980799983794,
+      "whole_attempt_C_minus_B_seconds": 0.03186507000009442
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T13",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.0502307189997282,
+      "whole_attempt_C_minus_B_seconds": 0.029370725000035236
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T14",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05029406700009531,
+      "whole_attempt_C_minus_B_seconds": -0.0019565180000427063
+    },
+    {
+      "provider": "a",
+      "repetition": 1,
+      "task_id": "T15",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.050199361000068166,
+      "whole_attempt_C_minus_B_seconds": 0.030381295000097452
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T01",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05043611799987957,
+      "whole_attempt_C_minus_B_seconds": 0.02888051600007202
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T02",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05023664199984523,
+      "whole_attempt_C_minus_B_seconds": 0.030984131999957754
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T03",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05025677599996925,
+      "whole_attempt_C_minus_B_seconds": 0.03954125199970804
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T04",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05044338599986986,
+      "whole_attempt_C_minus_B_seconds": -0.00010188800001742493
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T05",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.04985766200024955,
+      "whole_attempt_C_minus_B_seconds": 1.716100018711586e-05
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T06",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05015979099994183,
+      "whole_attempt_C_minus_B_seconds": 0.03383034500006943
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T07",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.049952612999959456,
+      "whole_attempt_C_minus_B_seconds": 0.028536451000036323
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T08",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05011971700014328,
+      "whole_attempt_C_minus_B_seconds": 0.0389830079998319
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T09",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.05041523899990352,
+      "whole_attempt_C_minus_B_seconds": 0.032364798000116934
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T10",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.04990355999984786,
+      "whole_attempt_C_minus_B_seconds": 0.03229680999993434
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T11",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.0506658330002665,
+      "whole_attempt_C_minus_B_seconds": 0.031661907000170686
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T12",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05014302800009318,
+      "whole_attempt_C_minus_B_seconds": 0.036424829999987196
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T13",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.050062387000252784,
+      "whole_attempt_C_minus_B_seconds": 0.030735155999764174
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T14",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.050014655999802926,
+      "whole_attempt_C_minus_B_seconds": -4.79209998047736e-05
+    },
+    {
+      "provider": "a",
+      "repetition": 2,
+      "task_id": "T15",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05016524699999536,
+      "whole_attempt_C_minus_B_seconds": 0.033803281000018615
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T01",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.04994641000007505,
+      "whole_attempt_C_minus_B_seconds": 0.030742668999664602
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T02",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05041962100017372,
+      "whole_attempt_C_minus_B_seconds": 0.0413850459999594
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T03",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": -0.0001811820000057196,
+      "whole_attempt_C_minus_B_seconds": 0.03354245500008801
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T04",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.049942470000132744,
+      "whole_attempt_C_minus_B_seconds": -7.184199989751505e-05
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T05",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.04997115099990879,
+      "whole_attempt_C_minus_B_seconds": 0.0001063899999280693
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T06",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.04995875800000249,
+      "whole_attempt_C_minus_B_seconds": 0.031412677999696825
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T07",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05035708299988073,
+      "whole_attempt_C_minus_B_seconds": 0.03189538299989181
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T08",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05027681899991876,
+      "whole_attempt_C_minus_B_seconds": 0.02719760900026813
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T09",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.0501202820000799,
+      "whole_attempt_C_minus_B_seconds": 0.029190591999849858
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T10",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": -0.0002966419999665959,
+      "whole_attempt_C_minus_B_seconds": 0.00925684100025137
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T11",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05005665399994541,
+      "whole_attempt_C_minus_B_seconds": 0.03622993600015434
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T12",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05001989000015783,
+      "whole_attempt_C_minus_B_seconds": 0.02789893099998153
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T13",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05007103600019036,
+      "whole_attempt_C_minus_B_seconds": 0.038179402999958256
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T14",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.04975176199991438,
+      "whole_attempt_C_minus_B_seconds": -0.00011000299991792417
+    },
+    {
+      "provider": "a",
+      "repetition": 3,
+      "task_id": "T15",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.050258931000144,
+      "whole_attempt_C_minus_B_seconds": 0.03066722799985655
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T01",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.00012177700000393088,
+      "whole_attempt_C_minus_B_seconds": 0.032981122000137475
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T02",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.050115393000169206,
+      "whole_attempt_C_minus_B_seconds": 0.036477870000226176
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T03",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.10016283799996017,
+      "whole_attempt_C_minus_B_seconds": 0.05384426200021153
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T04",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05044556300003933,
+      "whole_attempt_C_minus_B_seconds": -9.107599998969818e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T05",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05121758800009957,
+      "whole_attempt_C_minus_B_seconds": 0.00010204700015492563
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T06",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05019023899990316,
+      "whole_attempt_C_minus_B_seconds": 4.785299984177982e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T07",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.049963505000050645,
+      "whole_attempt_C_minus_B_seconds": -0.0001174490000721562
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T08",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05005824699992445,
+      "whole_attempt_C_minus_B_seconds": 0.00014702399994348525
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T09",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.04997507499979292,
+      "whole_attempt_C_minus_B_seconds": 0.03826617799995802
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T10",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.04992832600009933,
+      "whole_attempt_C_minus_B_seconds": 0.03052413700015677
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T11",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 8.146600021063932e-05,
+      "whole_attempt_C_minus_B_seconds": 0.03735808400028873
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T12",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.04990412400002242,
+      "whole_attempt_C_minus_B_seconds": 0.03195666600004188
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T13",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.0504083130001618,
+      "whole_attempt_C_minus_B_seconds": 0.02881028100000549
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T14",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.04998114399995757,
+      "whole_attempt_C_minus_B_seconds": -0.0018054180000035558
+    },
+    {
+      "provider": "b",
+      "repetition": 1,
+      "task_id": "T15",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05031106199999158,
+      "whole_attempt_C_minus_B_seconds": 0.033426873000280466
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T01",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05276744800016786,
+      "whole_attempt_C_minus_B_seconds": 0.04233601099986117
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T02",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.049764533999905325,
+      "whole_attempt_C_minus_B_seconds": 0.033710959000245566
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T03",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.04971244399985153,
+      "whole_attempt_C_minus_B_seconds": 0.043440465000003314
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T04",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": -0.00023228999998536892,
+      "whole_attempt_C_minus_B_seconds": 0.0002479099998708989
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T05",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05020556900012707,
+      "whole_attempt_C_minus_B_seconds": 1.0652000355548807e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T06",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05006811199996264,
+      "whole_attempt_C_minus_B_seconds": -8.117999982459878e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T07",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05014984400031608,
+      "whole_attempt_C_minus_B_seconds": 0.0005187169999771868
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T08",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05002710200005822,
+      "whole_attempt_C_minus_B_seconds": -0.0003099749999364576
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T09",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.05040942400023596,
+      "whole_attempt_C_minus_B_seconds": 0.03164294200018958
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T10",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.050141226000050665,
+      "whole_attempt_C_minus_B_seconds": 0.0326572919998398
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T11",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05021374299985837,
+      "whole_attempt_C_minus_B_seconds": 0.0368283809998502
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T12",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.0504777980002018,
+      "whole_attempt_C_minus_B_seconds": 0.028100125000037224
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T13",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05046743200023229,
+      "whole_attempt_C_minus_B_seconds": 0.03496758299979774
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T14",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05010896499993578,
+      "whole_attempt_C_minus_B_seconds": -0.0004429289999734465
+    },
+    {
+      "provider": "b",
+      "repetition": 2,
+      "task_id": "T15",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05001593900010448,
+      "whole_attempt_C_minus_B_seconds": 0.02973432400017373
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T01",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.05019446399978733,
+      "whole_attempt_C_minus_B_seconds": 0.03319571800011545
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T02",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.10058870399984698,
+      "whole_attempt_C_minus_B_seconds": 0.04228266400014036
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T03",
+      "classification": "successful_creation",
+      "worker_C_minus_B_seconds": 0.050317496999923605,
+      "whole_attempt_C_minus_B_seconds": 0.03326894599990737
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T04",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.04993123700000979,
+      "whole_attempt_C_minus_B_seconds": 8.132000016303209e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T05",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05019027699995604,
+      "whole_attempt_C_minus_B_seconds": -3.624500004661968e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T06",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.0498241909999706,
+      "whole_attempt_C_minus_B_seconds": -2.6452999918546993e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T07",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.04993268799967154,
+      "whole_attempt_C_minus_B_seconds": -0.0003598840000904602
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T08",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.050040173000070354,
+      "whole_attempt_C_minus_B_seconds": 4.620199979399331e-05
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T09",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": 0.050103985999840006,
+      "whole_attempt_C_minus_B_seconds": 0.03577014400002554
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T10",
+      "classification": "correct_http_rejection",
+      "worker_C_minus_B_seconds": -3.3180000173160806e-05,
+      "whole_attempt_C_minus_B_seconds": 0.023954722999860678
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T11",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.0504051159998653,
+      "whole_attempt_C_minus_B_seconds": 0.03385769199985589
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T12",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.05034482300015952,
+      "whole_attempt_C_minus_B_seconds": 0.0341584629998124
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T13",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.050235954000072525,
+      "whole_attempt_C_minus_B_seconds": 0.03230083800008288
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T14",
+      "classification": "correct_rejection",
+      "worker_C_minus_B_seconds": 0.05056635000005372,
+      "whole_attempt_C_minus_B_seconds": 0.00013053500015303143
+    },
+    {
+      "provider": "b",
+      "repetition": 3,
+      "task_id": "T15",
+      "classification": "correct_external_fault_detection",
+      "worker_C_minus_B_seconds": 0.04997748699997828,
+      "whole_attempt_C_minus_B_seconds": 0.04156577000003381
+    }
+  ],
+  "by_provider": {
+    "a": {
+      "worker_difference": {
+        "n": 45,
+        "min_seconds": -0.0002966419999665959,
+        "median_seconds": 0.05011971700014328,
+        "mean_seconds": 0.043477679888893464,
+        "p95_seconds": 0.05044338599986986,
+        "max_seconds": 0.05070944799967947
+      },
+      "whole_attempt_difference": {
+        "n": 45,
+        "min_seconds": -0.0019565180000427063,
+        "median_seconds": 0.030742668999664602,
+        "mean_seconds": 0.025347492733342532,
+        "p95_seconds": 0.0389830079998319,
+        "max_seconds": 0.0413850459999594
+      },
+      "worker_C_slower_pairs": 41
+    },
+    "b": {
+      "worker_difference": {
+        "n": 45,
+        "min_seconds": -0.00023228999998536892,
+        "median_seconds": 0.050115393000169206,
+        "mean_seconds": 0.04799514926667649,
+        "p95_seconds": 0.05276744800016786,
+        "max_seconds": 0.10058870399984698
+      },
+      "whole_attempt_difference": {
+        "n": 45,
+        "min_seconds": -0.0018054180000035558,
+        "median_seconds": 0.03052413700015677,
+        "mean_seconds": 0.02101067031114528,
+        "p95_seconds": 0.04233601099986117,
+        "max_seconds": 0.05384426200021153
+      },
+      "worker_C_slower_pairs": 43
+    }
+  }
+}

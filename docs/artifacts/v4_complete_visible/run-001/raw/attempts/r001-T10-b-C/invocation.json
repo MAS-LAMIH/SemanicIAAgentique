@@ -1,0 +1,11 @@
+{
+  "diagnostics": [
+    "HTTP 503"
+  ],
+  "error_kind": "http",
+  "http_ok": false,
+  "http_status": 503,
+  "operation_id": "urn:provider:b:create",
+  "output": null,
+  "remote_outcome_unknown": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "TIMEOUT",
+  "started_at": "2026-10-28T12:48:38.703640+00:00",
+  "budget_seconds": 1,
+  "automatic_retries": 0,
+  "process_alive_after_stop": false,
+  "remote_side_effect_cancellation_claimed": false,
+  "pid": 5494,
+  "uncertainty": "In-flight remote effects unknown until independent observation",
+  "exit_code": -15,
+  "ended_at": "2026-10-28T12:48:39.705213+00:00",
+  "automated_runtime_seconds": 1.0015839289999349
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "after": {
+      "events": {
+        "booking-0001": {
+          "begins_ms": 1894010400000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894014000000,
+          "label": "Team meeting"
+        },
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": "unexpectedly changed"
+          }
+        },
+        "unexpected": {
+          "begins_ms": 1894010400000,
+          "booking_ref": "unexpected",
+          "finishes_ms": 1894014000000,
+          "label": "Team meeting"
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-28T12:47:21.388097+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "before": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T12:47:21.387604+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "http_status": 201,
+    "path": "/bookings"
+  }
+]

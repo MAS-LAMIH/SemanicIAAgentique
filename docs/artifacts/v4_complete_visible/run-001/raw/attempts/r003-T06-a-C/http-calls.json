@@ -1,0 +1,29 @@
+[
+  {
+    "delivered_body": {
+      "accepted": true,
+      "id": "event-0001"
+    },
+    "method": "POST",
+    "path": "/events",
+    "raw_body": {
+      "accepted": true,
+      "id": "event-0001"
+    },
+    "result": {
+      "diagnostics": [],
+      "error_kind": null,
+      "http_ok": true,
+      "http_status": 201,
+      "operation_id": "urn:provider:a:create",
+      "output": null,
+      "remote_outcome_unknown": false
+    },
+    "values": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "start_time": "2030-01-07T10:00:00.000001Z",
+      "title": "Team meeting"
+    },
+    "wire_fault": null
+  }
+]

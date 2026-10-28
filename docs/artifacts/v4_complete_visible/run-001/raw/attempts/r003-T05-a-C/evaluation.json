@@ -1,0 +1,176 @@
+{
+  "condition": "C",
+  "creation_accepted": false,
+  "diagnostic_passed": true,
+  "duration_seconds": 0.5013035120000495,
+  "expected": {
+    "classification": "correct_rejection",
+    "error_kind": "input",
+    "http_status": null,
+    "native_state_correct": false,
+    "output_usable": false,
+    "post_attempts": 0,
+    "supervision": "COMPLETED",
+    "unchanged_state": true,
+    "unexpected_mutations": false
+  },
+  "invocation": {
+    "diagnostics": [
+      "Positive interval required"
+    ],
+    "error_kind": "input",
+    "http_ok": false,
+    "http_status": null,
+    "operation_id": "urn:provider:a:create",
+    "output": null,
+    "remote_outcome_unknown": false
+  },
+  "metadata": {
+    "automatic_retries": 0,
+    "http_timeout_seconds": 5,
+    "outer_timeout_seconds": 60,
+    "python": "3.12.14",
+    "reproducibility": {
+      "dependencies": {
+        "pyparsing": "3.3.3",
+        "rdflib": "7.6.0"
+      },
+      "executable": "/workspace/SemanicIAAgentique/.venv/bin/python",
+      "files": {
+        "src/api_local_v4/__init__.py": "834b02333eda5ef481f5fdec4bcc3b712999861d2d7240de4eb73654acd40fd3",
+        "src/api_local_v4/a.py": "db5c0327e95f7d73ca1cd926e742b6e2d17aa64fd2e65911494922f8397fc107",
+        "src/api_local_v4/b.py": "5d4742cb93605a24ab44650bbe54f392156682cb0cecfa886726f4a93b1857a8",
+        "src/api_local_v4/common.py": "4c32a5243ca9f0842ac5298ecd369f9cc35a3785e884d7df91c1516905aa93e1",
+        "src/semantic_action/artifact.py": "f3265de6a747092b0e74f06578d5c37bf4d3c7933f7b9b08a3c9064f5558badd",
+        "src/semantic_action/provider_b.py": "e1ff70938fe4c98abed96fdf6aa95a154d7b23540789a117a9de51d71ca41107",
+        "src/semantic_action/supervision.py": "f9f0d8c99f069f98047ed0481da18f4724525c55d200efcd02ff3eb53f294a8f",
+        "src/semantic_capability_v4/__init__.py": "8ab5cae4fd6a2b0720e0eeeb0bd4c6e4d68e4b1f137d01deae403badd7ad7f38",
+        "src/semantic_capability_v4/descriptions.py": "d0714effcd70db0c564e19f5fe8733591d55efe748bab07ce9e65cbf2bb2e6f6",
+        "src/semantic_capability_v4/http.py": "e1e1c82904f87265faf01daac0be683bfafb8c90adabb7aa5e2175fb5997c754",
+        "src/semantic_capability_v4/invoke.py": "b083cc07addf95142993ee1746621058fc0d40019796433ee41db28c576ef7c8",
+        "src/semantic_capability_v4/mapping.py": "3bf6e88be44cb1c2ee01b6f925ad4380efee1ca5edf0c8c69706d5c8c76101aa",
+        "src/semantic_capability_v4/model.py": "8a085a3417d6e2842fc305cde642fcd53f7b0a78ff199004e9e0295a6a57a397",
+        "src/semantic_capability_v4/registry.py": "6de9ab11f36f1698c139b81105642969c750c909baaec7eb4db7890656fb1937",
+        "src/semantic_capability_v4/validation.py": "3db4eb858a9df3bf541ce73df60d523129fd3d167c403cb5bf5f12040c095aa8",
+        "v4/descriptions/a.json": "35c0af705e403db70e66c75f262c7bf9590da0bf49df3b10234ef2b675126c4f",
+        "v4/descriptions/a.ttl": "f9338626ec934f52df21c51ac47270886589b859911ace30191fe20e81f7a281",
+        "v4/descriptions/b.json": "95fb3c6647e99ca265225611b7f43c49b880f9b0cb8625aba1f42f8024f3300f",
+        "v4/descriptions/b.ttl": "4ac874f1edefaa995c2f5f53698b40250a6fc987408af509daa83912f463e815",
+        "v4_pilot/driver.py": "2fa5a7f9912ddfcfa91f6ab85dbe77375d621a420f55a83666cdd54681f8d023",
+        "v4_pilot/native.py": "7d583c3a640e5d8bb243423afa419b9b4ca86f8a45ff8f17d05512b398076ca9",
+        "v4_pilot/tasks.py": "ba82d0da9b04b705e80335a2359f520fee36f4bc2e8dc36afb680650de92714d",
+        "v4_pilot/worker.py": "6ae9f658c72c880cf53938a61058a61cadcf437de1f48f596386b906b5ad21d1"
+      },
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "source_bundle_sha256": "19ef2eb62ce61311d639f7b8689fd314a9fd5ee1a9be1d9a93f3e20c6eaa72ab"
+    },
+    "service_delay_seconds": 0,
+    "source": "visible diagnostic, not confirmatory",
+    "task_sha256": "0015c49d2f953f9175fec7863e4a7c6af6dade364bf7c68043bd07a5a4351e69"
+  },
+  "native": {
+    "added_ids": [],
+    "changed_existing_ids": [],
+    "matching_ids": [],
+    "native_state_correct": false,
+    "output_usable": false,
+    "permission_changed": false,
+    "post_attempts": 0,
+    "removed_ids": [],
+    "revision_after": 0,
+    "revision_before": 0,
+    "unchanged_state": true,
+    "unexpected_mutations": false,
+    "wrong_property_ids": []
+  },
+  "native_after": {
+    "events": {
+      "existing": {
+        "end_time": "2030-01-07T09:00:00+00:00",
+        "id": "existing",
+        "metadata": {
+          "sentinel": true
+        },
+        "start_time": "2030-01-07T08:00:00+00:00",
+        "title": "Preserve me"
+      }
+    },
+    "mutation_calls": 0,
+    "observed_at": "2026-10-28T12:49:03.962366+00:00",
+    "provider": "a",
+    "revision": 0,
+    "writable": true
+  },
+  "native_before": {
+    "events": {
+      "existing": {
+        "end_time": "2030-01-07T09:00:00+00:00",
+        "id": "existing",
+        "metadata": {
+          "sentinel": true
+        },
+        "start_time": "2030-01-07T08:00:00+00:00",
+        "title": "Preserve me"
+      }
+    },
+    "mutation_calls": 0,
+    "observed_at": "2026-10-28T12:49:03.847253+00:00",
+    "provider": "a",
+    "revision": 0,
+    "writable": true
+  },
+  "partial_trace_error": null,
+  "process": {
+    "automated_runtime_seconds": 0.1143701799999235,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-28T12:49:03.962032+00:00",
+    "exit_code": 0,
+    "pid": 5578,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-28T12:49:03.847673+00:00",
+    "status": "COMPLETED"
+  },
+  "provider": "a",
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T12:49:03.962322+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.0119999842572724e-06
+  },
+  "started_at": "2026-10-28T12:49:03.846703+00:00",
+  "state_uncertain_after_observation": false,
+  "subject_launched": true,
+  "summary": {
+    "classification": "correct_rejection",
+    "error_kind": "input",
+    "http_status": null,
+    "native_state_correct": false,
+    "output_usable": false,
+    "post_attempts": 0,
+    "supervision": "COMPLETED",
+    "unchanged_state": true,
+    "unexpected_mutations": false
+  },
+  "task_id": "T05",
+  "uncertain_remote_outcome_at_stop": false
+}

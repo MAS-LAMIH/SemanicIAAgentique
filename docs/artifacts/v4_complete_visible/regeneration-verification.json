@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "v4_pilot.experiment",
+    "summarize",
+    "--output",
+    "docs/artifacts/v4_complete_visible/run-001"
+  ],
+  "exit_code": 0,
+  "raw_and_derived_files_byte_identical_after_regeneration": true
+}
