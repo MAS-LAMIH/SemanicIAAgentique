@@ -1,0 +1,79 @@
+@prefix aa: <urn:eswc:aat:prototype:1#> .
+@prefix ex: <urn:example:room:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:usage43 a aa:Usage ;
+    aa:forArtifact ex:artifact ;
+    aa:forOperation ex:op17 ;
+    aa:hasPostcond ex:post43 ;
+    aa:hasPrecond ex:pre43 ;
+    aa:preserves aa:coolerReady,
+        aa:heaterReady,
+        aa:sentinels ;
+    aa:profile "room-step/1" ;
+    aa:reviewRef "native-room-contract/1; same-author review" ;
+    aa:reviewed true .
+
+ex:usage71 a aa:Usage ;
+    aa:forArtifact ex:artifact ;
+    aa:forOperation ex:op29 ;
+    aa:hasPostcond ex:post71 ;
+    aa:hasPrecond ex:pre71 ;
+    aa:preserves aa:coolerReady,
+        aa:heaterReady,
+        aa:sentinels ;
+    aa:profile "room-step/1" ;
+    aa:reviewRef "native-room-contract/1; same-author review" ;
+    aa:reviewed true .
+
+ex:post43 a aa:ContextTemplate ;
+    aa:mutationIncrement 1 ;
+    aa:property aa:temperatureC ;
+    aa:revisionIncrement 1 ;
+    aa:rule aa:addInteger ;
+    aa:subject ex:thing .
+
+ex:post71 a aa:ContextTemplate ;
+    aa:delta -1 ;
+    aa:mutationIncrement 1 ;
+    aa:property aa:temperatureC ;
+    aa:revisionIncrement 1 ;
+    aa:rule aa:addInteger ;
+    aa:subject ex:thing .
+
+ex:pre43 a aa:ContextTemplate ;
+    aa:maximum 25 ;
+    aa:minimum 18 ;
+    aa:readyProperty aa:heaterReady ;
+    aa:requiresCurrentRevision true ;
+    aa:subject ex:thing .
+
+ex:pre71 a aa:ContextTemplate ;
+    aa:maximum 26 ;
+    aa:minimum 19 ;
+    aa:readyProperty aa:coolerReady ;
+    aa:requiresCurrentRevision true ;
+    aa:subject ex:thing .
+
+ex:artifact a aa:Artifact ;
+    aa:hasOperation ex:op17,
+        ex:op29 ;
+    aa:observationPath "/state" ;
+    aa:represents ex:thing .
+
+ex:op17 a aa:Operation ;
+    aa:mediaType "application/json" ;
+    aa:method "POST" ;
+    aa:path "/heat" ;
+    aa:requestSchema aa:RevisionRequest ;
+    aa:responseSchema aa:RoomReply .
+
+ex:op29 a aa:Operation ;
+    aa:mediaType "application/json" ;
+    aa:method "POST" ;
+    aa:path "/cool" ;
+    aa:requestSchema aa:RevisionRequest ;
+    aa:responseSchema aa:RoomReply .
+
+ex:thing a aa:Thing .
+

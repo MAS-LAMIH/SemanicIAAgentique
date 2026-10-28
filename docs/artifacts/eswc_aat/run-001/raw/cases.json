@@ -1,0 +1,91 @@
+[
+  {
+    "choices": [
+      "/heat"
+    ],
+    "id": "R01",
+    "status": "SUCCESS",
+    "temperature": 21
+  },
+  {
+    "choices": [
+      "/cool"
+    ],
+    "id": "R02",
+    "status": "SUCCESS",
+    "temperature": 23
+  },
+  {
+    "choices": [
+      "/heat",
+      "/cool"
+    ],
+    "flip": true,
+    "id": "R03",
+    "status": "SUCCESS",
+    "temperature": 21
+  },
+  {
+    "choices": [],
+    "id": "R04",
+    "status": "SUCCESS",
+    "temperature": 22
+  },
+  {
+    "choices": [],
+    "id": "R05",
+    "ready": false,
+    "status": "NO_ELIGIBLE",
+    "temperature": 21
+  },
+  {
+    "choices": [],
+    "id": "R06",
+    "mode": "unknown",
+    "status": "UNKNOWN_CONTEXT",
+    "temperature": 21
+  },
+  {
+    "choices": [],
+    "id": "R07",
+    "mode": "stale",
+    "status": "UNKNOWN_CONTEXT",
+    "temperature": 21
+  },
+  {
+    "choices": [
+      "/heat"
+    ],
+    "conflict": true,
+    "id": "R08",
+    "status": "CONFLICT",
+    "temperature": 21
+  },
+  {
+    "choices": [
+      "/heat"
+    ],
+    "id": "R09",
+    "mode": "timeout",
+    "status": "UNCERTAIN_MUTATION",
+    "temperature": 21
+  },
+  {
+    "choices": [
+      "/heat"
+    ],
+    "id": "R10",
+    "mode": "wrong",
+    "status": "POSTCONDITION_FAILED",
+    "temperature": 21
+  },
+  {
+    "choices": [
+      "/heat"
+    ],
+    "id": "R11",
+    "mode": "frame",
+    "status": "POSTCONDITION_FAILED",
+    "temperature": 21
+  }
+]

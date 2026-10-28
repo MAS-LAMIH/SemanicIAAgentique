@@ -1,0 +1,15 @@
+test_early_finish_and_missing_observation_do_not_claim_success (test_agent_artifact.AATTests.test_early_finish_and_missing_observation_do_not_claim_success) ... ok
+test_invalid_unreviewed_and_unapproved_rdf_never_admitted (test_agent_artifact.AATTests.test_invalid_unreviewed_and_unapproved_rdf_never_admitted) ... ok
+test_model_delta_is_used_not_identifiers_or_order (test_agent_artifact.AATTests.test_model_delta_is_used_not_identifiers_or_order) ... ok
+test_native_atomic_conflict_and_correct_direct_operations (test_agent_artifact.AATTests.test_native_atomic_conflict_and_correct_direct_operations) ... ok
+test_native_scorer_rejects_wrong_delta_and_frame_without_semantics (test_agent_artifact.AATTests.test_native_scorer_rejects_wrong_delta_and_frame_without_semantics) ... ok
+test_permit_is_single_use_and_not_forgeable_through_proposal (test_agent_artifact.AATTests.test_permit_is_single_use_and_not_forgeable_through_proposal) ... ok
+test_react_flip_contains_feedback_observation_and_new_choice (test_agent_artifact.AATTests.test_react_flip_contains_feedback_observation_and_new_choice) ... ok
+test_records_are_immutable_and_operations_are_not_usages (test_agent_artifact.AATTests.test_records_are_immutable_and_operations_are_not_usages) ... ok
+test_runtime_context_and_goal_rdf_remain_distinct (test_agent_artifact.AATTests.test_runtime_context_and_goal_rdf_remain_distinct) ... ok
+test_wrong_reasoner_proposal_cannot_bypass_effect_check (test_agent_artifact.AATTests.test_wrong_reasoner_proposal_cannot_bypass_effect_check) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.821s
+
+OK

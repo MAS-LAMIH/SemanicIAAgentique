@@ -1,0 +1,17 @@
+[
+  {
+    "control": "invalid",
+    "reason": "Missing/ambiguous urn:eswc:aat:prototype:1#delta",
+    "rejected": true
+  },
+  {
+    "control": "unreviewed",
+    "reason": "Unreviewed Usage",
+    "rejected": true
+  },
+  {
+    "control": "hash_mismatch",
+    "reason": "Graph not admitted by external reviewed hash",
+    "rejected": true
+  }
+]

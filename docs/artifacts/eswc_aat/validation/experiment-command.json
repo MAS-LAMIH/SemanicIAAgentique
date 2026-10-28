@@ -1,0 +1,15 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "experiments.aat",
+    "run",
+    "--output",
+    "/workspace/aat-execution-001"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "PYTHONPATH": "src",
+  "exit_code": 0,
+  "elapsed_seconds": 25.00431106600081,
+  "execution": "serial, no concurrently launched tests or intentional workloads"
+}

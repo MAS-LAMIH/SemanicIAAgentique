@@ -1,0 +1,19 @@
+{
+  "admitted": true,
+  "artifact": {
+    "id": "urn:example:room:artifact",
+    "observation_path": "/state",
+    "operations": [
+      "urn:example:room:op17",
+      "urn:example:room:op29"
+    ],
+    "thing": "urn:example:room:thing"
+  },
+  "graph_hash": "052b49db903cdc41b7bfeefaed8d5dbf36933b1e18bfc26c8c8548a43ab70448",
+  "review": {
+    "graph_sha256": "052b49db903cdc41b7bfeefaed8d5dbf36933b1e18bfc26c8c8548a43ab70448",
+    "native_source_sha256": "e657700f20b08a2d775ecf140fae839416f2fff351a2d5dfd90c0336e666f82d",
+    "profile": "room-step/1",
+    "review": "same-context source review against native-room-contract/1; not independent human curation"
+  }
+}
