@@ -1,0 +1,21 @@
+{
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "45s",
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--json",
+    "-C",
+    "/workspace/v4-preflight-evidence/model-canary",
+    "This is an authorized synthetic telemetry preflight. Do not use tools or read files. Reply exactly PREFLIGHT_OK."
+  ],
+  "exit_code": 124,
+  "elapsed_seconds": 45.00319663400296,
+  "CODEX_HOME": "/workspace/v4-preflight-evidence/cli-home"
+}

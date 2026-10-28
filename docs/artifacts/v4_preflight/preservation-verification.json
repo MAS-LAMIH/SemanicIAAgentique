@@ -1,0 +1,15 @@
+{
+  "source": "/workspace/v4-preflight-evidence",
+  "source_manifest_sha256": "6656b74d1b73fc57dc7bc5a9cd9799373838cf9e5f6870650865f9e1297bd0a9",
+  "copied_files": 36,
+  "source_hash_mismatches": [],
+  "preserved_hash_mismatches": [],
+  "excluded": [
+    "cli-home/**",
+    "model-canary/**",
+    "worker/outside-link"
+  ],
+  "selection": "Only regular files listed in the original evidence-sha256.json; original manifest copied byte-for-byte.",
+  "credential_pattern_flags": [],
+  "manual_review": "Synthetic data, source copies, commands, help, process results and model error logs only. No auth/config files or full environment/status snapshots copied."
+}

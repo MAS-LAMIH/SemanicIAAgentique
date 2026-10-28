@@ -1,0 +1,7 @@
+provider,condition,attempts,diagnostic_passed,successful_creations,native_state_correct,unexpected_mutations
+a,A,4,4,1,2,1
+a,B,4,4,1,2,1
+a,C,4,4,1,2,1
+b,A,4,4,1,2,1
+b,B,4,4,1,2,1
+b,C,4,4,1,2,1

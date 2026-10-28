@@ -1,0 +1,54 @@
+[
+  {
+    "provider": "a",
+    "worker_exit": 0,
+    "worker_stdout": "{\"private_path_visible\": false, \"docker_socket_visible\": false}\n",
+    "worker_stderr": "",
+    "evaluator_exit": "0",
+    "verdict": {
+      "native_state_correct": true,
+      "unchanged_state": false,
+      "output_usable": true,
+      "unexpected_mutations": false,
+      "added_ids": [
+        "event-0001"
+      ],
+      "matching_ids": [
+        "event-0001"
+      ],
+      "wrong_property_ids": [],
+      "changed_existing_ids": [],
+      "removed_ids": [],
+      "permission_changed": false,
+      "post_attempts": 1,
+      "revision_before": 0,
+      "revision_after": 1
+    }
+  },
+  {
+    "provider": "b",
+    "worker_exit": 0,
+    "worker_stdout": "{\"private_path_visible\": false, \"docker_socket_visible\": false}\n",
+    "worker_stderr": "",
+    "evaluator_exit": "0",
+    "verdict": {
+      "native_state_correct": true,
+      "unchanged_state": false,
+      "output_usable": true,
+      "unexpected_mutations": false,
+      "added_ids": [
+        "booking-0001"
+      ],
+      "matching_ids": [
+        "booking-0001"
+      ],
+      "wrong_property_ids": [],
+      "changed_existing_ids": [],
+      "removed_ids": [],
+      "permission_changed": false,
+      "post_attempts": 1,
+      "revision_before": 0,
+      "revision_after": 1
+    }
+  }
+]

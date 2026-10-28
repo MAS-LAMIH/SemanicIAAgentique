@@ -1,0 +1,14 @@
+{
+  "condition": "C",
+  "description": "/workspace/SemanicIAAgentique/v4/descriptions/b.ttl",
+  "origin": "http://127.0.0.1:45323",
+  "output": "/workspace/SemanicIAAgentique/docs/artifacts/v4_repeated_smoke/run-001/raw/attempts/r001-T01-b-C",
+  "provider": "b",
+  "unsupported": false,
+  "values": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Team meeting"
+  },
+  "wire_fault": null
+}

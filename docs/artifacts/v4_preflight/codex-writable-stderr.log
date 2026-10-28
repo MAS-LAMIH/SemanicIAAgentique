@@ -1,0 +1,8 @@
+Reading additional input from stdin...
+2026-10-28T09:38:35.666029Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: URL error: Proxy connection failed: HTTP CONNECT failed with status 403, url: wss://api.openai.com/v1/responses
+2026-10-28T09:38:35.682709Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: URL error: Proxy connection failed: HTTP CONNECT failed with status 403, url: wss://api.openai.com/v1/responses
+2026-10-28T09:38:35.880172Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: URL error: Proxy connection failed: HTTP CONNECT failed with status 403, url: wss://api.openai.com/v1/responses
+2026-10-28T09:38:36.303830Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: URL error: Proxy connection failed: HTTP CONNECT failed with status 403, url: wss://api.openai.com/v1/responses
+2026-10-28T09:38:37.091144Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: URL error: Proxy connection failed: HTTP CONNECT failed with status 403, url: wss://api.openai.com/v1/responses
+2026-10-28T09:38:38.691422Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: URL error: Proxy connection failed: HTTP CONNECT failed with status 403, url: wss://api.openai.com/v1/responses
+2026-10-28T09:38:41.906256Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: URL error: Proxy connection failed: HTTP CONNECT failed with status 403, url: wss://api.openai.com/v1/responses

@@ -1,0 +1,67 @@
+{
+  "confirmatory": false,
+  "executed": 24,
+  "independent_integrations_measured": 0,
+  "independent_provider_units": 2,
+  "integration_effort_seconds": null,
+  "parity_differences": [
+    [
+      2,
+      "T01",
+      "a",
+      "missing/error"
+    ],
+    [
+      2,
+      "T01",
+      "b",
+      "missing/error"
+    ],
+    [
+      2,
+      "T04",
+      "a",
+      "missing/error"
+    ],
+    [
+      2,
+      "T04",
+      "b",
+      "missing/error"
+    ],
+    [
+      2,
+      "T12",
+      "a",
+      "missing/error"
+    ],
+    [
+      2,
+      "T12",
+      "b",
+      "missing/error"
+    ],
+    [
+      2,
+      "T16",
+      "a",
+      "missing/error"
+    ],
+    [
+      2,
+      "T16",
+      "b",
+      "missing/error"
+    ]
+  ],
+  "planned": 48,
+  "reset_controls": 0,
+  "run_status": {
+    "automated_elapsed_seconds": 22.710253377000072,
+    "ended_at": "2026-10-28T12:34:10.246651+00:00",
+    "executed": 24,
+    "source_changed_during_run": [],
+    "status": "interrupted"
+  },
+  "verdict": "FAIL"
+}

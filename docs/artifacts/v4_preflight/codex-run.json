@@ -1,0 +1,19 @@
+{
+  "command": [
+    "timeout",
+    "--kill-after=5s",
+    "45s",
+    "codex",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--json",
+    "-C",
+    "/workspace/v4-preflight-evidence/model-canary",
+    "This is an authorized synthetic telemetry preflight, not an integration task. Do not use tools or read files. Reply exactly PREFLIGHT_OK."
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 0.044743971004209016
+}
