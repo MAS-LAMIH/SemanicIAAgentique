@@ -67,7 +67,7 @@
     "reason": "No event-creation capability or event storage",
     "evidence": [
       "LeperKing-IV/contract-source/README.md",
-      "LeperKing-IV/contract-source/app/index.js"
+      "LeperKing-IV/contract-source/src/app/index.js"
     ],
     "native_execution": "NOT_RUN",
     "selected": false

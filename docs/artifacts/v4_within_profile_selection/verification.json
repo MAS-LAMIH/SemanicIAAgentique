@@ -1,0 +1,11 @@
+{
+  "frozen_baseline_hashes_checked": 35,
+  "changed_frozen_files": [],
+  "all_pre_existing_tracked_files_unmodified": true,
+  "candidate_evidence_references_exist": true,
+  "credential_pattern_flags": [],
+  "native_execution_attempts": 0,
+  "selection": null,
+  "screening_is_not_a_native_execution_result": true,
+  "evidence_correction": "Reference to LeperKing-IV app/index.js corrected to actual src/app/index.js; original source file now retained. No screening conclusion changed."
+}
