@@ -1,0 +1,56 @@
+[
+  {
+    "attempts": 48,
+    "condition": "A",
+    "diagnostic_passed": 48,
+    "native_state_correct": 24,
+    "provider": "a",
+    "successful_creations": 18,
+    "unexpected_mutations": 6
+  },
+  {
+    "attempts": 48,
+    "condition": "B",
+    "diagnostic_passed": 48,
+    "native_state_correct": 24,
+    "provider": "a",
+    "successful_creations": 18,
+    "unexpected_mutations": 6
+  },
+  {
+    "attempts": 48,
+    "condition": "C",
+    "diagnostic_passed": 48,
+    "native_state_correct": 24,
+    "provider": "a",
+    "successful_creations": 18,
+    "unexpected_mutations": 6
+  },
+  {
+    "attempts": 48,
+    "condition": "A",
+    "diagnostic_passed": 48,
+    "native_state_correct": 15,
+    "provider": "b",
+    "successful_creations": 9,
+    "unexpected_mutations": 6
+  },
+  {
+    "attempts": 48,
+    "condition": "B",
+    "diagnostic_passed": 48,
+    "native_state_correct": 15,
+    "provider": "b",
+    "successful_creations": 9,
+    "unexpected_mutations": 6
+  },
+  {
+    "attempts": 48,
+    "condition": "C",
+    "diagnostic_passed": 48,
+    "native_state_correct": 15,
+    "provider": "b",
+    "successful_creations": 9,
+    "unexpected_mutations": 6
+  }
+]

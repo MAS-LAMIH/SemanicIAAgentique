@@ -1,0 +1,49 @@
+{
+  "cache_entries": 0,
+  "checks": {
+    "events": true,
+    "fresh_trace_directory": true,
+    "mutation_calls": true,
+    "no_cached_resolutions": true,
+    "no_live_subject": true,
+    "no_pending_requests": true,
+    "revision": true,
+    "writable": true
+  },
+  "expected": {
+    "events": {
+      "existing": {
+        "end_time": "2030-01-07T09:00:00+00:00",
+        "id": "existing",
+        "metadata": {
+          "sentinel": true
+        },
+        "start_time": "2030-01-07T08:00:00+00:00",
+        "title": "Preserve me"
+      }
+    },
+    "mutation_calls": 0,
+    "revision": 0,
+    "writable": true
+  },
+  "native_initial": {
+    "events": {
+      "existing": {
+        "end_time": "2030-01-07T09:00:00+00:00",
+        "id": "existing",
+        "metadata": {
+          "sentinel": true
+        },
+        "start_time": "2030-01-07T08:00:00+00:00",
+        "title": "Preserve me"
+      }
+    },
+    "mutation_calls": 0,
+    "observed_at": "2026-10-28T12:49:11.550917+00:00",
+    "provider": "a",
+    "revision": 0,
+    "writable": true
+  },
+  "passed": true,
+  "subject_alive": false
+}

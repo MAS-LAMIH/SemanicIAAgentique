@@ -1,0 +1,10 @@
+{
+  "supervisor": "src/semantic_action/supervision.py",
+  "worker_measurement": "Parent monotonic elapsed time around Popen, wait(timeout), group termination/reap; not direct parser or CPU timing",
+  "python_subprocess_wait_lines": [
+    "delay = 0.0005 # 500 us -> initial delay of 1 ms",
+    "delay = min(delay * 2, remaining, .05)",
+    "time.sleep(delay)"
+  ],
+  "causal_parse_overhead_isolated": false
+}

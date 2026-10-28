@@ -1,0 +1,182 @@
+[
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "A",
+    "count": 12,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_http_rejection",
+    "condition": "A",
+    "count": 6,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "A",
+    "count": 9,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "A",
+    "count": 3,
+    "provider": "a"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "A",
+    "count": 18,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "B",
+    "count": 12,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_http_rejection",
+    "condition": "B",
+    "count": 6,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "B",
+    "count": 9,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "B",
+    "count": 3,
+    "provider": "a"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "B",
+    "count": 18,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "C",
+    "count": 12,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_http_rejection",
+    "condition": "C",
+    "count": 6,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "C",
+    "count": 9,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "C",
+    "count": 3,
+    "provider": "a"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "C",
+    "count": 18,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "A",
+    "count": 12,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_http_rejection",
+    "condition": "A",
+    "count": 6,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "A",
+    "count": 18,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "A",
+    "count": 3,
+    "provider": "b"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "A",
+    "count": 9,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "B",
+    "count": 12,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_http_rejection",
+    "condition": "B",
+    "count": 6,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "B",
+    "count": 18,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "B",
+    "count": 3,
+    "provider": "b"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "B",
+    "count": 9,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "C",
+    "count": 12,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_http_rejection",
+    "condition": "C",
+    "count": 6,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "C",
+    "count": 18,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "C",
+    "count": 3,
+    "provider": "b"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "C",
+    "count": 9,
+    "provider": "b"
+  }
+]
