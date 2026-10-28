@@ -1,0 +1,57 @@
+{
+  "checked_at_date_utc": "2026-10-28",
+  "base_commit": "285e7a7f107639ac9d3ba834692c08696367189a",
+  "checks": [
+    {
+      "check": "managed environment status",
+      "observations_current": true,
+      "connectivity": "connected",
+      "network_policy_state": "enforced",
+      "api_openai_com_allowed": false,
+      "advertised_capabilities": [],
+      "advertised_secret_bindings": [],
+      "advertised_runtime_variables": [],
+      "advertised_outbound_identities": []
+    },
+    {
+      "check": "local network policy",
+      "type": "restricted",
+      "api_openai_com_explicit_rule_present": false
+    },
+    {
+      "check": "non-secret identity manifest",
+      "version": 1,
+      "connections": []
+    },
+    {
+      "command": "codex login status",
+      "exit_code": 0,
+      "result": "Logged in using ChatGPT",
+      "warning": "Read-only PATH alias location. Credential contents not read or copied; usable model authorization not verified."
+    },
+    {
+      "command": "curl --head --max-time 15 --silent --show-error --output /dev/null --write-out 'http_status=%{http_code}\\nproxy_connect_status=%{http_connect}\\n' https://api.openai.com/v1/responses",
+      "exit_code": 56,
+      "http_status": "000",
+      "proxy_connect_status": 403,
+      "error": "CONNECT tunnel failed, response 403",
+      "authentication_sent": false,
+      "proxy": "inherited; unchanged",
+      "tls_verification": "enabled"
+    }
+  ],
+  "approved_model_endpoint_verified": false,
+  "configured_cli_login_present": true,
+  "successful_inference_verified": false,
+  "isolated_worker_inference_attempted": false,
+  "token_usage": null,
+  "model_version": null,
+  "model_compute_time_seconds": null,
+  "stop_reason": "Current enforced proxy denies model endpoint; no approved alternative endpoint/binding advertised.",
+  "administrator_actions": [
+    "Authorize and apply supported model-endpoint network policy (including required streaming transport), or provide an approved alternative endpoint and supported CLI configuration.",
+    "Confirm a noninteractive authentication mechanism authorized for the selected model and isolated workers without copying existing login files.",
+    "Provide writable per-worker CLI state and supported proxy/CA configuration; then authorize one harmless isolated-worker inference/telemetry check."
+  ],
+  "configuration_changes_made": false
+}

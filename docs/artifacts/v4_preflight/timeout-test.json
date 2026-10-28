@@ -1,0 +1,6 @@
+{
+  "client_exit_code": 124,
+  "client_elapsed_seconds": 0.2017407289968105,
+  "server_mutated_after_timeout": true,
+  "scope": "synthetic HTTP; not a model cancellation test"
+}

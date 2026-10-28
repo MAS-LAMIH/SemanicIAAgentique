@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"/submission/submission.json\": {\"readable\": true, \"value\": \"{\\\"answer\\\":42}\"}, \"/workspace/v4-preflight-evidence/sibling/canary\": {\"readable\": false, \"error\": \"FileNotFoundError\"}, \"/workspace/v4-preflight-evidence/evaluator-private/canary\": {\"readable\": false, \"error\": \"FileNotFoundError\"}, \"/workspace/v4-preflight-evidence/worker/submission.json\": {\"readable\": false, \"error\": \"FileNotFoundError\"}, \"/submission/outside-link\": {\"readable\": false, \"error\": \"FileNotFoundError\"}, \"/var/run/docker.sock\": {\"readable\": false, \"error\": \"FileNotFoundError\"}, \"/proc/1/root/workspace/v4-preflight-evidence/evaluator-private/canary\": {\"readable\": false, \"error\": \"FileNotFoundError\"}, \"socket_connect\": \"FileNotFoundError\"}\n",
+  "stderr": ""
+}
