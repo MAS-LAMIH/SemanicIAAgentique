@@ -1,0 +1,199 @@
+{
+  "completed_at": "2026-10-28T15:04:39.324420+00:00",
+  "decisions": [
+    {
+      "candidates": [
+        {
+          "artifact": "https://example.org/provider-a#calendar",
+          "assessment": {
+            "applicability": "UNKNOWN",
+            "preconditions": [
+              {
+                "evidence": {
+                  "end_time": "2030-01-07T11:00:00+00:00",
+                  "start_time": "2030-01-07T10:00:00+00:00"
+                },
+                "name": "https://example.org/sam/v1#PositiveInterval",
+                "reason": "Validated interval",
+                "verdict": "TRUE"
+              },
+              {
+                "evidence": {
+                  "events": {
+                    "sentinel": {
+                      "end_time": "2030-01-07T09:00:00+00:00",
+                      "id": "sentinel",
+                      "start_time": "2030-01-07T08:00:00+00:00",
+                      "title": "Keep"
+                    }
+                  },
+                  "observed_at": "2026-10-28T15:04:39.300383+00:00",
+                  "revision": 0,
+                  "writable": null
+                },
+                "name": "https://example.org/sam/v1#CalendarWritable",
+                "reason": "Writability not established",
+                "verdict": "UNKNOWN"
+              }
+            ],
+            "validation": {
+              "errors": [],
+              "valid": true
+            }
+          },
+          "eligible": false,
+          "operation": "https://example.org/provider-a#create_event",
+          "reasons": [
+            "Critical applicability is UNKNOWN"
+          ]
+        },
+        {
+          "artifact": "https://example.org/provider-b#appointments",
+          "assessment": {
+            "applicability": "FALSE",
+            "preconditions": [
+              {
+                "evidence": {
+                  "end_time": "2030-01-07T11:00:00+00:00",
+                  "start_time": "2030-01-07T10:00:00+00:00"
+                },
+                "name": "https://example.org/sam/v1#PositiveInterval",
+                "reason": "Validated interval",
+                "verdict": "TRUE"
+              },
+              {
+                "evidence": {
+                  "events": {
+                    "sentinel": {
+                      "end_time": "2030-01-07T09:00:00+00:00",
+                      "id": "sentinel",
+                      "start_time": "2030-01-07T08:00:00+00:00",
+                      "title": "Keep"
+                    }
+                  },
+                  "observed_at": "2026-10-28T15:04:39.308571+00:00",
+                  "revision": 0,
+                  "writable": false
+                },
+                "name": "https://example.org/sam/v1#CalendarWritable",
+                "reason": "Current observation establishes not writable",
+                "verdict": "FALSE"
+              }
+            ],
+            "validation": {
+              "errors": [],
+              "valid": true
+            }
+          },
+          "eligible": false,
+          "operation": "https://example.org/provider-b#reserveAppointment",
+          "reasons": [
+            "Critical applicability is FALSE"
+          ]
+        }
+      ],
+      "complete": true,
+      "contexts": {
+        "https://example.org/provider-a#calendar": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:04:39.315029+00:00",
+          "revision": 0,
+          "writable": null
+        },
+        "https://example.org/provider-b#appointments": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:04:39.323736+00:00",
+          "revision": 0,
+          "writable": false
+        }
+      },
+      "cycle": 1,
+      "invocation": null,
+      "matching": [],
+      "observed_at": "2026-10-28T15:04:39.324072+00:00",
+      "reads": [
+        {
+          "artifact": "https://example.org/provider-a#calendar",
+          "body": {
+            "events": {
+              "sentinel": {
+                "end_time": "2030-01-07T09:00:00+00:00",
+                "id": "sentinel",
+                "metadata": {
+                  "untouched": true
+                },
+                "start_time": "2030-01-07T08:00:00+00:00",
+                "title": "Keep"
+              }
+            },
+            "observed_at": "2026-10-28T15:04:39.315029+00:00",
+            "revision": 0,
+            "writable": null
+          },
+          "error": null,
+          "method": "GET",
+          "path": "/calendar",
+          "raw_body": null,
+          "status": 200
+        },
+        {
+          "artifact": "https://example.org/provider-b#appointments",
+          "body": {
+            "can_book": false,
+            "items": {
+              "sentinel": {
+                "begins_ms": 1894003200000,
+                "booking_ref": "sentinel",
+                "finishes_ms": 1894006800000,
+                "label": "Keep",
+                "metadata": {
+                  "untouched": true
+                }
+              }
+            },
+            "sampled_at": "2026-10-28T15:04:39.323736+00:00",
+            "version": 0
+          },
+          "error": null,
+          "method": "GET",
+          "path": "/availability",
+          "raw_body": null,
+          "status": 200
+        }
+      ],
+      "selected": null
+    }
+  ],
+  "dispatches": 0,
+  "objective": {
+    "allowed_artifacts": [
+      "https://example.org/provider-a#calendar",
+      "https://example.org/provider-b#appointments"
+    ],
+    "event": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Decision test"
+    }
+  },
+  "policy": "semantic",
+  "returned_id": null,
+  "selected_artifact": null,
+  "status": "NO_ELIGIBLE_ACTION"
+}

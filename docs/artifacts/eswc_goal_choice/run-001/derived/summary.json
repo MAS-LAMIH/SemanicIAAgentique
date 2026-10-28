@@ -1,0 +1,12 @@
+{
+  "controlled_provider_fixtures": 2,
+  "episodes": 22,
+  "human_authorship_independent": false,
+  "independently_authored_agents": 0,
+  "parity_differences": [],
+  "passed": 22,
+  "selection_correct": 22,
+  "selector_policies": 2,
+  "source_stable": true,
+  "verdict": "PASS"
+}

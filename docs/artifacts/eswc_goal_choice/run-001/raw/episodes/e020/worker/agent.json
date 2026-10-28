@@ -1,0 +1,158 @@
+{
+  "completed_at": "2026-10-28T15:04:59.263743+00:00",
+  "decisions": [
+    {
+      "candidates": [
+        {
+          "artifact": "https://example.org/provider-a#calendar",
+          "assessment": {
+            "applicability": "FALSE",
+            "evidence": {
+              "events": {
+                "sentinel": {
+                  "end_time": "2030-01-07T09:00:00+00:00",
+                  "id": "sentinel",
+                  "start_time": "2030-01-07T08:00:00+00:00",
+                  "title": "Keep"
+                }
+              },
+              "observed_at": "2026-10-28T15:04:59.257187+00:00",
+              "revision": 0,
+              "writable": false
+            }
+          },
+          "eligible": false,
+          "operation": "create_event",
+          "reasons": [
+            "Current write permission is FALSE"
+          ]
+        },
+        {
+          "artifact": "https://example.org/provider-b#appointments",
+          "assessment": {
+            "applicability": "TRUE",
+            "evidence": {
+              "events": {
+                "sentinel": {
+                  "end_time": "2030-01-07T09:00:00+00:00",
+                  "id": "sentinel",
+                  "start_time": "2030-01-07T08:00:00+00:00",
+                  "title": "Keep"
+                }
+              },
+              "observed_at": "2026-10-28T15:04:59.263129+00:00",
+              "revision": 0,
+              "writable": true
+            }
+          },
+          "eligible": false,
+          "operation": "reserveAppointment",
+          "reasons": [
+            "Grounded effect targets a forbidden artifact"
+          ]
+        }
+      ],
+      "complete": true,
+      "contexts": {
+        "https://example.org/provider-a#calendar": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:04:59.257187+00:00",
+          "revision": 0,
+          "writable": false
+        },
+        "https://example.org/provider-b#appointments": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:04:59.263129+00:00",
+          "revision": 0,
+          "writable": true
+        }
+      },
+      "cycle": 1,
+      "invocation": null,
+      "matching": [],
+      "observed_at": "2026-10-28T15:04:59.263432+00:00",
+      "reads": [
+        {
+          "artifact": "https://example.org/provider-a#calendar",
+          "body": {
+            "events": {
+              "sentinel": {
+                "end_time": "2030-01-07T09:00:00+00:00",
+                "id": "sentinel",
+                "metadata": {
+                  "untouched": true
+                },
+                "start_time": "2030-01-07T08:00:00+00:00",
+                "title": "Keep"
+              }
+            },
+            "observed_at": "2026-10-28T15:04:59.257187+00:00",
+            "revision": 0,
+            "writable": false
+          },
+          "error": null,
+          "method": "GET",
+          "path": "/calendar",
+          "raw_body": null,
+          "status": 200
+        },
+        {
+          "artifact": "https://example.org/provider-b#appointments",
+          "body": {
+            "can_book": true,
+            "items": {
+              "sentinel": {
+                "begins_ms": 1894003200000,
+                "booking_ref": "sentinel",
+                "finishes_ms": 1894006800000,
+                "label": "Keep",
+                "metadata": {
+                  "untouched": true
+                }
+              }
+            },
+            "sampled_at": "2026-10-28T15:04:59.263129+00:00",
+            "version": 0
+          },
+          "error": null,
+          "method": "GET",
+          "path": "/availability",
+          "raw_body": null,
+          "status": 200
+        }
+      ],
+      "selected": null
+    }
+  ],
+  "dispatches": 0,
+  "objective": {
+    "allowed_artifacts": [
+      "https://example.org/provider-a#calendar"
+    ],
+    "event": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Decision test"
+    }
+  },
+  "policy": "procedural",
+  "returned_id": null,
+  "selected_artifact": null,
+  "status": "NO_ELIGIBLE_ACTION"
+}

@@ -1,0 +1,4 @@
+{
+  "artifact": "https://example.org/provider-a#calendar",
+  "operation": "create_event"
+}

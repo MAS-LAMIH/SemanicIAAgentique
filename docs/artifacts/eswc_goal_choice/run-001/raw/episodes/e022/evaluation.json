@@ -1,0 +1,346 @@
+{
+  "after": {
+    "a": {
+      "events": {
+        "sentinel": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "sentinel",
+          "metadata": {
+            "untouched": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Keep"
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T15:05:01.534896+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": false
+    },
+    "b": {
+      "events": {
+        "sentinel": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "sentinel",
+          "finishes_ms": 1894006800000,
+          "label": "Keep",
+          "metadata": {
+            "untouched": true
+          }
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-28T15:05:01.534904+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "agent_reported_success": false,
+  "before": {
+    "a": {
+      "events": {
+        "sentinel": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "sentinel",
+          "metadata": {
+            "untouched": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Keep"
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T15:05:01.419332+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": false
+    },
+    "b": {
+      "events": {
+        "sentinel": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "sentinel",
+          "finishes_ms": 1894006800000,
+          "label": "Keep",
+          "metadata": {
+            "untouched": true
+          }
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T15:05:01.419355+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "calls": [
+    0,
+    1
+  ],
+  "case": "G11",
+  "choices": [
+    "b"
+  ],
+  "clean": true,
+  "excess_mutating_requests": 0,
+  "expected": {
+    "calls": [
+      0,
+      1
+    ],
+    "choices": [
+      "b"
+    ],
+    "goal_state": false,
+    "status": "EXECUTION_FAILED",
+    "verified": false
+  },
+  "goal_state_satisfied": false,
+  "independently_verified": false,
+  "interventions": [],
+  "native_creation_checks": {
+    "a": {
+      "achieved": false,
+      "canonical_observation": {
+        "error": null,
+        "event": {
+          "event": null,
+          "observed_at": "2026-10-28T15:05:01.534896+00:00",
+          "revision": 0
+        },
+        "state": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:05:01.534896+00:00",
+          "revision": 0
+        }
+      },
+      "mutation_calls": 0,
+      "raw_after": {
+        "events": {
+          "sentinel": {
+            "end_time": "2030-01-07T09:00:00+00:00",
+            "id": "sentinel",
+            "metadata": {
+              "untouched": true
+            },
+            "start_time": "2030-01-07T08:00:00+00:00",
+            "title": "Keep"
+          }
+        },
+        "mutation_calls": 0,
+        "observed_at": "2026-10-28T15:05:01.534896+00:00",
+        "provider": "a",
+        "revision": 0,
+        "writable": false
+      },
+      "raw_before": {
+        "events": {
+          "sentinel": {
+            "end_time": "2030-01-07T09:00:00+00:00",
+            "id": "sentinel",
+            "metadata": {
+              "untouched": true
+            },
+            "start_time": "2030-01-07T08:00:00+00:00",
+            "title": "Keep"
+          }
+        },
+        "mutation_calls": 0,
+        "observed_at": "2026-10-28T15:05:01.419332+00:00",
+        "provider": "a",
+        "revision": 0,
+        "writable": false
+      },
+      "reasons": [
+        "Expected event does not exist",
+        "State transition evidence is absent or inconsistent"
+      ],
+      "runtime_discrepancy": false
+    },
+    "b": {
+      "achieved": false,
+      "canonical_observation": {
+        "error": null,
+        "event": {
+          "event": null,
+          "observed_at": "2026-10-28T15:05:01.534904+00:00",
+          "revision": 0
+        },
+        "state": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:05:01.534904+00:00",
+          "revision": 0
+        }
+      },
+      "mutation_calls": 1,
+      "raw_after": {
+        "events": {
+          "sentinel": {
+            "begins_ms": 1894003200000,
+            "booking_ref": "sentinel",
+            "finishes_ms": 1894006800000,
+            "label": "Keep",
+            "metadata": {
+              "untouched": true
+            }
+          }
+        },
+        "mutation_calls": 1,
+        "observed_at": "2026-10-28T15:05:01.534904+00:00",
+        "provider": "b",
+        "revision": 0,
+        "writable": true
+      },
+      "raw_before": {
+        "events": {
+          "sentinel": {
+            "begins_ms": 1894003200000,
+            "booking_ref": "sentinel",
+            "finishes_ms": 1894006800000,
+            "label": "Keep",
+            "metadata": {
+              "untouched": true
+            }
+          }
+        },
+        "mutation_calls": 0,
+        "observed_at": "2026-10-28T15:05:01.419355+00:00",
+        "provider": "b",
+        "revision": 0,
+        "writable": true
+      },
+      "reasons": [
+        "Expected event does not exist",
+        "State transition evidence is absent or inconsistent"
+      ],
+      "runtime_discrepancy": false
+    }
+  },
+  "passed": true,
+  "policy": "procedural",
+  "pre_mutation": {
+    "a": {
+      "events": {
+        "sentinel": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "sentinel",
+          "metadata": {
+            "untouched": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Keep"
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T15:05:01.419332+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": false
+    },
+    "b": {
+      "events": {
+        "sentinel": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "sentinel",
+          "finishes_ms": 1894006800000,
+          "label": "Keep",
+          "metadata": {
+            "untouched": true
+          }
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T15:05:01.419355+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    }
+  },
+  "process": {
+    "automated_runtime_seconds": 0.11428840899861825,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-28T15:05:01.534464+00:00",
+    "exit_code": 0,
+    "pid": 26226,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-28T15:05:01.420182+00:00",
+    "status": "COMPLETED"
+  },
+  "recovery": {
+    "a": {
+      "pending_at_stop": 0,
+      "settled": true,
+      "snapshot": {
+        "events": {
+          "sentinel": {
+            "end_time": "2030-01-07T09:00:00+00:00",
+            "id": "sentinel",
+            "metadata": {
+              "untouched": true
+            },
+            "start_time": "2030-01-07T08:00:00+00:00",
+            "title": "Keep"
+          }
+        },
+        "mutation_calls": 0,
+        "observed_at": "2026-10-28T15:05:01.534812+00:00",
+        "provider": "a",
+        "revision": 0,
+        "writable": false
+      },
+      "state_uncertain": false,
+      "wait_seconds": 1.0809999366756529e-06
+    },
+    "b": {
+      "pending_at_stop": 0,
+      "settled": true,
+      "snapshot": {
+        "events": {
+          "sentinel": {
+            "begins_ms": 1894003200000,
+            "booking_ref": "sentinel",
+            "finishes_ms": 1894006800000,
+            "label": "Keep",
+            "metadata": {
+              "untouched": true
+            }
+          }
+        },
+        "mutation_calls": 1,
+        "observed_at": "2026-10-28T15:05:01.534875+00:00",
+        "provider": "b",
+        "revision": 0,
+        "writable": true
+      },
+      "state_uncertain": false,
+      "wait_seconds": 1.0420008038636297e-06
+    }
+  },
+  "reverse_order": false,
+  "selection_correct": true,
+  "status": "EXECUTION_FAILED",
+  "unexpected_mutations": false,
+  "unnecessary_mutations": 0,
+  "usable_id": false,
+  "whole_seconds": 1.0598324549991958,
+  "worker_seconds": 0.11428840899861825
+}
