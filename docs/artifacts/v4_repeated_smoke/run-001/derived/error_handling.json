@@ -1,0 +1,146 @@
+[
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "A",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "A",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "A",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "A",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "B",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "B",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "B",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "B",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "C",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "C",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "C",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "C",
+    "count": 1,
+    "provider": "a"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "A",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "A",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "A",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "A",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "B",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "B",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "B",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "B",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_external_fault_detection",
+    "condition": "C",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_rejection",
+    "condition": "C",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "correct_timeout_detection",
+    "condition": "C",
+    "count": 1,
+    "provider": "b"
+  },
+  {
+    "classification": "successful_creation",
+    "condition": "C",
+    "count": 1,
+    "provider": "b"
+  }
+]

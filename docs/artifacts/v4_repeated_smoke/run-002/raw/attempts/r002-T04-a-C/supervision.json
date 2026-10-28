@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETED",
+  "started_at": "2026-10-28T12:35:37.212597+00:00",
+  "budget_seconds": 60,
+  "automatic_retries": 0,
+  "process_alive_after_stop": false,
+  "remote_side_effect_cancellation_claimed": false,
+  "pid": 2550,
+  "exit_code": 0,
+  "ended_at": "2026-10-28T12:35:37.326875+00:00",
+  "automated_runtime_seconds": 0.11429185800000141
+}

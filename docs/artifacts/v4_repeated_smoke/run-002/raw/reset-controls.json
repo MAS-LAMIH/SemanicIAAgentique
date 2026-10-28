@@ -1,0 +1,350 @@
+[
+  {
+    "condition": "A",
+    "contamination": "calls",
+    "duration_seconds": 0.0004929190000666495,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:30.258497+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r001-a-A",
+    "provider": "a",
+    "repetition": 1,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "B",
+    "contamination": "calls",
+    "duration_seconds": 0.0005800999999792111,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:30.760265+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r001-a-B",
+    "provider": "a",
+    "repetition": 1,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "C",
+    "contamination": "calls",
+    "duration_seconds": 0.0005486720000362766,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:31.261894+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r001-a-C",
+    "provider": "a",
+    "repetition": 1,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "A",
+    "contamination": "calls",
+    "duration_seconds": 0.0008177959999784434,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:31.763946+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r001-b-A",
+    "provider": "b",
+    "repetition": 1,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "B",
+    "contamination": "calls",
+    "duration_seconds": 0.000558607000016309,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:32.265790+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r001-b-B",
+    "provider": "b",
+    "repetition": 1,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "C",
+    "contamination": "calls",
+    "duration_seconds": 0.0008231729999579329,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:32.767501+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r001-b-C",
+    "provider": "b",
+    "repetition": 1,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "A",
+    "contamination": "calls",
+    "duration_seconds": 0.0005812310000692378,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:55.612033+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r002-a-A",
+    "provider": "a",
+    "repetition": 2,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "B",
+    "contamination": "calls",
+    "duration_seconds": 0.0008277010000483642,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:56.113872+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r002-a-B",
+    "provider": "a",
+    "repetition": 2,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "C",
+    "contamination": "calls",
+    "duration_seconds": 0.0007017219999170266,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "end_time": "2030-01-07T09:00:00+00:00",
+          "id": "existing",
+          "metadata": {
+            "sentinel": true
+          },
+          "start_time": "2030-01-07T08:00:00+00:00",
+          "title": "Preserve me"
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:56.615845+00:00",
+      "provider": "a",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r002-a-C",
+    "provider": "a",
+    "repetition": 2,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "A",
+    "contamination": "calls",
+    "duration_seconds": 0.0007230539999909524,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:57.117735+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r002-b-A",
+    "provider": "b",
+    "repetition": 2,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "B",
+    "contamination": "calls",
+    "duration_seconds": 0.0007170650000034584,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:57.619707+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r002-b-B",
+    "provider": "b",
+    "repetition": 2,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  },
+  {
+    "condition": "C",
+    "contamination": "calls",
+    "duration_seconds": 0.000644776999934038,
+    "initial_native": {
+      "events": {
+        "existing": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "existing",
+          "finishes_ms": 1894006800000,
+          "label": "Preserve me",
+          "metadata": {
+            "sentinel": true
+          }
+        }
+      },
+      "mutation_calls": 7,
+      "observed_at": "2026-10-28T12:35:58.121624+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "path": "reset-controls/r002-b-C",
+    "provider": "b",
+    "repetition": 2,
+    "status": "RESET_REJECTED",
+    "subject_launched": false,
+    "task_id": "T01"
+  }
+]

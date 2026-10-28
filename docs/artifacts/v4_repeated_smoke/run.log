@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/SemanicIAAgentique/v4_pilot/experiment.py", line 180, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/workspace/SemanicIAAgentique/v4_pilot/experiment.py", line 177, in main
+    return run(args.output,args.repetitions,args.tasks) if args.command=='run' else summarize(args.output)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/v4_pilot/experiment.py", line 90, in run
+    controls.append(dict(repetition=rep,provider=p,condition=c,path=str(path.relative_to(raw)),**result))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'provider'

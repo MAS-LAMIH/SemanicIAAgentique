@@ -1,0 +1,12 @@
+{
+  "condition": "A",
+  "origin": "http://127.0.0.1:33915",
+  "output": "/workspace/SemanicIAAgentique/docs/artifacts/v4_repeated_smoke/run-002/raw/attempts/r002-T04-a-A",
+  "provider": "a",
+  "unsupported": false,
+  "values": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00"
+  },
+  "wire_fault": null
+}
