@@ -1,0 +1,13 @@
+[server]
+hosts = 127.0.0.1:41249
+[auth]
+type = none
+[rights]
+type = from_file
+file = /tmp/radicale-native-ylx_p2_n/rights
+[storage]
+filesystem_folder = /tmp/radicale-native-ylx_p2_n/storage
+[web]
+type = none
+[logging]
+level = info

@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/v4",
+    "-v"
+  ],
+  "PYTHONPATH": "src",
+  "exit_code": 0,
+  "elapsed_seconds": 28.57305495899982
+}

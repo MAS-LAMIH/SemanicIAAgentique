@@ -1,0 +1,13 @@
+[server]
+hosts = 127.0.0.1:43735
+[auth]
+type = none
+[rights]
+type = from_file
+file = /tmp/radicale-native-wtycpokp/rights
+[storage]
+filesystem_folder = /tmp/radicale-native-wtycpokp/storage
+[web]
+type = none
+[logging]
+level = info

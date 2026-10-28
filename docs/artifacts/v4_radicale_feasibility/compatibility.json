@@ -1,0 +1,22 @@
+[
+  {
+    "requirement": "HTTP PUT",
+    "frozen_support": false,
+    "evidence": "descriptions.py:48-49 rejects non-POST; http.py:22-23 hard-codes POST"
+  },
+  {
+    "requirement": "text/calendar VEVENT body",
+    "frozen_support": false,
+    "evidence": "http.py serializes JSON dict; mapping.py field conversions do not serialize iCalendar"
+  },
+  {
+    "requirement": "Resource URL and UID handling",
+    "frozen_support": false,
+    "evidence": "fixed path grammar rejects tested .ics path; no dynamic resource URL or UID generation/template role"
+  },
+  {
+    "requirement": "Native response and identifier mapping",
+    "frozen_support": false,
+    "evidence": "native PUT returns empty 201 + ETag; runtime requires JSON object and body field id mapping"
+  }
+]

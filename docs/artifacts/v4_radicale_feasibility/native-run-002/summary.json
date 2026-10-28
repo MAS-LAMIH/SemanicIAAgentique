@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "native_cycles": 2,
+  "reset_verified": true,
+  "heldout_condition_attempts": 0,
+  "purpose": "native CalDAV feasibility, not an integration experiment"
+}

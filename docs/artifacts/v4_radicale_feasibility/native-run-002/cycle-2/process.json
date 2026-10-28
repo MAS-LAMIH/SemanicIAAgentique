@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/radicale-feasibility-env/bin/python",
+    "-m",
+    "radicale",
+    "--config",
+    "/tmp/radicale-native-ylx_p2_n/config"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.14349802000015188
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "method": "GET",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {},
+    "request_body": null,
+    "status": 404,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "42"
+    },
+    "response_body": "The requested resource could not be found.",
+    "elapsed_seconds": 0.001544966000437853
+  },
+  {
+    "method": "MKCALENDAR",
+    "path": "/calendar/",
+    "request_headers": {
+      "Content-Type": "application/xml; charset=utf-8"
+    },
+    "request_body": "<?xml version=\"1.0\" encoding=\"utf-8\"?><C:mkcalendar xmlns:C=\"urn:ietf:params:xml:ns:caldav\" xmlns:D=\"DAV:\"><D:set><D:prop><D:displayname>Native probe</D:displayname><C:supported-calendar-component-set><C:comp name=\"VEVENT\"/></C:supported-calendar-component-set></D:prop></D:set></C:mkcalendar>",
+    "status": 201,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Length": "0"
+    },
+    "response_body": "",
+    "elapsed_seconds": 0.0015017109999462264
+  },
+  {
+    "method": "PUT",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {
+      "Content-Type": "text/calendar; charset=utf-8",
+      "If-None-Match": "*"
+    },
+    "request_body": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//V4 Native Feasibility//EN\r\nBEGIN:VEVENT\r\nUID:radicale-native-preflight-001\r\nDTSTAMP:20300101T000000Z\r\nDTSTART:20300107T100000Z\r\nDTEND:20300107T110000Z\r\nSUMMARY:Native CalDAV event\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+    "status": 201,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "ETag": "\"23bcbaba964f8c957b1234d85597a76432a557da3f084742c143b27264dec11c\"",
+      "Content-Length": "0"
+    },
+    "response_body": "",
+    "elapsed_seconds": 0.0024910339998314157
+  },
+  {
+    "method": "GET",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {},
+    "request_body": null,
+    "status": 200,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Type": "text/calendar; charset=utf-8",
+      "Last-Modified": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "ETag": "\"23bcbaba964f8c957b1234d85597a76432a557da3f084742c143b27264dec11c\"",
+      "Content-Length": "248"
+    },
+    "response_body": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//V4 Native Feasibility//EN\r\nBEGIN:VEVENT\r\nUID:radicale-native-preflight-001\r\nDTSTART:20300107T100000Z\r\nDTEND:20300107T110000Z\r\nDTSTAMP:20300101T000000Z\r\nSUMMARY:Native CalDAV event\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+    "elapsed_seconds": 0.0011349709993737633
+  },
+  {
+    "method": "PUT",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {
+      "Content-Type": "text/calendar",
+      "If-None-Match": "*"
+    },
+    "request_body": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//V4 Native Feasibility//EN\r\nBEGIN:VEVENT\r\nUID:radicale-native-preflight-001\r\nDTSTAMP:20300101T000000Z\r\nDTSTART:20300107T100000Z\r\nDTEND:20300107T110000Z\r\nSUMMARY:Native CalDAV event\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+    "status": 412,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "20"
+    },
+    "response_body": "Precondition failed.",
+    "elapsed_seconds": 0.0019675889998325147
+  },
+  {
+    "method": "GET",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {},
+    "request_body": null,
+    "status": 404,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "42"
+    },
+    "response_body": "The requested resource could not be found.",
+    "elapsed_seconds": 0.0014206189998731134
+  },
+  {
+    "method": "MKCALENDAR",
+    "path": "/calendar/",
+    "request_headers": {
+      "Content-Type": "application/xml; charset=utf-8"
+    },
+    "request_body": "<?xml version=\"1.0\" encoding=\"utf-8\"?><C:mkcalendar xmlns:C=\"urn:ietf:params:xml:ns:caldav\" xmlns:D=\"DAV:\"><D:set><D:prop><D:displayname>Native probe</D:displayname><C:supported-calendar-component-set><C:comp name=\"VEVENT\"/></C:supported-calendar-component-set></D:prop></D:set></C:mkcalendar>",
+    "status": 201,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Length": "0"
+    },
+    "response_body": "",
+    "elapsed_seconds": 0.0015317060006054817
+  },
+  {
+    "method": "PUT",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {
+      "Content-Type": "text/calendar; charset=utf-8",
+      "If-None-Match": "*"
+    },
+    "request_body": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//V4 Native Feasibility//EN\r\nBEGIN:VEVENT\r\nUID:radicale-native-preflight-001\r\nDTSTAMP:20300101T000000Z\r\nDTSTART:20300107T100000Z\r\nDTEND:20300107T110000Z\r\nSUMMARY:Native CalDAV event\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+    "status": 201,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "ETag": "\"23bcbaba964f8c957b1234d85597a76432a557da3f084742c143b27264dec11c\"",
+      "Content-Length": "0"
+    },
+    "response_body": "",
+    "elapsed_seconds": 0.0023753310006213724
+  },
+  {
+    "method": "GET",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {},
+    "request_body": null,
+    "status": 200,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Type": "text/calendar; charset=utf-8",
+      "Last-Modified": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "ETag": "\"23bcbaba964f8c957b1234d85597a76432a557da3f084742c143b27264dec11c\"",
+      "Content-Length": "248"
+    },
+    "response_body": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//V4 Native Feasibility//EN\r\nBEGIN:VEVENT\r\nUID:radicale-native-preflight-001\r\nDTSTART:20300107T100000Z\r\nDTEND:20300107T110000Z\r\nDTSTAMP:20300101T000000Z\r\nSUMMARY:Native CalDAV event\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+    "elapsed_seconds": 0.0009223830002156319
+  },
+  {
+    "method": "PUT",
+    "path": "/calendar/native-event.ics",
+    "request_headers": {
+      "Content-Type": "text/calendar",
+      "If-None-Match": "*"
+    },
+    "request_body": "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//V4 Native Feasibility//EN\r\nBEGIN:VEVENT\r\nUID:radicale-native-preflight-001\r\nDTSTAMP:20300101T000000Z\r\nDTSTART:20300107T100000Z\r\nDTEND:20300107T110000Z\r\nSUMMARY:Native CalDAV event\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n",
+    "status": 412,
+    "response_headers": {
+      "Date": "Wed, 28 Oct 2026 13:55:57 GMT",
+      "Server": "WSGIServer/0.2 CPython/3.12.14",
+      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Length": "20"
+    },
+    "response_body": "Precondition failed.",
+    "elapsed_seconds": 0.0019309190001877141
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "baseline": "87309bca7456f3d8df827549761052cd467a3f7b",
+  "assessment_revision": "06c7ee364eef29b0e19d3d3b448f2d294774a4e4",
+  "frozen_files_verified": 35,
+  "changed_files": [],
+  "validation_probes": [
+    {
+      "probe": "visible A description in-memory field substitution; no Provider C description or invocation",
+      "field": "method",
+      "value": "PUT",
+      "result": "Only POST operations are supported"
+    },
+    {
+      "probe": "visible A description in-memory field substitution; no Provider C description or invocation",
+      "field": "path",
+      "value": "/calendar/native-event.ics",
+      "result": "Expected a fixed local operation path"
+    }
+  ],
+  "heldout_integration_attempts": 0,
+  "feasibility": "INCOMPATIBLE_FROZEN_PROFILE",
+  "generalization_claim": "No successful integration; native service works but shared V4 cannot express its protocol."
+}

@@ -1,0 +1,38 @@
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Logging of backtrace is disabled in this loglevel
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Loaded default config
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Loaded config file '/tmp/radicale-native-wtycpokp/config'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Starting Radicale (python=3.12.14 radicale=3.5.0 vobject=0.9.9 passlib=1.7.4 defusedxml=0.7.1 dateutil=3.0.0 bcrypt=n/a pika=1.4.4 ldap=n/a ldap3=n/a pam=n/a)
+[2026-10-28 13:55:25 +0000] [13244] [WARNING] No user authentication is selected: '[auth] type=none' (INSECURE)
+[2026-10-28 13:55:25 +0000] [13244] [INFO] auth type is 'radicale.auth.none'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] auth.strip_domain: False
+[2026-10-28 13:55:25 +0000] [13244] [INFO] auth.lc_username: False
+[2026-10-28 13:55:25 +0000] [13244] [INFO] auth.uc_username: False
+[2026-10-28 13:55:25 +0000] [13244] [INFO] auth.delay: 1.000000
+[2026-10-28 13:55:25 +0000] [13244] [INFO] auth.cache_logins: False
+[2026-10-28 13:55:25 +0000] [13244] [INFO] storage type is 'radicale.storage.multifilesystem'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Storage location: '/tmp/radicale-native-wtycpokp/storage'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Storage location subfolder: '/tmp/radicale-native-wtycpokp/storage/collection-root'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Storage cache subfolder usage for 'item': False
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Storage cache subfolder usage for 'history': False
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Storage cache subfolder usage for 'sync-token': False
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Storage cache use mtime and size for 'item': False
+[2026-10-28 13:55:25 +0000] [13244] [WARNING] Storage item mtime resolution test not possible, cannot write file: '/tmp/radicale-native-wtycpokp/storage/collection-root/.Radicale.mtime_test' ([Errno 2] No such file or directory: '/tmp/radicale-native-wtycpokp/storage/collection-root/.Radicale.mtime_test')
+[2026-10-28 13:55:25 +0000] [13244] [WARNING] Storage item mtime resolution test result not successful
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Storage folder umask (from system): '0077'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] rights type is 'radicale.rights.from_file'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] web type is 'radicale.web.none'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] hook type is 'radicale.hook.none'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Default script name to strip from URI if called by reverse proxy is taken from HTTP_X_SCRIPT_NAME or SCRIPT_NAME
+[2026-10-28 13:55:25 +0000] [13244] [INFO] permit delete of collection: True
+[2026-10-28 13:55:25 +0000] [13244] [INFO] permit overwrite of collection: True
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Listening on '127.0.0.1:43735'
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Radicale server ready
+[2026-10-28 13:55:25 +0000] [13244/Thread-2 (process_request_thread)] [INFO] GET request for '/calendar/native-event.ics' received from 127.0.0.1 using 'Python-urllib/3.12'
+[2026-10-28 13:55:25 +0000] [13244/Thread-2 (process_request_thread)] [INFO] GET response status for '/calendar/native-event.ics' in 0.000 seconds: 404 Not Found
+[2026-10-28 13:55:25 +0000] [13244/Thread-3 (process_request_thread)] [INFO] MKCALENDAR request for '/calendar/' received from 127.0.0.1 using 'Python-urllib/3.12'
+[2026-10-28 13:55:25 +0000] [13244/Thread-3 (process_request_thread)] [INFO] MKCALENDAR response status for '/calendar/' in 0.001 seconds: 201 Created
+[2026-10-28 13:55:25 +0000] [13244/Thread-4 (process_request_thread)] [INFO] PUT request for '/calendar/native-event.ics' received from 127.0.0.1 using 'Python-urllib/3.12'
+[2026-10-28 13:55:25 +0000] [13244/Thread-4 (process_request_thread)] [INFO] PUT response status for '/calendar/native-event.ics' in 0.002 seconds: 201 Created
+[2026-10-28 13:55:25 +0000] [13244/Thread-5 (process_request_thread)] [INFO] GET request for '/calendar/native-event.ics' received from 127.0.0.1 using 'Python-urllib/3.12'
+[2026-10-28 13:55:25 +0000] [13244/Thread-5 (process_request_thread)] [INFO] GET response status for '/calendar/native-event.ics' in 0.000 seconds: 200 OK
+[2026-10-28 13:55:25 +0000] [13244] [INFO] Stopping Radicale

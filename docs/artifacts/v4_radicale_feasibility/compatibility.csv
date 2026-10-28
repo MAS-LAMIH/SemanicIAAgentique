@@ -1,0 +1,5 @@
+requirement,frozen_support,evidence
+HTTP PUT,False,descriptions.py:48-49 rejects non-POST; http.py:22-23 hard-codes POST
+text/calendar VEVENT body,False,http.py serializes JSON dict; mapping.py field conversions do not serialize iCalendar
+Resource URL and UID handling,False,fixed path grammar rejects tested .ics path; no dynamic resource URL or UID generation/template role
+Native response and identifier mapping,False,native PUT returns empty 201 + ETag; runtime requires JSON object and body field id mapping

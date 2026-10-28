@@ -1,0 +1,42 @@
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Collecting Radicale==3.5.0
+  Downloading radicale-3.5.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting defusedxml (from Radicale==3.5.0)
+  Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting passlib (from Radicale==3.5.0)
+  Downloading passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting vobject>=0.9.6 (from Radicale==3.5.0)
+  Downloading vobject-0.9.9-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting pika>=1.1.0 (from Radicale==3.5.0)
+  Downloading pika-1.4.4-py3-none-any.whl.metadata (13 kB)
+Collecting pytz (from vobject>=0.9.6->Radicale==3.5.0)
+  Downloading pytz-2026.5-py2.py3-none-any.whl.metadata (22 kB)
+Collecting six (from vobject>=0.9.6->Radicale==3.5.0)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting python-dateutil>=2.7.0 (from vobject>=0.9.6->Radicale==3.5.0)
+  Downloading python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting tzdata (from python-dateutil>=2.7.0->vobject>=0.9.6->Radicale==3.5.0)
+  Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading radicale-3.5.0-py3-none-any.whl (183 kB)
+Downloading pika-1.4.4-py3-none-any.whl (165 kB)
+Downloading vobject-0.9.9-py2.py3-none-any.whl (47 kB)
+Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 525.6/525.6 kB 3.2 MB/s eta 0:00:00
+Downloading python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading pytz-2026.5-py2.py3-none-any.whl (506 kB)
+Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Saved /workspace/radicale-feasibility-001/packages/radicale-3.5.0-py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/pika-1.4.4-py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/vobject-0.9.9-py2.py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/defusedxml-0.7.1-py2.py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/passlib-1.7.4-py2.py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/python_dateutil-3.0.0-py2.py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/six-1.17.0-py2.py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/pytz-2026.5-py2.py3-none-any.whl
+Saved /workspace/radicale-feasibility-001/packages/tzdata-2026.6-py2.py3-none-any.whl
+Successfully downloaded Radicale pika vobject defusedxml passlib python-dateutil six pytz tzdata
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: python -m pip install --upgrade pip

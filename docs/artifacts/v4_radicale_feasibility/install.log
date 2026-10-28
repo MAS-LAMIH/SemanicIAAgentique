@@ -1,0 +1,13 @@
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /workspace/radicale-feasibility-001/packages
+Processing ./radicale-feasibility-001/packages/radicale-3.5.0-py3-none-any.whl
+Processing ./radicale-feasibility-001/packages/defusedxml-0.7.1-py2.py3-none-any.whl (from Radicale==3.5.0)
+Processing ./radicale-feasibility-001/packages/passlib-1.7.4-py2.py3-none-any.whl (from Radicale==3.5.0)
+Processing ./radicale-feasibility-001/packages/vobject-0.9.9-py2.py3-none-any.whl (from Radicale==3.5.0)
+Processing ./radicale-feasibility-001/packages/pika-1.4.4-py3-none-any.whl (from Radicale==3.5.0)
+Processing ./radicale-feasibility-001/packages/pytz-2026.5-py2.py3-none-any.whl (from vobject>=0.9.6->Radicale==3.5.0)
+Processing ./radicale-feasibility-001/packages/six-1.17.0-py2.py3-none-any.whl (from vobject>=0.9.6->Radicale==3.5.0)
+Processing ./radicale-feasibility-001/packages/python_dateutil-3.0.0-py2.py3-none-any.whl (from vobject>=0.9.6->Radicale==3.5.0)
+Processing ./radicale-feasibility-001/packages/tzdata-2026.6-py2.py3-none-any.whl (from python-dateutil>=2.7.0->vobject>=0.9.6->Radicale==3.5.0)
+Installing collected packages: pytz, passlib, tzdata, six, pika, defusedxml, python-dateutil, vobject, Radicale
+Successfully installed Radicale-3.5.0 defusedxml-0.7.1 passlib-1.7.4 pika-1.4.4 python-dateutil-3.0.0 pytz-2026.5 six-1.17.0 tzdata-2026.6 vobject-0.9.9

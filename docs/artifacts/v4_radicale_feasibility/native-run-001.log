@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/radicale-feasibility-001/native_probe.py", line 67, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/radicale-feasibility-001/native_probe.py", line 47, in main
+    content=f.read_text();native.append(str(f.relative_to(storage)))
+            ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
