@@ -1,0 +1,16 @@
+@prefix u: <urn:eswc:aat:usage:1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+u:Slot a rdfs:Class . u:Equal a rdfs:Class . u:IntRange a rdfs:Class .
+u:AddInt a rdfs:Class . u:SetBool a rdfs:Class . u:Echo a rdfs:Class .
+u:profile rdfs:comment "finite-usage/1 closed interpretation, no entailment or embedded executable code. Slot kind Int/Bool/JSON; named typed expressions; atomic whole-Thing integer CAS +1 revision/+1 mutations. See profile.py validation." .
+u:kind a rdfs:Property . u:unit a rdfs:Property . u:property a rdfs:Property .
+u:slot a rdfs:Property . u:usage a rdfs:Property . u:all a rdfs:Property .
+u:effect a rdfs:Property . u:frameSlot a rdfs:Property . u:onSlot a rdfs:Property .
+u:value a rdfs:Property . u:lower a rdfs:Property . u:upper a rdfs:Property .
+u:minimum a rdfs:Property . u:maximum a rdfs:Property . u:pointer a rdfs:Property .
+u:observationPath a rdfs:Property . u:identityPointer a rdfs:Property .
+u:timestampPointer a rdfs:Property . u:revisionPointer a rdfs:Property . u:mutationPointer a rdfs:Property .
+u:bodyTemplate a rdfs:Property . u:requestRevisionPointer a rdfs:Property .
+u:replyRevisionPointer a rdfs:Property . u:mediaType a rdfs:Property .
+u:successStatus a rdfs:Property . u:echo a rdfs:Property .
+u:sourceHash a rdfs:Property . u:reviewHash a rdfs:Property .
