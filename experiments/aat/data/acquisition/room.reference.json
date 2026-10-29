@@ -1,0 +1,227 @@
+{
+  "authorship": "Same author; manually transcribed native wire contract / pinned public YAML before extraction; no independent reviewer or blinding. Room schema and reference share author and definitions; common-mode risk.",
+  "operations": [
+    {
+      "id": "readRoom",
+      "method": "GET",
+      "parameters": [],
+      "path": "/state",
+      "request": null,
+      "responses": {
+        "200": {
+          "application/json": {
+            "properties": {
+              "cooler_ready": {
+                "type": "boolean"
+              },
+              "heater_ready": {
+                "type": "boolean"
+              },
+              "mutations": {
+                "type": "integer"
+              },
+              "observed_at": {
+                "type": "string"
+              },
+              "pending_requests": {
+                "type": "integer"
+              },
+              "requests": {
+                "type": "integer"
+              },
+              "revision": {
+                "type": "integer"
+              },
+              "sentinels": {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              "temperature": {
+                "type": "integer"
+              },
+              "thing": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "temperature",
+              "heater_ready",
+              "cooler_ready",
+              "revision",
+              "mutations",
+              "requests",
+              "sentinels",
+              "pending_requests",
+              "thing",
+              "observed_at"
+            ],
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "id": "heatRoom",
+      "method": "POST",
+      "parameters": [],
+      "path": "/heat",
+      "request": {
+        "media": {
+          "application/json": {
+            "additionalProperties": false,
+            "properties": {
+              "expected_revision": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "expected_revision"
+            ],
+            "type": "object"
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "201": {
+          "application/json": {
+            "properties": {
+              "revision": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "revision",
+              "temperature"
+            ],
+            "type": "object"
+          }
+        },
+        "400": {
+          "application/json": {
+            "type": "object"
+          }
+        },
+        "409": {
+          "application/json": {
+            "properties": {
+              "revision": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "revision",
+              "temperature"
+            ],
+            "type": "object"
+          }
+        },
+        "422": {
+          "application/json": {
+            "properties": {
+              "revision": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "revision",
+              "temperature"
+            ],
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "id": "coolRoom",
+      "method": "POST",
+      "parameters": [],
+      "path": "/cool",
+      "request": {
+        "media": {
+          "application/json": {
+            "additionalProperties": false,
+            "properties": {
+              "expected_revision": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "expected_revision"
+            ],
+            "type": "object"
+          }
+        },
+        "required": true
+      },
+      "responses": {
+        "201": {
+          "application/json": {
+            "properties": {
+              "revision": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "revision",
+              "temperature"
+            ],
+            "type": "object"
+          }
+        },
+        "400": {
+          "application/json": {
+            "type": "object"
+          }
+        },
+        "409": {
+          "application/json": {
+            "properties": {
+              "revision": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "revision",
+              "temperature"
+            ],
+            "type": "object"
+          }
+        },
+        "422": {
+          "application/json": {
+            "properties": {
+              "revision": {
+                "type": "integer"
+              },
+              "temperature": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "revision",
+              "temperature"
+            ],
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "scope": "All operations/identifiers, parameters(name/location/required), request(required/media), response(status/media), reachable supported schema types/constraints/properties/items. Excludes descriptions, security, server/header declarations, provenance triples and generated identity links from precision/recall."
+}
