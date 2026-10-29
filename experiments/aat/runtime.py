@@ -39,7 +39,10 @@ def candidates(goal,ctx,descriptions):
     result=[]
     for u in descriptions:
         reasons=[];truth=Truth.TRUE
-        ready=(ctx.heater_ready if u.ready_property==NS+'heaterReady' else ctx.cooler_ready) if ctx else None
+        # Never interpret an unknown predicate as the other supported predicate.
+        if u.ready_property not in {NS+'heaterReady',NS+'coolerReady'}:
+            raise ValueError('Unsupported readiness predicate')
+        ready={NS+'heaterReady':ctx.heater_ready,NS+'coolerReady':ctx.cooler_ready}[u.ready_property] if ctx else None
         if not fresh(ctx,goal) or not complete(ctx):truth=Truth.UNKNOWN;reasons.append('Missing/stale complete context')
         elif ctx.thing!=goal.thing:truth=Truth.FALSE;reasons.append('Wrong grounded subject')
         elif ready is None:truth=Truth.UNKNOWN;reasons.append('Readiness UNKNOWN')
