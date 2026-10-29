@@ -1,0 +1,17 @@
+{
+  "artifact.ttl": "3429ca41682e2782f36e8199f92f65cee1aedd380200b4c7a3f915d95ccceae7",
+  "control.json": "c7ea4a1bd11ea9d748c55da2c57beba8d62af9ca262c8668883a080760180233",
+  "evaluation.json": "77f2390e212c6e5cdaab7c32b7dd87347cab7bc535405302f63fb5d26f900a3d",
+  "execution/approvals.json": "9006f9ff44e98daf3960bd9073f9c97ce0df6d0d878028ab7c0899439de7b6f1",
+  "execution/process-summary.json": "6865b163c51036545922052b35ccdb9bde024f9ba04a53d8426c652333eb143a",
+  "execution/subject.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/subject.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/supervision.json": "45165cd05466142e9985d6260a61327f888c59ab7ed438d5d70c25ed69b0090f",
+  "execution/worker/discovery.json": "82b15319c72daef90b22e138efe2bc6e976a3b162671c607257d57ce80d44d6c",
+  "execution/worker/http.json": "bd4b8dd8b77df7a336ba5cf802394e862db8e5865216c5e9dfbb8492e0e38245",
+  "execution/worker/input.json": "85783743196df872f7fad0cf307b033307deb4fc7daf35b90b887f6b70624988",
+  "execution/worker/modules.json": "6c642a81ebf647c3de7767e52df0b2f554e081329d7d37ab00030697819958f5",
+  "execution/worker/observations.json": "0141d761ff5f9e50cf268ad67ac77ef8c4398530567eec3bca05452e077d3df9",
+  "execution/worker/result.json": "04f141b64c4891377db8e2c5a16eab6ae98fae5df417311bca3a03be2007abc5",
+  "execution/worker/transcript.json": "572116fe1619e81bc744a78b8b30744613071f73005bbe6d2fe8017b0a1512ea"
+}

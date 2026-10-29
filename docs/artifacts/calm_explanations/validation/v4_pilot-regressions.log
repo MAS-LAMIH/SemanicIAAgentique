@@ -1,0 +1,11 @@
+test_local_adapter_needs_no_registry_or_descriptions (test_comparison.BaselineFairness.test_local_adapter_needs_no_registry_or_descriptions) ... ok
+test_same_validation_request_encoding_and_results (test_comparison.BaselineFairness.test_same_validation_request_encoding_and_results) ... ok
+test_native_truth_is_independent_of_output_and_checks_preservation (test_comparison.NativeTruth.test_native_truth_is_independent_of_output_and_checks_preservation) ... ok
+test_contaminated_resets_and_existing_trace_preserved (test_comparison.OperationalControls.test_contaminated_resets_and_existing_trace_preserved) ... ok
+test_positive_missing_output_and_timeout (test_comparison.OperationalControls.test_positive_missing_output_and_timeout) ... ok
+test_unsettled_state_is_never_accepted (test_comparison.OperationalControls.test_unsettled_state_is_never_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 16.215s
+
+OK

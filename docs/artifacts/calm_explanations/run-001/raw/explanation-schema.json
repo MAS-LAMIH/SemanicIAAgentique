@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:eswc:calm:explanation:1",
+  "title": "CALM trace-grounded explanation version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "provenance",
+    "catalog",
+    "goal",
+    "claims",
+    "steps",
+    "outcome",
+    "coverage",
+    "narrative"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "calm/1"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "files",
+        "integrity"
+      ],
+      "properties": {
+        "files": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "integrity": {
+          "enum": [
+            "verified",
+            "unsealed"
+          ]
+        }
+      }
+    },
+    "catalog": {
+      "$ref": "#/$defs/ref"
+    },
+    "goal": {
+      "$ref": "#/$defs/ref"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "plane",
+          "rule",
+          "value",
+          "evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^c[0-9]{5}$"
+          },
+          "plane": {
+            "enum": [
+              "agent_record",
+              "record_translation",
+              "reviewed_model",
+              "model_replay",
+              "record_comparison",
+              "runtime_observation",
+              "native_evaluation"
+            ]
+          },
+          "rule": {
+            "enum": [
+              "copy",
+              "raw_atom",
+              "candidate_status",
+              "compare",
+              "context_changes"
+            ]
+          },
+          "value": {},
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "file",
+                "pointer",
+                "sha256"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pointer": {
+                  "type": "string",
+                  "pattern": "^(/.*)?$"
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "turn",
+          "context",
+          "goal_truth",
+          "candidates",
+          "proposal",
+          "guard",
+          "feedback",
+          "changed_context"
+        ],
+        "properties": {
+          "turn": {
+            "$ref": "#/$defs/ref"
+          },
+          "context": {
+            "$ref": "#/$defs/ref"
+          },
+          "goal_truth": {
+            "$ref": "#/$defs/ref"
+          },
+          "proposal": {
+            "$ref": "#/$defs/ref"
+          },
+          "guard": {
+            "$ref": "#/$defs/ref"
+          },
+          "feedback": {
+            "$ref": "#/$defs/ref"
+          },
+          "changed_context": {
+            "$ref": "#/$defs/ref"
+          },
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "record",
+                "eligibility",
+                "raw_preconditions",
+                "description"
+              ],
+              "properties": {
+                "record": {
+                  "$ref": "#/$defs/ref"
+                },
+                "eligibility": {
+                  "$ref": "#/$defs/ref"
+                },
+                "raw_preconditions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "description",
+                      "truth"
+                    ],
+                    "properties": {
+                      "description": {
+                        "$ref": "#/$defs/ref"
+                      },
+                      "truth": {
+                        "$ref": "#/$defs/ref"
+                      }
+                    }
+                  }
+                },
+                "description": {
+                  "$ref": "#/$defs/ref"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "verified",
+        "dispatches",
+        "http",
+        "checks",
+        "before",
+        "after",
+        "effect_comparisons",
+        "frame_comparisons",
+        "native_score",
+        "native_before",
+        "native_after",
+        "native_journal"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/ref"
+        },
+        "verified": {
+          "$ref": "#/$defs/ref"
+        },
+        "dispatches": {
+          "$ref": "#/$defs/ref"
+        },
+        "http": {
+          "$ref": "#/$defs/ref"
+        },
+        "checks": {
+          "$ref": "#/$defs/ref"
+        },
+        "before": {
+          "$ref": "#/$defs/ref"
+        },
+        "after": {
+          "$ref": "#/$defs/ref"
+        },
+        "native_score": {
+          "$ref": "#/$defs/ref"
+        },
+        "native_before": {
+          "$ref": "#/$defs/ref"
+        },
+        "native_after": {
+          "$ref": "#/$defs/ref"
+        },
+        "native_journal": {
+          "$ref": "#/$defs/ref"
+        },
+        "effect_comparisons": {
+          "$ref": "#/$defs/comparisons"
+        },
+        "frame_comparisons": {
+          "$ref": "#/$defs/comparisons"
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "status",
+          "reason"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "direct",
+              "reconstructed",
+              "unavailable",
+              "not_applicable"
+            ]
+          },
+          "reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "narrative": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^c[0-9]{5}$"
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "truth",
+          "declaration"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "truth": {
+            "$ref": "#/$defs/ref"
+          },
+          "declaration": {
+            "$ref": "#/$defs/ref"
+          }
+        }
+      }
+    }
+  }
+}

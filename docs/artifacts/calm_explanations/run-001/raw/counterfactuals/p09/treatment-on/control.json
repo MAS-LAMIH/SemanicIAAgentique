@@ -1,0 +1,14 @@
+{
+  "domain": "cabinet",
+  "explanation_after_execution": true,
+  "extra_alternative_scope": "Deliberate conflicting model claim, not verified native API behavior",
+  "input": {
+    "effect_mode": "normal",
+    "extra_candidate": false,
+    "goal_value": true,
+    "observation": "missing",
+    "readiness": true,
+    "revision_delta": 0
+  },
+  "scope": "One declared input intervention; fresh clocks/UUIDs/ports are incidental metadata"
+}

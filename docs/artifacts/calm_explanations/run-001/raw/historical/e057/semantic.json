@@ -1,0 +1,430 @@
+{
+  "calls": [
+    {
+      "body": {
+        "guard": {
+          "generation": 0
+        }
+      },
+      "method": "PUT",
+      "path": "/cabinet/secure"
+    }
+  ],
+  "checks": {
+    "echoes": true,
+    "evidence": true,
+    "expected_state": true,
+    "goal": true,
+    "mutations": true,
+    "response_revision": true,
+    "revision": true
+  },
+  "coverage": {
+    "candidate_aggregates": {
+      "reason": null,
+      "status": "direct"
+    },
+    "frame_verification": {
+      "reason": "Runtime records aggregate expected_state, not a separate frame verdict",
+      "status": "reconstructed"
+    },
+    "freshness_clock": {
+      "reason": "Exact evaluation clock and age calculation not logged",
+      "status": "unavailable"
+    },
+    "general_causal_identification": {
+      "reason": "Only bounded model-relative comparisons and explicitly controlled fixture interventions supported",
+      "status": "unavailable"
+    },
+    "goal": {
+      "reason": null,
+      "status": "direct"
+    },
+    "guard_decision": {
+      "reason": null,
+      "status": "direct"
+    },
+    "hidden_reasoner_intent": {
+      "reason": "No private reasoning trace; proposal consistency is not mental causation",
+      "status": "unavailable"
+    },
+    "http_results": {
+      "reason": null,
+      "status": "direct"
+    },
+    "native_scoring": {
+      "reason": null,
+      "status": "direct"
+    },
+    "observed_context": {
+      "reason": null,
+      "status": "direct"
+    },
+    "permit_contents": {
+      "reason": "Permit object/nonce/expiry/goal hash not serialized; authorized barrier file contains proposal only",
+      "status": "unavailable"
+    },
+    "prediction": {
+      "reason": null,
+      "status": "direct"
+    },
+    "raw_model_preconditions": {
+      "reason": "Raw predicate replay does not establish runtime freshness or procedural atom evaluation",
+      "status": "reconstructed"
+    },
+    "runtime_postconditions": {
+      "reason": null,
+      "status": "direct"
+    },
+    "runtime_precondition_atoms": {
+      "reason": "Not logged; aggregate truth cannot identify which atom was evaluated FALSE/UNKNOWN",
+      "status": "unavailable"
+    },
+    "selection_or_abstention": {
+      "reason": null,
+      "status": "direct"
+    }
+  },
+  "effect_comparisons": [
+    [
+      "urn:example:cabinet:secured",
+      "TRUE"
+    ]
+  ],
+  "frame_comparisons": [
+    [
+      "urn:example:cabinet:doorClosed",
+      "TRUE"
+    ],
+    [
+      "urn:example:cabinet:ready",
+      "TRUE"
+    ],
+    [
+      "urn:example:cabinet:unrelated",
+      "TRUE"
+    ]
+  ],
+  "goal": {
+    "clauses": [
+      {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:doorClosed",
+        "unit": null,
+        "upper": null,
+        "value": true
+      },
+      {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:secured",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    ],
+    "max_age": 10.0,
+    "thing": "urn:example:cabinet:thing"
+  },
+  "native": {
+    "external_changes": 0,
+    "frame_preserved": true,
+    "goal_state": true,
+    "incorrect_native_transitions": 0,
+    "mutations": 1,
+    "native_success": true,
+    "requests": 1,
+    "revision_accounted": true,
+    "unauthorized_mutations": 0
+  },
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "candidates": [],
+      "changed": null,
+      "context": null,
+      "goal_truth": "UNKNOWN",
+      "guard": null,
+      "selected": null,
+      "tool": "discover"
+    },
+    {
+      "candidates": [],
+      "changed": null,
+      "context": null,
+      "goal_truth": "UNKNOWN",
+      "guard": null,
+      "selected": null,
+      "tool": "observe"
+    },
+    {
+      "candidates": [
+        {
+          "applicable": "TRUE",
+          "binding": {
+            "body": "{\"guard\":{\"generation\":null}}",
+            "method": "PUT",
+            "path": "/cabinet/release",
+            "request_revision": "/guard/generation"
+          },
+          "contributes": "FALSE",
+          "expected": [
+            [
+              "urn:example:cabinet:doorClosed",
+              true
+            ],
+            [
+              "urn:example:cabinet:ready",
+              true
+            ],
+            [
+              "urn:example:cabinet:secured",
+              false
+            ],
+            [
+              "urn:example:cabinet:unrelated",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "raw_model": [
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:doorClosed",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            },
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:ready",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            }
+          ]
+        },
+        {
+          "applicable": "TRUE",
+          "binding": {
+            "body": "{\"guard\":{\"generation\":null}}",
+            "method": "PUT",
+            "path": "/cabinet/secure",
+            "request_revision": "/guard/generation"
+          },
+          "contributes": "TRUE",
+          "expected": [
+            [
+              "urn:example:cabinet:doorClosed",
+              true
+            ],
+            [
+              "urn:example:cabinet:ready",
+              true
+            ],
+            [
+              "urn:example:cabinet:secured",
+              true
+            ],
+            [
+              "urn:example:cabinet:unrelated",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "raw_model": [
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:doorClosed",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            },
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:ready",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            }
+          ]
+        }
+      ],
+      "changed": [],
+      "context": {
+        "mutations": 0,
+        "revision": 0,
+        "thing": "urn:example:cabinet:thing",
+        "values": [
+          [
+            "urn:example:cabinet:doorClosed",
+            true
+          ],
+          [
+            "urn:example:cabinet:ready",
+            true
+          ],
+          [
+            "urn:example:cabinet:secured",
+            false
+          ],
+          [
+            "urn:example:cabinet:unrelated",
+            "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+          ]
+        ]
+      },
+      "goal_truth": "FALSE",
+      "guard": "AUTHORIZED",
+      "selected": {
+        "body": "{\"guard\":{\"generation\":null}}",
+        "method": "PUT",
+        "path": "/cabinet/secure",
+        "request_revision": "/guard/generation"
+      },
+      "tool": "use"
+    },
+    {
+      "candidates": [
+        {
+          "applicable": "TRUE",
+          "binding": {
+            "body": "{\"guard\":{\"generation\":null}}",
+            "method": "PUT",
+            "path": "/cabinet/release",
+            "request_revision": "/guard/generation"
+          },
+          "contributes": "FALSE",
+          "expected": [
+            [
+              "urn:example:cabinet:doorClosed",
+              true
+            ],
+            [
+              "urn:example:cabinet:ready",
+              true
+            ],
+            [
+              "urn:example:cabinet:secured",
+              false
+            ],
+            [
+              "urn:example:cabinet:unrelated",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "raw_model": [
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:doorClosed",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            },
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:ready",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            }
+          ]
+        },
+        {
+          "applicable": "TRUE",
+          "binding": {
+            "body": "{\"guard\":{\"generation\":null}}",
+            "method": "PUT",
+            "path": "/cabinet/secure",
+            "request_revision": "/guard/generation"
+          },
+          "contributes": "TRUE",
+          "expected": [
+            [
+              "urn:example:cabinet:doorClosed",
+              true
+            ],
+            [
+              "urn:example:cabinet:ready",
+              true
+            ],
+            [
+              "urn:example:cabinet:secured",
+              true
+            ],
+            [
+              "urn:example:cabinet:unrelated",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "raw_model": [
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:doorClosed",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            },
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:ready",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            }
+          ]
+        }
+      ],
+      "changed": null,
+      "context": {
+        "mutations": 1,
+        "revision": 1,
+        "thing": "urn:example:cabinet:thing",
+        "values": [
+          [
+            "urn:example:cabinet:doorClosed",
+            true
+          ],
+          [
+            "urn:example:cabinet:ready",
+            true
+          ],
+          [
+            "urn:example:cabinet:secured",
+            true
+          ],
+          [
+            "urn:example:cabinet:unrelated",
+            "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+          ]
+        ]
+      },
+      "goal_truth": "TRUE",
+      "guard": null,
+      "selected": null,
+      "tool": "finish"
+    }
+  ],
+  "verified": true
+}

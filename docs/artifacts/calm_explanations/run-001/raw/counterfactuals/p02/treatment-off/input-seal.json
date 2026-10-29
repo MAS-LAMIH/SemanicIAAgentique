@@ -1,0 +1,21 @@
+{
+  "artifact.ttl": "323eb81e050f323c61c81843ae3d3367a69987a2cce64fcbe13abe4599265497",
+  "control.json": "8b8279d5d9b545d83825ccc64eed887ff3aad5973d3110e3c1acdea1dec96b33",
+  "evaluation.json": "79b695a0d13a369b5f16069ff0939ef80178f04692d0043f2c7b4d683527ec5a",
+  "execution/approvals.json": "24f10260578191e72a6c857441656cbbce16fe649e0dde476b283c9a2eba26fd",
+  "execution/process-summary.json": "a805f2e48618242df3b85851ad06e0b81f8e5ded95679f19127631f051268a11",
+  "execution/subject.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/subject.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/supervision.json": "0e64fcfbf978811f080d808ec8351eedfd555c8ac934ba1113b8db1562c11b7c",
+  "execution/worker/authorized-3.json": "c025c64f1bb62dd5350ad087abd9d63b534772ba3e3df0f3c536577f12249ed0",
+  "execution/worker/discovery.json": "d17975dc6f3521705da4fa14a12a44dc2ca949e6ee998a56723b65a4999f307c",
+  "execution/worker/http.json": "d7282187ce8e5d8b9215dba3717536c53d11ac6719936a22e9b0f51541084e27",
+  "execution/worker/input.json": "e599cfa1f12fb892c96374199276349ac81d10450f3bb2eddd1a4013c03ad207",
+  "execution/worker/intent-3.json": "c025c64f1bb62dd5350ad087abd9d63b534772ba3e3df0f3c536577f12249ed0",
+  "execution/worker/modules.json": "6c642a81ebf647c3de7767e52df0b2f554e081329d7d37ab00030697819958f5",
+  "execution/worker/observations.json": "7c6e873e882d8ecf7d8d6736761b3d2684211398fb68297ef36edfa6813baa70",
+  "execution/worker/release-authorized-3": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/release-intent-3": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/result.json": "c5a892362ef388963f9ded83b5f2f611b6b81b18c1f374b926418f072dae08fa",
+  "execution/worker/transcript.json": "71a4504e71c635a7ce129a9fc5ad859966ee5ed9e4cf1b150de57c8988034c61"
+}

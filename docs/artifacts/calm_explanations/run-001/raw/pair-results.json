@@ -1,0 +1,4648 @@
+[
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": false,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": false,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "NO_DIRECT_MATCH",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": false,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": false,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "NO_DIRECT_MATCH",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "readiness",
+    "domain": "room",
+    "noninterference": true,
+    "pair": 1,
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "NO_DIRECT_MATCH"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": false,
+      "revision_delta": 0
+    },
+    "variable": "readiness"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 20
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/cool"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 20
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/cool",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 20
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/cool"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 20
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/cool",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "goal_value",
+    "domain": "room",
+    "noninterference": true,
+    "pair": 2,
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/cool",
+      "treatment_first_guard": "AUTHORIZED",
+      "treatment_status": "SUCCESS"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 20,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "goal_polarity"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "UNKNOWN_CONTEXT",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "UNKNOWN_CONTEXT",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "observation",
+    "domain": "room",
+    "noninterference": true,
+    "pair": 3,
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "UNKNOWN_CONTEXT"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "missing",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "missing_observation"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 2,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 1
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "STALE_PROPOSAL",
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 0,
+              "requests": 0,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 0,
+              "requests": 0,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "kind": "external"
+          },
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 2,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 1
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 1,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 2,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 1
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "STALE_PROPOSAL",
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 0,
+              "requests": 0,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 0,
+              "requests": 0,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "kind": "external"
+          },
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 2,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 1
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 1,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "revision_delta",
+    "domain": "room",
+    "noninterference": true,
+    "pair": 4,
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/heat",
+      "treatment_first_guard": "STALE_PROPOSAL",
+      "treatment_status": "SUCCESS"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 1
+    },
+    "variable": "revision_freshness"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 23
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 23
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 1,
+          "mutations": 1,
+          "native_success": false,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "POSTCONDITION_FAILED",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 23
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 23
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 1,
+          "mutations": 1,
+          "native_success": false,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "POSTCONDITION_FAILED",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "effect_mode",
+    "domain": "room",
+    "noninterference": true,
+    "pair": 5,
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/heat",
+      "treatment_first_guard": "AUTHORIZED",
+      "treatment_status": "POSTCONDITION_FAILED"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "wrong",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "wrong_effect"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 1,
+          "pending_requests": 0,
+          "requests": 1,
+          "revision": 1,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 22
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [
+          {
+            "body": {
+              "expected_revision": 0
+            },
+            "method": "POST",
+            "path": "/heat"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 22
+            },
+            "before": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "pending_requests": 1,
+              "requests": 1,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21
+            },
+            "body": {
+              "expected_revision": 0
+            },
+            "kind": "request",
+            "path": "/heat",
+            "status": 201
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [],
+        "guards": [
+          "AMBIGUOUS"
+        ],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "AMBIGUOUS",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        },
+        "calls": [],
+        "guards": [
+          "AMBIGUOUS"
+        ],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "AMBIGUOUS",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "extra_candidate",
+    "domain": "room",
+    "noninterference": true,
+    "pair": 6,
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": "AMBIGUOUS",
+      "treatment_status": "AMBIGUOUS"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": true,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "ambiguous_alternative"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": false,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": false,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "NO_DIRECT_MATCH",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": false,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": false,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "NO_DIRECT_MATCH",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "readiness",
+    "domain": "cabinet",
+    "noninterference": true,
+    "pair": 7,
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "NO_DIRECT_MATCH"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": false,
+      "revision_delta": 0
+    },
+    "variable": "readiness"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": true,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": true,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "goal_value",
+    "domain": "cabinet",
+    "noninterference": true,
+    "pair": 8,
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "SUCCESS"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": false,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "goal_polarity"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "UNKNOWN_CONTEXT",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "UNKNOWN_CONTEXT",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "observation",
+    "domain": "cabinet",
+    "noninterference": true,
+    "pair": 9,
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "UNKNOWN_CONTEXT"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "missing",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "missing_observation"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 2,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 1
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "STALE_PROPOSAL",
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 0,
+              "ready": true,
+              "requests": 0,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 0,
+              "ready": true,
+              "requests": 0,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "kind": "external"
+          },
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 2,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 1
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 1,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 2,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 1
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "STALE_PROPOSAL",
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 0,
+              "ready": true,
+              "requests": 0,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 0,
+              "ready": true,
+              "requests": 0,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "kind": "external"
+          },
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 2,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 1
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 1,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "revision_delta",
+    "domain": "cabinet",
+    "noninterference": true,
+    "pair": 10,
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/cabinet/secure",
+      "treatment_first_guard": "STALE_PROPOSAL",
+      "treatment_status": "SUCCESS"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 1
+    },
+    "variable": "revision_freshness"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 1,
+          "mutations": 1,
+          "native_success": false,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "POSTCONDITION_FAILED",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 1,
+          "mutations": 1,
+          "native_success": false,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "POSTCONDITION_FAILED",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "effect_mode",
+    "domain": "cabinet",
+    "noninterference": true,
+    "pair": 11,
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/cabinet/secure",
+      "treatment_first_guard": "AUTHORIZED",
+      "treatment_status": "POSTCONDITION_FAILED"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "wrong",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "wrong_effect"
+  },
+  {
+    "actual": {
+      "baseline-off": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "baseline-on": {
+        "accepted": true,
+        "after": {
+          "door_closed": true,
+          "generation": 1,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 1,
+          "secured": true,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [
+          {
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "method": "PUT",
+            "path": "/cabinet/secure"
+          }
+        ],
+        "guards": [
+          "AUTHORIZED"
+        ],
+        "journal": [
+          {
+            "after": {
+              "door_closed": true,
+              "generation": 1,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": true,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 1
+            },
+            "before": {
+              "door_closed": true,
+              "generation": 0,
+              "pending_requests": 1,
+              "ready": true,
+              "requests": 1,
+              "secured": false,
+              "unrelated": {
+                "asset": "manual",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "writes": 0
+            },
+            "body": {
+              "guard": {
+                "generation": 0
+              }
+            },
+            "kind": "request",
+            "path": "/cabinet/secure",
+            "status": 200
+          }
+        ],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": true,
+          "incorrect_native_transitions": 0,
+          "mutations": 1,
+          "native_success": true,
+          "requests": 1,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "treatment-off": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [
+          "AMBIGUOUS"
+        ],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "AMBIGUOUS",
+        "verified": false
+      },
+      "treatment-on": {
+        "accepted": false,
+        "after": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "before": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": true,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "calls": [],
+        "guards": [
+          "AMBIGUOUS"
+        ],
+        "journal": [],
+        "native": {
+          "external_changes": 0,
+          "frame_preserved": true,
+          "goal_state": false,
+          "incorrect_native_transitions": 0,
+          "mutations": 0,
+          "native_success": false,
+          "requests": 0,
+          "revision_accounted": true,
+          "unauthorized_mutations": 0
+        },
+        "status": "AMBIGUOUS",
+        "verified": false
+      }
+    },
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "extra_candidate",
+    "domain": "cabinet",
+    "noninterference": true,
+    "pair": 12,
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": "AMBIGUOUS",
+      "treatment_status": "AMBIGUOUS"
+    },
+    "predictions_matched": true,
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": true,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "ambiguous_alternative"
+  }
+]

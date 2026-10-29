@@ -1,0 +1,6 @@
+{
+  "baseline": "f0f005ccaccc2c54d6fac7eda24986fd48551d08",
+  "episodes": 88,
+  "root": "docs/artifacts/eswc_aat_cross_domain/run-001/raw",
+  "seal_sha256": "557a8ced221a31311b3d518f0810f87c7a763f7fdde7e91511cbaec75c311cfd"
+}

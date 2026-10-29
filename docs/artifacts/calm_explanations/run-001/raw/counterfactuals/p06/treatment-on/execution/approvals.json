@@ -1,0 +1,9 @@
+{
+  "graphs": [
+    {
+      "approved_hash": "b9653ad5624bdf75812fd168e89cd26605d1af3daf064b770acbe7db3d89bcd9",
+      "path": "/workspace/calm-run-001/raw/counterfactuals/p06/treatment-on/artifact.ttl"
+    }
+  ],
+  "scope": "Task-authorized same-author controlled experiment; not independent human review"
+}

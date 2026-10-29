@@ -1,0 +1,13 @@
+test_all_historical_claims_supported_schema_and_deterministic (test_explanations.CalmTests.test_all_historical_claims_supported_schema_and_deterministic) ... ok
+test_builder_reads_without_input_mutation (test_explanations.CalmTests.test_builder_reads_without_input_mutation) ... ok
+test_false_and_unknown_alternatives_are_not_conflated (test_explanations.CalmTests.test_false_and_unknown_alternatives_are_not_conflated) ... ok
+test_identifier_and_registration_permutations_preserve_semantic_meaning (test_explanations.CalmTests.test_identifier_and_registration_permutations_preserve_semantic_meaning) ... ok
+test_missing_evidence_and_permits_are_unavailable_not_invented (test_explanations.CalmTests.test_missing_evidence_and_permits_are_unavailable_not_invented) ... ok
+test_raw_replay_does_not_rewrite_stale_aggregate (test_explanations.CalmTests.test_raw_replay_does_not_rewrite_stale_aggregate) ... ok
+test_tampered_evidence_claim_or_reference_rejects (test_explanations.CalmTests.test_tampered_evidence_claim_or_reference_rejects) ... ok
+test_wrong_effect_frame_and_timeout_never_success_explanations (test_explanations.CalmTests.test_wrong_effect_frame_and_timeout_never_success_explanations) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.816s
+
+OK

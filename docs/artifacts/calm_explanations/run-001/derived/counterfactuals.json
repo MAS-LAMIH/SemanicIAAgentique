@@ -1,0 +1,98 @@
+[
+  {
+    "baseline": "SUCCESS",
+    "domain": "room",
+    "intervention": "readiness",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "NO_DIRECT_MATCH"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "room",
+    "intervention": "goal_polarity",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "SUCCESS"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "room",
+    "intervention": "missing_observation",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "UNKNOWN_CONTEXT"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "room",
+    "intervention": "revision_freshness",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "SUCCESS"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "room",
+    "intervention": "wrong_effect",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "POSTCONDITION_FAILED"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "room",
+    "intervention": "ambiguous_alternative",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "AMBIGUOUS"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "cabinet",
+    "intervention": "readiness",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "NO_DIRECT_MATCH"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "cabinet",
+    "intervention": "goal_polarity",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "SUCCESS"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "cabinet",
+    "intervention": "missing_observation",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "UNKNOWN_CONTEXT"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "cabinet",
+    "intervention": "revision_freshness",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "SUCCESS"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "cabinet",
+    "intervention": "wrong_effect",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "POSTCONDITION_FAILED"
+  },
+  {
+    "baseline": "SUCCESS",
+    "domain": "cabinet",
+    "intervention": "ambiguous_alternative",
+    "noninterference": true,
+    "prediction_matched": true,
+    "treatment": "AMBIGUOUS"
+  }
+]

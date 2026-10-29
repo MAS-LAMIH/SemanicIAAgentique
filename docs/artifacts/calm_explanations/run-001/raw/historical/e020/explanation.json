@@ -1,0 +1,1151 @@
+{
+  "catalog": "c00002",
+  "claims": [
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/input.json",
+          "pointer": "/goal",
+          "sha256": "7d711ae1430608970e40bd18e297b4d20ea73bfb04f71e2f8a556a940c5c6b47"
+        }
+      ],
+      "id": "c00001",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "clauses": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ],
+        "max_age": 10.0,
+        "thing": "urn:example:cabinet:thing"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/discovery.json",
+          "pointer": "/1",
+          "sha256": "7fd6d47a3504e826f1ace3314db365d400325a6c2d931119f839149aea33aae3"
+        }
+      ],
+      "id": "c00002",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "artifact": "urn:example:cabinet:artifact",
+        "graph_hash": "3429ca41682e2782f36e8199f92f65cee1aedd380200b4c7a3f915d95ccceae7",
+        "identity": "/identity",
+        "mutations": "/audit/writes",
+        "observation": "/cabinet/status",
+        "operations": [
+          {
+            "body": "{\"guard\":{\"generation\":null}}",
+            "echoes": [
+              [
+                "/latch/secured",
+                "urn:example:cabinet:s0"
+              ]
+            ],
+            "id": "urn:example:cabinet:o0",
+            "method": "PUT",
+            "path": "/cabinet/secure",
+            "request_revision": "/guard/generation",
+            "response_revision": "/receipt/generation",
+            "status": 200
+          },
+          {
+            "body": "{\"guard\":{\"generation\":null}}",
+            "echoes": [
+              [
+                "/latch/secured",
+                "urn:example:cabinet:s0"
+              ]
+            ],
+            "id": "urn:example:cabinet:o1",
+            "method": "PUT",
+            "path": "/cabinet/release",
+            "request_revision": "/guard/generation",
+            "response_revision": "/receipt/generation",
+            "status": 200
+          }
+        ],
+        "revision": "/audit/generation",
+        "slots": [
+          {
+            "id": "urn:example:cabinet:s0",
+            "kind": "Bool",
+            "maximum": null,
+            "minimum": null,
+            "pointer": "/latch/secured",
+            "property": "urn:example:cabinet:secured",
+            "unit": null
+          },
+          {
+            "id": "urn:example:cabinet:s1",
+            "kind": "Bool",
+            "maximum": null,
+            "minimum": null,
+            "pointer": "/interlocks/door_closed",
+            "property": "urn:example:cabinet:doorClosed",
+            "unit": null
+          },
+          {
+            "id": "urn:example:cabinet:s2",
+            "kind": "Bool",
+            "maximum": null,
+            "minimum": null,
+            "pointer": "/interlocks/ready",
+            "property": "urn:example:cabinet:ready",
+            "unit": null
+          },
+          {
+            "id": "urn:example:cabinet:s3",
+            "kind": "JSON",
+            "maximum": null,
+            "minimum": null,
+            "pointer": "/audit/unrelated",
+            "property": "urn:example:cabinet:unrelated",
+            "unit": null
+          }
+        ],
+        "thing": "urn:example:cabinet:thing",
+        "timestamp": "/evidence/time",
+        "usages": [
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": false
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/turn",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00003",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": 1
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/view/goal_truth",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00004",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": "UNKNOWN"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/proposal",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00005",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "discover"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/feedback",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00006",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "code": "DISCOVERED"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/turn",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00007",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": 2
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/view/goal_truth",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00008",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": "UNKNOWN"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/proposal",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00009",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/feedback",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00010",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "code": "OBSERVED",
+        "context": {
+          "id": "urn:context:dca6d868-35e1-4a4a-9976-ce7a05046e22",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:13.378521+00:00",
+          "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:42:13.378521+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":false},\"latch\":{\"secured\":false}}",
+          "revision": 0,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              true
+            ],
+            [
+              "urn:example:cabinet:s2",
+              false
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/turn",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00011",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": 3
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00012",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "id": "urn:context:dca6d868-35e1-4a4a-9976-ce7a05046e22",
+        "mutations": 0,
+        "observed_at": "2026-10-29T16:42:13.378521+00:00",
+        "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:42:13.378521+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":false},\"latch\":{\"secured\":false}}",
+        "revision": 0,
+        "thing": "urn:example:cabinet:thing",
+        "values": [
+          [
+            "urn:example:cabinet:s0",
+            false
+          ],
+          [
+            "urn:example:cabinet:s1",
+            true
+          ],
+          [
+            "urn:example:cabinet:s2",
+            false
+          ],
+          [
+            "urn:example:cabinet:s3",
+            "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+          ]
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/goal_truth",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00013",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": "FALSE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/proposal",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00014",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "stop_no_match"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/1",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00015",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "applicable": "FALSE",
+        "contributes": "FALSE",
+        "expected": [
+          [
+            "urn:example:cabinet:s0",
+            false
+          ],
+          [
+            "urn:example:cabinet:s1",
+            true
+          ],
+          [
+            "urn:example:cabinet:s2",
+            false
+          ],
+          [
+            "urn:example:cabinet:s3",
+            "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+          ]
+        ],
+        "handle": "urn:example:cabinet:u1",
+        "operation": "urn:example:cabinet:o1",
+        "reasons": []
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/1",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00016",
+      "plane": "record_translation",
+      "rule": "candidate_status",
+      "value": {
+        "applicability": "FALSE",
+        "eligible": false,
+        "goal_contribution": "FALSE"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00017",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "effects": [
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "value": false
+          }
+        ],
+        "frame": [
+          "urn:example:cabinet:s1",
+          "urn:example:cabinet:s2",
+          "urn:example:cabinet:s3"
+        ],
+        "id": "urn:example:cabinet:u1",
+        "operation": "urn:example:cabinet:o1",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/0",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00018",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s1",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/0",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00019",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/1",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00020",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s2",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/1",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00021",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "FALSE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/0",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00022",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "applicable": "FALSE",
+        "contributes": "TRUE",
+        "expected": [
+          [
+            "urn:example:cabinet:s0",
+            true
+          ],
+          [
+            "urn:example:cabinet:s1",
+            true
+          ],
+          [
+            "urn:example:cabinet:s2",
+            false
+          ],
+          [
+            "urn:example:cabinet:s3",
+            "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+          ]
+        ],
+        "handle": "urn:example:cabinet:u0",
+        "operation": "urn:example:cabinet:o0",
+        "reasons": []
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/0",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00023",
+      "plane": "record_translation",
+      "rule": "candidate_status",
+      "value": {
+        "applicability": "FALSE",
+        "eligible": false,
+        "goal_contribution": "TRUE"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00024",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "effects": [
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "value": true
+          }
+        ],
+        "frame": [
+          "urn:example:cabinet:s1",
+          "urn:example:cabinet:s2",
+          "urn:example:cabinet:s3"
+        ],
+        "id": "urn:example:cabinet:u0",
+        "operation": "urn:example:cabinet:o0",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/0",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00025",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s1",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/0",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00026",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/1",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00027",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s2",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/1",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00028",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "FALSE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/feedback",
+          "sha256": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+        }
+      ],
+      "id": "c00029",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "code": "NO_DIRECT_MATCH"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/status",
+          "sha256": "50228811d51e8df26459350e6127731f9cd0c6828f38266b349ea720fd79fb3a"
+        }
+      ],
+      "id": "c00030",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": "NO_DIRECT_MATCH"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/verified",
+          "sha256": "50228811d51e8df26459350e6127731f9cd0c6828f38266b349ea720fd79fb3a"
+        }
+      ],
+      "id": "c00031",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": false
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/dispatches",
+          "sha256": "50228811d51e8df26459350e6127731f9cd0c6828f38266b349ea720fd79fb3a"
+        }
+      ],
+      "id": "c00032",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": 0
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/http.json",
+          "pointer": "",
+          "sha256": "36aa1755247df04c90a191664494a862e710eaac4bf2a098e129db8c7d657bb9"
+        }
+      ],
+      "id": "c00033",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": [
+        {
+          "at": "2026-10-29T16:42:13.378885+00:00",
+          "body": null,
+          "elapsed": 0.002512227001716383,
+          "method": "GET",
+          "path": "/cabinet/status",
+          "result": {
+            "body": {
+              "audit": {
+                "generation": 0,
+                "unrelated": {
+                  "asset": "manual",
+                  "marker": {
+                    "untouched": true
+                  }
+                },
+                "writes": 0
+              },
+              "evidence": {
+                "time": "2026-10-29T16:42:13.378521+00:00"
+              },
+              "identity": "urn:example:cabinet:thing",
+              "interlocks": {
+                "door_closed": true,
+                "ready": false
+              },
+              "latch": {
+                "secured": false
+              }
+            },
+            "error": null,
+            "raw_body": null,
+            "status": 200
+          }
+        }
+      ]
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/native",
+          "sha256": "76682d7e8d2af804ab9c8e7d18ad442a3957c7154e4d43842cd9e3468b9555a0"
+        }
+      ],
+      "id": "c00034",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": {
+        "external_changes": 0,
+        "frame_preserved": true,
+        "goal_state": false,
+        "incorrect_native_transitions": 0,
+        "mutations": 0,
+        "native_success": false,
+        "requests": 0,
+        "revision_accounted": true,
+        "unauthorized_mutations": 0
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/before",
+          "sha256": "76682d7e8d2af804ab9c8e7d18ad442a3957c7154e4d43842cd9e3468b9555a0"
+        }
+      ],
+      "id": "c00035",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": {
+        "cabinet": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": false,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "room": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        }
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/after",
+          "sha256": "76682d7e8d2af804ab9c8e7d18ad442a3957c7154e4d43842cd9e3468b9555a0"
+        }
+      ],
+      "id": "c00036",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": {
+        "cabinet": {
+          "door_closed": true,
+          "generation": 0,
+          "pending_requests": 0,
+          "ready": false,
+          "requests": 0,
+          "secured": false,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "room": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "mutations": 0,
+          "pending_requests": 0,
+          "requests": 0,
+          "revision": 0,
+          "sentinels": {
+            "lamp": "off",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "temperature": 21
+        }
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/journal",
+          "sha256": "76682d7e8d2af804ab9c8e7d18ad442a3957c7154e4d43842cd9e3468b9555a0"
+        }
+      ],
+      "id": "c00037",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": []
+    }
+  ],
+  "coverage": {
+    "candidate_aggregates": {
+      "reason": null,
+      "status": "direct"
+    },
+    "frame_verification": {
+      "reason": "Runtime records aggregate expected_state, not a separate frame verdict",
+      "status": "not_applicable"
+    },
+    "freshness_clock": {
+      "reason": "Exact evaluation clock and age calculation not logged",
+      "status": "unavailable"
+    },
+    "general_causal_identification": {
+      "reason": "Only bounded model-relative comparisons and explicitly controlled fixture interventions supported",
+      "status": "unavailable"
+    },
+    "goal": {
+      "reason": null,
+      "status": "direct"
+    },
+    "guard_decision": {
+      "reason": null,
+      "status": "not_applicable"
+    },
+    "hidden_reasoner_intent": {
+      "reason": "No private reasoning trace; proposal consistency is not mental causation",
+      "status": "unavailable"
+    },
+    "http_results": {
+      "reason": null,
+      "status": "direct"
+    },
+    "native_scoring": {
+      "reason": null,
+      "status": "direct"
+    },
+    "observed_context": {
+      "reason": null,
+      "status": "direct"
+    },
+    "permit_contents": {
+      "reason": "Permit object/nonce/expiry/goal hash not serialized; authorized barrier file contains proposal only",
+      "status": "unavailable"
+    },
+    "prediction": {
+      "reason": null,
+      "status": "direct"
+    },
+    "raw_model_preconditions": {
+      "reason": "Raw predicate replay does not establish runtime freshness or procedural atom evaluation",
+      "status": "reconstructed"
+    },
+    "runtime_postconditions": {
+      "reason": null,
+      "status": "not_applicable"
+    },
+    "runtime_precondition_atoms": {
+      "reason": "Not logged; aggregate truth cannot identify which atom was evaluated FALSE/UNKNOWN",
+      "status": "unavailable"
+    },
+    "selection_or_abstention": {
+      "reason": null,
+      "status": "direct"
+    }
+  },
+  "goal": "c00001",
+  "narrative": "Turn 1: proposed discover [c00005].\nTurn 2: proposed observe [c00009].\nTurn 3: proposed stop_no_match [c00014]. Recorded goal truth=FALSE [c00013]. Recorded candidates: /cabinet/release applicability=FALSE, contribution=FALSE [c00015]; /cabinet/secure applicability=FALSE, contribution=TRUE [c00022].\nRecorded terminal status=NO_DIRECT_MATCH [c00030]; verified=False [c00031].\nSeparate native-scoring plane: {\"external_changes\":0,\"frame_preserved\":true,\"goal_state\":false,\"incorrect_native_transitions\":0,\"mutations\":0,\"native_success\":false,\"requests\":0,\"revision_accounted\":true,\"unauthorized_mutations\":0} [c00034]. This must not be treated as an agent observation.\nUnavailable: actual per-atom runtime verdicts, permit contents, evaluation clock and hidden intent. Raw predicate/frame replays are explicitly reconstructed, not general causal identification.\n",
+  "outcome": {
+    "after": null,
+    "before": null,
+    "checks": null,
+    "dispatches": "c00032",
+    "effect_comparisons": [],
+    "frame_comparisons": [],
+    "http": "c00033",
+    "native_after": "c00036",
+    "native_before": "c00035",
+    "native_journal": "c00037",
+    "native_score": "c00034",
+    "status": "c00030",
+    "verified": "c00031"
+  },
+  "provenance": {
+    "files": {
+      "evaluation.json": "76682d7e8d2af804ab9c8e7d18ad442a3957c7154e4d43842cd9e3468b9555a0",
+      "execution/worker/discovery.json": "7fd6d47a3504e826f1ace3314db365d400325a6c2d931119f839149aea33aae3",
+      "execution/worker/http.json": "36aa1755247df04c90a191664494a862e710eaac4bf2a098e129db8c7d657bb9",
+      "execution/worker/input.json": "7d711ae1430608970e40bd18e297b4d20ea73bfb04f71e2f8a556a940c5c6b47",
+      "execution/worker/result.json": "50228811d51e8df26459350e6127731f9cd0c6828f38266b349ea720fd79fb3a",
+      "execution/worker/transcript.json": "07c65181c1026c03e5831a65dc6609ea7aa20641875338bd6746eb867ddc3cba"
+    },
+    "integrity": "verified"
+  },
+  "schema_version": "calm/1",
+  "steps": [
+    {
+      "candidates": [],
+      "changed_context": null,
+      "context": null,
+      "feedback": "c00006",
+      "goal_truth": "c00004",
+      "guard": null,
+      "proposal": "c00005",
+      "turn": "c00003"
+    },
+    {
+      "candidates": [],
+      "changed_context": null,
+      "context": null,
+      "feedback": "c00010",
+      "goal_truth": "c00008",
+      "guard": null,
+      "proposal": "c00009",
+      "turn": "c00007"
+    },
+    {
+      "candidates": [
+        {
+          "description": "c00017",
+          "eligibility": "c00016",
+          "raw_preconditions": [
+            {
+              "description": "c00018",
+              "truth": "c00019"
+            },
+            {
+              "description": "c00020",
+              "truth": "c00021"
+            }
+          ],
+          "record": "c00015"
+        },
+        {
+          "description": "c00024",
+          "eligibility": "c00023",
+          "raw_preconditions": [
+            {
+              "description": "c00025",
+              "truth": "c00026"
+            },
+            {
+              "description": "c00027",
+              "truth": "c00028"
+            }
+          ],
+          "record": "c00022"
+        }
+      ],
+      "changed_context": null,
+      "context": "c00012",
+      "feedback": "c00029",
+      "goal_truth": "c00013",
+      "guard": null,
+      "proposal": "c00014",
+      "turn": "c00011"
+    }
+  ]
+}
