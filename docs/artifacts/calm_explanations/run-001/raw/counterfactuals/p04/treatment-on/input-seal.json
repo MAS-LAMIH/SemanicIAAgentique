@@ -1,0 +1,23 @@
+{
+  "artifact.ttl": "323eb81e050f323c61c81843ae3d3367a69987a2cce64fcbe13abe4599265497",
+  "control.json": "fc6d168593b9f441a6b497f3297f4c9ec0373e686b4471b5d24fee42776b2c6c",
+  "evaluation.json": "459cffe8292d9af27bf10ae44e858015387ea05d4f69cc867451c1cad018f765",
+  "execution/approvals.json": "d052154f268e380c03715319f22ea9e1ac57321d4d0f4761d199f7c2c1384558",
+  "execution/process-summary.json": "fc69abde0d8a36790e4cce81a83b3b68bf308f2580d64ca02408cdceb7675add",
+  "execution/subject.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/subject.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/supervision.json": "22cbcddf5f6e8702cda2b28ea21ff349e2b819c21231668c3bf0a1c1d26a5081",
+  "execution/worker/authorized-5.json": "40b2e3c2e3e2813a94e93657f86bdd7d2c0b468b810a3958b47020af7eaa6e4d",
+  "execution/worker/discovery.json": "d17975dc6f3521705da4fa14a12a44dc2ca949e6ee998a56723b65a4999f307c",
+  "execution/worker/http.json": "1a69ce07e10e757646959e48d014a303479202f0fe791372e66d2ef27cb668c6",
+  "execution/worker/input.json": "285f939f6edf536a77888df0dbef34cf8ea9a5bb771f2d2a62e8fef64c3e5b7d",
+  "execution/worker/intent-3.json": "9be55193cae5d9fa7c3eeb17aaf550dad6c4014027bc191ec88e3a8e29b474f0",
+  "execution/worker/intent-5.json": "40b2e3c2e3e2813a94e93657f86bdd7d2c0b468b810a3958b47020af7eaa6e4d",
+  "execution/worker/modules.json": "6c642a81ebf647c3de7767e52df0b2f554e081329d7d37ab00030697819958f5",
+  "execution/worker/observations.json": "8fe64f66fc4d42ff30ceeb8c1eb7f81be67a57dd58d15765dab14c9331518a3b",
+  "execution/worker/release-authorized-5": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/release-intent-3": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/release-intent-5": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/result.json": "71fc232e6e7d95080679b6759024df4d47f448a743491ff7363f075f35dc7e69",
+  "execution/worker/transcript.json": "2b31cebe474042a586fa9ad21b2df0ed79265018c41d3ffa2b1746a5a2b7784d"
+}

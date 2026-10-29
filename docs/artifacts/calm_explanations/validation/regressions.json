@@ -1,0 +1,66 @@
+[
+  {
+    "suite": "semantic_action",
+    "command": ".venv/bin/python -m unittest discover -s tests/semantic_action -v",
+    "PYTHONPATH": "src",
+    "focused_output": null,
+    "exit_code": 0,
+    "wall_seconds": 201.53433901199605
+  },
+  {
+    "suite": "v4",
+    "command": ".venv/bin/python -m unittest discover -s tests/v4 -v",
+    "PYTHONPATH": "src",
+    "focused_output": null,
+    "exit_code": 0,
+    "wall_seconds": 29.0961420990061
+  },
+  {
+    "suite": "v4_pilot",
+    "command": ".venv/bin/python -m unittest discover -s tests/v4_pilot -v",
+    "PYTHONPATH": "src",
+    "focused_output": "/workspace/calm-v4-regression-001",
+    "exit_code": 0,
+    "wall_seconds": 16.34266518500226
+  },
+  {
+    "suite": "v4_experiment",
+    "command": ".venv/bin/python -m unittest discover -s tests/v4_experiment -v",
+    "PYTHONPATH": "src",
+    "focused_output": null,
+    "exit_code": 0,
+    "wall_seconds": 12.317084587994032
+  },
+  {
+    "suite": "goal_choice",
+    "command": ".venv/bin/python -m unittest discover -s tests/goal_choice -v",
+    "PYTHONPATH": "src",
+    "focused_output": null,
+    "exit_code": 0,
+    "wall_seconds": 7.690879928995855
+  },
+  {
+    "suite": "aat",
+    "command": ".venv/bin/python -m unittest discover -s tests/aat -v",
+    "PYTHONPATH": "src",
+    "focused_output": null,
+    "exit_code": 0,
+    "wall_seconds": 9.898755807007547
+  },
+  {
+    "suite": "aat_reusable",
+    "command": ".venv/bin/python -m unittest discover -s tests/aat_reusable -v",
+    "PYTHONPATH": "src",
+    "focused_output": null,
+    "exit_code": 0,
+    "wall_seconds": 7.465815974006546
+  },
+  {
+    "suite": "calm",
+    "command": ".venv/bin/python -m unittest discover -s tests/calm -v",
+    "PYTHONPATH": "src",
+    "focused_output": null,
+    "exit_code": 0,
+    "wall_seconds": 3.073588359999121
+  }
+]

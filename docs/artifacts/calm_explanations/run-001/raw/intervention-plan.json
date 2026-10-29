@@ -1,0 +1,362 @@
+[
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "readiness",
+    "domain": "room",
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "NO_DIRECT_MATCH"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": false,
+      "revision_delta": 0
+    },
+    "variable": "readiness"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "goal_value",
+    "domain": "room",
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/cool",
+      "treatment_first_guard": "AUTHORIZED",
+      "treatment_status": "SUCCESS"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 20,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "goal_polarity"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "observation",
+    "domain": "room",
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "UNKNOWN_CONTEXT"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "missing",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "missing_observation"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "revision_delta",
+    "domain": "room",
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/heat",
+      "treatment_first_guard": "STALE_PROPOSAL",
+      "treatment_status": "SUCCESS"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 1
+    },
+    "variable": "revision_freshness"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "effect_mode",
+    "domain": "room",
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/heat",
+      "treatment_first_guard": "AUTHORIZED",
+      "treatment_status": "POSTCONDITION_FAILED"
+    },
+    "treatment": {
+      "effect_mode": "wrong",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "wrong_effect"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "extra_candidate",
+    "domain": "room",
+    "prediction": {
+      "baseline_call": "/heat",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": "AMBIGUOUS",
+      "treatment_status": "AMBIGUOUS"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": true,
+      "goal_value": 22,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "ambiguous_alternative"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "readiness",
+    "domain": "cabinet",
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "NO_DIRECT_MATCH"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": false,
+      "revision_delta": 0
+    },
+    "variable": "readiness"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "goal_value",
+    "domain": "cabinet",
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "SUCCESS"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": false,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "goal_polarity"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "observation",
+    "domain": "cabinet",
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": null,
+      "treatment_status": "UNKNOWN_CONTEXT"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "missing",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "missing_observation"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "revision_delta",
+    "domain": "cabinet",
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/cabinet/secure",
+      "treatment_first_guard": "STALE_PROPOSAL",
+      "treatment_status": "SUCCESS"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 1
+    },
+    "variable": "revision_freshness"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "effect_mode",
+    "domain": "cabinet",
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": "/cabinet/secure",
+      "treatment_first_guard": "AUTHORIZED",
+      "treatment_status": "POSTCONDITION_FAILED"
+    },
+    "treatment": {
+      "effect_mode": "wrong",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "wrong_effect"
+  },
+  {
+    "baseline": {
+      "effect_mode": "normal",
+      "extra_candidate": false,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "changed_input": "extra_candidate",
+    "domain": "cabinet",
+    "prediction": {
+      "baseline_call": "/cabinet/secure",
+      "baseline_first_guard": "AUTHORIZED",
+      "baseline_status": "SUCCESS",
+      "interpretation": "Prospective model-relative prediction; same action but changed verification for wrong_effect; no external causal identification",
+      "treatment_call": null,
+      "treatment_first_guard": "AMBIGUOUS",
+      "treatment_status": "AMBIGUOUS"
+    },
+    "treatment": {
+      "effect_mode": "normal",
+      "extra_candidate": true,
+      "goal_value": true,
+      "observation": "present",
+      "readiness": true,
+      "revision_delta": 0
+    },
+    "variable": "ambiguous_alternative"
+  }
+]

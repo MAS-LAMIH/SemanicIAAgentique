@@ -1,0 +1,34 @@
+{
+  "goal": {
+    "clauses": [
+      {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s0",
+        "unit": null,
+        "upper": null,
+        "value": true
+      },
+      {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s1",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    ],
+    "max_age": 10.0,
+    "thing": "urn:example:cabinet:thing"
+  },
+  "graphs": [
+    {
+      "approved_hash": "ee603a2b5f048782fced5ac4a108ece216dde3eded60fd81a1de68cb3c84caf4",
+      "path": "/workspace/calm-run-001/raw/counterfactuals/p12/treatment-on/artifact.ttl"
+    }
+  ],
+  "irrelevant_first": false,
+  "knowledge": null,
+  "origins": {
+    "urn:example:cabinet:artifact": "http://127.0.0.1:40341"
+  },
+  "reverse_registration": false
+}

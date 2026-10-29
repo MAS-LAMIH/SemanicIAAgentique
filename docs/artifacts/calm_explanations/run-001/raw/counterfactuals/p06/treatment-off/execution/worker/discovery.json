@@ -1,0 +1,188 @@
+[
+  {
+    "artifact": "urn:example:room:artifact",
+    "graph_hash": "b9653ad5624bdf75812fd168e89cd26605d1af3daf064b770acbe7db3d89bcd9",
+    "identity": "/thing",
+    "mutations": "/mutations",
+    "observation": "/state",
+    "operations": [
+      {
+        "body": "{\"expected_revision\":null}",
+        "echoes": [
+          [
+            "/temperature",
+            "urn:example:room:s0"
+          ]
+        ],
+        "id": "urn:example:room:o0",
+        "method": "POST",
+        "path": "/heat",
+        "request_revision": "/expected_revision",
+        "response_revision": "/revision",
+        "status": 201
+      },
+      {
+        "body": "{\"expected_revision\":null}",
+        "echoes": [
+          [
+            "/temperature",
+            "urn:example:room:s0"
+          ]
+        ],
+        "id": "urn:example:room:o1",
+        "method": "POST",
+        "path": "/cool",
+        "request_revision": "/expected_revision",
+        "response_revision": "/revision",
+        "status": 201
+      }
+    ],
+    "revision": "/revision",
+    "slots": [
+      {
+        "id": "urn:example:room:s0",
+        "kind": "Int",
+        "maximum": 26,
+        "minimum": 18,
+        "pointer": "/temperature",
+        "property": "urn:example:room:temperature",
+        "unit": "urn:example:room:Celsius"
+      },
+      {
+        "id": "urn:example:room:s1",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/heater_ready",
+        "property": "urn:example:room:heater",
+        "unit": null
+      },
+      {
+        "id": "urn:example:room:s2",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/cooler_ready",
+        "property": "urn:example:room:cooler",
+        "unit": null
+      },
+      {
+        "id": "urn:example:room:s3",
+        "kind": "JSON",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/sentinels",
+        "property": "urn:example:room:unrelated",
+        "unit": null
+      }
+    ],
+    "thing": "urn:example:room:thing",
+    "timestamp": "/observed_at",
+    "usages": [
+      {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": 1
+          },
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:room:s1",
+            "unit": null,
+            "value": false
+          }
+        ],
+        "frame": [
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:calm:extra-alternative",
+        "operation": "urn:example:room:o1",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 26,
+            "value": 19
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": 1
+          }
+        ],
+        "frame": [
+          "urn:example:room:s1",
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:example:room:u0",
+        "operation": "urn:example:room:o0",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 25,
+            "value": 18
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": -1
+          }
+        ],
+        "frame": [
+          "urn:example:room:s1",
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:example:room:u1",
+        "operation": "urn:example:room:o1",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 26,
+            "value": 19
+          }
+        ]
+      }
+    ]
+  }
+]

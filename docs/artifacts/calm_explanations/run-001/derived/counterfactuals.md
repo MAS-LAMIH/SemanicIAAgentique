@@ -1,0 +1,14 @@
+| domain | intervention | baseline | treatment | prediction_matched | noninterference |
+| --- | --- | --- | --- | --- | --- |
+| room | readiness | SUCCESS | NO_DIRECT_MATCH | True | True |
+| room | goal_polarity | SUCCESS | SUCCESS | True | True |
+| room | missing_observation | SUCCESS | UNKNOWN_CONTEXT | True | True |
+| room | revision_freshness | SUCCESS | SUCCESS | True | True |
+| room | wrong_effect | SUCCESS | POSTCONDITION_FAILED | True | True |
+| room | ambiguous_alternative | SUCCESS | AMBIGUOUS | True | True |
+| cabinet | readiness | SUCCESS | NO_DIRECT_MATCH | True | True |
+| cabinet | goal_polarity | SUCCESS | SUCCESS | True | True |
+| cabinet | missing_observation | SUCCESS | UNKNOWN_CONTEXT | True | True |
+| cabinet | revision_freshness | SUCCESS | SUCCESS | True | True |
+| cabinet | wrong_effect | SUCCESS | POSTCONDITION_FAILED | True | True |
+| cabinet | ambiguous_alternative | SUCCESS | AMBIGUOUS | True | True |

@@ -1,0 +1,188 @@
+[
+  {
+    "artifact": "urn:example:cabinet:artifact",
+    "graph_hash": "ee603a2b5f048782fced5ac4a108ece216dde3eded60fd81a1de68cb3c84caf4",
+    "identity": "/identity",
+    "mutations": "/audit/writes",
+    "observation": "/cabinet/status",
+    "operations": [
+      {
+        "body": "{\"guard\":{\"generation\":null}}",
+        "echoes": [
+          [
+            "/latch/secured",
+            "urn:example:cabinet:s0"
+          ]
+        ],
+        "id": "urn:example:cabinet:o0",
+        "method": "PUT",
+        "path": "/cabinet/secure",
+        "request_revision": "/guard/generation",
+        "response_revision": "/receipt/generation",
+        "status": 200
+      },
+      {
+        "body": "{\"guard\":{\"generation\":null}}",
+        "echoes": [
+          [
+            "/latch/secured",
+            "urn:example:cabinet:s0"
+          ]
+        ],
+        "id": "urn:example:cabinet:o1",
+        "method": "PUT",
+        "path": "/cabinet/release",
+        "request_revision": "/guard/generation",
+        "response_revision": "/receipt/generation",
+        "status": 200
+      }
+    ],
+    "revision": "/audit/generation",
+    "slots": [
+      {
+        "id": "urn:example:cabinet:s0",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/latch/secured",
+        "property": "urn:example:cabinet:secured",
+        "unit": null
+      },
+      {
+        "id": "urn:example:cabinet:s1",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/interlocks/door_closed",
+        "property": "urn:example:cabinet:doorClosed",
+        "unit": null
+      },
+      {
+        "id": "urn:example:cabinet:s2",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/interlocks/ready",
+        "property": "urn:example:cabinet:ready",
+        "unit": null
+      },
+      {
+        "id": "urn:example:cabinet:s3",
+        "kind": "JSON",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/audit/unrelated",
+        "property": "urn:example:cabinet:unrelated",
+        "unit": null
+      }
+    ],
+    "thing": "urn:example:cabinet:thing",
+    "timestamp": "/evidence/time",
+    "usages": [
+      {
+        "effects": [
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "value": true
+          },
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "value": false
+          }
+        ],
+        "frame": [
+          "urn:example:cabinet:s1",
+          "urn:example:cabinet:s3"
+        ],
+        "id": "urn:calm:extra-alternative",
+        "operation": "urn:example:cabinet:o1",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "value": true
+          }
+        ],
+        "frame": [
+          "urn:example:cabinet:s1",
+          "urn:example:cabinet:s2",
+          "urn:example:cabinet:s3"
+        ],
+        "id": "urn:example:cabinet:u0",
+        "operation": "urn:example:cabinet:o0",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "value": false
+          }
+        ],
+        "frame": [
+          "urn:example:cabinet:s1",
+          "urn:example:cabinet:s2",
+          "urn:example:cabinet:s3"
+        ],
+        "id": "urn:example:cabinet:u1",
+        "operation": "urn:example:cabinet:o1",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ]
+      }
+    ]
+  }
+]

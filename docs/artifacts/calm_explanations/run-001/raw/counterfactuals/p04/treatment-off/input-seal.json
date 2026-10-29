@@ -1,0 +1,23 @@
+{
+  "artifact.ttl": "323eb81e050f323c61c81843ae3d3367a69987a2cce64fcbe13abe4599265497",
+  "control.json": "73588249125cd011356d3d8e3971ac8c6dc4674078eeb0dafe4253bc5bb10f82",
+  "evaluation.json": "0e3f707094354b59b2a641f0ced70fe0a10e556f9d6517bb28f8529241bda9b0",
+  "execution/approvals.json": "4a344f1d93ed5beab275353eedda324934af2fe3f72a0a892d8b2d0715cb1d21",
+  "execution/process-summary.json": "47acc4227b2c46ffdcaee339b327440ba2241d868d441cf696d0084257f7552a",
+  "execution/subject.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/subject.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/supervision.json": "edb1345d8e959c6dcf7ebb162b0d18d3232285b4b367e0ee1480fd21751a00b0",
+  "execution/worker/authorized-5.json": "3c05b9acfcff428e4a96eb75920e6e7ff513493542fb89ea11f8870d9be5e06d",
+  "execution/worker/discovery.json": "d17975dc6f3521705da4fa14a12a44dc2ca949e6ee998a56723b65a4999f307c",
+  "execution/worker/http.json": "5b253186af286a831b3899949bc4ae9db0eefa6d37543e690286223eb4cc9ab1",
+  "execution/worker/input.json": "704b716c9a5c76060f1290c88d4e88a71116caa3482947e14992b755b5d8ebfe",
+  "execution/worker/intent-3.json": "8e992e3f49988d86454284b304940e93c89954041469292b9f2055cfc6909a83",
+  "execution/worker/intent-5.json": "3c05b9acfcff428e4a96eb75920e6e7ff513493542fb89ea11f8870d9be5e06d",
+  "execution/worker/modules.json": "6c642a81ebf647c3de7767e52df0b2f554e081329d7d37ab00030697819958f5",
+  "execution/worker/observations.json": "879f7d8384059e29b7b318bf06a9bda32fa4b6c975f69bfd5139b07bfce25a0b",
+  "execution/worker/release-authorized-5": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/release-intent-3": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/release-intent-5": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/result.json": "0989649f67c413b820ead4db9feb9309abe3bd3e973c885eac431835d1513f66",
+  "execution/worker/transcript.json": "0188e6c72bbc4ed74c2d3be0b42b28fcf793d4a0a9efe5e424987bcaf0ab18b0"
+}

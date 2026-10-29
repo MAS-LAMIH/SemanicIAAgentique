@@ -1,0 +1,14 @@
+test_existing_goal_stops_before_invocation (test_goal_choice.GoalChoiceTests.test_existing_goal_stops_before_invocation) ... ok
+test_global_post_observation_required_before_success (test_goal_choice.GoalChoiceTests.test_global_post_observation_required_before_success) ... ok
+test_goal_contains_no_selected_operation (test_goal_choice.GoalChoiceTests.test_goal_contains_no_selected_operation) ... ok
+test_missing_effect_is_not_a_goal_contributing_candidate (test_goal_choice.GoalChoiceTests.test_missing_effect_is_not_a_goal_contributing_candidate) ... ok
+test_native_extra_mutation_is_not_hidden_by_returned_id (test_goal_choice.GoalChoiceTests.test_native_extra_mutation_is_not_hidden_by_returned_id) ... ok
+test_permission_flip_reconsiders_without_first_mutation (test_goal_choice.GoalChoiceTests.test_permission_flip_reconsiders_without_first_mutation) ... ok
+test_summary_rejects_tampered_raw_evidence (test_goal_choice.GoalChoiceTests.test_summary_rejects_tampered_raw_evidence) ... ok
+test_tie_break_is_independent_of_candidate_order (test_goal_choice.GoalChoiceTests.test_tie_break_is_independent_of_candidate_order) ... ok
+test_uncertain_or_failed_dispatch_never_selects_alternate (test_goal_choice.GoalChoiceTests.test_uncertain_or_failed_dispatch_never_selects_alternate) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.583s
+
+OK

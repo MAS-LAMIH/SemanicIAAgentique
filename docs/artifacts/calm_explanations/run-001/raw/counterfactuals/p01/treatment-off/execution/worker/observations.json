@@ -1,0 +1,28 @@
+[
+  {
+    "id": "urn:context:9a95b554-f3a7-47dc-9420-7453845385b2",
+    "mutations": 0,
+    "observed_at": "2026-10-29T18:15:24.567036+00:00",
+    "raw": "{\"cooler_ready\":true,\"heater_ready\":false,\"mutations\":0,\"observed_at\":\"2026-10-29T18:15:24.567036+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+    "revision": 0,
+    "thing": "urn:example:room:thing",
+    "values": [
+      [
+        "urn:example:room:s0",
+        21
+      ],
+      [
+        "urn:example:room:s1",
+        false
+      ],
+      [
+        "urn:example:room:s2",
+        true
+      ],
+      [
+        "urn:example:room:s3",
+        "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  }
+]

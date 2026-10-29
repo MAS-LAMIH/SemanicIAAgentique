@@ -1,0 +1,29 @@
+{
+  "ai_supervision_minutes": null,
+  "dependencies": {
+    "jsonschema": "4.26.0",
+    "rdflib": "7.6.0"
+  },
+  "frozen": {
+    "installed_paths": 195,
+    "repository_paths": 9,
+    "shared_unchanged": true
+  },
+  "historical_seal_entries": {
+    "docs/artifacts/eswc_aat/run-001/raw/sha256.json": 336,
+    "docs/artifacts/eswc_aat_acquisition/retained-evidence-sha256.json": 96,
+    "docs/artifacts/eswc_aat_acquisition_execution/retained-evidence-sha256.json": 279,
+    "docs/artifacts/eswc_aat_cross_domain/retained-evidence-sha256.json": 2568,
+    "docs/artifacts/eswc_aat_validity/sha256.json": 2
+  },
+  "historical_total": 3281,
+  "human_active_minutes": null,
+  "new_claims_verified": 1411,
+  "new_explanations_verified": 24,
+  "original_copy_and_regenerated_summaries_identical": true,
+  "passed": true,
+  "python": "3.12.14",
+  "raw_seal_entries": 1264,
+  "source_hashes_verified": 16189,
+  "strict_noninterference_comparisons": 24
+}

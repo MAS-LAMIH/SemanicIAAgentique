@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "historical_explanations": 88,
+  "historical_claims_verified": 5200,
+  "historical_coverage": {
+    "direct": 748,
+    "not_applicable": 72,
+    "reconstructed": 148,
+    "unavailable": 440
+  },
+  "claim_planes": {
+    "agent_record": 1760,
+    "model_replay": 608,
+    "native_evaluation": 352,
+    "record_comparison": 324,
+    "record_translation": 304,
+    "reviewed_model": 972,
+    "runtime_observation": 880
+  },
+  "intervention_pairs": 12,
+  "counterfactual_executions": 48,
+  "enabled_explanations": 24,
+  "predictions_matched": 12,
+  "noninterference_pairs": 12,
+  "semantic_invariance_differences": [],
+  "source_stable": true,
+  "external_causal_identification": false
+}

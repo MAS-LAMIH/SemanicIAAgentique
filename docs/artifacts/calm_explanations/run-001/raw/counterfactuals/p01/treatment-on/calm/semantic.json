@@ -1,0 +1,250 @@
+{
+  "calls": [],
+  "checks": null,
+  "coverage": {
+    "candidate_aggregates": {
+      "reason": null,
+      "status": "direct"
+    },
+    "frame_verification": {
+      "reason": "Runtime records aggregate expected_state, not a separate frame verdict",
+      "status": "not_applicable"
+    },
+    "freshness_clock": {
+      "reason": "Exact evaluation clock and age calculation not logged",
+      "status": "unavailable"
+    },
+    "general_causal_identification": {
+      "reason": "Only bounded model-relative comparisons and explicitly controlled fixture interventions supported",
+      "status": "unavailable"
+    },
+    "goal": {
+      "reason": null,
+      "status": "direct"
+    },
+    "guard_decision": {
+      "reason": null,
+      "status": "not_applicable"
+    },
+    "hidden_reasoner_intent": {
+      "reason": "No private reasoning trace; proposal consistency is not mental causation",
+      "status": "unavailable"
+    },
+    "http_results": {
+      "reason": null,
+      "status": "direct"
+    },
+    "native_scoring": {
+      "reason": null,
+      "status": "direct"
+    },
+    "observed_context": {
+      "reason": null,
+      "status": "direct"
+    },
+    "permit_contents": {
+      "reason": "Permit object/nonce/expiry/goal hash not serialized; authorized barrier file contains proposal only",
+      "status": "unavailable"
+    },
+    "prediction": {
+      "reason": null,
+      "status": "direct"
+    },
+    "raw_model_preconditions": {
+      "reason": "Raw predicate replay does not establish runtime freshness or procedural atom evaluation",
+      "status": "reconstructed"
+    },
+    "runtime_postconditions": {
+      "reason": null,
+      "status": "not_applicable"
+    },
+    "runtime_precondition_atoms": {
+      "reason": "Not logged; aggregate truth cannot identify which atom was evaluated FALSE/UNKNOWN",
+      "status": "unavailable"
+    },
+    "selection_or_abstention": {
+      "reason": null,
+      "status": "direct"
+    }
+  },
+  "effect_comparisons": [],
+  "frame_comparisons": [],
+  "goal": {
+    "clauses": [
+      {
+        "kind": "Equal",
+        "slot": "urn:example:room:temperature",
+        "unit": "urn:example:room:Celsius",
+        "upper": null,
+        "value": 22
+      }
+    ],
+    "max_age": 10.0,
+    "thing": "urn:example:room:thing"
+  },
+  "native": {
+    "external_changes": 0,
+    "frame_preserved": true,
+    "goal_state": false,
+    "incorrect_native_transitions": 0,
+    "mutations": 0,
+    "native_success": false,
+    "requests": 0,
+    "revision_accounted": true,
+    "unauthorized_mutations": 0
+  },
+  "status": "NO_DIRECT_MATCH",
+  "steps": [
+    {
+      "candidates": [],
+      "changed": null,
+      "context": null,
+      "goal_truth": "UNKNOWN",
+      "guard": null,
+      "selected": null,
+      "tool": "discover"
+    },
+    {
+      "candidates": [],
+      "changed": null,
+      "context": null,
+      "goal_truth": "UNKNOWN",
+      "guard": null,
+      "selected": null,
+      "tool": "observe"
+    },
+    {
+      "candidates": [
+        {
+          "applicable": "FALSE",
+          "binding": {
+            "body": "{\"expected_revision\":null}",
+            "method": "POST",
+            "path": "/heat",
+            "request_revision": "/expected_revision"
+          },
+          "contributes": "TRUE",
+          "expected": [
+            [
+              "urn:example:room:cooler",
+              true
+            ],
+            [
+              "urn:example:room:heater",
+              false
+            ],
+            [
+              "urn:example:room:temperature",
+              22
+            ],
+            [
+              "urn:example:room:unrelated",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "raw_model": [
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:room:heater",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "FALSE"
+            },
+            {
+              "condition": {
+                "kind": "IntRange",
+                "slot": "urn:example:room:temperature",
+                "unit": "urn:example:room:Celsius",
+                "upper": 25,
+                "value": 18
+              },
+              "raw_truth": "TRUE"
+            }
+          ]
+        },
+        {
+          "applicable": "TRUE",
+          "binding": {
+            "body": "{\"expected_revision\":null}",
+            "method": "POST",
+            "path": "/cool",
+            "request_revision": "/expected_revision"
+          },
+          "contributes": "FALSE",
+          "expected": [
+            [
+              "urn:example:room:cooler",
+              true
+            ],
+            [
+              "urn:example:room:heater",
+              false
+            ],
+            [
+              "urn:example:room:temperature",
+              20
+            ],
+            [
+              "urn:example:room:unrelated",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "raw_model": [
+            {
+              "condition": {
+                "kind": "Equal",
+                "slot": "urn:example:room:cooler",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              "raw_truth": "TRUE"
+            },
+            {
+              "condition": {
+                "kind": "IntRange",
+                "slot": "urn:example:room:temperature",
+                "unit": "urn:example:room:Celsius",
+                "upper": 26,
+                "value": 19
+              },
+              "raw_truth": "TRUE"
+            }
+          ]
+        }
+      ],
+      "changed": null,
+      "context": {
+        "mutations": 0,
+        "revision": 0,
+        "thing": "urn:example:room:thing",
+        "values": [
+          [
+            "urn:example:room:cooler",
+            true
+          ],
+          [
+            "urn:example:room:heater",
+            false
+          ],
+          [
+            "urn:example:room:temperature",
+            21
+          ],
+          [
+            "urn:example:room:unrelated",
+            "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+          ]
+        ]
+      },
+      "goal_truth": "FALSE",
+      "guard": null,
+      "selected": null,
+      "tool": "stop_no_match"
+    }
+  ],
+  "verified": false
+}

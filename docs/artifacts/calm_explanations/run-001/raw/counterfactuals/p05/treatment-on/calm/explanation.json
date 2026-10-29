@@ -1,0 +1,1631 @@
+{
+  "catalog": "c00002",
+  "claims": [
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/input.json",
+          "pointer": "/goal",
+          "sha256": "f3b3056ebd8497b04b9c773c16e259d11dfaa973284a014dab794bf7f254d055"
+        }
+      ],
+      "id": "c00001",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "clauses": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": null,
+            "value": 22
+          }
+        ],
+        "max_age": 10.0,
+        "thing": "urn:example:room:thing"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/discovery.json",
+          "pointer": "/0",
+          "sha256": "d17975dc6f3521705da4fa14a12a44dc2ca949e6ee998a56723b65a4999f307c"
+        }
+      ],
+      "id": "c00002",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "artifact": "urn:example:room:artifact",
+        "graph_hash": "323eb81e050f323c61c81843ae3d3367a69987a2cce64fcbe13abe4599265497",
+        "identity": "/thing",
+        "mutations": "/mutations",
+        "observation": "/state",
+        "operations": [
+          {
+            "body": "{\"expected_revision\":null}",
+            "echoes": [
+              [
+                "/temperature",
+                "urn:example:room:s0"
+              ]
+            ],
+            "id": "urn:example:room:o0",
+            "method": "POST",
+            "path": "/heat",
+            "request_revision": "/expected_revision",
+            "response_revision": "/revision",
+            "status": 201
+          },
+          {
+            "body": "{\"expected_revision\":null}",
+            "echoes": [
+              [
+                "/temperature",
+                "urn:example:room:s0"
+              ]
+            ],
+            "id": "urn:example:room:o1",
+            "method": "POST",
+            "path": "/cool",
+            "request_revision": "/expected_revision",
+            "response_revision": "/revision",
+            "status": 201
+          }
+        ],
+        "revision": "/revision",
+        "slots": [
+          {
+            "id": "urn:example:room:s0",
+            "kind": "Int",
+            "maximum": 26,
+            "minimum": 18,
+            "pointer": "/temperature",
+            "property": "urn:example:room:temperature",
+            "unit": "urn:example:room:Celsius"
+          },
+          {
+            "id": "urn:example:room:s1",
+            "kind": "Bool",
+            "maximum": null,
+            "minimum": null,
+            "pointer": "/heater_ready",
+            "property": "urn:example:room:heater",
+            "unit": null
+          },
+          {
+            "id": "urn:example:room:s2",
+            "kind": "Bool",
+            "maximum": null,
+            "minimum": null,
+            "pointer": "/cooler_ready",
+            "property": "urn:example:room:cooler",
+            "unit": null
+          },
+          {
+            "id": "urn:example:room:s3",
+            "kind": "JSON",
+            "maximum": null,
+            "minimum": null,
+            "pointer": "/sentinels",
+            "property": "urn:example:room:unrelated",
+            "unit": null
+          }
+        ],
+        "thing": "urn:example:room:thing",
+        "timestamp": "/observed_at",
+        "usages": [
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": 1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 25,
+                "value": 18
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": -1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 26,
+                "value": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/turn",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00003",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": 1
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/view/goal_truth",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00004",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": "UNKNOWN"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/proposal",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00005",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "discover"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/0/feedback",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00006",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "code": "DISCOVERED"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/turn",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00007",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": 2
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/view/goal_truth",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00008",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": "UNKNOWN"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/proposal",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00009",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/1/feedback",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00010",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "code": "OBSERVED",
+        "context": {
+          "id": "urn:context:7621c67b-8846-481e-8aad-4283ffaaa0e4",
+          "mutations": 0,
+          "observed_at": "2026-10-29T18:15:35.433260+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T18:15:35.433260+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 0,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              21
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/turn",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00011",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": 3
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00012",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "id": "urn:context:7621c67b-8846-481e-8aad-4283ffaaa0e4",
+        "mutations": 0,
+        "observed_at": "2026-10-29T18:15:35.433260+00:00",
+        "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T18:15:35.433260+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+        "revision": 0,
+        "thing": "urn:example:room:thing",
+        "values": [
+          [
+            "urn:example:room:s0",
+            21
+          ],
+          [
+            "urn:example:room:s1",
+            true
+          ],
+          [
+            "urn:example:room:s2",
+            true
+          ],
+          [
+            "urn:example:room:s3",
+            "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+          ]
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/goal_truth",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00013",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": "FALSE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/proposal",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00014",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "handle": "urn:example:room:u0",
+        "snapshot_ref": "urn:context:7621c67b-8846-481e-8aad-4283ffaaa0e4",
+        "tool": "use"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00015",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "applicable": "TRUE",
+        "contributes": "FALSE",
+        "expected": [
+          [
+            "urn:example:room:s0",
+            20
+          ],
+          [
+            "urn:example:room:s1",
+            true
+          ],
+          [
+            "urn:example:room:s2",
+            true
+          ],
+          [
+            "urn:example:room:s3",
+            "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+          ]
+        ],
+        "handle": "urn:example:room:u1",
+        "operation": "urn:example:room:o1",
+        "reasons": []
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00016",
+      "plane": "record_translation",
+      "rule": "candidate_status",
+      "value": {
+        "applicability": "TRUE",
+        "eligible": false,
+        "goal_contribution": "FALSE"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00017",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": -1
+          }
+        ],
+        "frame": [
+          "urn:example:room:s1",
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:example:room:u1",
+        "operation": "urn:example:room:o1",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 26,
+            "value": 19
+          }
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00018",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "Equal",
+        "slot": "urn:example:room:s2",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00019",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00020",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "IntRange",
+        "slot": "urn:example:room:s0",
+        "unit": "urn:example:room:Celsius",
+        "upper": 26,
+        "value": 19
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/1/pre/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00021",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00022",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "applicable": "TRUE",
+        "contributes": "TRUE",
+        "expected": [
+          [
+            "urn:example:room:s0",
+            22
+          ],
+          [
+            "urn:example:room:s1",
+            true
+          ],
+          [
+            "urn:example:room:s2",
+            true
+          ],
+          [
+            "urn:example:room:s3",
+            "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+          ]
+        ],
+        "handle": "urn:example:room:u0",
+        "operation": "urn:example:room:o0",
+        "reasons": []
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/candidates/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00023",
+      "plane": "record_translation",
+      "rule": "candidate_status",
+      "value": {
+        "applicability": "TRUE",
+        "eligible": true,
+        "goal_contribution": "TRUE"
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00024",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": 1
+          }
+        ],
+        "frame": [
+          "urn:example:room:s1",
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:example:room:u0",
+        "operation": "urn:example:room:o0",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 25,
+            "value": 18
+          }
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00025",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "Equal",
+        "slot": "urn:example:room:s1",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00026",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00027",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "kind": "IntRange",
+        "slot": "urn:example:room:s0",
+        "unit": "urn:example:room:Celsius",
+        "upper": 25,
+        "value": 18
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0/pre/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context/values",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00028",
+      "plane": "model_replay",
+      "rule": "raw_atom",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/guard",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00029",
+      "plane": "agent_record",
+      "rule": "copy",
+      "value": {
+        "assessment": {
+          "applicable": "TRUE",
+          "contributes": "TRUE",
+          "expected": [
+            [
+              "urn:example:room:s0",
+              22
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "handle": "urn:example:room:u0",
+          "operation": "urn:example:room:o0",
+          "reasons": []
+        },
+        "code": "AUTHORIZED",
+        "context": {
+          "id": "urn:context:be836511-2aa6-4c06-896b-cb895766f0d1",
+          "mutations": 0,
+          "observed_at": "2026-10-29T18:15:35.438201+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T18:15:35.438201+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 0,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              21
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/context",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        },
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/guard/context",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00030",
+      "plane": "record_comparison",
+      "rule": "context_changes",
+      "value": []
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/feedback",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00031",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "after": {
+          "id": "urn:context:147fd4bd-32fb-4065-a49a-be39d07e1e92",
+          "mutations": 1,
+          "observed_at": "2026-10-29T18:15:35.443354+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":1,\"observed_at\":\"2026-10-29T18:15:35.443354+00:00\",\"pending_requests\":0,\"requests\":1,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 1,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              23
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "before": {
+          "id": "urn:context:be836511-2aa6-4c06-896b-cb895766f0d1",
+          "mutations": 0,
+          "observed_at": "2026-10-29T18:15:35.438201+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T18:15:35.438201+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 0,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              21
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "checks": {
+          "echoes": true,
+          "evidence": true,
+          "expected_state": false,
+          "goal": false,
+          "mutations": true,
+          "response_revision": true,
+          "revision": true
+        },
+        "invocation": {
+          "body": {
+            "revision": 1,
+            "temperature": 23
+          },
+          "error": null,
+          "raw_body": null,
+          "status": 201
+        },
+        "status": "POSTCONDITION_FAILED",
+        "verified": false
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/status",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00032",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": "POSTCONDITION_FAILED"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/verified",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00033",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": false
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/dispatches",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00034",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": 1
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/checks",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00035",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "echoes": true,
+        "evidence": true,
+        "expected_state": false,
+        "goal": false,
+        "mutations": true,
+        "response_revision": true,
+        "revision": true
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/before",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00036",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "id": "urn:context:be836511-2aa6-4c06-896b-cb895766f0d1",
+        "mutations": 0,
+        "observed_at": "2026-10-29T18:15:35.438201+00:00",
+        "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T18:15:35.438201+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+        "revision": 0,
+        "thing": "urn:example:room:thing",
+        "values": [
+          [
+            "urn:example:room:s0",
+            21
+          ],
+          [
+            "urn:example:room:s1",
+            true
+          ],
+          [
+            "urn:example:room:s2",
+            true
+          ],
+          [
+            "urn:example:room:s3",
+            "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+          ]
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/after",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00037",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": {
+        "id": "urn:context:147fd4bd-32fb-4065-a49a-be39d07e1e92",
+        "mutations": 1,
+        "observed_at": "2026-10-29T18:15:35.443354+00:00",
+        "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":1,\"observed_at\":\"2026-10-29T18:15:35.443354+00:00\",\"pending_requests\":0,\"requests\":1,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+        "revision": 1,
+        "thing": "urn:example:room:thing",
+        "values": [
+          [
+            "urn:example:room:s0",
+            23
+          ],
+          [
+            "urn:example:room:s1",
+            true
+          ],
+          [
+            "urn:example:room:s2",
+            true
+          ],
+          [
+            "urn:example:room:s3",
+            "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+          ]
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/view/descriptions/0",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        }
+      ],
+      "id": "c00038",
+      "plane": "reviewed_model",
+      "rule": "copy",
+      "value": {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": 1
+          }
+        ],
+        "frame": [
+          "urn:example:room:s1",
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:example:room:u0",
+        "operation": "urn:example:room:o0",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 25,
+            "value": 18
+          }
+        ]
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/transcript.json",
+          "pointer": "/2/guard/assessment/expected/0/1",
+          "sha256": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/after/values/0/1",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/checks/evidence",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00039",
+      "plane": "record_comparison",
+      "rule": "compare",
+      "value": "FALSE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/before/values/2/1",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/after/values/2/1",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/checks/evidence",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00040",
+      "plane": "record_comparison",
+      "rule": "compare",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/before/values/1/1",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/after/values/1/1",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/checks/evidence",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00041",
+      "plane": "record_comparison",
+      "rule": "compare",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/before/values/3/1",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/after/values/3/1",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        },
+        {
+          "file": "execution/worker/result.json",
+          "pointer": "/invocation/checks/evidence",
+          "sha256": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085"
+        }
+      ],
+      "id": "c00042",
+      "plane": "record_comparison",
+      "rule": "compare",
+      "value": "TRUE"
+    },
+    {
+      "evidence": [
+        {
+          "file": "execution/worker/http.json",
+          "pointer": "",
+          "sha256": "d37314f89181cef7a2141aeec5caaaab7620cd9ef16278ea45e342b19549c20c"
+        }
+      ],
+      "id": "c00043",
+      "plane": "runtime_observation",
+      "rule": "copy",
+      "value": [
+        {
+          "at": "2026-10-29T18:15:35.433539+00:00",
+          "body": null,
+          "elapsed": 0.002183495002100244,
+          "method": "GET",
+          "path": "/state",
+          "result": {
+            "body": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "observed_at": "2026-10-29T18:15:35.433260+00:00",
+              "pending_requests": 0,
+              "requests": 0,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21,
+              "thing": "urn:example:room:thing"
+            },
+            "error": null,
+            "raw_body": null,
+            "status": 200
+          }
+        },
+        {
+          "at": "2026-10-29T18:15:35.438391+00:00",
+          "body": null,
+          "elapsed": 0.0007124579860828817,
+          "method": "GET",
+          "path": "/state",
+          "result": {
+            "body": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 0,
+              "observed_at": "2026-10-29T18:15:35.438201+00:00",
+              "pending_requests": 0,
+              "requests": 0,
+              "revision": 0,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 21,
+              "thing": "urn:example:room:thing"
+            },
+            "error": null,
+            "raw_body": null,
+            "status": 200
+          }
+        },
+        {
+          "at": "2026-10-29T18:15:35.442870+00:00",
+          "body": {
+            "expected_revision": 0
+          },
+          "elapsed": 0.0005598889983957633,
+          "method": "POST",
+          "path": "/heat",
+          "result": {
+            "body": {
+              "revision": 1,
+              "temperature": 23
+            },
+            "error": null,
+            "raw_body": null,
+            "status": 201
+          }
+        },
+        {
+          "at": "2026-10-29T18:15:35.443528+00:00",
+          "body": null,
+          "elapsed": 0.0004960340011166409,
+          "method": "GET",
+          "path": "/state",
+          "result": {
+            "body": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "mutations": 1,
+              "observed_at": "2026-10-29T18:15:35.443354+00:00",
+              "pending_requests": 0,
+              "requests": 1,
+              "revision": 1,
+              "sentinels": {
+                "lamp": "off",
+                "marker": {
+                  "untouched": true
+                }
+              },
+              "temperature": 23,
+              "thing": "urn:example:room:thing"
+            },
+            "error": null,
+            "raw_body": null,
+            "status": 200
+          }
+        }
+      ]
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/native",
+          "sha256": "65ea41a629f62012c485ec83ef76dd77db9ecb2448d43603cc849ef1881bca32"
+        }
+      ],
+      "id": "c00044",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": {
+        "external_changes": 0,
+        "frame_preserved": true,
+        "goal_state": false,
+        "incorrect_native_transitions": 1,
+        "mutations": 1,
+        "native_success": false,
+        "requests": 1,
+        "revision_accounted": true,
+        "unauthorized_mutations": 0
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/before",
+          "sha256": "65ea41a629f62012c485ec83ef76dd77db9ecb2448d43603cc849ef1881bca32"
+        }
+      ],
+      "id": "c00045",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/after",
+          "sha256": "65ea41a629f62012c485ec83ef76dd77db9ecb2448d43603cc849ef1881bca32"
+        }
+      ],
+      "id": "c00046",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 1,
+        "pending_requests": 0,
+        "requests": 1,
+        "revision": 1,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 23
+      }
+    },
+    {
+      "evidence": [
+        {
+          "file": "evaluation.json",
+          "pointer": "/journal",
+          "sha256": "65ea41a629f62012c485ec83ef76dd77db9ecb2448d43603cc849ef1881bca32"
+        }
+      ],
+      "id": "c00047",
+      "plane": "native_evaluation",
+      "rule": "copy",
+      "value": [
+        {
+          "after": {
+            "cooler_ready": true,
+            "heater_ready": true,
+            "mutations": 1,
+            "pending_requests": 1,
+            "requests": 1,
+            "revision": 1,
+            "sentinels": {
+              "lamp": "off",
+              "marker": {
+                "untouched": true
+              }
+            },
+            "temperature": 23
+          },
+          "at": "2026-10-29T18:15:35.442667+00:00",
+          "before": {
+            "cooler_ready": true,
+            "heater_ready": true,
+            "mutations": 0,
+            "pending_requests": 1,
+            "requests": 1,
+            "revision": 0,
+            "sentinels": {
+              "lamp": "off",
+              "marker": {
+                "untouched": true
+              }
+            },
+            "temperature": 21
+          },
+          "body": {
+            "expected_revision": 0
+          },
+          "kind": "request",
+          "path": "/heat",
+          "status": 201
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "candidate_aggregates": {
+      "reason": null,
+      "status": "direct"
+    },
+    "frame_verification": {
+      "reason": "Runtime records aggregate expected_state, not a separate frame verdict",
+      "status": "reconstructed"
+    },
+    "freshness_clock": {
+      "reason": "Exact evaluation clock and age calculation not logged",
+      "status": "unavailable"
+    },
+    "general_causal_identification": {
+      "reason": "Only bounded model-relative comparisons and explicitly controlled fixture interventions supported",
+      "status": "unavailable"
+    },
+    "goal": {
+      "reason": null,
+      "status": "direct"
+    },
+    "guard_decision": {
+      "reason": null,
+      "status": "direct"
+    },
+    "hidden_reasoner_intent": {
+      "reason": "No private reasoning trace; proposal consistency is not mental causation",
+      "status": "unavailable"
+    },
+    "http_results": {
+      "reason": null,
+      "status": "direct"
+    },
+    "native_scoring": {
+      "reason": null,
+      "status": "direct"
+    },
+    "observed_context": {
+      "reason": null,
+      "status": "direct"
+    },
+    "permit_contents": {
+      "reason": "Permit object/nonce/expiry/goal hash not serialized; authorized barrier file contains proposal only",
+      "status": "unavailable"
+    },
+    "prediction": {
+      "reason": null,
+      "status": "direct"
+    },
+    "raw_model_preconditions": {
+      "reason": "Raw predicate replay does not establish runtime freshness or procedural atom evaluation",
+      "status": "reconstructed"
+    },
+    "runtime_postconditions": {
+      "reason": null,
+      "status": "direct"
+    },
+    "runtime_precondition_atoms": {
+      "reason": "Not logged; aggregate truth cannot identify which atom was evaluated FALSE/UNKNOWN",
+      "status": "unavailable"
+    },
+    "selection_or_abstention": {
+      "reason": null,
+      "status": "direct"
+    }
+  },
+  "goal": "c00001",
+  "narrative": "Turn 1: proposed discover [c00005].\nTurn 2: proposed observe [c00009].\nTurn 3: proposed use [c00014]. POST /heat; recorded applicability=TRUE, goal contribution=TRUE [c00022]. Alternatives: /cool applicability=TRUE, contribution=FALSE [c00015]. Recorded forecast targets={\"urn:example:room:temperature\":22} (predicted, not observed). Recorded goal truth=FALSE [c00013]. Guard=AUTHORIZED [c00029].\nRecorded terminal status=POSTCONDITION_FAILED [c00032]; verified=False [c00033].\nRecorded runtime checks={\"echoes\":true,\"evidence\":true,\"expected_state\":false,\"goal\":false,\"mutations\":true,\"response_revision\":true,\"revision\":true} [c00035].\nReconstructed effect_comparisons: urn:example:room:temperature=FALSE [c00039].\nReconstructed frame_comparisons: urn:example:room:cooler=TRUE [c00040], urn:example:room:heater=TRUE [c00041], urn:example:room:unrelated=TRUE [c00042].\nSeparate native-scoring plane: {\"external_changes\":0,\"frame_preserved\":true,\"goal_state\":false,\"incorrect_native_transitions\":1,\"mutations\":1,\"native_success\":false,\"requests\":1,\"revision_accounted\":true,\"unauthorized_mutations\":0} [c00044]. This must not be treated as an agent observation.\nUnavailable: actual per-atom runtime verdicts, permit contents, evaluation clock and hidden intent. Raw predicate/frame replays are explicitly reconstructed, not general causal identification.\n",
+  "outcome": {
+    "after": "c00037",
+    "before": "c00036",
+    "checks": "c00035",
+    "dispatches": "c00034",
+    "effect_comparisons": [
+      {
+        "declaration": "c00038",
+        "slot": "urn:example:room:s0",
+        "truth": "c00039"
+      }
+    ],
+    "frame_comparisons": [
+      {
+        "declaration": "c00038",
+        "slot": "urn:example:room:s2",
+        "truth": "c00040"
+      },
+      {
+        "declaration": "c00038",
+        "slot": "urn:example:room:s1",
+        "truth": "c00041"
+      },
+      {
+        "declaration": "c00038",
+        "slot": "urn:example:room:s3",
+        "truth": "c00042"
+      }
+    ],
+    "http": "c00043",
+    "native_after": "c00046",
+    "native_before": "c00045",
+    "native_journal": "c00047",
+    "native_score": "c00044",
+    "status": "c00032",
+    "verified": "c00033"
+  },
+  "provenance": {
+    "files": {
+      "evaluation.json": "65ea41a629f62012c485ec83ef76dd77db9ecb2448d43603cc849ef1881bca32",
+      "execution/worker/discovery.json": "d17975dc6f3521705da4fa14a12a44dc2ca949e6ee998a56723b65a4999f307c",
+      "execution/worker/http.json": "d37314f89181cef7a2141aeec5caaaab7620cd9ef16278ea45e342b19549c20c",
+      "execution/worker/input.json": "f3b3056ebd8497b04b9c773c16e259d11dfaa973284a014dab794bf7f254d055",
+      "execution/worker/result.json": "f10c161534da2b167aab89eefefed69a6248d8234a4a6328dcfe4e2a2c40b085",
+      "execution/worker/transcript.json": "40f8f7e5bbd366c87c804e97cf20c83c77190393b891e78cbca63d0f2c6137bd"
+    },
+    "integrity": "verified"
+  },
+  "schema_version": "calm/1",
+  "steps": [
+    {
+      "candidates": [],
+      "changed_context": null,
+      "context": null,
+      "feedback": "c00006",
+      "goal_truth": "c00004",
+      "guard": null,
+      "proposal": "c00005",
+      "turn": "c00003"
+    },
+    {
+      "candidates": [],
+      "changed_context": null,
+      "context": null,
+      "feedback": "c00010",
+      "goal_truth": "c00008",
+      "guard": null,
+      "proposal": "c00009",
+      "turn": "c00007"
+    },
+    {
+      "candidates": [
+        {
+          "description": "c00017",
+          "eligibility": "c00016",
+          "raw_preconditions": [
+            {
+              "description": "c00018",
+              "truth": "c00019"
+            },
+            {
+              "description": "c00020",
+              "truth": "c00021"
+            }
+          ],
+          "record": "c00015"
+        },
+        {
+          "description": "c00024",
+          "eligibility": "c00023",
+          "raw_preconditions": [
+            {
+              "description": "c00025",
+              "truth": "c00026"
+            },
+            {
+              "description": "c00027",
+              "truth": "c00028"
+            }
+          ],
+          "record": "c00022"
+        }
+      ],
+      "changed_context": "c00030",
+      "context": "c00012",
+      "feedback": "c00031",
+      "goal_truth": "c00013",
+      "guard": "c00029",
+      "proposal": "c00014",
+      "turn": "c00011"
+    }
+  ]
+}

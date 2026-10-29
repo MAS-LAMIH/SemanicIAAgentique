@@ -1,0 +1,23 @@
+{
+  "artifact.ttl": "3429ca41682e2782f36e8199f92f65cee1aedd380200b4c7a3f915d95ccceae7",
+  "control.json": "6db34e9914e39f3d13d3eb78956379c717e5472795e2a8d6efcacda65a94dd5f",
+  "evaluation.json": "c54d37419200eee4c8badebc70a65d62ce3e5b9fc7f9feb99ed4d614697bf50d",
+  "execution/approvals.json": "9ed96e1eb96b188957d72809e6d5dd6ad49871e360abbe27c4657c52090c6264",
+  "execution/process-summary.json": "d8e3ce28d39cd2fbf718d04946f636708ff60872a5d6cda6bbabc41b9bf2702a",
+  "execution/subject.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/subject.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/supervision.json": "f907a281c5d03da2a30835baeaf0c817a60132b219fe225957595326241b334e",
+  "execution/worker/authorized-5.json": "b05f293b25a3a22d8781ba9467fbab600e4474080bd48ac2108299fa4faeaf19",
+  "execution/worker/discovery.json": "82b15319c72daef90b22e138efe2bc6e976a3b162671c607257d57ce80d44d6c",
+  "execution/worker/http.json": "b113bba6160b829d27fc8c26709db8970f7b2454d5da4b27bdd1ed0b8ef0eae7",
+  "execution/worker/input.json": "fc6ccf98b619766b2fd2aea3e65f84326dab23133afb5de96d441026bac2f143",
+  "execution/worker/intent-3.json": "14747079a2fc2831eeeb629b761e558901b60dce21f6fe4d3fc749b24ef0f358",
+  "execution/worker/intent-5.json": "b05f293b25a3a22d8781ba9467fbab600e4474080bd48ac2108299fa4faeaf19",
+  "execution/worker/modules.json": "6c642a81ebf647c3de7767e52df0b2f554e081329d7d37ab00030697819958f5",
+  "execution/worker/observations.json": "bef8c1963f24aa20f9a31044e87903cc88704b214a85c8326cc27ac4d21330d6",
+  "execution/worker/release-authorized-5": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/release-intent-3": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/release-intent-5": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution/worker/result.json": "46339e356785fbdc5c688c8a19f51d8eeaaf721b4960ed0f10a08e7a39e446f9",
+  "execution/worker/transcript.json": "7a07a6b76fe32af6c9045d0c246bac0e5eb8711f475dae967d8cc5ba00602142"
+}
