@@ -1,0 +1,152 @@
+{
+  "authorship": "Same author; manually transcribed native wire contract / pinned public YAML before extraction; no independent reviewer or blinding. Room schema and reference share author and definitions; common-mode risk.",
+  "operations": [
+    {
+      "id": "listPets",
+      "method": "GET",
+      "parameters": [
+        {
+          "in": "query",
+          "name": "limit",
+          "required": false,
+          "schema": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      ],
+      "path": "/pets",
+      "request": null,
+      "responses": {
+        "200": {
+          "application/json": {
+            "items": {
+              "properties": {
+                "id": {
+                  "format": "int64",
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "tag": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "default": {
+          "application/json": {
+            "properties": {
+              "code": {
+                "format": "int32",
+                "type": "integer"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "message"
+            ],
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "id": "createPets",
+      "method": "POST",
+      "parameters": [],
+      "path": "/pets",
+      "request": null,
+      "responses": {
+        "201": {},
+        "default": {
+          "application/json": {
+            "properties": {
+              "code": {
+                "format": "int32",
+                "type": "integer"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "message"
+            ],
+            "type": "object"
+          }
+        }
+      }
+    },
+    {
+      "id": "showPetById",
+      "method": "GET",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "petId",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "path": "/pets/{petId}",
+      "request": null,
+      "responses": {
+        "200": {
+          "application/json": {
+            "properties": {
+              "id": {
+                "format": "int64",
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "tag": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ],
+            "type": "object"
+          }
+        },
+        "default": {
+          "application/json": {
+            "properties": {
+              "code": {
+                "format": "int32",
+                "type": "integer"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "message"
+            ],
+            "type": "object"
+          }
+        }
+      }
+    }
+  ],
+  "scope": "All operations/identifiers, parameters(name/location/required), request(required/media), response(status/media), reachable supported schema types/constraints/properties/items. Excludes descriptions, security, server/header declarations, provenance triples and generated identity links from precision/recall."
+}

@@ -1,0 +1,1998 @@
+{
+  "assertions": [
+    {
+      "assertion_id": "0204dadcb5f9e36c3c30dd35ccdeaba2197db96d38e74f33cda4a21b4d604473",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/components/schemas/Error/required",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> <urn:eswc:aat:structure:1#required> \"[\\\"code\\\",\\\"message\\\"]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "03c6c1e0bd602719e1dc4ad7394452a92da98f1f2f00816de6149ae244d1f197",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-name",
+          "source": "#/components/schemas/Pet/properties/tag",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:237593e3b35ac458af9452f8fade4267f1e1bec5f684d94df3822ffc2b9c71a0> <urn:eswc:aat:structure:1#name> \"tag\" ."
+    },
+    {
+      "assertion_id": "0497b962d3032ee6d93f160763df3b05d2f5a676c1bdf44e073ba5ace22d85f5",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "security-requirements",
+          "source": "#/paths/~1pets/post",
+          "transformation": "Explicit requirements or OpenAPI default empty requirements; no authentication performed"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> <urn:eswc:aat:structure:1#securityRequirements> \"[]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "0534f180fd09a6a733e68b05db3e0a2fe05ee868dea78cd09af215a3fa2b14dc",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "security-requirements",
+          "source": "#/paths/~1pets~1{petId}/get",
+          "transformation": "Explicit requirements or OpenAPI default empty requirements; no authentication performed"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:structure:1#securityRequirements> \"[]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "06dd9fc31ef04a77e941d3efaa50e7d9636cbc9985f1e5a03594c656e6c9f576",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-schema",
+          "source": "#/components/schemas/Pet/properties/name",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:9791a190760b5843d59ba01973b8d6f50c05f811634d6bf8666a42acebea4e9b> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:1301837a36febe237ec215b585062dbc2a8b6ae6caff1b5ef7375c4f406676eb> ."
+    },
+    {
+      "assertion_id": "0a4bbbd27d28872a1d4072dc931050490c80b047298d16c7fa09948155d2a136",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Pets",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:85d59992d855fbe507f431f985ddf2d3a8bcff9d2e43fe9320353d918562840f> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"items\\\":{\\\"$ref\\\":\\\"#/components/schemas/Pet\\\"},\\\"type\\\":\\\"array\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "0b670721546547042ace88f0b38e8f29d2c35f79e3b1c4b2fa9819551cff5240",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/paths/~1pets/get/parameters/0/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:173a3e4d696615d760e44a09577623b2fcc6111381738a16cb80d09295e33c06> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "0d17c9dad757d0066338e5dd8b491a100c509ca7cd1c3d0be43ad1935af6171f",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "array-items",
+          "source": "#/components/schemas/Pets/items",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:85d59992d855fbe507f431f985ddf2d3a8bcff9d2e43fe9320353d918562840f> <urn:eswc:aat:structure:1#items> <urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> ."
+    },
+    {
+      "assertion_id": "0dbca2caea428e10d496396aa3f1cddcddad0f00d3ee43c70a9e7e8166658bf1",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "operation-type",
+          "source": "#/paths/~1pets/get",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Operation> ."
+    },
+    {
+      "assertion_id": "0e07db8baabfd251d1116a6f0663814fec3e44c4130604e4842877979f59f290",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/components/schemas/Pet/properties/tag",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:2fa628f8dc8d0aceba69d62aec2012661c99d46f96fa106367b6a78eaaa8fc5f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "0e9bcf9b10cf9fd92ae84b97f08d28b3d2363c3efb59824b73d18e42c5909c52",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Pet/properties/id",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:ccec9d18fc3ddda906bb3df16742f0692e6420d5702bf0a23b45b555a151de71> ."
+    },
+    {
+      "assertion_id": "0ef56226b6b75a737862984df6546054f6ad9c4f9cc82bfef58b87b23cbbe3b0",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-schema",
+          "source": "#/components/schemas/Pet/properties/id",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:ccec9d18fc3ddda906bb3df16742f0692e6420d5702bf0a23b45b555a151de71> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:9c19c44ea35c1d85b4320f9a294cef0c0d365e1a9a9fd9c757f9fa18e060d55d> ."
+    },
+    {
+      "assertion_id": "0f2f621cc0d2df8b5d0401299b416369edc978d41ab9dc19986105082e8581d6",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "http-method",
+          "source": "#/paths/~1pets/post",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> <urn:eswc:aat:prototype:1#method> \"POST\" ."
+    },
+    {
+      "assertion_id": "0f4c12f3d7318a7ca58188009217985a232ec45a5cfd2fc7342de458fd710c7e",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/components/schemas/Error/required",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> <urn:eswc:aat:structure:1#required> \"[\\\"code\\\",\\\"message\\\"]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "0f5d0c41c7b809572bd683c65ae81f31c11dddf129ebf1a791f1cc164c2a9c4b",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response-headers",
+          "source": "#/paths/~1pets/get/responses/200/headers",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:48d5574c8536e510b64232e5f7b215e6dd913cf803b4e18edea9552b9b7db7ed> <urn:eswc:aat:structure:1#headers> \"{\\\"x-next\\\":{\\\"description\\\":\\\"A link to the next page of responses\\\",\\\"schema\\\":{\\\"type\\\":\\\"string\\\"}}}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "0f7ea133ba717e2d0543efab013609c181cc7691ba9e929d2a4bc225534a3c96",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "http-method",
+          "source": "#/paths/~1pets/get",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:prototype:1#method> \"GET\" ."
+    },
+    {
+      "assertion_id": "120d979291a445e36dfbbfb77b124b4818ab38c12f922f2eb47e0dd9c9f22649",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Error",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"properties\\\":{\\\"code\\\":{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"},\\\"message\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"code\\\",\\\"message\\\"],\\\"type\\\":\\\"object\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "136df066581ea77b01a3d412dd008bc0aed47d157f82478561da20afc5d815f4",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response-status",
+          "source": "#/paths/~1pets/get/responses/200",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:48d5574c8536e510b64232e5f7b215e6dd913cf803b4e18edea9552b9b7db7ed> <urn:eswc:aat:structure:1#statusCode> \"200\" ."
+    },
+    {
+      "assertion_id": "15b820c7190b27ae7e73840969e6273f54d89637fc7633e2c11b4ba4fa5700f7",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Pet/properties/id",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:9c19c44ea35c1d85b4320f9a294cef0c0d365e1a9a9fd9c757f9fa18e060d55d> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"format\\\":\\\"int64\\\",\\\"type\\\":\\\"integer\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "17530559dea3f44428ea74e61c6f8ded19b397b791e5064f0bf5067d46dbdb75",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Error/properties/message/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:947468920ad36879b5077206207600fea8fa9173a8affb12a5d800b9c9bd4356> <urn:eswc:aat:structure:1#schemaType> \"string\" ."
+    },
+    {
+      "assertion_id": "1788f00de27aaa17b44ea9548c5ce482ac42ee7777f60757538ea39ca1e96d31",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Pet",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"properties\\\":{\\\"id\\\":{\\\"format\\\":\\\"int64\\\",\\\"type\\\":\\\"integer\\\"},\\\"name\\\":{\\\"type\\\":\\\"string\\\"},\\\"tag\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"id\\\",\\\"name\\\"],\\\"type\\\":\\\"object\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "1a58d18b63cfd6a40e01a2a39db439816104752f51cebe343da70fafc45a5449",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "local-reference",
+          "source": "#/paths/~1pets/post/responses/default/content/application~1json/schema/$ref",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> <urn:eswc:aat:structure:1#referenceTarget> \"#/components/schemas/Error\" ."
+    },
+    {
+      "assertion_id": "1a6b28c5e6f907c6005362f4c43dc1f6ab07142dbc6d29733b9919a3dcf8d142",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Error/properties/code",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:811fdd5d3f191ece63bf35af1adc37e88f291de114d1379454451d252a95ecc9> ."
+    },
+    {
+      "assertion_id": "1ad44a7326d16360ef362e4878ec51d936c4d89d2a329c5271e7dccda7f92867",
+      "sources": [
+        {
+          "configuration_sha256": "16066e25b6320cb2ab348808ad515511aef33dd81ecf63e1088626bc80876925",
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONFIGURATION",
+          "extractor_version": "openapi-structure/1",
+          "rule": "configured-artifact",
+          "source": "config:artifact",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Artifact> ."
+    },
+    {
+      "assertion_id": "1ec75e355fc76f676e4c299be786f98708ffeb421ed5264d12d83d6b1eb33d3a",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-schema",
+          "source": "#/paths/~1pets~1{petId}/get/responses/default/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:16c739980c36e733ac8666f68bfd92dd0a1baedb5069384d557d9e1886a87fa2> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> ."
+    },
+    {
+      "assertion_id": "201b968ef3b9a460d707a7817c1c68074291d5414fc756d04cb6525a99616e5f",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Pet/properties/name/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:1301837a36febe237ec215b585062dbc2a8b6ae6caff1b5ef7375c4f406676eb> <urn:eswc:aat:structure:1#schemaType> \"string\" ."
+    },
+    {
+      "assertion_id": "2252ff2c5c8481bed4151a1eeca28118a40d65c970a38a882bf9193224187238",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response-status",
+          "source": "#/paths/~1pets/post/responses/201",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:ed4ae0b38ca4199a20606c35fe74afbdec51e92641a544a38ebff7ee2b93fbe9> <urn:eswc:aat:structure:1#statusCode> \"201\" ."
+    },
+    {
+      "assertion_id": "2617572aff4d69fc87bff4edb745897c4182ecafec611a79124d4f6158a6e6e5",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-schema",
+          "source": "#/paths/~1pets/post/responses/default/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:0397757b208b3f7aaa404f165474eb0ea9b90ef5262aee960942eade4d9e926c> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> ."
+    },
+    {
+      "assertion_id": "2693704c5e5f1c2e834d258ebd6c06b77e9ddf972ac40fd9b124c5d6f2baeaf8",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:704bc644ad245b48b54aacd78f0369cf5e9e0a2e88035a6e8858054b41c8ef82> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"type\\\":\\\"string\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "2808ed564029df7945798775ee3227e8817d7f29e0715951fe1cbc241a166f70",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response-status",
+          "source": "#/paths/~1pets/get/responses/default",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:01c0b0a569065133f4eea1141ebde34dd16e9c6c25d6fa6cb895884f149e9669> <urn:eswc:aat:structure:1#statusCode> \"default\" ."
+    },
+    {
+      "assertion_id": "2a2bf37bdac57231761536fbdf633f4507a9421b3a5c33fbe61114a551111548",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Pet/properties/tag",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:237593e3b35ac458af9452f8fade4267f1e1bec5f684d94df3822ffc2b9c71a0> ."
+    },
+    {
+      "assertion_id": "2a418bdea4637891c8239f1d6dd41e812469beda941b41edab84e99cc04886f3",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "http-path",
+          "source": "#/paths/~1pets~1{petId}",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:prototype:1#path> \"/pets/{petId}\" ."
+    },
+    {
+      "assertion_id": "2aa2e2fc57b5c53455dc7021c4a936ab439eb67ef36405e216f2c1fbb63da66c",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response",
+          "source": "#/paths/~1pets/post/responses/201",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> <urn:eswc:aat:structure:1#response> <urn:aat:extracted:ed4ae0b38ca4199a20606c35fe74afbdec51e92641a544a38ebff7ee2b93fbe9> ."
+    },
+    {
+      "assertion_id": "2afcfe2826410bb3967937c2f6898ba29ff5be94e8c32e3bda0bda2a9df59d1e",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Error/properties/code/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:e13588adf2062893e50beb9ce9694bfe0d7eeb927f6451e629c2be0b565e9a12> <urn:eswc:aat:structure:1#schemaType> \"integer\" ."
+    },
+    {
+      "assertion_id": "2b4f7b3d9af9e95aa3c21000643d4394071b7fd1df8f9b03552c93bd89d1e0c6",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response-status",
+          "source": "#/paths/~1pets~1{petId}/get/responses/200",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:457a7bdc9044fab0f61d1024ff4813c98d8fdeee1d4ee690691bb9080e78c959> <urn:eswc:aat:structure:1#statusCode> \"200\" ."
+    },
+    {
+      "assertion_id": "2c9cfcd09774577f339023dcfa3e8245622fe267672feec5a0a2ae3578acbd57",
+      "sources": [
+        {
+          "configuration_sha256": "16066e25b6320cb2ab348808ad515511aef33dd81ecf63e1088626bc80876925",
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONFIGURATION",
+          "extractor_version": "openapi-structure/1",
+          "rule": "configured-origin",
+          "source": "config:origin",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <urn:eswc:aat:structure:1#origin> \"http://127.0.0.1:8000\" ."
+    },
+    {
+      "assertion_id": "2ec560aba67a1bd026b2d393fb7e6c7d31306dd05dcea51cbb77815cf74c6ec1",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-field",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0/in",
+          "transformation": "Exact documented field"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f77cf6973cd8dccfd0aa6b832b69c43178e19eedcfc8697a8ef8c999c2fb8aae> <urn:eswc:aat:structure:1#location> \"path\" ."
+    },
+    {
+      "assertion_id": "2fee8744bce5684849c31c956d1488992102ea0ddf9899b5150cf21a6abcd84e",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-link",
+          "source": "#/paths/~1pets/get/responses/default/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:01c0b0a569065133f4eea1141ebde34dd16e9c6c25d6fa6cb895884f149e9669> <urn:eswc:aat:structure:1#content> <urn:aat:extracted:7cee5543fd42d73d5db1d54369d80a59a0c6f27543e8af9fe6b055e2507237b9> ."
+    },
+    {
+      "assertion_id": "32e6253779a0e3166aa3df817d808c9d3ca6f15ab97ef983469031088ada703a",
+      "sources": [
+        {
+          "configuration_sha256": "16066e25b6320cb2ab348808ad515511aef33dd81ecf63e1088626bc80876925",
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONFIGURATION",
+          "extractor_version": "openapi-structure/1",
+          "rule": "configured-thing",
+          "source": "config:thing",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:pets:thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Thing> ."
+    },
+    {
+      "assertion_id": "33733a69d4d07d6c7b8bd1b8a9a9cc55baf86f000741b89ac7abb6fd7793367b",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "local-reference",
+          "source": "#/paths/~1pets/get/responses/default/content/application~1json/schema/$ref",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> <urn:eswc:aat:structure:1#referenceTarget> \"#/components/schemas/Error\" ."
+    },
+    {
+      "assertion_id": "33ef29ea24e6903c633e11ff7ab9a7f1cdd8e54234438ef51e475cc0b000fdca",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/components/schemas/Pet/required",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <urn:eswc:aat:structure:1#required> \"[\\\"id\\\",\\\"name\\\"]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "3588642d6235999aa45b653aa901f5e6e221b895d5fe9934d9c06cc1e9537ad8",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/paths/~1pets/get/parameters/0/schema/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:173a3e4d696615d760e44a09577623b2fcc6111381738a16cb80d09295e33c06> <urn:eswc:aat:structure:1#schemaType> \"integer\" ."
+    },
+    {
+      "assertion_id": "361ff56844197b79a0f6ef42cc2c33cb71df17c132def6ef1f3614cce9db7d3a",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-schema",
+          "source": "#/components/schemas/Error/properties/code",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:811fdd5d3f191ece63bf35af1adc37e88f291de114d1379454451d252a95ecc9> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:e13588adf2062893e50beb9ce9694bfe0d7eeb927f6451e629c2be0b565e9a12> ."
+    },
+    {
+      "assertion_id": "37e94f9d117ca77079ef4527f61081a0bb0d3e96e8ef8d7fda304f10a8a11b8a",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:704bc644ad245b48b54aacd78f0369cf5e9e0a2e88035a6e8858054b41c8ef82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "38c41443eb485372ea4fb86c30e9ba5cb66bfafe68cedc4d0f6cf281a9f42a78",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "server-declarations",
+          "source": "#/servers",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <urn:eswc:aat:structure:1#documentedServers> \"[{\\\"url\\\":\\\"http://petstore.swagger.io/v1\\\"}]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "390ea20db1c62b79db667d762afcc1fcb3588c21544096207fca79fea104d130",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0/schema/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:704bc644ad245b48b54aacd78f0369cf5e9e0a2e88035a6e8858054b41c8ef82> <urn:eswc:aat:structure:1#schemaType> \"string\" ."
+    },
+    {
+      "assertion_id": "3949452d1b467bc42617405014cabfa2a45b78f8e1da1c8cd1a054fd1f19ab38",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-type",
+          "source": "#/paths/~1pets/get/responses/200/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:17277d0d21078e12b6be323d51b07c21eef6bc0fb781b97339cb0fdac98f7ef6> <urn:eswc:aat:structure:1#mediaType> \"application/json\" ."
+    },
+    {
+      "assertion_id": "3c482c9445357d5f3215ca306a1fd86f737a2ab37301ac2f77d1580c6b6d5e61",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response",
+          "source": "#/paths/~1pets~1{petId}/get/responses/default",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:structure:1#response> <urn:aat:extracted:b4b6d840be31c6dac287b09eeed5d54b9fd7879db31b072f7ee177e365ac54db> ."
+    },
+    {
+      "assertion_id": "3ccaae67ef73a3eb570b320eca4d5e975988180e2ca4e199cd2cea3b028cd09e",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-field",
+          "source": "#/paths/~1pets/get/parameters/0/in",
+          "transformation": "Exact documented field"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c8c8d2cd0014f5b4d45f2aeb21deced9b2333100035a3998c637130ae941b3e8> <urn:eswc:aat:structure:1#location> \"query\" ."
+    },
+    {
+      "assertion_id": "4022914e937c0dc058d9d7c99b6982aeb0c3cffe5cfadaf50bd60842c8e967fd",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "http-path",
+          "source": "#/paths/~1pets",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> <urn:eswc:aat:prototype:1#path> \"/pets\" ."
+    },
+    {
+      "assertion_id": "404431f33a0b586c68147002ed9c9b6bc8dfb64bbd7c66b286eb2de63332d0a0",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-serialization",
+          "source": "#/paths/~1pets/get/parameters/0",
+          "transformation": "Explicit values or OpenAPI location defaults"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c8c8d2cd0014f5b4d45f2aeb21deced9b2333100035a3998c637130ae941b3e8> <urn:eswc:aat:structure:1#serialization> \"{\\\"explode\\\":true,\\\"style\\\":\\\"form\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "42fb416d5d73dde1ecdf3e39fa3352125e28a9c1ca2ecb0d4c22ce2ec9854961",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-schema",
+          "source": "#/paths/~1pets/get/responses/200/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:17277d0d21078e12b6be323d51b07c21eef6bc0fb781b97339cb0fdac98f7ef6> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:85d59992d855fbe507f431f985ddf2d3a8bcff9d2e43fe9320353d918562840f> ."
+    },
+    {
+      "assertion_id": "4385a689c996a94fe627f52dfc4a43df5d650b89c8950f953b1af3d170456865",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-schema",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f77cf6973cd8dccfd0aa6b832b69c43178e19eedcfc8697a8ef8c999c2fb8aae> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:704bc644ad245b48b54aacd78f0369cf5e9e0a2e88035a6e8858054b41c8ef82> ."
+    },
+    {
+      "assertion_id": "493a09d73ecaff820d9474fbb15bd2c5623f2e7c7930b3e8efdeda8e38dd7533",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/components/schemas/Error/properties/code/format",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:e13588adf2062893e50beb9ce9694bfe0d7eeb927f6451e629c2be0b565e9a12> <urn:eswc:aat:structure:1#format> \"\\\"int32\\\"\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "49ef09b196455719aa8e23909df65b4942f7a920704d2ea2501ca3158b8c13b8",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/paths/~1pets/get/responses/default/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "509c1e57296e320ca9e83defee0ddd09556a1def92b9ba6b7c9d117e9f86772f",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response",
+          "source": "#/paths/~1pets/get/responses/default",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:structure:1#response> <urn:aat:extracted:01c0b0a569065133f4eea1141ebde34dd16e9c6c25d6fa6cb895884f149e9669> ."
+    },
+    {
+      "assertion_id": "52b4bf64c827aa93c40412618774759ffeaaab80c8d77e7641c1e9b42d56aa47",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-schema",
+          "source": "#/components/schemas/Pet/properties/tag",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:237593e3b35ac458af9452f8fade4267f1e1bec5f684d94df3822ffc2b9c71a0> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:2fa628f8dc8d0aceba69d62aec2012661c99d46f96fa106367b6a78eaaa8fc5f> ."
+    },
+    {
+      "assertion_id": "5537050d73187f6cecd34db211a885ddcd01411bb6f4b4a3da842cfca18021cf",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Pets/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:85d59992d855fbe507f431f985ddf2d3a8bcff9d2e43fe9320353d918562840f> <urn:eswc:aat:structure:1#schemaType> \"array\" ."
+    },
+    {
+      "assertion_id": "570147f2a879a78c299273279221eae2667601faf901447de57d9a4b8f9d9bb4",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-type",
+          "source": "#/paths/~1pets/get/responses/default/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:7cee5543fd42d73d5db1d54369d80a59a0c6f27543e8af9fe6b055e2507237b9> <urn:eswc:aat:structure:1#mediaType> \"application/json\" ."
+    },
+    {
+      "assertion_id": "5bb35d80cd76d63626c62a8d7b548e7482ed156700062d21c756aea083cba7d8",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "operation-identifier",
+          "source": "#/paths/~1pets/get/operationId",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:structure:1#operationId> \"listPets\" ."
+    },
+    {
+      "assertion_id": "5efcc416f964410550b303ea5601fcd7d65c2c103e24a59f50fb9fad016136d7",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-schema",
+          "source": "#/paths/~1pets/get/parameters/0/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c8c8d2cd0014f5b4d45f2aeb21deced9b2333100035a3998c637130ae941b3e8> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:173a3e4d696615d760e44a09577623b2fcc6111381738a16cb80d09295e33c06> ."
+    },
+    {
+      "assertion_id": "604d76d4fd8086c509b554c82640cc4e11e6ae2bbcd6b332d063f515218e31c6",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/components/schemas/Error/properties/code",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:e13588adf2062893e50beb9ce9694bfe0d7eeb927f6451e629c2be0b565e9a12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "634fda4c44cb482d9d42f1605481b6645b6ccec798605cc49c116a16950d5fea",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/paths/~1pets/get/parameters/0/schema/format",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:173a3e4d696615d760e44a09577623b2fcc6111381738a16cb80d09295e33c06> <urn:eswc:aat:structure:1#format> \"\\\"int32\\\"\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "6635148c577eac90c9a12ac6540f504ff421278324ba94f4f47257d45d77b8bf",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Error/properties/code",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:811fdd5d3f191ece63bf35af1adc37e88f291de114d1379454451d252a95ecc9> ."
+    },
+    {
+      "assertion_id": "669e35bacf349ec501677383947a07947a78e23e197724538fa8c3dab56f6294",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response",
+          "source": "#/paths/~1pets/get/responses/200",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:structure:1#response> <urn:aat:extracted:48d5574c8536e510b64232e5f7b215e6dd913cf803b4e18edea9552b9b7db7ed> ."
+    },
+    {
+      "assertion_id": "6a8fabccda78e3e38bb73754eb99b1d373fbd5c7cf00ca032706f0d9c3757ad5",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-name",
+          "source": "#/components/schemas/Error/properties/code",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:811fdd5d3f191ece63bf35af1adc37e88f291de114d1379454451d252a95ecc9> <urn:eswc:aat:structure:1#name> \"code\" ."
+    },
+    {
+      "assertion_id": "6d48e65bd66235ec784fa92cc76606e1acae1bbe5c5f762cba308a91ad197dff",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "operation-identifier",
+          "source": "#/paths/~1pets/post/operationId",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> <urn:eswc:aat:structure:1#operationId> \"createPets\" ."
+    },
+    {
+      "assertion_id": "6f92028436800d7face7a6621f25253c0cc554a6e2992c8b64b2cc8fa3c8bae7",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-schema",
+          "source": "#/components/schemas/Error/properties/message",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:43083369ad702da0cae7d9462e1fbc578c7b0639ce2edd4d7727a36845233a8a> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:947468920ad36879b5077206207600fea8fa9173a8affb12a5d800b9c9bd4356> ."
+    },
+    {
+      "assertion_id": "709b4ed54ea70efb1853236496bbb3c726c1a8119115e9b454e1174d1ef94f34",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/paths/~1pets~1{petId}/get/responses/default/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "747eecd3b3d3031ed816a8256bce8c11884a78480a713ef85e668218130ac22c",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Pet",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"properties\\\":{\\\"id\\\":{\\\"format\\\":\\\"int64\\\",\\\"type\\\":\\\"integer\\\"},\\\"name\\\":{\\\"type\\\":\\\"string\\\"},\\\"tag\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"id\\\",\\\"name\\\"],\\\"type\\\":\\\"object\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "7742aa1182a4f82a998863dde44cc1c87882871eb63c56f5ef0abcd1076bb764",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/components/schemas/Pet/properties/id",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:9c19c44ea35c1d85b4320f9a294cef0c0d365e1a9a9fd9c757f9fa18e060d55d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "778b54ec56c8a120da834df3c48ce1bef407dc05af01eee679faa4c0bfc6a5b7",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-type",
+          "source": "#/paths/~1pets~1{petId}/get/responses/200/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:6a280d247f1c7c10c8832223fdf9c2da1fd458e89692aa167edd2be02cf725a2> <urn:eswc:aat:structure:1#mediaType> \"application/json\" ."
+    },
+    {
+      "assertion_id": "778d22a2731930ca125ce4d1ee9e6fb173e21365d4f8ca677b40e1201ed22773",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Pet/properties/name",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:9791a190760b5843d59ba01973b8d6f50c05f811634d6bf8666a42acebea4e9b> ."
+    },
+    {
+      "assertion_id": "78422894fa8eece210982dcb3e95f3a67d1ca728a5e4c972fe76c96ecff98f4d",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Pet/properties/id/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:9c19c44ea35c1d85b4320f9a294cef0c0d365e1a9a9fd9c757f9fa18e060d55d> <urn:eswc:aat:structure:1#schemaType> \"integer\" ."
+    },
+    {
+      "assertion_id": "78c49a760e22f9bac6e71fd7c8314202620ddcccf267bfe5657464c51f283323",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/components/schemas/Error/properties/message",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:947468920ad36879b5077206207600fea8fa9173a8affb12a5d800b9c9bd4356> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "79117bc57cc2e6b5ef3ac33c1b3742d392df18aeabef4672b8591a6a76401d44",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-link",
+          "source": "#/paths/~1pets/post/responses/default/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:b8f03fd84f211f87ddcc0119a6dcf596d3f655589fd2bae2234cd76a6e516308> <urn:eswc:aat:structure:1#content> <urn:aat:extracted:0397757b208b3f7aaa404f165474eb0ea9b90ef5262aee960942eade4d9e926c> ."
+    },
+    {
+      "assertion_id": "79741ba983b150e102d53365f9249d65543c884fa0792dc437d068e980bc3c00",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response-status",
+          "source": "#/paths/~1pets/post/responses/default",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:b8f03fd84f211f87ddcc0119a6dcf596d3f655589fd2bae2234cd76a6e516308> <urn:eswc:aat:structure:1#statusCode> \"default\" ."
+    },
+    {
+      "assertion_id": "7b7b4a617652368091855f10cde253e3b3614d5572b288c9f573c49ebaec463b",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "operation-type",
+          "source": "#/paths/~1pets~1{petId}/get",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Operation> ."
+    },
+    {
+      "assertion_id": "7f38de427bbd8312e5b9ce1daa81272823c758f5c613678f04931339f6f86458",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-serialization",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0",
+          "transformation": "Explicit values or OpenAPI location defaults"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f77cf6973cd8dccfd0aa6b832b69c43178e19eedcfc8697a8ef8c999c2fb8aae> <urn:eswc:aat:structure:1#serialization> \"{\\\"explode\\\":false,\\\"style\\\":\\\"simple\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "831296b2002adb32ade5efc8466f737c37fb4c1df1174ac1ea894788b01931ef",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/paths/~1pets/post/responses/default/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "8bc8d322024525dcdfb1f5455a9c97970a1f551182b244f5f09787296f1ecec2",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "local-reference",
+          "source": "#/components/schemas/Pets/items/$ref",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <urn:eswc:aat:structure:1#referenceTarget> \"#/components/schemas/Pet\" ."
+    },
+    {
+      "assertion_id": "8ef661bfe57ec53c49f1df86339746043c9776d9e82886edfbc1147ddeac1346",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "get-candidate",
+          "source": "#/paths/~1pets/get",
+          "transformation": "GET heuristic only, not confirmed observation or read-only guarantee"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:structure:1#observationCandidate> \"true\"^^<http://www.w3.org/2001/XMLSchema#boolean> ."
+    },
+    {
+      "assertion_id": "8f1c9d54b4501c8beb4281b9a05fb127850b7761d89bad048b2a1a96ac053cf4",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/components/schemas/Pet/properties/name",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:1301837a36febe237ec215b585062dbc2a8b6ae6caff1b5ef7375c4f406676eb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "931c4821f4915f3f411226b4003686178a053b83320f485902fadcb735c49096",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "http-path",
+          "source": "#/paths/~1pets",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:prototype:1#path> \"/pets\" ."
+    },
+    {
+      "assertion_id": "97245f1c07c48460575ade99b7d8874503f8e319598f8d2baa858089b8970d64",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Error/properties/message",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:43083369ad702da0cae7d9462e1fbc578c7b0639ce2edd4d7727a36845233a8a> ."
+    },
+    {
+      "assertion_id": "98097dbcfccb0c38cfc029bcbed20cc087740960f9f44cfeb440882f3026467d",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Error/properties/code",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:811fdd5d3f191ece63bf35af1adc37e88f291de114d1379454451d252a95ecc9> ."
+    },
+    {
+      "assertion_id": "98e24affa67ecd4e413d1371aaf59e468fd9979c0581f4a64ede7d81c900a432",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Pet/properties/name",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:9791a190760b5843d59ba01973b8d6f50c05f811634d6bf8666a42acebea4e9b> ."
+    },
+    {
+      "assertion_id": "9a49a1580f4422ef49153d6cf6d9d7f183923672b3003c270cd3ad7447e7611e",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-name",
+          "source": "#/components/schemas/Pet/properties/id",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:ccec9d18fc3ddda906bb3df16742f0692e6420d5702bf0a23b45b555a151de71> <urn:eswc:aat:structure:1#name> \"id\" ."
+    },
+    {
+      "assertion_id": "9bb68b05457caeb6ca44494a5c73f9ba831cd67b808494d505105a196fcafb23",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/paths/~1pets/get/parameters/0/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:173a3e4d696615d760e44a09577623b2fcc6111381738a16cb80d09295e33c06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "9bb8006d4e83f245ce6cac19f8a54dd42fde1fa8402c1fa720af485f419bc3dd",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Error/properties/message",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:43083369ad702da0cae7d9462e1fbc578c7b0639ce2edd4d7727a36845233a8a> ."
+    },
+    {
+      "assertion_id": "9e23869c87cb69fe7ffcd05976f05101a490fc0a4ea20a0d9f52efe677763805",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-name",
+          "source": "#/components/schemas/Pet/properties/name",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:9791a190760b5843d59ba01973b8d6f50c05f811634d6bf8666a42acebea4e9b> <urn:eswc:aat:structure:1#name> \"name\" ."
+    },
+    {
+      "assertion_id": "a0a50d5fdd8e195c8791860f47c3a51a5c700a263517026f2a4d2e9909cb027e",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-schema",
+          "source": "#/paths/~1pets~1{petId}/get/responses/200/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:6a280d247f1c7c10c8832223fdf9c2da1fd458e89692aa167edd2be02cf725a2> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> ."
+    },
+    {
+      "assertion_id": "a12b4a012c4657aa013404a03ae909415ac33cb26840c103f4291c58204609ea",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-link",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:structure:1#parameter> <urn:aat:extracted:f77cf6973cd8dccfd0aa6b832b69c43178e19eedcfc8697a8ef8c999c2fb8aae> ."
+    },
+    {
+      "assertion_id": "a88169fc683ee0649aff20dd8e6dee07dd4afe15213b81e397ae45271a3461a5",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Pet/properties/id",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:ccec9d18fc3ddda906bb3df16742f0692e6420d5702bf0a23b45b555a151de71> ."
+    },
+    {
+      "assertion_id": "aa323ee757cdd1bcde811639bf3285b04d29fba3258c8f5c1906761be8962bf4",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Pet/properties/tag",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:2fa628f8dc8d0aceba69d62aec2012661c99d46f96fa106367b6a78eaaa8fc5f> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"type\\\":\\\"string\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "aaf0db5fd339eb5a2d9e29dd7c11a30e1c6e1853a535e952455b768f8984abf1",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-field",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0/name",
+          "transformation": "Exact documented field"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f77cf6973cd8dccfd0aa6b832b69c43178e19eedcfc8697a8ef8c999c2fb8aae> <urn:eswc:aat:structure:1#name> \"petId\" ."
+    },
+    {
+      "assertion_id": "aaf59abaabe5fd89d70ad41f1ca2ddca86974050f02ab6f9d6a27b8c701a71ec",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Error",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"properties\\\":{\\\"code\\\":{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"},\\\"message\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"code\\\",\\\"message\\\"],\\\"type\\\":\\\"object\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "ad3db924b2549bd7bd4462295282be3305d14c382557e106d45768da534ac412",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/paths/~1pets/get/responses/200/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:85d59992d855fbe507f431f985ddf2d3a8bcff9d2e43fe9320353d918562840f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "b031bb4288ba99ff9fab21912d079e61ef2a703d453bc1575551a61448c8ba0f",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "property-name",
+          "source": "#/components/schemas/Error/properties/message",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:43083369ad702da0cae7d9462e1fbc578c7b0639ce2edd4d7727a36845233a8a> <urn:eswc:aat:structure:1#name> \"message\" ."
+    },
+    {
+      "assertion_id": "b0b74e8d388eda0dec40d46960c2c464a999227bdb421d62a431936f6b0d47b2",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/components/schemas/Pets/items",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "b236f27da0d82bf5907ac20c02d0805cc7cbf21d6dc374083eb762ea5e9d1b2a",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-link",
+          "source": "#/paths/~1pets~1{petId}/get/responses/200/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:457a7bdc9044fab0f61d1024ff4813c98d8fdeee1d4ee690691bb9080e78c959> <urn:eswc:aat:structure:1#content> <urn:aat:extracted:6a280d247f1c7c10c8832223fdf9c2da1fd458e89692aa167edd2be02cf725a2> ."
+    },
+    {
+      "assertion_id": "b30042f9b652269762d9d330e7fac9943c859494fab8922a6cd253aaa9450338",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-field",
+          "source": "#/paths/~1pets/get/parameters/0/required",
+          "transformation": "OpenAPI required defaults false when absent"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c8c8d2cd0014f5b4d45f2aeb21deced9b2333100035a3998c637130ae941b3e8> <urn:eswc:aat:structure:1#required> \"false\"^^<http://www.w3.org/2001/XMLSchema#boolean> ."
+    },
+    {
+      "assertion_id": "b3288a715b381437e4c0f510a4d7e16cd4550f7301c6336cdd3f8ecf84311e09",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "security-requirements",
+          "source": "#/paths/~1pets/get",
+          "transformation": "Explicit requirements or OpenAPI default empty requirements; no authentication performed"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:structure:1#securityRequirements> \"[]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "b42ca95f2529ed4ad2f0af0817f61e4d5f579056566b4d03f7c8c80e71add0ef",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response",
+          "source": "#/paths/~1pets~1{petId}/get/responses/200",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:structure:1#response> <urn:aat:extracted:457a7bdc9044fab0f61d1024ff4813c98d8fdeee1d4ee690691bb9080e78c959> ."
+    },
+    {
+      "assertion_id": "b601a490f5a1b533aa252684c8b4001cb5a352acd6a828e7220a797c57377f85",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-node",
+          "source": "#/paths/~1pets~1{petId}/get/responses/200/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:structure:1#Schema> ."
+    },
+    {
+      "assertion_id": "b6a5fc6ae1fd17cfe78e8b10ca1256e5232c6a474f05d14d0d6bb97969b864ff",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/components/schemas/Error/required",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> <urn:eswc:aat:structure:1#required> \"[\\\"code\\\",\\\"message\\\"]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "bc8cdf5b2009fa182c964e2ad091114ac8828b867261b890e0e89b1183db0ccd",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "local-reference",
+          "source": "#/paths/~1pets~1{petId}/get/responses/200/content/application~1json/schema/$ref",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <urn:eswc:aat:structure:1#referenceTarget> \"#/components/schemas/Pet\" ."
+    },
+    {
+      "assertion_id": "c2e1dcf8b98c04abf2e581597f9d82bc23e353252954eac331b5b8858e2d8b67",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Pet/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <urn:eswc:aat:structure:1#schemaType> \"object\" ."
+    },
+    {
+      "assertion_id": "c7e3c262cdc2c8b2e9e6faa2af5fd7b100a7fc301e92a8d8e55fee8b225d783b",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "dialect",
+          "source": "#/openapi",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <urn:eswc:aat:structure:1#openapiVersion> \"3.0.0\" ."
+    },
+    {
+      "assertion_id": "cba84693476c9812a487b12368502730d9a0a160fd3b0e249e19a03221786068",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-link",
+          "source": "#/paths/~1pets/get/responses/200/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:48d5574c8536e510b64232e5f7b215e6dd913cf803b4e18edea9552b9b7db7ed> <urn:eswc:aat:structure:1#content> <urn:aat:extracted:17277d0d21078e12b6be323d51b07c21eef6bc0fb781b97339cb0fdac98f7ef6> ."
+    },
+    {
+      "assertion_id": "cd07dc5e12bf8c4c9a2cd02986967d1f54dba516e20981132160ae7cd49de92a",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Error",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"properties\\\":{\\\"code\\\":{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"},\\\"message\\\":{\\\"type\\\":\\\"string\\\"}},\\\"required\\\":[\\\"code\\\",\\\"message\\\"],\\\"type\\\":\\\"object\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "d0b37406849a462e519ef256a721767eea68fa297dfc640738e611e44f73b124",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Error/properties/code",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:e13588adf2062893e50beb9ce9694bfe0d7eeb927f6451e629c2be0b565e9a12> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"format\\\":\\\"int32\\\",\\\"type\\\":\\\"integer\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "d1a39998b69816ebd9f911385a0495c2c6ef76e3cfdbd1fd21d9ec2ac5fe0954",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Error/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:75f9b99c965e632dd0ed069afa37832d75b2793b2bb73883c458ffef1c6e6212> <urn:eswc:aat:structure:1#schemaType> \"object\" ."
+    },
+    {
+      "assertion_id": "d22858635c36f9728b0a42837482880ecdb0f58a1862e9b90ce6bd3952a09455",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "get-candidate",
+          "source": "#/paths/~1pets~1{petId}/get",
+          "transformation": "GET heuristic only, not confirmed observation or read-only guarantee"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:structure:1#observationCandidate> \"true\"^^<http://www.w3.org/2001/XMLSchema#boolean> ."
+    },
+    {
+      "assertion_id": "d2320dbf48f297616fabbf9c913d16aacb160a04b973d0fd428a4f5397b48e57",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/components/schemas/Pet/required",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <urn:eswc:aat:structure:1#required> \"[\\\"id\\\",\\\"name\\\"]\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "d234b549d3a20f4bdbbeb8096b66cac9ede8a5018ac66549b6c15ad111c540e1",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response",
+          "source": "#/paths/~1pets/post/responses/default",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> <urn:eswc:aat:structure:1#response> <urn:aat:extracted:b8f03fd84f211f87ddcc0119a6dcf596d3f655589fd2bae2234cd76a6e516308> ."
+    },
+    {
+      "assertion_id": "d46b8c658e554fa79e85e3da390032e303ede6e0dddfc52d4baa53f6abd94fd8",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "artifact-operation",
+          "source": "#/paths/~1pets/post",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <urn:eswc:aat:prototype:1#hasOperation> <urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> ."
+    },
+    {
+      "assertion_id": "d52e35a4e82830a07abc35a7aefaaf9aa9d79a3bda9461049e21a348b0b12ae3",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Error/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> <urn:eswc:aat:structure:1#schemaType> \"object\" ."
+    },
+    {
+      "assertion_id": "d56b1b8d3e3654c27df6c1aee25e2a8b015463cfd6f341e6fedbdbf5437c5f95",
+      "sources": [
+        {
+          "configuration_sha256": "16066e25b6320cb2ab348808ad515511aef33dd81ecf63e1088626bc80876925",
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONFIGURATION",
+          "extractor_version": "openapi-structure/1",
+          "rule": "configured-grounding",
+          "source": "config:thing",
+          "transformation": "Deployment-assigned identity; not inferred from API"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <urn:eswc:aat:prototype:1#represents> <urn:example:pets:thing> ."
+    },
+    {
+      "assertion_id": "d5c749c8eec012dacc35ace1bca672b4a9ec43ea3f4eabe6524b63d742b8ca93",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Pet/properties/tag/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:2fa628f8dc8d0aceba69d62aec2012661c99d46f96fa106367b6a78eaaa8fc5f> <urn:eswc:aat:structure:1#schemaType> \"string\" ."
+    },
+    {
+      "assertion_id": "d64147c358202ef9f5cd0b332edf85771fe1eec237dd30da92282614721ddd18",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "operation-type",
+          "source": "#/paths/~1pets/post",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c83928c235f506cb096bbecfe2828f3051af582cd0ab4ed0f9ce1efbc4d3e70c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Operation> ."
+    },
+    {
+      "assertion_id": "ddd5056265c7cce2dfc985d6e81d1d75a06fda0b40655cbf49e35bc622005ced",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "operation-identifier",
+          "source": "#/paths/~1pets~1{petId}/get/operationId",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:structure:1#operationId> \"showPetById\" ."
+    },
+    {
+      "assertion_id": "ddd9c692f2ad6fccb200a61dae76fb0e4d7ef7028f13eb5a9cad4b7172728d26",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-type",
+          "source": "#/paths/~1pets/post/responses/default/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:0397757b208b3f7aaa404f165474eb0ea9b90ef5262aee960942eade4d9e926c> <urn:eswc:aat:structure:1#mediaType> \"application/json\" ."
+    },
+    {
+      "assertion_id": "de59d116bfedb8f075a1c35e4a96cb5b7a7ca93b07ad9a93185ce504006ed573",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Error/properties/message",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:947468920ad36879b5077206207600fea8fa9173a8affb12a5d800b9c9bd4356> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"type\\\":\\\"string\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "e20ff07cc0382c3362086945144c05029f51c3e3a5634716cf42e89aa37adf35",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Error/properties/message",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:43083369ad702da0cae7d9462e1fbc578c7b0639ce2edd4d7727a36845233a8a> ."
+    },
+    {
+      "assertion_id": "e4cec1f0698e129a3234a2238dd8416cc4343a416d1541d766e8954b7c090a2e",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "artifact-operation",
+          "source": "#/paths/~1pets/get",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <urn:eswc:aat:prototype:1#hasOperation> <urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> ."
+    },
+    {
+      "assertion_id": "e53a0e3597a251595277cd50dd88a223a33896530edcdf74fd04db396cb5d456",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-property",
+          "source": "#/components/schemas/Pet/properties/tag",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:488e3aee79c1b647f9ba3996a2f593480d9e030608703fd2d23e00d73552dceb> <urn:eswc:aat:structure:1#property> <urn:aat:extracted:237593e3b35ac458af9452f8fade4267f1e1bec5f684d94df3822ffc2b9c71a0> ."
+    },
+    {
+      "assertion_id": "e63c2ae99a2ec59c7820d80cc1c9796aa2ebb6191abd7ae56916972dedd3725d",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-field",
+          "source": "#/paths/~1pets/get/parameters/0/name",
+          "transformation": "Exact documented field"
+        }
+      ],
+      "triple": "<urn:aat:extracted:c8c8d2cd0014f5b4d45f2aeb21deced9b2333100035a3998c637130ae941b3e8> <urn:eswc:aat:structure:1#name> \"limit\" ."
+    },
+    {
+      "assertion_id": "e7fa9c8658013097735c17a01dd71d636fd3e8026e37ead6e874f03417291ed9",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "local-reference",
+          "source": "#/paths/~1pets~1{petId}/get/responses/default/content/application~1json/schema/$ref",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> <urn:eswc:aat:structure:1#referenceTarget> \"#/components/schemas/Error\" ."
+    },
+    {
+      "assertion_id": "e7fc9bf7b1d7eb2dabc314869b563a07f327989441eed60221b9c89322b23e99",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-source",
+          "source": "#/components/schemas/Pet/properties/name",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:1301837a36febe237ec215b585062dbc2a8b6ae6caff1b5ef7375c4f406676eb> <urn:eswc:aat:structure:1#rawSchema> \"{\\\"type\\\":\\\"string\\\"}\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "e9e10ceda515f64434f8fec4c7df45af857bb0fdb775afc4d4c99a8fcc613f6a",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "response-status",
+          "source": "#/paths/~1pets~1{petId}/get/responses/default",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:b4b6d840be31c6dac287b09eeed5d54b9fd7879db31b072f7ee177e365ac54db> <urn:eswc:aat:structure:1#statusCode> \"default\" ."
+    },
+    {
+      "assertion_id": "eaa71fc39ed4c9c1bcdb0406d84ab8b95a97a3a29df32fa2aeade8d20a82c251",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-type",
+          "source": "#/paths/~1pets~1{petId}/get/responses/default/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:16c739980c36e733ac8666f68bfd92dd0a1baedb5069384d557d9e1886a87fa2> <urn:eswc:aat:structure:1#mediaType> \"application/json\" ."
+    },
+    {
+      "assertion_id": "eb1a455c46be7876cadd75bff808c7c02c87d5f75a8f4087cd80b41faf29c7e1",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "http-method",
+          "source": "#/paths/~1pets~1{petId}/get",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> <urn:eswc:aat:prototype:1#method> \"GET\" ."
+    },
+    {
+      "assertion_id": "ecb016aac768190f59ef205bc7a801f83580098f0a1aaf2daad193202a0c3fba",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-link",
+          "source": "#/paths/~1pets/get/parameters/0",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:27018c2c483789118b7c1c5034d57bf17e921ac60146f0b015f4317e8e538168> <urn:eswc:aat:structure:1#parameter> <urn:aat:extracted:c8c8d2cd0014f5b4d45f2aeb21deced9b2333100035a3998c637130ae941b3e8> ."
+    },
+    {
+      "assertion_id": "ecf1cc0cfb7c459c580a521cae1cd5ac6e34e11aab70a89d22aa5e54e3f057bd",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-link",
+          "source": "#/paths/~1pets~1{petId}/get/responses/default/content/application~1json",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:b4b6d840be31c6dac287b09eeed5d54b9fd7879db31b072f7ee177e365ac54db> <urn:eswc:aat:structure:1#content> <urn:aat:extracted:16c739980c36e733ac8666f68bfd92dd0a1baedb5069384d557d9e1886a87fa2> ."
+    },
+    {
+      "assertion_id": "ef65c0eba95e2fc2adccdb3d2f6dcdad9586d37ab6f49e29e1f8dd2e2ec697b4",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "media-schema",
+          "source": "#/paths/~1pets/get/responses/default/content/application~1json/schema",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:7cee5543fd42d73d5db1d54369d80a59a0c6f27543e8af9fe6b055e2507237b9> <urn:eswc:aat:structure:1#schema> <urn:aat:extracted:f3a19a57283953f2b9c2519d42b65be666ec1cd00d312d5f59a74a7a1e1f67f3> ."
+    },
+    {
+      "assertion_id": "f3a9d23a582732059f144ea2c892592ddf99366c0e830257c0af6a63a0acb7d4",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "local-reference",
+          "source": "#/paths/~1pets/get/responses/200/content/application~1json/schema/$ref",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:85d59992d855fbe507f431f985ddf2d3a8bcff9d2e43fe9320353d918562840f> <urn:eswc:aat:structure:1#referenceTarget> \"#/components/schemas/Pets\" ."
+    },
+    {
+      "assertion_id": "f617b10e491ae8f09b297b54f2bb8615ec3370bc187bad9e42c6d5d7c1759d07",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Error/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:4cc1b3b6e4ef526484957c785410574fd3dec5be6af441e39cc8c9d737e5e735> <urn:eswc:aat:structure:1#schemaType> \"object\" ."
+    },
+    {
+      "assertion_id": "f707fa7f4b3023b0705af99582cb486135fabe19cfaee636c08587f106b0177f",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "artifact-operation",
+          "source": "#/paths/~1pets~1{petId}/get",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:example:petstore:artifact> <urn:eswc:aat:prototype:1#hasOperation> <urn:aat:extracted:93048e7c4be2af9e238a9bca7b522ab9234bdbdcb228bd47af7ebccfb7b6b589> ."
+    },
+    {
+      "assertion_id": "fca0a00229c71edd9d0d6ec45ec09ea851fd91fe238d4eddcfac69866e6bb036",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-constraint",
+          "source": "#/components/schemas/Pet/properties/id/format",
+          "transformation": "Exact JSON constraint in declared OpenAPI dialect; no behavioral entailment"
+        }
+      ],
+      "triple": "<urn:aat:extracted:9c19c44ea35c1d85b4320f9a294cef0c0d365e1a9a9fd9c757f9fa18e060d55d> <urn:eswc:aat:structure:1#format> \"\\\"int64\\\"\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON> ."
+    },
+    {
+      "assertion_id": "fd23ebeeb0d91192724b8ed578637f817e50e2a25ec7d3826905992d67a1f73a",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "CONSTRAINT",
+          "extractor_version": "openapi-structure/1",
+          "rule": "schema-type",
+          "source": "#/components/schemas/Pet/type",
+          "transformation": "Exact documented fact"
+        }
+      ],
+      "triple": "<urn:aat:extracted:efc4d908329bbfe507c80fd382d1b120c410b78c3bebdfba8b074105c728b1e4> <urn:eswc:aat:structure:1#schemaType> \"object\" ."
+    },
+    {
+      "assertion_id": "fdc1955fe2efe7abd4899844e3cde41c323877f69d57d6323a886db103280dd1",
+      "sources": [
+        {
+          "document_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+          "evidence_class": "STRUCTURE",
+          "extractor_version": "openapi-structure/1",
+          "rule": "parameter-field",
+          "source": "#/paths/~1pets~1{petId}/get/parameters/0/required",
+          "transformation": "OpenAPI required defaults false when absent"
+        }
+      ],
+      "triple": "<urn:aat:extracted:f77cf6973cd8dccfd0aa6b832b69c43178e19eedcfc8697a8ef8c999c2fb8aae> <urn:eswc:aat:structure:1#required> \"true\"^^<http://www.w3.org/2001/XMLSchema#boolean> ."
+    }
+  ],
+  "extractor_version": "openapi-structure/1",
+  "source_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "QUARANTINED",
+  "executable": false,
+  "source_sha256": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+  "graph_sha256": "6c7da08666db73c6882b8336a15bb80f3fc9195b3e2a19a7c9d6b49c6b52b7a2",
+  "extractor_version": "openapi-structure/1.1",
+  "assertions": 142,
+  "diagnostics": [
+    {
+      "status": "UNKNOWN",
+      "code": "BEHAVIOR_UNKNOWN",
+      "source": "#",
+      "detail": "No Usage, readiness, effect, revision guarantee or frame inferred; behavioral review required"
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "FORMAT_ANNOTATION",
+      "source": "#/components/schemas/Error/properties/code/format",
+      "detail": "Format retained as annotation, not a validator"
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "FORMAT_ANNOTATION",
+      "source": "#/components/schemas/Pet/properties/id/format",
+      "detail": "Format retained as annotation, not a validator"
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "FORMAT_ANNOTATION",
+      "source": "#/paths/~1pets/get/parameters/0/schema/format",
+      "detail": "Format retained as annotation, not a validator"
+    },
+    {
+      "status": "UNSUPPORTED",
+      "code": "RESPONSE_HEADERS",
+      "source": "#/paths/~1pets/get/responses/200/headers",
+      "detail": "Header declarations retained, not mapped to runtime"
+    },
+    {
+      "status": "UNKNOWN",
+      "code": "SERVER_BINDING",
+      "source": "#/servers",
+      "detail": "Documented servers retained; explicit configuration is not proof of deployment compatibility"
+    }
+  ]
+}

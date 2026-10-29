@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "pyparsing": "3.3.3",
+    "rdflib": "7.6.0"
+  },
+  "extractor_version": "openapi-structure/1.1",
+  "human_active_minutes": null,
+  "python": "3.12.14",
+  "revision": "5883d4b1fee432af0fa31972d4ea69215b3efa10",
+  "source_hashes": {
+    "experiments/aat/acquisition.py": "3a033b9441dfc90e01a3260ff694d3fc479ff19df37d1939731c89282aecebed",
+    "experiments/aat/acquisition_evaluation.py": "10db4d24645074d0b64aec932d54567f0747a52fddaf2b9a5ee74d7549c580ee",
+    "experiments/aat/model.py": "b5afb7da14db55bae8a1b252418f4c342a30df882fb2efb95ecad24be226e9c5",
+    "experiments/aat/rdf.py": "8eda196fddb3c372750c835372e748e1a956504748711f822017d39025f4280b",
+    "experiments/aat/runtime.py": "a84d4783356ef27ed653204facd79576f463c627675bd48217b518b1bd2b2249",
+    "tests/aat/test_acquisition.py": "15e72e8a31ba68f3d886f2e6b562619890fd7a6ed56d206b556b72f11f1de86c"
+  },
+  "supervision_minutes": null,
+  "working_tree": ""
+}
