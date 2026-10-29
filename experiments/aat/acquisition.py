@@ -10,7 +10,7 @@ from .model import NS
 
 AA = Namespace(NS)
 SX = Namespace('urn:eswc:aat:structure:1#')
-VERSION = 'openapi-structure/1'
+VERSION = 'openapi-structure/1.1'
 MAX_BYTES, MAX_DEPTH, MAX_NODES, MAX_TRIPLES = 1048576, 32, 20000, 20000
 METHODS = {'get', 'put', 'post', 'delete', 'options', 'head', 'patch', 'trace'}
 
@@ -198,13 +198,13 @@ class Extractor:
         if not isinstance(d,dict) or not re.fullmatch(r'3\.[01]\.[0-9]+',str(d.get('openapi',''))): raise ValueError('Unsupported OpenAPI version')
         if not isinstance(d.get('info'),dict) or not all(isinstance(d['info'].get(k),str) for k in ('title','version')): raise ValueError('Missing info title/version')
         if not isinstance(d.get('paths'),dict) or not d['paths']: raise ValueError('Missing paths')
+        for key in d:
+            if key.startswith('x-'):self.problem('VENDOR_EXTENSION',pointer('#',key),'Source claim only; no inferred behavioral assertions')
         if 'webhooks' in d:self.problem('WEBHOOKS','#/webhooks','Not extracted')
         if 'jsonSchemaDialect' in d:self.problem('SCHEMA_DIALECT','#/jsonSchemaDialect','Custom dialect unsupported')
         def inspect_refs(value, path):
             if isinstance(value,dict):
                 if '$ref' in value:self.resolve(value,path)
-                for key in value:
-                    if key.startswith('x-'):self.problem('VENDOR_EXTENSION',pointer(path,key),'Source claim only; no inferred behavioral assertions')
                 for k,v in sorted(value.items()):inspect_refs(v,pointer(path,k))
             elif isinstance(value,list):
                 for i,v in enumerate(value):inspect_refs(v,pointer(path,i))
@@ -260,7 +260,7 @@ class Extractor:
                     if not re.fullmatch(r'[1-5][0-9]{2}|[1-5]XX|default',code): raise ValueError('Invalid response status')
                     response,rp=self.resolve(response,pointer(p+'/responses',code));rn=self.node(pointer(p+'/responses',code))
                     if not isinstance(response.get('description'),str):raise ValueError('Missing response description')
-                    self.add(node,SX.response,rn,rp,'response');self.add(rn,SX.statusCode,Literal(code),rp,'response-status')
+                    self.add(node,SX.response,rn,pointer(p+'/responses',code),'response');self.add(rn,SX.statusCode,Literal(code),pointer(p+'/responses',code),'response-status')
                     self.media(rn,response.get('content',{}),rp+'/content')
                     if 'headers' in response:
                         self.add(rn,SX.headers,Literal(canonical(response['headers']),datatype=RDF.JSON),rp+'/headers','response-headers')

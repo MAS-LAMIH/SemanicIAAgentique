@@ -99,6 +99,14 @@ class AcquisitionTests(unittest.TestCase):
         r,out=self.run_doc(d);self.assertEqual(r['status'],'QUARANTINED')
         g=Graph().parse(out/'structural.ttl',format='turtle');self.assertTrue(list(g.triples((None,SX.schemaType,None))))
 
+    def test_header_named_x_next_is_not_a_vendor_extension(self):
+        d=document();d['paths']['/x']['post']['responses']['200']['headers']={'x-next':{'description':'Next link','schema':{'type':'string'}}}
+        d['x-aat-effects']={'delta':1}
+        r,_=self.run_doc(d)
+        extensions=[x for x in r['diagnostics'] if x['code']=='VENDOR_EXTENSION']
+        self.assertEqual([x['source'] for x in extensions],['#/x-aat-effects'])
+        self.assertTrue(any(x['code']=='RESPONSE_HEADERS' for x in r['diagnostics']))
+
     def test_reference_metrics_detect_an_omitted_structural_assertion(self):
         from experiments.aat.acquisition_evaluation import reference_facts,graph_facts
         with tempfile.TemporaryDirectory() as d:
