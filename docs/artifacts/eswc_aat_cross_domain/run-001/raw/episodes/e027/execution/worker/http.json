@@ -1,0 +1,37 @@
+[
+  {
+    "at": "2026-10-29T16:42:18.996267+00:00",
+    "body": null,
+    "elapsed": 0.0021505449985852465,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 0,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2000-01-01T00:00:00+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

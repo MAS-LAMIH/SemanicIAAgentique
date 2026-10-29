@@ -1,0 +1,60 @@
+[
+  {
+    "at": "2026-10-29T16:43:29.344914+00:00",
+    "body": null,
+    "elapsed": 0.0023497020010836422,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-29T16:43:29.344529+00:00",
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:43:29.349633+00:00",
+    "body": null,
+    "elapsed": 0.0006523780029965565,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-29T16:43:29.349420+00:00",
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

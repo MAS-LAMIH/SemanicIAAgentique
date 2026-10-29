@@ -1,0 +1,136 @@
+[
+  {
+    "at": "2026-10-29T16:41:57.735660+00:00",
+    "body": null,
+    "elapsed": 0.002101941005093977,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-29T16:41:57.735371+00:00",
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:41:57.740305+00:00",
+    "body": null,
+    "elapsed": 0.0005895939975744113,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-29T16:41:57.740112+00:00",
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:41:57.744647+00:00",
+    "body": {
+      "expected_revision": 0
+    },
+    "elapsed": 0.000615333003224805,
+    "method": "POST",
+    "path": "/heat",
+    "result": {
+      "body": {
+        "revision": 1,
+        "temperature": 22
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 201
+    }
+  },
+  {
+    "at": "2026-10-29T16:41:57.745261+00:00",
+    "body": null,
+    "elapsed": 0.00045090599451214075,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 1,
+        "observed_at": "2026-10-29T16:41:57.745100+00:00",
+        "pending_requests": 0,
+        "requests": 1,
+        "revision": 1,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 22,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:41:57.746796+00:00",
+    "body": null,
+    "elapsed": 0.00048167200293391943,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 1,
+        "observed_at": "2026-10-29T16:41:57.746615+00:00",
+        "pending_requests": 0,
+        "requests": 1,
+        "revision": 1,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 22,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

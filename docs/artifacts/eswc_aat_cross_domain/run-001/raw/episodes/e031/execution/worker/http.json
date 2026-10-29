@@ -1,0 +1,107 @@
+[
+  {
+    "at": "2026-10-29T16:42:22.369503+00:00",
+    "body": null,
+    "elapsed": 0.0021554120030486956,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 0,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:22.369188+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:22.374389+00:00",
+    "body": null,
+    "elapsed": 0.000636184005998075,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 1,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:22.374166+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": false,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:22.376079+00:00",
+    "body": null,
+    "elapsed": 0.0007070699939504266,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 1,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:22.375865+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": false,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

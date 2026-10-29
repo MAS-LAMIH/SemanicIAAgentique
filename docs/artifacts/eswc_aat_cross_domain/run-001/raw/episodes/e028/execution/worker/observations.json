@@ -1,0 +1,28 @@
+[
+  {
+    "id": "urn:context:af18a1d3-8f58-420d-aabe-1707bb2e9a65",
+    "mutations": 0,
+    "observed_at": "2000-01-01T00:00:00+00:00",
+    "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2000-01-01T00:00:00+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+    "revision": 0,
+    "thing": "urn:example:cabinet:thing",
+    "values": [
+      [
+        "urn:example:cabinet:s0",
+        false
+      ],
+      [
+        "urn:example:cabinet:s1",
+        true
+      ],
+      [
+        "urn:example:cabinet:s2",
+        true
+      ],
+      [
+        "urn:example:cabinet:s3",
+        "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  }
+]

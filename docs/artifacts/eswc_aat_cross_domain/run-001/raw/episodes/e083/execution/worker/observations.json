@@ -1,0 +1,80 @@
+[
+  {
+    "id": "urn:context:42434407-96b6-48fa-9efd-a736b85fa820",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:43:27.258092+00:00",
+    "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:27.258092+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+    "revision": 0,
+    "thing": "urn:example:cabinet:thing",
+    "values": [
+      [
+        "urn:example:cabinet:s0",
+        false
+      ],
+      [
+        "urn:example:cabinet:s1",
+        true
+      ],
+      [
+        "urn:example:cabinet:s2",
+        true
+      ],
+      [
+        "urn:example:cabinet:s3",
+        "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  },
+  {
+    "id": "urn:context:078387b5-2171-4439-a193-dd7519a9a01e",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:43:27.263086+00:00",
+    "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:27.263086+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+    "revision": 1,
+    "thing": "urn:example:cabinet:thing",
+    "values": [
+      [
+        "urn:example:cabinet:s0",
+        false
+      ],
+      [
+        "urn:example:cabinet:s1",
+        false
+      ],
+      [
+        "urn:example:cabinet:s2",
+        true
+      ],
+      [
+        "urn:example:cabinet:s3",
+        "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  },
+  {
+    "id": "urn:context:211864a3-d412-481f-bc40-536e6e58048e",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:43:27.264511+00:00",
+    "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:27.264511+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+    "revision": 1,
+    "thing": "urn:example:cabinet:thing",
+    "values": [
+      [
+        "urn:example:cabinet:s0",
+        false
+      ],
+      [
+        "urn:example:cabinet:s1",
+        false
+      ],
+      [
+        "urn:example:cabinet:s2",
+        true
+      ],
+      [
+        "urn:example:cabinet:s3",
+        "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  }
+]

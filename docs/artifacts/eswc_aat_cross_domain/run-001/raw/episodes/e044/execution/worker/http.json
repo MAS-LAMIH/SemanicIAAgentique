@@ -1,0 +1,131 @@
+[
+  {
+    "at": "2026-10-29T16:42:33.453733+00:00",
+    "body": null,
+    "elapsed": 0.0024901829892769456,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 0,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:33.453325+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:33.458526+00:00",
+    "body": null,
+    "elapsed": 0.0006125689978944138,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 0,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:33.458301+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:33.462996+00:00",
+    "body": {
+      "guard": {
+        "generation": 0
+      }
+    },
+    "elapsed": 0.0006513059925055131,
+    "method": "PUT",
+    "path": "/cabinet/secure",
+    "result": {
+      "body": {
+        "latch": {
+          "secured": true
+        },
+        "receipt": {
+          "generation": 1
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:33.464244+00:00",
+    "body": null,
+    "elapsed": 0.0010679209954105318,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 1,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": false
+            }
+          },
+          "writes": 1
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:33.463978+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": true
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

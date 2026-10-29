@@ -1,0 +1,186 @@
+{
+  "accepted": false,
+  "after": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 1,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 1,
+      "secured": true,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 1
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    }
+  },
+  "before": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 0,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 0,
+      "secured": false,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 0
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    }
+  },
+  "calls": [
+    {
+      "body": {
+        "guard": {
+          "generation": 0
+        }
+      },
+      "method": "PUT",
+      "path": "/cabinet/secure"
+    }
+  ],
+  "case": "D12",
+  "condition": "S",
+  "domain": "cabinet",
+  "expected": {
+    "accepted": false,
+    "incorrect_transitions": 0,
+    "mutations": 1,
+    "native_goal": true,
+    "status": "UNCERTAIN_MUTATION"
+  },
+  "false_success": false,
+  "guards": [
+    "AUTHORIZED"
+  ],
+  "journal": [
+    {
+      "after": {
+        "door_closed": true,
+        "generation": 1,
+        "pending_requests": 1,
+        "ready": true,
+        "requests": 1,
+        "secured": true,
+        "unrelated": {
+          "asset": "manual",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "writes": 1
+      },
+      "at": "2026-10-29T16:42:58.323590+00:00",
+      "before": {
+        "door_closed": true,
+        "generation": 0,
+        "pending_requests": 1,
+        "ready": true,
+        "requests": 1,
+        "secured": false,
+        "unrelated": {
+          "asset": "manual",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "writes": 0
+      },
+      "body": {
+        "guard": {
+          "generation": 0
+        }
+      },
+      "kind": "request",
+      "path": "/cabinet/secure",
+      "status": 200
+    }
+  ],
+  "native": {
+    "external_changes": 0,
+    "frame_preserved": true,
+    "goal_state": true,
+    "incorrect_native_transitions": 0,
+    "mutations": 1,
+    "native_success": true,
+    "requests": 1,
+    "revision_accounted": true,
+    "unauthorized_mutations": 0
+  },
+  "other_unchanged": true,
+  "passed": true,
+  "process": {
+    "automated_runtime_seconds": 5.177849995001452,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-29T16:42:57.891272+00:00",
+    "exit_code": 0,
+    "pid": 127718,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-29T16:42:52.713427+00:00",
+    "status": "COMPLETED"
+  },
+  "recovery": {
+    "pending_at_stop": 1,
+    "settled": true,
+    "snapshot": {
+      "door_closed": true,
+      "generation": 1,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 1,
+      "secured": true,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 1
+    },
+    "state_uncertain": false,
+    "wait_seconds": 0.4339747710037045
+  },
+  "selection_correct": true,
+  "status": "UNCERTAIN_MUTATION",
+  "variant": "original",
+  "whole_seconds": 6.007265079999343,
+  "worker_seconds": 5.177849995001452
+}

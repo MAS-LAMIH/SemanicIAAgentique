@@ -1,0 +1,71 @@
+{
+  "authorship": "Proposed same-author virtual fixture; locked before native implementation and RDF Usages",
+  "faults": {
+    "frame": "Normal assignment but change unrelated.marker.untouched to false",
+    "stale": "Timestamp year2000",
+    "timeout": "Delay5.5 seconds then normal processing",
+    "unknown": "Omit readiness from observation only",
+    "wrong": "Return success and increment counters without changing secured"
+  },
+  "get": {
+    "door_closed": "/interlocks/door_closed",
+    "generation": "/audit/generation",
+    "identity": "/identity",
+    "path": "/cabinet/status",
+    "ready": "/interlocks/ready",
+    "secured": "/latch/secured",
+    "time": "/evidence/time",
+    "unrelated": "/audit/unrelated",
+    "writes": "/audit/writes"
+  },
+  "put": {
+    "effect": "Assign declared Boolean; generation and writes +1 even for same-value assignment; unrelated/interlocks preserved",
+    "paths": {
+      "/cabinet/release": false,
+      "/cabinet/secure": true
+    },
+    "preconditions": [
+      "ready true",
+      "door_closed true",
+      "atomic matching whole-Thing generation"
+    ],
+    "reply": {
+      "latch": {
+        "secured": "actual Boolean"
+      },
+      "receipt": {
+        "generation": "new integer"
+      }
+    },
+    "request": {
+      "guard": {
+        "generation": "current integer only"
+      }
+    },
+    "required": "Exactly guard.generation strict integer",
+    "statuses": {
+      "accepted": 200,
+      "conflict": 409,
+      "inapplicable": 422,
+      "invalid": 400
+    }
+  },
+  "scoring": "Native rules and journal, never RDF/mapping forecasts. Count actor transitions independently; external interventions explicitly authorized and separate. Goal secured==target AND door_closed true; no false success after effect/frame/unknown failures.",
+  "state": {
+    "door_closed": true,
+    "generation": 0,
+    "pending_requests": 0,
+    "ready": true,
+    "requests": 0,
+    "secured": false,
+    "unrelated": {
+      "asset": "manual",
+      "marker": {
+        "untouched": true
+      }
+    },
+    "writes": 0
+  },
+  "thing": "urn:example:cabinet:thing",
+  "version": "cabinet-native/1"
+}

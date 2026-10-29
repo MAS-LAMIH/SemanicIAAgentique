@@ -1,0 +1,166 @@
+[
+  {
+    "at": "2026-10-29T16:42:02.355553+00:00",
+    "body": null,
+    "elapsed": 0.002208532008808106,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 0,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:02.355251+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": true
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:02.360345+00:00",
+    "body": null,
+    "elapsed": 0.0005374259926611558,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 0,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 0
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:02.360149+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": true
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:02.364769+00:00",
+    "body": {
+      "guard": {
+        "generation": 0
+      }
+    },
+    "elapsed": 0.0005995790124870837,
+    "method": "PUT",
+    "path": "/cabinet/release",
+    "result": {
+      "body": {
+        "latch": {
+          "secured": false
+        },
+        "receipt": {
+          "generation": 1
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:02.365430+00:00",
+    "body": null,
+    "elapsed": 0.00044259299465920776,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 1,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:02.365254+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-29T16:42:02.367184+00:00",
+    "body": null,
+    "elapsed": 0.0006328480085358024,
+    "method": "GET",
+    "path": "/cabinet/status",
+    "result": {
+      "body": {
+        "audit": {
+          "generation": 1,
+          "unrelated": {
+            "asset": "manual",
+            "marker": {
+              "untouched": true
+            }
+          },
+          "writes": 1
+        },
+        "evidence": {
+          "time": "2026-10-29T16:42:02.366996+00:00"
+        },
+        "identity": "urn:example:cabinet:thing",
+        "interlocks": {
+          "door_closed": true,
+          "ready": true
+        },
+        "latch": {
+          "secured": false
+        }
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

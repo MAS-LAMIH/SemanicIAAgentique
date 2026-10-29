@@ -1,0 +1,934 @@
+{
+  "dispatches": 0,
+  "invocation": null,
+  "status": "NO_DIRECT_MATCH",
+  "transcript": [
+    {
+      "feedback": {
+        "code": "DISCOVERED"
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "discover"
+      },
+      "turn": 1,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [],
+        "discovered": false,
+        "feedback": [],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "code": "OBSERVED",
+        "context": {
+          "id": "urn:context:530f316d-9dbe-47e5-a3d6-7cb85cd6d16d",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:43:26.242781+00:00",
+          "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.242781+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 0,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              true
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      },
+      "turn": 2,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": false
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "code": "STALE_PROPOSAL",
+        "context": {
+          "id": "urn:context:3d16eb89-e059-4707-9bba-d49546cab747",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:43:26.247553+00:00",
+          "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.247553+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 1,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              false
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "guard": {
+        "code": "STALE_PROPOSAL",
+        "context": {
+          "id": "urn:context:3d16eb89-e059-4707-9bba-d49546cab747",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:43:26.247553+00:00",
+          "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.247553+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 1,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              false
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": "urn:example:cabinet:u0",
+        "snapshot_ref": "urn:context:530f316d-9dbe-47e5-a3d6-7cb85cd6d16d",
+        "tool": "use"
+      },
+      "turn": 3,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "TRUE",
+            "contributes": "TRUE",
+            "expected": [
+              [
+                "urn:example:cabinet:s0",
+                true
+              ],
+              [
+                "urn:example:cabinet:s1",
+                true
+              ],
+              [
+                "urn:example:cabinet:s2",
+                true
+              ],
+              [
+                "urn:example:cabinet:s3",
+                "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "reasons": []
+          },
+          {
+            "applicable": "TRUE",
+            "contributes": "FALSE",
+            "expected": [
+              [
+                "urn:example:cabinet:s0",
+                false
+              ],
+              [
+                "urn:example:cabinet:s1",
+                true
+              ],
+              [
+                "urn:example:cabinet:s2",
+                true
+              ],
+              [
+                "urn:example:cabinet:s3",
+                "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "reasons": []
+          }
+        ],
+        "context": {
+          "id": "urn:context:530f316d-9dbe-47e5-a3d6-7cb85cd6d16d",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:43:26.242781+00:00",
+          "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.242781+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 0,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              true
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": false
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:530f316d-9dbe-47e5-a3d6-7cb85cd6d16d",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:43:26.242781+00:00",
+              "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.242781+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+              "revision": 0,
+              "thing": "urn:example:cabinet:thing",
+              "values": [
+                [
+                  "urn:example:cabinet:s0",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s1",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s2",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s3",
+                  "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "FALSE"
+      }
+    },
+    {
+      "feedback": {
+        "code": "OBSERVED",
+        "context": {
+          "id": "urn:context:06cdc63d-6277-468b-a3ab-937fec4e629a",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:43:26.249349+00:00",
+          "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.249349+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 1,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              false
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      },
+      "turn": 4,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": false
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:530f316d-9dbe-47e5-a3d6-7cb85cd6d16d",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:43:26.242781+00:00",
+              "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.242781+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+              "revision": 0,
+              "thing": "urn:example:cabinet:thing",
+              "values": [
+                [
+                  "urn:example:cabinet:s0",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s1",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s2",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s3",
+                  "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "STALE_PROPOSAL",
+            "context": {
+              "id": "urn:context:3d16eb89-e059-4707-9bba-d49546cab747",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:43:26.247553+00:00",
+              "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.247553+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+              "revision": 1,
+              "thing": "urn:example:cabinet:thing",
+              "values": [
+                [
+                  "urn:example:cabinet:s0",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s1",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s2",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s3",
+                  "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "code": "NO_DIRECT_MATCH"
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "stop_no_match"
+      },
+      "turn": 5,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "FALSE",
+            "contributes": "FALSE",
+            "expected": [
+              [
+                "urn:example:cabinet:s0",
+                true
+              ],
+              [
+                "urn:example:cabinet:s1",
+                false
+              ],
+              [
+                "urn:example:cabinet:s2",
+                true
+              ],
+              [
+                "urn:example:cabinet:s3",
+                "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "reasons": []
+          },
+          {
+            "applicable": "FALSE",
+            "contributes": "FALSE",
+            "expected": [
+              [
+                "urn:example:cabinet:s0",
+                false
+              ],
+              [
+                "urn:example:cabinet:s1",
+                false
+              ],
+              [
+                "urn:example:cabinet:s2",
+                true
+              ],
+              [
+                "urn:example:cabinet:s3",
+                "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "reasons": []
+          }
+        ],
+        "context": {
+          "id": "urn:context:06cdc63d-6277-468b-a3ab-937fec4e629a",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:43:26.249349+00:00",
+          "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.249349+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 1,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              false
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": false
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s2",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:530f316d-9dbe-47e5-a3d6-7cb85cd6d16d",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:43:26.242781+00:00",
+              "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.242781+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+              "revision": 0,
+              "thing": "urn:example:cabinet:thing",
+              "values": [
+                [
+                  "urn:example:cabinet:s0",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s1",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s2",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s3",
+                  "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "STALE_PROPOSAL",
+            "context": {
+              "id": "urn:context:3d16eb89-e059-4707-9bba-d49546cab747",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:43:26.247553+00:00",
+              "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.247553+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+              "revision": 1,
+              "thing": "urn:example:cabinet:thing",
+              "values": [
+                [
+                  "urn:example:cabinet:s0",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s1",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s2",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s3",
+                  "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:06cdc63d-6277-468b-a3ab-937fec4e629a",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:43:26.249349+00:00",
+              "raw": "{\"audit\":{\"generation\":1,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:43:26.249349+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":false,\"ready\":true},\"latch\":{\"secured\":false}}",
+              "revision": 1,
+              "thing": "urn:example:cabinet:thing",
+              "values": [
+                [
+                  "urn:example:cabinet:s0",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s1",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s2",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s3",
+                  "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "FALSE"
+      }
+    }
+  ],
+  "verified": false
+}

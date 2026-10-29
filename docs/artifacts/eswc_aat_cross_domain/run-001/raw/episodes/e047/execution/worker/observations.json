@@ -1,0 +1,80 @@
+[
+  {
+    "id": "urn:context:e6038969-0648-4845-9ed6-05d095114e41",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:42:46.775282+00:00",
+    "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:42:46.775282+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+    "revision": 0,
+    "thing": "urn:example:cabinet:thing",
+    "values": [
+      [
+        "urn:example:cabinet:s0",
+        false
+      ],
+      [
+        "urn:example:cabinet:s1",
+        true
+      ],
+      [
+        "urn:example:cabinet:s2",
+        true
+      ],
+      [
+        "urn:example:cabinet:s3",
+        "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  },
+  {
+    "id": "urn:context:0b7d34ca-d696-4903-850e-b5fb7fa46640",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:42:46.780240+00:00",
+    "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:42:46.780240+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+    "revision": 0,
+    "thing": "urn:example:cabinet:thing",
+    "values": [
+      [
+        "urn:example:cabinet:s0",
+        false
+      ],
+      [
+        "urn:example:cabinet:s1",
+        true
+      ],
+      [
+        "urn:example:cabinet:s2",
+        true
+      ],
+      [
+        "urn:example:cabinet:s3",
+        "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  },
+  {
+    "id": "urn:context:f7d54fab-8cab-459e-bbd7-198355666e7b",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:42:51.791180+00:00",
+    "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:42:51.791180+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+    "revision": 0,
+    "thing": "urn:example:cabinet:thing",
+    "values": [
+      [
+        "urn:example:cabinet:s0",
+        false
+      ],
+      [
+        "urn:example:cabinet:s1",
+        true
+      ],
+      [
+        "urn:example:cabinet:s2",
+        true
+      ],
+      [
+        "urn:example:cabinet:s3",
+        "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  }
+]

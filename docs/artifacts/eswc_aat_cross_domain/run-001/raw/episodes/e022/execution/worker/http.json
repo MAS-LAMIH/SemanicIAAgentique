@@ -1,0 +1,30 @@
+[
+  {
+    "at": "2026-10-29T16:42:15.041868+00:00",
+    "body": null,
+    "elapsed": 0.0019139899959554896,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-29T16:42:15.041538+00:00",
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

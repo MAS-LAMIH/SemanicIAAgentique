@@ -1,0 +1,80 @@
+[
+  {
+    "id": "urn:context:299630db-b319-4322-8a87-5fda769b7a32",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:42:31.139187+00:00",
+    "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:31.139187+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+    "revision": 0,
+    "thing": "urn:example:room:thing",
+    "values": [
+      [
+        "urn:example:room:s0",
+        21
+      ],
+      [
+        "urn:example:room:s1",
+        true
+      ],
+      [
+        "urn:example:room:s2",
+        true
+      ],
+      [
+        "urn:example:room:s3",
+        "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  },
+  {
+    "id": "urn:context:fd1dbee9-5326-49a7-bb17-5e050857fe1c",
+    "mutations": 0,
+    "observed_at": "2026-10-29T16:42:31.144214+00:00",
+    "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:31.144214+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+    "revision": 0,
+    "thing": "urn:example:room:thing",
+    "values": [
+      [
+        "urn:example:room:s0",
+        21
+      ],
+      [
+        "urn:example:room:s1",
+        true
+      ],
+      [
+        "urn:example:room:s2",
+        true
+      ],
+      [
+        "urn:example:room:s3",
+        "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+      ]
+    ]
+  },
+  {
+    "id": "urn:context:6c8cec3d-6b9f-4ab7-8bca-82a772364485",
+    "mutations": 1,
+    "observed_at": "2026-10-29T16:42:31.149346+00:00",
+    "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":1,\"observed_at\":\"2026-10-29T16:42:31.149346+00:00\",\"pending_requests\":0,\"requests\":1,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":false}},\"temperature\":22,\"thing\":\"urn:example:room:thing\"}",
+    "revision": 1,
+    "thing": "urn:example:room:thing",
+    "values": [
+      [
+        "urn:example:room:s0",
+        22
+      ],
+      [
+        "urn:example:room:s1",
+        true
+      ],
+      [
+        "urn:example:room:s2",
+        true
+      ],
+      [
+        "urn:example:room:s3",
+        "{\"lamp\":\"off\",\"marker\":{\"untouched\":false}}"
+      ]
+    ]
+  }
+]

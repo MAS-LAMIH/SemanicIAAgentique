@@ -1,0 +1,8 @@
+test_harness_failures_are_retained_and_fail_summary (test_experiment.ExperimentTests.test_harness_failures_are_retained_and_fail_summary) ... ok
+test_invalid_selection_creates_nothing (test_experiment.ExperimentTests.test_invalid_selection_creates_nothing) ... ok
+test_repetitions_exports_and_read_only_regeneration (test_experiment.ExperimentTests.test_repetitions_exports_and_read_only_regeneration) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 12.199s
+
+OK

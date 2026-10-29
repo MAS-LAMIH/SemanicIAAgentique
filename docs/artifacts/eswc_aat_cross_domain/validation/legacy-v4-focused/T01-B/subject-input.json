@@ -1,0 +1,14 @@
+{
+  "condition": "B",
+  "description": "/workspace/SemanicIAAgentique/v4/descriptions/a.json",
+  "origin": "http://127.0.0.1:33065",
+  "output": "/workspace/aat-v4-focused-regression-001/T01-B",
+  "provider": "a",
+  "unsupported": false,
+  "values": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Team meeting"
+  },
+  "wire_fault": null
+}

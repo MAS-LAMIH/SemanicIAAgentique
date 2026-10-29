@@ -1,0 +1,135 @@
+{
+  "artifact": "urn:example:cabinet:artifact",
+  "thing": "urn:example:cabinet:thing",
+  "observation": "/cabinet/status",
+  "identity": "/identity",
+  "timestamp": "/evidence/time",
+  "revision": "/audit/generation",
+  "mutations": "/audit/writes",
+  "source_hash": "bfdc47024968b4804b1fb38f73552282c1a71bd08c9090b671f53da39e76b5e4",
+  "review_hash": "e0ff194d14906d99e5c5471c90b18dba27bc8c5ec3999ce9780ad0bc473ef29f",
+  "slots": [
+    {
+      "id": "urn:example:cabinet:s0",
+      "property": "urn:example:cabinet:secured",
+      "kind": "Bool",
+      "pointer": "/latch/secured"
+    },
+    {
+      "id": "urn:example:cabinet:s1",
+      "property": "urn:example:cabinet:doorClosed",
+      "kind": "Bool",
+      "pointer": "/interlocks/door_closed"
+    },
+    {
+      "id": "urn:example:cabinet:s2",
+      "property": "urn:example:cabinet:ready",
+      "kind": "Bool",
+      "pointer": "/interlocks/ready"
+    },
+    {
+      "id": "urn:example:cabinet:s3",
+      "property": "urn:example:cabinet:unrelated",
+      "kind": "JSON",
+      "pointer": "/audit/unrelated"
+    }
+  ],
+  "operations": [
+    {
+      "id": "urn:example:cabinet:o0",
+      "method": "PUT",
+      "path": "/cabinet/secure",
+      "body": {
+        "guard": {
+          "generation": null
+        }
+      },
+      "request_revision": "/guard/generation",
+      "response_revision": "/receipt/generation",
+      "status": 200,
+      "echoes": [
+        [
+          "/latch/secured",
+          "urn:example:cabinet:s0"
+        ]
+      ]
+    },
+    {
+      "id": "urn:example:cabinet:o1",
+      "method": "PUT",
+      "path": "/cabinet/release",
+      "body": {
+        "guard": {
+          "generation": null
+        }
+      },
+      "request_revision": "/guard/generation",
+      "response_revision": "/receipt/generation",
+      "status": 200,
+      "echoes": [
+        [
+          "/latch/secured",
+          "urn:example:cabinet:s0"
+        ]
+      ]
+    }
+  ],
+  "usages": [
+    {
+      "id": "urn:example:cabinet:u0",
+      "operation": "urn:example:cabinet:o0",
+      "pre": [
+        {
+          "kind": "Equal",
+          "slot": "urn:example:cabinet:s1",
+          "value": true
+        },
+        {
+          "kind": "Equal",
+          "slot": "urn:example:cabinet:s2",
+          "value": true
+        }
+      ],
+      "effects": [
+        {
+          "kind": "SetBool",
+          "slot": "urn:example:cabinet:s0",
+          "value": true
+        }
+      ],
+      "frame": [
+        "urn:example:cabinet:s1",
+        "urn:example:cabinet:s2",
+        "urn:example:cabinet:s3"
+      ]
+    },
+    {
+      "id": "urn:example:cabinet:u1",
+      "operation": "urn:example:cabinet:o1",
+      "pre": [
+        {
+          "kind": "Equal",
+          "slot": "urn:example:cabinet:s1",
+          "value": true
+        },
+        {
+          "kind": "Equal",
+          "slot": "urn:example:cabinet:s2",
+          "value": true
+        }
+      ],
+      "effects": [
+        {
+          "kind": "SetBool",
+          "slot": "urn:example:cabinet:s0",
+          "value": false
+        }
+      ],
+      "frame": [
+        "urn:example:cabinet:s1",
+        "urn:example:cabinet:s2",
+        "urn:example:cabinet:s3"
+      ]
+    }
+  ]
+}

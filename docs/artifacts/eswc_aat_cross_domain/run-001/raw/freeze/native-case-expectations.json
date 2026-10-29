@@ -1,0 +1,440 @@
+{
+  "admission_controls": [
+    "predicate",
+    "effect",
+    "subject",
+    "type_unit",
+    "duplicate_write",
+    "frame_missing",
+    "frame_overlap",
+    "binding",
+    "source_hash",
+    "unreviewed"
+  ],
+  "budgets": {
+    "dispatches": 1,
+    "http_seconds": 5,
+    "outer_seconds": 60,
+    "settle_seconds": 1.5,
+    "turns": 6
+  },
+  "core": [
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D01",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D01",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D02",
+      "initial_secured": true,
+      "initial_temperature": 23,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": false
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D02",
+      "initial_secured": true,
+      "initial_temperature": 23,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": false
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D03",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D03",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D04",
+      "initial_secured": true,
+      "initial_temperature": 22,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D04",
+      "initial_secured": true,
+      "initial_temperature": 22,
+      "intervention": null,
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "NO_DIRECT_MATCH"
+      },
+      "id": "D05",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "normal",
+      "ready": false,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "NO_DIRECT_MATCH"
+      },
+      "id": "D05",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "normal",
+      "ready": false,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "UNKNOWN_CONTEXT"
+      },
+      "id": "D06",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "unknown",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "UNKNOWN_CONTEXT"
+      },
+      "id": "D06",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "unknown",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "UNKNOWN_CONTEXT"
+      },
+      "id": "D07",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "stale",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "UNKNOWN_CONTEXT"
+      },
+      "id": "D07",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "stale",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": true,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "SUCCESS"
+      },
+      "id": "D08",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": "context",
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "NO_DIRECT_MATCH"
+      },
+      "id": "D08",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": "context",
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "CONFLICT"
+      },
+      "id": "D09",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": "revision",
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 0,
+        "native_goal": false,
+        "status": "CONFLICT"
+      },
+      "id": "D09",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": "revision",
+      "mode": "normal",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 1,
+        "mutations": 1,
+        "native_goal": false,
+        "status": "POSTCONDITION_FAILED"
+      },
+      "id": "D10",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "wrong",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 1,
+        "mutations": 1,
+        "native_goal": false,
+        "status": "POSTCONDITION_FAILED"
+      },
+      "id": "D10",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "wrong",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 1,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "POSTCONDITION_FAILED"
+      },
+      "id": "D11",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "frame",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 1,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "POSTCONDITION_FAILED"
+      },
+      "id": "D11",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "frame",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "room",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "UNCERTAIN_MUTATION"
+      },
+      "id": "D12",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "timeout",
+      "ready": true,
+      "target_secured": true
+    },
+    {
+      "domain": "cabinet",
+      "expected": {
+        "accepted": false,
+        "incorrect_transitions": 0,
+        "mutations": 1,
+        "native_goal": true,
+        "status": "UNCERTAIN_MUTATION"
+      },
+      "id": "D12",
+      "initial_secured": false,
+      "initial_temperature": 21,
+      "intervention": null,
+      "mode": "timeout",
+      "ready": true,
+      "target_secured": true
+    }
+  ],
+  "invariance_variants": [
+    "statement_source_order",
+    "opaque_identifiers",
+    "registration_order"
+  ],
+  "offline_admission_controls": 20,
+  "order": "D01..D12; room then cabinet; condition S/P on odd families, P/S on even; variants D01,D02,D08 \u00d73; extra conflicting-candidate cases \u00d72domains\u00d72conditions",
+  "repetitions": 1,
+  "runtime_records": 88
+}

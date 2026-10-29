@@ -1,0 +1,27 @@
+{
+  "condition": "A",
+  "contamination": "permission",
+  "duration_seconds": 0.000603936001425609,
+  "initial_native": {
+    "events": {
+      "existing": {
+        "end_time": "2030-01-07T09:00:00+00:00",
+        "id": "existing",
+        "metadata": {
+          "sentinel": true
+        },
+        "start_time": "2030-01-07T08:00:00+00:00",
+        "title": "Preserve me"
+      }
+    },
+    "mutation_calls": 0,
+    "observed_at": "2026-10-29T16:40:32.572176+00:00",
+    "provider": "a",
+    "revision": 0,
+    "writable": false
+  },
+  "provider": "a",
+  "status": "RESET_REJECTED",
+  "subject_launched": false,
+  "task_id": "T01"
+}

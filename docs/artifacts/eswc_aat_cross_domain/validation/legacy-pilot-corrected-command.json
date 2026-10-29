@@ -1,0 +1,8 @@
+{
+  "command": "V4_PILOT_FOCUSED_OUTPUT=/workspace/aat-v4-focused-regression-001 PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/v4_pilot -v",
+  "exit_code": 0,
+  "tests": 6,
+  "unittest_seconds": 16.245,
+  "wall_seconds": null,
+  "reason": "Documented fresh output path after original no-overwrite refusal; original failure retained"
+}

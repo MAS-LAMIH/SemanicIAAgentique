@@ -1,0 +1,44 @@
+[
+  {
+    "suite": "semantic_action",
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/semantic_action -v",
+    "exit_code": 0,
+    "wall_seconds": 201.341379082005
+  },
+  {
+    "suite": "v4",
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/v4 -v",
+    "exit_code": 0,
+    "wall_seconds": 28.587531152006704
+  },
+  {
+    "suite": "v4_pilot",
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/v4_pilot -v",
+    "exit_code": 1,
+    "wall_seconds": 0.22688481399382
+  },
+  {
+    "suite": "v4_experiment",
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/v4_experiment -v",
+    "exit_code": 0,
+    "wall_seconds": 12.338679370004684
+  },
+  {
+    "suite": "goal_choice",
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/goal_choice -v",
+    "exit_code": 0,
+    "wall_seconds": 7.704766159004066
+  },
+  {
+    "suite": "aat",
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/aat -v",
+    "exit_code": 0,
+    "wall_seconds": 9.861903961995267
+  },
+  {
+    "suite": "aat_reusable",
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/aat_reusable -v",
+    "exit_code": 0,
+    "wall_seconds": 7.457763628000976
+  }
+]

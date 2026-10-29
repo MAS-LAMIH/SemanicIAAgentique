@@ -1,0 +1,13 @@
+{
+  "graphs": [
+    {
+      "approved_hash": "a0053c5834a6a0408ea9b4eb1ec91abdc9e411153edd936e47c2297b8b8d3c9a",
+      "path": "/workspace/aat-reusable-ambiguity-smoke/roomP/room.ttl"
+    },
+    {
+      "approved_hash": "3429ca41682e2782f36e8199f92f65cee1aedd380200b4c7a3f915d95ccceae7",
+      "path": "/workspace/aat-reusable-ambiguity-smoke/roomP/cabinet.ttl"
+    }
+  ],
+  "scope": "Task-authorized same-author controlled experiment; not independent human review"
+}

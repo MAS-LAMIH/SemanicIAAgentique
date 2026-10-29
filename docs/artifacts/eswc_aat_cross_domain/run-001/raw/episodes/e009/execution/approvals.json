@@ -1,0 +1,13 @@
+{
+  "graphs": [
+    {
+      "approved_hash": "323eb81e050f323c61c81843ae3d3367a69987a2cce64fcbe13abe4599265497",
+      "path": "/workspace/aat-cross-domain-run-001/raw/episodes/e009/room.ttl"
+    },
+    {
+      "approved_hash": "3429ca41682e2782f36e8199f92f65cee1aedd380200b4c7a3f915d95ccceae7",
+      "path": "/workspace/aat-cross-domain-run-001/raw/episodes/e009/cabinet.ttl"
+    }
+  ],
+  "scope": "Task-authorized same-author controlled experiment; not independent human review"
+}

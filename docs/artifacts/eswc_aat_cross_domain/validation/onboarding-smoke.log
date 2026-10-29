@@ -1,0 +1,7 @@
+D01 S original SUCCESS True
+D02 P original SUCCESS True
+D08 S original NO_DIRECT_MATCH True
+D03 P original SUCCESS True
+D01 S opaque_identifiers SUCCESS True
+D01 P registration_order SUCCESS True
+{'shared_unchanged': True, 'repository_paths': 9, 'installed_paths': 195}

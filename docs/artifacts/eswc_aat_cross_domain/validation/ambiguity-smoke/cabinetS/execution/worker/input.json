@@ -1,0 +1,39 @@
+{
+  "goal": {
+    "clauses": [
+      {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s0",
+        "unit": null,
+        "upper": null,
+        "value": true
+      },
+      {
+        "kind": "Equal",
+        "slot": "urn:example:cabinet:s1",
+        "unit": null,
+        "upper": null,
+        "value": true
+      }
+    ],
+    "max_age": 10.0,
+    "thing": "urn:example:cabinet:thing"
+  },
+  "graphs": [
+    {
+      "approved_hash": "323eb81e050f323c61c81843ae3d3367a69987a2cce64fcbe13abe4599265497",
+      "path": "/workspace/aat-reusable-ambiguity-smoke/cabinetS/room.ttl"
+    },
+    {
+      "approved_hash": "5927c84909050abd0ac3ba9ceeeda8fccb2bcd109f0520747158725a196d124e",
+      "path": "/workspace/aat-reusable-ambiguity-smoke/cabinetS/cabinet.ttl"
+    }
+  ],
+  "irrelevant_first": false,
+  "knowledge": null,
+  "origins": {
+    "urn:example:cabinet:artifact": "http://127.0.0.1:41145",
+    "urn:example:room:artifact": "http://127.0.0.1:36897"
+  },
+  "reverse_registration": false
+}

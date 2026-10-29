@@ -1,0 +1,198 @@
+test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) ... 
+  test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='normal') ... ERROR
+  test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=23, mode='normal') ... ERROR
+  test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=22, mode='normal') ... ERROR
+  test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='unknown') ... ERROR
+  test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='stale') ... ERROR
+  test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='wrong') ... ERROR
+  test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='frame') ... ERROR
+test_arithmetic_truth_unknown_overflow_and_no_hidden_baseline_semantics (test_profile.Tests.test_arithmetic_truth_unknown_overflow_and_no_hidden_baseline_semantics) ... ERROR
+test_conflicting_candidates_abstain_for_semantic_and_local_assessments (test_profile.Tests.test_conflicting_candidates_abstain_for_semantic_and_local_assessments) ... ERROR
+test_invalid_graphs_and_missing_approval_fail_closed (test_profile.Tests.test_invalid_graphs_and_missing_approval_fail_closed) ... ok
+test_stale_reconsideration_wrong_proposal_permit_and_false_finish (test_profile.Tests.test_stale_reconsideration_wrong_proposal_permit_and_false_finish) ... ERROR
+test_synthetic_boolean_assignment_and_conjunctive_goals (test_profile.Tests.test_synthetic_boolean_assignment_and_conjunctive_goals) ... ok
+
+======================================================================
+ERROR: test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='normal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 56, in test_actual_room_heat_cool_finish_frame_fault_and_unknown
+    c=catalog();r=Runtime(c,origin,goal(c),d);r.barrier=lambda *args:None;result=r.run();self.assertEqual(result['status'],expected)
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=23, mode='normal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 56, in test_actual_room_heat_cool_finish_frame_fault_and_unknown
+    c=catalog();r=Runtime(c,origin,goal(c),d);r.barrier=lambda *args:None;result=r.run();self.assertEqual(result['status'],expected)
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=22, mode='normal')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 56, in test_actual_room_heat_cool_finish_frame_fault_and_unknown
+    c=catalog();r=Runtime(c,origin,goal(c),d);r.barrier=lambda *args:None;result=r.run();self.assertEqual(result['status'],expected)
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 56, in test_actual_room_heat_cool_finish_frame_fault_and_unknown
+    c=catalog();r=Runtime(c,origin,goal(c),d);r.barrier=lambda *args:None;result=r.run();self.assertEqual(result['status'],expected)
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='stale')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 56, in test_actual_room_heat_cool_finish_frame_fault_and_unknown
+    c=catalog();r=Runtime(c,origin,goal(c),d);r.barrier=lambda *args:None;result=r.run();self.assertEqual(result['status'],expected)
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='wrong')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 56, in test_actual_room_heat_cool_finish_frame_fault_and_unknown
+    c=catalog();r=Runtime(c,origin,goal(c),d);r.barrier=lambda *args:None;result=r.run();self.assertEqual(result['status'],expected)
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) (t=21, mode='frame')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 56, in test_actual_room_heat_cool_finish_frame_fault_and_unknown
+    c=catalog();r=Runtime(c,origin,goal(c),d);r.barrier=lambda *args:None;result=r.run();self.assertEqual(result['status'],expected)
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_arithmetic_truth_unknown_overflow_and_no_hidden_baseline_semantics (test_profile.Tests.test_arithmetic_truth_unknown_overflow_and_no_hidden_baseline_semantics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 17, in test_arithmetic_truth_unknown_overflow_and_no_hidden_baseline_semantics
+    c=catalog();s=next(s for s in c.slots if s.kind=='Int');ctx=Snapshot('x',c.thing,tuple((s.id,21 if s.kind=='Int' else True if s.kind=='Bool' else '{}') for s in c.slots),0,0,now(),'{}')
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_conflicting_candidates_abstain_for_semantic_and_local_assessments (test_profile.Tests.test_conflicting_candidates_abstain_for_semantic_and_local_assessments)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 74, in test_conflicting_candidates_abstain_for_semantic_and_local_assessments
+    c=catalog();target=next(s.id for s in c.slots if s.kind=='Int');flag=next(s.id for s in c.slots if s.pointer=='/heater_ready')
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+======================================================================
+ERROR: test_stale_reconsideration_wrong_proposal_permit_and_false_finish (test_profile.Tests.test_stale_reconsideration_wrong_proposal_permit_and_false_finish)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 60, in test_stale_reconsideration_wrong_proposal_permit_and_false_finish
+    c=catalog();r=Runtime(c,origin,goal(c),d);changed=[]
+      ^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/tests/aat_reusable/test_profile.py", line 12, in catalog
+    def catalog():return load(D/'room.ttl',sha(D/'room.ttl'))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 202, in load
+    lo=one(c,U.lower,int);hi=one(c,U.upper,int)
+       ^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/experiments/aat_reusable/profile.py", line 126, in one
+    if len(vs)!=1:raise ValueError('Missing/ambiguous '+str(p))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing/ambiguous <built-in method lower of Namespace object at 0x7fcad98a7cb0>
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.130s
+
+FAILED (errors=10)

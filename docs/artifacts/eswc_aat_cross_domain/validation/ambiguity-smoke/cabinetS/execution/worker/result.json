@@ -1,0 +1,478 @@
+{
+  "dispatches": 0,
+  "invocation": null,
+  "status": "AMBIGUOUS",
+  "transcript": [
+    {
+      "feedback": {
+        "code": "DISCOVERED"
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "discover"
+      },
+      "turn": 1,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [],
+        "discovered": false,
+        "feedback": [],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "code": "OBSERVED",
+        "context": {
+          "id": "urn:context:df69ae68-ddfa-413a-8106-e6bc2d1e7b04",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:35:28.584513+00:00",
+          "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:35:28.584513+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 0,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              true
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      },
+      "turn": 2,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              },
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "value": true
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              },
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "value": false
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "code": "AMBIGUOUS",
+        "context": {
+          "id": "urn:context:c7dd9585-097e-40cf-8f5d-d9de9b8c2f74",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:35:28.589614+00:00",
+          "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:35:28.589614+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 0,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              true
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "guard": {
+        "code": "AMBIGUOUS",
+        "context": {
+          "id": "urn:context:c7dd9585-097e-40cf-8f5d-d9de9b8c2f74",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:35:28.589614+00:00",
+          "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:35:28.589614+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 0,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              true
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": "urn:example:cabinet:u0",
+        "snapshot_ref": "urn:context:df69ae68-ddfa-413a-8106-e6bc2d1e7b04",
+        "tool": "use"
+      },
+      "turn": 3,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "TRUE",
+            "contributes": "TRUE",
+            "expected": [
+              [
+                "urn:example:cabinet:s0",
+                true
+              ],
+              [
+                "urn:example:cabinet:s1",
+                true
+              ],
+              [
+                "urn:example:cabinet:s2",
+                true
+              ],
+              [
+                "urn:example:cabinet:s3",
+                "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "reasons": []
+          },
+          {
+            "applicable": "TRUE",
+            "contributes": "TRUE",
+            "expected": [
+              [
+                "urn:example:cabinet:s0",
+                true
+              ],
+              [
+                "urn:example:cabinet:s1",
+                true
+              ],
+              [
+                "urn:example:cabinet:s2",
+                false
+              ],
+              [
+                "urn:example:cabinet:s3",
+                "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "reasons": []
+          }
+        ],
+        "context": {
+          "id": "urn:context:df69ae68-ddfa-413a-8106-e6bc2d1e7b04",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:35:28.584513+00:00",
+          "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:35:28.584513+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+          "revision": 0,
+          "thing": "urn:example:cabinet:thing",
+          "values": [
+            [
+              "urn:example:cabinet:s0",
+              false
+            ],
+            [
+              "urn:example:cabinet:s1",
+              true
+            ],
+            [
+              "urn:example:cabinet:s2",
+              true
+            ],
+            [
+              "urn:example:cabinet:s3",
+              "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              },
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "value": true
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u0",
+            "operation": "urn:example:cabinet:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s0",
+                "unit": null,
+                "value": true
+              },
+              {
+                "kind": "SetBool",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "value": false
+              }
+            ],
+            "frame": [
+              "urn:example:cabinet:s1",
+              "urn:example:cabinet:s3"
+            ],
+            "id": "urn:example:cabinet:u1",
+            "operation": "urn:example:cabinet:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "Equal",
+                "slot": "urn:example:cabinet:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:df69ae68-ddfa-413a-8106-e6bc2d1e7b04",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:35:28.584513+00:00",
+              "raw": "{\"audit\":{\"generation\":0,\"unrelated\":{\"asset\":\"manual\",\"marker\":{\"untouched\":true}},\"writes\":0},\"evidence\":{\"time\":\"2026-10-29T16:35:28.584513+00:00\"},\"identity\":\"urn:example:cabinet:thing\",\"interlocks\":{\"door_closed\":true,\"ready\":true},\"latch\":{\"secured\":false}}",
+              "revision": 0,
+              "thing": "urn:example:cabinet:thing",
+              "values": [
+                [
+                  "urn:example:cabinet:s0",
+                  false
+                ],
+                [
+                  "urn:example:cabinet:s1",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s2",
+                  true
+                ],
+                [
+                  "urn:example:cabinet:s3",
+                  "{\"asset\":\"manual\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s0",
+              "unit": null,
+              "upper": null,
+              "value": true
+            },
+            {
+              "kind": "Equal",
+              "slot": "urn:example:cabinet:s1",
+              "unit": null,
+              "upper": null,
+              "value": true
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:cabinet:thing"
+        },
+        "goal_truth": "FALSE"
+      }
+    }
+  ],
+  "verified": false
+}
