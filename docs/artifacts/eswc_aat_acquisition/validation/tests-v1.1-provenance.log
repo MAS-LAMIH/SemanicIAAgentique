@@ -1,0 +1,15 @@
+test_byte_and_depth_limits_duplicate_keys_and_no_overwrite (test_acquisition.AcquisitionTests.test_byte_and_depth_limits_duplicate_keys_and_no_overwrite) ... ok
+test_determinism_and_document_key_reordering (test_acquisition.AcquisitionTests.test_determinism_and_document_key_reordering) ... ok
+test_header_named_x_next_is_not_a_vendor_extension (test_acquisition.AcquisitionTests.test_header_named_x_next_is_not_a_vendor_extension) ... ok
+test_invalid_versions_and_missing_ambiguous_bindings (test_acquisition.AcquisitionTests.test_invalid_versions_and_missing_ambiguous_bindings) ... ok
+test_local_pointer_escaping_and_parameter_inheritance (test_acquisition.AcquisitionTests.test_local_pointer_escaping_and_parameter_inheritance) ... ok
+test_openapi_dialect_constraints_are_distinct (test_acquisition.AcquisitionTests.test_openapi_dialect_constraints_are_distinct) ... ok
+test_pinned_documents_quarantined_and_rejected_by_runtime (test_acquisition.AcquisitionTests.test_pinned_documents_quarantined_and_rejected_by_runtime) ... ok
+test_reference_metrics_detect_an_omitted_structural_assertion (test_acquisition.AcquisitionTests.test_reference_metrics_detect_an_omitted_structural_assertion) ... ok
+test_remote_cyclic_and_missing_references_reject_without_network (test_acquisition.AcquisitionTests.test_remote_cyclic_and_missing_references_reject_without_network) ... ok
+test_unsupported_composition_auth_serialization_and_behavior_not_flattened (test_acquisition.AcquisitionTests.test_unsupported_composition_auth_serialization_and_behavior_not_flattened) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.067s
+
+OK

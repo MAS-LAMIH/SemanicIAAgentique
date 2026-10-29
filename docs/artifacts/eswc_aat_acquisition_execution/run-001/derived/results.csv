@@ -1,0 +1,12 @@
+case,representation,status,choices,accepted,worker_launched,mutations,final_temperature,passed
+R01,manual,SUCCESS,['/heat'],True,True,1,22,True
+R01,acquired,SUCCESS,['/heat'],True,True,1,22,True
+R02,manual,SUCCESS,['/cool'],True,True,1,22,True
+R02,acquired,SUCCESS,['/cool'],True,True,1,22,True
+R03,manual,SUCCESS,"['/heat', '/cool']",True,True,1,22,True
+R03,acquired,SUCCESS,"['/heat', '/cool']",True,True,1,22,True
+R04,manual,SUCCESS,[],True,True,0,22,True
+R04,acquired,SUCCESS,[],True,True,0,22,True
+control-unknown,acquired,QUARANTINED,[],False,False,0,21,True
+control-unsupported,acquired,QUARANTINED,[],False,False,0,21,True
+control-wrong-supported,acquired,POSTCONDITION_FAILED,['/cool'],False,True,1,20,True

@@ -1,0 +1,82 @@
+{
+  "artifact": "urn:example:room:artifact",
+  "native_source_sha256": "e657700f20b08a2d775ecf140fae839416f2fff351a2d5dfd90c0336e666f82d",
+  "observation": {
+    "fields": {
+      "cooler_ready": "urn:eswc:aat:prototype:1#coolerReady",
+      "heater_ready": "urn:eswc:aat:prototype:1#heaterReady",
+      "mutations": "urn:eswc:aat:prototype:1#mutationCount",
+      "observed_at": "urn:eswc:aat:prototype:1#observedAt",
+      "revision": "urn:eswc:aat:prototype:1#revision",
+      "sentinels": "urn:eswc:aat:prototype:1#sentinels",
+      "temperature": "urn:eswc:aat:prototype:1#temperatureC",
+      "thing": "urn:eswc:aat:prototype:1#subject"
+    },
+    "operation": "urn:aat:extracted:ec99d62a4cb5bbb9cdf85ed30d3aa923f4bbb7682e11cb3e7d9f83ddd8f0fd47"
+  },
+  "provenance_sha256": "c34fcc7634d74006688959dc45887db7f194fcccd6c77160c497841230300f9c",
+  "review": {
+    "reference": "native-room-contract/1; reviewed completion/1",
+    "reviewer": "Codex; same-author native-source review",
+    "scope": "Task-authorized controlled room experiment, not independent human review or scientific freeze approval; loopback ephemeral deployment of pinned native fixture only",
+    "status": "reviewed"
+  },
+  "source_sha256": "417118f60c367f670e35b5ae15a7c8f3740d9d6b4f0e51300b9a39715c1b5db0",
+  "structural_sha256": "3f9a5521f9e30a1b4cbba6926b99231f5f9ed2554d97a53efc3dbb41eb28d81a",
+  "thing": "urn:example:room:thing",
+  "usages": [
+    {
+      "frame": [
+        "urn:eswc:aat:prototype:1#heaterReady",
+        "urn:eswc:aat:prototype:1#coolerReady",
+        "urn:eswc:aat:prototype:1#sentinels"
+      ],
+      "id": "urn:aat:completed:usage0",
+      "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+      "post": {
+        "delta": 2,
+        "mutation_increment": 1,
+        "property": "urn:eswc:aat:prototype:1#temperatureC",
+        "revision_increment": 1,
+        "rule": "urn:eswc:aat:prototype:1#addInteger",
+        "subject": "urn:example:room:thing"
+      },
+      "pre": {
+        "current_revision": true,
+        "maximum": 25,
+        "minimum": 18,
+        "ready_property": "urn:eswc:aat:prototype:1#heaterReady",
+        "subject": "urn:example:room:thing"
+      },
+      "request_schema": "urn:eswc:aat:prototype:1#RevisionRequest",
+      "response_schema": "urn:eswc:aat:prototype:1#RoomReply"
+    },
+    {
+      "frame": [
+        "urn:eswc:aat:prototype:1#heaterReady",
+        "urn:eswc:aat:prototype:1#coolerReady",
+        "urn:eswc:aat:prototype:1#sentinels"
+      ],
+      "id": "urn:aat:completed:usage1",
+      "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+      "post": {
+        "delta": -1,
+        "mutation_increment": 1,
+        "property": "urn:eswc:aat:prototype:1#temperatureC",
+        "revision_increment": 1,
+        "rule": "urn:eswc:aat:prototype:1#addInteger",
+        "subject": "urn:example:room:thing"
+      },
+      "pre": {
+        "current_revision": true,
+        "maximum": 26,
+        "minimum": 19,
+        "ready_property": "urn:eswc:aat:prototype:1#coolerReady",
+        "subject": "urn:example:room:thing"
+      },
+      "request_schema": "urn:eswc:aat:prototype:1#RevisionRequest",
+      "response_schema": "urn:eswc:aat:prototype:1#RoomReply"
+    }
+  ],
+  "version": "room-completion/1"
+}

@@ -1,0 +1,99 @@
+{
+  "graph_sha256": "be3195b93a466e31a50bda88375882e41f82e0f752186068faaaca2245f7b964",
+  "inputs": {
+    "config.json": "09982f7b347563c9a743dcdd367949788209cd2e3038a3461f72e9d8271048c3",
+    "diagnostics.json": "40cf210a825a0a046c8ebaf3875dec5ef930da96aea6faf0dcbfb30b4eec659e",
+    "provenance.json": "cd1847aa1dd66ff1bd3d2b6f5b445a94046d42b63e6395b5c387b5ecd645c6ff",
+    "sidecar.json": "0e873707e8c11cf6a3b17d309b48732725f79ca2cf6133071c3f4b8499d40740",
+    "source.json": "417118f60c367f670e35b5ae15a7c8f3740d9d6b4f0e51300b9a39715c1b5db0",
+    "structural.ttl": "6f947a544ba284661eaa8581c6f17fac0bceb7d949cda9afd04eb22d57d6b3e7"
+  },
+  "mapping": [
+    {
+      "from_triple": "<urn:example:room:thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Thing>",
+      "kind": "copied-structural",
+      "to_triple": "<urn:example:room:thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Thing>"
+    },
+    {
+      "from_triple": "<urn:example:room:artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Artifact>",
+      "kind": "copied-structural",
+      "to_triple": "<urn:example:room:artifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Artifact>"
+    },
+    {
+      "from_triple": "<urn:example:room:artifact> <urn:eswc:aat:prototype:1#represents> <urn:example:room:thing>",
+      "kind": "copied-structural",
+      "to_triple": "<urn:example:room:artifact> <urn:eswc:aat:prototype:1#represents> <urn:example:room:thing>"
+    },
+    {
+      "from_operation": "urn:aat:extracted:ec99d62a4cb5bbb9cdf85ed30d3aa923f4bbb7682e11cb3e7d9f83ddd8f0fd47",
+      "from_predicate": "urn:eswc:aat:prototype:1#path",
+      "kind": "reviewed-observer-projection",
+      "to_predicate": "urn:eswc:aat:prototype:1#observationPath",
+      "value": "/state"
+    },
+    {
+      "from_triple": "<urn:example:room:artifact> <urn:eswc:aat:prototype:1#hasOperation> <urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee>",
+      "kind": "copied-structural",
+      "to_triple": "<urn:example:room:artifact> <urn:eswc:aat:prototype:1#hasOperation> <urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee>"
+    },
+    {
+      "from_triple": "<urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Operation>",
+      "kind": "copied-structural",
+      "to_triple": "<urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Operation>"
+    },
+    {
+      "from_triple": "<urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee> <urn:eswc:aat:prototype:1#method> \"POST\"",
+      "kind": "copied-structural",
+      "to_triple": "<urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee> <urn:eswc:aat:prototype:1#method> \"POST\""
+    },
+    {
+      "from_triple": "<urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee> <urn:eswc:aat:prototype:1#path> \"/heat\"",
+      "kind": "copied-structural",
+      "to_triple": "<urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee> <urn:eswc:aat:prototype:1#path> \"/heat\""
+    },
+    {
+      "kind": "validated-wire-profile-interpretation",
+      "media": "application/json",
+      "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+      "request_schema": "urn:eswc:aat:prototype:1#RevisionRequest",
+      "response_schema": "urn:eswc:aat:prototype:1#RoomReply"
+    },
+    {
+      "from_triple": "<urn:example:room:artifact> <urn:eswc:aat:prototype:1#hasOperation> <urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7>",
+      "kind": "copied-structural",
+      "to_triple": "<urn:example:room:artifact> <urn:eswc:aat:prototype:1#hasOperation> <urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7>"
+    },
+    {
+      "from_triple": "<urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Operation>",
+      "kind": "copied-structural",
+      "to_triple": "<urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:eswc:aat:prototype:1#Operation>"
+    },
+    {
+      "from_triple": "<urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7> <urn:eswc:aat:prototype:1#method> \"POST\"",
+      "kind": "copied-structural",
+      "to_triple": "<urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7> <urn:eswc:aat:prototype:1#method> \"POST\""
+    },
+    {
+      "from_triple": "<urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7> <urn:eswc:aat:prototype:1#path> \"/cool\"",
+      "kind": "copied-structural",
+      "to_triple": "<urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7> <urn:eswc:aat:prototype:1#path> \"/cool\""
+    },
+    {
+      "kind": "validated-wire-profile-interpretation",
+      "media": "application/json",
+      "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+      "request_schema": "urn:eswc:aat:prototype:1#RevisionRequest",
+      "response_schema": "urn:eswc:aat:prototype:1#RoomReply"
+    }
+  ],
+  "native_source_sha256": "e657700f20b08a2d775ecf140fae839416f2fff351a2d5dfd90c0336e666f82d",
+  "origin": "http://127.0.0.1:36367",
+  "review": {
+    "reference": "native-room-contract/1; reviewed completion/1",
+    "reviewer": "Codex; same-author native-source review",
+    "scope": "Task-authorized controlled room experiment, not independent human review or scientific freeze approval; loopback ephemeral deployment of pinned native fixture only",
+    "status": "reviewed"
+  },
+  "status": "COMPLETED_UNAPPROVED",
+  "version": "room-completion/1"
+}

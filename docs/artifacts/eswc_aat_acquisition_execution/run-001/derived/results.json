@@ -1,0 +1,139 @@
+[
+  {
+    "accepted": true,
+    "case": "R01",
+    "choices": [
+      "/heat"
+    ],
+    "final_temperature": 22,
+    "mutations": 1,
+    "passed": true,
+    "representation": "manual",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": true,
+    "case": "R01",
+    "choices": [
+      "/heat"
+    ],
+    "final_temperature": 22,
+    "mutations": 1,
+    "passed": true,
+    "representation": "acquired",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": true,
+    "case": "R02",
+    "choices": [
+      "/cool"
+    ],
+    "final_temperature": 22,
+    "mutations": 1,
+    "passed": true,
+    "representation": "manual",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": true,
+    "case": "R02",
+    "choices": [
+      "/cool"
+    ],
+    "final_temperature": 22,
+    "mutations": 1,
+    "passed": true,
+    "representation": "acquired",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": true,
+    "case": "R03",
+    "choices": [
+      "/heat",
+      "/cool"
+    ],
+    "final_temperature": 22,
+    "mutations": 1,
+    "passed": true,
+    "representation": "manual",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": true,
+    "case": "R03",
+    "choices": [
+      "/heat",
+      "/cool"
+    ],
+    "final_temperature": 22,
+    "mutations": 1,
+    "passed": true,
+    "representation": "acquired",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": true,
+    "case": "R04",
+    "choices": [],
+    "final_temperature": 22,
+    "mutations": 0,
+    "passed": true,
+    "representation": "manual",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": true,
+    "case": "R04",
+    "choices": [],
+    "final_temperature": 22,
+    "mutations": 0,
+    "passed": true,
+    "representation": "acquired",
+    "status": "SUCCESS",
+    "worker_launched": true
+  },
+  {
+    "accepted": false,
+    "case": "control-unknown",
+    "choices": [],
+    "final_temperature": 21,
+    "mutations": 0,
+    "passed": true,
+    "representation": "acquired",
+    "status": "QUARANTINED",
+    "worker_launched": false
+  },
+  {
+    "accepted": false,
+    "case": "control-unsupported",
+    "choices": [],
+    "final_temperature": 21,
+    "mutations": 0,
+    "passed": true,
+    "representation": "acquired",
+    "status": "QUARANTINED",
+    "worker_launched": false
+  },
+  {
+    "accepted": false,
+    "case": "control-wrong-supported",
+    "choices": [
+      "/cool"
+    ],
+    "final_temperature": 20,
+    "mutations": 1,
+    "passed": true,
+    "representation": "acquired",
+    "status": "POSTCONDITION_FAILED",
+    "worker_launched": true
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "artifact": "urn:example:petstore:artifact",
+  "origin": "http://127.0.0.1:8000",
+  "thing": "urn:example:pets:thing"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "assertions": 268,
+    "case": "room",
+    "deterministic": true,
+    "diagnostics": 1,
+    "elapsed_seconds": 0.033455502009019256,
+    "executable_admission_rejected": true,
+    "extracted_facts": 86,
+    "matched": 86,
+    "missing": 0,
+    "operations": 3,
+    "precision": 1.0,
+    "provenance_complete": true,
+    "recall": 1.0,
+    "reference_facts": 86,
+    "unexpected": 0,
+    "unknown": 1,
+    "unsupported": 0,
+    "usages": 0
+  },
+  {
+    "assertions": 142,
+    "case": "petstore",
+    "deterministic": true,
+    "diagnostics": 6,
+    "elapsed_seconds": 0.019807288990705274,
+    "executable_admission_rejected": true,
+    "extracted_facts": 58,
+    "matched": 58,
+    "missing": 0,
+    "operations": 3,
+    "precision": 1.0,
+    "provenance_complete": true,
+    "recall": 1.0,
+    "reference_facts": 58,
+    "unexpected": 0,
+    "unknown": 5,
+    "unsupported": 1,
+    "usages": 0
+  }
+]

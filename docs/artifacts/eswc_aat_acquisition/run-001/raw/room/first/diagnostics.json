@@ -1,0 +1,16 @@
+{
+  "assertions": 268,
+  "diagnostics": [
+    {
+      "code": "BEHAVIOR_UNKNOWN",
+      "detail": "No Usage, readiness, effect, revision guarantee or frame inferred; behavioral review required",
+      "source": "#",
+      "status": "UNKNOWN"
+    }
+  ],
+  "executable": false,
+  "extractor_version": "openapi-structure/1",
+  "graph_sha256": "c83291b242b92dec99c38d72a57f181f47b3099a745186a4c75fd7dbc90c3178",
+  "source_sha256": "417118f60c367f670e35b5ae15a7c8f3740d9d6b4f0e51300b9a39715c1b5db0",
+  "status": "QUARANTINED"
+}

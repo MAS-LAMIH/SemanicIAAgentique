@@ -1,0 +1,10 @@
+{
+  "baseline": "b04902ad198dc2f7bf03cc7fb0b027b65718712e",
+  "sha256": {
+    "petstore.json": "a8567818aee3543cb3c9ab4ba5a215e5c505d200166345d789e2b95a472f9d14",
+    "petstore.reference.json": "befa7714398b430f1ab5168baae4c3bc77bf1d40c7ac8ef83432fe43e1d8fcca",
+    "room.json": "417118f60c367f670e35b5ae15a7c8f3740d9d6b4f0e51300b9a39715c1b5db0",
+    "room.reference.json": "2b3d914f58efa43be180602f6a37fce486b9741068f2857cce7caddf5033a090"
+  },
+  "stage": "Before first extractor execution"
+}

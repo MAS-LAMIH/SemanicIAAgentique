@@ -1,0 +1,35 @@
+{
+  "all_current_source_hashes_match": true,
+  "baseline": "b04902ad198dc2f7bf03cc7fb0b027b65718712e",
+  "corrected_source_commit": "5883d4b1fee432af0fa31972d4ea69215b3efa10",
+  "evaluation_exit_codes": [
+    0,
+    0
+  ],
+  "extraction_cli_exit": 0,
+  "final_tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests/aat -v",
+    "elapsed_seconds": 7.062,
+    "exit_code": 0,
+    "tests": 23
+  },
+  "historical_raw_hashes_verified": 336,
+  "previous_validity_hashes_verified": 2,
+  "regeneration_exit": 0,
+  "report_sha256": "b59f8e7e08c6126cd4e61460a48a7f6367b80b9b2e29d289a506eb9496998168",
+  "runs": [
+    {
+      "derived_regeneration_identical": true,
+      "original_and_retained_identical": true,
+      "raw_files": 35,
+      "run": "run-001"
+    },
+    {
+      "derived_regeneration_identical": true,
+      "original_and_retained_identical": true,
+      "raw_files": 35,
+      "run": "run-002"
+    }
+  ],
+  "source_changes_vs_baseline": "Additions only; no existing tracked source or historical evidence changed"
+}

@@ -1,0 +1,550 @@
+{
+  "dispatches": 1,
+  "invocation": {
+    "after": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "id": "urn:context:7ad427c9-194c-4dd5-880b-c4a9ac2ffd93",
+      "mutations": 1,
+      "observed_at": "2026-10-29T12:03:07.695878+00:00",
+      "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 1, \"observed_at\": \"2026-10-29T12:03:07.695878+00:00\", \"pending_requests\": 0, \"requests\": 1, \"revision\": 1, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 22, \"thing\": \"urn:example:room:thing\"}",
+      "revision": 1,
+      "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+      "temperature": 22,
+      "thing": "urn:example:room:thing"
+    },
+    "before": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "id": "urn:context:535ff8bf-a3f4-4d90-8137-9e9adfc5be4b",
+      "mutations": 0,
+      "observed_at": "2026-10-29T12:03:07.690652+00:00",
+      "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 0, \"observed_at\": \"2026-10-29T12:03:07.690652+00:00\", \"pending_requests\": 0, \"requests\": 0, \"revision\": 0, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 21, \"thing\": \"urn:example:room:thing\"}",
+      "revision": 0,
+      "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+      "temperature": 21,
+      "thing": "urn:example:room:thing"
+    },
+    "checks": {
+      "evidence_sufficient": true,
+      "frame": true,
+      "goal": true,
+      "mutation_count": true,
+      "postcondition": true,
+      "response_revision": true,
+      "response_schema": true,
+      "revision": true
+    },
+    "invocation": {
+      "body": {
+        "revision": 1,
+        "temperature": 22
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 201
+    },
+    "started_at": "2026-10-29T12:03:07.694386+00:00",
+    "status": "SUCCESS",
+    "verified": true
+  },
+  "status": "SUCCESS",
+  "transcript": [
+    {
+      "feedback": {
+        "artifact": {
+          "id": "urn:example:room:artifact",
+          "observation_path": "/state",
+          "operations": [
+            "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7"
+          ],
+          "thing": "urn:example:room:thing"
+        },
+        "code": "DISCOVERED",
+        "operations": [
+          {
+            "artifact": "urn:example:room:artifact",
+            "id": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "media_type": "application/json",
+            "method": "POST",
+            "path": "/heat",
+            "request_schema": "urn:eswc:aat:prototype:1#RevisionRequest",
+            "response_schema": "urn:eswc:aat:prototype:1#RoomReply"
+          },
+          {
+            "artifact": "urn:example:room:artifact",
+            "id": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "media_type": "application/json",
+            "method": "POST",
+            "path": "/cool",
+            "request_schema": "urn:eswc:aat:prototype:1#RevisionRequest",
+            "response_schema": "urn:eswc:aat:prototype:1#RoomReply"
+          }
+        ],
+        "usages": [
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": 1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage0",
+            "maximum": 25,
+            "minimum": 18,
+            "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "post_context": "urn:aat:completed:usage0:post",
+            "pre_context": "urn:aat:completed:usage0:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#heaterReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          },
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": -1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage1",
+            "maximum": 26,
+            "minimum": 19,
+            "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "post_context": "urn:aat:completed:usage1:post",
+            "pre_context": "urn:aat:completed:usage1:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#coolerReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          }
+        ]
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "discover"
+      },
+      "turn": 1,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [],
+        "discovered": false,
+        "feedback": [],
+        "goal": {
+          "max_age": 10.0,
+          "temperature": 22,
+          "thing": "urn:example:room:thing"
+        }
+      }
+    },
+    {
+      "feedback": {
+        "code": "OBSERVED",
+        "context": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "id": "urn:context:e8922b9b-7e82-48ed-ba17-727100e035e7",
+          "mutations": 0,
+          "observed_at": "2026-10-29T12:03:07.685405+00:00",
+          "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 0, \"observed_at\": \"2026-10-29T12:03:07.685405+00:00\", \"pending_requests\": 0, \"requests\": 0, \"revision\": 0, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 21, \"thing\": \"urn:example:room:thing\"}",
+          "revision": 0,
+          "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+          "temperature": 21,
+          "thing": "urn:example:room:thing"
+        }
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      },
+      "turn": 2,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "UNKNOWN",
+            "contributes": false,
+            "handle": "urn:aat:completed:usage0",
+            "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "predicted_temperature": null,
+            "reasons": [
+              "Missing/stale complete context",
+              "Predicted effect does not establish goal"
+            ]
+          },
+          {
+            "applicable": "UNKNOWN",
+            "contributes": false,
+            "handle": "urn:aat:completed:usage1",
+            "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "predicted_temperature": null,
+            "reasons": [
+              "Missing/stale complete context",
+              "Predicted effect does not establish goal"
+            ]
+          }
+        ],
+        "context": null,
+        "descriptions": [
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": 1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage0",
+            "maximum": 25,
+            "minimum": 18,
+            "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "post_context": "urn:aat:completed:usage0:post",
+            "pre_context": "urn:aat:completed:usage0:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#heaterReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          },
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": -1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage1",
+            "maximum": 26,
+            "minimum": 19,
+            "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "post_context": "urn:aat:completed:usage1:post",
+            "pre_context": "urn:aat:completed:usage1:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#coolerReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "max_age": 10.0,
+          "temperature": 22,
+          "thing": "urn:example:room:thing"
+        }
+      }
+    },
+    {
+      "feedback": {
+        "after": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "id": "urn:context:7ad427c9-194c-4dd5-880b-c4a9ac2ffd93",
+          "mutations": 1,
+          "observed_at": "2026-10-29T12:03:07.695878+00:00",
+          "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 1, \"observed_at\": \"2026-10-29T12:03:07.695878+00:00\", \"pending_requests\": 0, \"requests\": 1, \"revision\": 1, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 22, \"thing\": \"urn:example:room:thing\"}",
+          "revision": 1,
+          "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+          "temperature": 22,
+          "thing": "urn:example:room:thing"
+        },
+        "before": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "id": "urn:context:535ff8bf-a3f4-4d90-8137-9e9adfc5be4b",
+          "mutations": 0,
+          "observed_at": "2026-10-29T12:03:07.690652+00:00",
+          "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 0, \"observed_at\": \"2026-10-29T12:03:07.690652+00:00\", \"pending_requests\": 0, \"requests\": 0, \"revision\": 0, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 21, \"thing\": \"urn:example:room:thing\"}",
+          "revision": 0,
+          "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+          "temperature": 21,
+          "thing": "urn:example:room:thing"
+        },
+        "checks": {
+          "evidence_sufficient": true,
+          "frame": true,
+          "goal": true,
+          "mutation_count": true,
+          "postcondition": true,
+          "response_revision": true,
+          "response_schema": true,
+          "revision": true
+        },
+        "invocation": {
+          "body": {
+            "revision": 1,
+            "temperature": 22
+          },
+          "error": null,
+          "raw_body": null,
+          "status": 201
+        },
+        "started_at": "2026-10-29T12:03:07.694386+00:00",
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "guard": {
+        "assessment": {
+          "applicable": "TRUE",
+          "contributes": true,
+          "handle": "urn:aat:completed:usage0",
+          "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+          "predicted_temperature": 22,
+          "reasons": []
+        },
+        "code": "AUTHORIZED",
+        "context": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "id": "urn:context:535ff8bf-a3f4-4d90-8137-9e9adfc5be4b",
+          "mutations": 0,
+          "observed_at": "2026-10-29T12:03:07.690652+00:00",
+          "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 0, \"observed_at\": \"2026-10-29T12:03:07.690652+00:00\", \"pending_requests\": 0, \"requests\": 0, \"revision\": 0, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 21, \"thing\": \"urn:example:room:thing\"}",
+          "revision": 0,
+          "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+          "temperature": 21,
+          "thing": "urn:example:room:thing"
+        }
+      },
+      "operation_path": "/heat",
+      "proposal": {
+        "handle": "urn:aat:completed:usage0",
+        "snapshot_ref": "urn:context:e8922b9b-7e82-48ed-ba17-727100e035e7",
+        "tool": "use"
+      },
+      "turn": 3,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "TRUE",
+            "contributes": true,
+            "handle": "urn:aat:completed:usage0",
+            "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "predicted_temperature": 22,
+            "reasons": []
+          },
+          {
+            "applicable": "TRUE",
+            "contributes": false,
+            "handle": "urn:aat:completed:usage1",
+            "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "predicted_temperature": 20,
+            "reasons": [
+              "Predicted effect does not establish goal"
+            ]
+          }
+        ],
+        "context": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "id": "urn:context:e8922b9b-7e82-48ed-ba17-727100e035e7",
+          "mutations": 0,
+          "observed_at": "2026-10-29T12:03:07.685405+00:00",
+          "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 0, \"observed_at\": \"2026-10-29T12:03:07.685405+00:00\", \"pending_requests\": 0, \"requests\": 0, \"revision\": 0, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 21, \"thing\": \"urn:example:room:thing\"}",
+          "revision": 0,
+          "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+          "temperature": 21,
+          "thing": "urn:example:room:thing"
+        },
+        "descriptions": [
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": 1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage0",
+            "maximum": 25,
+            "minimum": 18,
+            "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "post_context": "urn:aat:completed:usage0:post",
+            "pre_context": "urn:aat:completed:usage0:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#heaterReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          },
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": -1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage1",
+            "maximum": 26,
+            "minimum": 19,
+            "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "post_context": "urn:aat:completed:usage1:post",
+            "pre_context": "urn:aat:completed:usage1:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#coolerReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "id": "urn:context:e8922b9b-7e82-48ed-ba17-727100e035e7",
+              "mutations": 0,
+              "observed_at": "2026-10-29T12:03:07.685405+00:00",
+              "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 0, \"observed_at\": \"2026-10-29T12:03:07.685405+00:00\", \"pending_requests\": 0, \"requests\": 0, \"revision\": 0, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 21, \"thing\": \"urn:example:room:thing\"}",
+              "revision": 0,
+              "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+              "temperature": 21,
+              "thing": "urn:example:room:thing"
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "max_age": 10.0,
+          "temperature": 22,
+          "thing": "urn:example:room:thing"
+        }
+      }
+    },
+    {
+      "feedback": {
+        "code": "SUCCESS",
+        "verified": true
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "finish"
+      },
+      "turn": 4,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "TRUE",
+            "contributes": false,
+            "handle": "urn:aat:completed:usage0",
+            "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "predicted_temperature": 23,
+            "reasons": [
+              "Predicted effect does not establish goal"
+            ]
+          },
+          {
+            "applicable": "TRUE",
+            "contributes": false,
+            "handle": "urn:aat:completed:usage1",
+            "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "predicted_temperature": 21,
+            "reasons": [
+              "Predicted effect does not establish goal"
+            ]
+          }
+        ],
+        "context": {
+          "cooler_ready": true,
+          "heater_ready": true,
+          "id": "urn:context:7ad427c9-194c-4dd5-880b-c4a9ac2ffd93",
+          "mutations": 1,
+          "observed_at": "2026-10-29T12:03:07.695878+00:00",
+          "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 1, \"observed_at\": \"2026-10-29T12:03:07.695878+00:00\", \"pending_requests\": 0, \"requests\": 1, \"revision\": 1, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 22, \"thing\": \"urn:example:room:thing\"}",
+          "revision": 1,
+          "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+          "temperature": 22,
+          "thing": "urn:example:room:thing"
+        },
+        "descriptions": [
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": 1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage0",
+            "maximum": 25,
+            "minimum": 18,
+            "operation": "urn:aat:extracted:58e87acf8fe5eb8d31c7d17173655190d2714576b854ab886224bf4b7b15b8ee",
+            "post_context": "urn:aat:completed:usage0:post",
+            "pre_context": "urn:aat:completed:usage0:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#heaterReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          },
+          {
+            "artifact": "urn:example:room:artifact",
+            "delta": -1,
+            "frame": [
+              "urn:eswc:aat:prototype:1#coolerReady",
+              "urn:eswc:aat:prototype:1#heaterReady",
+              "urn:eswc:aat:prototype:1#sentinels"
+            ],
+            "id": "urn:aat:completed:usage1",
+            "maximum": 26,
+            "minimum": 19,
+            "operation": "urn:aat:extracted:657edf5be871d4f01f682541b7687c5cd4d23b820aea934478454162996a20c7",
+            "post_context": "urn:aat:completed:usage1:post",
+            "pre_context": "urn:aat:completed:usage1:pre",
+            "ready_property": "urn:eswc:aat:prototype:1#coolerReady",
+            "review_ref": "native-room-contract/1; reviewed completion/1"
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "id": "urn:context:e8922b9b-7e82-48ed-ba17-727100e035e7",
+              "mutations": 0,
+              "observed_at": "2026-10-29T12:03:07.685405+00:00",
+              "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 0, \"observed_at\": \"2026-10-29T12:03:07.685405+00:00\", \"pending_requests\": 0, \"requests\": 0, \"revision\": 0, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 21, \"thing\": \"urn:example:room:thing\"}",
+              "revision": 0,
+              "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+              "temperature": 21,
+              "thing": "urn:example:room:thing"
+            },
+            "reasons": []
+          },
+          {
+            "code": "SUCCESS",
+            "context": {
+              "cooler_ready": true,
+              "heater_ready": true,
+              "id": "urn:context:7ad427c9-194c-4dd5-880b-c4a9ac2ffd93",
+              "mutations": 1,
+              "observed_at": "2026-10-29T12:03:07.695878+00:00",
+              "raw_json": "{\"cooler_ready\": true, \"heater_ready\": true, \"mutations\": 1, \"observed_at\": \"2026-10-29T12:03:07.695878+00:00\", \"pending_requests\": 0, \"requests\": 1, \"revision\": 1, \"sentinels\": {\"lamp\": \"off\", \"marker\": {\"untouched\": true}}, \"temperature\": 22, \"thing\": \"urn:example:room:thing\"}",
+              "revision": 1,
+              "sentinel_json": "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}",
+              "temperature": 22,
+              "thing": "urn:example:room:thing"
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "max_age": 10.0,
+          "temperature": 22,
+          "thing": "urn:example:room:thing"
+        }
+      }
+    }
+  ],
+  "verified": true
+}

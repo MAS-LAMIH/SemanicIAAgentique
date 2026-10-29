@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "attempt_records": 11,
+  "executed_episodes": 9,
+  "quarantine_controls": 2,
+  "accepted_satisfactions": 8,
+  "parity_differences": [],
+  "false_success_claims": 0,
+  "external_generalization": false,
+  "automatic_behavior_inference": false
+}

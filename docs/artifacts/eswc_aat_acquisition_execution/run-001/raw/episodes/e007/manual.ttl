@@ -1,0 +1,16 @@
+@prefix aa: <urn:eswc:aat:prototype:1#> .
+@prefix ex: <urn:example:room:> .
+ex:thing a aa:Thing .
+ex:artifact a aa:Artifact ; aa:represents ex:thing ; aa:observationPath "/state" ; aa:hasOperation ex:op17, ex:op29 .
+ex:op17 a aa:Operation ; aa:method "POST" ; aa:path "/heat" ; aa:requestSchema aa:RevisionRequest ; aa:responseSchema aa:RoomReply ; aa:mediaType "application/json" .
+ex:op29 a aa:Operation ; aa:method "POST" ; aa:path "/cool" ; aa:requestSchema aa:RevisionRequest ; aa:responseSchema aa:RoomReply ; aa:mediaType "application/json" .
+ex:usage43 a aa:Usage ; aa:profile "room-step/1" ; aa:reviewed true ; aa:reviewRef "native-room-contract/1; same-author review" ;
+ aa:forArtifact ex:artifact ; aa:forOperation ex:op17 ; aa:hasPrecond ex:pre43 ; aa:hasPostcond ex:post43 ;
+ aa:preserves aa:heaterReady, aa:coolerReady, aa:sentinels .
+ex:pre43 a aa:ContextTemplate ; aa:subject ex:thing ; aa:readyProperty aa:heaterReady ; aa:requiresCurrentRevision true ; aa:minimum 18 ; aa:maximum 25 .
+ex:post43 a aa:ContextTemplate ; aa:subject ex:thing ; aa:property aa:temperatureC ; aa:rule aa:addInteger ; aa:delta 1 ; aa:revisionIncrement 1 ; aa:mutationIncrement 1 .
+ex:usage71 a aa:Usage ; aa:profile "room-step/1" ; aa:reviewed true ; aa:reviewRef "native-room-contract/1; same-author review" ;
+ aa:forArtifact ex:artifact ; aa:forOperation ex:op29 ; aa:hasPrecond ex:pre71 ; aa:hasPostcond ex:post71 ;
+ aa:preserves aa:heaterReady, aa:coolerReady, aa:sentinels .
+ex:pre71 a aa:ContextTemplate ; aa:subject ex:thing ; aa:readyProperty aa:coolerReady ; aa:requiresCurrentRevision true ; aa:minimum 19 ; aa:maximum 26 .
+ex:post71 a aa:ContextTemplate ; aa:subject ex:thing ; aa:property aa:temperatureC ; aa:rule aa:addInteger ; aa:delta -1 ; aa:revisionIncrement 1 ; aa:mutationIncrement 1 .
