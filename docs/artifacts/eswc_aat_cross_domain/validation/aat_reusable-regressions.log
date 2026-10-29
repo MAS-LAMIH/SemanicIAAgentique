@@ -1,0 +1,14 @@
+test_direct_native_create_release_rejection_and_frame (test_cabinet.CabinetTests.test_direct_native_create_release_rejection_and_frame) ... ok
+test_native_scorer_detects_unchanged_effect_and_private_frame (test_cabinet.CabinetTests.test_native_scorer_detects_unchanged_effect_and_private_frame) ... ok
+test_actual_room_heat_cool_finish_frame_fault_and_unknown (test_profile.Tests.test_actual_room_heat_cool_finish_frame_fault_and_unknown) ... ok
+test_arithmetic_truth_unknown_overflow_and_no_hidden_baseline_semantics (test_profile.Tests.test_arithmetic_truth_unknown_overflow_and_no_hidden_baseline_semantics) ... ok
+test_boolean_rdf_loader_and_nested_json_bindings_before_freeze (test_profile.Tests.test_boolean_rdf_loader_and_nested_json_bindings_before_freeze) ... ok
+test_conflicting_candidates_abstain_for_semantic_and_local_assessments (test_profile.Tests.test_conflicting_candidates_abstain_for_semantic_and_local_assessments) ... ok
+test_invalid_graphs_and_missing_approval_fail_closed (test_profile.Tests.test_invalid_graphs_and_missing_approval_fail_closed) ... ok
+test_stale_reconsideration_wrong_proposal_permit_and_false_finish (test_profile.Tests.test_stale_reconsideration_wrong_proposal_permit_and_false_finish) ... ok
+test_synthetic_boolean_assignment_and_conjunctive_goals (test_profile.Tests.test_synthetic_boolean_assignment_and_conjunctive_goals) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 7.321s
+
+OK

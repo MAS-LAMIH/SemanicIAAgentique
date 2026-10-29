@@ -1,0 +1,298 @@
+[
+  {
+    "artifact": "urn:example:room:artifact",
+    "graph_hash": "fb9c614661376643dcb5f9583b2817994621d3128dbe3fd7cfd36969e9c4a96d",
+    "identity": "/thing",
+    "mutations": "/mutations",
+    "observation": "/state",
+    "operations": [
+      {
+        "body": "{\"expected_revision\":null}",
+        "echoes": [
+          [
+            "/temperature",
+            "urn:example:room:s0"
+          ]
+        ],
+        "id": "urn:permuted:3",
+        "method": "POST",
+        "path": "/cool",
+        "request_revision": "/expected_revision",
+        "response_revision": "/revision",
+        "status": 201
+      },
+      {
+        "body": "{\"expected_revision\":null}",
+        "echoes": [
+          [
+            "/temperature",
+            "urn:example:room:s0"
+          ]
+        ],
+        "id": "urn:permuted:4",
+        "method": "POST",
+        "path": "/heat",
+        "request_revision": "/expected_revision",
+        "response_revision": "/revision",
+        "status": 201
+      }
+    ],
+    "revision": "/revision",
+    "slots": [
+      {
+        "id": "urn:example:room:s0",
+        "kind": "Int",
+        "maximum": 26,
+        "minimum": 18,
+        "pointer": "/temperature",
+        "property": "urn:example:room:temperature",
+        "unit": "urn:example:room:Celsius"
+      },
+      {
+        "id": "urn:example:room:s1",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/heater_ready",
+        "property": "urn:example:room:heater",
+        "unit": null
+      },
+      {
+        "id": "urn:example:room:s2",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/cooler_ready",
+        "property": "urn:example:room:cooler",
+        "unit": null
+      },
+      {
+        "id": "urn:example:room:s3",
+        "kind": "JSON",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/sentinels",
+        "property": "urn:example:room:unrelated",
+        "unit": null
+      }
+    ],
+    "thing": "urn:example:room:thing",
+    "timestamp": "/observed_at",
+    "usages": [
+      {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": -1
+          }
+        ],
+        "frame": [
+          "urn:example:room:s1",
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:permuted:1",
+        "operation": "urn:permuted:3",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 26,
+            "value": 19
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "kind": "AddInt",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "value": 1
+          }
+        ],
+        "frame": [
+          "urn:example:room:s1",
+          "urn:example:room:s2",
+          "urn:example:room:s3"
+        ],
+        "id": "urn:permuted:2",
+        "operation": "urn:permuted:4",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:room:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "IntRange",
+            "slot": "urn:example:room:s0",
+            "unit": "urn:example:room:Celsius",
+            "upper": 25,
+            "value": 18
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "artifact": "urn:example:cabinet:artifact",
+    "graph_hash": "3429ca41682e2782f36e8199f92f65cee1aedd380200b4c7a3f915d95ccceae7",
+    "identity": "/identity",
+    "mutations": "/audit/writes",
+    "observation": "/cabinet/status",
+    "operations": [
+      {
+        "body": "{\"guard\":{\"generation\":null}}",
+        "echoes": [
+          [
+            "/latch/secured",
+            "urn:example:cabinet:s0"
+          ]
+        ],
+        "id": "urn:example:cabinet:o0",
+        "method": "PUT",
+        "path": "/cabinet/secure",
+        "request_revision": "/guard/generation",
+        "response_revision": "/receipt/generation",
+        "status": 200
+      },
+      {
+        "body": "{\"guard\":{\"generation\":null}}",
+        "echoes": [
+          [
+            "/latch/secured",
+            "urn:example:cabinet:s0"
+          ]
+        ],
+        "id": "urn:example:cabinet:o1",
+        "method": "PUT",
+        "path": "/cabinet/release",
+        "request_revision": "/guard/generation",
+        "response_revision": "/receipt/generation",
+        "status": 200
+      }
+    ],
+    "revision": "/audit/generation",
+    "slots": [
+      {
+        "id": "urn:example:cabinet:s0",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/latch/secured",
+        "property": "urn:example:cabinet:secured",
+        "unit": null
+      },
+      {
+        "id": "urn:example:cabinet:s1",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/interlocks/door_closed",
+        "property": "urn:example:cabinet:doorClosed",
+        "unit": null
+      },
+      {
+        "id": "urn:example:cabinet:s2",
+        "kind": "Bool",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/interlocks/ready",
+        "property": "urn:example:cabinet:ready",
+        "unit": null
+      },
+      {
+        "id": "urn:example:cabinet:s3",
+        "kind": "JSON",
+        "maximum": null,
+        "minimum": null,
+        "pointer": "/audit/unrelated",
+        "property": "urn:example:cabinet:unrelated",
+        "unit": null
+      }
+    ],
+    "thing": "urn:example:cabinet:thing",
+    "timestamp": "/evidence/time",
+    "usages": [
+      {
+        "effects": [
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "value": true
+          }
+        ],
+        "frame": [
+          "urn:example:cabinet:s1",
+          "urn:example:cabinet:s2",
+          "urn:example:cabinet:s3"
+        ],
+        "id": "urn:example:cabinet:u0",
+        "operation": "urn:example:cabinet:o0",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "kind": "SetBool",
+            "slot": "urn:example:cabinet:s0",
+            "unit": null,
+            "value": false
+          }
+        ],
+        "frame": [
+          "urn:example:cabinet:s1",
+          "urn:example:cabinet:s2",
+          "urn:example:cabinet:s3"
+        ],
+        "id": "urn:example:cabinet:u1",
+        "operation": "urn:example:cabinet:o1",
+        "pre": [
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s1",
+            "unit": null,
+            "upper": null,
+            "value": true
+          },
+          {
+            "kind": "Equal",
+            "slot": "urn:example:cabinet:s2",
+            "unit": null,
+            "upper": null,
+            "value": true
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "episodes": 88,
+  "diagnostic_passes": 88,
+  "verified_successes": 48,
+  "safe_abstentions": 24,
+  "detected_failures": 16,
+  "false_success_claims": 0,
+  "admission_rejections": 20,
+  "parity_differences": [],
+  "invariance_differences": [],
+  "zero_change_cabinet_onboarding": true,
+  "shared_source_unchanged": true,
+  "external_generalization": false,
+  "independent_authorship": false
+}

@@ -1,0 +1,56 @@
+{
+  "final_suites": [
+    {
+      "suite": "semantic_action",
+      "tests": 87,
+      "test_seconds": 201.145,
+      "exit_code": 0,
+      "log": "semantic_action-regressions.log"
+    },
+    {
+      "suite": "v4",
+      "tests": 20,
+      "test_seconds": 28.46,
+      "exit_code": 0,
+      "log": "v4-regressions.log"
+    },
+    {
+      "suite": "v4_pilot",
+      "tests": 6,
+      "test_seconds": 16.245,
+      "exit_code": 0,
+      "log": "v4_pilot-fresh-regressions.log"
+    },
+    {
+      "suite": "v4_experiment",
+      "tests": 3,
+      "test_seconds": 12.199,
+      "exit_code": 0,
+      "log": "v4_experiment-regressions.log"
+    },
+    {
+      "suite": "goal_choice",
+      "tests": 9,
+      "test_seconds": 7.586,
+      "exit_code": 0,
+      "log": "goal_choice-regressions.log"
+    },
+    {
+      "suite": "aat",
+      "tests": 31,
+      "test_seconds": 9.7,
+      "exit_code": 0,
+      "log": "aat-regressions.log"
+    },
+    {
+      "suite": "aat_reusable",
+      "tests": 9,
+      "test_seconds": 7.321,
+      "exit_code": 0,
+      "log": "aat_reusable-regressions.log"
+    }
+  ],
+  "total_passed": 165,
+  "initial_legacy_pilot_refusal_preserved": true,
+  "tutorial_live_demo_scripts_not_invoked": true
+}

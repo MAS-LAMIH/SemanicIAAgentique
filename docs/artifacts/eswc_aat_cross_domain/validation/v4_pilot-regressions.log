@@ -1,0 +1,53 @@
+test_local_adapter_needs_no_registry_or_descriptions (test_comparison.BaselineFairness.test_local_adapter_needs_no_registry_or_descriptions) ... ok
+test_same_validation_request_encoding_and_results (test_comparison.BaselineFairness.test_same_validation_request_encoding_and_results) ... ok
+test_native_truth_is_independent_of_output_and_checks_preservation (test_comparison.NativeTruth.test_native_truth_is_independent_of_output_and_checks_preservation) ... ok
+test_contaminated_resets_and_existing_trace_preserved (test_comparison.OperationalControls.test_contaminated_resets_and_existing_trace_preserved) ... ERROR
+test_positive_missing_output_and_timeout (test_comparison.OperationalControls.test_positive_missing_output_and_timeout) ... ERROR
+test_unsettled_state_is_never_accepted (test_comparison.OperationalControls.test_unsettled_state_is_never_accepted) ... ERROR
+
+======================================================================
+ERROR: test_contaminated_resets_and_existing_trace_preserved (test_comparison.OperationalControls.test_contaminated_resets_and_existing_trace_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4_pilot/test_comparison.py", line 93, in test_contaminated_resets_and_existing_trace_preserved
+    result = run_attempt(task,'a','A',path,contamination=axis)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/v4_pilot/driver.py", line 57, in run_attempt
+    output = Path(output).resolve(); output.mkdir(parents=True, exist_ok=False)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/SemanicIAAgentique/docs/artifacts/v4_pilot/focused/reset-calls'
+
+======================================================================
+ERROR: test_positive_missing_output_and_timeout (test_comparison.OperationalControls.test_positive_missing_output_and_timeout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4_pilot/test_comparison.py", line 83, in test_positive_missing_output_and_timeout
+    result = run_attempt(tasks[task_id], 'a', condition, OUTPUT / f'{task_id}-{condition}')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/v4_pilot/driver.py", line 57, in run_attempt
+    output = Path(output).resolve(); output.mkdir(parents=True, exist_ok=False)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/SemanicIAAgentique/docs/artifacts/v4_pilot/focused/T01-A'
+
+======================================================================
+ERROR: test_unsettled_state_is_never_accepted (test_comparison.OperationalControls.test_unsettled_state_is_never_accepted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/SemanicIAAgentique/tests/v4_pilot/test_comparison.py", line 100, in test_unsettled_state_is_never_accepted
+    result = run_attempt(task,'a','A',OUTPUT/'unsettled',budget_seconds=.75,delay_seconds=3)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/SemanicIAAgentique/v4_pilot/driver.py", line 57, in run_attempt
+    output = Path(output).resolve(); output.mkdir(parents=True, exist_ok=False)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/SemanicIAAgentique/docs/artifacts/v4_pilot/focused/unsettled'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.091s
+
+FAILED (errors=3)

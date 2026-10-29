@@ -1,0 +1,32 @@
+{
+  "goal": {
+    "clauses": [
+      {
+        "kind": "Equal",
+        "slot": "urn:example:room:s0",
+        "unit": "urn:example:room:Celsius",
+        "upper": null,
+        "value": 22
+      }
+    ],
+    "max_age": 10.0,
+    "thing": "urn:example:room:thing"
+  },
+  "graphs": [
+    {
+      "approved_hash": "387295cc3ced59ebeb73484a658829b7ea2c837bacc4cda4810f5e14944659ed",
+      "path": "/workspace/aat-cross-domain-run-001/raw/episodes/e049/room.ttl"
+    },
+    {
+      "approved_hash": "3429ca41682e2782f36e8199f92f65cee1aedd380200b4c7a3f915d95ccceae7",
+      "path": "/workspace/aat-cross-domain-run-001/raw/episodes/e049/cabinet.ttl"
+    }
+  ],
+  "irrelevant_first": false,
+  "knowledge": null,
+  "origins": {
+    "urn:example:cabinet:artifact": "http://127.0.0.1:40813",
+    "urn:example:room:artifact": "http://127.0.0.1:34303"
+  },
+  "reverse_registration": false
+}

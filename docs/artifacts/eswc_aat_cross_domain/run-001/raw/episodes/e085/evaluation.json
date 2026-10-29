@@ -1,0 +1,134 @@
+{
+  "accepted": false,
+  "after": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 0,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 0,
+      "secured": false,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 0
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    }
+  },
+  "before": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 0,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 0,
+      "secured": false,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 0
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    }
+  },
+  "calls": [],
+  "case": "ambiguous",
+  "condition": "S",
+  "domain": "room",
+  "expected": {
+    "accepted": false,
+    "incorrect_transitions": 0,
+    "mutations": 0,
+    "native_goal": false,
+    "status": "AMBIGUOUS"
+  },
+  "false_success": false,
+  "guards": [
+    "AMBIGUOUS"
+  ],
+  "journal": [],
+  "native": {
+    "external_changes": 0,
+    "frame_preserved": true,
+    "goal_state": false,
+    "incorrect_native_transitions": 0,
+    "mutations": 0,
+    "native_success": false,
+    "requests": 0,
+    "revision_accounted": true,
+    "unauthorized_mutations": 0
+  },
+  "other_unchanged": true,
+  "passed": true,
+  "process": {
+    "automated_runtime_seconds": 0.16476615700230468,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-29T16:43:29.403257+00:00",
+    "exit_code": 0,
+    "pid": 128195,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-29T16:43:29.238497+00:00",
+    "status": "COMPLETED"
+  },
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    },
+    "state_uncertain": false,
+    "wait_seconds": 4.400062607601285e-07
+  },
+  "selection_correct": true,
+  "status": "AMBIGUOUS",
+  "variant": "ambiguous",
+  "whole_seconds": 0.6129391239956021,
+  "worker_seconds": 0.16476615700230468
+}

@@ -1,0 +1,140 @@
+{
+  "artifact": "urn:example:room:artifact",
+  "identity": "/thing",
+  "mutations": "/mutations",
+  "observation": "/state",
+  "operations": [
+    {
+      "body": {
+        "expected_revision": null
+      },
+      "echoes": [
+        [
+          "/temperature",
+          "urn:example:room:s0"
+        ]
+      ],
+      "id": "urn:example:room:o0",
+      "method": "POST",
+      "path": "/heat",
+      "request_revision": "/expected_revision",
+      "response_revision": "/revision",
+      "status": 201
+    },
+    {
+      "body": {
+        "expected_revision": null
+      },
+      "echoes": [
+        [
+          "/temperature",
+          "urn:example:room:s0"
+        ]
+      ],
+      "id": "urn:example:room:o1",
+      "method": "POST",
+      "path": "/cool",
+      "request_revision": "/expected_revision",
+      "response_revision": "/revision",
+      "status": 201
+    }
+  ],
+  "review_hash": "46efecd903b1a9dc0cc93307afa766d463f3523fccc6a0956969f29c91becb89",
+  "revision": "/revision",
+  "slots": [
+    {
+      "id": "urn:example:room:s0",
+      "kind": "Int",
+      "maximum": 26,
+      "minimum": 18,
+      "pointer": "/temperature",
+      "property": "urn:example:room:temperature",
+      "unit": "urn:example:room:Celsius"
+    },
+    {
+      "id": "urn:example:room:s1",
+      "kind": "Bool",
+      "pointer": "/heater_ready",
+      "property": "urn:example:room:heater"
+    },
+    {
+      "id": "urn:example:room:s2",
+      "kind": "Bool",
+      "pointer": "/cooler_ready",
+      "property": "urn:example:room:cooler"
+    },
+    {
+      "id": "urn:example:room:s3",
+      "kind": "JSON",
+      "pointer": "/sentinels",
+      "property": "urn:example:room:unrelated"
+    }
+  ],
+  "source_hash": "e657700f20b08a2d775ecf140fae839416f2fff351a2d5dfd90c0336e666f82d",
+  "thing": "urn:example:room:thing",
+  "timestamp": "/observed_at",
+  "usages": [
+    {
+      "effects": [
+        {
+          "kind": "AddInt",
+          "slot": "urn:example:room:s0",
+          "unit": "urn:example:room:Celsius",
+          "value": 1
+        }
+      ],
+      "frame": [
+        "urn:example:room:s1",
+        "urn:example:room:s2",
+        "urn:example:room:s3"
+      ],
+      "id": "urn:example:room:u0",
+      "operation": "urn:example:room:o0",
+      "pre": [
+        {
+          "kind": "Equal",
+          "slot": "urn:example:room:s1",
+          "value": true
+        },
+        {
+          "kind": "IntRange",
+          "lower": 18,
+          "slot": "urn:example:room:s0",
+          "unit": "urn:example:room:Celsius",
+          "upper": 25
+        }
+      ]
+    },
+    {
+      "effects": [
+        {
+          "kind": "AddInt",
+          "slot": "urn:example:room:s0",
+          "unit": "urn:example:room:Celsius",
+          "value": -1
+        }
+      ],
+      "frame": [
+        "urn:example:room:s1",
+        "urn:example:room:s2",
+        "urn:example:room:s3"
+      ],
+      "id": "urn:example:room:u1",
+      "operation": "urn:example:room:o1",
+      "pre": [
+        {
+          "kind": "Equal",
+          "slot": "urn:example:room:s2",
+          "value": true
+        },
+        {
+          "kind": "IntRange",
+          "lower": 19,
+          "slot": "urn:example:room:s0",
+          "unit": "urn:example:room:Celsius",
+          "upper": 26
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "accepted": true,
+  "after": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 1,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 1,
+      "secured": true,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 1
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    }
+  },
+  "before": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 0,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 0,
+      "secured": false,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 0
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    }
+  },
+  "calls": [
+    {
+      "body": {
+        "guard": {
+          "generation": 0
+        }
+      },
+      "method": "PUT",
+      "path": "/cabinet/secure"
+    }
+  ],
+  "case": "D03",
+  "condition": "P",
+  "domain": "cabinet",
+  "expected": {
+    "accepted": true,
+    "incorrect_transitions": 0,
+    "mutations": 1,
+    "native_goal": true,
+    "status": "SUCCESS"
+  },
+  "false_success": false,
+  "guards": [
+    "NOT_AUTHORIZED",
+    "AUTHORIZED"
+  ],
+  "journal": [
+    {
+      "after": {
+        "door_closed": true,
+        "generation": 1,
+        "pending_requests": 1,
+        "ready": true,
+        "requests": 1,
+        "secured": true,
+        "unrelated": {
+          "asset": "manual",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "writes": 1
+      },
+      "at": "2026-10-29T16:42:06.779294+00:00",
+      "before": {
+        "door_closed": true,
+        "generation": 0,
+        "pending_requests": 1,
+        "ready": true,
+        "requests": 1,
+        "secured": false,
+        "unrelated": {
+          "asset": "manual",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "writes": 0
+      },
+      "body": {
+        "guard": {
+          "generation": 0
+        }
+      },
+      "kind": "request",
+      "path": "/cabinet/secure",
+      "status": 200
+    }
+  ],
+  "native": {
+    "external_changes": 0,
+    "frame_preserved": true,
+    "goal_state": true,
+    "incorrect_native_transitions": 0,
+    "mutations": 1,
+    "native_success": true,
+    "requests": 1,
+    "revision_accounted": true,
+    "unauthorized_mutations": 0
+  },
+  "other_unchanged": true,
+  "passed": true,
+  "process": {
+    "automated_runtime_seconds": 0.2148680609971052,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-29T16:42:06.856625+00:00",
+    "exit_code": 0,
+    "pid": 127294,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-29T16:42:06.641760+00:00",
+    "status": "COMPLETED"
+  },
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "door_closed": true,
+      "generation": 1,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 1,
+      "secured": true,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 1
+    },
+    "state_uncertain": false,
+    "wait_seconds": 1.0709918569773436e-06
+  },
+  "selection_correct": true,
+  "status": "SUCCESS",
+  "variant": "original",
+  "whole_seconds": 1.001628215002711,
+  "worker_seconds": 0.2148680609971052
+}

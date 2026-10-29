@@ -1,0 +1,64 @@
+{
+  "experiments/aat_reusable/__init__.py": {
+    "nonblank_noncomment_lines": 1,
+    "physical_lines": 1
+  },
+  "experiments/aat_reusable/cabinet_local.py": {
+    "nonblank_noncomment_lines": 17,
+    "physical_lines": 19
+  },
+  "experiments/aat_reusable/cabinet_native.py": {
+    "nonblank_noncomment_lines": 61,
+    "physical_lines": 62
+  },
+  "experiments/aat_reusable/cabinet_score.py": {
+    "nonblank_noncomment_lines": 16,
+    "physical_lines": 17
+  },
+  "experiments/aat_reusable/data/cabinet-review.json": {
+    "physical_lines": 6
+  },
+  "experiments/aat_reusable/data/cabinet-spec.json": {
+    "physical_lines": 135
+  },
+  "experiments/aat_reusable/data/cabinet.ttl": {
+    "physical_lines": 112
+  },
+  "experiments/aat_reusable/data/room-review.json": {
+    "physical_lines": 5
+  },
+  "experiments/aat_reusable/data/room-spec.json": {
+    "physical_lines": 140
+  },
+  "experiments/aat_reusable/data/room.ttl": {
+    "physical_lines": 121
+  },
+  "experiments/aat_reusable/data_tools.py": {
+    "nonblank_noncomment_lines": 35,
+    "physical_lines": 36
+  },
+  "experiments/aat_reusable/harness.py": {
+    "nonblank_noncomment_lines": 28,
+    "physical_lines": 30
+  },
+  "experiments/aat_reusable/profile.py": {
+    "nonblank_noncomment_lines": 212,
+    "physical_lines": 225
+  },
+  "experiments/aat_reusable/room_local.py": {
+    "nonblank_noncomment_lines": 19,
+    "physical_lines": 21
+  },
+  "experiments/aat_reusable/runtime.py": {
+    "nonblank_noncomment_lines": 145,
+    "physical_lines": 149
+  },
+  "experiments/aat_reusable/study.py": {
+    "nonblank_noncomment_lines": 179,
+    "physical_lines": 189
+  },
+  "experiments/aat_reusable/worker.py": {
+    "nonblank_noncomment_lines": 27,
+    "physical_lines": 28
+  }
+}

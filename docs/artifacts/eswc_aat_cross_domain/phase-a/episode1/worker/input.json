@@ -1,0 +1,26 @@
+{
+  "goal": {
+    "clauses": [
+      {
+        "kind": "Equal",
+        "slot": "urn:example:room:s0",
+        "unit": "urn:example:room:Celsius",
+        "upper": null,
+        "value": 22
+      }
+    ],
+    "max_age": 10.0,
+    "thing": "urn:example:room:thing"
+  },
+  "graphs": [
+    {
+      "approved_hash": "323eb81e050f323c61c81843ae3d3367a69987a2cce64fcbe13abe4599265497",
+      "path": "/workspace/SemanicIAAgentique/experiments/aat_reusable/data/room.ttl"
+    }
+  ],
+  "irrelevant_first": false,
+  "knowledge": null,
+  "origins": {
+    "urn:example:room:artifact": "http://127.0.0.1:45209"
+  }
+}

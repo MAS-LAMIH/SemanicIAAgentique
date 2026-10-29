@@ -1,0 +1,122 @@
+[
+  {
+    "control": "predicate",
+    "domain": "room",
+    "reason": "Unsupported predicate",
+    "rejected": true
+  },
+  {
+    "control": "effect",
+    "domain": "room",
+    "reason": "Unsupported effect",
+    "rejected": true
+  },
+  {
+    "control": "subject",
+    "domain": "room",
+    "reason": "Context grounding",
+    "rejected": true
+  },
+  {
+    "control": "type_unit",
+    "domain": "room",
+    "reason": "Incorrect literal type",
+    "rejected": true
+  },
+  {
+    "control": "duplicate_write",
+    "domain": "room",
+    "reason": "Effects/frame shape",
+    "rejected": true
+  },
+  {
+    "control": "frame_missing",
+    "domain": "room",
+    "reason": "Incomplete/overlapping frame",
+    "rejected": true
+  },
+  {
+    "control": "frame_overlap",
+    "domain": "room",
+    "reason": "Incomplete/overlapping frame",
+    "rejected": true
+  },
+  {
+    "control": "binding",
+    "domain": "room",
+    "reason": "Usage binding",
+    "rejected": true
+  },
+  {
+    "control": "source_hash",
+    "domain": "room",
+    "reason": "Missing/ambiguous urn:eswc:aat:usage:1#sourceHash",
+    "rejected": true
+  },
+  {
+    "control": "unreviewed",
+    "domain": "room",
+    "reason": "Unreviewed/profile",
+    "rejected": true
+  },
+  {
+    "control": "predicate",
+    "domain": "cabinet",
+    "reason": "Unsupported predicate",
+    "rejected": true
+  },
+  {
+    "control": "effect",
+    "domain": "cabinet",
+    "reason": "Unsupported effect",
+    "rejected": true
+  },
+  {
+    "control": "subject",
+    "domain": "cabinet",
+    "reason": "Context grounding",
+    "rejected": true
+  },
+  {
+    "control": "type_unit",
+    "domain": "cabinet",
+    "reason": "Incorrect literal type",
+    "rejected": true
+  },
+  {
+    "control": "duplicate_write",
+    "domain": "cabinet",
+    "reason": "Effects/frame shape",
+    "rejected": true
+  },
+  {
+    "control": "frame_missing",
+    "domain": "cabinet",
+    "reason": "Incomplete/overlapping frame",
+    "rejected": true
+  },
+  {
+    "control": "frame_overlap",
+    "domain": "cabinet",
+    "reason": "Incomplete/overlapping frame",
+    "rejected": true
+  },
+  {
+    "control": "binding",
+    "domain": "cabinet",
+    "reason": "Usage binding",
+    "rejected": true
+  },
+  {
+    "control": "source_hash",
+    "domain": "cabinet",
+    "reason": "Missing/ambiguous urn:eswc:aat:usage:1#sourceHash",
+    "rejected": true
+  },
+  {
+    "control": "unreviewed",
+    "domain": "cabinet",
+    "reason": "Unreviewed/profile",
+    "rejected": true
+  }
+]

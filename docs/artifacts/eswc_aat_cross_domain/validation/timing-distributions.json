@@ -1,0 +1,100 @@
+{
+  "AMBIGUOUS": {
+    "worker_seconds": {
+      "n": 4,
+      "minimum": 0.16474885599745903,
+      "median": 0.16485065600136295,
+      "maximum": 0.16515827499097213
+    },
+    "whole_seconds": {
+      "n": 4,
+      "minimum": 0.6129391239956021,
+      "median": 0.81078151800466,
+      "maximum": 1.0016982390079647
+    }
+  },
+  "CONFLICT": {
+    "worker_seconds": {
+      "n": 4,
+      "minimum": 0.1643538620119216,
+      "median": 0.1645374845029437,
+      "maximum": 0.16463870400912128
+    },
+    "whole_seconds": {
+      "n": 4,
+      "minimum": 0.6106678600044688,
+      "median": 0.81648392349598,
+      "maximum": 1.0017743169883033
+    }
+  },
+  "NO_DIRECT_MATCH": {
+    "worker_seconds": {
+      "n": 12,
+      "minimum": 0.16437437800050247,
+      "median": 0.16449666299740784,
+      "maximum": 0.164757983002346
+    },
+    "whole_seconds": {
+      "n": 12,
+      "minimum": 0.5999367040058132,
+      "median": 1.001580465999723,
+      "maximum": 1.0018572080007289
+    }
+  },
+  "POSTCONDITION_FAILED": {
+    "worker_seconds": {
+      "n": 8,
+      "minimum": 0.16428126800747123,
+      "median": 0.16459497850155458,
+      "maximum": 0.16613189299823716
+    },
+    "whole_seconds": {
+      "n": 8,
+      "minimum": 0.6069100119930226,
+      "median": 0.8077864240040071,
+      "maximum": 1.0019660539983306
+    }
+  },
+  "SUCCESS": {
+    "worker_seconds": {
+      "n": 48,
+      "minimum": 0.16420205500617158,
+      "median": 0.16451439400407253,
+      "maximum": 0.2148680609971052
+    },
+    "whole_seconds": {
+      "n": 48,
+      "minimum": 0.5977568770031212,
+      "median": 0.6233494030020665,
+      "maximum": 1.0018285419937456
+    }
+  },
+  "UNCERTAIN_MUTATION": {
+    "worker_seconds": {
+      "n": 4,
+      "minimum": 5.176205782991019,
+      "median": 5.177563367506082,
+      "maximum": 5.182295161997899
+    },
+    "whole_seconds": {
+      "n": 4,
+      "minimum": 6.006822038005339,
+      "median": 6.060676794499159,
+      "maximum": 6.114804551994894
+    }
+  },
+  "UNKNOWN_CONTEXT": {
+    "worker_seconds": {
+      "n": 8,
+      "minimum": 0.1644325149973156,
+      "median": 0.16461374149366748,
+      "maximum": 0.16484795798896812
+    },
+    "whole_seconds": {
+      "n": 8,
+      "minimum": 0.5979926809959579,
+      "median": 0.8075136659972486,
+      "maximum": 1.0036222920025466
+    }
+  }
+}

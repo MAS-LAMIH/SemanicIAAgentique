@@ -1,0 +1,6 @@
+{
+  "reviewer": "Codex; same-author implementation/specification review",
+  "scope": "Controlled feasibility fixture, not independent external API",
+  "locked_native_spec_sha256": "e62c1ca36dbe9d687df9a2b57b538c481091b4201e70aaaa6116ef5f9fdde377",
+  "native_sha256": "bfdc47024968b4804b1fb38f73552282c1a71bd08c9090b671f53da39e76b5e4"
+}

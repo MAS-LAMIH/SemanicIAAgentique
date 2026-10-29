@@ -1,0 +1,1398 @@
+{
+  "dispatches": 1,
+  "invocation": {
+    "after": {
+      "id": "urn:context:c20e92d5-217d-4b65-abf7-faaa7fb39c0c",
+      "mutations": 1,
+      "observed_at": "2026-10-29T16:42:21.736682+00:00",
+      "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":1,\"observed_at\":\"2026-10-29T16:42:21.736682+00:00\",\"pending_requests\":0,\"requests\":1,\"revision\":2,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":22,\"thing\":\"urn:example:room:thing\"}",
+      "revision": 2,
+      "thing": "urn:example:room:thing",
+      "values": [
+        [
+          "urn:example:room:s0",
+          22
+        ],
+        [
+          "urn:example:room:s1",
+          true
+        ],
+        [
+          "urn:example:room:s2",
+          true
+        ],
+        [
+          "urn:example:room:s3",
+          "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+        ]
+      ]
+    },
+    "before": {
+      "id": "urn:context:2777212e-8ef3-4a10-801c-81abff359d63",
+      "mutations": 0,
+      "observed_at": "2026-10-29T16:42:21.731426+00:00",
+      "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.731426+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+      "revision": 1,
+      "thing": "urn:example:room:thing",
+      "values": [
+        [
+          "urn:example:room:s0",
+          23
+        ],
+        [
+          "urn:example:room:s1",
+          true
+        ],
+        [
+          "urn:example:room:s2",
+          true
+        ],
+        [
+          "urn:example:room:s3",
+          "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+        ]
+      ]
+    },
+    "checks": {
+      "echoes": true,
+      "evidence": true,
+      "expected_state": true,
+      "goal": true,
+      "mutations": true,
+      "response_revision": true,
+      "revision": true
+    },
+    "invocation": {
+      "body": {
+        "revision": 2,
+        "temperature": 22
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 201
+    },
+    "status": "SUCCESS",
+    "verified": true
+  },
+  "status": "SUCCESS",
+  "transcript": [
+    {
+      "feedback": {
+        "code": "DISCOVERED"
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "discover"
+      },
+      "turn": 1,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [],
+        "discovered": false,
+        "feedback": [],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:room:s0",
+              "unit": "urn:example:room:Celsius",
+              "upper": null,
+              "value": 22
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:room:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "code": "OBSERVED",
+        "context": {
+          "id": "urn:context:2b6b247e-3004-46e1-bffc-c4d157c6040e",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.720212+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.720212+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 0,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              21
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      },
+      "turn": 2,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": 1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 25,
+                "value": 18
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": -1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 26,
+                "value": 19
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:room:s0",
+              "unit": "urn:example:room:Celsius",
+              "upper": null,
+              "value": 22
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:room:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "code": "STALE_PROPOSAL",
+        "context": {
+          "id": "urn:context:c027fa2e-64cb-47ae-9e16-e8a1745b9ac7",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.724958+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.724958+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 1,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              23
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "guard": {
+        "code": "STALE_PROPOSAL",
+        "context": {
+          "id": "urn:context:c027fa2e-64cb-47ae-9e16-e8a1745b9ac7",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.724958+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.724958+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 1,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              23
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": "urn:example:room:u0",
+        "snapshot_ref": "urn:context:2b6b247e-3004-46e1-bffc-c4d157c6040e",
+        "tool": "use"
+      },
+      "turn": 3,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "TRUE",
+            "contributes": "TRUE",
+            "expected": [
+              [
+                "urn:example:room:s0",
+                22
+              ],
+              [
+                "urn:example:room:s1",
+                true
+              ],
+              [
+                "urn:example:room:s2",
+                true
+              ],
+              [
+                "urn:example:room:s3",
+                "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "reasons": []
+          },
+          {
+            "applicable": "TRUE",
+            "contributes": "FALSE",
+            "expected": [
+              [
+                "urn:example:room:s0",
+                20
+              ],
+              [
+                "urn:example:room:s1",
+                true
+              ],
+              [
+                "urn:example:room:s2",
+                true
+              ],
+              [
+                "urn:example:room:s3",
+                "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "reasons": []
+          }
+        ],
+        "context": {
+          "id": "urn:context:2b6b247e-3004-46e1-bffc-c4d157c6040e",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.720212+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.720212+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 0,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              21
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": 1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 25,
+                "value": 18
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": -1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 26,
+                "value": 19
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:2b6b247e-3004-46e1-bffc-c4d157c6040e",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.720212+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.720212+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 0,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  21
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:room:s0",
+              "unit": "urn:example:room:Celsius",
+              "upper": null,
+              "value": 22
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:room:thing"
+        },
+        "goal_truth": "FALSE"
+      }
+    },
+    {
+      "feedback": {
+        "code": "OBSERVED",
+        "context": {
+          "id": "urn:context:de98b704-1e33-45f2-badf-f6b2fac45033",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.726487+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.726487+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 1,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              23
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "observe"
+      },
+      "turn": 4,
+      "view": {
+        "candidates": [],
+        "context": null,
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": 1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 25,
+                "value": 18
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": -1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 26,
+                "value": 19
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:2b6b247e-3004-46e1-bffc-c4d157c6040e",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.720212+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.720212+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 0,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  21
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "STALE_PROPOSAL",
+            "context": {
+              "id": "urn:context:c027fa2e-64cb-47ae-9e16-e8a1745b9ac7",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.724958+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.724958+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 1,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  23
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:room:s0",
+              "unit": "urn:example:room:Celsius",
+              "upper": null,
+              "value": 22
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:room:thing"
+        },
+        "goal_truth": "UNKNOWN"
+      }
+    },
+    {
+      "feedback": {
+        "after": {
+          "id": "urn:context:c20e92d5-217d-4b65-abf7-faaa7fb39c0c",
+          "mutations": 1,
+          "observed_at": "2026-10-29T16:42:21.736682+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":1,\"observed_at\":\"2026-10-29T16:42:21.736682+00:00\",\"pending_requests\":0,\"requests\":1,\"revision\":2,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":22,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 2,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              22
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "before": {
+          "id": "urn:context:2777212e-8ef3-4a10-801c-81abff359d63",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.731426+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.731426+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 1,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              23
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "checks": {
+          "echoes": true,
+          "evidence": true,
+          "expected_state": true,
+          "goal": true,
+          "mutations": true,
+          "response_revision": true,
+          "revision": true
+        },
+        "invocation": {
+          "body": {
+            "revision": 2,
+            "temperature": 22
+          },
+          "error": null,
+          "raw_body": null,
+          "status": 201
+        },
+        "status": "SUCCESS",
+        "verified": true
+      },
+      "guard": {
+        "assessment": {
+          "applicable": "TRUE",
+          "contributes": "TRUE",
+          "expected": [
+            [
+              "urn:example:room:s0",
+              22
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ],
+          "handle": "urn:example:room:u1",
+          "operation": "urn:example:room:o1",
+          "reasons": []
+        },
+        "code": "AUTHORIZED",
+        "context": {
+          "id": "urn:context:2777212e-8ef3-4a10-801c-81abff359d63",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.731426+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.731426+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 1,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              23
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        }
+      },
+      "proposal": {
+        "handle": "urn:example:room:u1",
+        "snapshot_ref": "urn:context:de98b704-1e33-45f2-badf-f6b2fac45033",
+        "tool": "use"
+      },
+      "turn": 5,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "TRUE",
+            "contributes": "FALSE",
+            "expected": [
+              [
+                "urn:example:room:s0",
+                24
+              ],
+              [
+                "urn:example:room:s1",
+                true
+              ],
+              [
+                "urn:example:room:s2",
+                true
+              ],
+              [
+                "urn:example:room:s3",
+                "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "reasons": []
+          },
+          {
+            "applicable": "TRUE",
+            "contributes": "TRUE",
+            "expected": [
+              [
+                "urn:example:room:s0",
+                22
+              ],
+              [
+                "urn:example:room:s1",
+                true
+              ],
+              [
+                "urn:example:room:s2",
+                true
+              ],
+              [
+                "urn:example:room:s3",
+                "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "reasons": []
+          }
+        ],
+        "context": {
+          "id": "urn:context:de98b704-1e33-45f2-badf-f6b2fac45033",
+          "mutations": 0,
+          "observed_at": "2026-10-29T16:42:21.726487+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.726487+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 1,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              23
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": 1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 25,
+                "value": 18
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": -1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 26,
+                "value": 19
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:2b6b247e-3004-46e1-bffc-c4d157c6040e",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.720212+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.720212+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 0,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  21
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "STALE_PROPOSAL",
+            "context": {
+              "id": "urn:context:c027fa2e-64cb-47ae-9e16-e8a1745b9ac7",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.724958+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.724958+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 1,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  23
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:de98b704-1e33-45f2-badf-f6b2fac45033",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.726487+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.726487+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 1,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  23
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:room:s0",
+              "unit": "urn:example:room:Celsius",
+              "upper": null,
+              "value": 22
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:room:thing"
+        },
+        "goal_truth": "FALSE"
+      }
+    },
+    {
+      "feedback": {
+        "code": "SUCCESS"
+      },
+      "proposal": {
+        "handle": null,
+        "snapshot_ref": null,
+        "tool": "finish"
+      },
+      "turn": 6,
+      "view": {
+        "candidates": [
+          {
+            "applicable": "TRUE",
+            "contributes": "FALSE",
+            "expected": [
+              [
+                "urn:example:room:s0",
+                23
+              ],
+              [
+                "urn:example:room:s1",
+                true
+              ],
+              [
+                "urn:example:room:s2",
+                true
+              ],
+              [
+                "urn:example:room:s3",
+                "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "reasons": []
+          },
+          {
+            "applicable": "TRUE",
+            "contributes": "FALSE",
+            "expected": [
+              [
+                "urn:example:room:s0",
+                21
+              ],
+              [
+                "urn:example:room:s1",
+                true
+              ],
+              [
+                "urn:example:room:s2",
+                true
+              ],
+              [
+                "urn:example:room:s3",
+                "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+              ]
+            ],
+            "handle": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "reasons": []
+          }
+        ],
+        "context": {
+          "id": "urn:context:c20e92d5-217d-4b65-abf7-faaa7fb39c0c",
+          "mutations": 1,
+          "observed_at": "2026-10-29T16:42:21.736682+00:00",
+          "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":1,\"observed_at\":\"2026-10-29T16:42:21.736682+00:00\",\"pending_requests\":0,\"requests\":1,\"revision\":2,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":22,\"thing\":\"urn:example:room:thing\"}",
+          "revision": 2,
+          "thing": "urn:example:room:thing",
+          "values": [
+            [
+              "urn:example:room:s0",
+              22
+            ],
+            [
+              "urn:example:room:s1",
+              true
+            ],
+            [
+              "urn:example:room:s2",
+              true
+            ],
+            [
+              "urn:example:room:s3",
+              "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+            ]
+          ]
+        },
+        "descriptions": [
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": 1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u0",
+            "operation": "urn:example:room:o0",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s1",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 25,
+                "value": 18
+              }
+            ]
+          },
+          {
+            "effects": [
+              {
+                "kind": "AddInt",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "value": -1
+              }
+            ],
+            "frame": [
+              "urn:example:room:s1",
+              "urn:example:room:s2",
+              "urn:example:room:s3"
+            ],
+            "id": "urn:example:room:u1",
+            "operation": "urn:example:room:o1",
+            "pre": [
+              {
+                "kind": "Equal",
+                "slot": "urn:example:room:s2",
+                "unit": null,
+                "upper": null,
+                "value": true
+              },
+              {
+                "kind": "IntRange",
+                "slot": "urn:example:room:s0",
+                "unit": "urn:example:room:Celsius",
+                "upper": 26,
+                "value": 19
+              }
+            ]
+          }
+        ],
+        "discovered": true,
+        "feedback": [
+          {
+            "code": "DISCOVERED",
+            "context": null,
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:2b6b247e-3004-46e1-bffc-c4d157c6040e",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.720212+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.720212+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":0,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":21,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 0,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  21
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "STALE_PROPOSAL",
+            "context": {
+              "id": "urn:context:c027fa2e-64cb-47ae-9e16-e8a1745b9ac7",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.724958+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.724958+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 1,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  23
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "OBSERVED",
+            "context": {
+              "id": "urn:context:de98b704-1e33-45f2-badf-f6b2fac45033",
+              "mutations": 0,
+              "observed_at": "2026-10-29T16:42:21.726487+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":0,\"observed_at\":\"2026-10-29T16:42:21.726487+00:00\",\"pending_requests\":0,\"requests\":0,\"revision\":1,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":23,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 1,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  23
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          },
+          {
+            "code": "SUCCESS",
+            "context": {
+              "id": "urn:context:c20e92d5-217d-4b65-abf7-faaa7fb39c0c",
+              "mutations": 1,
+              "observed_at": "2026-10-29T16:42:21.736682+00:00",
+              "raw": "{\"cooler_ready\":true,\"heater_ready\":true,\"mutations\":1,\"observed_at\":\"2026-10-29T16:42:21.736682+00:00\",\"pending_requests\":0,\"requests\":1,\"revision\":2,\"sentinels\":{\"lamp\":\"off\",\"marker\":{\"untouched\":true}},\"temperature\":22,\"thing\":\"urn:example:room:thing\"}",
+              "revision": 2,
+              "thing": "urn:example:room:thing",
+              "values": [
+                [
+                  "urn:example:room:s0",
+                  22
+                ],
+                [
+                  "urn:example:room:s1",
+                  true
+                ],
+                [
+                  "urn:example:room:s2",
+                  true
+                ],
+                [
+                  "urn:example:room:s3",
+                  "{\"lamp\":\"off\",\"marker\":{\"untouched\":true}}"
+                ]
+              ]
+            },
+            "reasons": []
+          }
+        ],
+        "goal": {
+          "clauses": [
+            {
+              "kind": "Equal",
+              "slot": "urn:example:room:s0",
+              "unit": "urn:example:room:Celsius",
+              "upper": null,
+              "value": 22
+            }
+          ],
+          "max_age": 10.0,
+          "thing": "urn:example:room:thing"
+        },
+        "goal_truth": "TRUE"
+      }
+    }
+  ],
+  "verified": true
+}

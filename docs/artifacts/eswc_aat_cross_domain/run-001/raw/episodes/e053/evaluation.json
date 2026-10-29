@@ -1,0 +1,182 @@
+{
+  "accepted": true,
+  "after": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 0,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 0,
+      "secured": false,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 0
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 1,
+      "pending_requests": 0,
+      "requests": 1,
+      "revision": 1,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 22
+    }
+  },
+  "before": {
+    "cabinet": {
+      "door_closed": true,
+      "generation": 0,
+      "pending_requests": 0,
+      "ready": true,
+      "requests": 0,
+      "secured": false,
+      "unrelated": {
+        "asset": "manual",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "writes": 0
+    },
+    "room": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 0,
+      "pending_requests": 0,
+      "requests": 0,
+      "revision": 0,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 21
+    }
+  },
+  "calls": [
+    {
+      "body": {
+        "expected_revision": 0
+      },
+      "method": "POST",
+      "path": "/heat"
+    }
+  ],
+  "case": "D01",
+  "condition": "P",
+  "domain": "room",
+  "expected": {
+    "accepted": true,
+    "incorrect_transitions": 0,
+    "mutations": 1,
+    "native_goal": true,
+    "status": "SUCCESS"
+  },
+  "false_success": false,
+  "guards": [
+    "AUTHORIZED"
+  ],
+  "journal": [
+    {
+      "after": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 1,
+        "pending_requests": 1,
+        "requests": 1,
+        "revision": 1,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 22
+      },
+      "at": "2026-10-29T16:43:01.524881+00:00",
+      "before": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "pending_requests": 1,
+        "requests": 1,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21
+      },
+      "body": {
+        "expected_revision": 0
+      },
+      "kind": "request",
+      "path": "/heat",
+      "status": 201
+    }
+  ],
+  "native": {
+    "external_changes": 0,
+    "frame_preserved": true,
+    "goal_state": true,
+    "incorrect_native_transitions": 0,
+    "mutations": 1,
+    "native_success": true,
+    "requests": 1,
+    "revision_accounted": true,
+    "unauthorized_mutations": 0
+  },
+  "other_unchanged": true,
+  "passed": true,
+  "process": {
+    "automated_runtime_seconds": 0.16442655700666364,
+    "automatic_retries": 0,
+    "budget_seconds": 60,
+    "ended_at": "2026-10-29T16:43:01.582326+00:00",
+    "exit_code": 0,
+    "pid": 127810,
+    "process_alive_after_stop": false,
+    "remote_side_effect_cancellation_claimed": false,
+    "started_at": "2026-10-29T16:43:01.417905+00:00",
+    "status": "COMPLETED"
+  },
+  "recovery": {
+    "pending_at_stop": 0,
+    "settled": true,
+    "snapshot": {
+      "cooler_ready": true,
+      "heater_ready": true,
+      "mutations": 1,
+      "pending_requests": 0,
+      "requests": 1,
+      "revision": 1,
+      "sentinels": {
+        "lamp": "off",
+        "marker": {
+          "untouched": true
+        }
+      },
+      "temperature": 22
+    },
+    "state_uncertain": false,
+    "wait_seconds": 4.5099295675754547e-07
+  },
+  "selection_correct": true,
+  "status": "SUCCESS",
+  "variant": "opaque_identifiers",
+  "whole_seconds": 0.6118158340104856,
+  "worker_seconds": 0.16442655700666364
+}
