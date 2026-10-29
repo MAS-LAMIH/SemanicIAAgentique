@@ -1,0 +1,54 @@
+@prefix aa: <urn:eswc:aat:prototype:1#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# Local finite experimental profile, not a standardized/reasoned ontology.
+aa:Agent a rdfs:Class .
+aa:Thing a rdfs:Class .
+aa:Artifact a rdfs:Class .
+aa:Operation a rdfs:Class .
+aa:Usage a rdfs:Class .
+aa:Context a rdfs:Class .
+aa:Goal a rdfs:Class ; rdfs:subClassOf aa:Context .
+aa:ContextSnapshot a rdfs:Class ; rdfs:subClassOf aa:Context .
+aa:ContextTemplate a rdfs:Class ; rdfs:subClassOf aa:Context .
+aa:represents a rdfs:Property .
+aa:hasOperation a rdfs:Property .
+aa:forArtifact a rdfs:Property .
+aa:forOperation a rdfs:Property .
+aa:hasPrecond a rdfs:Property .
+aa:hasPostcond a rdfs:Property .
+aa:subject a rdfs:Property .
+aa:reviewed a rdfs:Property .
+aa:reviewRef a rdfs:Property .
+
+aa:observationPath a rdfs:Property .
+aa:method a rdfs:Property .
+aa:path a rdfs:Property .
+aa:profile a rdfs:Property .
+aa:readyProperty a rdfs:Property .
+aa:minimum a rdfs:Property .
+aa:maximum a rdfs:Property .
+aa:property a rdfs:Property .
+aa:rule a rdfs:Property .
+aa:delta a rdfs:Property .
+aa:revisionIncrement a rdfs:Property .
+aa:mutationIncrement a rdfs:Property .
+aa:preserves a rdfs:Property .
+aa:temperatureC a rdfs:Property .
+aa:heaterReady a rdfs:Property .
+aa:coolerReady a rdfs:Property .
+aa:sentinels a rdfs:Property .
+aa:sentinelState a rdfs:Property .
+aa:revision a rdfs:Property .
+aa:mutationCount a rdfs:Property .
+aa:observedAt a rdfs:Property .
+aa:maxEvidenceAgeSeconds a rdfs:Property .
+aa:temperatureC rdfs:comment "room-step/1 integer degrees Celsius; not an inferred unit conversion" .
+aa:requestSchema a rdfs:Property .
+aa:responseSchema a rdfs:Property .
+aa:mediaType a rdfs:Property .
+aa:requiresCurrentRevision a rdfs:Property .
+aa:WireSchema a rdfs:Class .
+aa:RevisionRequest a aa:WireSchema ; rdfs:comment "room-step/1: JSON object with only expected_revision, strict integer" .
+aa:RoomReply a aa:WireSchema ; rdfs:comment "room-step/1: JSON object with only revision and temperature, strict integers" .
+aa:pursuesGoal a rdfs:Property .
+aa:observedContext a rdfs:Property .

@@ -1,0 +1,514 @@
+{
+  "completed_at": "2026-10-28T15:04:31.339664+00:00",
+  "decisions": [
+    {
+      "candidates": [
+        {
+          "artifact": "https://example.org/provider-a#calendar",
+          "assessment": {
+            "applicability": "FALSE",
+            "evidence": {
+              "events": {
+                "sentinel": {
+                  "end_time": "2030-01-07T09:00:00+00:00",
+                  "id": "sentinel",
+                  "start_time": "2030-01-07T08:00:00+00:00",
+                  "title": "Keep"
+                }
+              },
+              "observed_at": "2026-10-28T15:04:31.306227+00:00",
+              "revision": 0,
+              "writable": false
+            }
+          },
+          "eligible": false,
+          "operation": "create_event",
+          "reasons": [
+            "Current write permission is FALSE"
+          ]
+        },
+        {
+          "artifact": "https://example.org/provider-b#appointments",
+          "assessment": {
+            "applicability": "TRUE",
+            "evidence": {
+              "events": {
+                "sentinel": {
+                  "end_time": "2030-01-07T09:00:00+00:00",
+                  "id": "sentinel",
+                  "start_time": "2030-01-07T08:00:00+00:00",
+                  "title": "Keep"
+                }
+              },
+              "observed_at": "2026-10-28T15:04:31.312314+00:00",
+              "revision": 0,
+              "writable": true
+            }
+          },
+          "eligible": true,
+          "operation": "reserveAppointment",
+          "reasons": []
+        }
+      ],
+      "complete": true,
+      "contexts": {
+        "https://example.org/provider-a#calendar": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:04:31.306227+00:00",
+          "revision": 0,
+          "writable": false
+        },
+        "https://example.org/provider-b#appointments": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:04:31.312314+00:00",
+          "revision": 0,
+          "writable": true
+        }
+      },
+      "cycle": 1,
+      "invocation": {
+        "api_call_success": true,
+        "api_response": {
+          "body": {
+            "booking_ref": "booking-0001"
+          },
+          "error": null,
+          "raw_body": null,
+          "status": 201
+        },
+        "applicability": "TRUE",
+        "compatible": true,
+        "completed_at": "2026-10-28T15:04:31.328438+00:00",
+        "condition": "A",
+        "description_sha256": "e6bd68d080556d41a81361eb3a1859e99566fa8cdba480166a388447cfbde1f6",
+        "execution_decision": "EXECUTE",
+        "execution_started": "2026-10-28T15:04:31.325993+00:00",
+        "formal_goal": {
+          "end_time": "2030-01-07T11:00:00+00:00",
+          "forbid_other_changes": true,
+          "max_evidence_age_seconds": 30.0,
+          "start_time": "2030-01-07T10:00:00+00:00",
+          "title": "Decision test"
+        },
+        "inputs": {
+          "end_time": "2030-01-07T11:00:00+00:00",
+          "start_time": "2030-01-07T10:00:00+00:00",
+          "title": "Decision test"
+        },
+        "observed_effects": {
+          "error": null,
+          "event": {
+            "event": {
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "id": "booking-0001",
+              "start_time": "2030-01-07T10:00:00+00:00",
+              "title": "Decision test"
+            },
+            "observed_at": "2026-10-28T15:04:31.327379+00:00",
+            "revision": 1
+          },
+          "state": {
+            "events": {
+              "booking-0001": {
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "id": "booking-0001",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "title": "Decision test"
+              },
+              "sentinel": {
+                "end_time": "2030-01-07T09:00:00+00:00",
+                "id": "sentinel",
+                "start_time": "2030-01-07T08:00:00+00:00",
+                "title": "Keep"
+              }
+            },
+            "observed_at": "2026-10-28T15:04:31.328152+00:00",
+            "revision": 1,
+            "writable": true
+          }
+        },
+        "observed_state_change": true,
+        "operation_id": "reserveAppointment",
+        "oracle_verdict": {
+          "achieved": true,
+          "reasons": []
+        },
+        "preconditions": [
+          {
+            "name": "positive_interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {
+                "sentinel": {
+                  "end_time": "2030-01-07T09:00:00+00:00",
+                  "id": "sentinel",
+                  "start_time": "2030-01-07T08:00:00+00:00",
+                  "title": "Keep"
+                }
+              },
+              "observed_at": "2026-10-28T15:04:31.325724+00:00",
+              "revision": 0,
+              "writable": true
+            },
+            "name": "local_write_permission",
+            "verdict": "TRUE"
+          }
+        ],
+        "reason": null,
+        "run_id": "00cd74a6-5966-471a-95ed-939de768c61f",
+        "schema_version": 1,
+        "timestamp": "2026-10-28T15:04:31.325248+00:00",
+        "wire_evidence": [
+          {
+            "body": {
+              "can_book": true,
+              "items": {
+                "sentinel": {
+                  "begins_ms": 1894003200000,
+                  "booking_ref": "sentinel",
+                  "finishes_ms": 1894006800000,
+                  "label": "Keep",
+                  "metadata": {
+                    "untouched": true
+                  }
+                }
+              },
+              "sampled_at": "2026-10-28T15:04:31.325724+00:00",
+              "version": 0
+            },
+            "error": null,
+            "method": "GET",
+            "path": "/availability",
+            "raw_body": null,
+            "request_body": null,
+            "status": 200
+          },
+          {
+            "body": {
+              "booking_ref": "booking-0001"
+            },
+            "error": null,
+            "method": "POST",
+            "path": "/bookings",
+            "raw_body": null,
+            "request_body": {
+              "begins_ms": 1894010400000,
+              "finishes_ms": 1894014000000,
+              "label": "Decision test"
+            },
+            "status": 201
+          },
+          {
+            "body": {
+              "booking": {
+                "begins_ms": 1894010400000,
+                "booking_ref": "booking-0001",
+                "finishes_ms": 1894014000000,
+                "label": "Decision test"
+              },
+              "sampled_at": "2026-10-28T15:04:31.327379+00:00",
+              "version": 1
+            },
+            "error": null,
+            "method": "GET",
+            "path": "/booking/booking-0001",
+            "raw_body": null,
+            "request_body": null,
+            "status": 200
+          },
+          {
+            "body": {
+              "can_book": true,
+              "items": {
+                "booking-0001": {
+                  "begins_ms": 1894010400000,
+                  "booking_ref": "booking-0001",
+                  "finishes_ms": 1894014000000,
+                  "label": "Decision test"
+                },
+                "sentinel": {
+                  "begins_ms": 1894003200000,
+                  "booking_ref": "sentinel",
+                  "finishes_ms": 1894006800000,
+                  "label": "Keep",
+                  "metadata": {
+                    "untouched": true
+                  }
+                }
+              },
+              "sampled_at": "2026-10-28T15:04:31.328152+00:00",
+              "version": 1
+            },
+            "error": null,
+            "method": "GET",
+            "path": "/bookings",
+            "raw_body": null,
+            "request_body": null,
+            "status": 200
+          }
+        ]
+      },
+      "matching": [],
+      "observed_at": "2026-10-28T15:04:31.312621+00:00",
+      "reads": [
+        {
+          "artifact": "https://example.org/provider-a#calendar",
+          "body": {
+            "events": {
+              "sentinel": {
+                "end_time": "2030-01-07T09:00:00+00:00",
+                "id": "sentinel",
+                "metadata": {
+                  "untouched": true
+                },
+                "start_time": "2030-01-07T08:00:00+00:00",
+                "title": "Keep"
+              }
+            },
+            "observed_at": "2026-10-28T15:04:31.306227+00:00",
+            "revision": 0,
+            "writable": false
+          },
+          "error": null,
+          "method": "GET",
+          "path": "/calendar",
+          "raw_body": null,
+          "status": 200
+        },
+        {
+          "artifact": "https://example.org/provider-b#appointments",
+          "body": {
+            "can_book": true,
+            "items": {
+              "sentinel": {
+                "begins_ms": 1894003200000,
+                "booking_ref": "sentinel",
+                "finishes_ms": 1894006800000,
+                "label": "Keep",
+                "metadata": {
+                  "untouched": true
+                }
+              }
+            },
+            "sampled_at": "2026-10-28T15:04:31.312314+00:00",
+            "version": 0
+          },
+          "error": null,
+          "method": "GET",
+          "path": "/availability",
+          "raw_body": null,
+          "status": 200
+        }
+      ],
+      "selected": {
+        "artifact": "https://example.org/provider-b#appointments",
+        "assessment": {
+          "applicability": "TRUE",
+          "evidence": {
+            "events": {
+              "sentinel": {
+                "end_time": "2030-01-07T09:00:00+00:00",
+                "id": "sentinel",
+                "start_time": "2030-01-07T08:00:00+00:00",
+                "title": "Keep"
+              }
+            },
+            "observed_at": "2026-10-28T15:04:31.312314+00:00",
+            "revision": 0,
+            "writable": true
+          }
+        },
+        "eligible": true,
+        "operation": "reserveAppointment",
+        "reasons": []
+      }
+    }
+  ],
+  "dispatches": 1,
+  "objective": {
+    "allowed_artifacts": [
+      "https://example.org/provider-a#calendar",
+      "https://example.org/provider-b#appointments"
+    ],
+    "event": {
+      "end_time": "2030-01-07T11:00:00+00:00",
+      "forbid_other_changes": true,
+      "max_evidence_age_seconds": 30.0,
+      "start_time": "2030-01-07T10:00:00+00:00",
+      "title": "Decision test"
+    }
+  },
+  "policy": "procedural",
+  "post_observation": {
+    "candidates": [
+      {
+        "artifact": "https://example.org/provider-a#calendar",
+        "assessment": {
+          "applicability": "FALSE",
+          "evidence": {
+            "events": {
+              "sentinel": {
+                "end_time": "2030-01-07T09:00:00+00:00",
+                "id": "sentinel",
+                "start_time": "2030-01-07T08:00:00+00:00",
+                "title": "Keep"
+              }
+            },
+            "observed_at": "2026-10-28T15:04:31.333950+00:00",
+            "revision": 0,
+            "writable": false
+          }
+        },
+        "eligible": false,
+        "operation": "create_event",
+        "reasons": [
+          "Current write permission is FALSE"
+        ]
+      },
+      {
+        "artifact": "https://example.org/provider-b#appointments",
+        "assessment": {
+          "applicability": "TRUE",
+          "evidence": {
+            "events": {
+              "booking-0001": {
+                "end_time": "2030-01-07T11:00:00+00:00",
+                "id": "booking-0001",
+                "start_time": "2030-01-07T10:00:00+00:00",
+                "title": "Decision test"
+              },
+              "sentinel": {
+                "end_time": "2030-01-07T09:00:00+00:00",
+                "id": "sentinel",
+                "start_time": "2030-01-07T08:00:00+00:00",
+                "title": "Keep"
+              }
+            },
+            "observed_at": "2026-10-28T15:04:31.339369+00:00",
+            "revision": 1,
+            "writable": true
+          }
+        },
+        "eligible": true,
+        "operation": "reserveAppointment",
+        "reasons": []
+      }
+    ],
+    "complete": true,
+    "contexts": {
+      "https://example.org/provider-a#calendar": {
+        "events": {
+          "sentinel": {
+            "end_time": "2030-01-07T09:00:00+00:00",
+            "id": "sentinel",
+            "start_time": "2030-01-07T08:00:00+00:00",
+            "title": "Keep"
+          }
+        },
+        "observed_at": "2026-10-28T15:04:31.333950+00:00",
+        "revision": 0,
+        "writable": false
+      },
+      "https://example.org/provider-b#appointments": {
+        "events": {
+          "booking-0001": {
+            "end_time": "2030-01-07T11:00:00+00:00",
+            "id": "booking-0001",
+            "start_time": "2030-01-07T10:00:00+00:00",
+            "title": "Decision test"
+          },
+          "sentinel": {
+            "end_time": "2030-01-07T09:00:00+00:00",
+            "id": "sentinel",
+            "start_time": "2030-01-07T08:00:00+00:00",
+            "title": "Keep"
+          }
+        },
+        "observed_at": "2026-10-28T15:04:31.339369+00:00",
+        "revision": 1,
+        "writable": true
+      }
+    },
+    "matching": [
+      [
+        "https://example.org/provider-b#appointments",
+        "booking-0001"
+      ]
+    ],
+    "reads": [
+      {
+        "artifact": "https://example.org/provider-a#calendar",
+        "body": {
+          "events": {
+            "sentinel": {
+              "end_time": "2030-01-07T09:00:00+00:00",
+              "id": "sentinel",
+              "metadata": {
+                "untouched": true
+              },
+              "start_time": "2030-01-07T08:00:00+00:00",
+              "title": "Keep"
+            }
+          },
+          "observed_at": "2026-10-28T15:04:31.333950+00:00",
+          "revision": 0,
+          "writable": false
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/calendar",
+        "raw_body": null,
+        "status": 200
+      },
+      {
+        "artifact": "https://example.org/provider-b#appointments",
+        "body": {
+          "can_book": true,
+          "items": {
+            "booking-0001": {
+              "begins_ms": 1894010400000,
+              "booking_ref": "booking-0001",
+              "finishes_ms": 1894014000000,
+              "label": "Decision test"
+            },
+            "sentinel": {
+              "begins_ms": 1894003200000,
+              "booking_ref": "sentinel",
+              "finishes_ms": 1894006800000,
+              "label": "Keep",
+              "metadata": {
+                "untouched": true
+              }
+            }
+          },
+          "sampled_at": "2026-10-28T15:04:31.339369+00:00",
+          "version": 1
+        },
+        "error": null,
+        "method": "GET",
+        "path": "/availability",
+        "raw_body": null,
+        "status": 200
+      }
+    ]
+  },
+  "returned_id": "booking-0001",
+  "selected_artifact": "https://example.org/provider-b#appointments",
+  "status": "SATISFIED_AFTER_ACTION"
+}

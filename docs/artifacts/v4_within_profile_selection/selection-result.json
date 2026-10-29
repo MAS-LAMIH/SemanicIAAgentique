@@ -1,0 +1,14 @@
+{
+  "status": "NO_ELIGIBLE_SELECTION",
+  "criteria_commit": "626e5d21ae78889cbbc22fa66077e020ea12425c",
+  "candidate_snapshots_inspected": 11,
+  "selected_provider": null,
+  "selected_release": null,
+  "selected_dependency_lock": null,
+  "native_create_retrieve_rejection_attempts": 0,
+  "V4_condition_attempts": 0,
+  "native_feasibility_verdict": null,
+  "reason": "All inspected implementations fail required native contract/profile criteria or have no implemented contract. No known-ineligible API selected and no criteria weakened.",
+  "search_scope": "Bounded anonymous GitHub repository/README/source search; not exhaustive",
+  "effort_measurements": null
+}

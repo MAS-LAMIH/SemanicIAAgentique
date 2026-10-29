@@ -1,0 +1,78 @@
+{
+  "api_call_success": false,
+  "api_response": null,
+  "applicability": "FALSE",
+  "compatible": true,
+  "completed_at": "2026-10-28T15:04:38.147722+00:00",
+  "condition": "A",
+  "description_sha256": "0191abe00fb904e9b72362941f9c02ddd4416e1dd1ec4d4ff7a9952bea3ef82d",
+  "execution_decision": "REJECT",
+  "formal_goal": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Decision test"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Decision test"
+  },
+  "observed_state_change": null,
+  "operation_id": "create_event",
+  "oracle_verdict": null,
+  "preconditions": [
+    {
+      "name": "positive_interval",
+      "verdict": "TRUE"
+    },
+    {
+      "evidence": {
+        "events": {
+          "sentinel": {
+            "end_time": "2030-01-07T09:00:00+00:00",
+            "id": "sentinel",
+            "start_time": "2030-01-07T08:00:00+00:00",
+            "title": "Keep"
+          }
+        },
+        "observed_at": "2026-10-28T15:04:38.147462+00:00",
+        "revision": 0,
+        "writable": false
+      },
+      "name": "local_write_permission",
+      "verdict": "FALSE"
+    }
+  ],
+  "reason": "Local write permission not established TRUE",
+  "run_id": "980cd6f0-599b-4495-ac9e-457a2ad62190",
+  "schema_version": 1,
+  "timestamp": "2026-10-28T15:04:38.146853+00:00",
+  "wire_evidence": [
+    {
+      "body": {
+        "events": {
+          "sentinel": {
+            "end_time": "2030-01-07T09:00:00+00:00",
+            "id": "sentinel",
+            "metadata": {
+              "untouched": true
+            },
+            "start_time": "2030-01-07T08:00:00+00:00",
+            "title": "Keep"
+          }
+        },
+        "observed_at": "2026-10-28T15:04:38.147462+00:00",
+        "revision": 0,
+        "writable": false
+      },
+      "error": null,
+      "method": "GET",
+      "path": "/calendar",
+      "raw_body": null,
+      "request_body": null,
+      "status": 200
+    }
+  ]
+}

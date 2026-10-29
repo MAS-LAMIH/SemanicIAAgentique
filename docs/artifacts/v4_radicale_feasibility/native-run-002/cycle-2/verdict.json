@@ -1,0 +1,17 @@
+{
+  "cycle": 2,
+  "fresh_GET_status": 404,
+  "calendar_creation": 201,
+  "event_creation": 201,
+  "retrieval": 200,
+  "native_events": 1,
+  "native_title_start_end_uid_match": true,
+  "conditional_duplicate": 412,
+  "duplicate_left_native_event_unchanged": true,
+  "native_paths": [
+    "collection-root/calendar/native-event.ics"
+  ],
+  "put_response_body_empty": true,
+  "put_returns_ETag": true,
+  "new_storage_before_each_cycle": true
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "at": "2026-10-28T15:04:38.172177+00:00",
+    "path": "/bookings",
+    "phase": "before",
+    "provider": "b",
+    "state": {
+      "events": {
+        "sentinel": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "sentinel",
+          "finishes_ms": 1894006800000,
+          "label": "Keep",
+          "metadata": {
+            "untouched": true
+          }
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T15:04:38.172137+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "status": null
+  },
+  {
+    "at": "2026-10-28T15:04:38.172231+00:00",
+    "path": "/bookings",
+    "phase": "after",
+    "provider": "b",
+    "state": {
+      "events": {
+        "booking-0001": {
+          "begins_ms": 1894010400000,
+          "booking_ref": "booking-0001",
+          "finishes_ms": 1894014000000,
+          "label": "Decision test"
+        },
+        "sentinel": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "sentinel",
+          "finishes_ms": 1894006800000,
+          "label": "Keep",
+          "metadata": {
+            "untouched": true
+          }
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-28T15:04:38.172208+00:00",
+      "provider": "b",
+      "revision": 1,
+      "writable": true
+    },
+    "status": 201
+  }
+]

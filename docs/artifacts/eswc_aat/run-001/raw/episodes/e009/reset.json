@@ -1,0 +1,18 @@
+{
+  "native": {
+    "cooler_ready": false,
+    "heater_ready": false,
+    "mutations": 0,
+    "pending_requests": 0,
+    "requests": 0,
+    "revision": 0,
+    "sentinels": {
+      "lamp": "off",
+      "marker": {
+        "untouched": true
+      }
+    },
+    "temperature": 21
+  },
+  "passed": true
+}

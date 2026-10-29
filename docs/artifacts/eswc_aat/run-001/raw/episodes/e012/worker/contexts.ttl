@@ -1,0 +1,22 @@
+@prefix ns1: <urn:eswc:aat:prototype:1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:agent:procedural> a ns1:Agent ;
+    ns1:observedContext <urn:context:37c979ec-4e08-49f5-8e30-e2b6fa1f6e3c> ;
+    ns1:pursuesGoal <urn:goal:room> .
+
+<urn:context:37c979ec-4e08-49f5-8e30-e2b6fa1f6e3c> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:mutationCount 0 ;
+    ns1:observedAt "2026-10-28T16:07:52.902920+00:00" ;
+    ns1:revision 0 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 21 .
+
+<urn:goal:room> a ns1:Goal ;
+    ns1:maxEvidenceAgeSeconds 1e+01 ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+

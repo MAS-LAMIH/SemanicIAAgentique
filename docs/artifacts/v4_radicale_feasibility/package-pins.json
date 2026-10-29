@@ -1,0 +1,63 @@
+{
+  "radicale_version": "3.5.0",
+  "source_url": "https://files.pythonhosted.org/packages/ec/46/f6103e7206ef0db92ff73ba37b1ac3a1ffe0612ec5b9930c867fdb1b0a0f/radicale-3.5.0.tar.gz",
+  "source_sha256": "cdb4de6a10d7da9993727c3c3d9c2b30256d36915f4d6b2a655b8dd38f8de5eb",
+  "packages": [
+    {
+      "file": "defusedxml-0.7.1-py2.py3-none-any.whl",
+      "sha256": "a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61",
+      "name": "defusedxml",
+      "version": "0.7.1"
+    },
+    {
+      "file": "passlib-1.7.4-py2.py3-none-any.whl",
+      "sha256": "aa6bca462b8d8bda89c70b382f0c298a20b5560af6cbfa2dce410c0a2fb669f1",
+      "name": "passlib",
+      "version": "1.7.4"
+    },
+    {
+      "file": "pika-1.4.4-py3-none-any.whl",
+      "sha256": "48de960c97a93b55db06b8be4c53eb977c9c8a2754c57cdae9097abcbd70ce04",
+      "name": "pika",
+      "version": "1.4.4"
+    },
+    {
+      "file": "python_dateutil-3.0.0-py2.py3-none-any.whl",
+      "sha256": "3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd",
+      "name": "python-dateutil",
+      "version": "3.0.0"
+    },
+    {
+      "file": "pytz-2026.5-py2.py3-none-any.whl",
+      "sha256": "e658af3757f9e26a9d25dd2aff38335acd92bc9104f890a894b2c1ba28311b03",
+      "name": "pytz",
+      "version": "2026.5"
+    },
+    {
+      "file": "radicale-3.5.0-py3-none-any.whl",
+      "sha256": "9e4fd423f238e6ab99fce17861fe035bebbab79b29b006c622f4ca1226e4ed6a",
+      "name": "Radicale",
+      "version": "3.5.0"
+    },
+    {
+      "file": "six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "file": "tzdata-2026.6-py2.py3-none-any.whl",
+      "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+      "name": "tzdata",
+      "version": "2026.6"
+    },
+    {
+      "file": "vobject-0.9.9-py2.py3-none-any.whl",
+      "sha256": "0fbdb982065cf4d1843a5d5950c88510041c6de026bda49c3502721de1c6ac3d",
+      "name": "vobject",
+      "version": "0.9.9"
+    }
+  ],
+  "python": "3.12.14",
+  "source_distribution_release_upload": "2025-03-16T06:06:19.304119Z"
+}

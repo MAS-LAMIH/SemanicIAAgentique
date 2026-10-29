@@ -1,0 +1,7 @@
+[
+  "semantic_action",
+  "semantic_action.local_baseline",
+  "semantic_action.model",
+  "semantic_action.oracle",
+  "semantic_action.transport"
+]

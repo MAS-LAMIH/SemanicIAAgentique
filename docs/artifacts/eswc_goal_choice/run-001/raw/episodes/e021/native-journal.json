@@ -1,0 +1,52 @@
+[
+  {
+    "at": "2026-10-28T15:05:00.424571+00:00",
+    "path": "/bookings",
+    "phase": "before",
+    "provider": "b",
+    "state": {
+      "events": {
+        "sentinel": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "sentinel",
+          "finishes_ms": 1894006800000,
+          "label": "Keep",
+          "metadata": {
+            "untouched": true
+          }
+        }
+      },
+      "mutation_calls": 0,
+      "observed_at": "2026-10-28T15:05:00.424533+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "status": null
+  },
+  {
+    "at": "2026-10-28T15:05:00.424622+00:00",
+    "path": "/bookings",
+    "phase": "after",
+    "provider": "b",
+    "state": {
+      "events": {
+        "sentinel": {
+          "begins_ms": 1894003200000,
+          "booking_ref": "sentinel",
+          "finishes_ms": 1894006800000,
+          "label": "Keep",
+          "metadata": {
+            "untouched": true
+          }
+        }
+      },
+      "mutation_calls": 1,
+      "observed_at": "2026-10-28T15:05:00.424603+00:00",
+      "provider": "b",
+      "revision": 0,
+      "writable": true
+    },
+    "status": 201
+  }
+]

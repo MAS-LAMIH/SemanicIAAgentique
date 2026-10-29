@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/radicale-feasibility-env/bin/python",
+    "-m",
+    "radicale",
+    "--config",
+    "/tmp/radicale-native-wtycpokp/config"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.14153726099993946
+}

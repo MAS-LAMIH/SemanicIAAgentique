@@ -1,0 +1,56 @@
+@prefix ns1: <urn:eswc:aat:prototype:1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:agent:procedural> a ns1:Agent ;
+    ns1:observedContext <urn:context:084a1c5c-4e1f-4af4-babd-3e3556253956>,
+        <urn:context:1a562158-5c70-4849-9c60-8d70e5cf5710>,
+        <urn:context:3373ca8f-2f95-4b0d-8e44-67eba6cdc0f8>,
+        <urn:context:622f4b12-0ce6-4606-8754-a22588aa92fd> ;
+    ns1:pursuesGoal <urn:goal:room> .
+
+<urn:context:084a1c5c-4e1f-4af4-babd-3e3556253956> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 1 ;
+    ns1:observedAt "2026-10-28T16:07:46.840875+00:00" ;
+    ns1:revision 1 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+
+<urn:context:1a562158-5c70-4849-9c60-8d70e5cf5710> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 1 ;
+    ns1:observedAt "2026-10-28T16:07:46.842486+00:00" ;
+    ns1:revision 1 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+
+<urn:context:3373ca8f-2f95-4b0d-8e44-67eba6cdc0f8> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 0 ;
+    ns1:observedAt "2026-10-28T16:07:46.831116+00:00" ;
+    ns1:revision 0 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 21 .
+
+<urn:context:622f4b12-0ce6-4606-8754-a22588aa92fd> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 0 ;
+    ns1:observedAt "2026-10-28T16:07:46.835987+00:00" ;
+    ns1:revision 0 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 21 .
+
+<urn:goal:room> a ns1:Goal ;
+    ns1:maxEvidenceAgeSeconds 1e+01 ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+

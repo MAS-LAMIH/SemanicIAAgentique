@@ -1,0 +1,104 @@
+[
+  {
+    "at": "2026-10-28T16:07:55.914563+00:00",
+    "body": null,
+    "elapsed_seconds": 0.0021866990009584697,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-28T16:07:55.914288+00:00",
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-28T16:07:55.919327+00:00",
+    "body": null,
+    "elapsed_seconds": 0.0008166740008164197,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-28T16:07:55.919067+00:00",
+        "pending_requests": 0,
+        "requests": 0,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  },
+  {
+    "at": "2026-10-28T16:08:00.928267+00:00",
+    "body": {
+      "expected_revision": 0
+    },
+    "elapsed_seconds": 5.005498018999788,
+    "method": "POST",
+    "path": "/heat",
+    "result": {
+      "body": {},
+      "error": "TimeoutError: timed out",
+      "raw_body": null,
+      "status": null
+    }
+  },
+  {
+    "at": "2026-10-28T16:08:00.929948+00:00",
+    "body": null,
+    "elapsed_seconds": 0.0013809209995088167,
+    "method": "GET",
+    "path": "/state",
+    "result": {
+      "body": {
+        "cooler_ready": true,
+        "heater_ready": true,
+        "mutations": 0,
+        "observed_at": "2026-10-28T16:08:00.929664+00:00",
+        "pending_requests": 1,
+        "requests": 1,
+        "revision": 0,
+        "sentinels": {
+          "lamp": "off",
+          "marker": {
+            "untouched": true
+          }
+        },
+        "temperature": 21,
+        "thing": "urn:example:room:thing"
+      },
+      "error": null,
+      "raw_body": null,
+      "status": 200
+    }
+  }
+]

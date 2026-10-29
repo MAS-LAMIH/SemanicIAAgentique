@@ -1,0 +1,45 @@
+@prefix ns1: <urn:eswc:aat:prototype:1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:agent:semantic> a ns1:Agent ;
+    ns1:observedContext <urn:context:572bc5a6-7893-426f-87c9-18098f1e219c>,
+        <urn:context:5969ecf4-860e-406f-9198-2561c1624aca>,
+        <urn:context:6acb8266-432a-44f2-a8b1-5c478571b5c7> ;
+    ns1:pursuesGoal <urn:goal:room> .
+
+<urn:context:572bc5a6-7893-426f-87c9-18098f1e219c> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 1 ;
+    ns1:observedAt "2026-10-28T16:08:08.155169+00:00" ;
+    ns1:revision 1 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 23 .
+
+<urn:context:5969ecf4-860e-406f-9198-2561c1624aca> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 0 ;
+    ns1:observedAt "2026-10-28T16:08:08.145295+00:00" ;
+    ns1:revision 0 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 21 .
+
+<urn:context:6acb8266-432a-44f2-a8b1-5c478571b5c7> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 0 ;
+    ns1:observedAt "2026-10-28T16:08:08.150201+00:00" ;
+    ns1:revision 0 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 21 .
+
+<urn:goal:room> a ns1:Goal ;
+    ns1:maxEvidenceAgeSeconds 1e+01 ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+

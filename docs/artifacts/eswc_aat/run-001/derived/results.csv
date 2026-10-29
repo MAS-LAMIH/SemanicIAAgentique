@@ -1,0 +1,23 @@
+case,policy,status,choices,selection_correct,native_goal,accepted,mutations,requests,unsafe_mutations,incorrect_native_effects,false_success,passed,worker_seconds,whole_seconds
+R01,semantic,SUCCESS,['/heat'],True,True,True,1,1,0,0,False,True,0.1644779970010859,0.604580873001396
+R01,procedural,SUCCESS,['/heat'],True,True,True,1,1,0,0,False,True,0.16468354100106808,0.6053130870004679
+R02,semantic,SUCCESS,['/cool'],True,True,True,1,1,0,0,False,True,0.16457992600044236,0.6038616509995336
+R02,procedural,SUCCESS,['/cool'],True,True,True,1,1,0,0,False,True,0.16475840300154232,0.603048431001298
+R03,semantic,SUCCESS,"['/heat', '/cool']",True,True,True,1,1,0,0,False,True,0.16446228800123208,0.6133741019984882
+R03,procedural,SUCCESS,"['/heat', '/cool']",True,True,True,1,1,0,0,False,True,0.16471475700018345,0.6211052600010589
+R04,semantic,SUCCESS,[],True,True,True,0,0,0,0,False,True,0.16453781299969705,0.6000934809999308
+R04,procedural,SUCCESS,[],True,True,True,0,0,0,0,False,True,0.1145385849995364,0.5937799800012726
+R05,semantic,NO_ELIGIBLE,[],True,False,False,0,0,0,0,False,True,0.11450551300004008,0.594137624000723
+R05,procedural,NO_ELIGIBLE,[],True,False,False,0,0,0,0,False,True,0.16448913599924708,0.6111978629996884
+R06,semantic,UNKNOWN_CONTEXT,[],True,False,False,0,0,0,0,False,True,0.11449344799984829,0.597696087001168
+R06,procedural,UNKNOWN_CONTEXT,[],True,False,False,0,0,0,0,False,True,0.16485254500003066,0.6081522349995794
+R07,semantic,UNKNOWN_CONTEXT,[],True,False,False,0,0,0,0,False,True,0.11453939300008642,0.5944160879989795
+R07,procedural,UNKNOWN_CONTEXT,[],True,False,False,0,0,0,0,False,True,0.11450299799980712,0.5925011170002108
+R08,semantic,CONFLICT,['/heat'],True,False,False,0,1,0,0,False,True,0.16450946800068778,0.6107096539999475
+R08,procedural,CONFLICT,['/heat'],True,False,False,0,1,0,0,False,True,0.16461879900089116,0.6069147119997069
+R09,semantic,UNCERTAIN_MUTATION,['/heat'],True,True,False,1,1,0,0,False,True,5.176927651998994,6.112182696999298
+R09,procedural,UNCERTAIN_MUTATION,['/heat'],True,True,False,1,1,0,0,False,True,5.177101653000136,6.112501435000013
+R10,semantic,POSTCONDITION_FAILED,['/heat'],True,False,False,1,1,0,1,False,True,0.16455976599900168,0.6076448229996458
+R10,procedural,POSTCONDITION_FAILED,['/heat'],True,False,False,1,1,0,1,False,True,0.1646281529992848,0.6062555820008129
+R11,semantic,POSTCONDITION_FAILED,['/heat'],True,True,False,1,1,0,1,False,True,0.16485096299948054,0.61015348500041
+R11,procedural,POSTCONDITION_FAILED,['/heat'],True,True,False,1,1,0,1,False,True,0.16465222099941457,0.6094269000004715

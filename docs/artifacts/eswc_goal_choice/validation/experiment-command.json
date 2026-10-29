@@ -1,0 +1,15 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "experiments.goal_choice",
+    "run",
+    "--output",
+    "/workspace/goal-choice-execution-001"
+  ],
+  "cwd": "/workspace/SemanicIAAgentique",
+  "PYTHONPATH": "src",
+  "exit_code": 0,
+  "elapsed_seconds": 35.332525445999636,
+  "execution": "serial, no concurrently launched tests or intentional workloads"
+}

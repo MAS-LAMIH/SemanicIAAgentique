@@ -1,0 +1,12 @@
+[
+  "semantic_action",
+  "semantic_action.contract",
+  "semantic_action.json_contract",
+  "semantic_action.model",
+  "semantic_action.oracle",
+  "semantic_action.pipeline",
+  "semantic_action.provider_contract",
+  "semantic_action.registry",
+  "semantic_action.transform",
+  "semantic_action.transport"
+]

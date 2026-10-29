@@ -1,0 +1,20 @@
+test_both_distinct_operation_names_resolve_and_verify (test_registry.RegistryTests.test_both_distinct_operation_names_resolve_and_verify) ... ok
+test_direct_pipeline_cannot_bypass_known_constraints (test_registry.RegistryTests.test_direct_pipeline_cannot_bypass_known_constraints) ... ok
+test_duplicate_operations_and_empty_registry_are_not_selections (test_registry.RegistryTests.test_duplicate_operations_and_empty_registry_are_not_selections) ... ok
+test_duration_and_grid_constraints_reject_only_incompatible_provider (test_registry.RegistryTests.test_duration_and_grid_constraints_reject_only_incompatible_provider) ... ok
+test_execution_rechecks_permission_after_resolution (test_registry.RegistryTests.test_execution_rechecks_permission_after_resolution) ... ok
+test_false_unknown_and_stale_preconditions_block (test_registry.RegistryTests.test_false_unknown_and_stale_preconditions_block) ... ok
+test_input_precision_cannot_be_silently_lost (test_registry.RegistryTests.test_input_precision_cannot_be_silently_lost) ... ok
+test_missing_input_transformation_rejected (test_registry.RegistryTests.test_missing_input_transformation_rejected) ... ok
+test_provider_b_execution_failure_controls (test_registry.RegistryTests.test_provider_b_execution_failure_controls) ... ok
+test_provider_b_owns_its_constraint_enforcement (test_registry.RegistryTests.test_provider_b_owns_its_constraint_enforcement) ... ok
+test_similar_names_do_not_override_non_equivalent_effects (test_registry.RegistryTests.test_similar_names_do_not_override_non_equivalent_effects) ... ok
+test_stale_observations_fail_verification (test_registry.RegistryTests.test_stale_observations_fail_verification) ... ok
+test_unknown_capability_and_mandatory_preservation_rejected (test_registry.RegistryTests.test_unknown_capability_and_mandatory_preservation_rejected) ... ok
+test_unsupported_extra_rdf_information_is_not_silently_dropped (test_registry.RegistryTests.test_unsupported_extra_rdf_information_is_not_silently_dropped) ... ok
+test_v2_schema_and_models (test_registry.RegistryTests.test_v2_schema_and_models) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 34.126s
+
+OK

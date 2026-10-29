@@ -1,0 +1,142 @@
+[
+  {
+    "a": true,
+    "b": false,
+    "calls": [
+      1,
+      0
+    ],
+    "choices": [
+      "a"
+    ],
+    "id": "G01",
+    "status": "SATISFIED_AFTER_ACTION"
+  },
+  {
+    "a": false,
+    "b": true,
+    "calls": [
+      0,
+      1
+    ],
+    "choices": [
+      "b"
+    ],
+    "id": "G02",
+    "status": "SATISFIED_AFTER_ACTION"
+  },
+  {
+    "a": true,
+    "b": true,
+    "calls": [
+      1,
+      0
+    ],
+    "choices": [
+      "a"
+    ],
+    "id": "G03",
+    "status": "SATISFIED_AFTER_ACTION"
+  },
+  {
+    "a": false,
+    "b": false,
+    "calls": [
+      0,
+      0
+    ],
+    "choices": [],
+    "id": "G04",
+    "status": "NO_ELIGIBLE_ACTION"
+  },
+  {
+    "a": true,
+    "b": false,
+    "calls": [
+      0,
+      1
+    ],
+    "choices": [
+      "a",
+      "b"
+    ],
+    "flip": true,
+    "id": "G05",
+    "status": "SATISFIED_AFTER_ACTION"
+  },
+  {
+    "a": null,
+    "b": false,
+    "calls": [
+      0,
+      0
+    ],
+    "choices": [],
+    "id": "G06",
+    "status": "NO_ELIGIBLE_ACTION"
+  },
+  {
+    "a": true,
+    "b": false,
+    "calls": [
+      0,
+      0
+    ],
+    "choices": [],
+    "id": "G07",
+    "stale": true,
+    "status": "UNKNOWN_CONTEXT"
+  },
+  {
+    "a": true,
+    "b": true,
+    "calls": [
+      1,
+      0
+    ],
+    "choices": [
+      "a"
+    ],
+    "delay": 5.5,
+    "id": "G08",
+    "status": "UNCERTAIN_MUTATION"
+  },
+  {
+    "a": true,
+    "b": true,
+    "calls": [
+      0,
+      0
+    ],
+    "choices": [],
+    "existing": true,
+    "id": "G09",
+    "status": "SATISFIED_EXISTING"
+  },
+  {
+    "a": false,
+    "b": true,
+    "calls": [
+      0,
+      0
+    ],
+    "choices": [],
+    "id": "G10",
+    "only_a": true,
+    "status": "NO_ELIGIBLE_ACTION"
+  },
+  {
+    "a": false,
+    "b": true,
+    "calls": [
+      0,
+      1
+    ],
+    "choices": [
+      "b"
+    ],
+    "id": "G11",
+    "mode": "no_change",
+    "status": "EXECUTION_FAILED"
+  }
+]

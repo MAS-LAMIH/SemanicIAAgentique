@@ -1,0 +1,11 @@
+{
+  "approved_hash": "052b49db903cdc41b7bfeefaed8d5dbf36933b1e18bfc26c8c8548a43ab70448",
+  "goal": {
+    "max_age": 10.0,
+    "temperature": 22,
+    "thing": "urn:example:room:thing"
+  },
+  "graph": "/workspace/SemanicIAAgentique/experiments/aat/data/room.ttl",
+  "origin": "http://127.0.0.1:41117",
+  "policy": "procedural"
+}

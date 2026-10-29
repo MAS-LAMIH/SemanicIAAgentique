@@ -1,0 +1,23 @@
+case,policy,passed,selection_correct,status,choices,goal_state_satisfied,independently_verified,usable_id,calls,unnecessary_mutations,excess_mutating_requests,unexpected_mutations,worker_seconds,whole_seconds
+G01,semantic,True,True,SATISFIED_AFTER_ACTION,['a'],True,True,True,"[1, 0]",0,0,False,0.2648454509999283,1.2023299810007302
+G01,procedural,True,True,SATISFIED_AFTER_ACTION,['a'],True,True,True,"[1, 0]",0,0,False,0.11434665800152288,1.0885186280011112
+G02,semantic,True,True,SATISFIED_AFTER_ACTION,['b'],True,True,True,"[0, 1]",0,0,False,0.26472664500033716,1.1920290630005184
+G02,procedural,True,True,SATISFIED_AFTER_ACTION,['b'],True,True,True,"[0, 1]",0,0,False,0.11455918299907353,1.0892636140015384
+G03,semantic,True,True,SATISFIED_AFTER_ACTION,['a'],True,True,True,"[1, 0]",0,0,False,0.2649620749998576,1.1877668500001164
+G03,procedural,True,True,SATISFIED_AFTER_ACTION,['a'],True,True,True,"[1, 0]",0,0,False,0.11449056999845197,1.087272810000286
+G04,semantic,True,True,NO_ELIGIBLE_ACTION,[],False,False,False,"[0, 0]",0,0,False,0.16436978099955013,1.1311629749998247
+G04,procedural,True,True,NO_ELIGIBLE_ACTION,[],False,False,False,"[0, 0]",0,0,False,0.11424734899992472,1.0655833790006
+G05,semantic,True,True,SATISFIED_AFTER_ACTION,"['a', 'b']",True,True,True,"[0, 1]",0,0,False,0.3147419830002036,1.2399808859991026
+G05,procedural,True,True,SATISFIED_AFTER_ACTION,"['a', 'b']",True,True,True,"[0, 1]",0,0,False,0.16438583499984816,1.1171996440007206
+G06,semantic,True,True,NO_ELIGIBLE_ACTION,[],False,False,False,"[0, 0]",0,0,False,0.16480437199970766,1.1317033110008197
+G06,procedural,True,True,NO_ELIGIBLE_ACTION,[],False,False,False,"[0, 0]",0,0,False,0.11476807399958489,1.0609952199993131
+G07,semantic,True,True,UNKNOWN_CONTEXT,[],False,False,False,"[0, 0]",0,0,False,0.16433535400028632,1.129425799999808
+G07,procedural,True,True,UNKNOWN_CONTEXT,[],False,False,False,"[0, 0]",0,0,False,0.11421931299992139,1.061336509001194
+G08,semantic,True,True,UNCERTAIN_MUTATION,['a'],True,False,False,"[1, 0]",0,0,False,5.225091874001009,6.1716128650004975
+G08,procedural,True,True,UNCERTAIN_MUTATION,['a'],True,False,False,"[1, 0]",0,0,False,5.128884456000378,6.087272680000751
+G09,semantic,True,True,SATISFIED_EXISTING,[],True,True,True,"[0, 0]",0,0,False,0.1644014560006326,1.1279484179995052
+G09,procedural,True,True,SATISFIED_EXISTING,[],True,True,True,"[0, 0]",0,0,False,0.11425558100017952,1.061362825001197
+G10,semantic,True,True,NO_ELIGIBLE_ACTION,[],False,False,False,"[0, 0]",0,0,False,0.1645192340001813,1.13507804999972
+G10,procedural,True,True,NO_ELIGIBLE_ACTION,[],False,False,False,"[0, 0]",0,0,False,0.11425226199935423,1.0645037909998791
+G11,semantic,True,True,EXECUTION_FAILED,['b'],False,False,False,"[0, 1]",0,0,False,0.21437197600062063,1.1481743269996514
+G11,procedural,True,True,EXECUTION_FAILED,['b'],False,False,False,"[0, 1]",0,0,False,0.11428840899861825,1.0598324549991958

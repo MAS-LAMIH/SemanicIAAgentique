@@ -1,0 +1,30 @@
+{
+  "actions": [
+    {
+      "artifact": "https://example.org/provider-a#calendar",
+      "kind": "calendar",
+      "local": "/workspace/SemanicIAAgentique/contracts/api_local/a.json",
+      "manual": "/workspace/SemanicIAAgentique/contracts/providers/a.json",
+      "origin": "http://127.0.0.1:36887"
+    },
+    {
+      "artifact": "https://example.org/provider-b#appointments",
+      "kind": "booking",
+      "local": "/workspace/SemanicIAAgentique/contracts/api_local/b.json",
+      "manual": "/workspace/SemanicIAAgentique/contracts/providers/b.json",
+      "origin": "http://127.0.0.1:44657"
+    }
+  ],
+  "allowed_artifacts": [
+    "https://example.org/provider-a#calendar",
+    "https://example.org/provider-b#appointments"
+  ],
+  "event": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Decision test"
+  },
+  "policy": "procedural"
+}

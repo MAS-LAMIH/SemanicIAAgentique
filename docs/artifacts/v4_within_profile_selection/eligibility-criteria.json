@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-28T14:10:58.338483+00:00",
+  "baseline": "87309bca7456f3d8df827549761052cd467a3f7b",
+  "status": "recorded_before_candidate_search_or_selection",
+  "criteria": [
+    "Existing independently developed API, not created for V4",
+    "Creates events with title, start and end",
+    "HTTP POST with JSON requests and JSON responses",
+    "Reproducible local or sandbox environment",
+    "Native state independently observable",
+    "Meaningful schema or validation differences from A/B",
+    "Basic request does not require changing frozen V4 runtime or vocabulary"
+  ],
+  "operational_interpretation": "Inspect native contracts, not V4 invocation success. Existing public repo commits/releases must predate this selection. No synthetic API, proxy, required extra fields, mandatory unsupported authentication, nested-only response ID, unsupported timestamp conversion or unsupported method may be concealed. Unknowns remain unknown until native validation.",
+  "selection_rule": "Screen at least three existing candidates if accessible. Select a plausible eligible candidate from native contracts, favoring minimal local setup and readable original storage. Freeze choice/source/dependencies before native checks. If selected candidate fails any criterion, stop and preserve failure; no replacement in this task.",
+  "no_V4_integration_tests_before_selection": true
+}

@@ -1,0 +1,4 @@
+{
+  "artifact": "https://example.org/provider-b#appointments",
+  "operation": "https://example.org/provider-b#reserveAppointment"
+}

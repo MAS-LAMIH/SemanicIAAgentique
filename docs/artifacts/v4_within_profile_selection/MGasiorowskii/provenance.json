@@ -1,0 +1,28 @@
+{
+  "repository": "MGasiorowskii/ChronosAPI-FastAPI",
+  "revision": "078c21efa565864c0f10e4b19c7567a734bb561f",
+  "archive_url": "https://codeload.github.com/MGasiorowskii/ChronosAPI-FastAPI/tar.gz/078c21efa565864c0f10e4b19c7567a734bb561f",
+  "archive_sha256": "12383a3c01b78f895dac5e9222ea8c085ed0aa3a7f9f0ce7bcaff30b7af4a516",
+  "archive_commit_mtime_utc_epoch": 1741024679,
+  "retained_contract_files": [
+    {
+      "path": "README.md",
+      "sha256": "3ff252293f56aa372a5175b008f36d3fe60f112ef87161096255923843ca6e17"
+    },
+    {
+      "path": "app/api/v1/views/events.py",
+      "sha256": "8f45cb336922bcca6ffd576a2a8cc0c9ed67f09f9ad77b204bd709ab14733a7d"
+    },
+    {
+      "path": "app/models/events.py",
+      "sha256": "06ec5ae9971fda0ddd3b4a5acd899ba8b9b9f0ea6565d660f7344dd2514e0ad9"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "8bf3bb6a513c42ce854d8f6904287320ec7f39f46d8fd23b08cc5d35b63702dd"
+    }
+  ],
+  "archive_retention": "Not vendored; immutable URL/hash retained. Original downloaded archive outside repository. Only relevant public contract code retained; configuration/credential files omitted.",
+  "archive_timestamp_predates_criteria": true,
+  "timestamp_caveat": "Archive timestamp is provenance metadata, not independent authorship attestation."
+}

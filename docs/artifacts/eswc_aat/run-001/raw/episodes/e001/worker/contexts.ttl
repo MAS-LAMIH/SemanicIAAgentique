@@ -1,0 +1,56 @@
+@prefix ns1: <urn:eswc:aat:prototype:1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:agent:semantic> a ns1:Agent ;
+    ns1:observedContext <urn:context:4207e4fc-d92f-4236-86de-f126442fbd50>,
+        <urn:context:db60fac5-e5e8-4935-af98-88511530e08f>,
+        <urn:context:e8121d64-372e-41e4-a99b-3b3a9d6d500d>,
+        <urn:context:f743292b-1ac1-4797-9e1a-144c0ad266cf> ;
+    ns1:pursuesGoal <urn:goal:room> .
+
+<urn:context:4207e4fc-d92f-4236-86de-f126442fbd50> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 1 ;
+    ns1:observedAt "2026-10-28T16:07:46.235991+00:00" ;
+    ns1:revision 1 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+
+<urn:context:db60fac5-e5e8-4935-af98-88511530e08f> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 0 ;
+    ns1:observedAt "2026-10-28T16:07:46.224302+00:00" ;
+    ns1:revision 0 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 21 .
+
+<urn:context:e8121d64-372e-41e4-a99b-3b3a9d6d500d> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 0 ;
+    ns1:observedAt "2026-10-28T16:07:46.229246+00:00" ;
+    ns1:revision 0 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 21 .
+
+<urn:context:f743292b-1ac1-4797-9e1a-144c0ad266cf> a ns1:ContextSnapshot ;
+    ns1:coolerReady true ;
+    ns1:heaterReady true ;
+    ns1:mutationCount 1 ;
+    ns1:observedAt "2026-10-28T16:07:46.234343+00:00" ;
+    ns1:revision 1 ;
+    ns1:sentinelState "{\"lamp\": \"off\", \"marker\": {\"untouched\": true}}"^^rdf:JSON ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+
+<urn:goal:room> a ns1:Goal ;
+    ns1:maxEvidenceAgeSeconds 1e+01 ;
+    ns1:subject <urn:example:room:thing> ;
+    ns1:temperatureC 22 .
+

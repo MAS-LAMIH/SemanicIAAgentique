@@ -1,0 +1,32 @@
+{
+  "accepted_satisfactions": 8,
+  "admission_controls": [
+    {
+      "control": "invalid",
+      "reason": "Missing/ambiguous urn:eswc:aat:prototype:1#delta",
+      "rejected": true
+    },
+    {
+      "control": "unreviewed",
+      "reason": "Unreviewed Usage",
+      "rejected": true
+    },
+    {
+      "control": "hash_mismatch",
+      "reason": "Graph not admitted by external reviewed hash",
+      "rejected": true
+    }
+  ],
+  "controller_conditions": 2,
+  "diagnostic_passes": 22,
+  "episodes": 22,
+  "external_api_generalization": false,
+  "false_success_claims": 0,
+  "independently_authored_agents": 0,
+  "injected_incorrect_effects": 4,
+  "model_backed_reasoning_evaluated": false,
+  "parity_differences": [],
+  "source_stable": true,
+  "unauthorized_mutations": 0,
+  "verdict": "PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "repository": "dadeechvansh/FastAPI_CRUD_Operations",
+  "revision": "977ba841e6176c7184a16691106a340706fb7431",
+  "archive_url": "https://codeload.github.com/dadeechvansh/FastAPI_CRUD_Operations/tar.gz/977ba841e6176c7184a16691106a340706fb7431",
+  "archive_sha256": "ba98dfe26ebfceb134baee464e411d55b406128ba7c52de88eec404063b46b9c",
+  "archive_commit_mtime_utc_epoch": 1783616571,
+  "retained_contract_files": [
+    {
+      "path": "main.py",
+      "sha256": "cec1603ed8e4ee9c526ed432f0c9a5c6d1250ded478b631dbe1fc6fe55ead7f2"
+    }
+  ],
+  "archive_retention": "Not vendored; immutable URL/hash retained. Original downloaded archive outside repository. Only relevant public contract code retained; configuration/credential files omitted.",
+  "archive_timestamp_predates_criteria": true,
+  "timestamp_caveat": "Archive timestamp is provenance metadata, not independent authorship attestation."
+}

@@ -1,0 +1,116 @@
+{
+  "candidates": [
+    {
+      "applicability": "TRUE",
+      "artifact_id": "https://example.org/provider-a#calendar",
+      "assessment": {
+        "applicability": "TRUE",
+        "preconditions": [
+          {
+            "evidence": {
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "start_time": "2030-01-07T10:00:00+00:00"
+            },
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "reason": "Validated interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {
+                "sentinel": {
+                  "end_time": "2030-01-07T09:00:00+00:00",
+                  "id": "sentinel",
+                  "start_time": "2030-01-07T08:00:00+00:00",
+                  "title": "Keep"
+                }
+              },
+              "observed_at": "2026-10-28T15:04:27.922663+00:00",
+              "revision": 0,
+              "writable": true
+            },
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "reason": "Current observation establishes writable",
+            "verdict": "TRUE"
+          }
+        ],
+        "validation": {
+          "errors": [],
+          "valid": true
+        }
+      },
+      "compatible": true,
+      "contract_sha256": "b821cd49864a3d4d5179be95120644525b63293d6ed2203e1b7d85ff89685d99",
+      "eligible": true,
+      "operation_id": "https://example.org/provider-a#create_event",
+      "reasons": [],
+      "registration": 0
+    },
+    {
+      "applicability": "FALSE",
+      "artifact_id": "https://example.org/provider-b#appointments",
+      "assessment": {
+        "applicability": "FALSE",
+        "preconditions": [
+          {
+            "evidence": {
+              "end_time": "2030-01-07T11:00:00+00:00",
+              "start_time": "2030-01-07T10:00:00+00:00"
+            },
+            "name": "https://example.org/sam/v1#PositiveInterval",
+            "reason": "Validated interval",
+            "verdict": "TRUE"
+          },
+          {
+            "evidence": {
+              "events": {
+                "sentinel": {
+                  "end_time": "2030-01-07T09:00:00+00:00",
+                  "id": "sentinel",
+                  "start_time": "2030-01-07T08:00:00+00:00",
+                  "title": "Keep"
+                }
+              },
+              "observed_at": "2026-10-28T15:04:27.929370+00:00",
+              "revision": 0,
+              "writable": false
+            },
+            "name": "https://example.org/sam/v1#CalendarWritable",
+            "reason": "Current observation establishes not writable",
+            "verdict": "FALSE"
+          }
+        ],
+        "validation": {
+          "errors": [],
+          "valid": true
+        }
+      },
+      "compatible": true,
+      "contract_sha256": "0d6183f519340c7d1c7d960b25a83d06170284f704c8ba79094ae7bc2c2540a7",
+      "eligible": false,
+      "operation_id": "https://example.org/provider-b#reserveAppointment",
+      "reasons": [
+        "Critical applicability is FALSE"
+      ],
+      "registration": 1
+    }
+  ],
+  "execution_started": true,
+  "formal_goal": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "forbid_other_changes": true,
+    "max_evidence_age_seconds": 30.0,
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Decision test"
+  },
+  "inputs": {
+    "end_time": "2030-01-07T11:00:00+00:00",
+    "start_time": "2030-01-07T10:00:00+00:00",
+    "title": "Decision test"
+  },
+  "required_capability": "https://example.org/sam/v1#EventCreation",
+  "run_id": "6fb08da1-4fe5-4616-9142-bfee159de220",
+  "schema_version": 1,
+  "selected_operation": "https://example.org/provider-a#create_event",
+  "timestamp": "2026-10-28T15:04:27.914912+00:00"
+}
