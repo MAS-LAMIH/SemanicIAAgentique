@@ -1,0 +1,275 @@
+{
+  "info": {
+    "title": "Controlled virtual room, normal mode",
+    "version": "native-room-contract/1"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/cool": {
+      "post": {
+        "operationId": "coolRoom",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expected_revision": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "expected_revision"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "temperature": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "temperature"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "temperature": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "temperature"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "temperature": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "temperature"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          }
+        }
+      }
+    },
+    "/heat": {
+      "post": {
+        "operationId": "heatRoom",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "additionalProperties": false,
+                "properties": {
+                  "expected_revision": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "expected_revision"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "temperature": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "temperature"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "temperature": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "temperature"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "temperature": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "revision",
+                    "temperature"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          }
+        }
+      }
+    },
+    "/state": {
+      "get": {
+        "operationId": "readRoom",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "cooler_ready": {
+                      "type": "boolean"
+                    },
+                    "heater_ready": {
+                      "type": "boolean"
+                    },
+                    "mutations": {
+                      "type": "integer"
+                    },
+                    "observed_at": {
+                      "type": "string"
+                    },
+                    "pending_requests": {
+                      "type": "integer"
+                    },
+                    "requests": {
+                      "type": "integer"
+                    },
+                    "revision": {
+                      "type": "integer"
+                    },
+                    "sentinels": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "temperature": {
+                      "type": "integer"
+                    },
+                    "thing": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "temperature",
+                    "heater_ready",
+                    "cooler_ready",
+                    "revision",
+                    "mutations",
+                    "requests",
+                    "sentinels",
+                    "pending_requests",
+                    "thing",
+                    "observed_at"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Native JSON reply"
+          }
+        }
+      }
+    }
+  }
+}

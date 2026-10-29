@@ -1,0 +1,5 @@
+{
+  "artifact": "urn:example:room:artifact",
+  "origin": "http://127.0.0.1:35601",
+  "thing": "urn:example:room:thing"
+}

@@ -1,0 +1,13 @@
+{
+  "error": "Unsupported transition",
+  "inputs": {
+    "config.json": "840879e04e8646032562ca71dfff3af4da2a779effce4c049673239af5cc77b6",
+    "diagnostics.json": "1e6e976cd356571e51b7c05483c66be12923ff741842517295529e67ab1a2004",
+    "provenance.json": "c34fcc7634d74006688959dc45887db7f194fcccd6c77160c497841230300f9c",
+    "sidecar.json": "85c48d9a006058eeac157fa09c94c0fff366b1f017714c463ecdb260da8668ed",
+    "source.json": "417118f60c367f670e35b5ae15a7c8f3740d9d6b4f0e51300b9a39715c1b5db0",
+    "structural.ttl": "3f9a5521f9e30a1b4cbba6926b99231f5f9ed2554d97a53efc3dbb41eb28d81a"
+  },
+  "status": "QUARANTINED",
+  "version": "room-completion/1"
+}

@@ -1,0 +1,7 @@
+{
+  "admitted": true,
+  "approval_sha256": "32ebf95b8d33029cb8cd66989b9ba3112b6398c0da9bdf68ee2def27838004bd",
+  "completion_sha256": "b4d503c19fcb6121f973db3312383964b5a9bbcb0a46fa44e658c46a8995df6f",
+  "graph_sha256": "be3195b93a466e31a50bda88375882e41f82e0f752186068faaaca2245f7b964",
+  "origin": "http://127.0.0.1:34183"
+}

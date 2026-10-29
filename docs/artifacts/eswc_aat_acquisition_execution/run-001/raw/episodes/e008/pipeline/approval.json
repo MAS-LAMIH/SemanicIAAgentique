@@ -1,0 +1,7 @@
+{
+  "approved": true,
+  "completion_sha256": "ce120caed7ad9a74f50ab8e3477232ebf3f72788bbba2014fd8d3559b7120c81",
+  "graph_sha256": "be3195b93a466e31a50bda88375882e41f82e0f752186068faaaca2245f7b964",
+  "reviewer": "Task-authorized experimental operator (Codex)",
+  "scope": "Task-authorized controlled room experiment, not independent human review or scientific freeze approval; loopback ephemeral deployment of pinned native fixture only"
+}

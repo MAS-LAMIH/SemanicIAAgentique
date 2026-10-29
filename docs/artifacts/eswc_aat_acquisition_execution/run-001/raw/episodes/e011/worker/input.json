@@ -1,0 +1,11 @@
+{
+  "approved_hash": "5244caf3ee6e50f6a98b817d3b4e1008cafe1a5832bbd70e701c3c98ea763142",
+  "goal": {
+    "max_age": 10.0,
+    "temperature": 22,
+    "thing": "urn:example:room:thing"
+  },
+  "graph": "/workspace/aat-completion-run-001/raw/episodes/e011/pipeline/completed/candidate.ttl",
+  "origin": "http://127.0.0.1:36643",
+  "policy": "semantic"
+}
