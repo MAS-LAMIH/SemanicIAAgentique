@@ -58,7 +58,9 @@ def episode(case,condition,variant,out):
         p=out/(domain+'.ttl');catalogs[domain]=make_graph(domain,variant if domain==case['domain'] else 'original',p);graphs.append(p)
         spec=json.loads((DATA/(domain+'-spec.json')).read_text())
         if variant=='statement_source_order':spec=dict(reversed(list(spec.items())))
-        save(out/(domain+'-source-spec.json'),spec);shutil.copyfile(DATA/(domain+'-review.json'),out/(domain+'-review.json'))
+        source_name=domain+('-source-alias.json' if variant=='statement_source_order' else '-source-spec.json')
+        (out/source_name).write_text(json.dumps(spec,indent=2,sort_keys=False)+'\n')
+        shutil.copyfile(DATA/(domain+'-review.json'),out/(domain+'-review.json'))
     states={'room':Room(case['initial_temperature'],case['ready'],case['ready'],case['mode']) if case['domain']=='room' else Room(),
             'cabinet':Cabinet(case['initial_secured'],case['ready'],case['mode']) if case['domain']=='cabinet' else Cabinet()}
     before={d:s.snapshot() for d,s in states.items()};active=states[case['domain']];cat=catalogs[case['domain']];goal=target(cat,case)
